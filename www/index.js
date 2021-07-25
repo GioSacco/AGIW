@@ -2,7 +2,7 @@ const puppeteer       = require('puppeteer');
 const cheerio         = require('cheerio');
 const stopword        = require('stopword');
 const TfIdf           =  require( 'tf-idf-search' ); 
-const utils      = require('./service/utils.js')
+const utils           = require('./service/utils.js')
 
 const firstDataSet    = require('../assets/firstDataSet.json');
 const secondDataSet   = require('../assets/tirthDataSet.json');
@@ -143,6 +143,7 @@ async function fetchDataFirstDataSet(urlList){
             $('footer').remove();
             $('script').remove();
             $('style').remove();
+            $('ul.player-news__list').remove();
 
             var t = $('body *').contents().map(function() {
                 return (this.type === 'text') ? $(this).text(): ' ';
