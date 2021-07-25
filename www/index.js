@@ -4,7 +4,7 @@ const stopword        = require('stopword');
 const TfIdf           =  require( 'tf-idf-search' ); 
 const utils      = require('./service/utils.js')
 
-const firstDataSet    = require('../assets/secondDataSet.json');
+const firstDataSet    = require('../assets/firstDataSet.json');
 const secondDataSet   = require('../assets/tirthDataSet.json');
 
 process.setMaxListeners(0);
@@ -18,11 +18,11 @@ async function initFirstDataSet() {
 
   let [firstDatasetContentDataList, secondDatasetContentDataList] = await Promise.all([fetchDataFirstDataSet(firstDatasetUrlList), fetchDataSecondDataSet(secondDatasetUrlList)]);
 
-  initSecondDataSet(firstDatasetContentDataList, secondDatasetContentDataList);
+  checkSameEntity(firstDatasetContentDataList, secondDatasetContentDataList);
 
 }
 
-async function initSecondDataSet(firstDatasetContentDataList, secondDatasetContentDataList) {
+async function checkSameEntity(firstDatasetContentDataList, secondDatasetContentDataList) {
 
   var secondDatasetContentDataListString = [];
   for (j = 0; j <= secondDatasetContentDataList.length-1; j++) {
