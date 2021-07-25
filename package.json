@@ -1,0 +1,17 @@
+{
+  "name": "agiw_progetto_2",
+  "version": "1.0.0",
+  "description": "Secondo progetto per l'esame di Agiw A.A. 2020/2021",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Giovanni Sacco, matricola 451627",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "puppeteer": "^10.1.0",
+    "stopword": "^1.0.7",
+    "tf-idf-search": "^1.1.3"
+  }
+}
