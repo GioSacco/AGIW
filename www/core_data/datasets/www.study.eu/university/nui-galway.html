@@ -1,0 +1,2060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"cb4ef145dd","applicationID":"55169925","transactionName":"Jg5fTRMJXFtQQBpCXwwXVEsSD0ReUEEaRFkKFg==","queueTime":3,"applicationTime":301,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"cb4ef145dd",applicationID:"55169925"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+  <title>NUI Galway, Ireland | Study.EU</title>
+   
+  <link rel="stylesheet" media="all" href="/assets/application-788bf60a726cbc46bce208400674992d5b5b0e3a0892577e97f4ee25b84407b9.css" />
+  <script src="/assets/application-6d00a9f66b3f7e1a7db9282e671658ce415a54e8512569e7b539a89dc0fb74a5.js"></script>
+  
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Kt9WaLK/M9dnrNhQgPFn7lhrZS3IIxQ9cwEMsJ5lMTjyaukr4u9E86HTNn1ZAtzYfG5Pw79/vibRxRuwEz8gbw==" />
+  
+  
+    
+  
+  
+  
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-29b05ed0a02376d0d37f92df42a0d954d97274430a0f6264e4d19745408f15c8.ico" />
+  
+  <meta name="description" content="Study at NUI Galway in Ireland: 248 Bachelors, Masters, PhDs. ✓ Study.EU: Your gateway to universities in Europe." />
+  
+  <meta name="keywords" content="study in europe, universities, europe, master, bachelor, masters, bachelors, msc, bsc, llb, llm, phd, doctorate, university, study abroad" />
+  <meta name="google-site-verification" content="9sv6t--Xh8SiHr58R3chJHOJVHixvhn6jBK8Qzc9Z9U" />
+  <meta name="msvalidate.01" content="5E3AE5307267C1BED099C27EB59E264E" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  <link rel="canonical" href="https://www.study.eu/university/nui-galway" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@wwwStudyEU" />
+  <meta name="twitter:title" content="NUI Galway, Ireland" />
+  
+  <meta property="og:title"  content="NUI Galway, Ireland" />
+  
+  
+  
+  
+  
+      <meta property="og:type" content="article" />
+      <meta property="article:publisher" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+      <meta property="article:author" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+  
+  <meta property="og:description" content="Study at NUI Galway in Ireland: 248 Bachelors, Masters, PhDs. ✓ Study.EU: Your gateway to universities in Europe." />
+  <meta property="og:image" content="https://www.study.eu/assets/fallback/study-in-europe-logo-overlay-1200x627-34deac9b2af4b87f5f656da9694257ffa4e59dec8319085daa96f8ca9eb3f980.jpg" />
+  
+</head>
+<body>
+
+  <nav id="navbar" class="navbar navbar-static-top container container-fluid">
+  
+  <div class="container">
+    <div class="row" style="position: relative;">
+        <div class="col-md-3 col-xs-9 navbar-header">
+          <a class="navbar-brand" href="/" title="Study.EU">
+            <img alt="Study.EU" class="homepage-logo" src="/assets/study-eu_logo-ee9afe0c98ee9ac266f676d5dcb967023df14f95661b91c7812bef38a3b0c03a.png" />
+          </a>
+        </div>
+        <div class="col-md-8 bottom-align-text">
+            <strong class="navbar-claim">Your gateway to universities in Europe</strong>
+        </div>
+        <div class="col-md-1 col-xs-3 navbar-search-link-container">
+          <div class="navbar-search-link">
+          </div>
+        </div>
+    </div>
+</div>
+  
+</nav>
+
+  <div class="container" id="div-main-container" role="main">
+
+  </div>
+  
+  
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "CollegeOrUniversity",
+  "name": "NUI Galway",
+  "url": "https://www.study.eu/university/nui-galway",
+  "sameAs": "http://www.nuigalway.ie/",
+  
+  
+  "logo": "https://study-eu.s3.amazonaws.com/uploads/university/nui-galway-logo.png",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Study programmes",
+      "value": "248"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Rank (THE 2020)",
+      "value": "251"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Rank (QS 2020)",
+      "value": "259"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Rank (ARWU 2019)",
+      "value": "501"
+    }
+  ]
+}
+</script>
+
+
+
+<div class="header-image">
+  <div class="container">
+    <div class="header-image-cta">
+      <h1>Study at NUI Galway</h1>
+      <h2>Galway, Ireland</h2>
+    </div>
+  </div>
+    <img alt="Study in Europe" title="Study in Europe" src="/assets/fallback/study-in-europe_1920-2cea268aaca4f8cd71c109aa2d67e83e285f04dd3c85c9a21acae013fd6f2259.jpg" />
+    
+    <div class="image-credits">
+      <span class="image-credits-span">
+        <a href="https://www.flickr.com/photos/glasgowamateur/7892308660" target="_blank" rel="nofollow">Europe</a> by Charles Clegg, <a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="nofollow">CC BY-SA 2.0</a>, modified
+      </span>
+    </div>  
+  
+</div>
+
+<div class="div-breadcrumbs">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="/">Study.eu</a></li><i class="fa fa-angle-right breadcrumb-separator" aria-hidden="true"></i><li><a href="/country/ireland">Ireland</a></li><i class="fa fa-angle-right breadcrumb-separator" aria-hidden="true"></i><li>NUI Galway</li>
+    </ol>  
+  </div>
+</div> 
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://www.study.eu/",
+        "name": "Study.eu"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://www.study.eu/country/ireland",
+        "name": "Ireland"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "https://www.study.eu/university/nui-galway",
+        "name": "NUI Galway"
+      }
+    }
+  ]
+}
+</script>
+
+<div class="container" style="position: relative;">
+
+  <div class="row">
+
+    <div class="sidebar col-md-4 col-md-push-8">
+      
+      <table class="entry-details-table">
+        <tbody>
+            <tr>
+              <th class="university-logo" colspan="2">
+                <img alt="NUI Galway - Logo" title="NUI Galway - Logo" class="university-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_nui-galway-logo.png" />
+              </th>
+            </tr>
+          
+          <tr>
+            <td class="university-name" colspan="2">NUI Galway</td>
+          </tr>
+          
+          <tr>
+            <td class="table-entry-name">Location:</td>
+            <td>
+                  Galway (<a href="/country/ireland">Ireland</a>)
+                  
+            </td>
+          </tr>
+          
+          
+            
+          
+
+
+          
+          <tr>
+            <td class="table-entry-name">Ranking: <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Times Higher Education World University Rankings 2020"></i></td>
+            <td title="Times Higher Education World University Rankings 2020">
+              #124 (Europe)<br />
+              #251 (World)<br />
+            </td>
+          </tr>
+          
+
+            <tr>
+              <td class="table-entry-name">Listed study programmes:</td>
+              <td><a href="#university-programmes">248</a></td>
+            </tr>
+          
+          
+          
+
+        </tbody>
+      </table>
+      
+      
+
+
+      
+      
+      
+        
+        <div class="sidebar-container">
+          <strong>Featured universities in Ireland:</strong>
+          <div class="featured-university-container">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a href="/university/trinity-college-dublin-tcd">
+                    <img alt="Trinity College Dublin (TCD)" title="Trinity College Dublin (TCD)" class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_trinity-college-dublin--tcd--logo.svg" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a href="/university/trinity-college-dublin-tcd">Trinity College Dublin (TCD)</a><br />
+                  Dublin, 
+                  <a href="/country/ireland">Ireland</a><br />
+                  229 study programmes
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+          
+      
+    </div>
+  
+  
+  
+    <div class="content col-md-8 col-md-pull-4">
+
+      <h1>NUI Galway</h1>
+      
+        <div class="bnnr-container">
+  <a target="_blank" rel="nofollow" data-track-rendering-ga="true" data-track-click-ga="true" data-track-click="true" data-event-category="BC" data-event-label="CODE Berlin" data-trackvalue-bc-id="41" data-trackvalue-href="https://code.berlin/en/?utm_source=Study.eu&amp;utm_medium=Banner" href="https://code.berlin/en/?utm_source=Study.eu&amp;utm_medium=Banner">
+    <img class="bnnr" loading="lazy" src="https://study-eu.s3.amazonaws.com/uploads/bc/bc-code-berlin-desktop.png" />
+</a></div>
+
+      
+      <div class="content-description">
+        
+      </div>
+    
+    <a id="university-programmes"><hr /></a>
+    
+    
+    
+
+    <ul class="nav nav-tabs">
+      
+        <li class="active"><a data-toggle="tab" href="#tab-bachelor">Bachelor’s<br/>programmes</a></li>
+      
+        <li><a data-toggle="tab" href="#tab-master">Master’s<br/>programmes</a></li>
+      
+        <li><a data-toggle="tab" href="#tab-doctorate">Doctorate<br/>programmes</a></li>
+      
+    </ul>
+
+    <div class="tab-content">
+    
+        <div id="tab-bachelor" class="tab-pane active">
+          <h4>Bachelors at NUI Galway</h4>
+            <div aria-multiselectable="true" role="tablist" id="accordion-bachelor" class="panel-group">
+
+      <div class="panel panel-default"> <a title="Art, Design &amp; Media" aria-controls="collapse-bachelor-1" aria-expanded="false" href="#collapse-bachelor-1" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-1" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Art, Design &amp; Media <span class="discipline-programmes-count">(9)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-1" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-1" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/arts-9a30c7c2-e1b2-4007-85c2-17efdce671c2">Arts</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/arts-with-data-science">Arts with Data Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/bachelor-of-arts-international">Bachelor of Arts (International)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/drama-theatre-and-performance-studies">Drama, Theatre, and Performance Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/film-digital-media">Film &amp; Digital Media</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/film-studies-13311">Film Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/journalism-d5cdfc8d-2d20-4bf0-a227-76344ce9d717">Journalism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/music-d8ea702d-8434-4b54-aac2-3de8bda2992a">Music</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/performing-arts-studies">Performing Arts Studies</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Business &amp; Management" aria-controls="collapse-bachelor-2" aria-expanded="false" href="#collapse-bachelor-2" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-2" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Business &amp; Management <span class="discipline-programmes-count">(11)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-2" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-2" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/business-information-systems-39f9b3a7-acdf-4acd-97ce-a656f45cfa52">Business Information Systems</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/business-studies-international-hotel-management">Business Studies (International Hotel Management)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/commerce">Commerce</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/commerce-global-experience">Commerce (Global Experience)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/commerce-with-accounting">Commerce with Accounting</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/commerce-with-french">Commerce with French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/commerce-with-gaeilge">Commerce with Gaeilge</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/commerce-with-german">Commerce with German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/commerce-with-spanish">Commerce with Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/international-hotel-management-ba728cf4-0f6d-491c-99b3-78038dce5152">International Hotel Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/project-and-construction-management">Project and Construction Management</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Computer Science &amp; IT" aria-controls="collapse-bachelor-62" aria-expanded="false" href="#collapse-bachelor-62" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-62" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Computer Science &amp; IT <span class="discipline-programmes-count">(5)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-62" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-62" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/arts-with-data-science">Arts with Data Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/business-information-systems-39f9b3a7-acdf-4acd-97ce-a656f45cfa52">Business Information Systems</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/computer-science-and-information-technology">Computer Science and Information Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/computer-science-and-mathematical-studies">Computer Science and Mathematical Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/electronic-and-computer-engineering-b831b4f6-01b6-4eb2-8aef-7fe9f0d3e31b">Electronic and Computer Engineering</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Engineering &amp; Technology" aria-controls="collapse-bachelor-3" aria-expanded="false" href="#collapse-bachelor-3" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-3" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Engineering &amp; Technology <span class="discipline-programmes-count">(8)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-3" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-3" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/biomedical-engineering-0c63ccc5-ba6f-4c9d-b16d-579619c4e92d">Biomedical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/biotechnology-00120ae3-48fc-4cd7-9376-331491c5281c">Biotechnology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/civil-engineering-c1db744b-2140-4b5a-a29d-eda081103885">Civil Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/electrical-and-electronic-engineering-25dff994-83a0-44d5-b763-6135a85b984f">Electrical and Electronic Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/electronic-and-computer-engineering-b831b4f6-01b6-4eb2-8aef-7fe9f0d3e31b">Electronic and Computer Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/energy-systems-engineering-04ce2e7d-64f2-4e0e-81e9-60f5382f8132">Energy Systems Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/environmental-science-249c54c4-fb56-41ca-b031-7a0082b5dd83">Environmental Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/mechanical-engineering-1f974334-34d4-405d-8fac-607369dae233">Mechanical Engineering</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Environment &amp; Agriculture" aria-controls="collapse-bachelor-63" aria-expanded="false" href="#collapse-bachelor-63" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-63" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Environment &amp; Agriculture <span class="discipline-programmes-count">(1)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-63" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-63" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/environmental-health-and-safety">Environmental Health and Safety</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Humanities" aria-controls="collapse-bachelor-64" aria-expanded="false" href="#collapse-bachelor-64" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-64" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Humanities <span class="discipline-programmes-count">(6)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-64" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-64" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/creative-writing-95f8d34d-8a09-49aa-bdba-07baa4e848c8">Creative Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/english-and-media-studies">English and Media Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/global-languages">Global Languages</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/history-aa20cfea-26df-4b03-83cb-c0786aac02b7">History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/history-and-globalisation-studies">History and Globalisation Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/speech-and-language-therapy">Speech and Language Therapy</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Law" aria-controls="collapse-bachelor-4" aria-expanded="false" href="#collapse-bachelor-4" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-4" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Law <span class="discipline-programmes-count">(5)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-4" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-4" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/law-b03e084a-aa70-42ae-b629-0371331f9317">Law</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/law-and-business-7367ebc2-713d-40c9-9de6-588b330acb35">Law and Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/law-and-human-rights">Law and Human Rights</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/law-and-taxation-38e90082-1fba-4517-be7e-67ed77d1ee1a">Law and Taxation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/law-criminology-and-criminal-justice">Law, Criminology and Criminal Justice</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Medicine &amp; Health" aria-controls="collapse-bachelor-5" aria-expanded="false" href="#collapse-bachelor-5" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-5" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Medicine &amp; Health <span class="discipline-programmes-count">(7)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-5" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-5" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/biomedical-engineering-0c63ccc5-ba6f-4c9d-b16d-579619c4e92d">Biomedical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/biomedical-science-57bb8486-6a79-42b5-994d-0586ec1b8e47">Biomedical Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/medicine-surgery-obstetrics">Medicine (Surgery &amp; Obstetrics)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/mental-health-nursing">Mental Health Nursing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/midwifery-science">Midwifery Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/nursing-science-general">Nursing Science (General)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/occupational-therapy-4d224e7d-5901-460e-9b0b-9fe92a93e77c">Occupational Therapy</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Natural Sciences &amp; Mathematics" aria-controls="collapse-bachelor-6" aria-expanded="false" href="#collapse-bachelor-6" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-6" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Natural Sciences &amp; Mathematics <span class="discipline-programmes-count">(9)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-6" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-6" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/biopharmaceutical-chemistry">Biopharmaceutical Chemistry</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/computer-science-and-mathematical-studies">Computer Science and Mathematical Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/financial-mathematics-and-economics">Financial Mathematics and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/genetics-and-genomics">Genetics and Genomics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/mathematical-science-6c9f4339-af80-4ffd-b307-f3e737ef8574">Mathematical Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/mathematics-and-education">Mathematics and Education</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/physics-degree-options-in-applied-astrophysics-biomedical-th">Physics - degree options in Applied, Astrophysics, Biomedical, Theoretical</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/science-393b555c-2477-474c-8535-17c0fe554779">Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/zoology-17498">Zoology</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Social Sciences" aria-controls="collapse-bachelor-7" aria-expanded="false" href="#collapse-bachelor-7" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-7" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Social Sciences <span class="discipline-programmes-count">(11)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-7" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-7" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/applied-social-sciences">Applied Social Sciences</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/children-s-studies">Children&#39;s Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/child-youth-and-family-policy-and-practice">Child, Youth and Family: Policy and Practice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/earth-and-ocean-sciences-1e4e2efe-5867-49ce-81b5-c35e2954c73d">Earth and Ocean Sciences</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/financial-mathematics-and-economics">Financial Mathematics and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/geography-and-geosystems">Geography and Geosystems</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/government-politics-economics-and-law">Government (Politics, Economics and Law)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/human-rights-b7aebcaf-68c5-405e-af84-881890304f52">Human Rights</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/marine-science-877c24d2-3f3d-4db2-9f85-3a678e5d99b5">Marine Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/psychology-3e05f410-6bb2-4fbb-8f45-e9a4699e0007">Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/speech-and-language-therapy">Speech and Language Therapy</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default" id="panel-bachelor-other"> <a title="Other subjects" aria-controls="collapse-bachelor-other" aria-expanded="false" href="#collapse-bachelor-other" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-other" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Other subjects</span> <span class="discipline-programmes-count">(2)</span></a>
+        <div aria-labelledby="heading-bachelor-other" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-other" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/digital-arts-and-technology">Digital Arts and Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/podiatric-medicine">Podiatric Medicine</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+
+  <script>
+  if ( $('#accordion-bachelor .panel-collapse').length == 1 ) {
+    // If Programmes at this level all fall into the same Discipline, expand it
+    $('#accordion-bachelor .panel-collapse').collapse('show');
+  }
+
+
+  $('.panel-collapse').on('shown.bs.collapse', function (e) {
+      var panel = $(this).closest('div.panel');
+      var panelTop = panel[0].getBoundingClientRect().top;
+      var navHeight = document.getElementById("navbar").offsetHeight;
+      var navBottom = document.getElementById("navbar").getBoundingClientRect().bottom;
+      
+      var visibleFromHere = Math.max(0, navBottom); // navBottom might be negative on desktop
+      
+      if (panelTop < visibleFromHere) {
+        // If the just expanded panel's top is above what's visible in the viewport, scroll up.
+        $('html,body').animate({
+            scrollTop: panel.offset().top-visibleFromHere-25
+        }, 500); 
+      }
+  }); 
+  </script>
+
+        </div>
+      
+        <div id="tab-master" class="tab-pane">
+          <h4>Masters at NUI Galway</h4>
+            <div aria-multiselectable="true" role="tablist" id="accordion-master" class="panel-group">
+
+      <div class="panel panel-default"> <a title="Art, Design &amp; Media" aria-controls="collapse-master-1" aria-expanded="false" href="#collapse-master-1" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-1" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Art, Design &amp; Media <span class="discipline-programmes-count">(10)</span></span> </a>
+        <div aria-labelledby="heading-master-1" role="tabpanel" class="panel-collapse collapse" id="collapse-master-1" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/digital-media-d0d4cfc8-c9d6-46ed-a1f6-d8d3fb4fd46e">Digital Media</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/drama-and-theatre-studies-0b633cb0-31e0-4d6c-81f2-bf82c474e422">Drama and Theatre Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/film-production-and-direction">Film Production and Direction</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/film-studies-theory-and-practice">Film Studies: Theory and Practice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/fine-art-in-studio-art">Fine Art in Studio Art</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/irish-studies-literature-music">Irish Studies—Literature &amp; Music</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/journalism-494c4868-09c7-4e41-8641-a0fdc9085510">Journalism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/playwriting-dramaturgy">Playwriting &amp; Dramaturgy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/sports-journalism-and-communication">Sports Journalism and Communication</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/theatre-practice-and-production">Theatre Practice and Production</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Business &amp; Management" aria-controls="collapse-master-2" aria-expanded="false" href="#collapse-master-2" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-2" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Business &amp; Management <span class="discipline-programmes-count">(18)</span></span> </a>
+        <div aria-labelledby="heading-master-2" role="tabpanel" class="panel-collapse collapse" id="collapse-master-2" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/accounting-2e8e62e1-c543-439b-a13d-63ad098957af">Accounting</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/aginnovation-agricultural-innovation-entrepreneurship">AgInnovation: Agricultural Innovation &amp; Entrepreneurship</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/business-analytics-7ad930f0-3f73-47d3-adef-ca896a92b48c">Business Analytics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/business-and-hospitality">Business and Hospitality</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/corporate-finance-b3fc4081-0845-47e5-8868-7d4ea8db1e90">Corporate Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/digital-marketing-7ab8c2dd-ee96-43c0-82a2-212b59b57fac">Digital Marketing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/human-resource-management-714dce10-c987-4390-8b59-17a4c8dae03c">Human Resource Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/international-accounting-and-analytics">International Accounting and Analytics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/international-accounting-and-analytics-pathway-a">International Accounting and Analytics—Pathway A</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/international-accounting-and-analytics-pathway-b">International Accounting and Analytics—Pathway B</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/international-finance-c476147a-d57b-430d-84a8-b08cb3a8073e">International Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/international-management-b3a1fc72-1536-47d4-b752-5b976eeb1ff9">International Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/international-marketing-and-entrepreneurship-13ee5510-0020-459b-a3f4-06dfc06e3d26">International Marketing and Entrepreneurship</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/marketing-management-672051ef-991e-48eb-afef-985cbb444bb9">Marketing Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/marketing-practice-7d2bb64c-967c-4974-a0e7-4a28c4876916">Marketing Practice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/master-of-business-administration-4f7a8079-39d6-4227-80fd-10af2f1d44c7">Master of Business Administration</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/strategy-innovation-and-people-management">Strategy, Innovation and People Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/techinnovation">TechInnovation</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Computer Science &amp; IT" aria-controls="collapse-master-62" aria-expanded="false" href="#collapse-master-62" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-62" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Computer Science &amp; IT <span class="discipline-programmes-count">(9)</span></span> </a>
+        <div aria-labelledby="heading-master-62" role="tabpanel" class="panel-collapse collapse" id="collapse-master-62" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/computer-science-artificial-intelligence">Computer Science - Artificial Intelligence</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/computer-science-artificial-intelligence-eb144861-5b3c-4d9d-875f-0375f457b9ae">Computer Science—Artificial Intelligence</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/computer-science-data-analytics">Computer Science—Data Analytics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/electronic-computer-engineering-a5a764ef-17c9-4c75-918b-4d50785d3746">Electronic &amp; Computer Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/enterprise-systems">Enterprise Systems</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/information-systems-management-91b8bb24-b8bc-4071-955e-01bf77768b9e">Information Systems Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/software-design-and-development">Software Design and Development</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/software-engineering-and-database-technologies">Software Engineering and Database Technologies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/technology-management-67d2f8bf-77fb-4c30-adee-04f920af633e">Technology Management</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Engineering &amp; Technology" aria-controls="collapse-master-3" aria-expanded="false" href="#collapse-master-3" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-3" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Engineering &amp; Technology <span class="discipline-programmes-count">(11)</span></span> </a>
+        <div aria-labelledby="heading-master-3" role="tabpanel" class="panel-collapse collapse" id="collapse-master-3" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/biomedical-engineering-f1ad1c67-b518-4385-a496-fc29941df7e7">Biomedical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/biomedical-engineering-78295bd0-15df-4046-943f-dcb40b6e5c9a">Biomedical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/biotechnology-f1c7a566-5526-487e-8ed7-a93aeb12849b">Biotechnology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/civil-engineering-1b6bea57-242d-4212-9491-37537dfc775b">Civil Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/computational-genomics">Computational Genomics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/electrical-electronic-engineering-c066e8cf-d8d4-4570-8705-86b1386fc214">Electrical &amp; Electronic Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/electronic-computer-engineering-a5a764ef-17c9-4c75-918b-4d50785d3746">Electronic &amp; Computer Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/energy-systems-engineering-90634fe4-0643-448e-b85f-3aad5f997f40">Energy Systems Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/mechanical-engineering-8857c708-aec5-4059-ba2d-28d1dfd4ef98">Mechanical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/mechanical-engineering-035417ad-3388-43b4-88ef-a35df17624bc">Mechanical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/occupational-safety-engineering-and-ergonomics">Occupational Safety Engineering and Ergonomics</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Environment &amp; Agriculture" aria-controls="collapse-master-63" aria-expanded="false" href="#collapse-master-63" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-63" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Environment &amp; Agriculture <span class="discipline-programmes-count">(11)</span></span> </a>
+        <div aria-labelledby="heading-master-63" role="tabpanel" class="panel-collapse collapse" id="collapse-master-63" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/aginnovation-agricultural-innovation-entrepreneurship">AgInnovation: Agricultural Innovation &amp; Entrepreneurship</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/art-and-ecology">Art and Ecology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/biodiversity-land-use-planning">Biodiversity &amp; Land-Use Planning</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/climate-change-agriculture-and-food-security">Climate Change, Agriculture and Food Security</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/coastal-marine-environments-physical-processes-policy-practi">Coastal &amp; Marine Environments: Physical Processes, Policy &amp; Practice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/environmental-leadership">Environmental Leadership</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/environment-society-and-development">Environment, Society, and Development</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/occupational-and-environmental-health-safety">Occupational and Environmental Health &amp; Safety</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/rural-futures-planning-and-innovation">Rural Futures Planning and Innovation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/sustainable-environments">Sustainable Environments</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/sustainable-resource-management-policy-and-practice-inter-in">Sustainable Resource Management: Policy and Practice, inter-institutional programme</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Humanities" aria-controls="collapse-master-64" aria-expanded="false" href="#collapse-master-64" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-64" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Humanities <span class="discipline-programmes-count">(21)</span></span> </a>
+        <div aria-labelledby="heading-master-64" role="tabpanel" class="panel-collapse collapse" id="collapse-master-64" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/advanced-language-skills">Advanced Language Skills</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/applied-multilingualism">Applied Multilingualism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/classics-c8947be0-74c6-4219-945d-ab93d5326187">Classics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/conference-interpreting">Conference Interpreting</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/english-bf1a6e7d-063e-4218-94de-97c2302a94db">English</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/french-e65b9c4f-8adb-4eb2-9bdf-884983514364">French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/german-literature-language">German Literature/Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/history-804a607e-ddd2-4c74-a3aa-c4cb3dbf325a">History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/international-contemporary-literatures-and-media">International Contemporary Literatures and Media</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/irish-studies-literature-history">Irish Studies—Literature &amp; History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/irish-studies-literature-music">Irish Studies—Literature &amp; Music</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/irish-theatre-history-archives">Irish Theatre History &amp; Archives</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/landscape-archaeology">Landscape Archaeology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/literature-and-publishing">Literature and Publishing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/medieval-studies-8bd56e73-c33e-4d19-aeb4-adf67a9edcf9">Medieval Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/old-and-middle-irish">Old and Middle Irish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/playwriting-dramaturgy">Playwriting &amp; Dramaturgy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/spanish">Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/translation-studies-66dc395c-e641-4031-b63d-92f7ab30ddb2">Translation Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/values-knowledge-philosophy">Values &amp; Knowledge (Philosophy)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/writing">Writing</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Law" aria-controls="collapse-master-4" aria-expanded="false" href="#collapse-master-4" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-4" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Law <span class="discipline-programmes-count">(6)</span></span> </a>
+        <div aria-labelledby="heading-master-4" role="tabpanel" class="panel-collapse collapse" id="collapse-master-4" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/international-and-comparative-disability-law-and-policy">International and Comparative Disability Law and Policy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/international-comparative-business-law">International &amp; Comparative Business Law</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/international-criminal-law">International Criminal Law</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/international-migration-and-refugee-law-and-policy">International Migration and Refugee Law and Policy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/peace-operations-humanitarian-law-and-conflict">Peace Operations, Humanitarian Law and Conflict</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/public-law">Public Law</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Medicine &amp; Health" aria-controls="collapse-master-5" aria-expanded="false" href="#collapse-master-5" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-5" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Medicine &amp; Health <span class="discipline-programmes-count">(27)</span></span> </a>
+        <div aria-labelledby="heading-master-5" role="tabpanel" class="panel-collapse collapse" id="collapse-master-5" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/advanced-healthcare-practice-and-research">Advanced Healthcare Practice and Research</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/biomedical-engineering-78295bd0-15df-4046-943f-dcb40b6e5c9a">Biomedical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/biomedical-engineering-f1ad1c67-b518-4385-a496-fc29941df7e7">Biomedical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/biomedical-genomics">Biomedical Genomics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/biomedical-science-e068bdba-a37b-4777-8219-51a75acdf190">Biomedical Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/biomedical-science-continuous-flexible">Biomedical Science—continuous/flexible</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/cheminformatics-and-toxicology">Cheminformatics and Toxicology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/children-s-palliative-care-complex-care">Children&#39;s Palliative Care/Complex Care</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/clinical-research-e8cbd498-6c1c-4ae6-a265-7f2df9b63fa5">Clinical Research</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/diabetes">Diabetes</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/health-economics-49e7d430-e965-4909-a76b-a8b7fd0d5c79">Health Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/health-promotion-fc779242-221f-403a-8516-e67a43aafd06">Health Promotion</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/medical-physics-3c023950-ef4e-43cd-ae6b-94df3b574b98">Medical Physics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/neuropharmacology">Neuropharmacology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/nursing-acute-medicine">Nursing: Acute Medicine</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/nursing-advanced-practice-nursing">Nursing: Advanced Practice Nursing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/nursing-advanced-practice-with-prescribing">Nursing: Advanced Practice with Prescribing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/nursing-education">Nursing Education</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/nursing-emergency-care">Nursing: Emergency Care</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/nursing-gerontology">Nursing: Gerontology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/nursing-intensive-care">Nursing: Intensive Care</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/nursing-oncology-and-haematology">Nursing: Oncology and Haematology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/nursing-palliative-care-00e947b3-b148-4c1a-9cab-5614cb82b3b0">Nursing: Palliative Care</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/nursing-perioperative">Nursing: Perioperative</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/nursing-public-health-nursing">Nursing—Public Health Nursing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/preventive-cardiology">Preventive Cardiology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/surgery-masters-in">Surgery, Masters in</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Natural Sciences &amp; Mathematics" aria-controls="collapse-master-6" aria-expanded="false" href="#collapse-master-6" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-6" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Natural Sciences &amp; Mathematics <span class="discipline-programmes-count">(4)</span></span> </a>
+        <div aria-labelledby="heading-master-6" role="tabpanel" class="panel-collapse collapse" id="collapse-master-6" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/astronomical-instrumentation-and-technology">Astronomical Instrumentation and Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/mathematics-bee6c383-d8dc-4c27-ba38-e2984606cc3a">Mathematics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/medical-physics-3c023950-ef4e-43cd-ae6b-94df3b574b98">Medical Physics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/toxicology-33a25d9d-d825-439e-8dc4-9819bc082de0">Toxicology</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Social Sciences" aria-controls="collapse-master-7" aria-expanded="false" href="#collapse-master-7" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-7" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Social Sciences <span class="discipline-programmes-count">(17)</span></span> </a>
+        <div aria-labelledby="heading-master-7" role="tabpanel" class="panel-collapse collapse" id="collapse-master-7" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/ageing-and-public-policy">Ageing and Public Policy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/applied-behaviour-analysis">Applied Behaviour Analysis</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/childhood-speech-language-communication-needs">Childhood Speech, Language &amp; Communication Needs</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/clinical-education-55794df9-41e9-4624-a234-f78a7a749e6f">Clinical Education</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/culture-and-colonialism">Culture and Colonialism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/education-c2ffbe03-a20e-43a4-9329-5a0bc92bf08b">Education</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/education-in-design-learning-and-technology">Education in Design, Learning and Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/education-leadership">Education Leadership</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/environment-society-and-development">Environment, Society, and Development</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/family-support-studies">Family Support Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/global-environmental-economics">Global Environmental Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/global-women-s-studies-gender-globalisation-and-rights">Global Women&#39;s Studies: Gender, Globalisation and Rights</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/health-economics-49e7d430-e965-4909-a76b-a8b7fd0d5c79">Health Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/health-psychology-413becd2-3e13-48d0-853d-ad7a126fc934">Health Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/international-human-rights">International Human Rights</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/politics-and-sociology">Politics and Sociology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/social-work-22066348-3544-4eae-ad63-a5f37533929b">Social Work</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default" id="panel-master-other"> <a title="Other subjects" aria-controls="collapse-master-other" aria-expanded="false" href="#collapse-master-other" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-other" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Other subjects</span> <span class="discipline-programmes-count">(17)</span></a>
+        <div aria-labelledby="heading-master-other" role="tabpanel" class="panel-collapse collapse" id="collapse-master-other" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/cellular-manufacturing-and-therapy">Cellular Manufacturing and Therapy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/clinical-neuroscience">Clinical Neuroscience</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/creative-arts-producing-and-curation">Creative Arts: Producing and Curation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/digital-cultures">Digital Cultures</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/endovascular-surgery">Endovascular Surgery</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/exercise-physiology-and-its-application-in-therapy">Exercise Physiology and its Application in Therapy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/global-media-and-communication">Global Media and Communication</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/healthcare-simulation-and-patient-safety">Healthcare Simulation and Patient Safety</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/health-sciences-wound-healing-and-tissue-repair">Health Sciences (Wound Healing and Tissue Repair)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/medical-science">Medical Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/medical-technology-regulatory-affairs-d9c74494-7eff-422f-9acc-06c2d8c5896c">Medical Technology Regulatory Affairs</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/microscopy-and-imaging">Microscopy and Imaging</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/multidisciplinary-radiology">Multidisciplinary Radiology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/occupational-health-safety-top-up">Occupational Health &amp; Safety Top Up</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/podiatric-medicine-8f42f919-b17d-4167-a48b-ad5854eaf37f">Podiatric Medicine</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/public-advocacy-and-activism">Public Advocacy and Activism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/regenerative-medicine">Regenerative Medicine</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+
+  <script>
+  if ( $('#accordion-master .panel-collapse').length == 1 ) {
+    // If Programmes at this level all fall into the same Discipline, expand it
+    $('#accordion-master .panel-collapse').collapse('show');
+  }
+
+
+  $('.panel-collapse').on('shown.bs.collapse', function (e) {
+      var panel = $(this).closest('div.panel');
+      var panelTop = panel[0].getBoundingClientRect().top;
+      var navHeight = document.getElementById("navbar").offsetHeight;
+      var navBottom = document.getElementById("navbar").getBoundingClientRect().bottom;
+      
+      var visibleFromHere = Math.max(0, navBottom); // navBottom might be negative on desktop
+      
+      if (panelTop < visibleFromHere) {
+        // If the just expanded panel's top is above what's visible in the viewport, scroll up.
+        $('html,body').animate({
+            scrollTop: panel.offset().top-visibleFromHere-25
+        }, 500); 
+      }
+  }); 
+  </script>
+
+        </div>
+      
+        <div id="tab-doctorate" class="tab-pane">
+          <h4>Doctorates at NUI Galway</h4>
+            <div aria-multiselectable="true" role="tablist" id="accordion-doctorate" class="panel-group">
+
+      <div class="panel panel-default"> <a title="Art, Design &amp; Media" aria-controls="collapse-doctorate-1" aria-expanded="false" href="#collapse-doctorate-1" data-parent="#accordion-doctorate" data-toggle="collapse" id="heading-doctorate-1" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Art, Design &amp; Media <span class="discipline-programmes-count">(3)</span></span> </a>
+        <div aria-labelledby="heading-doctorate-1" role="tabpanel" class="panel-collapse collapse" id="collapse-doctorate-1" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/drama-and-theatre-studies-ee0299b0-cb6d-4c53-923c-34976c7c575e">Drama and Theatre Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/film-studies-13501">Film Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/studio-art">Studio Art</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Business &amp; Management" aria-controls="collapse-doctorate-2" aria-expanded="false" href="#collapse-doctorate-2" data-parent="#accordion-doctorate" data-toggle="collapse" id="heading-doctorate-2" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Business &amp; Management <span class="discipline-programmes-count">(1)</span></span> </a>
+        <div aria-labelledby="heading-doctorate-2" role="tabpanel" class="panel-collapse collapse" id="collapse-doctorate-2" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/commerce-a6cef601-57cf-4c38-afd3-70b3e5098b75">Commerce</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Computer Science &amp; IT" aria-controls="collapse-doctorate-62" aria-expanded="false" href="#collapse-doctorate-62" data-parent="#accordion-doctorate" data-toggle="collapse" id="heading-doctorate-62" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Computer Science &amp; IT <span class="discipline-programmes-count">(2)</span></span> </a>
+        <div aria-labelledby="heading-doctorate-62" role="tabpanel" class="panel-collapse collapse" id="collapse-doctorate-62" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/data-analytics-engineering">Data Analytics (Engineering)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/information-technology-9f660165-ce5b-40b4-9866-b150aea977a4">Information Technology</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Engineering &amp; Technology" aria-controls="collapse-doctorate-3" aria-expanded="false" href="#collapse-doctorate-3" data-parent="#accordion-doctorate" data-toggle="collapse" id="heading-doctorate-3" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Engineering &amp; Technology <span class="discipline-programmes-count">(5)</span></span> </a>
+        <div aria-labelledby="heading-doctorate-3" role="tabpanel" class="panel-collapse collapse" id="collapse-doctorate-3" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/biochemistry-9a91f87f-bc20-43a2-bce4-77668a335b93">Biochemistry</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/civil-engineering-8b1a766a-2a82-427e-a7bf-5fae7d83d843">Civil Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/electrical-and-electronic-engineering-b9cf47ae-dd76-4916-beb7-d954c2ad615b">Electrical and Electronic Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/industrial-engineering">Industrial Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/mechanical-and-biomedical-engineering">Mechanical and Biomedical Engineering</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Humanities" aria-controls="collapse-doctorate-64" aria-expanded="false" href="#collapse-doctorate-64" data-parent="#accordion-doctorate" data-toggle="collapse" id="heading-doctorate-64" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Humanities <span class="discipline-programmes-count">(2)</span></span> </a>
+        <div aria-labelledby="heading-doctorate-64" role="tabpanel" class="panel-collapse collapse" id="collapse-doctorate-64" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/language-science">Language Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/speech-and-language-therapy-67a9a66d-be2e-4f51-9d7f-3040a4027f1f">Speech and Language Therapy</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Law" aria-controls="collapse-doctorate-4" aria-expanded="false" href="#collapse-doctorate-4" data-parent="#accordion-doctorate" data-toggle="collapse" id="heading-doctorate-4" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Law <span class="discipline-programmes-count">(2)</span></span> </a>
+        <div aria-labelledby="heading-doctorate-4" role="tabpanel" class="panel-collapse collapse" id="collapse-doctorate-4" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/disability-law-policy">Disability Law &amp; Policy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/law-5b80aff8-1d13-42fd-8331-a264fceb11f9">Law</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Medicine &amp; Health" aria-controls="collapse-doctorate-5" aria-expanded="false" href="#collapse-doctorate-5" data-parent="#accordion-doctorate" data-toggle="collapse" id="heading-doctorate-5" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Medicine &amp; Health <span class="discipline-programmes-count">(11)</span></span> </a>
+        <div aria-labelledby="heading-doctorate-5" role="tabpanel" class="panel-collapse collapse" id="collapse-doctorate-5" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/anaesthesia">Anaesthesia</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/anatomy">Anatomy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/health-promotion-be8b2669-04f5-4665-bb0e-a7058dc4e02c">Health Promotion</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/medicine-5ea6d335-35c6-43e8-a234-9d256d0ae6ec">Medicine</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/nursing-midwifery">Nursing &amp; Midwifery</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/obstetrics-and-gynaecology-443e7745-d034-47d5-81cc-9839beef1899">Obstetrics and Gynaecology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/occupational-therapy-3eb580c1-db15-431a-a099-809bd83409f3">Occupational Therapy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/paediatrics">Paediatrics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/pharmacology-and-therapeutics">Pharmacology and Therapeutics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/physiology-d312efb1-7de4-4804-95cc-8442f47b08b0">Physiology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/surgery">Surgery</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Natural Sciences &amp; Mathematics" aria-controls="collapse-doctorate-6" aria-expanded="false" href="#collapse-doctorate-6" data-parent="#accordion-doctorate" data-toggle="collapse" id="heading-doctorate-6" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Natural Sciences &amp; Mathematics <span class="discipline-programmes-count">(2)</span></span> </a>
+        <div aria-labelledby="heading-doctorate-6" role="tabpanel" class="panel-collapse collapse" id="collapse-doctorate-6" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/bacteriology">Bacteriology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/biochemistry-9a91f87f-bc20-43a2-bce4-77668a335b93">Biochemistry</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Social Sciences" aria-controls="collapse-doctorate-7" aria-expanded="false" href="#collapse-doctorate-7" data-parent="#accordion-doctorate" data-toggle="collapse" id="heading-doctorate-7" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Social Sciences <span class="discipline-programmes-count">(6)</span></span> </a>
+        <div aria-labelledby="heading-doctorate-7" role="tabpanel" class="panel-collapse collapse" id="collapse-doctorate-7" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/clinical-psychology-abc91233-a4d4-45f2-9b4f-4bea29244e87">Clinical Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/education-d4ef0c0a-5d25-4128-ad3c-9885d8829878">Education</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/human-rights-cb7a66a7-0d91-4dd5-95d5-4a4d3f72bb30">Human Rights</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/psychiatry">Psychiatry</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/psychology-77da3c60-ffbf-4b60-a46e-f9e5802ee12c">Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/speech-and-language-therapy-67a9a66d-be2e-4f51-9d7f-3040a4027f1f">Speech and Language Therapy</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default" id="panel-doctorate-other"> <a title="Other subjects" aria-controls="collapse-doctorate-other" aria-expanded="false" href="#collapse-doctorate-other" data-parent="#accordion-doctorate" data-toggle="collapse" id="heading-doctorate-other" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Other subjects</span> <span class="discipline-programmes-count">(7)</span></a>
+        <div aria-labelledby="heading-doctorate-other" role="tabpanel" class="panel-collapse collapse" id="collapse-doctorate-other" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/nui-galway/celt">CELT</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/general-practice">General Practice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/pathology">Pathology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/podiatric-medicine-2aeba473-4472-4e9b-9db8-bfa20841b900">Podiatric Medicine</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/radiology">Radiology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/remedi-medicine">REMEDI (Medicine)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/nui-galway/ryan-institute-science">Ryan Institute (Science)</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+
+  <script>
+  if ( $('#accordion-doctorate .panel-collapse').length == 1 ) {
+    // If Programmes at this level all fall into the same Discipline, expand it
+    $('#accordion-doctorate .panel-collapse').collapse('show');
+  }
+
+
+  $('.panel-collapse').on('shown.bs.collapse', function (e) {
+      var panel = $(this).closest('div.panel');
+      var panelTop = panel[0].getBoundingClientRect().top;
+      var navHeight = document.getElementById("navbar").offsetHeight;
+      var navBottom = document.getElementById("navbar").getBoundingClientRect().bottom;
+      
+      var visibleFromHere = Math.max(0, navBottom); // navBottom might be negative on desktop
+      
+      if (panelTop < visibleFromHere) {
+        // If the just expanded panel's top is above what's visible in the viewport, scroll up.
+        $('html,body').animate({
+            scrollTop: panel.offset().top-visibleFromHere-25
+        }, 500); 
+      }
+  }); 
+  </script>
+
+        </div>
+    </div>
+    
+    <script>
+      $('.nav-tabs a:first').tab('show'); // Make sure the first tab is selected in case none of the rendered tabs are marked as active
+      
+      $('.nav-tabs a[href="#tab-bachelor"]').tab('show');
+    </script>
+    
+    
+    
+    
+    <h3>Rankings</h3>
+    
+      <p>
+        NUI Galway belongs to the top 300 universities in the world and the top 150 universities in Europe.
+      </p>
+    
+    <table class="table table-bordered table-striped">
+      <thead>
+        <th>Ranking</th>
+        <th>Year</th>
+        <th>Rank <br/> (in the world)</th>
+        <th>Rank <br/> (in Europe)</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Times Higher Education World University Rankings</td>
+          <td>2020</td>
+          <td class="text-right">251</td>
+          <td class="text-right">124</td>
+        </tr>
+        <tr>
+          <td>QS World University Rankings</td>
+          <td>2020</td>
+          <td class="text-right">259</td>
+          <td class="text-right">113</td>
+        </tr>
+        <tr>
+          <td>Shanghai Jiao Tong Academic Ranking of World Universities</td>
+          <td>2019</td>
+          <td class="text-right">501</td>
+          <td class="text-right">195</td>
+        </tr>
+      </tbody>
+    </table>
+    
+      <a href="/best-universities/ireland">Check out the 10 best universities in Ireland</a>
+    
+    
+    
+
+    
+      <div>
+        <h2>You might be interested in this:</h2>
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/article/the-top-8-phrases-to-know-when-studying-in-ireland">
+              <div class="thumbnail home-country-card">  
+                    <img alt="The top 8 phrases to know when studying in Ireland" title="The top 8 phrases to know when studying in Ireland" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/172/slideshow_4436418878_7cdb5a639e_o.jpg" />
+                  <div class="caption">
+                    <strong>The top 8 phrases to know when studying in Ireland</strong>              
+                  </div>
+              </div>
+</a>          </div>
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/article/a-brief-history-of-academic-scarves">
+              <div class="thumbnail home-country-card">  
+                    <img alt="A brief history of academic scarves" title="A brief history of academic scarves" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/227/slideshow_C170724NG_097_fitted.jpg" />
+                  <div class="caption">
+                    <strong>A brief history of academic scarves</strong>              
+                  </div>
+              </div>
+</a>          </div>
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/country/ireland">
+              <div class="thumbnail home-country-card">  
+                    <img alt="Study in Ireland" title="Study in Ireland" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/118/slideshow_ireland-cliffs-of-moher.jpg" />
+                  <div class="caption">
+                    <strong>Study in Ireland</strong>              
+                  </div>                  
+                
+              </div>
+</a>          </div>
+        </div>
+      </div>  
+    
+    </div>
+
+
+    
+
+
+    
+    
+    
+    
+    
+    
+  </div>
+  
+</div>
+
+
+<script>
+
+  $('[data-toggle="tooltip"]').tooltip();
+
+  $( function() {
+    $( ".accordion" ).accordion({
+      heightStyle: "content"
+    });
+  } );
+  
+  
+  handler = Gmaps.build('Google');
+  handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+    markers = handler.addMarkers([
+      {
+        "lat": 0,
+        "lng": 0,
+      }
+    ]);
+    handler.bounds.extendWith(markers);
+    handler.fitMapToBounds();
+  });
+  
+  
+  
+  
+</script>
+  
+
+    
+
+  
+  
+  <footer class="top-footer">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Merriweather Sans:300,400i,700']
+      }
+    });
+  </script> 
+
+  
+  <div class="container">
+  <div class="row">
+    
+    <div class="text-left col-md-8 col-xs-6" style="display: inline-block;float: left;">
+      <a href="/" title="Study.EU" data-track-click="true" data-event-category="Footer Logo"><img class="footer-logo" src="/assets/study-eu_logo_wb_200x66-8722da28bad82460d8951c34fe8b5ba8e11794b2fd21e83ee8c5fe54323ea73b.png" /></a><br />
+      <p>
+        Copyright &copy; 2021 <a title="Study.EU" href="/">Study.EU</a>
+      </p>
+      <p>
+        
+      </p>
+      <a class="social-link" href="https://www.facebook.com/StudyEU-168756646881605/" target="_blank" title="Like Study.EU on Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://twitter.com/wwwStudyEU" target="_blank" title="Follow Study.EU on Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://www.linkedin.com/company/study.eu/" target="_blank" title="Follow Study.EU on Linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    </div>
+    <div class="text-right col-md-4 col-xs-6">
+      <br /><br />
+          <a rel="nofollow" href="/page/imprint">Imprint</a>
+        &middot;
+          <a rel="nofollow" href="/page/about-study-eu">About Study.eu</a>
+        &middot;
+          <a rel="nofollow" href="/page/privacy-policy">Privacy Policy</a>
+        &middot;
+      <a href="/jobs">Jobs</a>
+      
+      <br />
+      
+      <a href="/press">Press</a>
+      
+      <!-- &middot; -->
+      
+        <!-- &mdash; //-->
+      
+      <br /><br />
+      <a href="/advertise-on-study-eu">Advertise on Study.eu</a>
+    </div>
+  </div>
+  </div>
+</footer>
+
+<a href="javascript:" id="scroll-to-top" title="Scroll back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+<script>
+  $(window).scroll(function() {
+      if ($(this).scrollTop() >= 100) {        // page is scrolled more than 100px
+          $('#scroll-to-top').fadeIn(500);
+      } else {
+          $('#scroll-to-top').fadeOut(500);
+      }
+  });
+  $('#scroll-to-top').click(function() {      // arrow is clicked
+      $('body,html').animate({
+          scrollTop : 0                       // scroll to top
+      }, 500);
+  });
+</script>
+
+
+  
+  <footer class="footer-countries">
+
+
+  <div class="container">
+    <div class="row">
+    
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <h5>Study in Europe:</h5>
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Austria" href="/country/austria">Austria</a><br />
+                <a title="Study in Belgium" href="/country/belgium">Belgium</a><br />
+                <a title="Study in the Czech Republic" href="/country/czech-republic">Czech Republic</a><br />
+                <a title="Study in Denmark" href="/country/denmark">Denmark</a><br />
+                <a title="Study in Estonia" href="/country/estonia">Estonia</a><br />
+                <a title="Study in the Faroe Islands" href="/country/faroe-islands">Faroe Islands</a><br />
+                <a title="Study in Finland" href="/country/finland">Finland</a><br />
+                <a title="Study in France" href="/country/france">France</a><br />
+                <a title="Study in Germany" href="/country/germany">Germany</a><br />
+                <a title="Study in Greece" href="/country/greece">Greece</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Hungary" href="/country/hungary">Hungary</a><br />
+                <a title="Study in Iceland" href="/country/iceland">Iceland</a><br />
+                <a title="Study in Ireland" href="/country/ireland">Ireland</a><br />
+                <a title="Study in Italy" href="/country/italy">Italy</a><br />
+                <a title="Study in Latvia" href="/country/latvia">Latvia</a><br />
+                <a title="Study in Liechtenstein" href="/country/liechtenstein">Liechtenstein</a><br />
+                <a title="Study in Lithuania" href="/country/lithuania">Lithuania</a><br />
+                <a title="Study in Malta" href="/country/malta">Malta</a><br />
+                <a title="Study in the Netherlands" href="/country/netherlands">Netherlands</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Norway" href="/country/norway">Norway</a><br />
+                <a title="Study in Poland" href="/country/poland">Poland</a><br />
+                <a title="Study in Portugal" href="/country/portugal">Portugal</a><br />
+                <a title="Study in Romania" href="/country/romania">Romania</a><br />
+                <a title="Study in Russia" href="/country/russia">Russia</a><br />
+                <a title="Study in Spain" href="/country/spain">Spain</a><br />
+                <a title="Study in Sweden" href="/country/sweden">Sweden</a><br />
+                <a title="Study in Switzerland" href="/country/switzerland">Switzerland</a><br />
+                <a title="Study in the United Kingdom" href="/country/united-kingdom">United Kingdom</a><br />
+            </div>
+          </div>
+        </div>
+    
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Recent articles:</h5>
+          </div>
+          <div class="col-md-8">
+              <p><a href="/article/study-ecology">Study Ecology: All you need to know</a></p>
+              <p><a href="/article/fafsa-eligible-universities-colleges-in-europe">FAFSA: Eligible universities &amp; colleges in Europe</a></p>
+              <p><a href="/article/study-zoology">Study Zoology: All you need to know</a></p>
+              <p><a href="/article/impact-of-covid-19-on-studying-abroad-in-europe-overview">Impact of COVID-19 on studying abroad in Europe: Overview</a></p>
+              <p><a href="/article/what-is-the-ects-european-credit-transfer-and-accumulation-system">What is the European Credit Transfer System (ECTS)?</a></p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  
+  </div>
+
+</footer>
+
+  
+  <footer class="footer-press">
+  <div class="container">
+    <div class="row footer-press-description">
+      <div class="col-md-12 text-center">
+        Study.EU has been mentioned in numerous news publications worldwide, such as:
+      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="L&#39;Étudiant (France)" title="L&#39;Étudiant (France)" data-src="/assets/press/letudiant_gray_200-57bccbdceaef3c62c8660629603372823c98afe433bd39bf6d42a73263c113c3.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Frankfurter Allgemeine (Germany)" title="Frankfurter Allgemeine (Germany)" data-src="/assets/press/faz_gray_300-b6e5e6022a7b164c24b69a51fb97a72715018db745fbcda8580675a507370b8b.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Standard (Hong Kong)" title="The Standard (Hong Kong)" data-src="/assets/press/the-standard-hong-kong_gray_200-f124ca057d2671730e1f6d996377ef4614a28ccf04ae04f730eaf16ed7ee0b46.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Independent (UK)" title="The Independent (UK)" data-src="/assets/press/the-independent-uk_gray_300-63238e279b3c62b1f87faf17fcbcf1f14a2e5b9229193a0431fc974da217d159.png" class="lazyload" />
+</a>      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Al-Masry Al-Youm (Egypt)" title="Al-Masry Al-Youm (Egypt)" data-src="/assets/press/al-masry_al-youm_gray_200-9d8e503cd53ec4d955c3e6f7bf2a1c0badb500a0d2bd8a1ef1d11acd686879e5.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Le Monde (France)" title="Le Monde (France)" data-src="/assets/press/le-monde_gray_200-24d8bca493f3a2b8e0150cb4ef38f00c9924ac5e7acfbdb8750076c949c70052.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Local (Europe)" title="The Local (Europe)" data-src="/assets/press/the-local_gray_200-7631164ea94edf8d065b3af6f64274416162d866ce1cea737c3ee25f28cdd098.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Forbes (USA)" title="Forbes (USA)" data-src="/assets/press/forbes_gray_200-deff6ef2c28ec5a275f404c5f59d56f4b687881eb39de52b79b5add3ca609fe2.png" class="lazyload" />
+</a>      </div>
+    </div>
+  </div>
+</footer>
+
+  
+  
+  
+  
+    <div class="cookies-eu js-cookies-eu row">
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+    <div class="cookies-eu-content-holder col-md-4 col-sm-6 col-xs-6 align-self-center">
+      Cookies &amp; analytics help us deliver our services.
+        <a href="/page/privacy-policy" class="cookies-eu-link" target="_blank"> Privacy policy </a>
+    </div>
+    <div class="cookies-eu-button-holder col-md-4 col-sm-6 col-xs-6">
+      <button class="cookies-eu-ok js-cookies-eu-ok btn btn-lg btn-primary" data-track-click-ga="true" data-event-category="Cookie Consent Button"> OK </button>
+    </div>
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+  </div>
+
+  
+  <script>
+  // Improved Ahoy view tracking with additional attributes
+  var additionalProperties = {};
+    additionalProperties["country_id"] = 17;
+    mainTrackableLink = "";
+    additionalProperties["university_id"] = 587;
+    mainTrackableLink = "https://www.study.eu/link/university/nui-galway/from-profile";
+  console.log("Ahoy: View with additional properties: "+JSON.stringify(additionalProperties));
+  ahoy.trackView(additionalProperties);
+</script>
+<a name="ga"></a> <!-- GA //-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42442116-3', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+  
+  
+  
+    
+  //############################################################
+  //########## 2018-07    NEW CUSTOM METHODS          ##########
+  
+  function getDataTrackAttributes(element) {
+    var data = {};
+    [].forEach.call(element.attributes, function(attr) {
+      if (/^data-trackvalue-/.test(attr.name)) {
+        // Relevant attributes would always be called "data-track-foobar"
+        var underscorename = attr.name.substr(16).replace(/-/g, "_");
+        data[underscorename] = parseInt(attr.value) || attr.value; // Provide as integer if possible, otherwise the original string
+      }
+    });
+    return data;
+  }
+  
+  // Set data-track-click and utm_source for all external links in the description content
+  var content_links = document.querySelectorAll('div.content-description a');
+  for (var i = 0; i < content_links.length; i++) {
+    if ( ((new URL(content_links[i].href, document.baseURI).href) == mainTrackableLink) || (content_links[i].host !== window.location.host) ) {
+      // Link is the main trackable link, or link is external --> add tracking and utm_source if not present
+      utm_url = new URL(content_links[i].href);
+      utm_url.searchParams.set("utm_source", "Study.eu"); // add (or overwrite existing) utm_source parameter
+      content_links[i].href = utm_url;
+      content_links[i].classList.add("external-tracked");
+      content_links[i].setAttribute("data-event-category", "Outbound Link");
+      content_links[i].setAttribute("data-event-label", content_links[i].href);
+      content_links[i].setAttribute("data-track-click", "true"); // Once data-track-click is set to true, initDataAttributes() below will add the id values
+    }
+  }
+  console.log("Modified "+content_links.length+" links in description content.");
+  
+  // Set data attributes for tracking of footer press links
+  footerPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < footerPressLinks.length; i++) {
+    footerPressLinks[i].setAttribute("data-track-click-ga", "true");
+    footerPressLinks[i].setAttribute("data-event-category", "Footer Press Link");
+    footerPressLinks[i].setAttribute("data-event-label", window.location.href);
+  }
+  
+  relatedLinks = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < relatedLinks.length; i++) {
+    relatedLinks[i].setAttribute("data-track-click-ga", "true");
+    relatedLinks[i].setAttribute("data-event-category", "Related Link");
+    relatedLinks[i].setAttribute("data-event-label", relatedLinks[i].getAttribute("href"));
+  }  
+  
+  function initDataAttributes() {
+    // Initialise element data attributes based on backend instance variables
+    elements = document.querySelectorAll('[data-track-click="true"],[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+        if (!elements[i].hasAttribute("data-trackvalue-country-id")) {
+          elements[i].setAttribute("data-trackvalue-country-id", "17");
+        }
+      
+        if (!elements[i].hasAttribute("data-trackvalue-university-id")) {
+          elements[i].setAttribute("data-trackvalue-university-id", "587");
+        }
+      
+    }
+    console.log("initDataAttributes()");
+  }
+  initDataAttributes();
+    
+  function trackClick(event, trackGA = true, trackAhoy = true) {
+    // When an element was clicked, track the click in GA and Ahoy
+    
+    strEventLabel = "";
+    if        ( event.currentTarget.hasAttribute("data-event-label") ) {
+      strEventLabel = event.currentTarget.getAttribute("data-event-label");
+    } else if ( event.currentTarget.hasAttribute("href") ) {
+      strEventLabel = event.currentTarget.href;
+    }
+    
+    ga('send', 'event', {
+      eventCategory:  event.currentTarget.getAttribute("data-event-category"),
+      eventAction:    'click',
+      eventLabel:     strEventLabel
+    });
+    
+    data = getDataTrackAttributes(event.currentTarget);
+    data["href"] = event.target.href;
+    data["page"] = window.location.pathname;
+    
+    /*ahoy.track (
+      event.currentTarget.getAttribute("data-event-category"),
+      {
+        country_id: 17, 
+        university_id: 587, 
+        
+        href: event.target.href,
+        page: window.location.pathname
+      }
+    );*/
+    
+    if (trackAhoy) {
+        data["medium"] = "Profile";
+      ahoy.track (
+        event.currentTarget.getAttribute("data-event-category")+" - click",
+        data
+      );
+    }
+    
+    console.log("trackClick(event, trackGA = "+trackGA+", trackAhoy = "+trackAhoy+"): " +
+      event.currentTarget.getAttribute("data-event-category") + ", " +
+      "{country_id: 17, university_id: 587, href: " + event.target.href + ", " +
+      "page:"+window.location.pathname+"});"
+    );
+  }
+  
+  
+  function trackClicksGA() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click-ga="true"]:not([data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event, true, false);
+      });
+    }
+    console.log("trackClicksGA(): "+elements.length+" elements");
+  }
+  trackClicksGA();
+  
+  function trackClicks() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event);
+      });
+    }
+    console.log("trackClicks(): "+elements.length+" elements");
+  }
+  trackClicks();
+  
+  function trackRenderingsGA() {
+    // Track renderings only in GA
+    // This would be for large-volume data that is interesting, but not mission-critical
+
+    elements = document.querySelectorAll('[data-track-rendering-ga="true"]:not([data-track-rendering="true"])');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+    }
+    
+    console.log("trackRenderingsGA(): "+elements.length+" elements");
+  }
+  trackRenderingsGA();
+  
+  function trackRenderings() {
+    // Track renderings in GA *and* Ahoy
+    elements = document.querySelectorAll('[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+      
+      data = getDataTrackAttributes(elements[i]);
+      data["href"] = elements[i].getAttribute("href");
+      data["page"] = window.location.pathname;
+      
+      ahoy.track (
+        elements[i].getAttribute("data-event-category")+" - rendered",
+        data
+      );
+    }
+    
+    console.log("trackRenderings(): "+elements.length+" elements");
+  }
+  trackRenderings();
+  
+  
+  
+    ga('send', 'event', {
+      eventCategory:  'Country Content',
+      eventAction:    'rendered',
+      eventLabel:     'Ireland',
+      nonInteraction: true
+    });
+
+  
+  //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  //############################################################
+
+  
+  
+  /*
+  anchorsExternalTracked = document.getElementsByClassName("external-tracked");
+  for (var i = 0 ; i < anchorsExternalTracked.length; i++) {
+    anchorsExternalTracked[i].addEventListener("click", function(event){
+      //event.preventDefault();
+      
+      handleOutboundLinkClicks(event);
+      
+      //document.location = this.href;
+      //var win = window.open(this.href, '_blank');
+      //win.focus();
+      
+    });
+    
+    // Trigger event that shows in GA that the link was rendered
+    ga('send', 'event', {
+      eventCategory: 'Outbound Link',
+      eventAction: 'rendered',
+      eventLabel: anchorsExternalTracked[i].href
+    });   
+  }
+  
+  anchorsRelatedTracked = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < anchorsRelatedTracked.length; i++) {
+    anchorsRelatedTracked[i].addEventListener("click", function(event){
+      handleRelatedLinkClicks(event);
+    });
+  }
+  
+  anchorsFeaturedUniversityTracked = document.getElementsByClassName("featured-university-tracked");
+  for (var i = 0 ; i < anchorsFeaturedUniversityTracked.length; i++) {
+    anchorsFeaturedUniversityTracked[i].addEventListener("click", function(event){
+      handleFeaturedUniversityLinkClicks(event);
+    });
+  }  
+  
+  
+  anchorsFooterPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < anchorsFooterPressLinks.length; i++) {
+    anchorsFooterPressLinks[i].addEventListener("click", function(event){
+      handleFooterPressLinkClicks(event);
+    });
+  }
+  
+  
+  anchorsCustomTracked = document.querySelectorAll('[data-ga-custom-event-label]');
+  for (var i = 0 ; i < anchorsCustomTracked.length; i++) {
+    anchorsCustomTracked[i].addEventListener("click", function(event){
+      handleCustomTracked(event);
+    });
+  }
+  */
+  
+  ////////////////////////////////////////////////////////////////////////////////
+
+  
+  
+</script>
+
+</body>
+</html>

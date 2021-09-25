@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"cb4ef145dd","applicationID":"55169925","transactionName":"Jg5fTRMJXFtQQBpCXwwXVEsSD0ReUEEaRFkKFg==","queueTime":5,"applicationTime":829,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"cb4ef145dd",applicationID:"55169925"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+  <title>Riga Aeronautical Institute, Latvia | Study.EU</title>
+   
+  <link rel="stylesheet" media="all" href="/assets/application-788bf60a726cbc46bce208400674992d5b5b0e3a0892577e97f4ee25b84407b9.css" />
+  <script src="/assets/application-6d00a9f66b3f7e1a7db9282e671658ce415a54e8512569e7b539a89dc0fb74a5.js"></script>
+  
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="oPTSO+XIhloZcs8dW4xglHGZbQfEl9Ba0+HgLYs+2pl4QW14tZjxft8NITCCf9uiVZxH6bPLekFxJfctBmTLzg==" />
+  
+  
+    
+  
+  
+  
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-29b05ed0a02376d0d37f92df42a0d954d97274430a0f6264e4d19745408f15c8.ico" />
+  
+  <meta name="description" content="Study at Riga Aeronautical Institute in Latvia. ✓ Study.EU: Your gateway to universities in Europe." />
+  
+  <meta name="keywords" content="study in europe, universities, europe, master, bachelor, masters, bachelors, msc, bsc, llb, llm, phd, doctorate, university, study abroad" />
+  <meta name="google-site-verification" content="9sv6t--Xh8SiHr58R3chJHOJVHixvhn6jBK8Qzc9Z9U" />
+  <meta name="msvalidate.01" content="5E3AE5307267C1BED099C27EB59E264E" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  <link rel="canonical" href="https://www.study.eu/university/riga-aeronautical-institute" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@wwwStudyEU" />
+  <meta name="twitter:title" content="Riga Aeronautical Institute, Latvia" />
+  
+  <meta property="og:title"  content="Riga Aeronautical Institute, Latvia" />
+  
+  
+  
+  
+  
+      <meta property="og:type" content="article" />
+      <meta property="article:publisher" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+      <meta property="article:author" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+  
+  <meta property="og:description" content="Study at Riga Aeronautical Institute in Latvia. ✓ Study.EU: Your gateway to universities in Europe." />
+  <meta property="og:image" content="https://www.study.eu/assets/fallback/study-in-europe-logo-overlay-1200x627-34deac9b2af4b87f5f656da9694257ffa4e59dec8319085daa96f8ca9eb3f980.jpg" />
+  
+</head>
+<body>
+
+  <nav id="navbar" class="navbar navbar-static-top container container-fluid">
+  
+  <div class="container">
+    <div class="row" style="position: relative;">
+        <div class="col-md-3 col-xs-9 navbar-header">
+          <a class="navbar-brand" href="/" title="Study.EU">
+            <img alt="Study.EU" class="homepage-logo" src="/assets/study-eu_logo-ee9afe0c98ee9ac266f676d5dcb967023df14f95661b91c7812bef38a3b0c03a.png" />
+          </a>
+        </div>
+        <div class="col-md-8 bottom-align-text">
+            <strong class="navbar-claim">Your gateway to universities in Europe</strong>
+        </div>
+        <div class="col-md-1 col-xs-3 navbar-search-link-container">
+          <div class="navbar-search-link">
+          </div>
+        </div>
+    </div>
+</div>
+  
+</nav>
+
+  <div class="container" id="div-main-container" role="main">
+
+  </div>
+  
+  
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "CollegeOrUniversity",
+  "name": "Riga Aeronautical Institute",
+  "url": "https://www.study.eu/university/riga-aeronautical-institute",
+  "sameAs": "http://www.rai.lv/en-en/",
+  "foundingDate": "1942",
+  
+  "logo": "https://study-eu.s3.amazonaws.com/uploads/university/riga-aeronautical-institute-94-logo.png",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Study programmes",
+      "value": "5"
+    }
+  ]
+}
+</script>
+
+
+
+<div class="header-image">
+  <div class="container">
+    <div class="header-image-cta">
+      <h1>Study at Riga Aeronautical Institute</h1>
+      <h2>Riga, Latvia</h2>
+    </div>
+  </div>
+    <img alt="Study in Europe" title="Study in Europe" src="/assets/fallback/study-in-europe_1920-2cea268aaca4f8cd71c109aa2d67e83e285f04dd3c85c9a21acae013fd6f2259.jpg" />
+    
+    <div class="image-credits">
+      <span class="image-credits-span">
+        <a href="https://www.flickr.com/photos/glasgowamateur/7892308660" target="_blank" rel="nofollow">Europe</a> by Charles Clegg, <a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="nofollow">CC BY-SA 2.0</a>, modified
+      </span>
+    </div>  
+  
+</div>
+
+<div class="div-breadcrumbs">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="/">Study.eu</a></li><i class="fa fa-angle-right breadcrumb-separator" aria-hidden="true"></i><li><a href="/country/latvia">Latvia</a></li><i class="fa fa-angle-right breadcrumb-separator" aria-hidden="true"></i><li>Riga Aeronautical Institute</li>
+    </ol>  
+  </div>
+</div> 
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://www.study.eu/",
+        "name": "Study.eu"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://www.study.eu/country/latvia",
+        "name": "Latvia"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "https://www.study.eu/university/riga-aeronautical-institute",
+        "name": "Riga Aeronautical Institute"
+      }
+    }
+  ]
+}
+</script>
+
+<div class="container" style="position: relative;">
+
+  <div class="row">
+
+    <div class="sidebar col-md-4 col-md-push-8">
+      
+      <table class="entry-details-table">
+        <tbody>
+            <tr>
+              <th class="university-logo" colspan="2">
+                <img alt="Riga Aeronautical Institute - Logo" title="Riga Aeronautical Institute - Logo" class="university-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_riga-aeronautical-institute-94-logo.png" />
+              </th>
+            </tr>
+          
+          <tr>
+            <td class="university-name" colspan="2">Riga Aeronautical Institute</td>
+          </tr>
+          
+          <tr>
+            <td class="table-entry-name">Location:</td>
+            <td>
+                  <a href="/city/riga">Riga</a> (<a href="/country/latvia">Latvia</a>)
+                  
+            </td>
+          </tr>
+          
+          
+            
+          
+          <tr>
+            <td class="table-entry-name">Founded:</td>
+            <td>1942</td>
+          </tr>
+
+
+          
+          
+
+            <tr>
+              <td class="table-entry-name">Listed study programmes:</td>
+              <td><a href="#university-programmes">5</a></td>
+            </tr>
+          
+          
+          
+
+        </tbody>
+      </table>
+      
+      
+
+
+      
+      
+      
+        
+        <div class="sidebar-container">
+          <strong>Other universities in Latvia:</strong>
+          <div class="featured-university-container">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a href="/university/jazeps-vitols-latvian-academy-of-music">
+                    <img alt="Jāzeps Vītols Latvian Academy of Music" title="Jāzeps Vītols Latvian Academy of Music" class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_j-zeps-v-tols-latvian-academy-of-music-86-logo.png" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a href="/university/jazeps-vitols-latvian-academy-of-music">Jāzeps Vītols Latvian Academy of Music</a><br />
+                  <a href="/city/riga">Riga</a>, 
+                  <a href="/country/latvia">Latvia</a><br />
+                  6 study programmes
+              </div>
+            </div>
+          </div>
+          <div class="featured-university-container">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a href="/university/baltic-international-academy">
+                    <img alt="Baltic International Academy" title="Baltic International Academy" class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_baltic-international-academy-83-logo.png" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a href="/university/baltic-international-academy">Baltic International Academy</a><br />
+                  <a href="/city/riga">Riga</a>, 
+                  <a href="/country/latvia">Latvia</a><br />
+                  5 study programmes
+              </div>
+            </div>
+          </div>
+          <div class="featured-university-container">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a href="/university/university-college-of-economics-and-culture">
+                    <img alt="University College of Economics and Culture" title="University College of Economics and Culture" class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_university-college-of-economics-and-culture-104-logo.png" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a href="/university/university-college-of-economics-and-culture">University College of Economics and Culture</a><br />
+                  <a href="/city/riga">Riga</a>, 
+                  <a href="/country/latvia">Latvia</a><br />
+                  3 study programmes
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+          
+      
+    </div>
+  
+  
+  
+    <div class="content col-md-8 col-md-pull-4">
+
+      <h1>Riga Aeronautical Institute</h1>
+      
+        <div class="bnnr-container">
+  <a target="_blank" rel="nofollow" data-track-rendering-ga="true" data-track-click-ga="true" data-track-click="true" data-event-category="BC" data-event-label="CODE Berlin" data-trackvalue-bc-id="41" data-trackvalue-href="https://code.berlin/en/?utm_source=Study.eu&amp;utm_medium=Banner" href="https://code.berlin/en/?utm_source=Study.eu&amp;utm_medium=Banner">
+    <img class="bnnr" loading="lazy" src="https://study-eu.s3.amazonaws.com/uploads/bc/bc-code-berlin-desktop.png" />
+</a></div>
+
+      
+      <div class="content-description">
+        
+      </div>
+    
+    <a id="university-programmes"><hr /></a>
+    
+    
+    
+
+    <ul class="nav nav-tabs">
+      
+        <li class="active"><a data-toggle="tab" href="#tab-bachelor">Bachelor’s<br/>programmes</a></li>
+      
+        <li><a data-toggle="tab" href="#tab-master">Master’s<br/>programmes</a></li>
+      
+      
+    </ul>
+
+    <div class="tab-content">
+    
+        <div id="tab-bachelor" class="tab-pane active">
+          <h4>Bachelors at Riga Aeronautical Institute</h4>
+            <div aria-multiselectable="true" role="tablist" id="accordion-bachelor" class="panel-group">
+
+      <div class="panel panel-default"> <a title="Business &amp; Management" aria-controls="collapse-bachelor-2" aria-expanded="false" href="#collapse-bachelor-2" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-2" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Business &amp; Management <span class="discipline-programmes-count">(2)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-2" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-2" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/riga-aeronautical-institute/international-carrier-management-3307">International Carrier Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/riga-aeronautical-institute/international-operations-management">International Operations Management</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Engineering &amp; Technology" aria-controls="collapse-bachelor-3" aria-expanded="false" href="#collapse-bachelor-3" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-3" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Engineering &amp; Technology <span class="discipline-programmes-count">(2)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-3" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-3" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/riga-aeronautical-institute/aircraft-maintenance">Aircraft Maintenance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/riga-aeronautical-institute/air-traffic-control">Air Traffic Control</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+
+  <script>
+  if ( $('#accordion-bachelor .panel-collapse').length == 1 ) {
+    // If Programmes at this level all fall into the same Discipline, expand it
+    $('#accordion-bachelor .panel-collapse').collapse('show');
+  }
+
+
+  $('.panel-collapse').on('shown.bs.collapse', function (e) {
+      var panel = $(this).closest('div.panel');
+      var panelTop = panel[0].getBoundingClientRect().top;
+      var navHeight = document.getElementById("navbar").offsetHeight;
+      var navBottom = document.getElementById("navbar").getBoundingClientRect().bottom;
+      
+      var visibleFromHere = Math.max(0, navBottom); // navBottom might be negative on desktop
+      
+      if (panelTop < visibleFromHere) {
+        // If the just expanded panel's top is above what's visible in the viewport, scroll up.
+        $('html,body').animate({
+            scrollTop: panel.offset().top-visibleFromHere-25
+        }, 500); 
+      }
+  }); 
+  </script>
+
+        </div>
+      
+        <div id="tab-master" class="tab-pane">
+          <h4>Masters at Riga Aeronautical Institute</h4>
+            <div aria-multiselectable="true" role="tablist" id="accordion-master" class="panel-group">
+
+      <div class="panel panel-default"> <a title="Business &amp; Management" aria-controls="collapse-master-2" aria-expanded="false" href="#collapse-master-2" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-2" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Business &amp; Management <span class="discipline-programmes-count">(1)</span></span> </a>
+        <div aria-labelledby="heading-master-2" role="tabpanel" class="panel-collapse collapse" id="collapse-master-2" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/riga-aeronautical-institute/international-carrier-management">International Carrier Management</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+
+  <script>
+  if ( $('#accordion-master .panel-collapse').length == 1 ) {
+    // If Programmes at this level all fall into the same Discipline, expand it
+    $('#accordion-master .panel-collapse').collapse('show');
+  }
+
+
+  $('.panel-collapse').on('shown.bs.collapse', function (e) {
+      var panel = $(this).closest('div.panel');
+      var panelTop = panel[0].getBoundingClientRect().top;
+      var navHeight = document.getElementById("navbar").offsetHeight;
+      var navBottom = document.getElementById("navbar").getBoundingClientRect().bottom;
+      
+      var visibleFromHere = Math.max(0, navBottom); // navBottom might be negative on desktop
+      
+      if (panelTop < visibleFromHere) {
+        // If the just expanded panel's top is above what's visible in the viewport, scroll up.
+        $('html,body').animate({
+            scrollTop: panel.offset().top-visibleFromHere-25
+        }, 500); 
+      }
+  }); 
+  </script>
+
+        </div>
+      
+    </div>
+    
+    <script>
+      $('.nav-tabs a:first').tab('show'); // Make sure the first tab is selected in case none of the rendered tabs are marked as active
+      
+      $('.nav-tabs a[href="#tab-bachelor"]').tab('show');
+    </script>
+    
+    
+    
+    
+    
+
+    
+      <div>
+        <h2>You might be interested in this:</h2>
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/article/study-in-the-baltics-the-ultimate-guide">
+              <div class="thumbnail home-country-card">  
+                    <img alt="Study in the Baltics: The ultimate guide" title="Study in the Baltics: The ultimate guide" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/173/slideshow_4693470915_eb1949f67c_o.jpg" />
+                  <div class="caption">
+                    <strong>Study in the Baltics: The ultimate guide</strong>              
+                  </div>
+              </div>
+</a>          </div>
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/country/latvia">
+              <div class="thumbnail home-country-card">  
+                    <img alt="Study in Latvia" title="Study in Latvia" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/27/slideshow_latvia-riga-2.jpg" />
+                  <div class="caption">
+                    <strong>Study in Latvia</strong>              
+                  </div>                  
+                
+              </div>
+</a>          </div>
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/city/riga">
+              <div class="thumbnail home-country-card">  
+                    <img alt="Study in Riga" title="Study in Riga" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/26/slideshow_latvia-riga-1.jpg" />
+                  <div class="caption">
+                    <strong>Study in Riga</strong>              
+                  </div>                  
+                
+              </div>
+</a>          </div>
+        </div>
+      </div>  
+    
+    </div>
+
+
+    
+
+
+    
+    
+    
+    
+    
+    
+  </div>
+  
+</div>
+
+
+<script>
+
+  $('[data-toggle="tooltip"]').tooltip();
+
+  $( function() {
+    $( ".accordion" ).accordion({
+      heightStyle: "content"
+    });
+  } );
+  
+  
+  handler = Gmaps.build('Google');
+  handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+    markers = handler.addMarkers([
+      {
+        "lat": 0,
+        "lng": 0,
+      }
+    ]);
+    handler.bounds.extendWith(markers);
+    handler.fitMapToBounds();
+  });
+  
+  
+  
+  
+</script>
+  
+
+    
+
+  
+  
+  <footer class="top-footer">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Merriweather Sans:300,400i,700']
+      }
+    });
+  </script> 
+
+  
+  <div class="container">
+  <div class="row">
+    
+    <div class="text-left col-md-8 col-xs-6" style="display: inline-block;float: left;">
+      <a href="/" title="Study.EU" data-track-click="true" data-event-category="Footer Logo"><img class="footer-logo" src="/assets/study-eu_logo_wb_200x66-8722da28bad82460d8951c34fe8b5ba8e11794b2fd21e83ee8c5fe54323ea73b.png" /></a><br />
+      <p>
+        Copyright &copy; 2021 <a title="Study.EU" href="/">Study.EU</a>
+      </p>
+      <p>
+        
+      </p>
+      <a class="social-link" href="https://www.facebook.com/StudyEU-168756646881605/" target="_blank" title="Like Study.EU on Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://twitter.com/wwwStudyEU" target="_blank" title="Follow Study.EU on Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://www.linkedin.com/company/study.eu/" target="_blank" title="Follow Study.EU on Linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    </div>
+    <div class="text-right col-md-4 col-xs-6">
+      <br /><br />
+          <a rel="nofollow" href="/page/imprint">Imprint</a>
+        &middot;
+          <a rel="nofollow" href="/page/about-study-eu">About Study.eu</a>
+        &middot;
+          <a rel="nofollow" href="/page/privacy-policy">Privacy Policy</a>
+        &middot;
+      <a href="/jobs">Jobs</a>
+      
+      <br />
+      
+      <a href="/press">Press</a>
+      
+      <!-- &middot; -->
+      
+        <!-- &mdash; //-->
+      
+      <br /><br />
+      <a href="/advertise-on-study-eu">Advertise on Study.eu</a>
+    </div>
+  </div>
+  </div>
+</footer>
+
+<a href="javascript:" id="scroll-to-top" title="Scroll back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+<script>
+  $(window).scroll(function() {
+      if ($(this).scrollTop() >= 100) {        // page is scrolled more than 100px
+          $('#scroll-to-top').fadeIn(500);
+      } else {
+          $('#scroll-to-top').fadeOut(500);
+      }
+  });
+  $('#scroll-to-top').click(function() {      // arrow is clicked
+      $('body,html').animate({
+          scrollTop : 0                       // scroll to top
+      }, 500);
+  });
+</script>
+
+
+  
+  <footer class="footer-countries">
+
+
+  <div class="container">
+    <div class="row">
+    
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <h5>Study in Europe:</h5>
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Austria" href="/country/austria">Austria</a><br />
+                <a title="Study in Belgium" href="/country/belgium">Belgium</a><br />
+                <a title="Study in the Czech Republic" href="/country/czech-republic">Czech Republic</a><br />
+                <a title="Study in Denmark" href="/country/denmark">Denmark</a><br />
+                <a title="Study in Estonia" href="/country/estonia">Estonia</a><br />
+                <a title="Study in the Faroe Islands" href="/country/faroe-islands">Faroe Islands</a><br />
+                <a title="Study in Finland" href="/country/finland">Finland</a><br />
+                <a title="Study in France" href="/country/france">France</a><br />
+                <a title="Study in Germany" href="/country/germany">Germany</a><br />
+                <a title="Study in Greece" href="/country/greece">Greece</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Hungary" href="/country/hungary">Hungary</a><br />
+                <a title="Study in Iceland" href="/country/iceland">Iceland</a><br />
+                <a title="Study in Ireland" href="/country/ireland">Ireland</a><br />
+                <a title="Study in Italy" href="/country/italy">Italy</a><br />
+                <a title="Study in Latvia" href="/country/latvia">Latvia</a><br />
+                <a title="Study in Liechtenstein" href="/country/liechtenstein">Liechtenstein</a><br />
+                <a title="Study in Lithuania" href="/country/lithuania">Lithuania</a><br />
+                <a title="Study in Malta" href="/country/malta">Malta</a><br />
+                <a title="Study in the Netherlands" href="/country/netherlands">Netherlands</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Norway" href="/country/norway">Norway</a><br />
+                <a title="Study in Poland" href="/country/poland">Poland</a><br />
+                <a title="Study in Portugal" href="/country/portugal">Portugal</a><br />
+                <a title="Study in Romania" href="/country/romania">Romania</a><br />
+                <a title="Study in Russia" href="/country/russia">Russia</a><br />
+                <a title="Study in Spain" href="/country/spain">Spain</a><br />
+                <a title="Study in Sweden" href="/country/sweden">Sweden</a><br />
+                <a title="Study in Switzerland" href="/country/switzerland">Switzerland</a><br />
+                <a title="Study in the United Kingdom" href="/country/united-kingdom">United Kingdom</a><br />
+            </div>
+          </div>
+        </div>
+    
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Recent articles:</h5>
+          </div>
+          <div class="col-md-8">
+              <p><a href="/article/study-ecology">Study Ecology: All you need to know</a></p>
+              <p><a href="/article/looking-for-a-uk-degree-in-germany-study-in-leipzig">Looking for a UK degree in Germany? Study in Leipzig!</a></p>
+              <p><a href="/article/study-zoology">Study Zoology: All you need to know</a></p>
+              <p><a href="/article/degree-in-chinese-studies-sinology">Degree in Chinese Studies: All you need to know</a></p>
+              <p><a href="/article/what-is-the-ects-european-credit-transfer-and-accumulation-system">What is the European Credit Transfer System (ECTS)?</a></p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  
+  </div>
+
+</footer>
+
+  
+  <footer class="footer-press">
+  <div class="container">
+    <div class="row footer-press-description">
+      <div class="col-md-12 text-center">
+        Study.EU has been mentioned in numerous news publications worldwide, such as:
+      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="L&#39;Étudiant (France)" title="L&#39;Étudiant (France)" data-src="/assets/press/letudiant_gray_200-57bccbdceaef3c62c8660629603372823c98afe433bd39bf6d42a73263c113c3.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Frankfurter Allgemeine (Germany)" title="Frankfurter Allgemeine (Germany)" data-src="/assets/press/faz_gray_300-b6e5e6022a7b164c24b69a51fb97a72715018db745fbcda8580675a507370b8b.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Standard (Hong Kong)" title="The Standard (Hong Kong)" data-src="/assets/press/the-standard-hong-kong_gray_200-f124ca057d2671730e1f6d996377ef4614a28ccf04ae04f730eaf16ed7ee0b46.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Independent (UK)" title="The Independent (UK)" data-src="/assets/press/the-independent-uk_gray_300-63238e279b3c62b1f87faf17fcbcf1f14a2e5b9229193a0431fc974da217d159.png" class="lazyload" />
+</a>      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Al-Masry Al-Youm (Egypt)" title="Al-Masry Al-Youm (Egypt)" data-src="/assets/press/al-masry_al-youm_gray_200-9d8e503cd53ec4d955c3e6f7bf2a1c0badb500a0d2bd8a1ef1d11acd686879e5.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Le Monde (France)" title="Le Monde (France)" data-src="/assets/press/le-monde_gray_200-24d8bca493f3a2b8e0150cb4ef38f00c9924ac5e7acfbdb8750076c949c70052.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Local (Europe)" title="The Local (Europe)" data-src="/assets/press/the-local_gray_200-7631164ea94edf8d065b3af6f64274416162d866ce1cea737c3ee25f28cdd098.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Forbes (USA)" title="Forbes (USA)" data-src="/assets/press/forbes_gray_200-deff6ef2c28ec5a275f404c5f59d56f4b687881eb39de52b79b5add3ca609fe2.png" class="lazyload" />
+</a>      </div>
+    </div>
+  </div>
+</footer>
+
+  
+  
+  
+  
+    <div class="cookies-eu js-cookies-eu row">
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+    <div class="cookies-eu-content-holder col-md-4 col-sm-6 col-xs-6 align-self-center">
+      Cookies &amp; analytics help us deliver our services.
+        <a href="/page/privacy-policy" class="cookies-eu-link" target="_blank"> Privacy policy </a>
+    </div>
+    <div class="cookies-eu-button-holder col-md-4 col-sm-6 col-xs-6">
+      <button class="cookies-eu-ok js-cookies-eu-ok btn btn-lg btn-primary" data-track-click-ga="true" data-event-category="Cookie Consent Button"> OK </button>
+    </div>
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+  </div>
+
+  
+  <script>
+  // Improved Ahoy view tracking with additional attributes
+  var additionalProperties = {};
+    additionalProperties["country_id"] = 19;
+    mainTrackableLink = "";
+    additionalProperties["university_id"] = 94;
+    mainTrackableLink = "https://www.study.eu/link/university/riga-aeronautical-institute/from-profile";
+  console.log("Ahoy: View with additional properties: "+JSON.stringify(additionalProperties));
+  ahoy.trackView(additionalProperties);
+</script>
+<a name="ga"></a> <!-- GA //-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42442116-3', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+  
+  
+  
+    
+  //############################################################
+  //########## 2018-07    NEW CUSTOM METHODS          ##########
+  
+  function getDataTrackAttributes(element) {
+    var data = {};
+    [].forEach.call(element.attributes, function(attr) {
+      if (/^data-trackvalue-/.test(attr.name)) {
+        // Relevant attributes would always be called "data-track-foobar"
+        var underscorename = attr.name.substr(16).replace(/-/g, "_");
+        data[underscorename] = parseInt(attr.value) || attr.value; // Provide as integer if possible, otherwise the original string
+      }
+    });
+    return data;
+  }
+  
+  // Set data-track-click and utm_source for all external links in the description content
+  var content_links = document.querySelectorAll('div.content-description a');
+  for (var i = 0; i < content_links.length; i++) {
+    if ( ((new URL(content_links[i].href, document.baseURI).href) == mainTrackableLink) || (content_links[i].host !== window.location.host) ) {
+      // Link is the main trackable link, or link is external --> add tracking and utm_source if not present
+      utm_url = new URL(content_links[i].href);
+      utm_url.searchParams.set("utm_source", "Study.eu"); // add (or overwrite existing) utm_source parameter
+      content_links[i].href = utm_url;
+      content_links[i].classList.add("external-tracked");
+      content_links[i].setAttribute("data-event-category", "Outbound Link");
+      content_links[i].setAttribute("data-event-label", content_links[i].href);
+      content_links[i].setAttribute("data-track-click", "true"); // Once data-track-click is set to true, initDataAttributes() below will add the id values
+    }
+  }
+  console.log("Modified "+content_links.length+" links in description content.");
+  
+  // Set data attributes for tracking of footer press links
+  footerPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < footerPressLinks.length; i++) {
+    footerPressLinks[i].setAttribute("data-track-click-ga", "true");
+    footerPressLinks[i].setAttribute("data-event-category", "Footer Press Link");
+    footerPressLinks[i].setAttribute("data-event-label", window.location.href);
+  }
+  
+  relatedLinks = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < relatedLinks.length; i++) {
+    relatedLinks[i].setAttribute("data-track-click-ga", "true");
+    relatedLinks[i].setAttribute("data-event-category", "Related Link");
+    relatedLinks[i].setAttribute("data-event-label", relatedLinks[i].getAttribute("href"));
+  }  
+  
+  function initDataAttributes() {
+    // Initialise element data attributes based on backend instance variables
+    elements = document.querySelectorAll('[data-track-click="true"],[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+        if (!elements[i].hasAttribute("data-trackvalue-country-id")) {
+          elements[i].setAttribute("data-trackvalue-country-id", "19");
+        }
+      
+        if (!elements[i].hasAttribute("data-trackvalue-university-id")) {
+          elements[i].setAttribute("data-trackvalue-university-id", "94");
+        }
+      
+    }
+    console.log("initDataAttributes()");
+  }
+  initDataAttributes();
+    
+  function trackClick(event, trackGA = true, trackAhoy = true) {
+    // When an element was clicked, track the click in GA and Ahoy
+    
+    strEventLabel = "";
+    if        ( event.currentTarget.hasAttribute("data-event-label") ) {
+      strEventLabel = event.currentTarget.getAttribute("data-event-label");
+    } else if ( event.currentTarget.hasAttribute("href") ) {
+      strEventLabel = event.currentTarget.href;
+    }
+    
+    ga('send', 'event', {
+      eventCategory:  event.currentTarget.getAttribute("data-event-category"),
+      eventAction:    'click',
+      eventLabel:     strEventLabel
+    });
+    
+    data = getDataTrackAttributes(event.currentTarget);
+    data["href"] = event.target.href;
+    data["page"] = window.location.pathname;
+    
+    /*ahoy.track (
+      event.currentTarget.getAttribute("data-event-category"),
+      {
+        country_id: 19, 
+        university_id: 94, 
+        
+        href: event.target.href,
+        page: window.location.pathname
+      }
+    );*/
+    
+    if (trackAhoy) {
+        data["medium"] = "Profile";
+      ahoy.track (
+        event.currentTarget.getAttribute("data-event-category")+" - click",
+        data
+      );
+    }
+    
+    console.log("trackClick(event, trackGA = "+trackGA+", trackAhoy = "+trackAhoy+"): " +
+      event.currentTarget.getAttribute("data-event-category") + ", " +
+      "{country_id: 19, university_id: 94, href: " + event.target.href + ", " +
+      "page:"+window.location.pathname+"});"
+    );
+  }
+  
+  
+  function trackClicksGA() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click-ga="true"]:not([data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event, true, false);
+      });
+    }
+    console.log("trackClicksGA(): "+elements.length+" elements");
+  }
+  trackClicksGA();
+  
+  function trackClicks() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event);
+      });
+    }
+    console.log("trackClicks(): "+elements.length+" elements");
+  }
+  trackClicks();
+  
+  function trackRenderingsGA() {
+    // Track renderings only in GA
+    // This would be for large-volume data that is interesting, but not mission-critical
+
+    elements = document.querySelectorAll('[data-track-rendering-ga="true"]:not([data-track-rendering="true"])');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+    }
+    
+    console.log("trackRenderingsGA(): "+elements.length+" elements");
+  }
+  trackRenderingsGA();
+  
+  function trackRenderings() {
+    // Track renderings in GA *and* Ahoy
+    elements = document.querySelectorAll('[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+      
+      data = getDataTrackAttributes(elements[i]);
+      data["href"] = elements[i].getAttribute("href");
+      data["page"] = window.location.pathname;
+      
+      ahoy.track (
+        elements[i].getAttribute("data-event-category")+" - rendered",
+        data
+      );
+    }
+    
+    console.log("trackRenderings(): "+elements.length+" elements");
+  }
+  trackRenderings();
+  
+  
+  
+    ga('send', 'event', {
+      eventCategory:  'Country Content',
+      eventAction:    'rendered',
+      eventLabel:     'Latvia',
+      nonInteraction: true
+    });
+
+  
+  //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  //############################################################
+
+  
+  
+  /*
+  anchorsExternalTracked = document.getElementsByClassName("external-tracked");
+  for (var i = 0 ; i < anchorsExternalTracked.length; i++) {
+    anchorsExternalTracked[i].addEventListener("click", function(event){
+      //event.preventDefault();
+      
+      handleOutboundLinkClicks(event);
+      
+      //document.location = this.href;
+      //var win = window.open(this.href, '_blank');
+      //win.focus();
+      
+    });
+    
+    // Trigger event that shows in GA that the link was rendered
+    ga('send', 'event', {
+      eventCategory: 'Outbound Link',
+      eventAction: 'rendered',
+      eventLabel: anchorsExternalTracked[i].href
+    });   
+  }
+  
+  anchorsRelatedTracked = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < anchorsRelatedTracked.length; i++) {
+    anchorsRelatedTracked[i].addEventListener("click", function(event){
+      handleRelatedLinkClicks(event);
+    });
+  }
+  
+  anchorsFeaturedUniversityTracked = document.getElementsByClassName("featured-university-tracked");
+  for (var i = 0 ; i < anchorsFeaturedUniversityTracked.length; i++) {
+    anchorsFeaturedUniversityTracked[i].addEventListener("click", function(event){
+      handleFeaturedUniversityLinkClicks(event);
+    });
+  }  
+  
+  
+  anchorsFooterPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < anchorsFooterPressLinks.length; i++) {
+    anchorsFooterPressLinks[i].addEventListener("click", function(event){
+      handleFooterPressLinkClicks(event);
+    });
+  }
+  
+  
+  anchorsCustomTracked = document.querySelectorAll('[data-ga-custom-event-label]');
+  for (var i = 0 ; i < anchorsCustomTracked.length; i++) {
+    anchorsCustomTracked[i].addEventListener("click", function(event){
+      handleCustomTracked(event);
+    });
+  }
+  */
+  
+  ////////////////////////////////////////////////////////////////////////////////
+
+  
+  
+</script>
+
+</body>
+</html>

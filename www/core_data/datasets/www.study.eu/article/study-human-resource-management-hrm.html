@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"cb4ef145dd","applicationID":"55169925","transactionName":"Jg5fTRMJXFtQQBpWQxEIUlUEFR9EXV1C","queueTime":3,"applicationTime":425,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"cb4ef145dd",applicationID:"55169925"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+  <title>Study Human Resource Management: All you need to know | Study.EU</title>
+   
+  <link rel="stylesheet" media="all" href="/assets/application-788bf60a726cbc46bce208400674992d5b5b0e3a0892577e97f4ee25b84407b9.css" />
+  <script src="/assets/application-6d00a9f66b3f7e1a7db9282e671658ce415a54e8512569e7b539a89dc0fb74a5.js"></script>
+  
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="qDk4xmukEkW0yjL/cNI/Zgj827Ej/2SXF6jYT4C76MFwjIeFO/RlYXK13NKpIYRQLPnxX1Sjzoy1bM9PDeH5lg==" />
+  
+  
+    
+  
+  
+  
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-29b05ed0a02376d0d37f92df42a0d954d97274430a0f6264e4d19745408f15c8.ico" />
+  
+  <meta name="description" content="Do you enjoy working with people and helping them grow? An HR Management degree might be right for you. Learn about universities, fees, requirements." />
+  
+  <meta name="keywords" content="study in europe, universities, europe, master, bachelor, masters, bachelors, msc, bsc, llb, llm, phd, doctorate, university, study abroad" />
+  <meta name="google-site-verification" content="9sv6t--Xh8SiHr58R3chJHOJVHixvhn6jBK8Qzc9Z9U" />
+  <meta name="msvalidate.01" content="5E3AE5307267C1BED099C27EB59E264E" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="author" content="Megan Thudium">
+  
+  
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@wwwStudyEU" />
+  <meta name="twitter:title" content="Study Human Resource Management: All you need to know" />
+  
+  <meta property="og:title"  content="Study Human Resource Management: All you need to know" />
+  
+  
+  
+  
+  
+      <meta property="og:type" content="article" />
+      <meta property="article:publisher" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+      <meta property="article:author" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+  
+  <meta property="og:description" content="Do you enjoy working with people and helping them grow? An HR Management degree might be right for you. Learn about universities, fees, requirements." />
+  <meta property="og:image" content="https://study-eu.s3.amazonaws.com/uploads/image/path/432/social_1200_study-human-resources-hr.jpg" />
+  
+</head>
+<body>
+
+  <nav id="navbar" class="navbar navbar-static-top container container-fluid">
+  
+  <div class="container">
+    <div class="row" style="position: relative;">
+        <div class="col-md-3 col-xs-9 navbar-header">
+          <a class="navbar-brand" href="/" title="Study.EU">
+            <img alt="Study.EU" class="homepage-logo" src="/assets/study-eu_logo-ee9afe0c98ee9ac266f676d5dcb967023df14f95661b91c7812bef38a3b0c03a.png" />
+          </a>
+        </div>
+        <div class="col-md-8 bottom-align-text">
+            <strong class="navbar-claim">Your gateway to universities in Europe</strong>
+        </div>
+        <div class="col-md-1 col-xs-3 navbar-search-link-container">
+          <div class="navbar-search-link">
+            <a id="navbar-search-button" data-track-click-ga="true" data-event-category="Navbar Search Button" data-event-label="/article/study-human-resource-management-hrm" href="/search?discipline=21&amp;sort=recommended">
+              <i class="fa fa-search" aria-hidden="true"></i>
+</a>          </div>
+        </div>
+    </div>
+</div>
+  
+</nav>
+
+  <div class="container" id="div-main-container" role="main">
+
+  </div>
+  
+  
+
+
+
+
+
+<div class="header-image">
+  <div class="container">
+    <div class="header-image-cta">
+      <h1 class="article-title">Study Human Resource Management: All you need to know</h1>
+      <h2></h2>
+    </div>
+  </div>
+
+    <img alt="" title="" srcset="https://study-eu.s3.amazonaws.com/uploads/image/path/432/wide_mobile_study-human-resources-hr.jpg 1280w, https://study-eu.s3.amazonaws.com/uploads/image/path/432/wide_fullhd_study-human-resources-hr.jpg 1920w" src="https://study-eu.s3.amazonaws.com/uploads/image/path/432/wide_fullhd_study-human-resources-hr.jpg" />
+    
+    <div class="image-credits">
+      <span class="image-credits-span">
+        <a target="_blank" rel="nofollow" title="Photo" href="https://www.pexels.com/photo/woman-wearing-blue-top-beside-table-1181712/">Photo</a> by Christina Morillo
+      </span>
+    </div>
+
+</div>
+
+<div class="div-breadcrumbs">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="/">Study.eu</a></li><i class="fa fa-angle-right breadcrumb-separator" aria-hidden="true"></i><li>Study Human Resource Management: All you need to know</li>
+    </ol>  
+  </div>
+</div> 
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://www.study.eu/",
+        "name": "Study.eu"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://www.study.eu/article/study-human-resource-management-hrm",
+        "name": "Study Human Resource Management: All you need to know"
+      }
+    }
+  ]
+}
+</script>
+
+<div class="container" style="position: relative;">
+
+  <div class="row">
+
+    <div class="content col-md-8">
+      <h1 class="article-title">Study Human Resource Management: All you need to know</h1>
+      
+      <div class="article-info-top">
+          Author: <span class="article-author-top">Megan Thudium</span>
+          &mdash;
+          <span class="article-last-udpated">Last update: 1 June 2020</span>
+      </div>
+      
+      <p>Do you enjoy working with people and helping them succeed? If yes, then Human Resource Management (HRM) might be the perfect subject for you to study at university. HR Management is all about corporations and their workforce. By studying HRM, you will deep-dive into topics related to the development and the support of employees. This article highlights many of your most asked HRM questions and what it&rsquo;s like to study in this degree field.</p>
+<h3>What is Human Resource Management?</h3>
+<p>Human Resource Management (HRM) is a field that involves the management and development of a company&rsquo;s employees (its &ldquo;human resources&rdquo;). An HR manager would perform various activities like</p>
+<ul>
+<li>Recruiting and employee selection,</li>
+<li>Compensation and benefits,</li>
+<li>Training, development, and education,</li>
+<li>Employee and labor relations, and</li>
+<li>Organizational management and development.</li>
+</ul>
+<p>Employees are a valuable asset to a company; that&rsquo;s also why you sometimes hear the term &ldquo;human capital&rdquo;. Many aspects of a career in HR are about caring for and helping employees. Overall, human resources involves the care, organization, and management of a company&rsquo;s employees. In many instances, it can also be called <em>personnel management</em> or <em>talent management</em> by professionals because of the many activities that go into employee personal development.</p>
+<p>These characteristics make Human Resources a great choice if you want to study something that will allow you to work with people, rather than only computers.</p>
+<h3>Where can you study Human Resource Management?</h3>
+<p>Human Resources Management (HRM) is a very popular subject. At the Bachelor level, there are not that many programs that only cover HRM, so you would usually study Business and choose HR as an elective. At the Master&rsquo;s level, you will find many specialized programs to choose from.</p>
+<p><strong>Universities that offer HRM Bachelors in English:</strong></p>
+<ul>
+<li><a href="../../university/eu-business-school">EU Business School</a> (Germany, Spain, Switzerland)</li>
+<li><a href="../../university/middlesex-university-london">Middlesex University London</a> (UK)</li>
+</ul>
+<p><strong>Universities that offer HRM Masters in English:</strong></p>
+<ul>
+<li><a href="../../university/eu-business-school">EU Business School</a> (Germany, Spain, Switzerland)</li>
+<li><a href="../../university/radboud-university">Radboud University</a> (Netherlands)</li>
+</ul>
+<p><img src="https://study-eu-static-images.s3.eu-central-1.amazonaws.com/articles/study-human-resources-hr-image-1.jpg" width="100%" loading="lazy" /></p>
+<p style="font-size: 80%; color: #666 !important;"><em><a href="https://www.pexels.com/photo/photo-of-people-doing-handshakes-3184416/" target="_blank" rel="nofollow noopener">Photo</a> by fauxels</em></p>
+<h3>What do you learn in a Bachelors in Human Resource Management?</h3>
+<p>You&rsquo;re very interested in studying Human Resources Management (HRM), but you might be surprised that it is not a common undergraduate degree program on its own. Rather, universities offer general programs in Business Administration or Business Management, and then students can focus on HRM as a minor subject, or in elective courses.</p>
+<p>University websites usually list the complete course curriculum for a Bachelor&rsquo;s program, so it&rsquo;s good practice to review the course descriptions closely to fully understand what mandatory modules you will study, and what elective subjects you can choose from. Bachelor programs tend to take three to four years, and especially in the UK, you can find programs that include work placements. You will typically graduate with a Bachelor of Arts (BA) or Bachelor of Business Administration (BBA), and sometimes with a Bachelor of Science (BSc).</p>
+<p><a href="../../search?discipline=21&amp;sort=recommended&amp;degreelevel=bachelor"><strong>Find Bachelors in Human Resource Management</strong></a></p>
+<h3>What do you learn in a Masters in Human Resource Management?</h3>
+<p>Maybe you&rsquo;ve recently completed a Bachelor&rsquo;s degree in Business Administration or similar. Or after years of working as an employee, you&rsquo;ve decided to pursue a Master&rsquo;s degree to deepen your knowledge and learn new skills.</p>
+<p>A Master&rsquo;s degree in Human Resource Management has coursework designed to deepen your knowledge of personnel management and development of company employees. You&rsquo;ll explore topics like</p>
+<ul>
+<li>Strategic HR leadership,</li>
+<li>Cross-cultural management,</li>
+<li>Diversity in organizations,</li>
+<li>Creating remote workforces,</li>
+<li>Important employee policies,</li>
+<li>Organizational behavior, and more.</li>
+</ul>
+<p>A Master&rsquo;s degree in Human Resource Management will allow you to dig deeper into the fundamentals, as well as allow you to learn about new theories and models for employee development.</p>
+<p>A Master&rsquo;s program usually takes between one and two years to complete. And to be accepted, many universities require applicants to have an undergraduate degree &ndash; or at least a certain number of credits &ndash; in a relevant field, like Business Administration. However, you will find that some universities and business schools also welcome applicants from other subject backgrounds.</p>
+<p><a href="../../search?discipline=21&amp;sort=recommended&amp;degreelevel=master"><strong>Find Masters in Human Resource Management</strong></a></p>
+<h3>How is an MBA in Human Resources different from an MSc or MA?</h3>
+<p>At the Masters level, you can choose to study Human Resources Management in either an MBA (Master of Business Administration) program, which is usually a more general preparation for management roles; or as an MSc (Master of Science) or MA (Master of Arts) program, which is usually the path you would take for a specialist role.</p>
+<p>A Master in Business Administration (MBA) is a very popular higher-education degree program. Many MBAs require previous work experience to be accepted into the program; often two years or more of experience to qualify. This is especially true if the degree is labeled as an &ldquo;Executive MBA&rdquo;. Very often, admission requirements also include reaching a certain score in the GMAT (Graduate Management Admissions Test).</p>
+<p><strong>An MBA generally covers a wider-range</strong> of leadership, finance, marketing, and business administration topics <strong>and gives you a broad, solid foundation in all aspects of business</strong>. And because of this and their popularity, MBAs are also usually more expensive. Even if you choose to focus on Human Resources Management, your program will most likely cover multiple business subject areas and then your specialization (or elective courses) will allow you to explore the HRM curriculum more deeply. An MBA is specifically designed to provide you with a well-rounded business education and you might find that you&rsquo;re not able to explore the topic of HRM as deeply as you would like.</p>
+<p><strong>In contrast, an MA or MSc program will likely go deeper into HR topics</strong> and it will usually not require any previous work experience. It will allow you to spend the majority of your time exploring HR topics deeper. You can view it as a more in-depth investigation into a specific field, but it won&rsquo;t necessarily prepare you for a wide variety of business topics like in an MBA. If you are passionate specifically about Human Resources Management, and if you have a prior degree in Business, an MA or MSc program might be a better path.</p>
+<p><a href="../../search?discipline=21&amp;sort=recommended&amp;degreelevel=master&amp;search=mba"><strong>Find MBAs in Human Resource Management</strong></a></p>
+<h3>Can I get an HR degree online?</h3>
+<p><strong>As an alternative to studying on campus, you can also obtain a Human Resources Management (HRM) degree online.</strong> Online programs are becoming more and more popular. What they lack in classroom experience they more than make up for with their flexible delivery, making it much easier to study where and when it is convenient for you.</p>
+<p>Online education and the internet have very much opened up the possibilities of gaining a higher education in a flexible manner. Human Resources topics can easily be taught online where you enter a virtual classroom, view lectures online by video, and correspond with lecturers and fellow students via chat and email. Like many other Business disciplines, HRM lends itself for distance learning.</p>
+<p>Another advantage of an online degree: As an alternative to studying on campus, you can get a high-quality education without having to go abroad for your studies. You can study from wherever you live, and this means you can pursue a degree without the need of obtaining a student visa.</p>
+<p>Getting an HRM degree online is celebrated for its flexibility. Many students need to work during their studies&mdash;and an online degree offers students the flexibility of both a part-time and full-time option to finish the coursework.<br /><br /><strong>But don&rsquo;t underestimate the difficulty of studying online, especially when it&rsquo;s part-time.</strong> Being able to schedule your studies flexibly also requires a high level of self-discipline. Studying remotely with no physical connection to professors and students can be cumbersome. And when studying part-time, you might find it difficult to balance the demands of your job with a rigorous online curriculum. Studying remotely is not the right choice for everyone, so try to find a university that allows you to cancel after a trial period. Keep this in mind as you decide to approach an HRM degree online.</p>
+<p><strong>Universities that offer online degrees in Human Resources:</strong></p>
+<ul>
+<li><a href="../../university/eu-business-school">EU Business School</a></li>
+<li><a href="../../university/the-open-university">The Open University</a></li>
+</ul>
+<p><strong>Note:</strong> If you find a program listed as <em>&ldquo;blended&rdquo;</em> or <em>&ldquo;mixed learning&rdquo;</em>, this usually requires some presence on campus. The setup and timing varies between universities, but many universities try to have the on-campus lectures and seminars in as few of blocks as possible throughout the program.</p>
+<h3>Typical tuition fees for Human Resources degrees</h3>
+<p>The typical cost for an HR Management degree can vary a lot. Tuition fees will be a fundamental component in deciding which university you will attend, and as with many Business subjects, <strong>it can get expensive</strong>. What you will pay depends on multiple factors, but the main contributors to price are</p>
+<ul>
+<li>what country you want to study in,</li>
+<li>whether or not you&rsquo;re a citizen of an EU/EEA country (because this affects tuition fees in many countries),</li>
+<li>whether you want to study at a <em>public</em> or a <em>private</em> university or business school,</li>
+<li>and especially with business schools: the institution&rsquo;s ranking and reputation.</li>
+</ul>
+<p><strong>Below you find an overview of what you typically should expect to pay for HR-focused degrees in some European countries:</strong></p>
+<ul>
+<li><a href="../../country/germany">Germany</a>: tuition-free at public universities, 10,000 to 20,000 euros per year at private business schools</li>
+<li><a href="../../country/switzerland">Switzerland</a>: 20,000 to 40,000 francs per year at private universities and business schools</li>
+<li><a href="../../country/united-kingdom">United Kingdom</a>: 10,000 pounds per year at many universities, 20,000 pounds and up at leading business schools</li>
+</ul>
+<p><img src="https://study-eu-static-images.s3.eu-central-1.amazonaws.com/articles/study-human-resources-hr-image-2.jpg" width="100%" loading="lazy" /></p>
+<p style="font-size: 80%; color: #666 !important;"><em><a href="https://www.pexels.com/photo/man-being-interviewed-by-a-woman-3874035/" target="_blank" rel="nofollow noopener">Photo</a> by Gustavo Fring</em></p>
+<h3>What does an HR Manager do?</h3>
+<p>As a recent graduate of a Human Resources Degree (HRM) degree in an entry-level position, you will finally get the chance to apply first-hand what you learned at university.</p>
+<p>The theoretical knowledge will be a strong foundation&mdash;but the experiences you gain in your first job will carry with you throughout your career. As someone just getting started in an HRM position, you might find yourself with responsibilities like</p>
+<ul>
+<li>Reviewing candidate applications,</li>
+<li>Onboarding new employees at the company,</li>
+<li>Organizing key employee data like home addresses,</li>
+<li>Giving new employee company tours and making introductions to colleagues,</li>
+<li>Helping your team plan new employee orientation events,</li>
+<li>Becoming involved in yearly employee reviews,</li>
+<li>Writing content for the company brand on social media, and more.</li>
+</ul>
+<p>In an entry-level role, you might find that much of the work you perform is administrational or team-based. <strong>Don&rsquo;t shy away from tedious tasks:</strong> Recent graduates often get what seems like thankless chores, but you ought to look at it as a learning opportunity. As you advance in your career, you will be offered more responsibility and the opportunity to tackle harder projects.</p>
+<h3>What salary can I earn as a Human Resource Management graduate?</h3>
+<p>Graduates for entry-level HR positions are always in demand, but it is difficult to determine exactly what salary you can expect. This is because multiple factors like industry, location, and the demand for a position all play together in determining an HRM average entry-level salary.</p>
+<p><strong>But getting an HR Management degree can still be worth it</strong>, and the pay tends to increase a lot with experience. To determine how much you can earn in your first years, you should look at average graduate salaries in typical jobs that HRM graduates have qualified for. The table below gives you an idea for a few countries in Europe:</p>
+<table class="table table-bordered table-striped">
+<thead>
+<tr>
+<th>Country</th>
+<th>Average annual entry-level salary in HR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../country/germany">Germany</a></td>
+<td>46,080 EUR</td>
+</tr>
+<tr>
+<td><a href="../../country/netherlands">Netherlands</a></td>
+<td>26,400 to 54,000 EUR</td>
+</tr>
+<tr>
+<td><a href="../../country/sweden">Sweden</a></td>
+<td>336,000 to 408,000 SEK</td>
+</tr>
+<tr>
+<td><a href="../../country/united-kingdom">United Kingdom</a></td>
+<td>21,000 GBP</td>
+</tr>
+</tbody>
+</table>
+<p style="font-size: 80%; color: #666 !important;"><em>Sources: <a href="https://www.haufe.de/personal/hr-management/einstiegsgehaelter-personalwesen-das-verdienen-personaler_80_381410.html" target="_blank" rel="noopener">haufe.de</a>, <a href="https://www.iamsterdam.com/en/work/employment-in-amsterdam/salaries-in-amsterdam" target="_blank" rel="noopener">iamsterdam.com</a>, <a href="https://www.unionen.se/rad-och-stod/ingangsloner-dig-som-ar-ny-pa-arbetsmarknaden" target="_blank" rel="noopener">unionen.se</a>, <a href="https://www.payscale.com/research/UK/Job=Human_Resources_(HR)_Assistant/Salary" target="_blank" rel="noopener">payscale.com</a></em></p>
+<p><strong>There are a few rules of thumb to keep in mind:</strong></p>
+<ul>
+<li>With a Master&rsquo;s degree, your entry-level salary will be higher than with only a Bachelor&rsquo;s degree.</li>
+<li>With a specialised Masters in HR Management, your first wage will be higher than with a Masters in Business or another discipline.</li>
+<li>Practical experience e.g. from internships will also be valuable in landing your first full-time job.</li>
+</ul>
+<p>Don&rsquo;t let uncertainty about your first salary unsettle you too much. Once you start working in Human Resources, you pretty much sit &ldquo;at the source&rdquo;: It will be very easy to find out what typical salaries are, and what you can expect when you get promoted or change jobs.</p>
+<h3>Top reasons to study HR Management</h3>
+<p>Having a career in Human Resource Management (HRM) is a very rewarding experience. There are several good reasons why pursuing a Human Resources degree sets you up for an exciting future:</p>
+<ol>
+<li><strong>It&rsquo;s a versatile field:</strong> You will gain knowledge and experience in multiple areas like Business, Leadership, Law, Marketing, Psychology, and Education.</li>
+<li><strong>You can work in any industry:</strong> HR Management is a function that is needed in any industry, and many of the skills that you develop will be transferable across sectors. In fact, changing industries as an HR professional is probably easier than for any other kind of job.</li>
+<li><strong>You have room to grow:</strong> As an important business function, HR allows for an interesting growth trajectory. If you decide to work for a larger company, you might even move up the corporate ladder to top management roles like <em>Chief HR Officer</em> or <em>Chief People Officer</em>. As you ascend, you will acquire new skills, authority, and a higher salary. But opportunities are just as limitless in smaller companies. Here you will have the greater opportunity to personalize relationships with every employee and be given more autonomy in skill-building.</li>
+</ol>
+<h3>Can you work in Human Resources without an HR degree?</h3>
+<p>Maybe you&rsquo;re someone that already has a background in a field outside of Human Resource Management (HRM). <strong>While employers prefer graduates to have a specialization in HRM, it is possible to start a career in HR with an education in a different field.</strong></p>
+<p>Do take note, that many times these positions will be entry-level, and in many ways, basic administrative work. With that said, it pays off to enter the workforce with a formal education in HRM simply because it will provide you with more opportunities for growth, to apply for job opportunities, and seek longer-term job safety. Set yourself up for long-term career success by getting an HRM degree.</p>
+<h3>Pros &amp; Cons of a Human Resources Career</h3>
+<p>You&rsquo;ve been contemplating a formal degree in Human Resources Management. <strong>A career in HRM provides countless growth and career opportunities.</strong> By far the best thing about HRM is the people you will work with and positively impact. Over time, you will see how much your support and position make in the difference of a company&rsquo;s employees, and you will help people reach their full professional potential. It can be a very rewarding career indeed.</p>
+<p><strong>But like any career, no job is perfect&mdash;and HRM can have downsides.</strong> As an HRM professional, you will also have to deal with difficult situations like team disputes, terminations and downsizings, upset employees, and even sexual harassment cases. It&rsquo;s all-important work and contributes to the well-being of a team. But it&rsquo;s not without emotional conflict and tough times.</p>
+<p>Despite the downsides to a career in HRM, the positives clearly outweigh the negatives and over time you can truly see the impact you have on people within your organization.</p>
+<h3>What are similar subjects I can study?</h3>
+<p>After research and review, you might find that Human Resources Management (HRM) isn&rsquo;t the right career path for you. Honest reflection and acknowledgment of this fact are very normal for an aspiring student. But you will find that many of the aspects that originally intrigued you about HRM can be found in similar degree programs. And many of them can still allow you to grow into an HRM role later on if you change your mind.</p>
+<p><strong>Suitable alternatives to HR include, but are not limited to:</strong></p>
+<ul>
+<li><strong>Business Administration</strong>, with HR as a minor subject;</li>
+<li><strong>International Business</strong> if you are looking for a degree with a specific international perspective;</li>
+<li><strong>Marketing</strong>, if recruiting or employer branding is the part of HRM that excites you the most;<br />degrees specifically aimed at Organization &amp; Leadership, which often incorporate personnel and talent management on a more strategic level; or</li>
+<li><strong>Psychology</strong>, and perhaps specifically Organizational Psychology.</li>
+</ul>
+<p><strong>Best of luck with your research!</strong> Overall, an HRM degree, whether it&rsquo;s a Bachelor&rsquo;s or a Master&rsquo;s program, is a rewarding educational experience that transcends into a career choice with countless opportunities to grow and have a satisfying career.</p>
+
+      
+
+        <a id="article-search-button" class="btn btn-md btn-primary" data-track-rendering-ga="true" data-track-click-ga="true" data-event-category="Article Search Button" data-event-label="/article/study-human-resource-management-hrm" href="/search?discipline=21&amp;sort=recommended">82 Human Resource Management Programmes in Europe</a>
+      
+      
+        <div class="author-profile row">
+      <div class="col-xs-3 col-md-2">
+        <img class="author-image" alt="Megan Thudium" title="Megan Thudium" src="https://study-eu.s3.amazonaws.com/uploads/author_profile/article_author-megan-thudium.jpg" />
+      </div>
+    <div class="col-xs-9 col-md-10">
+      <h5 class="header author-name">Author: Megan Thudium <a class="author-social-link" href="https://twitter.com/thudiummegan" target="_blank" title="Megan Thudium on Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a><a class="author-social-link" href="https://www.linkedin.com/in/meganthudium/" target="_blank" title="Megan Thudium on Linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></h5>
+      <p class="author-biography">
+        Megan has first-hand experience studying and working abroad. She has a B.S. in Business Administration from the University of Redlands (USA) and an M.A. in Leadership &amp; Management from IUBH University of Applied Sciences (Germany). She is also an entrepreneur and heads a successful marketing agency in Berlin.
+      </p>
+    </div>
+  </div>
+
+      
+    </div>
+
+    <div class="sidebar col-sm-12 col-md-4">
+
+                <div class="sidebar-container">
+          <strong>
+            Featured universities:
+          </strong>
+          
+          <div class="featured-university-container" data-track-rendering-ga="true" data-event-category="Featured University Banner" data-event-label="/university/university-west">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/university-west">
+                    <img alt="University West" title="University West" class="search-result-logo lazyload" data-src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_university-west-logo.svg" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/university-west">University West</a><br />
+                  Trollhättan, 
+                  <a href="/country/sweden">Sweden</a><br />
+                  16 study programmes
+              </div>
+            </div>
+          </div>
+          <div class="featured-university-container" data-track-rendering-ga="true" data-event-category="Featured University Banner" data-event-label="/university/hertie-school">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/hertie-school">
+                    <img alt="Hertie School" title="Hertie School" class="search-result-logo lazyload" data-src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_hertie-school-logo.svg" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/hertie-school">Hertie School</a><br />
+                  <a href="/city/berlin">Berlin</a>, 
+                  <a href="/country/germany">Germany</a><br />
+                  4 study programmes
+              </div>
+            </div>
+          </div>
+          <div class="featured-university-container" data-track-rendering-ga="true" data-event-category="Featured University Banner" data-event-label="/university/lancaster-university-leipzig">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/lancaster-university-leipzig">
+                    <img alt="Lancaster University Leipzig" title="Lancaster University Leipzig" class="search-result-logo lazyload" data-src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_lancaster-university-leipzig-logo.svg" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/lancaster-university-leipzig">Lancaster University Leipzig</a><br />
+                  Leipzig, 
+                  <a href="/country/germany">Germany</a><br />
+                  8 study programmes
+              </div>
+            </div>
+          </div>
+          <div class="featured-university-container" data-track-rendering-ga="true" data-event-category="Featured University Banner" data-event-label="/university/code-university-of-applied-sciences">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/code-university-of-applied-sciences">
+                    <img alt="CODE University of Applied Sciences" title="CODE University of Applied Sciences" class="search-result-logo lazyload" data-src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_code-university-berlin-logo.png" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/code-university-of-applied-sciences">CODE University of Applied Sciences</a><br />
+                  <a href="/city/berlin">Berlin</a>, 
+                  <a href="/country/germany">Germany</a><br />
+                  3 study programmes
+              </div>
+            </div>
+          </div>
+          <div class="featured-university-container" data-track-rendering-ga="true" data-event-category="Featured University Banner" data-event-label="/university/ca-foscari-university-of-venice">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/ca-foscari-university-of-venice">
+                    <img alt="Ca&#39; Foscari University of Venice" title="Ca&#39; Foscari University of Venice" class="search-result-logo lazyload" data-src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_ca--foscari-university-of-venice-logo.png" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/ca-foscari-university-of-venice">Ca&#39; Foscari University of Venice</a><br />
+                  Venice, 
+                  <a href="/country/italy">Italy</a><br />
+                  20 study programmes
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+
+
+
+
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Study.EU Responsive (Article) -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-4374612586998899"
+            data-ad-slot="6769340969"
+            data-ad-format="auto"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      
+      
+
+    </div>
+
+
+  </div>
+
+  <div class="row">
+  <div class="content col-md-8">
+        <div>
+          <h2>You might be interested in this:</h2>
+          <div class="row">
+            <div class="col-sm-12 col-md-4">
+              <a class="related-tracked" href="/article/why-get-an-mba-in-europe-here-are-the-top-10-reasons">
+                <div class="thumbnail home-country-card">
+                      <img alt="Why get an MBA in Europe? Here are the top 10 reasons:" title="Why get an MBA in Europe? Here are the top 10 reasons:" class="country-default-image lazyload" data-src="https://study-eu.s3.amazonaws.com/uploads/image/path/241/slideshow_29339599893_e525382e53_o.jpg" />
+                    <div class="caption">
+                      <strong>Why get an MBA in Europe? Here are the top 10 reasons:</strong>
+                    </div>
+                </div>
+</a>            </div>
+            <div class="col-sm-12 col-md-4">
+              <a class="related-tracked" href="/article/the-top-10-business-schools-in-europe-to-get-an-mba">
+                <div class="thumbnail home-country-card">
+                      <img alt="The top 10 business schools in Europe to get an MBA in 2020" title="The top 10 business schools in Europe to get an MBA in 2020" class="country-default-image lazyload" data-src="https://study-eu.s3.amazonaws.com/uploads/image/path/240/slideshow_tie-690084_1920.jpg" />
+                    <div class="caption">
+                      <strong>The top 10 business schools in Europe to get an MBA in 2020</strong>
+                    </div>
+                </div>
+</a>            </div>
+            <div class="col-sm-12 col-md-4">
+              <a class="related-tracked" href="/article/the-academic-backgrounds-of-the-worlds-most-powerful-ceos">
+                <div class="thumbnail home-country-card">
+                      <img alt="The academic backgrounds of the world’s most powerful CEOs" title="The academic backgrounds of the world’s most powerful CEOs" class="country-default-image lazyload" data-src="https://study-eu.s3.amazonaws.com/uploads/image/path/274/slideshow_academic-backgrounds-of-ceos.jpg" />
+                    <div class="caption">
+                      <strong>The academic backgrounds of the world’s most powerful CEOs</strong>
+                    </div>
+                </div>
+</a>            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+    
+
+  
+  
+  <footer class="top-footer">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Merriweather Sans:300,400i,700']
+      }
+    });
+  </script> 
+
+  
+  <div class="container">
+  <div class="row">
+    
+    <div class="text-left col-md-8 col-xs-6" style="display: inline-block;float: left;">
+      <a href="/" title="Study.EU" data-track-click="true" data-event-category="Footer Logo"><img class="footer-logo" src="/assets/study-eu_logo_wb_200x66-8722da28bad82460d8951c34fe8b5ba8e11794b2fd21e83ee8c5fe54323ea73b.png" /></a><br />
+      <p>
+        Copyright &copy; 2021 <a title="Study.EU" href="/">Study.EU</a>
+      </p>
+      <p>
+        
+      </p>
+      <a class="social-link" href="https://www.facebook.com/StudyEU-168756646881605/" target="_blank" title="Like Study.EU on Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://twitter.com/wwwStudyEU" target="_blank" title="Follow Study.EU on Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://www.linkedin.com/company/study.eu/" target="_blank" title="Follow Study.EU on Linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    </div>
+    <div class="text-right col-md-4 col-xs-6">
+      <br /><br />
+          <a rel="nofollow" href="/page/imprint">Imprint</a>
+        &middot;
+          <a rel="nofollow" href="/page/about-study-eu">About Study.eu</a>
+        &middot;
+          <a rel="nofollow" href="/page/privacy-policy">Privacy Policy</a>
+        &middot;
+      <a href="/jobs">Jobs</a>
+      
+      <br />
+      
+      <a href="/press">Press</a>
+      
+      <!-- &middot; -->
+      
+        <!-- &mdash; //-->
+      
+      <br /><br />
+      <a href="/advertise-on-study-eu">Advertise on Study.eu</a>
+    </div>
+  </div>
+  </div>
+</footer>
+
+<a href="javascript:" id="scroll-to-top" title="Scroll back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+<script>
+  $(window).scroll(function() {
+      if ($(this).scrollTop() >= 100) {        // page is scrolled more than 100px
+          $('#scroll-to-top').fadeIn(500);
+      } else {
+          $('#scroll-to-top').fadeOut(500);
+      }
+  });
+  $('#scroll-to-top').click(function() {      // arrow is clicked
+      $('body,html').animate({
+          scrollTop : 0                       // scroll to top
+      }, 500);
+  });
+</script>
+
+
+  
+  <footer class="footer-countries">
+
+
+  <div class="container">
+    <div class="row">
+    
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <h5>Study in Europe:</h5>
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Austria" href="/country/austria">Austria</a><br />
+                <a title="Study in Belgium" href="/country/belgium">Belgium</a><br />
+                <a title="Study in the Czech Republic" href="/country/czech-republic">Czech Republic</a><br />
+                <a title="Study in Denmark" href="/country/denmark">Denmark</a><br />
+                <a title="Study in Estonia" href="/country/estonia">Estonia</a><br />
+                <a title="Study in the Faroe Islands" href="/country/faroe-islands">Faroe Islands</a><br />
+                <a title="Study in Finland" href="/country/finland">Finland</a><br />
+                <a title="Study in France" href="/country/france">France</a><br />
+                <a title="Study in Germany" href="/country/germany">Germany</a><br />
+                <a title="Study in Greece" href="/country/greece">Greece</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Hungary" href="/country/hungary">Hungary</a><br />
+                <a title="Study in Iceland" href="/country/iceland">Iceland</a><br />
+                <a title="Study in Ireland" href="/country/ireland">Ireland</a><br />
+                <a title="Study in Italy" href="/country/italy">Italy</a><br />
+                <a title="Study in Latvia" href="/country/latvia">Latvia</a><br />
+                <a title="Study in Liechtenstein" href="/country/liechtenstein">Liechtenstein</a><br />
+                <a title="Study in Lithuania" href="/country/lithuania">Lithuania</a><br />
+                <a title="Study in Malta" href="/country/malta">Malta</a><br />
+                <a title="Study in the Netherlands" href="/country/netherlands">Netherlands</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Norway" href="/country/norway">Norway</a><br />
+                <a title="Study in Poland" href="/country/poland">Poland</a><br />
+                <a title="Study in Portugal" href="/country/portugal">Portugal</a><br />
+                <a title="Study in Romania" href="/country/romania">Romania</a><br />
+                <a title="Study in Russia" href="/country/russia">Russia</a><br />
+                <a title="Study in Spain" href="/country/spain">Spain</a><br />
+                <a title="Study in Sweden" href="/country/sweden">Sweden</a><br />
+                <a title="Study in Switzerland" href="/country/switzerland">Switzerland</a><br />
+                <a title="Study in the United Kingdom" href="/country/united-kingdom">United Kingdom</a><br />
+            </div>
+          </div>
+        </div>
+    
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Recent articles:</h5>
+          </div>
+          <div class="col-md-8">
+              <p><a href="/article/study-human-resource-management-hrm">Study Human Resource Management: All you need to know</a></p>
+              <p><a href="/article/degree-in-chinese-studies-sinology">Degree in Chinese Studies: All you need to know</a></p>
+              <p><a href="/article/study-biomedicine-or-biomedical-sciences">Study Biomedicine or Biomedical Sciences: All you need to know</a></p>
+              <p><a href="/article/should-i-get-a-masters-degree-now-or-start-working">Should I get a Master’s degree now - or start working?</a></p>
+              <p><a href="/article/study-international-relations-everything-you-need-to-know">Study International Relations? Everything you need to know</a></p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  
+  </div>
+
+</footer>
+
+  
+  <footer class="footer-press">
+  <div class="container">
+    <div class="row footer-press-description">
+      <div class="col-md-12 text-center">
+        Study.EU has been mentioned in numerous news publications worldwide, such as:
+      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="L&#39;Étudiant (France)" title="L&#39;Étudiant (France)" data-src="/assets/press/letudiant_gray_200-57bccbdceaef3c62c8660629603372823c98afe433bd39bf6d42a73263c113c3.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Frankfurter Allgemeine (Germany)" title="Frankfurter Allgemeine (Germany)" data-src="/assets/press/faz_gray_300-b6e5e6022a7b164c24b69a51fb97a72715018db745fbcda8580675a507370b8b.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Standard (Hong Kong)" title="The Standard (Hong Kong)" data-src="/assets/press/the-standard-hong-kong_gray_200-f124ca057d2671730e1f6d996377ef4614a28ccf04ae04f730eaf16ed7ee0b46.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Independent (UK)" title="The Independent (UK)" data-src="/assets/press/the-independent-uk_gray_300-63238e279b3c62b1f87faf17fcbcf1f14a2e5b9229193a0431fc974da217d159.png" class="lazyload" />
+</a>      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Al-Masry Al-Youm (Egypt)" title="Al-Masry Al-Youm (Egypt)" data-src="/assets/press/al-masry_al-youm_gray_200-9d8e503cd53ec4d955c3e6f7bf2a1c0badb500a0d2bd8a1ef1d11acd686879e5.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Le Monde (France)" title="Le Monde (France)" data-src="/assets/press/le-monde_gray_200-24d8bca493f3a2b8e0150cb4ef38f00c9924ac5e7acfbdb8750076c949c70052.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Local (Europe)" title="The Local (Europe)" data-src="/assets/press/the-local_gray_200-7631164ea94edf8d065b3af6f64274416162d866ce1cea737c3ee25f28cdd098.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Forbes (USA)" title="Forbes (USA)" data-src="/assets/press/forbes_gray_200-deff6ef2c28ec5a275f404c5f59d56f4b687881eb39de52b79b5add3ca609fe2.png" class="lazyload" />
+</a>      </div>
+    </div>
+  </div>
+</footer>
+
+  
+  
+  
+  
+    <div class="cookies-eu js-cookies-eu row">
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+    <div class="cookies-eu-content-holder col-md-4 col-sm-6 col-xs-6 align-self-center">
+      Cookies &amp; analytics help us deliver our services.
+        <a href="/page/privacy-policy" class="cookies-eu-link" target="_blank"> Privacy policy </a>
+    </div>
+    <div class="cookies-eu-button-holder col-md-4 col-sm-6 col-xs-6">
+      <button class="cookies-eu-ok js-cookies-eu-ok btn btn-lg btn-primary" data-track-click-ga="true" data-event-category="Cookie Consent Button"> OK </button>
+    </div>
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+  </div>
+
+  
+  <script>
+  // Improved Ahoy view tracking with additional attributes
+  var additionalProperties = {};
+  console.log("Ahoy: View with additional properties: "+JSON.stringify(additionalProperties));
+  ahoy.trackView(additionalProperties);
+</script>
+<a name="ga"></a> <!-- GA //-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42442116-3', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+  
+  
+  
+    
+  //############################################################
+  //########## 2018-07    NEW CUSTOM METHODS          ##########
+  
+  function getDataTrackAttributes(element) {
+    var data = {};
+    [].forEach.call(element.attributes, function(attr) {
+      if (/^data-trackvalue-/.test(attr.name)) {
+        // Relevant attributes would always be called "data-track-foobar"
+        var underscorename = attr.name.substr(16).replace(/-/g, "_");
+        data[underscorename] = parseInt(attr.value) || attr.value; // Provide as integer if possible, otherwise the original string
+      }
+    });
+    return data;
+  }
+  
+  // Set data-track-click and utm_source for all external links in the description content
+  var content_links = document.querySelectorAll('div.content-description a');
+  for (var i = 0; i < content_links.length; i++) {
+    if ( ((new URL(content_links[i].href, document.baseURI).href) == mainTrackableLink) || (content_links[i].host !== window.location.host) ) {
+      // Link is the main trackable link, or link is external --> add tracking and utm_source if not present
+      utm_url = new URL(content_links[i].href);
+      utm_url.searchParams.set("utm_source", "Study.eu"); // add (or overwrite existing) utm_source parameter
+      content_links[i].href = utm_url;
+      content_links[i].classList.add("external-tracked");
+      content_links[i].setAttribute("data-event-category", "Outbound Link");
+      content_links[i].setAttribute("data-event-label", content_links[i].href);
+      content_links[i].setAttribute("data-track-click", "true"); // Once data-track-click is set to true, initDataAttributes() below will add the id values
+    }
+  }
+  console.log("Modified "+content_links.length+" links in description content.");
+  
+  // Set data attributes for tracking of footer press links
+  footerPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < footerPressLinks.length; i++) {
+    footerPressLinks[i].setAttribute("data-track-click-ga", "true");
+    footerPressLinks[i].setAttribute("data-event-category", "Footer Press Link");
+    footerPressLinks[i].setAttribute("data-event-label", window.location.href);
+  }
+  
+  relatedLinks = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < relatedLinks.length; i++) {
+    relatedLinks[i].setAttribute("data-track-click-ga", "true");
+    relatedLinks[i].setAttribute("data-event-category", "Related Link");
+    relatedLinks[i].setAttribute("data-event-label", relatedLinks[i].getAttribute("href"));
+  }  
+  
+  function initDataAttributes() {
+    // Initialise element data attributes based on backend instance variables
+    elements = document.querySelectorAll('[data-track-click="true"],[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      
+      
+    }
+    console.log("initDataAttributes()");
+  }
+  initDataAttributes();
+    
+  function trackClick(event, trackGA = true, trackAhoy = true) {
+    // When an element was clicked, track the click in GA and Ahoy
+    
+    strEventLabel = "";
+    if        ( event.currentTarget.hasAttribute("data-event-label") ) {
+      strEventLabel = event.currentTarget.getAttribute("data-event-label");
+    } else if ( event.currentTarget.hasAttribute("href") ) {
+      strEventLabel = event.currentTarget.href;
+    }
+    
+    ga('send', 'event', {
+      eventCategory:  event.currentTarget.getAttribute("data-event-category"),
+      eventAction:    'click',
+      eventLabel:     strEventLabel
+    });
+    
+    data = getDataTrackAttributes(event.currentTarget);
+    data["href"] = event.target.href;
+    data["page"] = window.location.pathname;
+    
+    /*ahoy.track (
+      event.currentTarget.getAttribute("data-event-category"),
+      {
+        
+        
+        
+        href: event.target.href,
+        page: window.location.pathname
+      }
+    );*/
+    
+    if (trackAhoy) {
+        data["medium"] = "Article";
+      ahoy.track (
+        event.currentTarget.getAttribute("data-event-category")+" - click",
+        data
+      );
+    }
+    
+    console.log("trackClick(event, trackGA = "+trackGA+", trackAhoy = "+trackAhoy+"): " +
+      event.currentTarget.getAttribute("data-event-category") + ", " +
+      "{href: " + event.target.href + ", " +
+      "page:"+window.location.pathname+"});"
+    );
+  }
+  
+  
+  function trackClicksGA() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click-ga="true"]:not([data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event, true, false);
+      });
+    }
+    console.log("trackClicksGA(): "+elements.length+" elements");
+  }
+  trackClicksGA();
+  
+  function trackClicks() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event);
+      });
+    }
+    console.log("trackClicks(): "+elements.length+" elements");
+  }
+  trackClicks();
+  
+  function trackRenderingsGA() {
+    // Track renderings only in GA
+    // This would be for large-volume data that is interesting, but not mission-critical
+
+    elements = document.querySelectorAll('[data-track-rendering-ga="true"]:not([data-track-rendering="true"])');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+    }
+    
+    console.log("trackRenderingsGA(): "+elements.length+" elements");
+  }
+  trackRenderingsGA();
+  
+  function trackRenderings() {
+    // Track renderings in GA *and* Ahoy
+    elements = document.querySelectorAll('[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+      
+      data = getDataTrackAttributes(elements[i]);
+      data["href"] = elements[i].getAttribute("href");
+      data["page"] = window.location.pathname;
+      
+      ahoy.track (
+        elements[i].getAttribute("data-event-category")+" - rendered",
+        data
+      );
+    }
+    
+    console.log("trackRenderings(): "+elements.length+" elements");
+  }
+  trackRenderings();
+  
+  
+  
+
+  
+  //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  //############################################################
+
+  
+  
+  /*
+  anchorsExternalTracked = document.getElementsByClassName("external-tracked");
+  for (var i = 0 ; i < anchorsExternalTracked.length; i++) {
+    anchorsExternalTracked[i].addEventListener("click", function(event){
+      //event.preventDefault();
+      
+      handleOutboundLinkClicks(event);
+      
+      //document.location = this.href;
+      //var win = window.open(this.href, '_blank');
+      //win.focus();
+      
+    });
+    
+    // Trigger event that shows in GA that the link was rendered
+    ga('send', 'event', {
+      eventCategory: 'Outbound Link',
+      eventAction: 'rendered',
+      eventLabel: anchorsExternalTracked[i].href
+    });   
+  }
+  
+  anchorsRelatedTracked = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < anchorsRelatedTracked.length; i++) {
+    anchorsRelatedTracked[i].addEventListener("click", function(event){
+      handleRelatedLinkClicks(event);
+    });
+  }
+  
+  anchorsFeaturedUniversityTracked = document.getElementsByClassName("featured-university-tracked");
+  for (var i = 0 ; i < anchorsFeaturedUniversityTracked.length; i++) {
+    anchorsFeaturedUniversityTracked[i].addEventListener("click", function(event){
+      handleFeaturedUniversityLinkClicks(event);
+    });
+  }  
+  
+  
+  anchorsFooterPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < anchorsFooterPressLinks.length; i++) {
+    anchorsFooterPressLinks[i].addEventListener("click", function(event){
+      handleFooterPressLinkClicks(event);
+    });
+  }
+  
+  
+  anchorsCustomTracked = document.querySelectorAll('[data-ga-custom-event-label]');
+  for (var i = 0 ; i < anchorsCustomTracked.length; i++) {
+    anchorsCustomTracked[i].addEventListener("click", function(event){
+      handleCustomTracked(event);
+    });
+  }
+  */
+  
+  ////////////////////////////////////////////////////////////////////////////////
+
+  
+  
+</script>
+
+</body>
+</html>

@@ -1,0 +1,2035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"cb4ef145dd","applicationID":"55169925","transactionName":"Jg5fTRMJXFtQQBpCXwwXVEsSD0ReUEEaRFkKFg==","queueTime":2,"applicationTime":392,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"cb4ef145dd",applicationID:"55169925"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+  <title>De Montfort University, United Kingdom | Study.EU</title>
+   
+  <link rel="stylesheet" media="all" href="/assets/application-788bf60a726cbc46bce208400674992d5b5b0e3a0892577e97f4ee25b84407b9.css" />
+  <script src="/assets/application-6d00a9f66b3f7e1a7db9282e671658ce415a54e8512569e7b539a89dc0fb74a5.js"></script>
+  
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="avg2xauqHU95Y9ZqfygmvrdIJ+cdmPPSR8N/RjYwGNGyTYmG+/pqa78cOEem252Ik00NCWrEWcnlB2hGu2oJhg==" />
+  
+  
+    
+  
+  
+  
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-29b05ed0a02376d0d37f92df42a0d954d97274430a0f6264e4d19745408f15c8.ico" />
+  
+  <meta name="description" content="Study at De Montfort University in the United Kingdom: 278 Bachelors, Masters, PhDs. ✓ Study.EU: Your gateway to universities in Europe." />
+  
+  <meta name="keywords" content="study in europe, universities, europe, master, bachelor, masters, bachelors, msc, bsc, llb, llm, phd, doctorate, university, study abroad" />
+  <meta name="google-site-verification" content="9sv6t--Xh8SiHr58R3chJHOJVHixvhn6jBK8Qzc9Z9U" />
+  <meta name="msvalidate.01" content="5E3AE5307267C1BED099C27EB59E264E" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  <link rel="canonical" href="https://www.study.eu/university/de-montfort-university" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@wwwStudyEU" />
+  <meta name="twitter:title" content="De Montfort University, United Kingdom" />
+  
+  <meta property="og:title"  content="De Montfort University, United Kingdom" />
+  
+  
+  
+  
+  
+      <meta property="og:type" content="article" />
+      <meta property="article:publisher" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+      <meta property="article:author" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+  
+  <meta property="og:description" content="Study at De Montfort University in the United Kingdom: 278 Bachelors, Masters, PhDs. ✓ Study.EU: Your gateway to universities in Europe." />
+  <meta property="og:image" content="https://www.study.eu/assets/fallback/study-in-europe-logo-overlay-1200x627-34deac9b2af4b87f5f656da9694257ffa4e59dec8319085daa96f8ca9eb3f980.jpg" />
+  
+</head>
+<body>
+
+  <nav id="navbar" class="navbar navbar-static-top container container-fluid">
+  
+  <div class="container">
+    <div class="row" style="position: relative;">
+        <div class="col-md-3 col-xs-9 navbar-header">
+          <a class="navbar-brand" href="/" title="Study.EU">
+            <img alt="Study.EU" class="homepage-logo" src="/assets/study-eu_logo-ee9afe0c98ee9ac266f676d5dcb967023df14f95661b91c7812bef38a3b0c03a.png" />
+          </a>
+        </div>
+        <div class="col-md-8 bottom-align-text">
+            <strong class="navbar-claim">Your gateway to universities in Europe</strong>
+        </div>
+        <div class="col-md-1 col-xs-3 navbar-search-link-container">
+          <div class="navbar-search-link">
+          </div>
+        </div>
+    </div>
+</div>
+  
+</nav>
+
+  <div class="container" id="div-main-container" role="main">
+
+  </div>
+  
+  
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "CollegeOrUniversity",
+  "name": "De Montfort University",
+  "url": "https://www.study.eu/university/de-montfort-university",
+  "sameAs": "https://www.dmu.ac.uk/",
+  "foundingDate": "1870",
+  
+  "logo": "https://study-eu.s3.amazonaws.com/uploads/university/de-montfort-university-logo.svg",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Study programmes",
+      "value": "278"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Students",
+      "value": "26000"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Rank (THE 2020)",
+      "value": "601"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Rank (QS 2020)",
+      "value": "801"
+    }
+  ]
+}
+</script>
+
+
+
+<div class="header-image">
+  <div class="container">
+    <div class="header-image-cta">
+      <h1>Study at De Montfort University</h1>
+      <h2>Leicester, United Kingdom</h2>
+    </div>
+  </div>
+    <img alt="Study in Europe" title="Study in Europe" src="/assets/fallback/study-in-europe_1920-2cea268aaca4f8cd71c109aa2d67e83e285f04dd3c85c9a21acae013fd6f2259.jpg" />
+    
+    <div class="image-credits">
+      <span class="image-credits-span">
+        <a href="https://www.flickr.com/photos/glasgowamateur/7892308660" target="_blank" rel="nofollow">Europe</a> by Charles Clegg, <a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="nofollow">CC BY-SA 2.0</a>, modified
+      </span>
+    </div>  
+  
+</div>
+
+<div class="div-breadcrumbs">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="/">Study.eu</a></li><i class="fa fa-angle-right breadcrumb-separator" aria-hidden="true"></i><li><a href="/country/united-kingdom">United Kingdom</a></li><i class="fa fa-angle-right breadcrumb-separator" aria-hidden="true"></i><li>De Montfort University</li>
+    </ol>  
+  </div>
+</div> 
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://www.study.eu/",
+        "name": "Study.eu"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://www.study.eu/country/united-kingdom",
+        "name": "United Kingdom"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "https://www.study.eu/university/de-montfort-university",
+        "name": "De Montfort University"
+      }
+    }
+  ]
+}
+</script>
+
+<div class="container" style="position: relative;">
+
+  <div class="row">
+
+    <div class="sidebar col-md-4 col-md-push-8">
+      
+      <table class="entry-details-table">
+        <tbody>
+            <tr>
+              <th class="university-logo" colspan="2">
+                <img alt="De Montfort University - Logo" title="De Montfort University - Logo" class="university-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_de-montfort-university-logo.svg" />
+              </th>
+            </tr>
+          
+          <tr>
+            <td class="university-name" colspan="2">De Montfort University</td>
+          </tr>
+          
+          <tr>
+            <td class="table-entry-name">Location:</td>
+            <td>
+                  Leicester (<a href="/country/united-kingdom">United Kingdom</a>)
+                  
+            </td>
+          </tr>
+          
+          
+            
+          
+          <tr>
+            <td class="table-entry-name">Founded:</td>
+            <td>1870</td>
+          </tr>
+
+          <tr>
+            <td class="table-entry-name">Students:</td>
+            <td>
+              26,000
+            </td>
+          </tr>
+
+          
+          <tr>
+            <td class="table-entry-name">Ranking: <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Times Higher Education World University Rankings 2020"></i></td>
+            <td title="Times Higher Education World University Rankings 2020">
+              #282 (Europe)<br />
+              #601 (World)<br />
+            </td>
+          </tr>
+          
+
+            <tr>
+              <td class="table-entry-name">Listed study programmes:</td>
+              <td><a href="#university-programmes">278</a></td>
+            </tr>
+          
+          
+          
+
+        </tbody>
+      </table>
+      
+      
+
+
+      
+      
+      
+        
+        <div class="sidebar-container">
+          <strong>Featured universities in the United Kingdom:</strong>
+          <div class="featured-university-container">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a href="/university/university-of-kent">
+                    <img alt="University of Kent" title="University of Kent" class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_university-of-kent-logo.svg" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a href="/university/university-of-kent">University of Kent</a><br />
+                  Canterbury, 
+                  <a href="/country/united-kingdom">United Kingdom</a><br />
+                  521 study programmes
+              </div>
+            </div>
+          </div>
+          <div class="featured-university-container">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a href="/university/falmouth-university">
+                    <img alt="Falmouth University" title="Falmouth University" class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_falmouth-university-logo.png" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a href="/university/falmouth-university">Falmouth University</a><br />
+                  Falmouth, 
+                  <a href="/country/united-kingdom">United Kingdom</a><br />
+                  70 study programmes
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+          
+      
+    </div>
+  
+  
+  
+    <div class="content col-md-8 col-md-pull-4">
+
+      <h1>De Montfort University</h1>
+      
+        <div class="bnnr-container">
+  <a target="_blank" rel="nofollow" data-track-rendering-ga="true" data-track-click-ga="true" data-track-click="true" data-event-category="BC" data-event-label="CODE Berlin" data-trackvalue-bc-id="41" data-trackvalue-href="https://code.berlin/en/?utm_source=Study.eu&amp;utm_medium=Banner" href="https://code.berlin/en/?utm_source=Study.eu&amp;utm_medium=Banner">
+    <img class="bnnr" loading="lazy" src="https://study-eu.s3.amazonaws.com/uploads/bc/bc-code-berlin-desktop.png" />
+</a></div>
+
+      
+      <div class="content-description">
+        
+      </div>
+    
+    <a id="university-programmes"><hr /></a>
+    
+    
+    
+
+    <ul class="nav nav-tabs">
+      
+        <li class="active"><a data-toggle="tab" href="#tab-bachelor">Bachelor’s<br/>programmes</a></li>
+      
+        <li><a data-toggle="tab" href="#tab-master">Master’s<br/>programmes</a></li>
+      
+        <li><a data-toggle="tab" href="#tab-doctorate">Doctorate<br/>programmes</a></li>
+      
+    </ul>
+
+    <div class="tab-content">
+    
+        <div id="tab-bachelor" class="tab-pane active">
+          <h4>Bachelors at De Montfort University</h4>
+            <div aria-multiselectable="true" role="tablist" id="accordion-bachelor" class="panel-group">
+
+      <div class="panel panel-default"> <a title="Art, Design &amp; Media" aria-controls="collapse-bachelor-1" aria-expanded="false" href="#collapse-bachelor-1" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-1" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Art, Design &amp; Media <span class="discipline-programmes-count">(32)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-1" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-1" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/de-montfort-university/animation-18556">Animation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/architectural-technology-18662">Architectural Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/architecture-18557">Architecture</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/audio-and-recording-technology">Audio and Recording Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/broadcast-journalism-18560">Broadcast Journalism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/concept-and-comic-art">Concept and Comic Art</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/contour-fashion">Contour Fashion</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/contour-fashion-communication">Contour Fashion (Communication)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/creative-music-technology-18575">Creative Music Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/dance-18581">Dance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/dance-joint-honours">Dance (Joint Honours)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/drama-18585">Drama</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/drama-joint-honours">Drama (Joint Honours)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/fashion-design-18607">Fashion Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/fashion-textile-design">Fashion Textile Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/film-studies-18610">Film Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/fine-art-18611">Fine Art</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/game-art-18613">Game Art</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/games-production">Games Production</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/graphic-design-18615">Graphic Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/graphic-design-illustration">Graphic Design (Illustration)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/interior-design-18622">Interior Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/journalism-joint-honours">Journalism (Joint Honours)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/journalism-nctj-accredited">Journalism (NCTJ accredited)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/music-technology-18650">Music Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/music-technology-and-performance">Music, Technology and Performance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/performing-arts-18639">Performing Arts</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/photography-and-video">Photography and Video</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/product-and-furniture-design">Product and Furniture Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/product-design-18644">Product Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/product-design-18697">Product Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/textile-design-18647">Textile Design</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Business &amp; Management" aria-controls="collapse-bachelor-2" aria-expanded="false" href="#collapse-bachelor-2" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-2" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Business &amp; Management <span class="discipline-programmes-count">(29)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-2" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-2" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/de-montfort-university/accounting-18661">Accounting</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/accounting-and-business-management">Accounting and Business Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/accounting-and-economics-18553">Accounting and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/accounting-and-finance-18554">Accounting and Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/advertising-and-marketing-communications">Advertising and Marketing Communications</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/arts-and-festivals-management">Arts and Festivals Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/arts-and-festivals-management-joint-honours">Arts and Festivals Management (Joint Honours)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/business-administration-18561">Business Administration</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/business-administration-and-management-18562">Business Administration and Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/business-administration-and-management-year-3-top-up-only">Business Administration and Management (Year 3 Top-up Only)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/business-and-globalisation">Business and Globalisation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/business-and-management-18565">Business and Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/business-and-marketing">Business and Marketing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/business-entrepreneurship-and-innovation">Business Entrepreneurship and Innovation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/business-management-and-economics-18568">Business Management and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/business-management-and-finance-18569">Business Management and Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/business-management-and-human-resource-management">Business Management and Human Resource Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/business-management-and-law-18571">Business Management and Law</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/finance-and-investment-18679">Finance and Investment</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/human-resource-management-18620">Human Resource Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/human-resource-management-with-languages">Human Resource Management with Languages</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/international-business-18623">International Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/international-business-and-finance-18624">International Business and Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/international-marketing-and-business">International Marketing and Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/international-marketing-and-business-with-languages">International Marketing and Business with Languages</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/marketing-18634">Marketing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/media-and-communication-18636">Media and Communication</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/media-and-communication-with-modern-languages">Media and Communication with Modern Languages</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/public-administration-and-management">Public Administration and Management</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Computer Science &amp; IT" aria-controls="collapse-bachelor-62" aria-expanded="false" href="#collapse-bachelor-62" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-62" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Computer Science &amp; IT <span class="discipline-programmes-count">(11)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-62" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-62" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/de-montfort-university/artificial-intelligence-18663">Artificial Intelligence</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/business-information-systems-18667">Business Information Systems</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/computer-games-programming-18668">Computer Games Programming</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/computer-science-18669">Computer Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/computing-18670">Computing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/computing-for-business">Computing for Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/cyber-security-18672">Cyber Security</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/digital-forensics">Digital Forensics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/games-production">Games Production</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/information-and-communication-technology-18684">Information and Communication Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/software-engineering-18703">Software Engineering</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Engineering &amp; Technology" aria-controls="collapse-bachelor-3" aria-expanded="false" href="#collapse-bachelor-3" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-3" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Engineering &amp; Technology <span class="discipline-programmes-count">(9)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-3" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-3" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/de-montfort-university/aeronautical-engineering-18651">Aeronautical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/building-surveying-18666">Building Surveying</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/electrical-and-electronic-engineering-18652">Electrical and Electronic Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/energy-engineering-18653">Energy Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/internet-of-things">Internet of Things</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/mechanical-engineering-18654">Mechanical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/mechatronics-18655">Mechatronics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/motorsport-engineering-18689">Motorsport Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/quantity-surveying-and-construction">Quantity Surveying and Construction</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Humanities" aria-controls="collapse-bachelor-64" aria-expanded="false" href="#collapse-bachelor-64" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-64" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Humanities <span class="discipline-programmes-count">(7)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-64" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-64" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/de-montfort-university/creative-writing-18576">Creative Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/creative-writing-joint-honours">Creative Writing (Joint Honours)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/english-literature-18599">English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/english-literature-joint-honours">English Literature (Joint Honours)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/english-literature-with-french-mandarin-or-spanish">English Literature with French, Mandarin or Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/history-18617">History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/human-resource-management-with-languages">Human Resource Management with Languages</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Law" aria-controls="collapse-bachelor-4" aria-expanded="false" href="#collapse-bachelor-4" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-4" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Law <span class="discipline-programmes-count">(1)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-4" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-4" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/de-montfort-university/business-law-18708">Business Law</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Medicine &amp; Health" aria-controls="collapse-bachelor-5" aria-expanded="false" href="#collapse-bachelor-5" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-5" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Medicine &amp; Health <span class="discipline-programmes-count">(13)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-5" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-5" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/de-montfort-university/biomedical-science-18665">Biomedical Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/district-nursing">District Nursing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/health-and-wellbeing-in-society">Health and Wellbeing in Society</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/healthcare-science-audiology-18683">Healthcare Science (Audiology)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/medical-science-18649">Medical Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/midwifery-pre-registration-midwifery">Midwifery Pre-Registration Midwifery</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/nursing-with-registration-adult">Nursing with Registration (Adult)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/nursing-with-registration-child">Nursing with Registration (Child)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/nutrition-18658">Nutrition</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/pharmaceutical-science">Pharmaceutical Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/pharmacy-18763">Pharmacy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/practice-nursing">Practice Nursing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/professional-clinical-practice">Professional Clinical Practice</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Natural Sciences &amp; Mathematics" aria-controls="collapse-bachelor-6" aria-expanded="false" href="#collapse-bachelor-6" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-6" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Natural Sciences &amp; Mathematics <span class="discipline-programmes-count">(1)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-6" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-6" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/de-montfort-university/mathematics-18686">Mathematics</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Social Sciences" aria-controls="collapse-bachelor-7" aria-expanded="false" href="#collapse-bachelor-7" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-7" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Social Sciences <span class="discipline-programmes-count">(23)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-7" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-7" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/de-montfort-university/accounting-and-economics-18553">Accounting and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/business-management-and-economics-18568">Business Management and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/criminal-investigation-with-policing-studies">Criminal Investigation with Policing Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/criminology-18579">Criminology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/criminology-with-psychology-18580">Criminology with Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/degree-in-professional-policing">Degree in Professional Policing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/economics-18656">Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/economics-18587">Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/education-studies-18590">Education Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/education-studies-with-mandarin-french-or-spanish">Education Studies with Mandarin, French or Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/education-studies-with-psychology">Education Studies with Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/forensic-science-18680">Forensic Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/international-relations-18628">International Relations</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/international-relations-joint-honours">International Relations (Joint Honours)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/international-relations-with-languages">International Relations with Languages</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/politics-18641">Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/politics-joint-honours">Politics (Joint Honours)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/psychology-18698">Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/psychology-with-criminology-18699">Psychology with Criminology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/psychology-with-education-studies">Psychology with Education Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/psychology-with-health-and-wellbeing-in-society">Psychology with Health and Wellbeing in Society</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/social-work-18646">Social Work</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/youth-work-and-community-development-18648">Youth Work and Community Development</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default" id="panel-bachelor-other"> <a title="Other subjects" aria-controls="collapse-bachelor-other" aria-expanded="false" href="#collapse-bachelor-other" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-other" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Other subjects</span> <span class="discipline-programmes-count">(38)</span></a>
+        <div aria-labelledby="heading-bachelor-other" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-other" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/de-montfort-university/design-crafts-cc03d248-cebb-43f6-8abc-0a1f0de32bcf">Design Crafts</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/diagnostic-radiography-c15200d6-69ed-4a57-ac9c-40db828b71fd">Diagnostic Radiography</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/digital-music-technology">Digital Music Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/digital-technology-innovation">Digital Technology Innovation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/economics-and-finance-97ad5b6a-0c6b-4c51-9afc-ac8d6e522fb2">Economics and Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/economics-and-international-relations-e363da90-cc95-4299-9c75-06224d4d1ea1">Economics and International Relations</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/economics-and-politics-f33554de-91d4-438a-89e8-e44ef2b35b86">Economics and Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/english-and-creative-writing-d21b1e1e-f664-4750-a4e4-bdb222196753">English and Creative Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/english-language-8df3d7de-eb79-4469-b4f4-049a1b4ae2ec">English Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/english-language-and-english-literature-7f69c6fb-fbd9-4461-acbe-c4710f94847d">English Language and English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/english-language-joint-honours">English Language (Joint Honours)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/english-language-with-french-mandarin-or-spanish">English Language with French, Mandarin or Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/english-language-with-teaching-english-to-speakers-of-other-">English Language with Teaching English to Speakers of Other Languages (TESOL)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/fashion-buying-with-design">Fashion Buying with Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/fashion-buying-with-marketing">Fashion Buying with Marketing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/fashion-buying-with-merchandising">Fashion Buying with Merchandising</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/fashion-buying-with-product-development">Fashion Buying with Product Development</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/fashion-communication-and-styling-aa7dfe2e-b84f-462e-9334-7ab3e87153c7">Fashion Communication and Styling</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/fashion-management-level-6-top-up">Fashion Management (Level 6 Top Up)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/footwear-design">Footwear Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/global-arts-management-level-6-top-up">Global Arts Management (Level 6 Top Up)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/history-joint-honours">History (Joint Honours)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/history-with-french-mandarin-or-spanish">History with French, Mandarin or Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/independent-supplementary-prescribing">Independent/Supplementary Prescribing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/international-finance-and-business">International Finance and Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/law-4c763110-0f4f-4bea-b0dd-bf70c6879489">Law</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/law-and-criminal-justice">Law and Criminal Justice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/law-and-economics-a705919d-64cb-4df7-b626-809294ce7a1a">Law and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/law-human-rights-and-social-justice">Law, Human Rights and Social Justice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/media-joint-honours">Media (Joint Honours)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/media-production-f952bb45-edd4-445e-a336-9bb119f050e5">Media Production</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/nursing-with-registration-learning-disability">Nursing with Registration (Learning Disability)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/nursing-with-registration-mental-health">Nursing with Registration (Mental Health)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/paramedicine">Paramedicine</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/pharmaceutical-and-cosmetic-science">Pharmaceutical and Cosmetic Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/specialist-community-public-health-nursing-with-nmc-registra">Specialist Community Public Health Nursing with NMC Registration</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/speech-and-language-therapy-22e147fa-bfc4-483d-a205-5336b00fe8b7">Speech and Language Therapy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/visual-effects-5eec44f2-d315-48d8-be36-9247a22f6760">Visual Effects</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+
+  <script>
+  if ( $('#accordion-bachelor .panel-collapse').length == 1 ) {
+    // If Programmes at this level all fall into the same Discipline, expand it
+    $('#accordion-bachelor .panel-collapse').collapse('show');
+  }
+
+
+  $('.panel-collapse').on('shown.bs.collapse', function (e) {
+      var panel = $(this).closest('div.panel');
+      var panelTop = panel[0].getBoundingClientRect().top;
+      var navHeight = document.getElementById("navbar").offsetHeight;
+      var navBottom = document.getElementById("navbar").getBoundingClientRect().bottom;
+      
+      var visibleFromHere = Math.max(0, navBottom); // navBottom might be negative on desktop
+      
+      if (panelTop < visibleFromHere) {
+        // If the just expanded panel's top is above what's visible in the viewport, scroll up.
+        $('html,body').animate({
+            scrollTop: panel.offset().top-visibleFromHere-25
+        }, 500); 
+      }
+  }); 
+  </script>
+
+        </div>
+      
+        <div id="tab-master" class="tab-pane">
+          <h4>Masters at De Montfort University</h4>
+            <div aria-multiselectable="true" role="tablist" id="accordion-master" class="panel-group">
+
+      <div class="panel panel-default"> <a title="Art, Design &amp; Media" aria-controls="collapse-master-1" aria-expanded="false" href="#collapse-master-1" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-1" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Art, Design &amp; Media <span class="discipline-programmes-count">(16)</span></span> </a>
+        <div aria-labelledby="heading-master-1" role="tabpanel" class="panel-collapse collapse" id="collapse-master-1" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/de-montfort-university/architectural-design-18725">Architectural Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/architecture-18756">Architecture</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/architecture-and-sustainability">Architecture and Sustainability</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/architecture-research-degree">Architecture research degree</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/arts-research-degree">Arts research degree</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/contour-fashion-innovation">Contour Fashion Innovation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/design-research-degree">Design research degree</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/fashion-and-textiles-18736">Fashion and Textiles</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/fine-art-18738">Fine Art</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/interior-design-18742">Interior Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/international-film-production">International Film Production</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/investigative-journalism-18745">Investigative Journalism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/music-technology-and-innovation">Music, Technology and Innovation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/product-design-18820">Product Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/product-design-18749">Product Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/textile-design-technology-and-innovation">Textile Design, Technology and Innovation</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Business &amp; Management" aria-controls="collapse-master-2" aria-expanded="false" href="#collapse-master-2" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-2" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Business &amp; Management <span class="discipline-programmes-count">(23)</span></span> </a>
+        <div aria-labelledby="heading-master-2" role="tabpanel" class="panel-collapse collapse" id="collapse-master-2" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/de-montfort-university/accounting-and-finance-18769">Accounting and Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/advertising-and-public-relations-management">Advertising and Public Relations Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/air-transport-management">Air Transport Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/applied-accounting-18775">Applied Accounting</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/business-intelligence-systems-and-data-mining">Business Intelligence Systems and Data Mining</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/business-management-in-sport">Business Management in Sport</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/business-management-in-the-creative-industries">Business Management in the Creative Industries</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/cultural-events-management">Cultural Events Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/executive-mba-18760">Executive MBA</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/forensic-accounting-forensic-accounting-applied">Forensic Accounting/ Forensic Accounting (Applied)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/human-resource-management-18741">Human Resource Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/international-banking-and-finance">International Banking and Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/international-business-and-entrepreneurship">International Business and Entrepreneurship</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/international-business-and-finance-18806">International Business and Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/international-business-and-human-resource-management">International Business and Human Resource Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/international-business-and-management-18808">International Business and Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/international-business-and-marketing-18809">International Business and Marketing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/marketing-management-18813">Marketing Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/master-of-business-administration-18761">Master of Business Administration</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/mba-for-engineers">MBA for Engineers</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/project-management-18823">Project Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/risk-management-18826">Risk Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/strategic-and-digital-marketing">Strategic and Digital Marketing</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Computer Science &amp; IT" aria-controls="collapse-master-62" aria-expanded="false" href="#collapse-master-62" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-62" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Computer Science &amp; IT <span class="discipline-programmes-count">(7)</span></span> </a>
+        <div aria-labelledby="heading-master-62" role="tabpanel" class="panel-collapse collapse" id="collapse-master-62" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/de-montfort-university/business-intelligence-systems-and-data-mining">Business Intelligence Systems and Data Mining</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/computing-18782">Computing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/cyber-security-18785">Cyber Security</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/cyber-technology">Cyber Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/data-analytics-18787">Data Analytics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/information-systems-management-18799">Information Systems Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/software-engineering-18827">Software Engineering</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Engineering &amp; Technology" aria-controls="collapse-master-3" aria-expanded="false" href="#collapse-master-3" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-3" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Engineering &amp; Technology <span class="discipline-programmes-count">(9)</span></span> </a>
+        <div aria-labelledby="heading-master-3" role="tabpanel" class="panel-collapse collapse" id="collapse-master-3" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/de-montfort-university/aeronautical-engineering-18773">Aeronautical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/electronic-engineering-18792">Electronic Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/energy-engineering-18795">Energy Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/engineering-management-18796">Engineering Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/intelligent-systems-18800">Intelligent Systems</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/intelligent-systems-and-robotics">Intelligent Systems and Robotics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/mechanical-engineering-18814">Mechanical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/mechatronics-18815">Mechatronics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/pharmaceutical-biotechnology-18817">Pharmaceutical Biotechnology</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Humanities" aria-controls="collapse-master-64" aria-expanded="false" href="#collapse-master-64" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-64" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Humanities <span class="discipline-programmes-count">(2)</span></span> </a>
+        <div aria-labelledby="heading-master-64" role="tabpanel" class="panel-collapse collapse" id="collapse-master-64" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/de-montfort-university/creative-writing-18727">Creative Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/history-18740">History</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Law" aria-controls="collapse-master-4" aria-expanded="false" href="#collapse-master-4" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-4" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Law <span class="discipline-programmes-count">(12)</span></span> </a>
+        <div aria-labelledby="heading-master-4" role="tabpanel" class="panel-collapse collapse" id="collapse-master-4" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/de-montfort-university/business-law-international-business-law-distance-learning">Business Law / International Business Law (distance learning)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/business-law-law">Business Law/Law</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/employment-law-and-practice-distance-learning">Employment Law and Practice (distance learning)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/environmental-law-and-practice-distance-learning">Environmental Law and Practice (distance learning)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/food-law-distance-learning">Food Law (distance learning)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/international-business-law-18719">International Business Law</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/international-construction-law-distance-learning">International Construction Law (distance learning)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/international-human-rights-law-distance-learning">International Human Rights Law (distance learning)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/llm-in-legal-practice-top-up">LLM in Legal Practice (top-up)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/media-and-entertainment-law-distance-learning">Media and Entertainment Law (distance learning)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/sports-law-18723">Sports Law</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/transnational-oil-gas-and-energy-sustainability-law">Transnational Oil, Gas and Energy Sustainability Law</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Medicine &amp; Health" aria-controls="collapse-master-5" aria-expanded="false" href="#collapse-master-5" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-5" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Medicine &amp; Health <span class="discipline-programmes-count">(11)</span></span> </a>
+        <div aria-labelledby="heading-master-5" role="tabpanel" class="panel-collapse collapse" id="collapse-master-5" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/de-montfort-university/advanced-biomedical-science">Advanced Biomedical Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/advanced-clinical-practice-18771">Advanced Clinical Practice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/clinical-leadership-education-and-research">Clinical Leadership, Education and Research</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/clinical-pharmacy">Clinical Pharmacy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/health-and-community-development-studies">Health and Community Development Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/international-nursing-and-leadership">International Nursing and Leadership</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/nursing-specialist-district-nursing-with-nmc-recordable-spq">Nursing (Specialist District Nursing) with NMC Recordable SPQ</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/pharmaceutical-biotechnology-18817">Pharmaceutical Biotechnology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/pharmaceutical-quality-by-design">Pharmaceutical Quality by Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/professional-clinical-practice-18821">Professional Clinical Practice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/quality-by-design-for-the-pharmaceutical-industry">Quality by Design for the Pharmaceutical Industry</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Social Sciences" aria-controls="collapse-master-7" aria-expanded="false" href="#collapse-master-7" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-7" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Social Sciences <span class="discipline-programmes-count">(9)</span></span> </a>
+        <div aria-labelledby="heading-master-7" role="tabpanel" class="panel-collapse collapse" id="collapse-master-7" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/de-montfort-university/diplomacy-and-world-order">Diplomacy and World Order</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/education-practice">Education Practice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/health-psychology-18798">Health Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/international-relations-18744">International Relations</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/psychological-well-being">Psychological Well-being</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/social-work-18750">Social Work</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/youth-and-community-development-studies">Youth and Community Development Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/youth-work-and-community-development-18754">Youth Work and Community Development</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/youth-work-health-and-community-development">Youth Work, Health and Community Development</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default" id="panel-master-other"> <a title="Other subjects" aria-controls="collapse-master-other" aria-expanded="false" href="#collapse-master-other" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-other" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Other subjects</span> <span class="discipline-programmes-count">(30)</span></a>
+        <div aria-labelledby="heading-master-other" role="tabpanel" class="panel-collapse collapse" id="collapse-master-other" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/de-montfort-university/creative-industries-management-and-enterprise">Creative Industries (Management and Enterprise)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/creative-technologies-ab8e1afe-498d-44c2-9c6f-ad46e60d8b2b">Creative Technologies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/design-innovation-0d6932ad-4c63-43dd-9ffa-4c3da1b7c1bb">Design Innovation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/design-management-and-entrepreneurship">Design Management and Entrepreneurship</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/digital-arts-622706ba-f3bd-41c6-9eef-18c5bba65cad">Digital Arts</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/digital-design-a68c0243-4d41-4f5a-9aa3-8782f87462ba">Digital Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/economics-and-finance-47ba1c6f-cb22-4501-9f7b-a1a51027c4ff">Economics and Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/economics-and-international-relations-0f5a12f1-2105-4352-b6ff-7806c0d44c76">Economics and International Relations</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/economics-and-marketing">Economics and Marketing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/economics-and-risk-management">Economics and Risk Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/energy-and-sustainable-building-design">Energy and Sustainable Building Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/energy-and-sustainable-development">Energy and Sustainable Development</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/english-e40e0e47-9cce-4082-8dab-bd899cbb2020">English</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/english-language-bc75a4fd-3365-4c6b-b017-588dc434bb2f">English Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/english-language-teaching-d6a1962a-6128-466b-b3f4-7ad5f4364eff">English Language Teaching</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/fashion-management-with-marketing">Fashion Management with Marketing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/humanities-research-degree">Humanities research degree</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/intercultural-business-communication">Intercultural Business Communication</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/international-finance-and-investment">International Finance and Investment</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/international-urban-design">International Urban Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/management-law-and-humanities-of-sport">Management, Law and Humanities of Sport</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/master-s-by-research">Master&#39;s by Research</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/master-s-in-research-applied-health-studies">Master&#39;s in Research Applied Health Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/medical-law-and-ethics-distance-learning">Medical Law and Ethics (distance learning)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/performance-practices">Performance Practices</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/physician-associate-studies-e0b033fc-9c04-460f-ab7f-753f578174a4">Physician Associate Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/professional-practice-in-digital-forensics-and-security">Professional Practice in Digital Forensics and Security</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/specialist-community-public-health-nursing-524ce53c-fd2b-4809-bccd-c0b47e001513">Specialist Community Public Health Nursing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/sports-history-and-culture">Sports History and Culture</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/de-montfort-university/urban-studies-caebf8f7-d9f1-436e-8a33-89a637c61b57">Urban Studies</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+
+  <script>
+  if ( $('#accordion-master .panel-collapse').length == 1 ) {
+    // If Programmes at this level all fall into the same Discipline, expand it
+    $('#accordion-master .panel-collapse').collapse('show');
+  }
+
+
+  $('.panel-collapse').on('shown.bs.collapse', function (e) {
+      var panel = $(this).closest('div.panel');
+      var panelTop = panel[0].getBoundingClientRect().top;
+      var navHeight = document.getElementById("navbar").offsetHeight;
+      var navBottom = document.getElementById("navbar").getBoundingClientRect().bottom;
+      
+      var visibleFromHere = Math.max(0, navBottom); // navBottom might be negative on desktop
+      
+      if (panelTop < visibleFromHere) {
+        // If the just expanded panel's top is above what's visible in the viewport, scroll up.
+        $('html,body').animate({
+            scrollTop: panel.offset().top-visibleFromHere-25
+        }, 500); 
+      }
+  }); 
+  </script>
+
+        </div>
+      
+        <div id="tab-doctorate" class="tab-pane">
+          <h4>Doctorates at De Montfort University</h4>
+            <div aria-multiselectable="true" role="tablist" id="accordion-doctorate" class="panel-group">
+
+      <div class="panel panel-default"> <a title="Business &amp; Management" aria-controls="collapse-doctorate-2" aria-expanded="false" href="#collapse-doctorate-2" data-parent="#accordion-doctorate" data-toggle="collapse" id="heading-doctorate-2" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Business &amp; Management <span class="discipline-programmes-count">(1)</span></span> </a>
+        <div aria-labelledby="heading-doctorate-2" role="tabpanel" class="panel-collapse collapse" id="collapse-doctorate-2" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/de-montfort-university/doctor-of-business-administration">Doctor of Business Administration</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+
+  <script>
+  if ( $('#accordion-doctorate .panel-collapse').length == 1 ) {
+    // If Programmes at this level all fall into the same Discipline, expand it
+    $('#accordion-doctorate .panel-collapse').collapse('show');
+  }
+
+
+  $('.panel-collapse').on('shown.bs.collapse', function (e) {
+      var panel = $(this).closest('div.panel');
+      var panelTop = panel[0].getBoundingClientRect().top;
+      var navHeight = document.getElementById("navbar").offsetHeight;
+      var navBottom = document.getElementById("navbar").getBoundingClientRect().bottom;
+      
+      var visibleFromHere = Math.max(0, navBottom); // navBottom might be negative on desktop
+      
+      if (panelTop < visibleFromHere) {
+        // If the just expanded panel's top is above what's visible in the viewport, scroll up.
+        $('html,body').animate({
+            scrollTop: panel.offset().top-visibleFromHere-25
+        }, 500); 
+      }
+  }); 
+  </script>
+
+        </div>
+    </div>
+    
+    <script>
+      $('.nav-tabs a:first').tab('show'); // Make sure the first tab is selected in case none of the rendered tabs are marked as active
+      
+      $('.nav-tabs a[href="#tab-bachelor"]').tab('show');
+    </script>
+    
+    
+    
+    
+    <h3>Rankings</h3>
+    
+      <p>
+        De Montfort University belongs to the top 300 universities in Europe.
+      </p>
+    
+    <table class="table table-bordered table-striped">
+      <thead>
+        <th>Ranking</th>
+        <th>Year</th>
+        <th>Rank <br/> (in the world)</th>
+        <th>Rank <br/> (in Europe)</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Times Higher Education World University Rankings</td>
+          <td>2020</td>
+          <td class="text-right">601</td>
+          <td class="text-right">282</td>
+        </tr>
+        <tr>
+          <td>QS World University Rankings</td>
+          <td>2020</td>
+          <td class="text-right">801</td>
+          <td class="text-right">338</td>
+        </tr>
+      </tbody>
+    </table>
+    
+      <a href="/best-universities/united-kingdom">Check out the 105 best universities in the United Kingdom</a>
+    
+    
+    
+
+    
+      <div>
+        <h2>You might be interested in this:</h2>
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/article/5-reasons-why-you-should-study-in-falmouth-england">
+              <div class="thumbnail home-country-card">  
+                    <img alt="5 reasons why you should study in Falmouth, England" title="5 reasons why you should study in Falmouth, England" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/292/slideshow_falmouth-swanpool-beach.jpg" />
+                  <div class="caption">
+                    <strong>5 reasons why you should study in Falmouth, England</strong>              
+                  </div>
+              </div>
+</a>          </div>
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/article/what-is-the-russell-group">
+              <div class="thumbnail home-country-card">  
+                    <img alt="Universities in the UK: What is the Russell Group?" title="Universities in the UK: What is the Russell Group?" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/360/slideshow_university-of-edinburgh-old-college.jpg" />
+                  <div class="caption">
+                    <strong>Universities in the UK: What is the Russell Group?</strong>              
+                  </div>
+              </div>
+</a>          </div>
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/article/the-oldest-universities-in-10-european-countries">
+              <div class="thumbnail home-country-card">  
+                    <img alt="The oldest universities in 10 European countries" title="The oldest universities in 10 European countries" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/158/slideshow_23752400084_f51476791c_o.jpg" />
+                  <div class="caption">
+                    <strong>The oldest universities in 10 European countries</strong>              
+                  </div>
+              </div>
+</a>          </div>
+        </div>
+      </div>  
+    
+    </div>
+
+
+    
+
+
+    
+    
+    
+    
+    
+    
+  </div>
+  
+</div>
+
+
+<script>
+
+  $('[data-toggle="tooltip"]').tooltip();
+
+  $( function() {
+    $( ".accordion" ).accordion({
+      heightStyle: "content"
+    });
+  } );
+  
+  
+  handler = Gmaps.build('Google');
+  handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+    markers = handler.addMarkers([
+      {
+        "lat": 0,
+        "lng": 0,
+      }
+    ]);
+    handler.bounds.extendWith(markers);
+    handler.fitMapToBounds();
+  });
+  
+  
+  
+  
+</script>
+  
+
+    
+
+  
+  
+  <footer class="top-footer">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Merriweather Sans:300,400i,700']
+      }
+    });
+  </script> 
+
+  
+  <div class="container">
+  <div class="row">
+    
+    <div class="text-left col-md-8 col-xs-6" style="display: inline-block;float: left;">
+      <a href="/" title="Study.EU" data-track-click="true" data-event-category="Footer Logo"><img class="footer-logo" src="/assets/study-eu_logo_wb_200x66-8722da28bad82460d8951c34fe8b5ba8e11794b2fd21e83ee8c5fe54323ea73b.png" /></a><br />
+      <p>
+        Copyright &copy; 2021 <a title="Study.EU" href="/">Study.EU</a>
+      </p>
+      <p>
+        
+      </p>
+      <a class="social-link" href="https://www.facebook.com/StudyEU-168756646881605/" target="_blank" title="Like Study.EU on Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://twitter.com/wwwStudyEU" target="_blank" title="Follow Study.EU on Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://www.linkedin.com/company/study.eu/" target="_blank" title="Follow Study.EU on Linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    </div>
+    <div class="text-right col-md-4 col-xs-6">
+      <br /><br />
+          <a rel="nofollow" href="/page/imprint">Imprint</a>
+        &middot;
+          <a rel="nofollow" href="/page/about-study-eu">About Study.eu</a>
+        &middot;
+          <a rel="nofollow" href="/page/privacy-policy">Privacy Policy</a>
+        &middot;
+      <a href="/jobs">Jobs</a>
+      
+      <br />
+      
+      <a href="/press">Press</a>
+      
+      <!-- &middot; -->
+      
+        <!-- &mdash; //-->
+      
+      <br /><br />
+      <a href="/advertise-on-study-eu">Advertise on Study.eu</a>
+    </div>
+  </div>
+  </div>
+</footer>
+
+<a href="javascript:" id="scroll-to-top" title="Scroll back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+<script>
+  $(window).scroll(function() {
+      if ($(this).scrollTop() >= 100) {        // page is scrolled more than 100px
+          $('#scroll-to-top').fadeIn(500);
+      } else {
+          $('#scroll-to-top').fadeOut(500);
+      }
+  });
+  $('#scroll-to-top').click(function() {      // arrow is clicked
+      $('body,html').animate({
+          scrollTop : 0                       // scroll to top
+      }, 500);
+  });
+</script>
+
+
+  
+  <footer class="footer-countries">
+
+
+  <div class="container">
+    <div class="row">
+    
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <h5>Study in Europe:</h5>
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Austria" href="/country/austria">Austria</a><br />
+                <a title="Study in Belgium" href="/country/belgium">Belgium</a><br />
+                <a title="Study in the Czech Republic" href="/country/czech-republic">Czech Republic</a><br />
+                <a title="Study in Denmark" href="/country/denmark">Denmark</a><br />
+                <a title="Study in Estonia" href="/country/estonia">Estonia</a><br />
+                <a title="Study in the Faroe Islands" href="/country/faroe-islands">Faroe Islands</a><br />
+                <a title="Study in Finland" href="/country/finland">Finland</a><br />
+                <a title="Study in France" href="/country/france">France</a><br />
+                <a title="Study in Germany" href="/country/germany">Germany</a><br />
+                <a title="Study in Greece" href="/country/greece">Greece</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Hungary" href="/country/hungary">Hungary</a><br />
+                <a title="Study in Iceland" href="/country/iceland">Iceland</a><br />
+                <a title="Study in Ireland" href="/country/ireland">Ireland</a><br />
+                <a title="Study in Italy" href="/country/italy">Italy</a><br />
+                <a title="Study in Latvia" href="/country/latvia">Latvia</a><br />
+                <a title="Study in Liechtenstein" href="/country/liechtenstein">Liechtenstein</a><br />
+                <a title="Study in Lithuania" href="/country/lithuania">Lithuania</a><br />
+                <a title="Study in Malta" href="/country/malta">Malta</a><br />
+                <a title="Study in the Netherlands" href="/country/netherlands">Netherlands</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Norway" href="/country/norway">Norway</a><br />
+                <a title="Study in Poland" href="/country/poland">Poland</a><br />
+                <a title="Study in Portugal" href="/country/portugal">Portugal</a><br />
+                <a title="Study in Romania" href="/country/romania">Romania</a><br />
+                <a title="Study in Russia" href="/country/russia">Russia</a><br />
+                <a title="Study in Spain" href="/country/spain">Spain</a><br />
+                <a title="Study in Sweden" href="/country/sweden">Sweden</a><br />
+                <a title="Study in Switzerland" href="/country/switzerland">Switzerland</a><br />
+                <a title="Study in the United Kingdom" href="/country/united-kingdom">United Kingdom</a><br />
+            </div>
+          </div>
+        </div>
+    
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Recent articles:</h5>
+          </div>
+          <div class="col-md-8">
+              <p><a href="/article/study-ecology">Study Ecology: All you need to know</a></p>
+              <p><a href="/article/looking-for-a-uk-degree-in-germany-study-in-leipzig">Looking for a UK degree in Germany? Study in Leipzig!</a></p>
+              <p><a href="/article/guide-uk-post-study-work-visa-for-graduates">Guide: the UK Post-Study Work Visa for graduates</a></p>
+              <p><a href="/article/what-to-study-to-become-an-entrepreneur">What to Study to Become an Entrepreneur?</a></p>
+              <p><a href="/article/study-human-resource-management-hrm">Study Human Resource Management: All you need to know</a></p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  
+  </div>
+
+</footer>
+
+  
+  <footer class="footer-press">
+  <div class="container">
+    <div class="row footer-press-description">
+      <div class="col-md-12 text-center">
+        Study.EU has been mentioned in numerous news publications worldwide, such as:
+      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="L&#39;Étudiant (France)" title="L&#39;Étudiant (France)" data-src="/assets/press/letudiant_gray_200-57bccbdceaef3c62c8660629603372823c98afe433bd39bf6d42a73263c113c3.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Frankfurter Allgemeine (Germany)" title="Frankfurter Allgemeine (Germany)" data-src="/assets/press/faz_gray_300-b6e5e6022a7b164c24b69a51fb97a72715018db745fbcda8580675a507370b8b.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Standard (Hong Kong)" title="The Standard (Hong Kong)" data-src="/assets/press/the-standard-hong-kong_gray_200-f124ca057d2671730e1f6d996377ef4614a28ccf04ae04f730eaf16ed7ee0b46.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Independent (UK)" title="The Independent (UK)" data-src="/assets/press/the-independent-uk_gray_300-63238e279b3c62b1f87faf17fcbcf1f14a2e5b9229193a0431fc974da217d159.png" class="lazyload" />
+</a>      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Al-Masry Al-Youm (Egypt)" title="Al-Masry Al-Youm (Egypt)" data-src="/assets/press/al-masry_al-youm_gray_200-9d8e503cd53ec4d955c3e6f7bf2a1c0badb500a0d2bd8a1ef1d11acd686879e5.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Le Monde (France)" title="Le Monde (France)" data-src="/assets/press/le-monde_gray_200-24d8bca493f3a2b8e0150cb4ef38f00c9924ac5e7acfbdb8750076c949c70052.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Local (Europe)" title="The Local (Europe)" data-src="/assets/press/the-local_gray_200-7631164ea94edf8d065b3af6f64274416162d866ce1cea737c3ee25f28cdd098.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Forbes (USA)" title="Forbes (USA)" data-src="/assets/press/forbes_gray_200-deff6ef2c28ec5a275f404c5f59d56f4b687881eb39de52b79b5add3ca609fe2.png" class="lazyload" />
+</a>      </div>
+    </div>
+  </div>
+</footer>
+
+  
+  
+  
+  
+    <div class="cookies-eu js-cookies-eu row">
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+    <div class="cookies-eu-content-holder col-md-4 col-sm-6 col-xs-6 align-self-center">
+      Cookies &amp; analytics help us deliver our services.
+        <a href="/page/privacy-policy" class="cookies-eu-link" target="_blank"> Privacy policy </a>
+    </div>
+    <div class="cookies-eu-button-holder col-md-4 col-sm-6 col-xs-6">
+      <button class="cookies-eu-ok js-cookies-eu-ok btn btn-lg btn-primary" data-track-click-ga="true" data-event-category="Cookie Consent Button"> OK </button>
+    </div>
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+  </div>
+
+  
+  <script>
+  // Improved Ahoy view tracking with additional attributes
+  var additionalProperties = {};
+    additionalProperties["country_id"] = 42;
+    mainTrackableLink = "";
+    additionalProperties["university_id"] = 683;
+    mainTrackableLink = "https://www.study.eu/link/university/de-montfort-university/from-profile";
+  console.log("Ahoy: View with additional properties: "+JSON.stringify(additionalProperties));
+  ahoy.trackView(additionalProperties);
+</script>
+<a name="ga"></a> <!-- GA //-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42442116-3', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+  
+  
+  
+    
+  //############################################################
+  //########## 2018-07    NEW CUSTOM METHODS          ##########
+  
+  function getDataTrackAttributes(element) {
+    var data = {};
+    [].forEach.call(element.attributes, function(attr) {
+      if (/^data-trackvalue-/.test(attr.name)) {
+        // Relevant attributes would always be called "data-track-foobar"
+        var underscorename = attr.name.substr(16).replace(/-/g, "_");
+        data[underscorename] = parseInt(attr.value) || attr.value; // Provide as integer if possible, otherwise the original string
+      }
+    });
+    return data;
+  }
+  
+  // Set data-track-click and utm_source for all external links in the description content
+  var content_links = document.querySelectorAll('div.content-description a');
+  for (var i = 0; i < content_links.length; i++) {
+    if ( ((new URL(content_links[i].href, document.baseURI).href) == mainTrackableLink) || (content_links[i].host !== window.location.host) ) {
+      // Link is the main trackable link, or link is external --> add tracking and utm_source if not present
+      utm_url = new URL(content_links[i].href);
+      utm_url.searchParams.set("utm_source", "Study.eu"); // add (or overwrite existing) utm_source parameter
+      content_links[i].href = utm_url;
+      content_links[i].classList.add("external-tracked");
+      content_links[i].setAttribute("data-event-category", "Outbound Link");
+      content_links[i].setAttribute("data-event-label", content_links[i].href);
+      content_links[i].setAttribute("data-track-click", "true"); // Once data-track-click is set to true, initDataAttributes() below will add the id values
+    }
+  }
+  console.log("Modified "+content_links.length+" links in description content.");
+  
+  // Set data attributes for tracking of footer press links
+  footerPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < footerPressLinks.length; i++) {
+    footerPressLinks[i].setAttribute("data-track-click-ga", "true");
+    footerPressLinks[i].setAttribute("data-event-category", "Footer Press Link");
+    footerPressLinks[i].setAttribute("data-event-label", window.location.href);
+  }
+  
+  relatedLinks = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < relatedLinks.length; i++) {
+    relatedLinks[i].setAttribute("data-track-click-ga", "true");
+    relatedLinks[i].setAttribute("data-event-category", "Related Link");
+    relatedLinks[i].setAttribute("data-event-label", relatedLinks[i].getAttribute("href"));
+  }  
+  
+  function initDataAttributes() {
+    // Initialise element data attributes based on backend instance variables
+    elements = document.querySelectorAll('[data-track-click="true"],[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+        if (!elements[i].hasAttribute("data-trackvalue-country-id")) {
+          elements[i].setAttribute("data-trackvalue-country-id", "42");
+        }
+      
+        if (!elements[i].hasAttribute("data-trackvalue-university-id")) {
+          elements[i].setAttribute("data-trackvalue-university-id", "683");
+        }
+      
+    }
+    console.log("initDataAttributes()");
+  }
+  initDataAttributes();
+    
+  function trackClick(event, trackGA = true, trackAhoy = true) {
+    // When an element was clicked, track the click in GA and Ahoy
+    
+    strEventLabel = "";
+    if        ( event.currentTarget.hasAttribute("data-event-label") ) {
+      strEventLabel = event.currentTarget.getAttribute("data-event-label");
+    } else if ( event.currentTarget.hasAttribute("href") ) {
+      strEventLabel = event.currentTarget.href;
+    }
+    
+    ga('send', 'event', {
+      eventCategory:  event.currentTarget.getAttribute("data-event-category"),
+      eventAction:    'click',
+      eventLabel:     strEventLabel
+    });
+    
+    data = getDataTrackAttributes(event.currentTarget);
+    data["href"] = event.target.href;
+    data["page"] = window.location.pathname;
+    
+    /*ahoy.track (
+      event.currentTarget.getAttribute("data-event-category"),
+      {
+        country_id: 42, 
+        university_id: 683, 
+        
+        href: event.target.href,
+        page: window.location.pathname
+      }
+    );*/
+    
+    if (trackAhoy) {
+        data["medium"] = "Profile";
+      ahoy.track (
+        event.currentTarget.getAttribute("data-event-category")+" - click",
+        data
+      );
+    }
+    
+    console.log("trackClick(event, trackGA = "+trackGA+", trackAhoy = "+trackAhoy+"): " +
+      event.currentTarget.getAttribute("data-event-category") + ", " +
+      "{country_id: 42, university_id: 683, href: " + event.target.href + ", " +
+      "page:"+window.location.pathname+"});"
+    );
+  }
+  
+  
+  function trackClicksGA() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click-ga="true"]:not([data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event, true, false);
+      });
+    }
+    console.log("trackClicksGA(): "+elements.length+" elements");
+  }
+  trackClicksGA();
+  
+  function trackClicks() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event);
+      });
+    }
+    console.log("trackClicks(): "+elements.length+" elements");
+  }
+  trackClicks();
+  
+  function trackRenderingsGA() {
+    // Track renderings only in GA
+    // This would be for large-volume data that is interesting, but not mission-critical
+
+    elements = document.querySelectorAll('[data-track-rendering-ga="true"]:not([data-track-rendering="true"])');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+    }
+    
+    console.log("trackRenderingsGA(): "+elements.length+" elements");
+  }
+  trackRenderingsGA();
+  
+  function trackRenderings() {
+    // Track renderings in GA *and* Ahoy
+    elements = document.querySelectorAll('[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+      
+      data = getDataTrackAttributes(elements[i]);
+      data["href"] = elements[i].getAttribute("href");
+      data["page"] = window.location.pathname;
+      
+      ahoy.track (
+        elements[i].getAttribute("data-event-category")+" - rendered",
+        data
+      );
+    }
+    
+    console.log("trackRenderings(): "+elements.length+" elements");
+  }
+  trackRenderings();
+  
+  
+  
+    ga('send', 'event', {
+      eventCategory:  'Country Content',
+      eventAction:    'rendered',
+      eventLabel:     'United Kingdom',
+      nonInteraction: true
+    });
+
+  
+  //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  //############################################################
+
+  
+  
+  /*
+  anchorsExternalTracked = document.getElementsByClassName("external-tracked");
+  for (var i = 0 ; i < anchorsExternalTracked.length; i++) {
+    anchorsExternalTracked[i].addEventListener("click", function(event){
+      //event.preventDefault();
+      
+      handleOutboundLinkClicks(event);
+      
+      //document.location = this.href;
+      //var win = window.open(this.href, '_blank');
+      //win.focus();
+      
+    });
+    
+    // Trigger event that shows in GA that the link was rendered
+    ga('send', 'event', {
+      eventCategory: 'Outbound Link',
+      eventAction: 'rendered',
+      eventLabel: anchorsExternalTracked[i].href
+    });   
+  }
+  
+  anchorsRelatedTracked = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < anchorsRelatedTracked.length; i++) {
+    anchorsRelatedTracked[i].addEventListener("click", function(event){
+      handleRelatedLinkClicks(event);
+    });
+  }
+  
+  anchorsFeaturedUniversityTracked = document.getElementsByClassName("featured-university-tracked");
+  for (var i = 0 ; i < anchorsFeaturedUniversityTracked.length; i++) {
+    anchorsFeaturedUniversityTracked[i].addEventListener("click", function(event){
+      handleFeaturedUniversityLinkClicks(event);
+    });
+  }  
+  
+  
+  anchorsFooterPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < anchorsFooterPressLinks.length; i++) {
+    anchorsFooterPressLinks[i].addEventListener("click", function(event){
+      handleFooterPressLinkClicks(event);
+    });
+  }
+  
+  
+  anchorsCustomTracked = document.querySelectorAll('[data-ga-custom-event-label]');
+  for (var i = 0 ; i < anchorsCustomTracked.length; i++) {
+    anchorsCustomTracked[i].addEventListener("click", function(event){
+      handleCustomTracked(event);
+    });
+  }
+  */
+  
+  ////////////////////////////////////////////////////////////////////////////////
+
+  
+  
+</script>
+
+</body>
+</html>

@@ -1,0 +1,2566 @@
+
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+	<meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="https://www.guide2research.com/wp-content/themes/spike/images/favicon.png">
+	<title>Top Computer Scientists in Princeton University - H-Index Ranking</title>
+	<!--iOS/android/handheld specific -->	
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="pingback" href="https://www.guide2research.com/xmlrpc.php" />
+			<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Guide 2 Research &raquo; Feed" href="https://www.guide2research.com/feed" />
+<link rel="alternate" type="application/rss+xml" title="Guide 2 Research &raquo; Comments Feed" href="https://www.guide2research.com/comments/feed" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.guide2research.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.7"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='https://www.guide2research.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.6' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='https://www.guide2research.com/wp-content/plugins/tablepress/css/default.min.css?ver=1.8' type='text/css' media='all' />
+<link rel='stylesheet' id='__EPYT__style-css'  href='https://www.guide2research.com/wp-content/plugins/youtube-embed-plus/styles/ytprefs.min.css?ver=13.4.1.2' type='text/css' media='all' />
+<style id='__EPYT__style-inline-css' type='text/css'>
+
+                .epyt-gallery-thumb {
+                        width: 33.333%;
+                }
+                
+</style>
+<link rel='stylesheet' id='sib-front-css-css'  href='https://www.guide2research.com/wp-content/plugins/mailin/css/mailin-front.css?ver=4.8.7' type='text/css' media='all' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js?ver=1.7.1'></script>
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js?ver=1.8.16'></script>
+<script type='text/javascript' src='https://www.guide2research.com/wp-content/themes/spike/js/modernizr.min.js?ver=4.8.7'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _EPYT_ = {"ajaxurl":"https:\/\/www.guide2research.com\/wp-admin\/admin-ajax.php","security":"af9177a100","gallery_scrolloffset":"20","eppathtoscripts":"https:\/\/www.guide2research.com\/wp-content\/plugins\/youtube-embed-plus\/scripts\/","eppath":"https:\/\/www.guide2research.com\/wp-content\/plugins\/youtube-embed-plus\/","epresponsiveselector":"[\"iframe.__youtube_prefs_widget__\"]","epdovol":"1","version":"13.4.1.2","evselector":"iframe.__youtube_prefs__[src], iframe[src*=\"youtube.com\/embed\/\"], iframe[src*=\"youtube-nocookie.com\/embed\/\"]","ajax_compat":"","ytapi_load":"light","pause_others":"","stopMobileBuffer":"1","vi_active":"","vi_js_posttypes":[]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.guide2research.com/wp-content/plugins/youtube-embed-plus/scripts/ytprefs.min.js?ver=13.4.1.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sibErrMsg = {"invalidMail":"Please fill out valid email address","requiredField":"Please fill out required fields","invalidDateFormat":"Please fill out valid date format","invalidSMSFormat":"Please fill out valid phone number"};
+var ajax_sib_front_object = {"ajax_url":"https:\/\/www.guide2research.com\/wp-admin\/admin-ajax.php","ajax_nonce":"f5846cb86b","flag_url":"https:\/\/www.guide2research.com\/wp-content\/plugins\/mailin\/img\/flags\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.guide2research.com/wp-content/plugins/mailin/js/mailin-front.js?ver=1608135253'></script>
+<link rel='https://api.w.org/' href='https://www.guide2research.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.guide2research.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.guide2research.com/wp-includes/wlwmanifest.xml" /> 
+<!--Theme by MyThemeShop.com-->
+<!-- HeadSpace SEO 3.6.41 by John Godley - urbangiraffe.com -->
+<!-- HeadSpace -->
+<link rel="stylesheet" type="text/css" href="https://www.guide2research.com/wp-content/plugins/wp-code-highlight/css/wp-code-highlight.css" media="screen" />
+
+<!-- Protected by WP-SpamFree :: JS BEGIN -->
+<script type="text/javascript" src="https://www.guide2research.com/wp-content/plugins/wp-spamfree/js/wpsfv2-js.php"></script> 
+<!-- Protected by WP-SpamFree :: JS END -->
+
+	<link rel="stylesheet" type="text/css" media="all" href="https://www.guide2research.com/wp-content/themes/spike/style.css" />
+	<!--start fonts-->
+<link href="http://fonts.googleapis.com/css?family=Monda:400,700" rel="stylesheet" type="text/css">
+<style type="text/css">
+.title, h1,h2,h3,h4,h5,h6, .slidertitle, .total-comments { font-family: 'Monda', sans-serif;}
+</style>
+<link href="http://fonts.googleapis.com/css?family=Sintony:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+<style type="text/css">
+body {font-family: 'Sintony', sans-serif;}
+</style>
+<!--end fonts-->
+<style type="text/css">
+body {background-color:#FFFFFF;}
+body {background-image:url(https://www.guide2research.com/wp-content/themes/spike/images/nobg.png);}
+#commentform input#submit,#search-image, .mts-subscribe input[type="submit"], .sbutton, .currenttext, .pagination a:hover, .flex-active, .tagcloud a,.reply a, .flex-control-paging li a.flex-active {background-color:#F33E0F; }
+.text-logo, .tagcloud a .tab_count,.flex-control-paging li a {background-color:#FFCA00;}
+.slidertext, .slidertitle {background:rgba(243,62,15,0.7)}
+.pagination a, .pagination2 { border:1px solid #FFCA00; color:#FFCA00;}
+footer .widget .tweets li a, #tabber .inside li .entry-title a:hover, .single .post-info a, .single_post a, a:hover, .textwidget a, #commentform a, .copyrights a:hover, a,
+.sidebar.c-4-12 a:hover, footer .copyrights a, .widget li a:hover, footer .widget a:hover, .advanced-recent-posts a:hover,.related-posts a:hover {color:#F33E0F; }
+.currenttext, .pagination a:hover{border:1px solid #F33E0F;}
+.current-menu-item a, .secondary-navigation a:hover, .current-post-parent a { border-bottom:1px solid #F33E0F;}
+#navigation ul ul{ border-top:1px solid #F33E0F; }
+</style>
+	<style>
+.gray {
+	background-color: #F8F8F8 ;
+	border: 1px dashed #8D7330;
+	padding-top: 8px;
+	padding-left: 10px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+	color: #815E38;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	margin-bottom: 6px;
+}
+.alert {
+	background-color: #F6F0CA;
+	border: 1px dashed #8D7330;
+	padding-top: 8px;
+	padding-left: 10px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+	color: #815E38;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+
+.critical {
+	background-color: #EED4D2;
+	border: 1px dashed #A94637;
+	padding-top: 8px;
+	padding-left: 10px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+	color: #AC241A;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+
+span.step {
+  background: #6D9D47;
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 5px;
+  text-align: center;
+  width: 1.6em; 
+}
+
+</style>
+<script type="text/javascript" src="/js/myfuncv016.js"></script>
+</head>
+
+<body id ="blog" class="main">
+	<header class="main-header">
+		<div class="container">
+			<div id="header">
+															  <h2 id="logo" class="image-logo">
+								<a href="https://www.guide2research.com" style="margin-top:5px;margin-bottom:10px;"><img style="height:60px!important;" src="/logo.g2r.png" alt="Guide 2 Research"></a>
+							</h2><!-- END #logo -->
+													<div class="secondary-navigation">
+<!--					<nav id="navigation" >
+													<ul class="menu">
+															</ul>
+											</nav>-->
+				</div>              
+			</div><!--#header-->
+		</div><!--.container-->        
+	</header>
+	<div class="main-container">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../fill/js/jquery.form.js"></script>
+    <script type="text/javascript" src="../fill/js/myfuncv016.js"></script>
+
+
+    <style>
+        .smallheight{
+            line-height:14px;
+        }
+    </style>
+    <style>
+        .grey {
+            background-color: #F8F8F8 ;
+            border: 1px solid #A9A9A9;
+            padding-top: 8px;
+            padding-left: 10px;
+            padding-right: 8px;
+            padding-bottom: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+        .myshad{-moz-box-shadow: 6px 6px 2px #888;
+            -webkit-box-shadow: 6px 6px 2px #888;
+            box-shadow: 6px 6px 2px #888;
+        }
+        .mya1{padding:1px;margin:0px;vertical-align:middle;}
+
+        .c1{margin-bottom:1px;margin-top:0px;padding:1px;table-layout:fixed;border-left-width:0px;border-right-width:0px;}
+        .myc2{overflow:hidden;font-size:22px;font-family: 'Monda',sans-serif;margin-top:15px;}
+        .myc3{vertical-align:top;padding:1px;overflow:hidden;width:100px;}
+        .myc4{vertical-align:top;padding:2px 1px 2px 0px;font-size:13px;}
+        .myc5{vertical-align:middle;width:100px;padding:1px;overflow:hidden;}
+        .myc6{font-size:12px;line-height:12px;height:40px;overflow:hidden;margin-top:-2;}
+        .myc7{vertical-align:top;padding:1px;overflow:hidden;border-left-width:0px;}
+        .myc8{vertical-align:top;padding:1px;overflow:hidden;}
+        .myc9{overflow:hidden;font-size:16px;font-family: 'Monda',sans-serif;margin-top:15px;}
+        .myc10{line-height:50px;}
+    </style>
+<div class="content">
+    <article class="article">
+        <div id="content_box" >
+            <div id="content" class="hfeed">
+
+                                    <h1>Ranking for Computer Science & Electronics in Princeton University</h1>
+                
+                <!--
+                    <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.guide2research.com%2Fscientists/uni-43&amp;layout=standard&amp;show_faces=true&amp;width=150&amp;height=25&amp;action=like&amp;font=arial&amp;colorscheme=light"  id="fbLikeIframe" name="fbLikeIframe"  scrolling="no" frameborder="0" allowTransparency="true"  class="fbLikeContainer"  style="border:none; overflow:hidden; width:150px; height:25px; display:inline;margin-top:-40px;float:right;"  ></iframe>
+                    -->
+
+
+                                    <table style="width:100%;margin-bottom:2px!important;">
+                        <tr>
+                            <td style="width:210px;padding:2px!important;vertical-align:middle;" rowspan="2">
+                                <center><img src="https://guide2research.com/img/unis/ad6eb554e715f2d.png" style="max-width:200px;max-height:60px;"/></center>
+                            </td>
+                            <td style="padding:2px!important;vertical-align:top;">
+                                There are <b>36</b> scholars<br/>
+                                Website : <a href="http://www.princeton.edu" target="_blank">http://www.princeton.edu</a>
+
+                            </td>
+                            <td style="text-align:right;padding:2px!important;vertical-align:top;">
+                                Established : <b>1746</b>
+                            </td>
+                        </tr>
+                        <!--
+	<tr>
+		<td colspan="2"  style="padding:2px!important;vertical-align:top;">
+			<a href="https://scholar.google.com/citations?view_op=view_org&org=4836318610601440500" target="_blank">Google Scholar listing for all scientists (all fields) </a>
+		</td>
+	</tr>
+-->
+</table>
+<p>The ranking is based on h-index, citations and number of DBLP documents gathered by May 16th 2020</p>
+        <p>This ranking lists all leading computer scientists affiliated with Princeton University. There is a total of 36 scholars included with 13 of them also being included in the global ranking. The total sum for the H-index values for leading scientists in Princeton University is 2387 with a mean value for the h-index of 66.31. The total sum for the DBLP publications for leading scientists in Princeton University is 8469 with a mean value for DBLP publications is 235.25.</p>
+        <p>Please consider that the research institution or university for a scholar is set based on the affiliation data shown in their Google Scholar profile.</p>                
+<div style="padding:2px;margin:2px;width:100%;" class="filter-table">
+    <div>
+<b>Search by name :</b>
+<input type=text style="padding:2px;width:160px;" id="in_name"><input type="button" value="Search"   style="padding:2px;" onclick="get_url('index.php?ajax=1&keyword='+escape($('#in_name').val()),'ajax_content');">
+        &nbsp;&nbsp;&nbsp;</div>
+    <div>
+<b>View by country :</b>
+		<select style="padding:2px;width:160px;;" id=in_con onchange="window.location='https://guide2research.com/scientists/'+this.value;">
+			   <option value="">All Countries</option>
+			<option value="US" >United States (2279)</option><option value="UK" >United Kingdom (387)</option><option value="DE" >Germany (288)</option><option value="CA" >Canada (280)</option><option value="CN" >China (200)</option><option value="IT" >Italy (183)</option><option value="AU" >Australia (173)</option><option value="FR" >France (148)</option><option value="CH" >Switzerland (135)</option><option value="NL" >Netherlands (133)</option><option value="IL" >Israel (111)</option><option value="HK" >Hong Kong (105)</option><option value="ES" >Spain (92)</option><option value="BE" >Belgium (91)</option><option value="JP" >Japan (79)</option><option value="SG" >Singapore (79)</option><option value="SE" >Sweden (59)</option><option value="AT" >Austria (57)</option><option value="KR" >South Korea (52)</option><option value="GR" >Greece (51)</option><option value="FI" >Finland (41)</option><option value="IN" >India (38)</option><option value="DK" >Denmark (36)</option><option value="TW" >Taiwan (33)</option><option value="BR" >Brazil (26)</option><option value="IE" >Ireland (20)</option><option value="PT" >Portugal (20)</option><option value="SA" >Saudi Arabia (17)</option><option value="NO" >Norway (16)</option><option value="NZ" >New Zealand (12)</option><option value="IR" >Iran (11)</option><option value="CZ" >Czech Republic (10)</option><option value="TR" >Turkey (9)</option><option value="PL" >Poland (8)</option><option value="LU" >Luxembourg (8)</option><option value="AE" >United Arab Emirates (7)</option><option value="QA" >Qatar (7)</option><option value="MX" >Mexico (7)</option><option value="CL" >Chile (6)</option><option value="CY" >Cyprus (6)</option><option value="MO" >Macao SAR (5)</option><option value="SI" >Slovenia (4)</option><option value="HU" >Hungary (4)</option><option value="RO" >Romania (3)</option><option value="EG" >Egypt (3)</option><option value="EE" >Estonia (2)</option><option value="ZA" >South Africa (2)</option><option value="RU" >Russia (2)</option><option value="MT" >Malta (1)</option><option value="IS" >Iceland (1)</option><option value="TN" >Tunisia (1)</option><option value="SK" >Slovakia (1)</option><option value="PK" >Pakistan (1)</option><option value="MY" >Malaysia (1)</option>                        </select>
+                    </div>
+                </div>
+
+                <div id=ajax_content>
+                                        
+                    
+                        <div class="grey myshad" style="margin-bottom:15px;padding:1px;">
+                            <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="font-weight:bold;">
+                                <tr class="border-box">
+                                                                            <td width=65px>
+                                            National
+                                        </td>
+                                        <td width=145px>
+                                            World
+
+                                        </td>
+                                                                        <td width=300px>
+                                        Scholar
+                                    </td>
+                                    <td  width=60px style="text-align:center;">
+                                        #DBLP
+                                    </td>
+                                    <td  width=80px>
+                                        Citations
+                                    </td>
+                                    <td  width=80px style="text-align: center;">
+                                        H-index
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    
+
+                    </table>
+
+
+                                                    <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_1532>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>15</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>23</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/hv-poor.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=Dq93mOUAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/hv-poor">HV Poor</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>http://www.princeton.edu/poor</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>1,923</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>100,825</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">142</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_2647>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>73</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>106</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/robert-tarjan.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=lazJixIAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/robert-tarjan">Robert Tarjan</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b></b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>325</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>81,644</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">112</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_266>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>75</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>110</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/jennifer-rexford.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=07ds-DAAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/jennifer-rexford">Jennifer Rexford</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>http://www.cs.princeton.edu/~jrex/</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>294</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>55,211</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">112</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_149>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>171</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>260</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/andrea-goldsmith.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=cPmMoXoAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/andrea-goldsmith">Andrea Goldsmith</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>http://ee.stanford.edu/~andrea</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>540</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>69,650</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">94</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_73>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>214</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>337</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/kai-li.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=9MSpWOUAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/kai-li">Kai Li</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b></b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>313</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>61,353</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">90</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_151>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>260</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>411</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/sergio-verdu.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=ofcrge8AAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/sergio-verdu">Sergio Verdu</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>http://www.princeton.edu/~verdu</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>325</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>107,168</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">86</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_2507>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>389</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>631</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/thomas-funkhouser.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=BghVDhgAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/thomas-funkhouser">Thomas Funkhouser</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>http://www.cs.princeton.edu/~funk</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>147</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>28,636</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">78</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_2913>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>396</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>641</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/niraj-jha.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=R-z1R84AAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/niraj-jha">Niraj Jha</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>http://www.princeton.edu/~jha</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>418</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>24,851</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">78</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_2911>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>414</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>667</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/mung-chiang.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=BZC20PEAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/mung-chiang">Mung Chiang</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>http://www.princeton.edu/~chiangm</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>342</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>26,678</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">77</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_71>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>427</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>690</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/larry-peterson.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=hmq4rGIAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/larry-peterson">Larry Peterson</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>https://www.opennetworking.org/executive-team/#bio-Larry-Peterson</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>128</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>43,197</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">76</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_344>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>469</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>753</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/margaret-martonosi.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=tgYsFS0AAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/margaret-martonosi">Margaret Martonosi</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b></b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>211</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>28,492</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">75</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_2912>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>497</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>801</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/bernard-chazelle.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=C1VwgssAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/bernard-chazelle">Bernard Chazelle</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>http://www.cs.princeton.edu/~chazelle/</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>232</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>24,348</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">74</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_6135>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>537</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>866</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/yoram-singer.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=0sVg9ioAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/yoram-singer">Yoram Singer</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>https://www.cs.princeton.edu/~ysinger</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>159</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>54,079</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">72</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_2910>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>648</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>1078</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/warren-b-powell.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=vDw80QEAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/warren-b-powell">Warren B Powell</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>http://www.castlelab.princeton.edu/</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>177</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>20,059</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">68</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_2001>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>674</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>1118</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/sharad-malik.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=MV8KGT0AAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/sharad-malik">Sharad Malik</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>http://www.princeton.edu/~sharad</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>262</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>27,510</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">67</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_646>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>718</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>1198</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/edward-w-felten.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=watx0IAAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/edward-w-felten">Edward W. Felten</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>https://www.cs.princeton.edu/~felten/</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>97</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>19,551</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">66</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_2319>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>735</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>1236</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/sun-yuan-kung.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=EVK03j8AAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/sun-yuan-kung">Sun-Yuan Kung</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>https://www.princeton.edu/~kung/</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>254</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>30,772</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">65</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_2275>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>790</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>1337</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/sanjeev-arora.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=RUP4S68AAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/sanjeev-arora">Sanjeev Arora</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>http://cs.princeton.edu</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>172</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>23,811</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">64</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_2914>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>1019</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>1865</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/olga-troyanskaya.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=PjCDBjIAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/olga-troyanskaya">Olga Troyanskaya</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>http://function.princeton.edu/</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>59</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>21,924</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">58</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_519>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>1126</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>2112</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/szymon-rusinkiewicz.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=RaScARwAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/szymon-rusinkiewicz">Szymon Rusinkiewicz</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>http://www.cs.princeton.edu/~smr/</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>104</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>22,365</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">56</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_549>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>1197</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>2265</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/andrew-w-appel.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=wC_ntLYAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/andrew-w-appel">Andrew W. Appel</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>http://www.cs.princeton.edu/~appel/</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>119</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>15,489</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">55</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_1026>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>1251</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>2376</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/michael-j-freedman.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=BFE6IQwAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/michael-j-freedman">Michael J. Freedman</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>http://www.cs.princeton.edu/~mfreed/</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>99</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>16,514</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">54</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_2916>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>1263</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>2396</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/perry-r-cook.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=ajVR5gEAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/perry-r-cook">Perry R. Cook</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b></b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>110</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>14,458</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">54</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_2917>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>1320</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>2533</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/david-walker.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=UEI2g60AAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/david-walker">David Walker</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>http://www.cs.princeton.edu/~dpw</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>161</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>14,017</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">53</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_1218>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>1442</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>2841</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/adam-finkelstein.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=a959F6AAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/adam-finkelstein">Adam Finkelstein</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>http://www.cs.princeton.edu/~af/</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>98</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>13,180</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">51</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_2923>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>1478</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>2942</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/ran-raz.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=vmHFZM0AAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/ran-raz">Ran Raz</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>http://www.wisdom.weizmann.ac.il/~/ranraz/</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>208</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>8,797</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">51</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_2920>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>1486</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>2967</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/ryan-p-adams.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=grQ_GBgAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/ryan-p-adams">Ryan P. Adams</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>http://www.cs.princeton.edu/~rpa/</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>113</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>18,162</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">50</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_2918>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>1487</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>2970</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/elad-hazan.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=LnhCGNMAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/elad-hazan">Elad Hazan</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>http://www.cs.princeton.edu/~ehazan</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>169</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>16,729</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">50</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_2924>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>1724</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>3598</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/sanjeev-kulkarni.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=qISJP4cAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/sanjeev-kulkarni">Sanjeev Kulkarni</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>http://www.princeton.edu/~kulkarni</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>189</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>8,491</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">47</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_2919>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>1755</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>3690</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/hisashi-kobayashi.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=GukM99cAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/hisashi-kobayashi">Hisashi Kobayashi</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>http://hisashikobayashi.com/</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>81</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>11,812</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">46</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_6218>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>1762</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>3713</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/minerva-yeung.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=kx9cJiAAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/minerva-yeung">Minerva Yeung</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b></b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>61</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>10,453</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">46</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_2922>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>1769</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>3727</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/aarti-gupta.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=S_jYB2sAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/aarti-gupta">Aarti Gupta</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b></b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>151</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>10,097</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">46</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_6620>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>1816</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>3861</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/amit-singer.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=h67w8QsAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/amit-singer">Amit Singer</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>http://math.princeton.edu</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>110</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>6,221</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">46</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_2925>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>1884</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>4047</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/david-i-august.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=Wov5tYoAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/david-i-august">David I. August</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b></b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>93</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>7,566</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">45</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_2921>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>2055</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>4590</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/arvind-narayanan.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=0Bi5CMgAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/arvind-narayanan">Arvind Narayanan</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b>http://randomwalker.info/</b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>113</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>15,511</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">42</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                                        <div class="grey myshad" style="margin-bottom:10px;padding:1px;" id=sch_6176>
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="table-layout:fixed;">
+                                    <tr>
+                                                                                    <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>2112</b></center>
+                                                </div>
+                                            </td>
+                                            <td width=65px valign=top class=myc8>
+                                                <div class="myc2 myc10">
+                                                    <center><b>4832</b></center>
+                                                </div>
+                                            </td>
+                                                                                <td width=100px valign=top class=myc3>
+                                            <div style="overflow:hidden;width:80px;height:75px;">
+
+                                                                                                    <img class=myc5 src="https://guide2research.com/img/av/u/jia-deng.jpg" onerror="this.onerror=null;this.src='http://scholar.google.com/citations?view_op=view_photo&user=U3Eub-EAAAAJ&citpid=1';this.classList.add('placeholder');">
+                                                
+                                            </div>
+                                        </td>
+                                        <td width=310px  valign=top class=myc4>
+                                            <h3 style="margin-bottom:1px;"><a href="/u/jia-deng">Jia Deng</a></h3>
+                                            <b><a href="https://guide2research.com/scientists/uni-43">Princeton University</a></b><br>
+                                            <b><a href="/scientists/US">United States</a></b>
+                                            <!-- 				  <b></b> -->
+
+                                            <!--
+                                                              <div class=myc6 style="font-size: 10px;line-height: 10px;height: 25px;">
+
+                                            </div>
+                                            -->
+                                            
+                                        </td>
+                                        <td width=70px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>112</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc8 myc10">
+                                            <div class=myc9>
+                                                <center><b>53,693</b></center>
+                                            </div>
+                                        </td>
+                                        <td width=80px valign=top class="myc7 myc10">
+                                            <div class=myc9>
+                                                <center><b style="font-size:24px;">41</b></center>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            
+
+
+
+                        
+                            <div class="grey myshad" style="margin-bottom:15px;padding:1px;">
+                                <table border=0 width=100% cellspacing=0 cellpadding=0 class="c1 scientists-table" style="font-weight:bold;">
+                                    <tr class="border-box">
+                                                                                    <td width=65px>
+                                                National
+                                            </td>
+                                            <td width=145px>
+                                                World
+
+                                            </td>
+                                                                                <td width=300px>
+                                            Scholar
+                                        </td>
+                                        <td  width=60px style="text-align:center;">
+                                            #DBLP
+                                        </td>
+                                        <td  width=80px>
+                                            Citations
+                                        </td>
+                                        <td  width=80px style="text-align: center;">
+                                            H-index
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                        
+
+                        <!-- Paging -->
+
+                        
+                        <!-- / Paging -->
+
+                        <p class="bottom-text">Our research was coordinated by Imed Bouchrika, PhD, a computer scientist with a well-established record of collaboration on a number of international research projects with different partners from the academic community. His role was to make sure all data remained unbiased, accurate, and up-to-date.</p>
+
+    <div class="alert myshad" style="margin-bottom:15px;padding:1px;">
+        <center>We list only scientists having H-Index>=40 within the area of Computer Science and Electronics. If you or other scholars are not listed, we appreciate if you can <a href="https://guide2research.com/contact-us"> contact us</a></center>
+    </div>
+</div>
+
+
+                <div id=div_msg></div>
+
+                            </div>
+        </div>
+    </article>
+</div>
+
+<aside class="sidebar c-4-12">
+	<div id="sidebars" class="g">
+		<div class="sidebar">
+			<ul class="sidebar_list">
+			        <li id="sidebar-search" class="widget" style="margin-bottom: 10px;">
+				  <div class="tagcloud">
+				      <a href="/conferences" ><div class="tab_name" style="font-size:26px;padding:12px 10px 12px 10px;width:280px;">All Conferences</div></a><br>				      
+				      <a href="/topconf" ><div class="tab_name" style="font-size:26px;padding:12px 10px 12px 10px;width:280px;">Top Conferences</div></a><br>
+
+				      <a href="/journals" ><div class="tab_name" style="font-size:26px;padding:12px 10px 12px 10px;width:280px;">Top 1000 Journals</div></a><br>
+				      
+				      <a href="/scientists" ><div class="tab_name" style="font-size:26px;padding:12px 10px 12px 10px;width:280px;background-color: #FFCA00;">Top 1000 Scientists</div></a><br>				      				      
+
+				      <a href="/ranking" ><div class="tab_name" style="font-size:26px;padding:12px 10px 12px 10px;width:280px;">University Rankings</div></a><br>				      				      
+
+
+				     <a href="/special-issues/" ><div class="tab_name" style="font-size:26px;padding:12px 10px 12px 10px;width:280px;">Special Issues</div></a><br>	
+<!-- 				      <a href="/special-issues" ><div class="tab_name" style="font-size:26px;padding:12px 10px 12px 10px;width:280px;">Special Issues</div></a><br> -->
+				      <a href="/category/research" ><div class="tab_name" style="font-size:26px;padding:12px 10px 12px 10px;width:280px;">Research Blog</div></a>
+<!--				      <a href="/category/software" ><div class="tab_name" style="font-size:26px;padding:12px 10px 12px 10px;width:280px;">Software</div></a> -->
+
+			      <a href="/contact-us" ><div class="tab_name" style="font-size:26px;padding:12px 10px 12px 10px;width:280px;">Contact us</div></a>
+				  </div>
+<div>
+	
+<!-- ADS -->
+
+
+<!-- /ADS -->
+			        </li>
+					        <li id="facebook_like" class="widget widget-sidebar" style="margin-bottom: 10px;"><iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FGuide2Researchcom%2F1396956173909994&amp;width=292&amp;colorscheme=light&amp;show_faces=false&amp;stream=false&amp;header=false&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height: 65px;" allowTransparency="true"></iframe>
+				</li>
+
+<li class="widget widget-sidebar"><a href="https://twitter.com/guide2research" class="twitter-follow-button" data-show-count="false">Follow @guide2research</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></li>
+		
+				<li id="widget_text" class="widget widget-sidebar"><h3>Top Scientists by H-Index</h3>			<div class="textwidget"><table border="100%">
+<tr>
+ <td width="50%"><a href="https://www.guide2research.com/scientists/US"><img style="vertical-align:middle;" src="/img/flags/us.png"> United States</a>
+</td>
+<td width="50%" nowrap><a <a href="https://www.guide2research.com/scientists/UK"><img style="vertical-align:middle;" src="/img/flags/uk.png"> United Kingdom</a>
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+<a href="https://www.guide2research.com/scientists/CA"><img style="vertical-align:middle;" src="/img/flags/ca.png"> Canada</a>
+</td>
+<td width="50%">
+<a href="https://www.guide2research.com/scientists/DE"><img style="vertical-align:middle;" src="/img/flags/de.png"> Germany</a>
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+<a href="https://www.guide2research.com/scientists/CH"><img style="vertical-align:middle;" src="/img/flags/ch.png"> Switzerland</a>
+</td>
+<td width="50%">
+<a href="https://www.guide2research.com/scientists/AU"><img style="vertical-align:middle;" src="/img/flags/au.png"> Australia</a>
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+<a href="https://www.guide2research.com/scientists/NL"><img style="vertical-align:middle;" src="/img/flags/nl.png"> Netherlands</a>
+</td>
+<td width="50%">
+<a href="https://www.guide2research.com/scientists/HK"><img style="vertical-align:middle;" src="/img/flags/hk.png"> Hong Kong</a>
+</td>
+</tr>
+
+
+<tr>
+<td width="50%">
+<a href="https://www.guide2research.com/scientists/FR"><img style="vertical-align:middle;" src="/img/flags/fr.png"> France</a>
+</td>
+<td width="50%">
+<a href="https://www.guide2research.com/scientists/IT"><img style="vertical-align:middle;" src="/img/flags/it.png"> Italy</a>
+</td>
+</tr>
+
+
+<tr>
+<td width="50%">
+<a href="https://www.guide2research.com/scientists/ES"><img style="vertical-align:middle;" src="/img/flags/es.png"> Spain</a>
+</td>
+<td width="50%">
+<a href="https://www.guide2research.com/scientists/BE"><img style="vertical-align:middle;" src="/img/flags/be.png"> Belgium</a>
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+<a href="https://www.guide2research.com/scientists/SG"><img style="vertical-align:middle;" src="/img/flags/sg.png"> Singapore</a>
+</td>
+<td width="50%">
+<a href="https://www.guide2research.com/scientists/JP"><img style="vertical-align:middle;" src="/img/flags/jp.png"> Japan</a>
+</td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.guide2research.com/scientists/by-country">All other countries</a></td>
+</tr>
+
+</table></div>
+		</li><li id="widget_text" class="widget widget-sidebar"><h3>Upcoming Conferences</h3>			<div class="textwidget"><a href="https://www.guide2research.com/conferences/ieee"><img src="https://www.guide2research.com/img/IEEE_s.png"></a>
+<a href="https://www.guide2research.com/conferences/acm"><img src="https://www.guide2research.com/img/ACM_s.png"></a>
+<a href="https://www.guide2research.com/conferences/springer"><img src="https://www.guide2research.com/img/Springer_s.png"></a>
+<a href="https://www.guide2research.com/conferences/elsevier"><img src="https://www.guide2research.com/img/ScienceDirect_s.png"></a>
+<a href="https://www.guide2research.com/conferences/dblp"><img src="https://www.guide2research.com/img/DBLP_s.png"></a>
+<a href="https://www.guide2research.com/conferences/SciTePress"><img style="width:120px;"  src="https://www.guide2research.com/img/SciTePress_s.png"></a>
+</div>
+		</li><li id="widget_sib_subscribe_form" class="widget widget-sidebar"><h3>Subscibe to Newsletter &amp; Conference Alerts</h3>			<form id="sib_signup_form_1" method="post" class="sib_signup_form">
+				<div class="sib_loader" style="display:none;"><img
+							src="https://www.guide2research.com/wp-includes//images/spinner.gif" alt="loader"></div>
+				<input type="hidden" name="sib_form_action" value="subscribe_form_submit">
+				<input type="hidden" name="sib_form_id" value="1">
+                <input type="hidden" name="sib_form_alert_notice" value="Required field">
+                <input type="hidden" name="sib_security" value="f5846cb86b">
+				<div class="sib_signup_box_inside_1">
+					<div style="/*display:none*/" class="sib_msg_disp">
+					</div>
+					<p class="sib-email-area">
+    <label class="sib-email-area">Email Address*</label>
+    <input type="email" class="sib-email-area" name="email" required="required">
+</p>
+<p class="sib-privacy-policy" style="
+">Guide2Research uses the information to contact you about our relevant content. For more information, check out our <a href="http://www.guide2research.com/privacy-policy" title="Privacy policy">privacy policy</a>.</p>
+<p>
+    <input type="submit" class="sib-default-btn" value="Subscribe">
+</p>				</div>
+			</form>
+			<style>
+				form#sib_signup_form_1 p.sib-alert-message {
+    padding: 6px 12px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+form#sib_signup_form_1 p.sib-alert-message-error {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+}
+form#sib_signup_form_1 p.sib-alert-message-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+form#sib_signup_form_1 p.sib-alert-message-warning {
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    color: #8a6d3b;
+}			</style>
+			</li><li id="widget_text" class="widget widget-sidebar"><h3>Top Conferences By Deadlines</h3>			<div class="textwidget"><ul>
+<li><a href="https://www.guide2research.com/topconf">All  Top Conferences</a></li>
+<li><a href="https://www.guide2research.com/topconf/computer-vision">Image Processing & Computer Vision</a></li>
+<li><a href="https://www.guide2research.com/topconf/machine-learning">Machine Learning & Artificial Intelligence</a></li>
+<li><a href="https://www.guide2research.com/topconf/graphics">Graphics and Computer-Aided Design</a></li>
+<li><a href="https://www.guide2research.com/topconf/network-communication">Computer Networks and Communications</a></li>
+<li><a href="https://www.guide2research.com/topconf/hardware-electronics">Hardware, Robotics & Electronics</a></li>
+<li><a href="https://www.guide2research.com/topconf/human-computer-interaction">Human Computer Interaction</a></li>
+<li><a href="https://www.guide2research.com/topconf/software-programming">Software Engineering & Programming</a></li>
+<li><a href="https://www.guide2research.com/topconf/computational-theory">Computational Theory and Mathematics</a></li>
+<li><a href="https://www.guide2research.com/topconf/signal-processing">Signal Processing</a></li>
+<li><a href="https://www.guide2research.com/topconf/information-systems">Databases & Information Systems</a></li>
+<li><a href="https://www.guide2research.com/topconf/web-mobile-multimedia">Web, Mobile & Multimedia Technologies</a></li>
+<li><a href="https://www.guide2research.com/topconf/computer-science">General Computer Science</a></li>
+<li><a href="https://www.guide2research.com/topconf/biomedical-bioinformatics">Biomedical & Medical Engineering</a></li>
+<li><a href="https://www.guide2research.com/topconf/computer-security-cryptography">Computer Security and Cryptography</a></li>
+<li><a href="https://www.guide2research.com/topconf/computational-linguistics-speech-processing">Computational Linguistics & Speech</a></li>
+</ul></div>
+		</li><li id="widget_text" class="widget widget-sidebar"><h3>Top Journals with Impact Factor</h3>			<div class="textwidget"><ul>
+<li><a href="https://www.guide2research.com/journals">All Computer Science & Electronics</a></li>
+<li><a href="https://www.guide2research.com/journals/computer-vision">Image Processing & Computer Vision</a></li>
+<li><a href="https://www.guide2research.com/journals/machine-learning">Machine Learning & Artificial Intelligence</a></li>
+<li><a href="https://www.guide2research.com/journals/graphics">Graphics and Computer-Aided Design</a></li>
+<li><a href="https://www.guide2research.com/journals/network-communication">Computer Networks and Communications</a></li>
+<li><a href="https://www.guide2research.com/journals/hardware-electronics">Hardware, Robotics & Electronics</a></li>
+<li><a href="https://www.guide2research.com/journals/human-computer-interaction">Human Computer Interaction</a></li>
+<li><a href="https://www.guide2research.com/journals/software-programming">Software Engineering & Programming</a></li>
+<li><a href="https://www.guide2research.com/journals/computational-theory">Computational Theory and Mathematics</a></li>
+<li><a href="https://www.guide2research.com/journals/signal-processing">Signal Processing</a></li>
+<li><a href="https://www.guide2research.com/journals/information-systems">Information Systems</a></li>
+<li><a href="https://www.guide2research.com/journals/web-mobile-multimedia">Web, Mobile & Multimedia Technologies</a></li>
+<li><a href="https://www.guide2research.com/journals/computer-science">General Computer Science</a></li>
+<li><a href="https://www.guide2research.com/journals/biomedical-bioinformatics">Biomedical & Medical Engineering</a></li>
+<li><a href=”https://www.guide2research.com/journals/computer-security-cryptography”>Computer Security and Cryptography</a></li>
+<li><a href=”https://www.guide2research.com/journals/computational-linguistics-speech-processing”>Computational Linguistics & Speech Processing</a></li>
+</ul></div>
+		</li><li id="widget_text" class="widget widget-sidebar"><h3>To Download :</h3>			<div class="textwidget"><ul>
+<li><a href="https://www.guide2research.com/wp-content/uploads/2020/08/2020_Top_Computer_Science_Universities_Ranking.pdf">Ranking for Top Computer Science Universities 2020</a></li>
+<li><a href="https://www.guide2research.com/wp-content/uploads/2020/05/Guide2Research-TopScientists-May_2020-1.pdf">Ranking for Top Scientists in Computer Science and Electronics 2020, 6th Edition</a></li>
+<li><a href="https://www.guide2research.com/scientists/Top-Scientists-2019-March-Guide2Research.pdf" target="_blank" rel="noopener">Ranking for Top Scientists in Computer Science and Electronics 2019, 5th Edition</a></li>
+<li><a href="https://www.guide2research.com/scientists/Top-Scientists-2018-March-Guide2Research.pdf" target="_blank" rel="noopener">Ranking for Top Scientists in Computer Science and Electronics 2018</a></li>
+<li><a href="https://www.guide2research.com/special-issues/2017.pdf" target="_blank" rel="noopener">Special Issues for Journals With Impact Factor, 2017/2017</a></li>
+<li><a href="https://www.guide2research.com/topconf/top-cs-2017-08.pdf" target="_blank" rel="noopener">Conference Ranking : Top Computer Science Conferences, 2017/2017</a></li>
+<li><a href="https://www.guide2research.com/journals/list-2017.pdf" target="_blank" rel="noopener">Impact Factor for Top Journals of Computer Science and Electronics, 2017</a></li>
+<li><a href="https://www.guide2research.com/journals/list-2016.pdf" target="_blank" rel="noopener">Impact Factor for Top Journals of Computer Science and Electronics, 2016</a></li>
+<li><a href="https://www.guide2research.com/journals/list-2015.pdf" target="_blank" rel="noopener">Impact Factor for Top Journals of Computer Science and Electronics, 2015</a></li>
+<li><a href="https://www.guide2research.com/books/Research_career_Eng.pdf" target="_blank" rel="noopener">How to chart a successful research career by Prof Alan Johnson</a></li>
+<li><a href="https://www.guide2research.com/wp-content/uploads/2015/01/2014-TopScientists.pdf" target="_blank" rel="noopener">Top H-Index for Scholars of Computer Science &amp; Electronics, 2014</a></li>
+</ul>
+</div>
+		</li><li id="widget_pages" class="widget widget-sidebar"><h3>Pages</h3>		<ul>
+			<li class="page_item page-item-9498"><a href="https://www.guide2research.com/about-us">About us</a></li>
+<li class="page_item page-item-6"><a href="https://www.guide2research.com/contact-us">Contact us</a></li>
+<li class="page_item page-item-15428"><a href="https://www.guide2research.com/our-methodology">Our Methodology</a></li>
+<li class="page_item page-item-14"><a href="https://www.guide2research.com/privacy-policy">Privacy Policy</a></li>
+		</ul>
+		</li>			</ul>
+		</div>
+	</div><!--sidebars-->
+</aside>
+
+    </div>
+
+
+    <script>
+        $('#in_name').keypress(function(e) {
+            if(e.which == 13) {
+                get_url('index.php?ajax=1&keyword='+escape($('#in_name').val()),'ajax_content');
+            }
+        });
+
+        function updatetc(){
+            window.location='https://guide2research.com/scientists/'+$('#in_con').val();
+            var f=$('#in_search').val();
+            if (f=='Search by keyword')f='';
+
+            var b=$('#in_con').val();
+            var c=$('#in_cat').val();
+
+//get_url('/scientists/?ajax=1&k='+escape(f)+'&con='+escape(b)+'&cat='+escape(c),'ajax_content');
+        }
+        document.querySelector('.read-more-click').onclick = function() {
+            document.querySelector('.read-more-hidden').classList.remove('read-more-hidden');
+            this.style.display = 'none';
+        }
+
+    </script>
+
+
+	<!--WP Code Highlight_start-->
+	<script type="text/javascript">
+		window.onload = function(){prettyPrint();};
+	</script>
+	<script type="text/javascript" src="https://www.guide2research.com/wp-content/plugins/wp-code-highlight/js/wp-code-highlight.js"></script>
+	<!--WP Code Highlight_end-->
+		</div>
+	</div><!--#page-->
+</div><!--.main-container-->
+<footer>
+	<div class="container">
+		<div class="footer-widgets">
+				<div class="f-widget f-widget-1">
+					</div>
+	<div class="f-widget f-widget-2">
+					</div>
+	<div class="f-widget last">
+					</div>
+		</div><!--.footer-widgets-->
+	</div><!--.container-->
+</footer><!--footer-->
+<div class="copyrights">
+	<!--start copyrights-->
+<div class="row" id="copyright-note">
+<span>&copy; 2021 <a href="https://www.guide2research.com/" title="" rel="nofollow">Guide 2 Research</a>. All Rights Reserved.</span>
+<div class="top">Maintained by <a href="http://www.imed.ws/">Imed</a>.&nbsp;<a href="#top" class="toplink" rel="nofollow">Back to Top &uarr;</a></div>
+</div>
+<!--end copyrights-->
+</div> 
+
+<!-- tracker added by Ultimate Google Analytics plugin v1.6.0: http://www.oratransplant.nl/uga -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-397862-38");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<script type='text/javascript' src='https://www.guide2research.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.guide2research.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.6'></script>
+<script type='text/javascript' src='https://www.guide2research.com/wp-content/plugins/youtube-embed-plus/scripts/fitvids.min.js?ver=13.4.1.2'></script>
+<script type='text/javascript' src='https://www.guide2research.com/wp-includes/js/wp-embed.min.js?ver=4.8.7'></script>
+<style>
+.black_overlay{
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index:1001;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+}
+
+.white_content {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 16px;
+	border: 6px solid #5184D2;
+	background-color: white;
+	z-index:1002;
+	overflow: auto;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.guide2research.com/fill/js/jquery.form.js"></script>
+<script type="text/javascript" src="https://www.guide2research.com/fill/js/myfuncv016.js?v=2"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>    
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+
+<div id="fade" class="black_overlay"></div>
+<div id="light" class="white_content" style="width:350px;height:200px;">
+<div style="float:right;"><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"> 
+<img src="/img/01.png" border=0></a></div>
+
+<div id=light_content></div>
+<center>
+</center>
+</div>
+</body>
+</html>

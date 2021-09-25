@@ -1,0 +1,2440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"cb4ef145dd","applicationID":"55169925","transactionName":"Jg5fTRMJXFtQQBpCXwwXVEsSD0ReUEEaRFkKFg==","queueTime":3,"applicationTime":319,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"cb4ef145dd",applicationID:"55169925"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+  <title>University of Derby, United Kingdom | Study.EU</title>
+   
+  <link rel="stylesheet" media="all" href="/assets/application-788bf60a726cbc46bce208400674992d5b5b0e3a0892577e97f4ee25b84407b9.css" />
+  <script src="/assets/application-6d00a9f66b3f7e1a7db9282e671658ce415a54e8512569e7b539a89dc0fb74a5.js"></script>
+  
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="EAwbBCNLIUMCaDYshy9zs5ibnx9cVL2+7IJWzUDtAlvIuaRHcxtWZ8QX2AFe3MiFvJ618SsIF6VORkHNzbcTDA==" />
+  
+  
+    
+  
+  
+  
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-29b05ed0a02376d0d37f92df42a0d954d97274430a0f6264e4d19745408f15c8.ico" />
+  
+  <meta name="description" content="Study at the University of Derby in the United Kingdom: 374 Bachelors, Masters, PhDs. ✓ Study.EU: Your gateway to universities in Europe." />
+  
+  <meta name="keywords" content="study in europe, universities, europe, master, bachelor, masters, bachelors, msc, bsc, llb, llm, phd, doctorate, university, study abroad" />
+  <meta name="google-site-verification" content="9sv6t--Xh8SiHr58R3chJHOJVHixvhn6jBK8Qzc9Z9U" />
+  <meta name="msvalidate.01" content="5E3AE5307267C1BED099C27EB59E264E" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  <link rel="canonical" href="https://www.study.eu/university/university-of-derby" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@wwwStudyEU" />
+  <meta name="twitter:title" content="University of Derby, United Kingdom" />
+  
+  <meta property="og:title"  content="University of Derby, United Kingdom" />
+  
+  
+  
+  
+  
+      <meta property="og:type" content="article" />
+      <meta property="article:publisher" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+      <meta property="article:author" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+  
+  <meta property="og:description" content="Study at the University of Derby in the United Kingdom: 374 Bachelors, Masters, PhDs. ✓ Study.EU: Your gateway to universities in Europe." />
+  <meta property="og:image" content="https://www.study.eu/assets/fallback/study-in-europe-logo-overlay-1200x627-34deac9b2af4b87f5f656da9694257ffa4e59dec8319085daa96f8ca9eb3f980.jpg" />
+  
+</head>
+<body>
+
+  <nav id="navbar" class="navbar navbar-static-top container container-fluid">
+  
+  <div class="container">
+    <div class="row" style="position: relative;">
+        <div class="col-md-3 col-xs-9 navbar-header">
+          <a class="navbar-brand" href="/" title="Study.EU">
+            <img alt="Study.EU" class="homepage-logo" src="/assets/study-eu_logo-ee9afe0c98ee9ac266f676d5dcb967023df14f95661b91c7812bef38a3b0c03a.png" />
+          </a>
+        </div>
+        <div class="col-md-8 bottom-align-text">
+            <strong class="navbar-claim">Your gateway to universities in Europe</strong>
+        </div>
+        <div class="col-md-1 col-xs-3 navbar-search-link-container">
+          <div class="navbar-search-link">
+          </div>
+        </div>
+    </div>
+</div>
+  
+</nav>
+
+  <div class="container" id="div-main-container" role="main">
+
+  </div>
+  
+  
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "CollegeOrUniversity",
+  "name": "University of Derby",
+  "url": "https://www.study.eu/university/university-of-derby",
+  "sameAs": "https://www.derby.ac.uk/",
+  "foundingDate": "1851",
+  
+  "logo": "https://study-eu.s3.amazonaws.com/uploads/university/university-of-derby-logo.svg",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Study programmes",
+      "value": "374"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Students",
+      "value": "19145"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Share of international students",
+      "value": "9%"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Average EU/EEA tuition fee p.a.",
+      "value": "7,000 GBP"
+      
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Rank (THE 2020)",
+      "value": "801"
+    }
+  ]
+}
+</script>
+
+
+
+<div class="header-image">
+  <div class="container">
+    <div class="header-image-cta">
+      <h1>Study at the University of Derby</h1>
+      <h2>Derby, United Kingdom</h2>
+    </div>
+  </div>
+    <img alt="Study in Europe" title="Study in Europe" src="/assets/fallback/study-in-europe_1920-2cea268aaca4f8cd71c109aa2d67e83e285f04dd3c85c9a21acae013fd6f2259.jpg" />
+    
+    <div class="image-credits">
+      <span class="image-credits-span">
+        <a href="https://www.flickr.com/photos/glasgowamateur/7892308660" target="_blank" rel="nofollow">Europe</a> by Charles Clegg, <a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="nofollow">CC BY-SA 2.0</a>, modified
+      </span>
+    </div>  
+  
+</div>
+
+<div class="div-breadcrumbs">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="/">Study.eu</a></li><i class="fa fa-angle-right breadcrumb-separator" aria-hidden="true"></i><li><a href="/country/united-kingdom">United Kingdom</a></li><i class="fa fa-angle-right breadcrumb-separator" aria-hidden="true"></i><li>University of Derby</li>
+    </ol>  
+  </div>
+</div> 
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://www.study.eu/",
+        "name": "Study.eu"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://www.study.eu/country/united-kingdom",
+        "name": "United Kingdom"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "https://www.study.eu/university/university-of-derby",
+        "name": "University of Derby"
+      }
+    }
+  ]
+}
+</script>
+
+<div class="container" style="position: relative;">
+
+  <div class="row">
+
+    <div class="sidebar col-md-4 col-md-push-8">
+      
+      <table class="entry-details-table">
+        <tbody>
+            <tr>
+              <th class="university-logo" colspan="2">
+                <img alt="University of Derby - Logo" title="University of Derby - Logo" class="university-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_university-of-derby-logo.svg" />
+              </th>
+            </tr>
+          
+          <tr>
+            <td class="university-name" colspan="2">University of Derby</td>
+          </tr>
+          
+          <tr>
+            <td class="table-entry-name">Location:</td>
+            <td>
+                  Derby (<a href="/country/united-kingdom">United Kingdom</a>)
+                  
+            </td>
+          </tr>
+          
+          
+            
+          
+          <tr>
+            <td class="table-entry-name">Founded:</td>
+            <td>1851</td>
+          </tr>
+
+          <tr>
+            <td class="table-entry-name">Students:</td>
+            <td>
+              19,145
+(9%&nbsp;international)            </td>
+          </tr>
+
+          
+          <tr>
+            <td class="table-entry-name">Ranking: <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Times Higher Education World University Rankings 2020"></i></td>
+            <td title="Times Higher Education World University Rankings 2020">
+              #362 (Europe)<br />
+              #801 (World)<br />
+            </td>
+          </tr>
+          
+
+            <tr>
+              <td class="table-entry-name">Listed study programmes:</td>
+              <td><a href="#university-programmes">374</a></td>
+            </tr>
+          
+          
+          
+
+        </tbody>
+      </table>
+      
+      
+
+
+      
+      
+      
+        
+        <div class="sidebar-container">
+          <strong>Featured universities in the United Kingdom:</strong>
+          <div class="featured-university-container">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a href="/university/university-of-kent">
+                    <img alt="University of Kent" title="University of Kent" class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_university-of-kent-logo.svg" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a href="/university/university-of-kent">University of Kent</a><br />
+                  Canterbury, 
+                  <a href="/country/united-kingdom">United Kingdom</a><br />
+                  521 study programmes
+              </div>
+            </div>
+          </div>
+          <div class="featured-university-container">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a href="/university/falmouth-university">
+                    <img alt="Falmouth University" title="Falmouth University" class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_falmouth-university-logo.png" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a href="/university/falmouth-university">Falmouth University</a><br />
+                  Falmouth, 
+                  <a href="/country/united-kingdom">United Kingdom</a><br />
+                  70 study programmes
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+          
+      
+    </div>
+  
+  
+  
+    <div class="content col-md-8 col-md-pull-4">
+
+      <h1>University of Derby</h1>
+      
+        <div class="bnnr-container">
+  <a target="_blank" rel="nofollow" data-track-rendering-ga="true" data-track-click-ga="true" data-track-click="true" data-event-category="BC" data-event-label="CODE Berlin" data-trackvalue-bc-id="41" data-trackvalue-href="https://code.berlin/en/?utm_source=Study.eu&amp;utm_medium=Banner" href="https://code.berlin/en/?utm_source=Study.eu&amp;utm_medium=Banner">
+    <img class="bnnr" loading="lazy" src="https://study-eu.s3.amazonaws.com/uploads/bc/bc-code-berlin-desktop.png" />
+</a></div>
+
+      
+      <div class="content-description">
+        <p><strong>Located in the heart of England, we build on our region&rsquo;s heritage of innovation to provide industry-relevant, expert teaching, from foundation and undergraduate degrees through to postgraduate study and research.</strong></p>
+<p>Rated Gold in the Teaching Excellence and Student Outcomes Framework (TEF) and a Top 30 UK University in the Guardian University Guide 2020, our academic strength is backed up by practical experience to ensure our students are ready for a successful career.</p>
+<p>Whether you choose to study full-time, part-time, online or on-campus in Derby, Buxton or Chesterfield, our wide range of subjects will help you develop the skills and confidence to aim high.</p>
+      </div>
+    
+    <a id="university-programmes"><hr /></a>
+    
+    
+    
+
+    <ul class="nav nav-tabs">
+      
+        <li class="active"><a data-toggle="tab" href="#tab-bachelor">Bachelor’s<br/>programmes</a></li>
+      
+        <li><a data-toggle="tab" href="#tab-master">Master’s<br/>programmes</a></li>
+      
+        <li><a data-toggle="tab" href="#tab-doctorate">Doctorate<br/>programmes</a></li>
+      
+    </ul>
+
+    <div class="tab-content">
+    
+        <div id="tab-bachelor" class="tab-pane active">
+          <h4>Bachelors at the University of Derby</h4>
+            <div aria-multiselectable="true" role="tablist" id="accordion-bachelor" class="panel-group">
+
+      <div class="panel panel-default"> <a title="Art, Design &amp; Media" aria-controls="collapse-bachelor-1" aria-expanded="false" href="#collapse-bachelor-1" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-1" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Art, Design &amp; Media <span class="discipline-programmes-count">(51)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-1" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-1" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-derby/animation-7b366fae-372c-485f-9497-a2651d78b5b6">Animation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/animation-3a67e27a-62e9-4fda-b7ec-210ea50ea8f0">Animation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/architectural-design-14f9b2bf-939f-444c-9f1b-74eefd7a89ee">Architectural Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/architectural-technology-and-practice">Architectural Technology and Practice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/architectural-technology-and-practice-with-foundation-year">Architectural Technology and Practice with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/cgi-and-visual-effects">CGI and Visual Effects</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/computer-games-modelling-and-animation">Computer Games Modelling and Animation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/computer-games-modelling-and-animation-with-foundation-year">Computer Games Modelling and Animation with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/costume-and-set-design">Costume and Set Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/creative-art-and-design-practice-top-up">Creative Art and Design Practice (Top-Up)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/creative-expressive-arts-health-and-wellbeing">Creative Expressive Arts, Health and Wellbeing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/creative-expressive-arts-health-and-wellbeing-with-foundatio">Creative Expressive Arts, Health and Wellbeing with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/dance-3015a7b1-2049-4be2-8a89-0f1b99bb5c7b">Dance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/dance-and-movement-studies">Dance and Movement Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/fashion-design-661a523e-9a0d-49d2-b962-47934d108e48">Fashion Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/fashion-design-and-marketing">Fashion Design and Marketing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/film-and-television-studies-85465338-b273-492e-9f4a-39a3c414dec3">Film and Television Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/film-production-90ae639b-88ad-4ac2-b05f-159113ff0796">Film Production</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/fine-art-8263da98-486f-43c4-8fd5-d858d4b8742f">Fine Art</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/football-journalism">Football Journalism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/football-journalism-with-foundation-year">Football Journalism with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/graphic-design-63112059-b661-43d9-a4af-0447e5213ce0">Graphic Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/graphic-design-e905bc21-ad29-47e7-bb99-440f2efd0ba2">Graphic Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/illustration-e07974ee-8db7-4798-9c51-2fba29e57f58">Illustration</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/illustration-a5e91558-39c9-405a-ad63-628dbba48a00">Illustration</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/interior-architecture-and-venue-design">Interior Architecture and Venue Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/interior-architecture-and-venue-design-with-foundation-year">Interior Architecture and Venue Design with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/interior-design-2b55c397-d991-4420-989c-4bf3e1b6198d">Interior Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/journalism-103bf7d6-cef3-4a33-9ccb-3bb8aa6c53a4">Journalism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/journalism-9a10c26a-c5e1-4484-b545-5686cbf15803">Journalism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/journalism-with-foundation-year">Journalism with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/magazine-journalism-382eb691-7963-46ad-a4c4-69bfaf71e4bf">Magazine Journalism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/magazine-journalism-with-foundation-year">Magazine Journalism with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/media-production">Media Production</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/music-production-18404">Music Production</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/photography-18414">Photography</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/photography-18415">Photography</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/photography-professional-and-applied">Photography (Professional and Applied)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/popular-music-18405">Popular Music</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/popular-music-in-society">Popular Music in Society</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/popular-music-performance">Popular Music Performance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/product-design-2c86b3df-6f4b-4dd7-9543-1c2a8467c736">Product Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/publishing-11f32be1-2251-4dda-9d7c-4877cd820f9f">Publishing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/sound-light-and-live-event-technology">Sound, Light and Live Event Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/sound-light-and-live-event-technology-with-foundation-year">Sound, Light and Live Event Technology with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/specialist-sports-journalism">Specialist Sports Journalism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/specialist-sports-journalism-with-foundation-year">Specialist Sports Journalism with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/technical-theatre">Technical Theatre</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/textile-design-9cbf78a6-6188-4fb1-bccc-d3fe6af43c6a">Textile Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/theatre-2b90a550-5d82-42cd-815d-d67050f44d8b">Theatre</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/theatre-arts-94a8202a-7564-45ab-8470-85a906196402">Theatre Arts</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Business &amp; Management" aria-controls="collapse-bachelor-2" aria-expanded="false" href="#collapse-bachelor-2" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-2" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Business &amp; Management <span class="discipline-programmes-count">(54)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-2" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-2" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-derby/accounting-a120946b-dc7b-4522-ab49-53327903e8f8">Accounting</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/accounting-and-finance-e2a5d64d-b401-4a10-9a51-921e58e7c7fe">Accounting and Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/accounting-and-finance-integrated-masters">Accounting and Finance Integrated Masters</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/accounting-and-finance-top-up-online">Accounting and Finance (Top-Up) (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/accounting-and-finance-with-foundation-year-dacd99b8-aaf2-47cb-ac14-fba95872e773">Accounting and Finance with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/banking-and-finance-top-up">Banking and Finance (Top-Up)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/business-accounting-and-finance">Business Accounting and Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/business-accounting-and-finance-with-foundation-year">Business Accounting and Finance with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/business-and-management-online">Business and Management (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/business-and-management-top-up-online">Business and Management (Top-Up) (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/business-management-cmi-accredited">Business Management (CMI accredited)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/business-management-cmi-accredited-with-foundation-year">Business Management (CMI accredited) with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/business-management-enterprise">Business Management (Enterprise)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/business-management-finance-f2053c99-d3ca-48c0-aa85-3aa023feab4b">Business Management (Finance)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/business-management-hrm">Business Management (HRM)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/business-management-international-business">Business Management (International Business)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/business-management-marketing-ee4703ae-7f86-42db-9a88-012163bd4f7c">Business Management (Marketing)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/business-management-top-up">Business Management (Top-Up)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/business-studies-59eb9d38-2806-4621-b670-7577a9e12e7f">Business Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/business-studies-with-foundation-year">Business Studies with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/economics-and-finance-2887b353-f9ce-407f-8c8f-21e3295d6321">Economics and Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/economics-and-finance-with-foundation-year">Economics and Finance with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/event-management">Event Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/event-management-with-foundation-year">Event Management with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/finance-3dcb2a36-2582-4197-948b-9c7bc86ba71c">Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/finance-with-foundation-year">Finance with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/human-resource-management-aa943865-55e0-46e5-a428-cea8ab7a2c50">Human Resource Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/international-business-09ef97a4-2e36-487b-b58a-1966bbb8e4de">International Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/international-business-and-finance-3fa0c0be-ba18-4791-bcb0-6b75f827b123">International Business and Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/international-business-and-finance-top-up">International Business and Finance (Top-Up)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/international-business-and-finance-with-foundation-year">International Business and Finance with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/international-business-top-up">International Business (Top-Up)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/international-business-with-foundation-year">International Business with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/international-hospitality-business-management-top-up-online">International Hospitality Business Management (Top-Up) (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/international-hospitality-management-566953ec-3a51-442e-89c5-4c811013087c">International Hospitality Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/international-hospitality-management-with-foundation-year">International Hospitality Management with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/international-tourism-management-699d4dff-ff8b-4383-93d4-e6ab6b89c1d4">International Tourism Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/international-tourism-management-with-foundation-year">International Tourism Management with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/logistics-and-supply-chain-management-2610861f-bbcd-4743-8e82-772880b1e5ef">Logistics and Supply Chain Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/logistics-and-supply-chain-management-with-foundation-year">Logistics and Supply Chain Management with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/management-accounting-top-up-online">Management Accounting (Top-Up) (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/marketing-consumer-psychology">Marketing (Consumer Psychology)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/marketing-consumer-psychology-with-foundation-year">Marketing (Consumer Psychology) with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/marketing-digital">Marketing (Digital)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/marketing-digital-with-foundation-year">Marketing (Digital) with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/marketing-management-0333cb4f-3767-41f4-9d90-6b3a7b1c4652">Marketing (Management)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/marketing-management-top-up">Marketing (Management) Top-Up</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/marketing-management-with-foundation-year">Marketing (Management) with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/marketing-pr-and-advertising">Marketing (PR and Advertising)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/marketing-pr-and-advertising-with-foundation-year">Marketing (PR and Advertising) with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/media-and-communication-6d6ff97b-377d-4449-80e2-b6e3d77a6060">Media and Communication</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/media-and-communication-1652f39a-9053-47db-8cf3-23264cf97c15">Media and Communication</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/media-and-communication-with-foundation-year">Media and Communication with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/professional-culinary-arts-top-up">Professional Culinary Arts (Top-Up)</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Computer Science &amp; IT" aria-controls="collapse-bachelor-62" aria-expanded="false" href="#collapse-bachelor-62" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-62" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Computer Science &amp; IT <span class="discipline-programmes-count">(15)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-62" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-62" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-derby/computer-games-programming">Computer Games Programming</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/computer-games-programming-with-foundation-year">Computer Games Programming with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/computer-networks-and-security-3dc51675-3a33-4a09-a269-9392b45dad76">Computer Networks and Security</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/computer-networks-and-security-with-foundation-year">Computer Networks and Security with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/computer-science-a9548abc-fd9f-4879-9eb6-66d19cc93a49">Computer Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/computer-science-with-foundation-year-476b97d2-7df5-429e-90c5-1be708c95db2">Computer Science with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/computing-and-information-technologies-top-up-online">Computing and Information Technologies (Top-Up) (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/cyber-security-81f19dab-466e-41c4-8186-12da8c6a7ba5">Cyber Security</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/cyber-security-with-foundation-year">Cyber Security with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/digital-forensics-and-security">Digital Forensics and Security</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/digital-forensics-and-security-with-foundation-year">Digital Forensics and Security with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/information-technology-bec8875a-088c-4fb9-98e6-18d8e58ec7f3">Information Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/information-technology-with-foundation-year">Information Technology with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/mathematics-and-computer-science-c0d901cb-a2b5-4d83-9de7-3ff4c5959dbe">Mathematics and Computer Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/mathematics-and-computer-science-with-foundation-year">Mathematics and Computer Science with Foundation Year</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Engineering &amp; Technology" aria-controls="collapse-bachelor-3" aria-expanded="false" href="#collapse-bachelor-3" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-3" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Engineering &amp; Technology <span class="discipline-programmes-count">(22)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-3" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-3" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-derby/architectural-technology-and-practice">Architectural Technology and Practice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/architectural-technology-and-practice-with-foundation-year">Architectural Technology and Practice with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/civil-engineering-0d568a38-980c-4393-ae55-094253d342d6">Civil Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/civil-engineering-b8a18da8-0716-4c00-914d-279129d01489">Civil Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/civil-engineering-with-foundation-year">Civil Engineering with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/civil-engineering-with-foundation-year-d130d34d-91b5-4a64-b6cb-0d9fe60bfef8">Civil Engineering with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/construction-management-and-property-development">Construction Management and Property Development</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/construction-management-and-property-development-with-founda">Construction Management and Property Development with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/electrical-and-electronic-engineering-6e185ff5-0753-4c83-b868-be1495cf9d89">Electrical and Electronic Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/electrical-and-electronic-engineering-f600f766-44dd-46b0-afac-c0206ba7d0cf">Electrical and Electronic Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/electrical-and-electronic-engineering-with-foundation-year">Electrical and Electronic Engineering with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/electrical-and-electronic-engineering-with-foundation-year-bcc2a8bc-552d-4890-a100-a81aa130fbca">Electrical and Electronic Engineering with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/engineering-management-top-up">Engineering Management (Top-Up)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/mechanical-engineering-e2c1a2f8-0d6d-4996-8f1d-91297f5b644b">Mechanical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/mechanical-engineering-7228d72b-5d55-4775-8060-af3a5c66ae63">Mechanical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/mechanical-engineering-with-foundation-year">Mechanical Engineering with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/motorsport-engineering-f97de493-9674-4317-9c72-cfa2b3f7f6f1">Motorsport Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/motorsport-engineering">Motorsport Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/motorsport-engineering-with-foundation-year">Motorsport Engineering with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/property-development">Property Development</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/quantity-surveying-and-commercial-management">Quantity Surveying and Commercial Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/quantity-surveying-and-commercial-management-with-foundation">Quantity Surveying and Commercial Management with Foundation Year</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Environment &amp; Agriculture" aria-controls="collapse-bachelor-63" aria-expanded="false" href="#collapse-bachelor-63" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-63" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Environment &amp; Agriculture <span class="discipline-programmes-count">(7)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-63" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-63" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-derby/geography-and-environmental-hazards">Geography and Environmental Hazards</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/geography-and-environmental-hazards-with-foundation-year">Geography and Environmental Hazards with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/geology-95851104-ba2c-4658-b664-5fe5a9293244">Geology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/geology-30b460fe-5d56-4f7c-8fb7-68039b70b1c4">Geology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/geology-and-environmental-hazards">Geology and Environmental Hazards</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/geology-and-environmental-hazards-with-foundation-year">Geology and Environmental Hazards with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/geology-with-foundation-year">Geology with Foundation Year</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Humanities" aria-controls="collapse-bachelor-64" aria-expanded="false" href="#collapse-bachelor-64" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-64" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Humanities <span class="discipline-programmes-count">(17)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-64" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-64" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-derby/american-studies-75af87ad-6ef6-47d4-a197-953cc6124617">American Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/creative-professional-writing">Creative &amp; Professional Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/creative-professional-writing-ece54bd9-bb67-40a4-a5cd-a6980b60c3a2">Creative &amp; Professional Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/creative-professional-writing-with-foundation-year">Creative &amp; Professional Writing with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/english-75f2c8d8-0bba-49fb-9bad-8f388b190b03">English</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/english-90d01598-032e-4f0a-86fc-46aa87ab5962">English</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/english-integrated-masters">English Integrated Masters</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/english-language-614bbdf4-fe69-4f04-9174-7c4e816483fc">English Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/english-literature-and-language-with-foundation-year-with-op">English Literature and Language with Foundation Year with optional TESOL pathway</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/english-literature-and-language-with-optional-tesol-pathway">English Literature and Language with optional TESOL pathway</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/english-with-foundation-year-001b9419-8db1-492b-b6ba-be91fe454a98">English with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/history-f56b9797-5bcf-43dd-ae93-8080366614e9">History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/history-5cd9a781-148e-41e2-aa84-431d0a8c3864">History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/history-integrated-masters">History Integrated Masters</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/history-with-foundation-year-dc7ef740-e793-4cfd-8504-58044c562304">History with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/writing-and-publishing">Writing and Publishing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/writing-and-publishing-with-foundation-year">Writing and Publishing with Foundation Year</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Law" aria-controls="collapse-bachelor-4" aria-expanded="false" href="#collapse-bachelor-4" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-4" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Law <span class="discipline-programmes-count">(1)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-4" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-4" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-derby/law-2dfd8e30-4d9a-4849-8791-d1f6621c58cd">Law</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Medicine &amp; Health" aria-controls="collapse-bachelor-5" aria-expanded="false" href="#collapse-bachelor-5" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-5" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Medicine &amp; Health <span class="discipline-programmes-count">(27)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-5" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-5" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-derby/biomedical-health-f3b61763-64db-4166-90eb-f8c7b7ab6be7">Biomedical Health</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/biomedical-health-with-foundation-year">Biomedical Health with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/community-specialist-practice">Community Specialist Practice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/diagnostic-radiography-75a95d70-4f75-4493-af40-c441efbfbf2b">Diagnostic Radiography</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/nursing-adult-6041f728-351a-4b7d-9867-a818f85c6543">Nursing (Adult)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/nursing-children-s-with-nmc-registration">Nursing (Children&#39;s) with NMC registration</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/nursing-mental-health-6e3b6a04-a713-4bde-a1c6-4360ccf8a419">Nursing (Mental Health)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/nursing-studies-top-up-online">Nursing Studies (Top-Up) (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/performance-analysis-and-coaching-science">Performance Analysis and Coaching Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/performance-analysis-and-coaching-science-with-foundation-ye">Performance Analysis and Coaching Science with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/perioperative-practice-top-up-online">Perioperative Practice (Top-Up) (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/physical-activity-nutrition-and-health">Physical Activity, Nutrition and Health</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/physical-activity-nutrition-and-health-with-foundation-year">Physical Activity, Nutrition and Health with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/specialist-community-public-health-nursing">Specialist Community Public Health Nursing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/sport-and-education">Sport and Education</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/sport-and-education-with-foundation-year">Sport and Education with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/sport-and-exercise-science-61b7f911-c95f-4e07-a653-6568de33aa68">Sport and Exercise Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/sport-and-exercise-science-with-foundation-year">Sport and Exercise Science with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/sport-and-exercise-studies">Sport and Exercise Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/sport-coaching-and-development">Sport Coaching and Development</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/sport-coaching-and-development-with-foundation-year">Sport Coaching and Development with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/sport-management-1d418bb9-21e0-42ce-99d3-de934fcd7ffd">Sport Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/sport-management-with-foundation-year">Sport Management with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/sport-therapy-and-rehabilitation">Sport Therapy and Rehabilitation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/sport-therapy-and-rehabilitation-with-foundation-year">Sport Therapy and Rehabilitation with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/strength-conditioning-and-rehabilitation">Strength, Conditioning and Rehabilitation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/strength-conditioning-and-rehabilitation-with-foundation-yea">Strength, Conditioning and Rehabilitation with Foundation Year</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Natural Sciences &amp; Mathematics" aria-controls="collapse-bachelor-6" aria-expanded="false" href="#collapse-bachelor-6" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-6" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Natural Sciences &amp; Mathematics <span class="discipline-programmes-count">(13)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-6" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-6" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-derby/biology-318944b7-6bfc-4d04-a725-e288ffb26f0d">Biology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/biology-c1b86a10-5574-4837-819d-f2c35e95921a">Biology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/biology-with-foundation-year-ee4130f3-207e-473d-bca3-7d51c9160822">Biology with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/human-biology-881f1ed6-0af5-4f87-a722-002055a1f4c9">Human Biology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/human-biology-with-foundation-year">Human Biology with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/mathematics-bcc07086-f058-45a5-b1a3-4cf0353e3c3c">Mathematics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/mathematics-7514b190-2f34-48f0-851a-8f770bc427f0">Mathematics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/mathematics-and-computer-science-c0d901cb-a2b5-4d83-9de7-3ff4c5959dbe">Mathematics and Computer Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/mathematics-and-computer-science-with-foundation-year">Mathematics and Computer Science with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/mathematics-with-foundation-year">Mathematics with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/zoology-ef368c7f-899c-4670-a055-e763a630862e">Zoology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/zoology-40dd1f4e-28c9-4f40-a748-ae810ac92005">Zoology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/zoology-with-foundation-year-14c539d1-3fee-48e5-bc31-7a67d9d83ec8">Zoology with Foundation Year</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Social Sciences" aria-controls="collapse-bachelor-7" aria-expanded="false" href="#collapse-bachelor-7" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-7" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Social Sciences <span class="discipline-programmes-count">(67)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-7" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-7" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-derby/applied-social-work">Applied Social Work</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/child-and-family-health-and-wellbeing">Child and Family Health and Wellbeing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/child-and-family-health-and-wellbeing-16eb5811-da2f-4945-9ad3-6bed92686507">Child and Family Health and Wellbeing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/child-and-family-health-and-wellbeing-with-foundation-year">Child and Family Health and Wellbeing with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/child-and-youth-studies">Child and Youth Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/child-and-youth-studies-with-foundation-year">Child and Youth Studies with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/cognitive-behavioural-therapeutic-approaches-top-up-online">Cognitive Behavioural Therapeutic Approaches (Top-Up) (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/counselling-and-psychotherapy-principles-and-practices">Counselling and Psychotherapy Principles and Practices</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/counselling-and-psychotherapy-principles-and-practices-59bfe15c-4673-45e7-9bea-f47227aef7e4">Counselling and Psychotherapy Principles and Practices</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/counselling-and-psychotherapy-principles-and-practices-with-">Counselling and Psychotherapy Principles and Practices with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/creative-expressive-arts-health-and-wellbeing">Creative Expressive Arts, Health and Wellbeing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/creative-expressive-arts-health-and-wellbeing-with-foundatio">Creative Expressive Arts, Health and Wellbeing with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/criminal-psychology">Criminal Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/criminal-psychology-with-foundation-year">Criminal Psychology with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/criminology-7ded1b01-abe4-4c06-be67-9501b426f7ff">Criminology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/criminology-8c6c34d4-d266-4de0-9b52-a05ced34d408">Criminology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/criminology-with-foundation-year">Criminology with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/early-childhood-studies-7d127bbd-a939-4795-85b8-94bc4a190b1d">Early Childhood Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/early-childhood-studies-94276e51-dcf7-43cc-9b57-07e1f0f2f503">Early Childhood Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/early-childhood-studies-top-up-online">Early Childhood Studies (Top-Up) (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/early-childhood-studies-with-foundation-year">Early Childhood Studies with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/economics-ea7ea550-1751-4925-a8ce-c4472edfa1d5">Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/economics-537c7961-6a15-49b7-b287-60e231d83516">Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/economics-and-finance-2887b353-f9ce-407f-8c8f-21e3295d6321">Economics and Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/economics-and-finance-with-foundation-year">Economics and Finance with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/economics-with-foundation-year-b9b4f438-a798-4300-8617-854010273a57">Economics with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/education-studies-92a02d2f-d815-48dc-97ad-61d59e997b03">Education Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/education-studies-top-up">Education Studies (Top-Up)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/education-studies-with-foundation-year">Education Studies with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/education-studies-with-optional-pathway-in-send-or-tesol">Education Studies with optional pathway in SEND or TESOL</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/education-with-qualified-teacher-status-integrated-masters">Education with Qualified Teacher Status Integrated Masters</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/forensic-science-050511c2-2710-48cb-9569-ca2b60e51aab">Forensic Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/forensic-science-with-criminology">Forensic Science with Criminology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/forensic-science-with-criminology-with-foundation-year">Forensic Science with Criminology with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/forensic-science-with-foundation-year">Forensic Science with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/forensic-science-with-psychology">Forensic Science with Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/forensic-science-with-psychology-with-foundation-year">Forensic Science with Psychology with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/geography-e06856f4-b6ea-4754-8454-6a76fb83f47f">Geography</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/geography-d7a951bf-c0f1-41ae-a2b9-57c81fc82164">Geography</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/geography-and-environmental-hazards">Geography and Environmental Hazards</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/geography-and-environmental-hazards-with-foundation-year">Geography and Environmental Hazards with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/geography-with-foundation-year-6352966a-23df-44cb-b893-895ce530e410">Geography with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/health-and-social-care-ebc15363-8b26-470e-8d2f-1d662f50deb8">Health and Social Care</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/health-and-social-care-with-foundation-year">Health and Social Care with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/integrative-health-and-social-care-top-up-online">Integrative Health and Social Care (Top-Up) (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/international-relations-and-diplomacy-04bce78d-9182-4eff-8b05-1af9de8a1d81">International Relations and Diplomacy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/international-relations-and-diplomacy-with-optional-year-in-">International Relations and Diplomacy (with optional year in Hague)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/occupational-therapy-2f03b305-ba19-483e-be47-ba2b45d17646">Occupational Therapy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/policing-and-investigations">Policing and Investigations</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/politics-ca13b8ac-8a7f-4e17-9b37-4f0b836bdd50">Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/primary-education-with-qualified-teacher-status">Primary Education with Qualified Teacher Status</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/professional-policing-aeecd475-de4b-4f6e-bfbd-ccf5d319ce1a">Professional Policing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/professional-policing-accelerated">Professional Policing (Accelerated)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/professional-policing-with-foundation-year">Professional Policing with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/psychology-564c8117-0539-47a9-88f0-09b4870d79de">Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/psychology-209cf806-2b6b-4e6d-b097-d7752e2567a5">Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/psychology-online">Psychology (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/psychology-with-foundation-year-7eb2269b-b79a-474c-b902-1d42dadeb6c9">Psychology with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/sociology-787176e0-aca9-45f2-aa4e-07f199a38291">Sociology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/sociology-909c1154-fe9a-435f-a342-e1e5176dd10b">Sociology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/sociology-with-foundation-year">Sociology with Foundation year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/special-educational-needs-and-disability">Special Educational Needs and Disability</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/special-educational-needs-and-disability-with-foundation-yea">Special Educational Needs and Disability with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/sport-and-education">Sport and Education</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/sport-and-education-with-foundation-year">Sport and Education with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/youth-work-and-community-development">Youth Work and Community Development</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/youth-work-and-community-development-with-foundation-year">Youth Work and Community Development with Foundation Year</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default" id="panel-bachelor-other"> <a title="Other subjects" aria-controls="collapse-bachelor-other" aria-expanded="false" href="#collapse-bachelor-other" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-other" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Other subjects</span> <span class="discipline-programmes-count">(1)</span></a>
+        <div aria-labelledby="heading-bachelor-other" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-other" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-derby/foundation-programme">Foundation Programme</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+
+  <script>
+  if ( $('#accordion-bachelor .panel-collapse').length == 1 ) {
+    // If Programmes at this level all fall into the same Discipline, expand it
+    $('#accordion-bachelor .panel-collapse').collapse('show');
+  }
+
+
+  $('.panel-collapse').on('shown.bs.collapse', function (e) {
+      var panel = $(this).closest('div.panel');
+      var panelTop = panel[0].getBoundingClientRect().top;
+      var navHeight = document.getElementById("navbar").offsetHeight;
+      var navBottom = document.getElementById("navbar").getBoundingClientRect().bottom;
+      
+      var visibleFromHere = Math.max(0, navBottom); // navBottom might be negative on desktop
+      
+      if (panelTop < visibleFromHere) {
+        // If the just expanded panel's top is above what's visible in the viewport, scroll up.
+        $('html,body').animate({
+            scrollTop: panel.offset().top-visibleFromHere-25
+        }, 500); 
+      }
+  }); 
+  </script>
+
+        </div>
+      
+        <div id="tab-master" class="tab-pane">
+          <h4>Masters at the University of Derby</h4>
+            <div aria-multiselectable="true" role="tablist" id="accordion-master" class="panel-group">
+
+      <div class="panel panel-default"> <a title="Art, Design &amp; Media" aria-controls="collapse-master-1" aria-expanded="false" href="#collapse-master-1" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-1" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Art, Design &amp; Media <span class="discipline-programmes-count">(14)</span></span> </a>
+        <div aria-labelledby="heading-master-1" role="tabpanel" class="panel-collapse collapse" id="collapse-master-1" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-derby/applied-acoustics">Applied Acoustics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/applied-theatre-and-education">Applied Theatre and Education</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/audio-engineering">Audio Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/dance-and-contemporary-circus">Dance and Contemporary Circus</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/dance-movement-psychotherapy">Dance Movement Psychotherapy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/dramatherapy-834c9140-df4e-4cd4-9240-cee8e06effe6">Dramatherapy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/fashion-and-textiles">Fashion and Textiles</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/film-and-photography">Film and Photography</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/fine-art-18124">Fine Art</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/music-production-18180">Music Production</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/music-therapy-2a6d953a-7586-4300-ad61-28dcf0e2679e">Music Therapy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/publishing">Publishing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/sustainable-architecture-and-healthy-buildings">Sustainable Architecture and Healthy Buildings</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/visual-communication-18125">Visual Communication</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Business &amp; Management" aria-controls="collapse-master-2" aria-expanded="false" href="#collapse-master-2" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-2" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Business &amp; Management <span class="discipline-programmes-count">(16)</span></span> </a>
+        <div aria-labelledby="heading-master-2" role="tabpanel" class="panel-collapse collapse" id="collapse-master-2" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-derby/accounting-and-finance-8395fae2-06de-4c02-b607-ac4a478cf228">Accounting and Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/careers-education-and-coaching">Careers Education and Coaching</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/events-management-ee0b8f49-3403-4139-b60d-abe668179085">Events Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/finance-online">Finance (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/financial-investigation-and-digital-intelligence">Financial Investigation and Digital Intelligence</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/human-resource-management-top-up">Human Resource Management (Top-Up)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/international-business-6840aa6c-a9e3-417d-a487-3d6efe95d938">International Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/international-business-and-finance-f4ec95f9-123d-4e75-b447-d144af5df7f7">International Business and Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/international-business-and-hrm">International Business and HRM</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/international-business-and-marketing-1a9e06c8-a3b8-4d1d-93a4-fdc5e458ba7c">International Business and Marketing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/international-hospitality-management-04039479-548b-4271-ab19-e89857a79d9b">International Hospitality Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/marketing-management-18081">Marketing Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/strategic-management-online">Strategic Management (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/strategic-sustainability-management-online">Strategic Sustainability Management (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/supply-chain-improvement">Supply Chain Improvement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/tourism-management-18080">Tourism Management</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Computer Science &amp; IT" aria-controls="collapse-master-62" aria-expanded="false" href="#collapse-master-62" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-62" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Computer Science &amp; IT <span class="discipline-programmes-count">(7)</span></span> </a>
+        <div aria-labelledby="heading-master-62" role="tabpanel" class="panel-collapse collapse" id="collapse-master-62" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-derby/big-data-analytics-ddbde263-1549-49ab-b3b1-5344af221ff7">Big Data Analytics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/big-data-analytics-online">Big Data Analytics (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/computing-and-it-online">Computing and IT (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/cyber-security-8632059d-ea87-44c9-8c8e-ad48bcb7960b">Cyber Security</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/cyber-security-online">Cyber Security (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/ergonomics-and-human-factors-online">Ergonomics and Human Factors (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/information-technology-b89f6701-795a-436f-a84a-57a52ddf4765">Information Technology</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Engineering &amp; Technology" aria-controls="collapse-master-3" aria-expanded="false" href="#collapse-master-3" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-3" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Engineering &amp; Technology <span class="discipline-programmes-count">(12)</span></span> </a>
+        <div aria-labelledby="heading-master-3" role="tabpanel" class="panel-collapse collapse" id="collapse-master-3" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-derby/advanced-computer-networks">Advanced Computer Networks</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/advanced-materials-and-additive-manufacturing">Advanced Materials and Additive Manufacturing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/advanced-materials-and-additive-manufacturing-online">Advanced Materials and Additive Manufacturing (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/building-information-modelling-bim-and-project-collaboration-c4c7353b-03aa-473e-bd7d-bab7fd5732fd">Building Information Modelling (BIM) and Project Collaboration</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/building-information-modelling-bim-and-project-collaboration">Building Information Modelling (BIM) and Project Collaboration (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/civil-engineering-and-construction-management">Civil Engineering and Construction Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/civil-engineering-and-construction-management-online">Civil Engineering and Construction Management (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/control-and-instrumentation">Control and Instrumentation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/geoenergy-incorporating-pg-cert-pg-dip">GeoEnergy (incorporating PG Cert/PG Dip)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/mechanical-and-manufacturing-engineering-c755e04e-b65e-44f4-af0b-2961982268e4">Mechanical and Manufacturing Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/professional-engineering-online">Professional Engineering (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/strategic-engineering-management">Strategic Engineering Management</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Environment &amp; Agriculture" aria-controls="collapse-master-63" aria-expanded="false" href="#collapse-master-63" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-63" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Environment &amp; Agriculture <span class="discipline-programmes-count">(5)</span></span> </a>
+        <div aria-labelledby="heading-master-63" role="tabpanel" class="panel-collapse collapse" id="collapse-master-63" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-derby/conservation-biology-bc60324c-ed09-43eb-a278-c2f10faff0c9">Conservation Biology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/environmental-assessment-and-control">Environmental Assessment and Control</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/environmental-assessment-and-control-online">Environmental Assessment and Control (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/environmental-health-online">Environmental Health (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/sustainability-and-environmental-management-online">Sustainability and Environmental Management (Online)</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Humanities" aria-controls="collapse-master-64" aria-expanded="false" href="#collapse-master-64" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-64" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Humanities <span class="discipline-programmes-count">(5)</span></span> </a>
+        <div aria-labelledby="heading-master-64" role="tabpanel" class="panel-collapse collapse" id="collapse-master-64" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-derby/creative-writing-18164">Creative Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/public-history-and-heritage">Public History and Heritage</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/public-history-and-heritage-online">Public History and Heritage (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/social-sciences-and-humanities">Social Sciences and Humanities</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/writing-for-performance">Writing for Performance</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Medicine &amp; Health" aria-controls="collapse-master-5" aria-expanded="false" href="#collapse-master-5" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-5" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Medicine &amp; Health <span class="discipline-programmes-count">(14)</span></span> </a>
+        <div aria-labelledby="heading-master-5" role="tabpanel" class="panel-collapse collapse" id="collapse-master-5" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-derby/advanced-clinical-practice-e0996dde-28b5-40d2-ab65-1d5b401908c0">Advanced Clinical Practice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/applied-sport-and-exercise-science">Applied Sport and Exercise Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/biomedical-health">Biomedical Health</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/community-specialist-practice-district-nursing">Community Specialist Practice (District Nursing)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/diagnostic-radiography-pre-registration">Diagnostic Radiography (Pre-Registration)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/hand-therapy-incorporating-pg-cert-pg-dip">Hand Therapy (incorporating PG Cert/PG Dip)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/medical-ultrasound">Medical Ultrasound</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/molecular-medicine-8b994f91-e6d9-4c98-a7d4-facb7bc0c43c">Molecular Medicine</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/nursing-adult-with-nmc-registration">Nursing (Adult) with NMC registration</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/nursing-children-s-with-nmc-registration-incorporating-pg-di">Nursing (Children&#39;s) with NMC registration (Incorporating PG Dip)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/nursing-learning-disabilities">Nursing (Learning Disabilities)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/nursing-mental-health-with-nmc-registration">Nursing (Mental Health) with NMC registration</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/specialist-community-public-health-nursing-health-visiting-o">Specialist Community Public Health Nursing (Health Visiting or Occupational Health Nursing or School Nursing)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/sport-and-exercise">Sport and Exercise</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Natural Sciences &amp; Mathematics" aria-controls="collapse-master-6" aria-expanded="false" href="#collapse-master-6" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-6" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Natural Sciences &amp; Mathematics <span class="discipline-programmes-count">(1)</span></span> </a>
+        <div aria-labelledby="heading-master-6" role="tabpanel" class="panel-collapse collapse" id="collapse-master-6" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-derby/conservation-biology-bc60324c-ed09-43eb-a278-c2f10faff0c9">Conservation Biology</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Social Sciences" aria-controls="collapse-master-7" aria-expanded="false" href="#collapse-master-7" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-7" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Social Sciences <span class="discipline-programmes-count">(38)</span></span> </a>
+        <div aria-labelledby="heading-master-7" role="tabpanel" class="panel-collapse collapse" id="collapse-master-7" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-derby/advanced-occupational-therapy-advanced-occupational-therapy-">Advanced Occupational Therapy/​Advanced Occupational Therapy (Community) (incorporat­ing PG Cert/PG Dip)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/applied-developmental-psychology">Applied Developmental Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/art-therapy-ec90d4fe-07bb-4648-b7c1-0dd0fd94cc75">Art Therapy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/behaviour-change-incorporating-pg-dip-pg-cert">Behaviour Change (incorporating PG Dip/PG Cert)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/careers-education-and-coaching">Careers Education and Coaching</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/childhood">Childhood</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/cognitive-behavioural-psychotherapy-adult-or-children-and-yo">Cognitive Behavioural Psychotherapy (Adult or Children and Young People)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/criminal-investigation">Criminal Investigation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/criminal-justice-and-criminology-77929bf5-9fda-4809-9ed7-a2868d635974">Criminal Justice and Criminology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/dramatherapy-834c9140-df4e-4cd4-9240-cee8e06effe6">Dramatherapy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/education-early-years-pathway">Education: Early Years (pathway)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/education-full-time">Education (full-time)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/education-leadership-and-management-online">Education (Leadership and Management) (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/education-leadership-and-management-pathway">Education: Leadership and Management (pathway)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/education-leadership-coaching-and-mentoring-pathway">Education: Leadership Coaching and Mentoring (pathway)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/education-lifelong-learning-pathway">Education: Lifelong Learning (pathway)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/education-online">Education (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/education-part-time">Education (part-time)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/education-primary-mathematics-pathway">Education: Primary Mathematics (pathway)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/education-special-educational-needs-and-disabilities-pathway">Education: Special Educational Needs and Disabilities (pathway)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/education-teaching-english-to-speakers-of-other-languages-on">Education (Teaching English to Speakers of Other Languages) (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/education-teaching-english-to-speakers-of-other-languages-te">Education: Teaching English to Speakers of Other Languages (TESOL) (pathway)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/education-workplace-contract">Education (Workplace Contract)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/forensic-and-criminal-psychology">Forensic and Criminal Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/forensic-science-7515179e-0cc8-4422-a048-fae9d541737d">Forensic Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/health-and-social-care-studies">Health and Social Care Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/health-psychology-52a9498e-a241-4b14-95e1-578aba7e07e9">Health Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/health-psychology-online">Health Psychology (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/inclusion-and-send">Inclusion and SEND</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/integrative-counselling-and-psychotherapy-incorporating-pg-c">Integrative Counselling and Psychotherapy (incorporating PG Cert/PG Dip)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/integrative-health-and-social-care-online">Integrative Health and Social Care (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/intelligence-security-and-disaster-management">Intelligence, Security and Disaster Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/occupational-therapy-pre-registration">Occupational Therapy (Pre-registration)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/police-leadership-strategy-and-organisation">Police Leadership, Strategy and Organisation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/psychology-49a343a6-7268-4d4b-8a80-b25835128dd1">Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/psychology-online-556d1d6b-cfab-49dd-8de9-fb110624fb4d">Psychology (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/social-work-55f3abc6-3d77-4526-8a67-e9aca7606a33">Social Work</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-derby/systemic-psychotherapy-incorporating-pg-dip">Systemic Psychotherapy (incorporating PG Dip)</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+
+  <script>
+  if ( $('#accordion-master .panel-collapse').length == 1 ) {
+    // If Programmes at this level all fall into the same Discipline, expand it
+    $('#accordion-master .panel-collapse').collapse('show');
+  }
+
+
+  $('.panel-collapse').on('shown.bs.collapse', function (e) {
+      var panel = $(this).closest('div.panel');
+      var panelTop = panel[0].getBoundingClientRect().top;
+      var navHeight = document.getElementById("navbar").offsetHeight;
+      var navBottom = document.getElementById("navbar").getBoundingClientRect().bottom;
+      
+      var visibleFromHere = Math.max(0, navBottom); // navBottom might be negative on desktop
+      
+      if (panelTop < visibleFromHere) {
+        // If the just expanded panel's top is above what's visible in the viewport, scroll up.
+        $('html,body').animate({
+            scrollTop: panel.offset().top-visibleFromHere-25
+        }, 500); 
+      }
+  }); 
+  </script>
+
+        </div>
+      
+        <div id="tab-doctorate" class="tab-pane">
+          <h4>Doctorates at the University of Derby</h4>
+            <div aria-multiselectable="true" role="tablist" id="accordion-doctorate" class="panel-group">
+
+      <div class="panel panel-default"> <a title="Business &amp; Management" aria-controls="collapse-doctorate-2" aria-expanded="false" href="#collapse-doctorate-2" data-parent="#accordion-doctorate" data-toggle="collapse" id="heading-doctorate-2" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Business &amp; Management <span class="discipline-programmes-count">(1)</span></span> </a>
+        <div aria-labelledby="heading-doctorate-2" role="tabpanel" class="panel-collapse collapse" id="collapse-doctorate-2" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-derby/doctorate-in-business-administration">Doctorate in Business Administration</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Social Sciences" aria-controls="collapse-doctorate-7" aria-expanded="false" href="#collapse-doctorate-7" data-parent="#accordion-doctorate" data-toggle="collapse" id="heading-doctorate-7" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Social Sciences <span class="discipline-programmes-count">(1)</span></span> </a>
+        <div aria-labelledby="heading-doctorate-7" role="tabpanel" class="panel-collapse collapse" id="collapse-doctorate-7" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-derby/doctor-of-education">Doctor of Education</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+
+  <script>
+  if ( $('#accordion-doctorate .panel-collapse').length == 1 ) {
+    // If Programmes at this level all fall into the same Discipline, expand it
+    $('#accordion-doctorate .panel-collapse').collapse('show');
+  }
+
+
+  $('.panel-collapse').on('shown.bs.collapse', function (e) {
+      var panel = $(this).closest('div.panel');
+      var panelTop = panel[0].getBoundingClientRect().top;
+      var navHeight = document.getElementById("navbar").offsetHeight;
+      var navBottom = document.getElementById("navbar").getBoundingClientRect().bottom;
+      
+      var visibleFromHere = Math.max(0, navBottom); // navBottom might be negative on desktop
+      
+      if (panelTop < visibleFromHere) {
+        // If the just expanded panel's top is above what's visible in the viewport, scroll up.
+        $('html,body').animate({
+            scrollTop: panel.offset().top-visibleFromHere-25
+        }, 500); 
+      }
+  }); 
+  </script>
+
+        </div>
+    </div>
+    
+    <script>
+      $('.nav-tabs a:first').tab('show'); // Make sure the first tab is selected in case none of the rendered tabs are marked as active
+      
+      $('.nav-tabs a[href="#tab-bachelor"]').tab('show');
+    </script>
+    
+    
+    
+    
+    <h3>Rankings</h3>
+    
+      <p>
+        The University of Derby belongs to the top 400 universities in Europe.
+      </p>
+    
+    <table class="table table-bordered table-striped">
+      <thead>
+        <th>Ranking</th>
+        <th>Year</th>
+        <th>Rank <br/> (in the world)</th>
+        <th>Rank <br/> (in Europe)</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Times Higher Education World University Rankings</td>
+          <td>2020</td>
+          <td class="text-right">801</td>
+          <td class="text-right">362</td>
+        </tr>
+      </tbody>
+    </table>
+    
+      <a href="/best-universities/united-kingdom">Check out the 105 best universities in the United Kingdom</a>
+    
+    
+    
+
+    
+      <h2>Additional information</h2>
+
+
+
+  <div class="panel panel-default">
+    <div class="panel-body university-information-panel">
+      <h3 class="university-information-header">Tuition fees at the University of Derby</h3>
+      
+            <h5>Students who are citizens of the EU/EEA:</h5>
+            <p>
+              The average tuition fees for students from the EU/EEA are 7,000&nbsp;GBP per year.
+            </p>
+
+            <h5>Students who are citizens from outside the EU/EEA:</h5>
+            <p>
+              The average tuition fees for students from outside the EU/EEA are 13,100&nbsp;GBP per year.
+            </p>
+          
+          <p class="university-information-footnote">
+            Tuition fees may vary for each study programme.
+          </p>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="panel panel-default">
+    <div class="panel-body university-information-panel">
+      <h3 class="university-information-header">English requirements</h3>
+      <p>When you apply to the University of Derby, you will need to prove your English proficiency.
+      <ul class="university-english-requirements">
+          <li>
+            <strong>This university accepts IELTS.</strong> 
+             
+          </li>
+          <li>
+            <strong>This university accepts TOEFL iBT.</strong> 
+             
+            
+          </li>
+          <li>
+            <strong>This university accepts Cambridge English certificates (CAE/CPE).</strong> 
+             
+          </li>
+          <li>
+            <strong>This university accepts the Pearson Test of English (PTE).</strong> 
+            
+          </li>
+          <li>
+            <strong>This university accepts other proofs of English proficiency.</strong> 
+            Please check the details when applying.
+          </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+    
+
+    
+
+    
+
+      
+    
+      <div>
+        <h2>You might be interested in this:</h2>
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/article/guide-uk-post-study-work-visa-for-graduates">
+              <div class="thumbnail home-country-card">  
+                    <img alt="Guide: the UK Post-Study Work Visa for graduates" title="Guide: the UK Post-Study Work Visa for graduates" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/381/slideshow_uk-london-tower-bridge-at-dawn.jpg" />
+                  <div class="caption">
+                    <strong>Guide: the UK Post-Study Work Visa for graduates</strong>              
+                  </div>
+              </div>
+</a>          </div>
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/country/united-kingdom">
+              <div class="thumbnail home-country-card">  
+                    <img alt="Study in the United Kingdom" title="Study in the United Kingdom" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/31/slideshow_united-kingdom-telephone.jpg" />
+                  <div class="caption">
+                    <strong>Study in the United Kingdom</strong>              
+                  </div>                  
+                
+              </div>
+</a>          </div>
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/article/safest-countries-to-study-abroad-in-europe">
+              <div class="thumbnail home-country-card">  
+                    <img alt="The safest countries to study abroad in Europe" title="The safest countries to study abroad in Europe" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/327/slideshow_study-abroad-and-feel-safe.jpg" />
+                  <div class="caption">
+                    <strong>The safest countries to study abroad in Europe</strong>              
+                  </div>
+              </div>
+</a>          </div>
+        </div>
+      </div>  
+    
+    </div>
+
+
+    
+
+
+    
+    
+    
+    
+    
+    
+  </div>
+  
+</div>
+
+
+<script>
+
+  $('[data-toggle="tooltip"]').tooltip();
+
+  $( function() {
+    $( ".accordion" ).accordion({
+      heightStyle: "content"
+    });
+  } );
+  
+  
+  handler = Gmaps.build('Google');
+  handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+    markers = handler.addMarkers([
+      {
+        "lat": 0,
+        "lng": 0,
+      }
+    ]);
+    handler.bounds.extendWith(markers);
+    handler.fitMapToBounds();
+  });
+  
+  
+  
+  
+</script>
+  
+
+    
+
+  
+  
+  <footer class="top-footer">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Merriweather Sans:300,400i,700']
+      }
+    });
+  </script> 
+
+  
+  <div class="container">
+  <div class="row">
+    
+    <div class="text-left col-md-8 col-xs-6" style="display: inline-block;float: left;">
+      <a href="/" title="Study.EU" data-track-click="true" data-event-category="Footer Logo"><img class="footer-logo" src="/assets/study-eu_logo_wb_200x66-8722da28bad82460d8951c34fe8b5ba8e11794b2fd21e83ee8c5fe54323ea73b.png" /></a><br />
+      <p>
+        Copyright &copy; 2021 <a title="Study.EU" href="/">Study.EU</a>
+      </p>
+      <p>
+        
+      </p>
+      <a class="social-link" href="https://www.facebook.com/StudyEU-168756646881605/" target="_blank" title="Like Study.EU on Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://twitter.com/wwwStudyEU" target="_blank" title="Follow Study.EU on Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://www.linkedin.com/company/study.eu/" target="_blank" title="Follow Study.EU on Linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    </div>
+    <div class="text-right col-md-4 col-xs-6">
+      <br /><br />
+          <a rel="nofollow" href="/page/imprint">Imprint</a>
+        &middot;
+          <a rel="nofollow" href="/page/about-study-eu">About Study.eu</a>
+        &middot;
+          <a rel="nofollow" href="/page/privacy-policy">Privacy Policy</a>
+        &middot;
+      <a href="/jobs">Jobs</a>
+      
+      <br />
+      
+      <a href="/press">Press</a>
+      
+      <!-- &middot; -->
+      
+        <!-- &mdash; //-->
+      
+      <br /><br />
+      <a href="/advertise-on-study-eu">Advertise on Study.eu</a>
+    </div>
+  </div>
+  </div>
+</footer>
+
+<a href="javascript:" id="scroll-to-top" title="Scroll back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+<script>
+  $(window).scroll(function() {
+      if ($(this).scrollTop() >= 100) {        // page is scrolled more than 100px
+          $('#scroll-to-top').fadeIn(500);
+      } else {
+          $('#scroll-to-top').fadeOut(500);
+      }
+  });
+  $('#scroll-to-top').click(function() {      // arrow is clicked
+      $('body,html').animate({
+          scrollTop : 0                       // scroll to top
+      }, 500);
+  });
+</script>
+
+
+  
+  <footer class="footer-countries">
+
+
+  <div class="container">
+    <div class="row">
+    
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <h5>Study in Europe:</h5>
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Austria" href="/country/austria">Austria</a><br />
+                <a title="Study in Belgium" href="/country/belgium">Belgium</a><br />
+                <a title="Study in the Czech Republic" href="/country/czech-republic">Czech Republic</a><br />
+                <a title="Study in Denmark" href="/country/denmark">Denmark</a><br />
+                <a title="Study in Estonia" href="/country/estonia">Estonia</a><br />
+                <a title="Study in the Faroe Islands" href="/country/faroe-islands">Faroe Islands</a><br />
+                <a title="Study in Finland" href="/country/finland">Finland</a><br />
+                <a title="Study in France" href="/country/france">France</a><br />
+                <a title="Study in Germany" href="/country/germany">Germany</a><br />
+                <a title="Study in Greece" href="/country/greece">Greece</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Hungary" href="/country/hungary">Hungary</a><br />
+                <a title="Study in Iceland" href="/country/iceland">Iceland</a><br />
+                <a title="Study in Ireland" href="/country/ireland">Ireland</a><br />
+                <a title="Study in Italy" href="/country/italy">Italy</a><br />
+                <a title="Study in Latvia" href="/country/latvia">Latvia</a><br />
+                <a title="Study in Liechtenstein" href="/country/liechtenstein">Liechtenstein</a><br />
+                <a title="Study in Lithuania" href="/country/lithuania">Lithuania</a><br />
+                <a title="Study in Malta" href="/country/malta">Malta</a><br />
+                <a title="Study in the Netherlands" href="/country/netherlands">Netherlands</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Norway" href="/country/norway">Norway</a><br />
+                <a title="Study in Poland" href="/country/poland">Poland</a><br />
+                <a title="Study in Portugal" href="/country/portugal">Portugal</a><br />
+                <a title="Study in Romania" href="/country/romania">Romania</a><br />
+                <a title="Study in Russia" href="/country/russia">Russia</a><br />
+                <a title="Study in Spain" href="/country/spain">Spain</a><br />
+                <a title="Study in Sweden" href="/country/sweden">Sweden</a><br />
+                <a title="Study in Switzerland" href="/country/switzerland">Switzerland</a><br />
+                <a title="Study in the United Kingdom" href="/country/united-kingdom">United Kingdom</a><br />
+            </div>
+          </div>
+        </div>
+    
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Recent articles:</h5>
+          </div>
+          <div class="col-md-8">
+              <p><a href="/article/study-innovation-management">Study Innovation Management: All you need to know</a></p>
+              <p><a href="/article/study-ecology">Study Ecology: All you need to know</a></p>
+              <p><a href="/article/what-is-the-ects-european-credit-transfer-and-accumulation-system">What is the European Credit Transfer System (ECTS)?</a></p>
+              <p><a href="/article/study-zoology">Study Zoology: All you need to know</a></p>
+              <p><a href="/article/looking-for-a-uk-degree-in-germany-study-in-leipzig">Looking for a UK degree in Germany? Study in Leipzig!</a></p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  
+  </div>
+
+</footer>
+
+  
+  <footer class="footer-press">
+  <div class="container">
+    <div class="row footer-press-description">
+      <div class="col-md-12 text-center">
+        Study.EU has been mentioned in numerous news publications worldwide, such as:
+      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="L&#39;Étudiant (France)" title="L&#39;Étudiant (France)" data-src="/assets/press/letudiant_gray_200-57bccbdceaef3c62c8660629603372823c98afe433bd39bf6d42a73263c113c3.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Frankfurter Allgemeine (Germany)" title="Frankfurter Allgemeine (Germany)" data-src="/assets/press/faz_gray_300-b6e5e6022a7b164c24b69a51fb97a72715018db745fbcda8580675a507370b8b.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Standard (Hong Kong)" title="The Standard (Hong Kong)" data-src="/assets/press/the-standard-hong-kong_gray_200-f124ca057d2671730e1f6d996377ef4614a28ccf04ae04f730eaf16ed7ee0b46.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Independent (UK)" title="The Independent (UK)" data-src="/assets/press/the-independent-uk_gray_300-63238e279b3c62b1f87faf17fcbcf1f14a2e5b9229193a0431fc974da217d159.png" class="lazyload" />
+</a>      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Al-Masry Al-Youm (Egypt)" title="Al-Masry Al-Youm (Egypt)" data-src="/assets/press/al-masry_al-youm_gray_200-9d8e503cd53ec4d955c3e6f7bf2a1c0badb500a0d2bd8a1ef1d11acd686879e5.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Le Monde (France)" title="Le Monde (France)" data-src="/assets/press/le-monde_gray_200-24d8bca493f3a2b8e0150cb4ef38f00c9924ac5e7acfbdb8750076c949c70052.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Local (Europe)" title="The Local (Europe)" data-src="/assets/press/the-local_gray_200-7631164ea94edf8d065b3af6f64274416162d866ce1cea737c3ee25f28cdd098.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Forbes (USA)" title="Forbes (USA)" data-src="/assets/press/forbes_gray_200-deff6ef2c28ec5a275f404c5f59d56f4b687881eb39de52b79b5add3ca609fe2.png" class="lazyload" />
+</a>      </div>
+    </div>
+  </div>
+</footer>
+
+  
+  
+  
+  
+    <div class="cookies-eu js-cookies-eu row">
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+    <div class="cookies-eu-content-holder col-md-4 col-sm-6 col-xs-6 align-self-center">
+      Cookies &amp; analytics help us deliver our services.
+        <a href="/page/privacy-policy" class="cookies-eu-link" target="_blank"> Privacy policy </a>
+    </div>
+    <div class="cookies-eu-button-holder col-md-4 col-sm-6 col-xs-6">
+      <button class="cookies-eu-ok js-cookies-eu-ok btn btn-lg btn-primary" data-track-click-ga="true" data-event-category="Cookie Consent Button"> OK </button>
+    </div>
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+  </div>
+
+  
+  <script>
+  // Improved Ahoy view tracking with additional attributes
+  var additionalProperties = {};
+    additionalProperties["country_id"] = 42;
+    mainTrackableLink = "";
+    additionalProperties["university_id"] = 690;
+    mainTrackableLink = "https://www.study.eu/link/university/university-of-derby/from-profile";
+  console.log("Ahoy: View with additional properties: "+JSON.stringify(additionalProperties));
+  ahoy.trackView(additionalProperties);
+</script>
+<a name="ga"></a> <!-- GA //-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42442116-3', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+  
+  
+  
+    
+  //############################################################
+  //########## 2018-07    NEW CUSTOM METHODS          ##########
+  
+  function getDataTrackAttributes(element) {
+    var data = {};
+    [].forEach.call(element.attributes, function(attr) {
+      if (/^data-trackvalue-/.test(attr.name)) {
+        // Relevant attributes would always be called "data-track-foobar"
+        var underscorename = attr.name.substr(16).replace(/-/g, "_");
+        data[underscorename] = parseInt(attr.value) || attr.value; // Provide as integer if possible, otherwise the original string
+      }
+    });
+    return data;
+  }
+  
+  // Set data-track-click and utm_source for all external links in the description content
+  var content_links = document.querySelectorAll('div.content-description a');
+  for (var i = 0; i < content_links.length; i++) {
+    if ( ((new URL(content_links[i].href, document.baseURI).href) == mainTrackableLink) || (content_links[i].host !== window.location.host) ) {
+      // Link is the main trackable link, or link is external --> add tracking and utm_source if not present
+      utm_url = new URL(content_links[i].href);
+      utm_url.searchParams.set("utm_source", "Study.eu"); // add (or overwrite existing) utm_source parameter
+      content_links[i].href = utm_url;
+      content_links[i].classList.add("external-tracked");
+      content_links[i].setAttribute("data-event-category", "Outbound Link");
+      content_links[i].setAttribute("data-event-label", content_links[i].href);
+      content_links[i].setAttribute("data-track-click", "true"); // Once data-track-click is set to true, initDataAttributes() below will add the id values
+    }
+  }
+  console.log("Modified "+content_links.length+" links in description content.");
+  
+  // Set data attributes for tracking of footer press links
+  footerPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < footerPressLinks.length; i++) {
+    footerPressLinks[i].setAttribute("data-track-click-ga", "true");
+    footerPressLinks[i].setAttribute("data-event-category", "Footer Press Link");
+    footerPressLinks[i].setAttribute("data-event-label", window.location.href);
+  }
+  
+  relatedLinks = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < relatedLinks.length; i++) {
+    relatedLinks[i].setAttribute("data-track-click-ga", "true");
+    relatedLinks[i].setAttribute("data-event-category", "Related Link");
+    relatedLinks[i].setAttribute("data-event-label", relatedLinks[i].getAttribute("href"));
+  }  
+  
+  function initDataAttributes() {
+    // Initialise element data attributes based on backend instance variables
+    elements = document.querySelectorAll('[data-track-click="true"],[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+        if (!elements[i].hasAttribute("data-trackvalue-country-id")) {
+          elements[i].setAttribute("data-trackvalue-country-id", "42");
+        }
+      
+        if (!elements[i].hasAttribute("data-trackvalue-university-id")) {
+          elements[i].setAttribute("data-trackvalue-university-id", "690");
+        }
+      
+    }
+    console.log("initDataAttributes()");
+  }
+  initDataAttributes();
+    
+  function trackClick(event, trackGA = true, trackAhoy = true) {
+    // When an element was clicked, track the click in GA and Ahoy
+    
+    strEventLabel = "";
+    if        ( event.currentTarget.hasAttribute("data-event-label") ) {
+      strEventLabel = event.currentTarget.getAttribute("data-event-label");
+    } else if ( event.currentTarget.hasAttribute("href") ) {
+      strEventLabel = event.currentTarget.href;
+    }
+    
+    ga('send', 'event', {
+      eventCategory:  event.currentTarget.getAttribute("data-event-category"),
+      eventAction:    'click',
+      eventLabel:     strEventLabel
+    });
+    
+    data = getDataTrackAttributes(event.currentTarget);
+    data["href"] = event.target.href;
+    data["page"] = window.location.pathname;
+    
+    /*ahoy.track (
+      event.currentTarget.getAttribute("data-event-category"),
+      {
+        country_id: 42, 
+        university_id: 690, 
+        
+        href: event.target.href,
+        page: window.location.pathname
+      }
+    );*/
+    
+    if (trackAhoy) {
+        data["medium"] = "Profile";
+      ahoy.track (
+        event.currentTarget.getAttribute("data-event-category")+" - click",
+        data
+      );
+    }
+    
+    console.log("trackClick(event, trackGA = "+trackGA+", trackAhoy = "+trackAhoy+"): " +
+      event.currentTarget.getAttribute("data-event-category") + ", " +
+      "{country_id: 42, university_id: 690, href: " + event.target.href + ", " +
+      "page:"+window.location.pathname+"});"
+    );
+  }
+  
+  
+  function trackClicksGA() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click-ga="true"]:not([data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event, true, false);
+      });
+    }
+    console.log("trackClicksGA(): "+elements.length+" elements");
+  }
+  trackClicksGA();
+  
+  function trackClicks() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event);
+      });
+    }
+    console.log("trackClicks(): "+elements.length+" elements");
+  }
+  trackClicks();
+  
+  function trackRenderingsGA() {
+    // Track renderings only in GA
+    // This would be for large-volume data that is interesting, but not mission-critical
+
+    elements = document.querySelectorAll('[data-track-rendering-ga="true"]:not([data-track-rendering="true"])');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+    }
+    
+    console.log("trackRenderingsGA(): "+elements.length+" elements");
+  }
+  trackRenderingsGA();
+  
+  function trackRenderings() {
+    // Track renderings in GA *and* Ahoy
+    elements = document.querySelectorAll('[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+      
+      data = getDataTrackAttributes(elements[i]);
+      data["href"] = elements[i].getAttribute("href");
+      data["page"] = window.location.pathname;
+      
+      ahoy.track (
+        elements[i].getAttribute("data-event-category")+" - rendered",
+        data
+      );
+    }
+    
+    console.log("trackRenderings(): "+elements.length+" elements");
+  }
+  trackRenderings();
+  
+  
+  
+    ga('send', 'event', {
+      eventCategory:  'Country Content',
+      eventAction:    'rendered',
+      eventLabel:     'United Kingdom',
+      nonInteraction: true
+    });
+
+  
+  //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  //############################################################
+
+  
+  
+  /*
+  anchorsExternalTracked = document.getElementsByClassName("external-tracked");
+  for (var i = 0 ; i < anchorsExternalTracked.length; i++) {
+    anchorsExternalTracked[i].addEventListener("click", function(event){
+      //event.preventDefault();
+      
+      handleOutboundLinkClicks(event);
+      
+      //document.location = this.href;
+      //var win = window.open(this.href, '_blank');
+      //win.focus();
+      
+    });
+    
+    // Trigger event that shows in GA that the link was rendered
+    ga('send', 'event', {
+      eventCategory: 'Outbound Link',
+      eventAction: 'rendered',
+      eventLabel: anchorsExternalTracked[i].href
+    });   
+  }
+  
+  anchorsRelatedTracked = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < anchorsRelatedTracked.length; i++) {
+    anchorsRelatedTracked[i].addEventListener("click", function(event){
+      handleRelatedLinkClicks(event);
+    });
+  }
+  
+  anchorsFeaturedUniversityTracked = document.getElementsByClassName("featured-university-tracked");
+  for (var i = 0 ; i < anchorsFeaturedUniversityTracked.length; i++) {
+    anchorsFeaturedUniversityTracked[i].addEventListener("click", function(event){
+      handleFeaturedUniversityLinkClicks(event);
+    });
+  }  
+  
+  
+  anchorsFooterPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < anchorsFooterPressLinks.length; i++) {
+    anchorsFooterPressLinks[i].addEventListener("click", function(event){
+      handleFooterPressLinkClicks(event);
+    });
+  }
+  
+  
+  anchorsCustomTracked = document.querySelectorAll('[data-ga-custom-event-label]');
+  for (var i = 0 ; i < anchorsCustomTracked.length; i++) {
+    anchorsCustomTracked[i].addEventListener("click", function(event){
+      handleCustomTracked(event);
+    });
+  }
+  */
+  
+  ////////////////////////////////////////////////////////////////////////////////
+
+  
+  
+</script>
+
+</body>
+</html>

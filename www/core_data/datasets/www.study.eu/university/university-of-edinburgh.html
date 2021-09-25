@@ -1,0 +1,2728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"cb4ef145dd","applicationID":"55169925","transactionName":"Jg5fTRMJXFtQQBpCXwwXVEsSD0ReUEEaRFkKFg==","queueTime":2,"applicationTime":445,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"cb4ef145dd",applicationID:"55169925"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+  <title>University of Edinburgh, United Kingdom | Study.EU</title>
+   
+  <link rel="stylesheet" media="all" href="/assets/application-788bf60a726cbc46bce208400674992d5b5b0e3a0892577e97f4ee25b84407b9.css" />
+  <script src="/assets/application-6d00a9f66b3f7e1a7db9282e671658ce415a54e8512569e7b539a89dc0fb74a5.js"></script>
+  
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="1XyI68nlRAMKFx3aaKXwfYp5lWa1ww3MBCj+ERaovEINyTeombUzJ8xo8/exVktLrny/iMKfp9em7OkRm/KtFQ==" />
+  
+  
+    
+  
+  
+  
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-29b05ed0a02376d0d37f92df42a0d954d97274430a0f6264e4d19745408f15c8.ico" />
+  
+  <meta name="description" content="Study at the University of Edinburgh in the United Kingdom: 402 Bachelors, Masters, PhDs. ✓ Study.EU: Your gateway to universities in Europe." />
+  
+  <meta name="keywords" content="study in europe, universities, europe, master, bachelor, masters, bachelors, msc, bsc, llb, llm, phd, doctorate, university, study abroad" />
+  <meta name="google-site-verification" content="9sv6t--Xh8SiHr58R3chJHOJVHixvhn6jBK8Qzc9Z9U" />
+  <meta name="msvalidate.01" content="5E3AE5307267C1BED099C27EB59E264E" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  <link rel="canonical" href="https://www.study.eu/university/university-of-edinburgh" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@wwwStudyEU" />
+  <meta name="twitter:title" content="University of Edinburgh, United Kingdom" />
+  
+  <meta property="og:title"  content="University of Edinburgh, United Kingdom" />
+  
+  
+  
+  
+  
+      <meta property="og:type" content="article" />
+      <meta property="article:publisher" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+      <meta property="article:author" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+  
+  <meta property="og:description" content="Study at the University of Edinburgh in the United Kingdom: 402 Bachelors, Masters, PhDs. ✓ Study.EU: Your gateway to universities in Europe." />
+  <meta property="og:image" content="https://study-eu.s3.amazonaws.com/uploads/image/path/249/social_1200_7007920283_4d434e3d49_o.jpg" />
+  
+</head>
+<body>
+
+  <nav id="navbar" class="navbar navbar-static-top container container-fluid">
+  
+  <div class="container">
+    <div class="row" style="position: relative;">
+        <div class="col-md-3 col-xs-9 navbar-header">
+          <a class="navbar-brand" href="/" title="Study.EU">
+            <img alt="Study.EU" class="homepage-logo" src="/assets/study-eu_logo-ee9afe0c98ee9ac266f676d5dcb967023df14f95661b91c7812bef38a3b0c03a.png" />
+          </a>
+        </div>
+        <div class="col-md-8 bottom-align-text">
+            <strong class="navbar-claim">Your gateway to universities in Europe</strong>
+        </div>
+        <div class="col-md-1 col-xs-3 navbar-search-link-container">
+          <div class="navbar-search-link">
+          </div>
+        </div>
+    </div>
+</div>
+  
+</nav>
+
+  <div class="container" id="div-main-container" role="main">
+
+  </div>
+  
+  
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "CollegeOrUniversity",
+  "name": "University of Edinburgh",
+  "url": "https://www.study.eu/university/university-of-edinburgh",
+  "sameAs": "http://www.ed.ac.uk/",
+  "foundingDate": "1582",
+  
+  "logo": "https://study-eu.s3.amazonaws.com/uploads/university/university-of-edinburgh-236-logo.png",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Study programmes",
+      "value": "402"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Students",
+      "value": "37500"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Share of international students",
+      "value": "43%"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Average EU/EEA tuition fee p.a.",
+      "value": "1,900 GBP"
+      
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Rank (QS 2020)",
+      "value": "20"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Rank (THE 2020)",
+      "value": "30"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Rank (ARWU 2019)",
+      "value": "31"
+    }
+  ]
+}
+</script>
+
+
+
+<div class="header-image">
+  <div class="container">
+    <div class="header-image-cta">
+      <h1>Study at the University of Edinburgh</h1>
+      <h2>Edinburgh, United Kingdom</h2>
+    </div>
+  </div>
+    <img alt="" title="" src="https://study-eu.s3.amazonaws.com/uploads/image/path/249/wide_fullhd_7007920283_4d434e3d49_o.jpg" />
+    
+    <div class="image-credits">
+      <span class="image-credits-span">
+        <a target="_blank" rel="nofollow" title="Old College Quadrangle" href="https://www.flickr.com/photos/dun_deagh/7007920283/">Old College Quadrangle</a> by dun_deagh, <a target="_blank" rel="nofollow" href="https://creativecommons.org/licenses/by-sa/2.0/legalcode">CC BY-SA 2.0</a>, modified
+      </span>
+    </div>
+</div>
+
+<div class="div-breadcrumbs">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="/">Study.eu</a></li><i class="fa fa-angle-right breadcrumb-separator" aria-hidden="true"></i><li><a href="/country/united-kingdom">United Kingdom</a></li><i class="fa fa-angle-right breadcrumb-separator" aria-hidden="true"></i><li>University of Edinburgh</li>
+    </ol>  
+  </div>
+</div> 
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://www.study.eu/",
+        "name": "Study.eu"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://www.study.eu/country/united-kingdom",
+        "name": "United Kingdom"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "https://www.study.eu/university/university-of-edinburgh",
+        "name": "University of Edinburgh"
+      }
+    }
+  ]
+}
+</script>
+
+<div class="container" style="position: relative;">
+
+  <div class="row">
+
+    <div class="sidebar col-md-4 col-md-push-8">
+      
+      <table class="entry-details-table">
+        <tbody>
+            <tr>
+              <th class="university-logo" colspan="2">
+                <img alt="University of Edinburgh - Logo" title="University of Edinburgh - Logo" class="university-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_university-of-edinburgh-236-logo.png" />
+              </th>
+            </tr>
+          
+          <tr>
+            <td class="university-name" colspan="2">University of Edinburgh</td>
+          </tr>
+          
+          <tr>
+            <td class="table-entry-name">Location:</td>
+            <td>
+                  <a href="/city/edinburgh">Edinburgh</a> (<a href="/country/united-kingdom">United Kingdom</a>)
+                  
+            </td>
+          </tr>
+          
+          
+            
+          
+          <tr>
+            <td class="table-entry-name">Founded:</td>
+            <td>1582</td>
+          </tr>
+
+          <tr>
+            <td class="table-entry-name">Students:</td>
+            <td>
+              37,500
+(43%&nbsp;international)            </td>
+          </tr>
+
+          
+          <tr>
+            <td class="table-entry-name">Ranking: <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="QS World University Rankings 2020"></i></td>
+            <td title="QS World University Rankings 2020">
+              #7 (Europe)<br />
+              #20 (World)<br />
+            </td>
+          </tr>
+          
+
+            <tr>
+              <td class="table-entry-name">Listed study programmes:</td>
+              <td><a href="#university-programmes">402</a></td>
+            </tr>
+          
+          
+          
+
+        </tbody>
+      </table>
+      
+      
+
+
+      
+      
+      
+        
+        <div class="sidebar-container">
+          <strong>Featured universities in the United Kingdom:</strong>
+          <div class="featured-university-container">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a href="/university/university-of-kent">
+                    <img alt="University of Kent" title="University of Kent" class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_university-of-kent-logo.svg" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a href="/university/university-of-kent">University of Kent</a><br />
+                  Canterbury, 
+                  <a href="/country/united-kingdom">United Kingdom</a><br />
+                  521 study programmes
+              </div>
+            </div>
+          </div>
+          <div class="featured-university-container">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a href="/university/falmouth-university">
+                    <img alt="Falmouth University" title="Falmouth University" class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_falmouth-university-logo.png" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a href="/university/falmouth-university">Falmouth University</a><br />
+                  Falmouth, 
+                  <a href="/country/united-kingdom">United Kingdom</a><br />
+                  70 study programmes
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+          
+      
+    </div>
+  
+  
+  
+    <div class="content col-md-8 col-md-pull-4">
+
+      <h1>University of Edinburgh</h1>
+      
+        <div class="bnnr-container">
+  <a target="_blank" rel="nofollow" data-track-rendering-ga="true" data-track-click-ga="true" data-track-click="true" data-event-category="BC" data-event-label="CODE Berlin" data-trackvalue-bc-id="41" data-trackvalue-href="https://code.berlin/en/?utm_source=Study.eu&amp;utm_medium=Banner" href="https://code.berlin/en/?utm_source=Study.eu&amp;utm_medium=Banner">
+    <img class="bnnr" loading="lazy" src="https://study-eu.s3.amazonaws.com/uploads/bc/bc-code-berlin-desktop.png" />
+</a></div>
+
+      
+      <div class="content-description">
+        <blockquote cite="https://en.wikipedia.org/wiki/University_of_Edinburgh">
+<p>The University of Edinburgh (abbreviated as Edin. in post-nominals), founded in 1582, is the sixth oldest university in the English-speaking world and one of Scotland's ancient universities. The university is deeply embedded in the fabric of the city of Edinburgh, with many of the buildings in the historic Old Town belonging to the university.</p>
+<footer>CC BY-SA 3.0</footer></blockquote>
+      </div>
+    
+    <a id="university-programmes"><hr /></a>
+    
+    
+    
+    
+      <div class="alert alert-info" role="alert">
+        This is a selection of study programmes at the University of Edinburgh. Additional listings will be added shortly.
+      </div>
+    
+
+    <ul class="nav nav-tabs">
+      
+        <li class="active"><a data-toggle="tab" href="#tab-bachelor">Bachelor’s<br/>programmes</a></li>
+      
+        <li><a data-toggle="tab" href="#tab-master">Master’s<br/>programmes</a></li>
+      
+      
+    </ul>
+
+    <div class="tab-content">
+    
+        <div id="tab-bachelor" class="tab-pane active">
+          <h4>Bachelors at the University of Edinburgh</h4>
+            <div aria-multiselectable="true" role="tablist" id="accordion-bachelor" class="panel-group">
+
+      <div class="panel panel-default"> <a title="Art, Design &amp; Media" aria-controls="collapse-bachelor-1" aria-expanded="false" href="#collapse-bachelor-1" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-1" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Art, Design &amp; Media <span class="discipline-programmes-count">(30)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-1" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-1" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/acoustics-and-music-technology">Acoustics and Music Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/animation-fe8f8689-f75a-4f89-abf3-0612113dcefc">Animation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/architectural-history-and-archaeology">Architectural History and Archaeology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/architectural-history-and-heritage">Architectural History and Heritage</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/architecture-2e3852cb-9968-47b4-9757-37e19f06583c">Architecture</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/art-dd72da48-a496-4f5a-9080-416a1d9f0bb0">Art</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/fashion-5037d812-bb79-41da-83ba-6710062d9d44">Fashion</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/film-and-television-d01c1667-f859-4e0e-9578-f2f84942db2b">Film and Television</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/french-and-history-of-art-b4ea1615-c532-4e0e-90de-8e7c45ebbcaf">French and History of Art</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/german-and-history-of-art">German and History of Art</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/graphic-design-691aa31a-bcd1-4904-9b6a-c90a3bdf01e4">Graphic Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/history-and-history-of-art-832130a1-2918-48d4-8a9f-510c3fea5b1f">History and History of Art</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/history-of-art-and-architectural-history">History of Art and Architectural History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/history-of-art-and-chinese-studies">History of Art and Chinese Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/history-of-art-and-english-literature">History of Art and English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/history-of-art-and-history-of-music">History of Art and History of Music</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/history-of-art-and-scottish-literature">History of Art and Scottish Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/illustration-3b436175-49ab-425e-a996-c951010471d8">Illustration</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/interior-design-4fcd5580-3a44-487a-a274-ac6e5d3bb333">Interior Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/landscape-architecture-9c4244ab-a716-4942-a30a-69df1c3f6fca">Landscape Architecture</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/mathematics-and-music">Mathematics and Music</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/music-9de15761-fdff-429f-9ade-a1dd4eb586d5">Music</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/painting">Painting</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/photography-35028064-60c2-4c8b-988f-72df38f61f2e">Photography</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/product-design-d002ddeb-48af-4299-9c3d-efb6f2e1ccad">Product Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/russian-studies-and-history-of-art">Russian Studies and History of Art</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/sculpture">Sculpture</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/spanish-and-history-of-art">Spanish and History of Art</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/structural-engineering-with-architecture">Structural Engineering with Architecture</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/textiles-8d023f36-f028-4277-8b8d-5d4b41b355dd">Textiles</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Business &amp; Management" aria-controls="collapse-bachelor-2" aria-expanded="false" href="#collapse-bachelor-2" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-2" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Business &amp; Management <span class="discipline-programmes-count">(33)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-2" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-2" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/accounting-and-business">Accounting and Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/accounting-and-finance-e8e24156-d92b-41e6-a7b9-63555660f9e1">Accounting and Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/arabic-and-business">Arabic and Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/biological-sciences-with-management">Biological Sciences with Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/business-and-economics-6a6612d7-224c-44fc-bde0-536895a3e6ec">Business and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/business-and-geography">Business and Geography</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/business-and-law">Business and Law</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/business-management-a8c8059f-679b-4b1e-9dee-7b82b4ce914c">Business Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/business-with-decision-analytics">Business with Decision Analytics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/business-with-human-resource-management">Business with Human Resource Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/business-with-marketing">Business with Marketing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/business-with-strategic-economics">Business with Strategic Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/computer-science-and-management-science">Computer Science and Management Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/economics-and-accounting">Economics and Accounting</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/economics-with-finance">Economics with Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/economics-with-management-science">Economics with Management Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/finance-and-business">Finance and Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/french-and-business">French and Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/german-and-business">German and Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/international-business-595bf441-470c-4f1a-a572-2eee367ba18d">International Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/international-business-with-arabic">International Business with Arabic</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/international-business-with-chinese">International Business with Chinese</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/international-business-with-french-6f6d98b3-dbbb-4842-b0f8-6e87cec4fe70">International Business with French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/international-business-with-german-191bc434-0e17-4ff3-a42c-7b18e7d05627">International Business with German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/international-business-with-italian">International Business with Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/international-business-with-japanese">International Business with Japanese</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/international-business-with-russian">International Business with Russian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/international-business-with-spanish-6efc2c49-97c8-47a9-b1aa-39f3a36421ee">International Business with Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/law-and-accountancy">Law and Accountancy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/mathematics-and-business">Mathematics and Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/mathematics-with-management">Mathematics with Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/psychology-and-business">Psychology and Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/spanish-and-business">Spanish and Business</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Computer Science &amp; IT" aria-controls="collapse-bachelor-62" aria-expanded="false" href="#collapse-bachelor-62" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-62" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Computer Science &amp; IT <span class="discipline-programmes-count">(12)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-62" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-62" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/artificial-intelligence-05b8dee1-b2ef-4174-b3c1-02fd342d9739">Artificial Intelligence</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/artificial-intelligence-computer-science">Artificial Intelligence &amp; Computer Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/computer-science-b78dc8f0-8c8d-45e1-b170-0f980be00a18">Computer Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/computer-science-19984d4d-dd11-4eef-a1de-2207aa662b56">Computer Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/computer-science-and-management-science">Computer Science and Management Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/computer-science-and-mathematics-8e046717-dd7f-442e-b40b-71cb00d92ea9">Computer Science and Mathematics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/computer-science-and-physics">Computer Science and Physics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/data-science-2846b7d5-7bcb-411a-96ec-94e54aba0f28">Data Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/electronics-and-computer-science">Electronics and Computer Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/electronics-and-computer-science-dd7ff395-c247-4e16-82b5-92d39c9eda0d">Electronics and Computer Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/informatics-cac43b78-1fed-4355-b736-2f5f5e07c9da">Informatics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/software-engineering-8917fe0a-84a8-42cb-ae67-f73358cc3282">Software Engineering</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Engineering &amp; Technology" aria-controls="collapse-bachelor-3" aria-expanded="false" href="#collapse-bachelor-3" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-3" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Engineering &amp; Technology <span class="discipline-programmes-count">(17)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-3" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-3" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/biological-sciences-biotechnology">Biological Sciences (Biotechnology)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/chemical-engineering-565bc04f-554b-4b09-9658-447befc9190d">Chemical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/chemical-engineering-ed00ad17-e298-4530-9346-fe635450a24d">Chemical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/civil-engineering-edba90ad-02de-4fe8-b1c7-9b06be4af96c">Civil Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/civil-engineering-ab933bcd-c383-4d8f-9af0-85b19ef11ee5">Civil Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/electrical-and-mechanical-engineering-d06ce73b-6f4e-433a-95e8-eea0a67c5652">Electrical and Mechanical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/electrical-and-mechanical-engineering">Electrical and Mechanical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/electronics-and-computer-science">Electronics and Computer Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/electronics-and-computer-science-dd7ff395-c247-4e16-82b5-92d39c9eda0d">Electronics and Computer Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/electronics-and-electrical-engineering-0e8118de-97c7-4523-a1ae-f5a15cae183a">Electronics and Electrical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/electronics-and-electrical-engineering-86ac4f90-5e17-4223-a42f-66ae026b0afa">Electronics and Electrical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/mechanical-engineering-5d133131-f4f0-4762-8305-cc5a9eda6856">Mechanical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/mechanical-engineering-6ea958b0-73c6-48a4-a797-24dc05fe6a63">Mechanical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/structural-and-fire-safety-engineering-b066bd4b-ad6b-4619-a5e1-7429268bdc8d">Structural and Fire Safety Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/structural-and-fire-safety-engineering">Structural and Fire Safety Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/structural-engineering-with-architecture">Structural Engineering with Architecture</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/sustainable-development-a337e001-5292-42a5-8d49-5afa1972507a">Sustainable Development</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Environment &amp; Agriculture" aria-controls="collapse-bachelor-63" aria-expanded="false" href="#collapse-bachelor-63" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-63" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Environment &amp; Agriculture <span class="discipline-programmes-count">(19)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-63" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-63" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/agricultural-economics-99bb0023-9310-4e88-a4e5-1868ea637d0c">Agricultural Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/agricultural-science-animal-science">Agricultural Science (Animal Science)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/agricultural-science-crop-soil-science">Agricultural Science (Crop &amp; Soil Science)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/agricultural-science-global-agriculture-and-food-security">Agricultural Science (Global Agriculture and Food Security)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/biological-sciences-ecology">Biological Sciences (Ecology)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/biological-sciences-plant-science">Biological Sciences (Plant Science)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/ecological-and-environmental-sciences">Ecological and Environmental Sciences</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/ecological-and-environmental-sciences-with-management">Ecological and Environmental Sciences with Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/economics-with-environmental-studies">Economics with Environmental Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/environmental-geoscience-f2a264fe-e0a2-49c1-bfa8-7c01a119388f">Environmental Geoscience</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geology-e65d60cc-3559-4034-9629-9c15510063b3">Geology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geology-e8d9da77-0bde-4aea-ae32-e95e3c203f44">Geology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geology-and-physical-geography-84a4a071-54c0-4136-8a21-6f3a38e219ce">Geology and Physical Geography</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geology-and-physical-geography">Geology and Physical Geography</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geophysics-feb44779-0038-4aa3-ac16-508b75b82c1d">Geophysics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geophysics-f0132304-710d-48d4-96d7-798a0235d32d">Geophysics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geophysics-and-geology-2592603c-c659-42d6-a973-e8647f371178">Geophysics and Geology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geophysics-and-geology">Geophysics and Geology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/physics-with-meteorology">Physics with Meteorology</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Humanities" aria-controls="collapse-bachelor-64" aria-expanded="false" href="#collapse-bachelor-64" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-64" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Humanities <span class="discipline-programmes-count">(169)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-64" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-64" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/ancient-and-medieval-history-3f796fe2-4870-46cf-942c-a8cd57571d38">Ancient and Medieval History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/ancient-history-bc9530d0-b6b4-4e71-b2c7-182731614a14">Ancient History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/ancient-history-and-greek">Ancient History and Greek</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/ancient-history-and-latin">Ancient History and Latin</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/ancient-mediterranean-civilisations">Ancient Mediterranean Civilisations</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/arabic">Arabic</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/arabic-and-ancient-greek">Arabic and Ancient Greek</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/arabic-and-business">Arabic and Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/arabic-and-economics">Arabic and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/arabic-and-french">Arabic and French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/arabic-and-history">Arabic and History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/arabic-and-persian">Arabic and Persian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/arabic-and-politics">Arabic and Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/arabic-and-social-anthropology">Arabic and Social Anthropology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/arabic-and-spanish">Arabic and Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/archaeology-8b4f7f3c-de2d-45f9-ace2-d11978c20c66">Archaeology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/archaeology-and-ancient-history">Archaeology and Ancient History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/archaeology-and-social-anthropology">Archaeology and Social Anthropology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/architectural-history-and-archaeology">Architectural History and Archaeology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/architectural-history-and-heritage">Architectural History and Heritage</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/celtic-and-archaeology">Celtic and Archaeology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/celtic-and-english-language">Celtic and English Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/celtic-and-english-literature">Celtic and English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/celtic-and-french">Celtic and French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/celtic-and-linguistics">Celtic and Linguistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/celtic-and-scottish-history">Celtic and Scottish History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/celtic-and-scottish-literature">Celtic and Scottish Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/chinese-528c5f87-4cba-4080-92df-e25b0f31dec3">Chinese</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/chinese-and-economics-de1b448a-e5fb-4ce7-a8c3-ddba8e474ea8">Chinese and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/chinese-and-german-be49ad77-3f64-4b01-a592-331c4d1dad9f">Chinese and German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/chinese-and-history-c970800e-7ab5-4376-9991-223c3f18323f">Chinese and History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/chinese-and-linguistics-ce554c9d-2de5-4d6e-81b4-96d7c65063d4">Chinese and Linguistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/chinese-and-russian-studies-4dbe09fd-4c3b-405e-838e-115474770ee3">Chinese and Russian Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/chinese-and-spanish-3e65ce80-8e72-4016-a9fa-3a6ad2d20e06">Chinese and Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/classical-and-middle-east-studies">Classical and Middle East Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/classical-archaeology-and-ancient-history">Classical Archaeology and Ancient History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/classical-archaeology-and-greek">Classical Archaeology and Greek</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/classical-archaeology-and-latin">Classical Archaeology and Latin</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/classics-023accab-a611-43d1-814d-7de1b621b1bb">Classics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/classics-and-english-language">Classics and English Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/classics-and-linguistics">Classics and Linguistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/divinity-6b097123-fc0a-423c-8735-739a5bcda2e5">Divinity</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/divinity-b3eebbcd-d85b-40dd-b0af-23e5f0c0bd8e">Divinity</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/divinity-and-classics">Divinity and Classics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/economic-history-31ea00e8-40eb-4d2a-963f-88042e5a56d2">Economic History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/english-and-scottish-literature-732b2b5c-599c-40b6-8f77-c6af1616f79e">English and Scottish Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/english-language-608e1c38-165a-48f4-b2b1-0e5124cdaeb4">English Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/english-language-and-literature-b4e742c9-0316-4805-8917-f5549c027b8f">English Language and Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/english-literature-c11d7ff4-f729-4bf2-ba42-e03f2f6fc066">English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/english-literature-and-classics">English Literature and Classics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/english-literature-and-history">English Literature and History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/french-7b0241b6-a94b-4eee-84f3-60f7f6423635">French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/french-and-business">French and Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/french-and-classics">French and Classics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/french-and-english-language">French and English Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/french-and-english-literature">French and English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/french-and-german">French and German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/french-and-history-87303c93-f0b4-4e02-8b6e-acaefa1b8368">French and History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/french-and-history-of-art-b4ea1615-c532-4e0e-90de-8e7c45ebbcaf">French and History of Art</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/french-and-italian">French and Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/french-and-linguistics">French and Linguistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/french-and-philosophy-77fb1e70-6979-41b1-9d9f-92f3d6b66f3e">French and Philosophy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/french-and-politics-53c75bb2-50eb-4189-92ef-0275ac629af0">French and Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/french-and-portuguese">French and Portuguese</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/french-and-russian-studies">French and Russian Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/french-and-scandinavian-studies">French and Scandinavian Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/french-and-social-policy">French and Social Policy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/french-and-spanish">French and Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geography-and-archaeology">Geography and Archaeology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/german-d84da919-9c4a-415b-9f3a-6616f7701bb7">German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/german-and-business">German and Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/german-and-classics">German and Classics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/german-and-english-language">German and English Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/german-and-english-literature">German and English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/german-and-history">German and History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/german-and-history-of-art">German and History of Art</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/german-and-linguistics">German and Linguistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/german-and-philosophy">German and Philosophy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/german-and-politics">German and Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/german-and-portuguese">German and Portuguese</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/german-and-russian-studies">German and Russian Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/german-and-social-policy">German and Social Policy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/german-and-spanish">German and Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/history-5b85658b-7fa7-43e5-ac42-1cf5bf2138d8">History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/history-and-archaeology">History and Archaeology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/history-and-classics">History and Classics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/history-and-economics">History and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/history-and-history-of-art-832130a1-2918-48d4-8a9f-510c3fea5b1f">History and History of Art</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/history-and-politics-80e405cc-c13d-4440-8e52-5df9d022a3b1">History and Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/history-and-scottish-history">History and Scottish History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/history-of-art-and-chinese-studies">History of Art and Chinese Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/history-of-art-and-english-literature">History of Art and English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/history-of-art-and-scottish-literature">History of Art and Scottish Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/international-business-with-arabic">International Business with Arabic</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/international-business-with-chinese">International Business with Chinese</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/international-business-with-french-6f6d98b3-dbbb-4842-b0f8-6e87cec4fe70">International Business with French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/international-business-with-german-191bc434-0e17-4ff3-a42c-7b18e7d05627">International Business with German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/international-business-with-italian">International Business with Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/international-business-with-japanese">International Business with Japanese</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/international-business-with-russian">International Business with Russian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/international-business-with-spanish-6efc2c49-97c8-47a9-b1aa-39f3a36421ee">International Business with Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/islamic-studies">Islamic Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/italian-826c1931-8fd1-4b2a-99a5-a8b23a30c6c7">Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/italian-and-classics">Italian and Classics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/italian-and-english-language">Italian and English Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/italian-and-english-literature">Italian and English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/italian-and-history">Italian and History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/italian-and-linguistics">Italian and Linguistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/italian-and-philosophy">Italian and Philosophy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/italian-and-politics">Italian and Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/italian-and-spanish">Italian and Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/japanese">Japanese</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/japanese-and-linguistics">Japanese and Linguistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/latin-studies">Latin Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/law-and-french-c3d2f5d9-3ec5-4765-8767-9835518831cb">Law and French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/law-and-german-cb54f4a4-5449-4251-bd7f-4b60e76d04ab">Law and German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/law-and-history">Law and History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/law-and-spanish-17a69923-28c6-45a4-a800-19888194d77c">Law and Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/linguistics-036f42a2-3ff7-4f10-b388-bf848903d595">Linguistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/linguistics-and-english-language">Linguistics and English Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/persian-and-english-literature">Persian and English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/philosophy-d13f3bf3-e6a1-4d7a-a854-a80bd34e1807">Philosophy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/philosophy-and-economics">Philosophy and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/philosophy-and-english-language">Philosophy and English Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/philosophy-and-english-literature">Philosophy and English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/philosophy-and-greek">Philosophy and Greek</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/philosophy-and-linguistics">Philosophy and Linguistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/philosophy-and-mathematics">Philosophy and Mathematics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/philosophy-and-politics-bd72bded-3599-4833-b524-9a26a7658a1f">Philosophy and Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/philosophy-and-psychology-a5d68ca9-26c7-4723-bce3-27604dbda7c5">Philosophy and Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/philosophy-and-scottish-literature">Philosophy and Scottish Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/philosophy-and-theology">Philosophy and Theology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/politics-philosophy-and-economics-45266262-65df-42ca-99b0-449f5471de4f">Politics, Philosophy and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/psychology-and-linguistics">Psychology and Linguistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/religious-studies-and-english-literature">Religious Studies and English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/religious-studies-and-scottish-literature">Religious Studies and Scottish Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/religious-studies-ma">Religious Studies (MA)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/russian-studies-and-classics">Russian Studies and Classics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/russian-studies-and-english-language">Russian Studies and English Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/russian-studies-and-english-literature">Russian Studies and English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/russian-studies-and-history">Russian Studies and History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/russian-studies-and-linguistics">Russian Studies and Linguistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/russian-studies-and-philosophy">Russian Studies and Philosophy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/russian-studies-and-spanish">Russian Studies and Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scandinavian-studies-and-classics">Scandinavian Studies and Classics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scandinavian-studies-and-english-language">Scandinavian Studies and English Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scandinavian-studies-and-english-literature">Scandinavian Studies and English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scandinavian-studies-and-history">Scandinavian Studies and History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scandinavian-studies-and-linguistics">Scandinavian Studies and Linguistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scandinavian-studies-and-philosophy">Scandinavian Studies and Philosophy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scandinavian-studies-and-spanish">Scandinavian Studies and Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scottish-ethnology-and-archaeology">Scottish Ethnology and Archaeology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scottish-ethnology-and-english-language">Scottish Ethnology and English Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scottish-ethnology-and-scottish-history">Scottish Ethnology and Scottish History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scottish-literature">Scottish Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scottish-literature-and-classics">Scottish Literature and Classics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scottish-literature-and-history">Scottish Literature and History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scottish-literature-and-scottish-history">Scottish Literature and Scottish History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/spanish-536a2d3e-7e5c-424d-8c09-a65bb800f8c7">Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/spanish-and-business">Spanish and Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/spanish-and-classics">Spanish and Classics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/spanish-and-english-literature">Spanish and English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/spanish-and-history">Spanish and History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/spanish-and-history-of-art">Spanish and History of Art</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/spanish-and-linguistics">Spanish and Linguistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/spanish-and-philosophy">Spanish and Philosophy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/spanish-and-politics">Spanish and Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/spanish-and-portuguese">Spanish and Portuguese</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/theology-14d39c16-a1fb-406a-a37f-3b833353d694">Theology</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Law" aria-controls="collapse-bachelor-4" aria-expanded="false" href="#collapse-bachelor-4" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-4" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Law <span class="discipline-programmes-count">(19)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-4" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-4" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/business-and-law">Business and Law</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/government-policy-and-society">Government, Policy and Society</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/government-policy-and-society-with-quantitative-methods">Government, Policy and Society with Quantitative Methods</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/international-relations-and-international-law-22a7bf50-ce06-4ce3-84d9-55a7044ae30b">International Relations and International Law</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/law-511e7663-b0de-4426-b00a-21a45c5ce488">Law</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/law-and-accountancy">Law and Accountancy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/law-and-business-b9554bb2-c9e1-4268-89fa-5d62a2760d44">Law and Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/law-and-celtic">Law and Celtic</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/law-and-economics-f66cb481-e47f-4e8b-ab1f-570df3722489">Law and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/law-and-french-c3d2f5d9-3ec5-4765-8767-9835518831cb">Law and French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/law-and-german-cb54f4a4-5449-4251-bd7f-4b60e76d04ab">Law and German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/law-and-history">Law and History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/law-and-international-relations">Law and International Relations</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/law-and-politics-45da77bc-1c2f-4675-8925-32ede1282782">Law and Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/law-and-social-anthropology">Law and Social Anthropology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/law-and-social-policy">Law and Social Policy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/law-and-sociology-ac2db0ec-03fb-4396-acbc-dee0717674c3">Law and Sociology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/law-and-spanish-17a69923-28c6-45a4-a800-19888194d77c">Law and Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/social-policy-and-law">Social Policy and Law</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Medicine &amp; Health" aria-controls="collapse-bachelor-5" aria-expanded="false" href="#collapse-bachelor-5" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-5" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Medicine &amp; Health <span class="discipline-programmes-count">(17)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-5" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-5" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/agricultural-science-global-agriculture-and-food-security">Agricultural Science (Global Agriculture and Food Security)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/anatomy-and-development">Anatomy and Development</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/applied-sport-science">Applied Sport Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/biomedical-sciences-68c8da7d-24dd-4fa8-bc67-2546abe71ab8">Biomedical Sciences</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/health-science-and-society">Health, Science and Society</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/infectious-diseases">Infectious Diseases</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/medical-sciences">Medical Sciences</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/medicinal-and-biological-chemistry">Medicinal and Biological Chemistry</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/medicinal-and-biological-chemistry-08d9fb8d-4eee-40bb-b1a3-cbd3d958a448">Medicinal and Biological Chemistry</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/medicine-5eda9aa0-86f8-4942-addd-c66498ce2e0c">Medicine</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/nursing-b538e02f-b675-44ca-903e-4a977f9edc01">Nursing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/oral-health-sciences-0cf7a387-1aa0-4449-8279-3d129dc5f507">Oral Health Sciences</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/pharmacology-02fad760-bcbf-48d1-8784-ca2a387fa26c">Pharmacology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/physical-education-3f8d4e44-a798-466d-b7d6-34d921aff75d">Physical Education</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/physiology-ac45a0fd-82ac-44e1-bfdf-e5699dddb188">Physiology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/sport-and-recreation-management">Sport and Recreation Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/veterinary-medicine-895a1122-6d22-4be9-bcd9-612ae5530b7c">Veterinary Medicine</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Natural Sciences &amp; Mathematics" aria-controls="collapse-bachelor-6" aria-expanded="false" href="#collapse-bachelor-6" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-6" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Natural Sciences &amp; Mathematics <span class="discipline-programmes-count">(51)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-6" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-6" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/agricultural-science-animal-science">Agricultural Science (Animal Science)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/applied-mathematics-7c09e522-8b11-475e-b3d1-eff5450696e3">Applied Mathematics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/applied-mathematics-b0f7f98d-e2cd-4357-8b69-73dbdd6d6d90">Applied Mathematics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/astrophysics-1cfbe5f4-de28-44a1-b45a-2267e0439722">Astrophysics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/astrophysics-d8404350-5d69-44fb-bb44-1e72e4c24316">Astrophysics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/biological-sciences-98d36795-1e70-42c4-a2bc-5336b396a398">Biological Sciences</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/biological-sciences-biochemistry-fd10c26d-69fd-4d81-b606-52f2f0bc52f1">Biological Sciences (Biochemistry)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/biological-sciences-biotechnology">Biological Sciences (Biotechnology)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/biological-sciences-cell-biology">Biological Sciences (Cell Biology)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/biological-sciences-developmental-regeneration-and-stem-cell">Biological Sciences (Developmental, Regeneration and Stem Cells)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/biological-sciences-ecology">Biological Sciences (Ecology)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/biological-sciences-evolutionary-biology">Biological Sciences (Evolutionary Biology)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/biological-sciences-genetics">Biological Sciences (Genetics)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/biological-sciences-immunology">Biological Sciences (Immunology)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/biological-sciences-molecular-genetics">Biological Sciences (Molecular Genetics)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/biological-sciences-plant-science">Biological Sciences (Plant Science)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/biological-sciences-with-management">Biological Sciences with Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/biological-sciences-zoology-16155">Biological Sciences (Zoology)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/chemical-physics-29baca13-b39f-45a4-8eb4-23733db5c656">Chemical Physics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/chemical-physics-415ac58e-8f7e-4ee6-8462-8d08397698fc">Chemical Physics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/chemistry-5eace593-8b54-4f5e-8c0c-72e8bc9612f8">Chemistry</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/chemistry-da5ec642-1666-487f-b61e-8892e6ebfd39">Chemistry</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/computational-physics-6fd0789f-3d9a-4086-8a0e-0976688a7ca1">Computational Physics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/computational-physics-e09d5b6a-5d75-4f3a-8642-90e55c67393d">Computational Physics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/computer-science-and-mathematics-8e046717-dd7f-442e-b40b-71cb00d92ea9">Computer Science and Mathematics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/computer-science-and-physics">Computer Science and Physics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/economics-and-mathematics-2c43a3d9-ea0e-4c0c-b44b-5fd16b20a531">Economics and Mathematics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/economics-and-statistics">Economics and Statistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geophysics-and-meteorology-b011f90e-1e37-42fb-90de-9f776e5a5880">Geophysics and Meteorology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geophysics-and-meteorology">Geophysics and Meteorology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geophysics-and-meteorology-with-professional-placement">Geophysics and Meteorology with Professional Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geophysics-with-professional-placement">Geophysics with Professional Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/mathematical-physics-f5f43ef2-af28-4051-8079-67968749d401">Mathematical Physics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/mathematical-physics-8baf102f-3810-4f6d-8728-c8c73e16d264">Mathematical Physics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/mathematics-c3513ed9-b746-4029-a36a-2def93a3e58f">Mathematics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/mathematics-41fc6560-1bb7-4967-96d5-2a4852fecfad">Mathematics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/mathematics-and-biology">Mathematics and Biology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/mathematics-and-business">Mathematics and Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/mathematics-and-music">Mathematics and Music</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/mathematics-and-physics-c2367876-a8c1-4e6f-8f94-55796db41f33">Mathematics and Physics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/mathematics-and-statistics-4d667bcf-a51a-4aaa-b250-0518de2eb3cb">Mathematics and Statistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/mathematics-with-management">Mathematics with Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/neuroscience-a2a39b40-6fc6-430c-a95e-48ff124c38ad">Neuroscience</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/physics-932f1d10-c1d6-470b-a18e-3da5cf9cacd6">Physics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/physics-6c4cce9d-c917-4efe-9c22-0c6e9dc3b543">Physics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/physics-with-a-year-abroad">Physics with a Year Abroad</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/physics-with-meteorology-b43ce167-2a9f-41ab-8606-38fa8ae31bb0">Physics with Meteorology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/physics-with-meteorology">Physics with Meteorology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/reproductive-biology-1d19527f-d6f6-41bf-8d11-aee5be9fe8ca">Reproductive Biology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/theoretical-physics-7d150745-5462-4422-ac97-7072a820bff7">Theoretical Physics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/theoretical-physics-4a8037f7-4110-4bf4-84b9-2cfc67010984">Theoretical Physics</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Social Sciences" aria-controls="collapse-bachelor-7" aria-expanded="false" href="#collapse-bachelor-7" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-7" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Social Sciences <span class="discipline-programmes-count">(118)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-7" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-7" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/agricultural-economics-99bb0023-9310-4e88-a4e5-1868ea637d0c">Agricultural Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/arabic-and-economics">Arabic and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/arabic-and-politics">Arabic and Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/arabic-and-social-anthropology">Arabic and Social Anthropology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/archaeology-and-social-anthropology">Archaeology and Social Anthropology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/business-and-economics-6a6612d7-224c-44fc-bde0-536895a3e6ec">Business and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/business-and-geography">Business and Geography</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/business-with-strategic-economics">Business with Strategic Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/celtic-and-scandinavian-studies">Celtic and Scandinavian Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/chinese-and-economics-de1b448a-e5fb-4ce7-a8c3-ddba8e474ea8">Chinese and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/cognitive-science-8a57408f-16aa-4de5-b8b9-579fc7ddba6d">Cognitive Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/cognitive-science-humanities">Cognitive Science (Humanities)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/economic-history-31ea00e8-40eb-4d2a-963f-88042e5a56d2">Economic History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/economics-6206b43a-fd51-4cc9-8977-ed99ae4a1ab0">Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/economics-and-accounting">Economics and Accounting</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/economics-and-mathematics-2c43a3d9-ea0e-4c0c-b44b-5fd16b20a531">Economics and Mathematics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/economics-and-politics-3d12f087-3717-4b9c-b65a-1f4100590f51">Economics and Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/economics-and-sociology-c56c3486-2efd-45f2-af33-d956dfffdd54">Economics and Sociology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/economics-and-statistics">Economics and Statistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/economics-with-environmental-studies">Economics with Environmental Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/economics-with-finance">Economics with Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/economics-with-management-science">Economics with Management Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/french-and-politics-53c75bb2-50eb-4189-92ef-0275ac629af0">French and Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/french-and-social-policy">French and Social Policy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geography-40f53c58-3b5f-4919-b91f-d363cdc519aa">Geography</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geography-7c98ad32-63ca-46ed-98f2-272ec8b1df4c">Geography</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geography-and-archaeology">Geography and Archaeology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geography-and-economics-4a6b1cc3-48ae-4464-9bf7-e32fc2e95d4c">Geography and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geography-and-politics-b7cf4cd4-d003-4c55-b0dd-89b0c5012221">Geography and Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geography-and-social-anthropology">Geography and Social Anthropology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geography-and-social-policy">Geography and Social Policy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geography-and-sociology-4e090984-1f5d-45a3-bf91-909ac248fa74">Geography and Sociology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geology-and-physical-geography">Geology and Physical Geography</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geology-and-physical-geography-84a4a071-54c0-4136-8a21-6f3a38e219ce">Geology and Physical Geography</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geophysics-feb44779-0038-4aa3-ac16-508b75b82c1d">Geophysics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geophysics-f0132304-710d-48d4-96d7-798a0235d32d">Geophysics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geophysics-and-meteorology">Geophysics and Meteorology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geophysics-and-meteorology-b011f90e-1e37-42fb-90de-9f776e5a5880">Geophysics and Meteorology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geophysics-and-meteorology-with-professional-placement">Geophysics and Meteorology with Professional Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/geophysics-with-professional-placement">Geophysics with Professional Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/german-and-politics">German and Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/german-and-social-policy">German and Social Policy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/government-policy-and-society">Government, Policy and Society</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/government-policy-and-society-with-quantitative-methods">Government, Policy and Society with Quantitative Methods</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/history-and-economics">History and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/history-and-politics-80e405cc-c13d-4440-8e52-5df9d022a3b1">History and Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/international-relations-e4df0613-559d-4487-8537-1f16e1127ebc">International Relations</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/international-relations-and-international-law-22a7bf50-ce06-4ce3-84d9-55a7044ae30b">International Relations and International Law</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/international-relations-with-quantitative-methods">International Relations with Quantitative Methods</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/islamic-studies">Islamic Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/italian-and-politics">Italian and Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/law-and-economics-f66cb481-e47f-4e8b-ab1f-570df3722489">Law and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/law-and-international-relations">Law and International Relations</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/law-and-politics-45da77bc-1c2f-4675-8925-32ede1282782">Law and Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/law-and-social-anthropology">Law and Social Anthropology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/law-and-social-policy">Law and Social Policy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/law-and-sociology-ac2db0ec-03fb-4396-acbc-dee0717674c3">Law and Sociology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/middle-eastern-studies-c6fdd383-75d6-46e5-ba56-9d9ccd543b01">Middle Eastern Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/philosophy-and-politics-bd72bded-3599-4833-b524-9a26a7658a1f">Philosophy and Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/philosophy-and-psychology-a5d68ca9-26c7-4723-bce3-27604dbda7c5">Philosophy and Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/physical-education-3f8d4e44-a798-466d-b7d6-34d921aff75d">Physical Education</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/politics-c91f64a0-8580-4ed3-a210-64fd1dc35327">Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/politics-philosophy-and-economics-45266262-65df-42ca-99b0-449f5471de4f">Politics, Philosophy and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/politics-with-quantitative-methods">Politics with Quantitative Methods</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/primary-education-with-gaelic-fluent">Primary Education with Gaelic (Fluent)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/primary-education-with-gaelic-learners">Primary Education with Gaelic (Learners)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/psychology-631f537c-b3ca-4ac1-92be-acc44520360b">Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/psychology-and-business">Psychology and Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/psychology-and-economics">Psychology and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/psychology-and-linguistics">Psychology and Linguistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/russian-studies-b94cba90-52d3-4977-bc70-4a6e8ae9f0a3">Russian Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/russian-studies-and-classics">Russian Studies and Classics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/russian-studies-and-english-language">Russian Studies and English Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/russian-studies-and-english-literature">Russian Studies and English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/russian-studies-and-history">Russian Studies and History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/russian-studies-and-history-of-art">Russian Studies and History of Art</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/russian-studies-and-linguistics">Russian Studies and Linguistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/russian-studies-and-philosophy">Russian Studies and Philosophy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/russian-studies-and-politics">Russian Studies and Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/russian-studies-and-scandinavian-studies">Russian Studies and Scandinavian Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/russian-studies-and-social-policy">Russian Studies and Social Policy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/russian-studies-and-spanish">Russian Studies and Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scandinavian-studies-6b574ab2-a2f6-410a-ac74-7565b7c715da">Scandinavian Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scandinavian-studies-and-classics">Scandinavian Studies and Classics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scandinavian-studies-and-english-language">Scandinavian Studies and English Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scandinavian-studies-and-english-literature">Scandinavian Studies and English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scandinavian-studies-and-history">Scandinavian Studies and History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scandinavian-studies-and-linguistics">Scandinavian Studies and Linguistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scandinavian-studies-and-philosophy">Scandinavian Studies and Philosophy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scandinavian-studies-and-politics">Scandinavian Studies and Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scandinavian-studies-and-social-policy">Scandinavian Studies and Social Policy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scandinavian-studies-and-spanish">Scandinavian Studies and Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scottish-ethnology">Scottish Ethnology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scottish-ethnology-and-archaeology">Scottish Ethnology and Archaeology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scottish-ethnology-and-celtic">Scottish Ethnology and Celtic</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scottish-ethnology-and-english-language">Scottish Ethnology and English Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scottish-ethnology-and-scandinavian-studies">Scottish Ethnology and Scandinavian Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scottish-ethnology-and-scottish-history">Scottish Ethnology and Scottish History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scottish-literature">Scottish Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scottish-literature-and-classics">Scottish Literature and Classics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scottish-literature-and-history">Scottish Literature and History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scottish-literature-and-scottish-history">Scottish Literature and Scottish History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/scottish-studies">Scottish Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/social-anthropology-d64b6bd4-b4cf-44d8-aa9a-4534a1d509d5">Social Anthropology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/social-anthropology-and-politics">Social Anthropology and Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/social-anthropology-and-social-policy">Social Anthropology and Social Policy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/social-anthropology-with-development">Social Anthropology with Development</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/social-policy-and-economics">Social Policy and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/social-policy-and-law">Social Policy and Law</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/social-policy-and-politics">Social Policy and Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/social-policy-and-sociology">Social Policy and Sociology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/social-policy-with-quantitative-methods">Social Policy with Quantitative Methods</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/social-work-35cda279-3a9f-47ac-865c-0f04ae2a666c">Social Work</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/sociology-5e283e7a-4072-472b-8c93-b74cef46fc5a">Sociology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/sociology-and-politics-ce961012-1c89-406e-a593-eea6960827bb">Sociology and Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/sociology-and-psychology-54e52852-62e6-4968-9914-9d39fa9971dd">Sociology and Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/sociology-and-social-anthropology">Sociology and Social Anthropology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/sociology-with-quantitative-methods">Sociology with Quantitative Methods</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default" id="panel-bachelor-other"> <a title="Other subjects" aria-controls="collapse-bachelor-other" aria-expanded="false" href="#collapse-bachelor-other" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-other" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Other subjects</span> <span class="discipline-programmes-count">(20)</span></a>
+        <div aria-labelledby="heading-bachelor-other" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-other" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/celtic">Celtic</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/chinese">Chinese</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/chinese-and-economics">Chinese and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/chinese-and-french">Chinese and French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/chinese-and-german">Chinese and German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/chinese-and-history">Chinese and History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/chinese-and-linguistics">Chinese and Linguistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/chinese-and-russian-studies">Chinese and Russian Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/chinese-and-spanish">Chinese and Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/intermedia-art">Intermedia Art</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/jewellery-and-silversmithing">Jewellery and Silversmithing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/performance-costume">Performance Costume</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/persian-and-middle-eastern-studies">Persian and Middle Eastern Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/persian-and-social-anthropology">Persian and Social Anthropology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/persian-studies">Persian Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/portuguese">Portuguese</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/portuguese-and-english-language">Portuguese and English Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/portuguese-and-english-literature">Portuguese and English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/portuguese-and-philosophy">Portuguese and Philosophy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/portuguese-and-scottish-literature">Portuguese and Scottish Literature</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+
+  <script>
+  if ( $('#accordion-bachelor .panel-collapse').length == 1 ) {
+    // If Programmes at this level all fall into the same Discipline, expand it
+    $('#accordion-bachelor .panel-collapse').collapse('show');
+  }
+
+
+  $('.panel-collapse').on('shown.bs.collapse', function (e) {
+      var panel = $(this).closest('div.panel');
+      var panelTop = panel[0].getBoundingClientRect().top;
+      var navHeight = document.getElementById("navbar").offsetHeight;
+      var navBottom = document.getElementById("navbar").getBoundingClientRect().bottom;
+      
+      var visibleFromHere = Math.max(0, navBottom); // navBottom might be negative on desktop
+      
+      if (panelTop < visibleFromHere) {
+        // If the just expanded panel's top is above what's visible in the viewport, scroll up.
+        $('html,body').animate({
+            scrollTop: panel.offset().top-visibleFromHere-25
+        }, 500); 
+      }
+  }); 
+  </script>
+
+        </div>
+      
+        <div id="tab-master" class="tab-pane">
+          <h4>Masters at the University of Edinburgh</h4>
+            <div aria-multiselectable="true" role="tablist" id="accordion-master" class="panel-group">
+
+      <div class="panel panel-default"> <a title="Business &amp; Management" aria-controls="collapse-master-2" aria-expanded="false" href="#collapse-master-2" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-2" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Business &amp; Management <span class="discipline-programmes-count">(8)</span></span> </a>
+        <div aria-labelledby="heading-master-2" role="tabpanel" class="panel-collapse collapse" id="collapse-master-2" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/accounting-and-society">Accounting and Society</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/accounting-finance-9924">Accounting &amp; Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/carbon-finance">Carbon Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/executive-master-of-business-administration-1b43b906-1347-4503-a69b-a9355b9a3c9d">Executive Master of Business Administration</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/finance-6bbb4b27-da56-4a48-871c-1936f2e343f1">Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/financial-mathematics-3cd9f741-717e-4b58-8d42-956e77d9cb52">Financial Mathematics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/financial-modelling-optimization">Financial Modelling &amp; Optimization</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/master-of-business-administration-c7df850d-c0ef-4732-adbe-412812eaefa3">Master of Business Administration</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Law" aria-controls="collapse-master-4" aria-expanded="false" href="#collapse-master-4" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-4" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Law <span class="discipline-programmes-count">(1)</span></span> </a>
+        <div aria-labelledby="heading-master-4" role="tabpanel" class="panel-collapse collapse" id="collapse-master-4" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/international-banking-law-finance">International Banking Law &amp; Finance</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Natural Sciences &amp; Mathematics" aria-controls="collapse-master-6" aria-expanded="false" href="#collapse-master-6" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-6" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Natural Sciences &amp; Mathematics <span class="discipline-programmes-count">(1)</span></span> </a>
+        <div aria-labelledby="heading-master-6" role="tabpanel" class="panel-collapse collapse" id="collapse-master-6" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/computational-mathematical-finance">Computational Mathematical Finance</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Social Sciences" aria-controls="collapse-master-7" aria-expanded="false" href="#collapse-master-7" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-7" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Social Sciences <span class="discipline-programmes-count">(1)</span></span> </a>
+        <div aria-labelledby="heading-master-7" role="tabpanel" class="panel-collapse collapse" id="collapse-master-7" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-edinburgh/ecological-economics">Ecological Economics</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+
+  <script>
+  if ( $('#accordion-master .panel-collapse').length == 1 ) {
+    // If Programmes at this level all fall into the same Discipline, expand it
+    $('#accordion-master .panel-collapse').collapse('show');
+  }
+
+
+  $('.panel-collapse').on('shown.bs.collapse', function (e) {
+      var panel = $(this).closest('div.panel');
+      var panelTop = panel[0].getBoundingClientRect().top;
+      var navHeight = document.getElementById("navbar").offsetHeight;
+      var navBottom = document.getElementById("navbar").getBoundingClientRect().bottom;
+      
+      var visibleFromHere = Math.max(0, navBottom); // navBottom might be negative on desktop
+      
+      if (panelTop < visibleFromHere) {
+        // If the just expanded panel's top is above what's visible in the viewport, scroll up.
+        $('html,body').animate({
+            scrollTop: panel.offset().top-visibleFromHere-25
+        }, 500); 
+      }
+  }); 
+  </script>
+
+        </div>
+      
+    </div>
+    
+    <script>
+      $('.nav-tabs a:first').tab('show'); // Make sure the first tab is selected in case none of the rendered tabs are marked as active
+      
+      $('.nav-tabs a[href="#tab-bachelor"]').tab('show');
+    </script>
+    
+    
+    
+    
+    <h3>Rankings</h3>
+    
+      <p>
+        The University of Edinburgh belongs to the top 20 universities in the world and the top 10 universities in Europe.
+      </p>
+    
+    <table class="table table-bordered table-striped">
+      <thead>
+        <th>Ranking</th>
+        <th>Year</th>
+        <th>Rank <br/> (in the world)</th>
+        <th>Rank <br/> (in Europe)</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>QS World University Rankings</td>
+          <td>2020</td>
+          <td class="text-right">20</td>
+          <td class="text-right">7</td>
+        </tr>
+        <tr>
+          <td>Times Higher Education World University Rankings</td>
+          <td>2020</td>
+          <td class="text-right">30</td>
+          <td class="text-right">7</td>
+        </tr>
+        <tr>
+          <td>Shanghai Jiao Tong Academic Ranking of World Universities</td>
+          <td>2019</td>
+          <td class="text-right">31</td>
+          <td class="text-right">7</td>
+        </tr>
+      </tbody>
+    </table>
+    
+      <a href="/best-universities/united-kingdom">Check out the 105 best universities in the United Kingdom</a>
+    
+    
+    
+
+    
+      <h2>Additional information</h2>
+
+
+
+  <div class="panel panel-default">
+    <div class="panel-body university-information-panel">
+      <h3 class="university-information-header">Tuition fees at the University of Edinburgh</h3>
+      
+            <h5>Students who are citizens of the EU/EEA:</h5>
+            <p>
+              The average tuition fees for students from the EU/EEA are 1,900&nbsp;GBP per year, ranging from 1,600&nbsp;GBP to 1,900&nbsp;GBP.
+            </p>
+
+            <h5>Students who are citizens from outside the EU/EEA:</h5>
+            <p>
+              The average tuition fees for students from outside the EU/EEA are 23,800&nbsp;GBP per year, ranging from 18,700&nbsp;GBP to 33,800&nbsp;GBP.
+            </p>
+          
+          <p class="university-information-footnote">
+            Tuition fees may vary for each study programme.
+          </p>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+      
+    
+      <div>
+        <h2>You might be interested in this:</h2>
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/article/world-record-traveller-gunnar-garfors-about-studying-abroad">
+              <div class="thumbnail home-country-card">  
+                    <img alt="World-record traveller Gunnar Garfors about studying abroad" title="World-record traveller Gunnar Garfors about studying abroad" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/302/slideshow_italy20160617_150000_HDR.jpg" />
+                  <div class="caption">
+                    <strong>World-record traveller Gunnar Garfors about studying abroad</strong>              
+                  </div>
+              </div>
+</a>          </div>
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/article/the-top-6-books-to-read-before-you-study-in-scotland">
+              <div class="thumbnail home-country-card">  
+                    <img alt="The top 6 books to read before you study in Scotland" title="The top 6 books to read before you study in Scotland" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/238/slideshow_14082720927_94e9d30a62_o.jpg" />
+                  <div class="caption">
+                    <strong>The top 6 books to read before you study in Scotland</strong>              
+                  </div>
+              </div>
+</a>          </div>
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/country/united-kingdom">
+              <div class="thumbnail home-country-card">  
+                    <img alt="Study in the United Kingdom" title="Study in the United Kingdom" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/31/slideshow_united-kingdom-telephone.jpg" />
+                  <div class="caption">
+                    <strong>Study in the United Kingdom</strong>              
+                  </div>                  
+                
+              </div>
+</a>          </div>
+        </div>
+      </div>  
+    
+    </div>
+
+
+    
+
+
+    
+    
+    
+    
+    
+    
+  </div>
+  
+</div>
+
+
+<script>
+
+  $('[data-toggle="tooltip"]').tooltip();
+
+  $( function() {
+    $( ".accordion" ).accordion({
+      heightStyle: "content"
+    });
+  } );
+  
+  
+  handler = Gmaps.build('Google');
+  handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+    markers = handler.addMarkers([
+      {
+        "lat": 0,
+        "lng": 0,
+      }
+    ]);
+    handler.bounds.extendWith(markers);
+    handler.fitMapToBounds();
+  });
+  
+  
+  
+  
+</script>
+  
+
+    
+
+  
+  
+  <footer class="top-footer">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Merriweather Sans:300,400i,700']
+      }
+    });
+  </script> 
+
+  
+  <div class="container">
+  <div class="row">
+    
+    <div class="text-left col-md-8 col-xs-6" style="display: inline-block;float: left;">
+      <a href="/" title="Study.EU" data-track-click="true" data-event-category="Footer Logo"><img class="footer-logo" src="/assets/study-eu_logo_wb_200x66-8722da28bad82460d8951c34fe8b5ba8e11794b2fd21e83ee8c5fe54323ea73b.png" /></a><br />
+      <p>
+        Copyright &copy; 2021 <a title="Study.EU" href="/">Study.EU</a>
+      </p>
+      <p>
+        
+      </p>
+      <a class="social-link" href="https://www.facebook.com/StudyEU-168756646881605/" target="_blank" title="Like Study.EU on Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://twitter.com/wwwStudyEU" target="_blank" title="Follow Study.EU on Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://www.linkedin.com/company/study.eu/" target="_blank" title="Follow Study.EU on Linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    </div>
+    <div class="text-right col-md-4 col-xs-6">
+      <br /><br />
+          <a rel="nofollow" href="/page/imprint">Imprint</a>
+        &middot;
+          <a rel="nofollow" href="/page/about-study-eu">About Study.eu</a>
+        &middot;
+          <a rel="nofollow" href="/page/privacy-policy">Privacy Policy</a>
+        &middot;
+      <a href="/jobs">Jobs</a>
+      
+      <br />
+      
+      <a href="/press">Press</a>
+      
+      <!-- &middot; -->
+      
+        <!-- &mdash; //-->
+      
+      <br /><br />
+      <a href="/advertise-on-study-eu">Advertise on Study.eu</a>
+    </div>
+  </div>
+  </div>
+</footer>
+
+<a href="javascript:" id="scroll-to-top" title="Scroll back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+<script>
+  $(window).scroll(function() {
+      if ($(this).scrollTop() >= 100) {        // page is scrolled more than 100px
+          $('#scroll-to-top').fadeIn(500);
+      } else {
+          $('#scroll-to-top').fadeOut(500);
+      }
+  });
+  $('#scroll-to-top').click(function() {      // arrow is clicked
+      $('body,html').animate({
+          scrollTop : 0                       // scroll to top
+      }, 500);
+  });
+</script>
+
+
+  
+  <footer class="footer-countries">
+
+
+  <div class="container">
+    <div class="row">
+    
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <h5>Study in Europe:</h5>
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Austria" href="/country/austria">Austria</a><br />
+                <a title="Study in Belgium" href="/country/belgium">Belgium</a><br />
+                <a title="Study in the Czech Republic" href="/country/czech-republic">Czech Republic</a><br />
+                <a title="Study in Denmark" href="/country/denmark">Denmark</a><br />
+                <a title="Study in Estonia" href="/country/estonia">Estonia</a><br />
+                <a title="Study in the Faroe Islands" href="/country/faroe-islands">Faroe Islands</a><br />
+                <a title="Study in Finland" href="/country/finland">Finland</a><br />
+                <a title="Study in France" href="/country/france">France</a><br />
+                <a title="Study in Germany" href="/country/germany">Germany</a><br />
+                <a title="Study in Greece" href="/country/greece">Greece</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Hungary" href="/country/hungary">Hungary</a><br />
+                <a title="Study in Iceland" href="/country/iceland">Iceland</a><br />
+                <a title="Study in Ireland" href="/country/ireland">Ireland</a><br />
+                <a title="Study in Italy" href="/country/italy">Italy</a><br />
+                <a title="Study in Latvia" href="/country/latvia">Latvia</a><br />
+                <a title="Study in Liechtenstein" href="/country/liechtenstein">Liechtenstein</a><br />
+                <a title="Study in Lithuania" href="/country/lithuania">Lithuania</a><br />
+                <a title="Study in Malta" href="/country/malta">Malta</a><br />
+                <a title="Study in the Netherlands" href="/country/netherlands">Netherlands</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Norway" href="/country/norway">Norway</a><br />
+                <a title="Study in Poland" href="/country/poland">Poland</a><br />
+                <a title="Study in Portugal" href="/country/portugal">Portugal</a><br />
+                <a title="Study in Romania" href="/country/romania">Romania</a><br />
+                <a title="Study in Russia" href="/country/russia">Russia</a><br />
+                <a title="Study in Spain" href="/country/spain">Spain</a><br />
+                <a title="Study in Sweden" href="/country/sweden">Sweden</a><br />
+                <a title="Study in Switzerland" href="/country/switzerland">Switzerland</a><br />
+                <a title="Study in the United Kingdom" href="/country/united-kingdom">United Kingdom</a><br />
+            </div>
+          </div>
+        </div>
+    
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Recent articles:</h5>
+          </div>
+          <div class="col-md-8">
+              <p><a href="/article/what-is-the-ects-european-credit-transfer-and-accumulation-system">What is the European Credit Transfer System (ECTS)?</a></p>
+              <p><a href="/article/fafsa-eligible-universities-colleges-in-europe">FAFSA: Eligible universities &amp; colleges in Europe</a></p>
+              <p><a href="/article/study-zoology">Study Zoology: All you need to know</a></p>
+              <p><a href="/article/degree-in-chinese-studies-sinology">Degree in Chinese Studies: All you need to know</a></p>
+              <p><a href="/article/study-ecology">Study Ecology: All you need to know</a></p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  
+  </div>
+
+</footer>
+
+  
+  <footer class="footer-press">
+  <div class="container">
+    <div class="row footer-press-description">
+      <div class="col-md-12 text-center">
+        Study.EU has been mentioned in numerous news publications worldwide, such as:
+      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="L&#39;Étudiant (France)" title="L&#39;Étudiant (France)" data-src="/assets/press/letudiant_gray_200-57bccbdceaef3c62c8660629603372823c98afe433bd39bf6d42a73263c113c3.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Frankfurter Allgemeine (Germany)" title="Frankfurter Allgemeine (Germany)" data-src="/assets/press/faz_gray_300-b6e5e6022a7b164c24b69a51fb97a72715018db745fbcda8580675a507370b8b.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Standard (Hong Kong)" title="The Standard (Hong Kong)" data-src="/assets/press/the-standard-hong-kong_gray_200-f124ca057d2671730e1f6d996377ef4614a28ccf04ae04f730eaf16ed7ee0b46.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Independent (UK)" title="The Independent (UK)" data-src="/assets/press/the-independent-uk_gray_300-63238e279b3c62b1f87faf17fcbcf1f14a2e5b9229193a0431fc974da217d159.png" class="lazyload" />
+</a>      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Al-Masry Al-Youm (Egypt)" title="Al-Masry Al-Youm (Egypt)" data-src="/assets/press/al-masry_al-youm_gray_200-9d8e503cd53ec4d955c3e6f7bf2a1c0badb500a0d2bd8a1ef1d11acd686879e5.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Le Monde (France)" title="Le Monde (France)" data-src="/assets/press/le-monde_gray_200-24d8bca493f3a2b8e0150cb4ef38f00c9924ac5e7acfbdb8750076c949c70052.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Local (Europe)" title="The Local (Europe)" data-src="/assets/press/the-local_gray_200-7631164ea94edf8d065b3af6f64274416162d866ce1cea737c3ee25f28cdd098.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Forbes (USA)" title="Forbes (USA)" data-src="/assets/press/forbes_gray_200-deff6ef2c28ec5a275f404c5f59d56f4b687881eb39de52b79b5add3ca609fe2.png" class="lazyload" />
+</a>      </div>
+    </div>
+  </div>
+</footer>
+
+  
+  
+  
+  
+    <div class="cookies-eu js-cookies-eu row">
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+    <div class="cookies-eu-content-holder col-md-4 col-sm-6 col-xs-6 align-self-center">
+      Cookies &amp; analytics help us deliver our services.
+        <a href="/page/privacy-policy" class="cookies-eu-link" target="_blank"> Privacy policy </a>
+    </div>
+    <div class="cookies-eu-button-holder col-md-4 col-sm-6 col-xs-6">
+      <button class="cookies-eu-ok js-cookies-eu-ok btn btn-lg btn-primary" data-track-click-ga="true" data-event-category="Cookie Consent Button"> OK </button>
+    </div>
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+  </div>
+
+  
+  <script>
+  // Improved Ahoy view tracking with additional attributes
+  var additionalProperties = {};
+    additionalProperties["country_id"] = 42;
+    mainTrackableLink = "";
+    additionalProperties["university_id"] = 236;
+    mainTrackableLink = "https://www.study.eu/link/university/university-of-edinburgh/from-profile";
+  console.log("Ahoy: View with additional properties: "+JSON.stringify(additionalProperties));
+  ahoy.trackView(additionalProperties);
+</script>
+<a name="ga"></a> <!-- GA //-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42442116-3', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+  
+  
+  
+    
+  //############################################################
+  //########## 2018-07    NEW CUSTOM METHODS          ##########
+  
+  function getDataTrackAttributes(element) {
+    var data = {};
+    [].forEach.call(element.attributes, function(attr) {
+      if (/^data-trackvalue-/.test(attr.name)) {
+        // Relevant attributes would always be called "data-track-foobar"
+        var underscorename = attr.name.substr(16).replace(/-/g, "_");
+        data[underscorename] = parseInt(attr.value) || attr.value; // Provide as integer if possible, otherwise the original string
+      }
+    });
+    return data;
+  }
+  
+  // Set data-track-click and utm_source for all external links in the description content
+  var content_links = document.querySelectorAll('div.content-description a');
+  for (var i = 0; i < content_links.length; i++) {
+    if ( ((new URL(content_links[i].href, document.baseURI).href) == mainTrackableLink) || (content_links[i].host !== window.location.host) ) {
+      // Link is the main trackable link, or link is external --> add tracking and utm_source if not present
+      utm_url = new URL(content_links[i].href);
+      utm_url.searchParams.set("utm_source", "Study.eu"); // add (or overwrite existing) utm_source parameter
+      content_links[i].href = utm_url;
+      content_links[i].classList.add("external-tracked");
+      content_links[i].setAttribute("data-event-category", "Outbound Link");
+      content_links[i].setAttribute("data-event-label", content_links[i].href);
+      content_links[i].setAttribute("data-track-click", "true"); // Once data-track-click is set to true, initDataAttributes() below will add the id values
+    }
+  }
+  console.log("Modified "+content_links.length+" links in description content.");
+  
+  // Set data attributes for tracking of footer press links
+  footerPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < footerPressLinks.length; i++) {
+    footerPressLinks[i].setAttribute("data-track-click-ga", "true");
+    footerPressLinks[i].setAttribute("data-event-category", "Footer Press Link");
+    footerPressLinks[i].setAttribute("data-event-label", window.location.href);
+  }
+  
+  relatedLinks = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < relatedLinks.length; i++) {
+    relatedLinks[i].setAttribute("data-track-click-ga", "true");
+    relatedLinks[i].setAttribute("data-event-category", "Related Link");
+    relatedLinks[i].setAttribute("data-event-label", relatedLinks[i].getAttribute("href"));
+  }  
+  
+  function initDataAttributes() {
+    // Initialise element data attributes based on backend instance variables
+    elements = document.querySelectorAll('[data-track-click="true"],[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+        if (!elements[i].hasAttribute("data-trackvalue-country-id")) {
+          elements[i].setAttribute("data-trackvalue-country-id", "42");
+        }
+      
+        if (!elements[i].hasAttribute("data-trackvalue-university-id")) {
+          elements[i].setAttribute("data-trackvalue-university-id", "236");
+        }
+      
+    }
+    console.log("initDataAttributes()");
+  }
+  initDataAttributes();
+    
+  function trackClick(event, trackGA = true, trackAhoy = true) {
+    // When an element was clicked, track the click in GA and Ahoy
+    
+    strEventLabel = "";
+    if        ( event.currentTarget.hasAttribute("data-event-label") ) {
+      strEventLabel = event.currentTarget.getAttribute("data-event-label");
+    } else if ( event.currentTarget.hasAttribute("href") ) {
+      strEventLabel = event.currentTarget.href;
+    }
+    
+    ga('send', 'event', {
+      eventCategory:  event.currentTarget.getAttribute("data-event-category"),
+      eventAction:    'click',
+      eventLabel:     strEventLabel
+    });
+    
+    data = getDataTrackAttributes(event.currentTarget);
+    data["href"] = event.target.href;
+    data["page"] = window.location.pathname;
+    
+    /*ahoy.track (
+      event.currentTarget.getAttribute("data-event-category"),
+      {
+        country_id: 42, 
+        university_id: 236, 
+        
+        href: event.target.href,
+        page: window.location.pathname
+      }
+    );*/
+    
+    if (trackAhoy) {
+        data["medium"] = "Profile";
+      ahoy.track (
+        event.currentTarget.getAttribute("data-event-category")+" - click",
+        data
+      );
+    }
+    
+    console.log("trackClick(event, trackGA = "+trackGA+", trackAhoy = "+trackAhoy+"): " +
+      event.currentTarget.getAttribute("data-event-category") + ", " +
+      "{country_id: 42, university_id: 236, href: " + event.target.href + ", " +
+      "page:"+window.location.pathname+"});"
+    );
+  }
+  
+  
+  function trackClicksGA() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click-ga="true"]:not([data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event, true, false);
+      });
+    }
+    console.log("trackClicksGA(): "+elements.length+" elements");
+  }
+  trackClicksGA();
+  
+  function trackClicks() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event);
+      });
+    }
+    console.log("trackClicks(): "+elements.length+" elements");
+  }
+  trackClicks();
+  
+  function trackRenderingsGA() {
+    // Track renderings only in GA
+    // This would be for large-volume data that is interesting, but not mission-critical
+
+    elements = document.querySelectorAll('[data-track-rendering-ga="true"]:not([data-track-rendering="true"])');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+    }
+    
+    console.log("trackRenderingsGA(): "+elements.length+" elements");
+  }
+  trackRenderingsGA();
+  
+  function trackRenderings() {
+    // Track renderings in GA *and* Ahoy
+    elements = document.querySelectorAll('[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+      
+      data = getDataTrackAttributes(elements[i]);
+      data["href"] = elements[i].getAttribute("href");
+      data["page"] = window.location.pathname;
+      
+      ahoy.track (
+        elements[i].getAttribute("data-event-category")+" - rendered",
+        data
+      );
+    }
+    
+    console.log("trackRenderings(): "+elements.length+" elements");
+  }
+  trackRenderings();
+  
+  
+  
+    ga('send', 'event', {
+      eventCategory:  'Country Content',
+      eventAction:    'rendered',
+      eventLabel:     'United Kingdom',
+      nonInteraction: true
+    });
+
+  
+  //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  //############################################################
+
+  
+  
+  /*
+  anchorsExternalTracked = document.getElementsByClassName("external-tracked");
+  for (var i = 0 ; i < anchorsExternalTracked.length; i++) {
+    anchorsExternalTracked[i].addEventListener("click", function(event){
+      //event.preventDefault();
+      
+      handleOutboundLinkClicks(event);
+      
+      //document.location = this.href;
+      //var win = window.open(this.href, '_blank');
+      //win.focus();
+      
+    });
+    
+    // Trigger event that shows in GA that the link was rendered
+    ga('send', 'event', {
+      eventCategory: 'Outbound Link',
+      eventAction: 'rendered',
+      eventLabel: anchorsExternalTracked[i].href
+    });   
+  }
+  
+  anchorsRelatedTracked = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < anchorsRelatedTracked.length; i++) {
+    anchorsRelatedTracked[i].addEventListener("click", function(event){
+      handleRelatedLinkClicks(event);
+    });
+  }
+  
+  anchorsFeaturedUniversityTracked = document.getElementsByClassName("featured-university-tracked");
+  for (var i = 0 ; i < anchorsFeaturedUniversityTracked.length; i++) {
+    anchorsFeaturedUniversityTracked[i].addEventListener("click", function(event){
+      handleFeaturedUniversityLinkClicks(event);
+    });
+  }  
+  
+  
+  anchorsFooterPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < anchorsFooterPressLinks.length; i++) {
+    anchorsFooterPressLinks[i].addEventListener("click", function(event){
+      handleFooterPressLinkClicks(event);
+    });
+  }
+  
+  
+  anchorsCustomTracked = document.querySelectorAll('[data-ga-custom-event-label]');
+  for (var i = 0 ; i < anchorsCustomTracked.length; i++) {
+    anchorsCustomTracked[i].addEventListener("click", function(event){
+      handleCustomTracked(event);
+    });
+  }
+  */
+  
+  ////////////////////////////////////////////////////////////////////////////////
+
+  
+  
+</script>
+
+</body>
+</html>

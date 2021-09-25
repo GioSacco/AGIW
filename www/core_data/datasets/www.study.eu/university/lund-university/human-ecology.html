@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"cb4ef145dd","applicationID":"55169925","transactionName":"Jg5fTRMJXFtQQBpHQwoGQ1gMC1VEGkFdWEY=","queueTime":3,"applicationTime":276,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"cb4ef145dd",applicationID:"55169925"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+  <title>Study Human Ecology at Lund University, Sweden | Study.EU</title>
+   
+  <link rel="stylesheet" media="all" href="/assets/application-788bf60a726cbc46bce208400674992d5b5b0e3a0892577e97f4ee25b84407b9.css" />
+  <script src="/assets/application-6d00a9f66b3f7e1a7db9282e671658ce415a54e8512569e7b539a89dc0fb74a5.js"></script>
+  
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="8IzzHJpIeSvb7GpnKXDO5nAY8DXk1qPYVvK16b/QMlEoOUxfyhgODx2ThErwg3XQVB3a25OKCcP0NqLpMoojBg==" />
+  
+  
+    
+  
+  <meta name="robots" content="noindex" />
+  
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-29b05ed0a02376d0d37f92df42a0d954d97274430a0f6264e4d19745408f15c8.ico" />
+  
+  <meta name="description" content="Learn more about the MSc Human Ecology at Lund University in Sweden." />
+  
+  <meta name="keywords" content="study in europe, universities, europe, master, bachelor, masters, bachelors, msc, bsc, llb, llm, phd, doctorate, university, study abroad" />
+  <meta name="google-site-verification" content="9sv6t--Xh8SiHr58R3chJHOJVHixvhn6jBK8Qzc9Z9U" />
+  <meta name="msvalidate.01" content="5E3AE5307267C1BED099C27EB59E264E" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  <link rel="canonical" href="https://www.study.eu/university/lund-university" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@wwwStudyEU" />
+  <meta name="twitter:title" content="Study Human Ecology at Lund University" />
+  
+  <meta property="og:title"  content="Study Human Ecology at Lund University" />
+  
+  
+  
+  
+  
+      <meta property="og:type" content="article" />
+      <meta property="article:publisher" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+      <meta property="article:author" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+  
+  <meta property="og:description" content="Learn more about the MSc Human Ecology at Lund University in Sweden." />
+  
+  
+</head>
+<body>
+
+  <nav id="navbar" class="navbar navbar-static-top container container-fluid">
+  
+  <div class="container">
+    <div class="row" style="position: relative;">
+        <div class="col-md-3 col-xs-9 navbar-header">
+          <a class="navbar-brand" href="/" title="Study.EU">
+            <img alt="Study.EU" class="homepage-logo" src="/assets/study-eu_logo-ee9afe0c98ee9ac266f676d5dcb967023df14f95661b91c7812bef38a3b0c03a.png" />
+          </a>
+        </div>
+        <div class="col-md-8 bottom-align-text">
+            <strong class="navbar-claim">Your gateway to universities in Europe</strong>
+        </div>
+        <div class="col-md-1 col-xs-3 navbar-search-link-container">
+          <div class="navbar-search-link">
+          </div>
+        </div>
+    </div>
+</div>
+  
+</nav>
+
+  <div class="container" id="div-main-container" role="main">
+
+  </div>
+  
+  
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "EducationalOccupationalProgram",
+  "name": "Human Ecology",
+  "educationalCredentialAwarded": "Master of Science",
+  "description": "MSc Human Ecology at Lund University",
+  "url": "https://www.study.eu/university/human-ecology/human-ecology",
+  "timeToComplete": "P24M",
+  
+  "provider": {
+    "@type": "CollegeOrUniversity",
+    "name": "Lund University",
+    "url": "https://www.study.eu/university/lund-university",
+    "location": "Lund, Sweden"
+    }
+  },
+  "additionalProperty": [
+
+  ]
+}
+</script> 
+
+
+<div class="header-image">
+  <div class="container">
+    <div class="header-image-cta">
+      <h1>Study at Lund University</h1>
+      <h2>Lund, Sweden</h2>
+    </div>
+  </div>
+    <img alt="Study in Europe" title="Study in Europe" src="/assets/fallback/study-in-europe_1920-2cea268aaca4f8cd71c109aa2d67e83e285f04dd3c85c9a21acae013fd6f2259.jpg" />
+    <div class="image-credits">
+      <span class="image-credits-span">
+        <a href="https://www.flickr.com/photos/glasgowamateur/7892308660" target="_blank" rel="nofollow">Europe</a> by Charles Clegg, <a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="nofollow">CC BY-SA 2.0</a>, modified
+      </span>
+    </div>  
+  
+</div>
+
+<div class="div-breadcrumbs">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="/">Study.eu</a></li><i class="fa fa-angle-right breadcrumb-separator" aria-hidden="true"></i><li><a href="/country/sweden">Sweden</a></li><i class="fa fa-angle-right breadcrumb-separator" aria-hidden="true"></i><li><a href="/university/lund-university">Lund University</a></li><i class="fa fa-angle-right breadcrumb-separator" aria-hidden="true"></i><li>Human Ecology</li>
+    </ol>  
+  </div>
+</div> 
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://www.study.eu/",
+        "name": "Study.eu"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://www.study.eu/country/sweden",
+        "name": "Sweden"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "https://www.study.eu/university/lund-university",
+        "name": "Lund University"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@id": "https://www.study.eu/university/lund-university/human-ecology",
+        "name": "Human Ecology"
+      }
+    }
+  ]
+}
+</script>
+
+<div class="container" style="position: relative;">
+
+
+  <div class="row">
+  
+    <div class="content col-md-8">
+
+      <h1>Human Ecology</h1>
+      <h4>Master of Science at Lund University</h4>
+      
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <table class="table table-striped table-bordered">
+          
+            <tr>
+              <th colspan="2">
+                Programme details
+              </th>
+            </tr>
+          
+              <tr>
+                <td>
+                  Degree:
+                </td>
+                <td>
+                  Master of Science (MSc)
+                </td>
+              </tr>
+            
+              <tr>
+                <td>
+                  Discipline:
+                </td>
+                <td>
+                    <a title="Find more Masters in Human Medicine" data-track-click-ga="true" data-event-category="Discipline-to-Search Link" data-event-label="/university/lund-university/human-ecology" href="/search?degreelevel=master&amp;discipline=39&amp;sort=recommended">Human Medicine</a>
+                    <br />
+                </td>
+              </tr>
+            
+              <tr>
+                <td>
+                  Duration:
+                </td>
+                <td>
+                  24 months
+                </td>
+              </tr>
+            
+              <tr>
+                <td>
+                  ECTS points:
+                </td>
+                <td>
+                  120
+                </td>
+              </tr>
+            
+              <tr>
+                <td>
+                  Study modes:
+                </td>
+                <td>
+                  full-time
+                  
+                </td>
+              </tr>
+            
+            
+            
+            
+            
+
+            
+          
+            
+
+          </table>
+        
+        </div>
+        
+        
+      
+      </div>
+      
+      
+        <p>
+          <a id="btn-focus-inforequest-form" class="btn btn-primary" style="width: 100%;">
+              Request information about study programmes in Sweden
+            &nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </p>
+        
+        <script>
+          $("#btn-focus-inforequest-form").click(function() {
+            $("#new_student_request input").focus();
+            $("#new_student_request input:text").first().focus()
+            $("#new_student_request")[0].scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          });
+        </script>
+  
+      
+      <div class="similarprogramme" data-ga-similarprogramme-url="https://www.study.eu/university/university-of-helsinki/translational-medicine" data-track-rendering-ga="true" data-event-category="Similar Programme Banner" data-event-label="https://www.study.eu/university/university-of-helsinki/translational-medicine">
+      
+        <em>Other students were also interested in this programme:</em>
+        
+        <div class="panel panel-default" style="background-color: #eee;">
+          <div class="panel-body">
+            <div class="row">
+            
+              <div class="col-md-2 col-sm-2 col-xs-4 text-center">
+                <a class="similarprogramme-link" data-track-click-ga="true" data-event-category="Similar Programme Banner" data-event-label="https://www.study.eu/university/university-of-helsinki/translational-medicine" href="/university/university-of-helsinki/translational-medicine">
+                    <img class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_university-of-helsinki-logo.png" />
+</a>              </div>
+              <div class="col-md-6 col-sm-6 col-xs-8">
+                <a title="Study Translational Medicine at University of Helsinki" class="similarprogramme-link" data-track-click-ga="true" data-event-category="Similar Programme Banner" data-event-label="https://www.study.eu/university/university-of-helsinki/translational-medicine" href="/university/university-of-helsinki/translational-medicine">
+                  Master of Science<br />
+                  <strong>Translational Medicine</strong><br />
+                  University of Helsinki (Finland)
+</a>              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12" style="min-height: 100% !important; vertical-align:middle !important;">
+                <p>
+                  <a class="btn btn-primary search-result-button similarprogramme-link" data-track-click-ga="true" data-event-category="Similar Programme Banner" data-event-label="https://www.study.eu/university/university-of-helsinki/translational-medicine" href="/university/university-of-helsinki/translational-medicine">Learn more now</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      
+  
+  
+        <hr />
+        <h3>Description:</h3>
+        
+        <div class="content-description">
+          <blockquote cite="http://www.lunduniversity.lu.se/about/about-lund-university">
+<p>Lund University seeks to be a world-class university that works to understand, explain and improve our world and the human condition.</p>
+<p>The University is ranked as one of the top 100 in the world. We tackle complex problems and global challenges and work to ensure that knowledge and innovations benefit society. We provide education and research in engineering, science, law, social sciences, economics and management, medicine, humanities, theology, fine art, music and drama.</p>
+<footer>lu.se</footer></blockquote>
+        </div>
+      
+
+      
+      
+      
+      
+      
+      
+        <div>
+          <a href="/search?degreelevel=master&amp;disciplines=39&amp;sort=recommended" data-track-click-ga="true" data-event-category="Find-other-Programme Button" data-event-label="/university/lund-university/human-ecology">
+            <button class="btn btn-lg btn-success" id="programme-search-form-submit" style="white-space: normal !important;">
+              Find more Masters in Human Medicine
+            </button>
+          </a>
+        </div>
+      
+    
+      
+      <div class="row">
+        
+
+        
+      </div>
+      
+ 
+      
+    
+    
+    </div>
+
+    <div class="sidebar col-sm-12 col-md-4">
+    
+        <div class="col-md-12 col-sm-12">
+          
+<br/><br/>
+<div id="sidebar-affix-container"><!--  data-spy="affix" data-offset-top="760" data-offset-bottom="780" data-offset-bottom="200"> -->
+<form class="new_student_request" id="new_student_request" action="/student_requests" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="fQAGE3ThUD50BgSjPqB0H1IQwEaJjFvMq33SURKglmh71uvlURfcZGQd0r8rRGUsRHjgIyVJhnkNa6CosXw2/A==" />
+  <input type="hidden" name="student_request[programme_id]" value="7586"/>
+  <div class="panel panel-success">
+    <div class="panel-heading">
+            <h4>Learn more about Masters in Human Medicine</h4>
+    </div>
+
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <p>You are interested in study programmes like this one? Fill in your details to receive information about studying Human Medicine in Sweden or elsewhere in Europe:</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <div class="form-group has-feedback has-feedback-right">
+            <label class="control-label request-form-label">First name</label>
+            <input class="form-control" placeholder="First name" type="text" name="student_request[first_name]" id="student_request_first_name" />
+            <i class="glyphicon form-control-feedback"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <div class="form-group has-feedback has-feedback-right">
+            <label class="control-label request-form-label">Last name</label>
+            <input class="form-control" placeholder="Last name" type="text" name="student_request[last_name]" id="student_request_last_name" />
+            <i class="glyphicon form-control-feedback"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <div class="form-group has-feedback has-feedback-right">
+            <label class="control-label request-form-label">Nationality<span id="nationality-double-check-label" style="display: none;"> &ndash; please confirm:</span></label>
+            <select name="student_request[nationality]" id="student_request_nationality">
+              <option></option>
+</select>            <i class="glyphicon form-control-feedback"></i>
+            <div id="nationality-double-check-warning" style="display: none;">Are you a national of this country? If yes, simply submit the form again to confirm.</div>
+          </div>
+        </div>
+      </div>
+
+      <!--
+                <div class="row">
+                  <div class="col-md-12 col-sm-12">
+                    <div class="form-group has-feedback has-feedback-right">
+                      <label class="control-label request-form-label">Campus preference</label>
+                      <select id="student_request_campus_preference" class="form-control">
+                        <option></option>
+                        <option>No preference</option>
+                      </select>
+                      <i class="glyphicon form-control-feedback"></i>
+                    </div>
+                  </div>
+                </div>                
+//-->
+
+
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <div class="form-group has-feedback has-feedback-right">
+            <label class="control-label request-form-label">Year of birth</label>
+            <input class="form-control" placeholder="Year" maxlength="4" size="4" type="text" name="student_request[year_of_birth]" id="student_request_year_of_birth" />
+            <i class="glyphicon form-control-feedback"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <div class="form-group has-feedback has-feedback-right">
+            <label class="control-label request-form-label">E-mail</label>
+            <input class="form-control" placeholder="E-mail" type="email" name="student_request[email]" id="student_request_email" />
+            <i class="glyphicon form-control-feedback"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <div class="form-group has-feedback has-feedback-right">
+            <label class="control-label request-form-label">Phone number <span class="request-form-label-tiny">including country code</span></label>
+            <input class="form-control" placeholder="Phone number (optional)" type="tel" name="student_request[phone]" id="student_request_phone" />
+            <i class="glyphicon form-control-feedback"></i>
+          </div>
+        </div>
+      </div>
+      
+
+      <hr class="hr-student-request" />
+
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <div class="checkbox checkbox-success">
+            <input name="student_request[optin_ppolicy_given]" type="hidden" value="0" /><input class="form-check-input" type="checkbox" value="1" name="student_request[optin_ppolicy_given]" id="student_request_optin_ppolicy_given" />
+            
+            <label for="student_request_optin_ppolicy_given" class="request-form-privacy">Tick this box to agree to our&nbsp;<a href="https://www.study.eu/page/privacy-policy" target="_blank">privacy&nbsp;policy</a>. We respect and protect your personal data.</label>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-12 col-sm-12" id="div-student-request-submit">
+          <div class="form-group">
+            <input type="button" id="student-request-submit" class="btn btn-primary btn-success" value="Yes, keep me informed!" />
+            <!--
+            <button type="submit" id="student-request-submit" class="btn btn-primary btn-success">
+                Yes, keep me informed!
+            </button>-->
+          </div>
+          <div class="form-error-message" style="display: none;">Please double-check the form inputs and then submit again.</div>
+            
+        </div>
+
+        <div class="col-md-12 col-sm-12" id="div-student-request-submitting">
+          <p>
+            <img alt="Working..." src="/assets/ajax-loader-white-0eddaab3b8cb0b15d81d62e5ae5960329c3e576ea78dc321b20734ab20271847.gif" />&nbsp;Submitting request...
+          </p>
+        </div>
+
+        <div class="col-md-12 col-sm-12" id="div-student-request-success">
+          <p>
+            <i class="fa fa-check" aria-hidden="true"></i> Your request has been submitted!
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</form></div>
+
+
+<script>
+
+  var affixTop = -1;
+  var affixBottom = -1;
+  
+  var windowHeightSufficient = false;
+  var sidebarSameLevel = false;
+  var contentLongerThanSidebar = false;
+  
+  function checkAffixConditions() {
+    windowHeightSufficient = ($("#sidebar-affix-container").height() + 20) < $(window).height();
+    sidebarSameLevel = $("div.sidebar").offset().top == $("div.content").offset().top;
+    contentLongerThanSidebar = $("div.sidebar").height() < $("div.content").height();
+    return (windowHeightSufficient && sidebarSameLevel && contentLongerThanSidebar);
+  }
+  
+  function resetAffixOffets() {
+    console.log("resetAffixOffets()");
+    
+    affixTop = $("#sidebar-affix-container").offset().top - 20;
+      
+    affixBottom = $(document).height() - ( $("div.content").offset().top + $("div.content").height() ) + 20;
+    
+    console.log("affixTop: "+affixTop+"\naffixBottom: "+affixBottom);
+  }
+    
+  function initAffix() {
+    console.log("initAffix()");
+    
+    $('#sidebar-affix-container').affix({
+      offset: {
+        top: affixTop,
+        bottom: affixBottom,
+      }
+    })
+    
+    $("#sidebar-affix-container").css("max-width", ""+$("#sidebar-affix-container").parent().width()+"px"); // The current width in pixels depends on the container, make sure it becomes the maximum
+  }
+  
+  var resizeTimer;
+  $(window).on("resize", function() {
+    // Check and potentially reset affix. This is wrapped in a timeout function to make sure the window-resizing has finished
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+      console.log("within the timeout");
+      debugger;
+      if (checkAffixConditions()) {
+        console.log("yay");
+        resetAffixOffets();
+        //       if (!$("#sidebar-affix-container").data("bs.affix") == null) {
+        //         $("#sidebar-affix-container").data("bs.affix").options.offset.top = affixTop;
+        //       } else {
+        //         initAffix();
+        //       }
+        initAffix();
+      } else {
+        $(window).off(".affix");
+        $("#sidebar-affix-container").removeClass("affix affix-top affix-bottom").removeData("bs.affix");        
+        $("#sidebar-affix-container").css("max-width", ""+$("#sidebar-affix-container").parent().width()+"px"); // The current width in pixels depends on the container, make sure it becomes the maximum
+        //$("#sidebar-affix-container").data("bs.affix").options.offset.top = 1000000000;
+      }   
+    }, 250);
+  });
+  
+</script>
+
+
+<script>
+
+  var world_countries_phone = {"Afghanistan":93,"Aland Islands":"358 18","Albania":355,"Algeria":213,"American Samoa":"1 684","Andorra":376,"Angola":244,"Anguilla":"1 264","Antigua and Barbuda":"1 268","Argentina":54,"Armenia":374,"Aruba":297,"Australia":61,"Austria":43,"Azerbaijan":994,"Bahamas":"1 242","Bahrain":973,"Bangladesh":880,"Barbados":"1 246","Belarus":375,"Belgium":32,"Belize":501,"Benin":229,"Bermuda":"1 441","Bhutan":975,"Bolivia":591,"Bonaire, Saint Eustatius and Saba":599,"Bosnia and Herzegovina":387,"Botswana":267,"Bouvet Island":47,"Brazil":55,"British Indian Ocean Territory":246,"Brunei Darussalam":673,"Bulgaria":359,"Burkina Faso":226,"Burundi":257,"Cambodia":855,"Cameroon":237,"Canada":1,"Cape Verde":238,"Cayman Islands":"1 345","Central African Republic":236,"Chad":235,"Chile":56,"China":86,"Christmas Island":"61 89164","Cocos (Keeling) Islands":"61 89162","Colombia":57,"Comoros":269,"Congo":242,"Congo, The Democratic Republic of the":243,"Cook Islands":682,"Costa Rica":506,"Cote d'Ivoire":225,"Croatia":385,"Cuba":53,"Curacao":"599 9","Cyprus":357,"Czech Republic":420,"Denmark":45,"Djibouti":253,"Dominica":"1 767","Dominican Republic":1,"Ecuador":593,"Egypt":20,"El Salvador":503,"Equatorial Guinea":240,"Eritrea":291,"Estonia":372,"Ethiopia":251,"Falkland Islands (Malvinas)":500,"Faroe Islands":298,"Fiji":679,"Finland":358,"France":33,"French Guiana":594,"French Polynesia":689,"Gabon":241,"Gambia":220,"Georgia":995,"Germany":49,"Ghana":233,"Gibraltar":350,"Greece":30,"Greenland":299,"Grenada":"1 473","Guadeloupe":590,"Guam":"1 671","Guatemala":502,"Guernsey":44,"Guinea":224,"Guinea-Bissau":245,"Guyana":592,"Haiti":509,"Holy See (Vatican City State)":"39 06 698","Honduras":504,"Hong Kong":852,"Hungary":36,"Iceland":354,"India":91,"Indonesia":62,"Iran, Islamic Republic of":98,"Iraq":964,"Ireland":353,"Isle of Man":44,"Israel":972,"Italy":39,"Jamaica":"1 876","Japan":81,"Jersey":"44 1534","Jordan":962,"Kazakhstan":7,"Kenya":254,"Kiribati":686,"Korea, Democratic People's Republic of":850,"Korea, Republic of":82,"Kuwait":965,"Kyrgyzstan":996,"Lao People's Democratic Republic":856,"Latvia":371,"Lebanon":961,"Lesotho":266,"Liberia":231,"Libyan Arab Jamahiriya":218,"Liechtenstein":423,"Lithuania":370,"Luxembourg":352,"Macao":853,"Madagascar":261,"Malawi":265,"Malaysia":60,"Maldives":960,"Mali":223,"Malta":356,"Marshall Islands":692,"Martinique":596,"Mauritania":222,"Mauritius":230,"Mayotte":262,"Mexico":52,"Micronesia, Federated States of":691,"Moldova, Republic of":373,"Monaco":377,"Mongolia":976,"Montenegro":382,"Montserrat":"1 664","Morocco":212,"Mozambique":258,"Myanmar":95,"Namibia":264,"Nauru":674,"Nepal":977,"Netherlands":31,"New Caledonia":687,"New Zealand":64,"Nicaragua":505,"Niger":227,"Nigeria":234,"Niue":683,"Norfolk Island":"672 3","North Macedonia":389,"Northern Mariana Islands":"1 670","Norway":47,"Oman":968,"Pakistan":92,"Palau":680,"Palestinian Territory":970,"Panama":507,"Papua New Guinea":675,"Paraguay":595,"Peru":51,"Philippines":63,"Pitcairn":64,"Poland":48,"Portugal":351,"Puerto Rico":1,"Qatar":974,"Reunion":262,"Romania":40,"Russian Federation":7,"Rwanda":250,"Saint Bartelemey":590,"Saint Helena":290,"Saint Kitts and Nevis":"1 869","Saint Lucia":"1 758","Saint Martin":590,"Saint Pierre and Miquelon":508,"Saint Vincent and the Grenadines":"1 784","Samoa":685,"San Marino":378,"Sao Tome and Principe":239,"Saudi Arabia":966,"Senegal":221,"Serbia":381,"Seychelles":248,"Sierra Leone":232,"Singapore":65,"Sint Maarten":"1 721","Slovakia":421,"Slovenia":386,"Solomon Islands":677,"Somalia":252,"South Africa":27,"South Georgia":500,"South Sudan":211,"Spain":34,"Sri Lanka":94,"Sudan":249,"Suriname":597,"Swaziland":268,"Sweden":46,"Switzerland":41,"Syrian Arab Republic":963,"Taiwan":886,"Tajikistan":992,"Tanzania, United Republic of":255,"Thailand":66,"Timor-Leste":670,"Togo":228,"Tokelau":690,"Tonga":676,"Trinidad and Tobago":"1 868","Tunisia":216,"Turkey":90,"Turkmenistan":993,"Turks and Caicos Islands":"1 649","Tuvalu":688,"Uganda":256,"Ukraine":380,"United Arab Emirates (UAE)":971,"United Kingdom (UK)":44,"United States (USA)":1,"Uruguay":598,"Uzbekistan":998,"Vanuatu":678,"Venezuela":58,"Vietnam":84,"Virgin Islands, British":"1 284","Virgin Islands, U.S.":"1 340","Wallis and Futuna":681,"Western Sahara":212,"Yemen":967,"Zambia":260,"Zimbabwe":263};
+  var world_countries_phone_names = $.map(world_countries_phone, function (obj, key) { return key; });
+  var world_countries_phone_codes = $.map(world_countries_phone, function (obj, key) { return obj; });
+
+  function phone_has_country_code() {
+    const regex  = /^(\+|00)[1-9]+/ ; // A leading "+" or "00" followed by at least one number from 1 to 9 (i.e "+0" or "000" would be invalid
+    return regex.test($("#student_request_phone").val());
+  }
+  
+  function country_code_mismatches_nationality() {
+    // Return true if provided country code does not fit with provided nationality
+    // Check for mismatch (rather than match) because it's easier to work with "null" when not applicable (i.e. no phone provided or no prefix indicating country code)
+    if ( phone_has_country_code() ) {
+      nationality_country_code = world_countries_phone[$("#student_request_nationality").val()].toString().replace(/[^0-9]/, '');
+      console.log("Country code of provided nationality: " + nationality_country_code);
+      const split_prefix   = /^(\+|00)(.*)/ ;
+      phone_without_prefix = $("#student_request_phone").val().match(split_prefix)[2].replace(/[^0-9]/, '');
+      console.log("Phone number without prefix:          " + phone_without_prefix);
+      if (phone_without_prefix.startsWith(nationality_country_code)) {
+        return false;
+      } else {
+        return true;
+      }
+    } else {
+      return null;
+    }
+  }
+  
+  function toggleNationalityWarning(toggle) {
+    $( "#student_request_nationality" ).parent().toggleClass("has-success", !toggle);
+    $( "#student_request_nationality" ).parent().toggleClass("has-warning", toggle);
+    $( "#student_request_nationality" ).toggleClass("glyphicon-flag", toggle);
+    $( ".select2-selection__rendered" ).toggleClass("nationality-has-warning", toggle);
+    if (toggle) {
+      $("#nationality-double-check-label,#nationality-double-check-warning").show();
+    } else {
+      $("#nationality-double-check-label,#nationality-double-check-warning").hide();
+    }
+  }
+
+  var nationality_was_adjusted = false;
+  var user_was_asked_about_nationality = false;
+  
+  // var world_countries =  ;
+
+  
+  $(function () {
+    $("#student_request_nationality").select2({
+      theme: "bootstrap",
+      placeholder: "Nationality",
+      allowClear: false,
+      data: world_countries_phone_names,
+      value: "",
+      id: "noid",
+    });
+    
+    $("#student_request_nationality").css("width","100% !important");
+
+    $("#student_request_campus_preference").select2({
+      theme: "bootstrap",
+      placeholder: "Campus preference",
+      allowClear: false,
+      dropdownAutoWidth: true,
+    });
+
+    $("#student_request_nationality").val("").trigger('change');
+    
+    $("#student_request_nationality").change(function() {
+      nationality_was_adjusted = true;
+      toggleNationalityWarning(false);
+    });
+    
+  });
+
+  var init_student_request;
+
+  init_student_request = function () {
+    //window.alert("init_student_request");
+
+    $('#new_student_request').on('ajax:beforeSend', function (event, xhr, settings) {
+      //show_spinner();
+      //window.alert("ajax:beforeSend");
+      //$('#student-request-submit').text("Sending request...");
+      $("#div-student-request-submit").hide();
+      $("#div-student-request-submitting").show();
+      $('#div-student-request-success').hide(); // third one is redundant, but this ensures only one is visible
+    });
+
+    $('#new_student_request').on('ajax:success', function (event, data, status, xhr) {
+      //$('#programme-search').replaceWith(data);
+      //window.alert("ajax:success");
+
+      //hide_spinner();
+
+      //init_student_request();
+
+    });
+
+    $('#new_student_request').on('ajax:complete', function (event, xhr, status) {
+      // TODO this section is never called; why?
+      //window.alert("ajax:complete");
+
+      //hide_spinner();
+    });
+
+    $('#new_student_request').on('ajax:error', function (event, xhr, status, error) {
+      //window.alert("ajax:error");
+      //hide_spinner();
+
+    });
+
+  }
+
+  $(document).ready(function () {
+    
+    init_student_request();
+
+    if (false) {
+      $("[id^=student_request_]").parent().toggleClass("has-success", true);
+      $("input[id^=student_request_]").next().toggleClass("glyphicon-ok", true);
+      $("input[id^=student_request_]").attr("aria-describedby", "inputSuccess1");
+      $("[id^=student_request_]").parent().toggleClass("has-error", false);
+      $("input[id^=student_request_]").next().toggleClass("glyphicon-remove", false);
+      $('.form-control').prop('readonly', true);
+      $('input:checkbox.form-control').prop('disabled', 'disabled');
+      $("#student_request_nationality").prop('disabled', true);
+      $('#student-request-submit').prop('disabled', true);
+      $('#div-student-request-submit').hide();
+      $('#div-student-request-success').show();
+    }
+    
+
+    if(checkAffixConditions()) {
+      resetAffixOffets();
+      initAffix();
+    }
+  })
+  
+  
+  $("#student-request-submit").click(function() {
+    debugger;
+    console.log( "#student-request-submit was clicked" );
+    click_to_submit();
+  });
+  
+  function click_to_submit() {
+    console.log("click_to_submit()");
+    console.log("nationality_was_adjusted:              "+nationality_was_adjusted             +"\n"+
+                "user_was_asked_about_nationality:      "+user_was_asked_about_nationality     +"\n"+
+                "phone_has_country_code():              "+phone_has_country_code()             +"\n"+
+                "country_code_mismatches_nationality(): "+country_code_mismatches_nationality()
+    );
+    if ( !nationality_was_adjusted && !user_was_asked_about_nationality && phone_has_country_code() && country_code_mismatches_nationality() ) {
+      // Ask user to double-check provided nationality
+      toggleNationalityWarning(true);
+      $( "#student_request_nationality" ).focus();
+      $("#new_student_request")[0].scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+
+      user_was_asked_about_nationality = true;
+      document.cookie = "user_was_asked_about_nationality=true";
+    } else {
+      toggleNationalityWarning(false);
+      $("#new_student_request").submit();
+      //$("#student-request-submit").click();
+    }
+    return false;
+  }
+
+</script>
+        </div>
+
+    </div>  
+    
+
+    
+  </div>
+  
+</div>
+
+
+
+
+    
+
+  
+  
+  <footer class="top-footer">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Merriweather Sans:300,400i,700']
+      }
+    });
+  </script> 
+
+  
+  <div class="container">
+  <div class="row">
+    
+    <div class="text-left col-md-8 col-xs-6" style="display: inline-block;float: left;">
+      <a href="/" title="Study.EU" data-track-click="true" data-event-category="Footer Logo"><img class="footer-logo" src="/assets/study-eu_logo_wb_200x66-8722da28bad82460d8951c34fe8b5ba8e11794b2fd21e83ee8c5fe54323ea73b.png" /></a><br />
+      <p>
+        Copyright &copy; 2021 <a title="Study.EU" href="/">Study.EU</a>
+      </p>
+      <p>
+        
+      </p>
+      <a class="social-link" href="https://www.facebook.com/StudyEU-168756646881605/" target="_blank" title="Like Study.EU on Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://twitter.com/wwwStudyEU" target="_blank" title="Follow Study.EU on Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://www.linkedin.com/company/study.eu/" target="_blank" title="Follow Study.EU on Linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    </div>
+    <div class="text-right col-md-4 col-xs-6">
+      <br /><br />
+          <a rel="nofollow" href="/page/imprint">Imprint</a>
+        &middot;
+          <a rel="nofollow" href="/page/about-study-eu">About Study.eu</a>
+        &middot;
+          <a rel="nofollow" href="/page/privacy-policy">Privacy Policy</a>
+        &middot;
+      <a href="/jobs">Jobs</a>
+      
+      <br />
+      
+      <a href="/press">Press</a>
+      
+      <!-- &middot; -->
+      
+        <!-- &mdash; //-->
+      
+      <br /><br />
+      <a href="/advertise-on-study-eu">Advertise on Study.eu</a>
+    </div>
+  </div>
+  </div>
+</footer>
+
+<a href="javascript:" id="scroll-to-top" title="Scroll back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+<script>
+  $(window).scroll(function() {
+      if ($(this).scrollTop() >= 100) {        // page is scrolled more than 100px
+          $('#scroll-to-top').fadeIn(500);
+      } else {
+          $('#scroll-to-top').fadeOut(500);
+      }
+  });
+  $('#scroll-to-top').click(function() {      // arrow is clicked
+      $('body,html').animate({
+          scrollTop : 0                       // scroll to top
+      }, 500);
+  });
+</script>
+
+
+  
+  <footer class="footer-countries">
+
+
+  <div class="container">
+    <div class="row">
+    
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <h5>Study in Europe:</h5>
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Austria" href="/country/austria">Austria</a><br />
+                <a title="Study in Belgium" href="/country/belgium">Belgium</a><br />
+                <a title="Study in the Czech Republic" href="/country/czech-republic">Czech Republic</a><br />
+                <a title="Study in Denmark" href="/country/denmark">Denmark</a><br />
+                <a title="Study in Estonia" href="/country/estonia">Estonia</a><br />
+                <a title="Study in the Faroe Islands" href="/country/faroe-islands">Faroe Islands</a><br />
+                <a title="Study in Finland" href="/country/finland">Finland</a><br />
+                <a title="Study in France" href="/country/france">France</a><br />
+                <a title="Study in Germany" href="/country/germany">Germany</a><br />
+                <a title="Study in Greece" href="/country/greece">Greece</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Hungary" href="/country/hungary">Hungary</a><br />
+                <a title="Study in Iceland" href="/country/iceland">Iceland</a><br />
+                <a title="Study in Ireland" href="/country/ireland">Ireland</a><br />
+                <a title="Study in Italy" href="/country/italy">Italy</a><br />
+                <a title="Study in Latvia" href="/country/latvia">Latvia</a><br />
+                <a title="Study in Liechtenstein" href="/country/liechtenstein">Liechtenstein</a><br />
+                <a title="Study in Lithuania" href="/country/lithuania">Lithuania</a><br />
+                <a title="Study in Malta" href="/country/malta">Malta</a><br />
+                <a title="Study in the Netherlands" href="/country/netherlands">Netherlands</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Norway" href="/country/norway">Norway</a><br />
+                <a title="Study in Poland" href="/country/poland">Poland</a><br />
+                <a title="Study in Portugal" href="/country/portugal">Portugal</a><br />
+                <a title="Study in Romania" href="/country/romania">Romania</a><br />
+                <a title="Study in Russia" href="/country/russia">Russia</a><br />
+                <a title="Study in Spain" href="/country/spain">Spain</a><br />
+                <a title="Study in Sweden" href="/country/sweden">Sweden</a><br />
+                <a title="Study in Switzerland" href="/country/switzerland">Switzerland</a><br />
+                <a title="Study in the United Kingdom" href="/country/united-kingdom">United Kingdom</a><br />
+            </div>
+          </div>
+        </div>
+    
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Recent articles:</h5>
+          </div>
+          <div class="col-md-8">
+              <p><a href="/article/looking-for-a-uk-degree-in-germany-study-in-leipzig">Looking for a UK degree in Germany? Study in Leipzig!</a></p>
+              <p><a href="/article/study-ecology">Study Ecology: All you need to know</a></p>
+              <p><a href="/article/what-is-the-ects-european-credit-transfer-and-accumulation-system">What is the European Credit Transfer System (ECTS)?</a></p>
+              <p><a href="/article/impact-of-covid-19-on-studying-abroad-in-europe-overview">Impact of COVID-19 on studying abroad in Europe: Overview</a></p>
+              <p><a href="/article/study-innovation-management">Study Innovation Management: All you need to know</a></p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  
+  </div>
+
+</footer>
+
+  
+  <footer class="footer-press">
+  <div class="container">
+    <div class="row footer-press-description">
+      <div class="col-md-12 text-center">
+        Study.EU has been mentioned in numerous news publications worldwide, such as:
+      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="L&#39;Étudiant (France)" title="L&#39;Étudiant (France)" data-src="/assets/press/letudiant_gray_200-57bccbdceaef3c62c8660629603372823c98afe433bd39bf6d42a73263c113c3.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Frankfurter Allgemeine (Germany)" title="Frankfurter Allgemeine (Germany)" data-src="/assets/press/faz_gray_300-b6e5e6022a7b164c24b69a51fb97a72715018db745fbcda8580675a507370b8b.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Standard (Hong Kong)" title="The Standard (Hong Kong)" data-src="/assets/press/the-standard-hong-kong_gray_200-f124ca057d2671730e1f6d996377ef4614a28ccf04ae04f730eaf16ed7ee0b46.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Independent (UK)" title="The Independent (UK)" data-src="/assets/press/the-independent-uk_gray_300-63238e279b3c62b1f87faf17fcbcf1f14a2e5b9229193a0431fc974da217d159.png" class="lazyload" />
+</a>      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Al-Masry Al-Youm (Egypt)" title="Al-Masry Al-Youm (Egypt)" data-src="/assets/press/al-masry_al-youm_gray_200-9d8e503cd53ec4d955c3e6f7bf2a1c0badb500a0d2bd8a1ef1d11acd686879e5.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Le Monde (France)" title="Le Monde (France)" data-src="/assets/press/le-monde_gray_200-24d8bca493f3a2b8e0150cb4ef38f00c9924ac5e7acfbdb8750076c949c70052.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Local (Europe)" title="The Local (Europe)" data-src="/assets/press/the-local_gray_200-7631164ea94edf8d065b3af6f64274416162d866ce1cea737c3ee25f28cdd098.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Forbes (USA)" title="Forbes (USA)" data-src="/assets/press/forbes_gray_200-deff6ef2c28ec5a275f404c5f59d56f4b687881eb39de52b79b5add3ca609fe2.png" class="lazyload" />
+</a>      </div>
+    </div>
+  </div>
+</footer>
+
+  
+  
+  
+  
+    <div class="cookies-eu js-cookies-eu row">
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+    <div class="cookies-eu-content-holder col-md-4 col-sm-6 col-xs-6 align-self-center">
+      Cookies &amp; analytics help us deliver our services.
+        <a href="/page/privacy-policy" class="cookies-eu-link" target="_blank"> Privacy policy </a>
+    </div>
+    <div class="cookies-eu-button-holder col-md-4 col-sm-6 col-xs-6">
+      <button class="cookies-eu-ok js-cookies-eu-ok btn btn-lg btn-primary" data-track-click-ga="true" data-event-category="Cookie Consent Button"> OK </button>
+    </div>
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+  </div>
+
+  
+  <script>
+  // Improved Ahoy view tracking with additional attributes
+  var additionalProperties = {};
+    additionalProperties["country_id"] = 38;
+    mainTrackableLink = "";
+    additionalProperties["university_id"] = 181;
+    mainTrackableLink = "https://www.study.eu/link/university/lund-university/from-profile";
+    additionalProperties["programme_id"] = 7586;
+    mainTrackableLink = "https://www.study.eu/link/programme/human-ecology/from-listings";
+  console.log("Ahoy: View with additional properties: "+JSON.stringify(additionalProperties));
+  ahoy.trackView(additionalProperties);
+</script>
+<a name="ga"></a> <!-- GA //-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42442116-3', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+  
+  
+  
+    
+  //############################################################
+  //########## 2018-07    NEW CUSTOM METHODS          ##########
+  
+  function getDataTrackAttributes(element) {
+    var data = {};
+    [].forEach.call(element.attributes, function(attr) {
+      if (/^data-trackvalue-/.test(attr.name)) {
+        // Relevant attributes would always be called "data-track-foobar"
+        var underscorename = attr.name.substr(16).replace(/-/g, "_");
+        data[underscorename] = parseInt(attr.value) || attr.value; // Provide as integer if possible, otherwise the original string
+      }
+    });
+    return data;
+  }
+  
+  // Set data-track-click and utm_source for all external links in the description content
+  var content_links = document.querySelectorAll('div.content-description a');
+  for (var i = 0; i < content_links.length; i++) {
+    if ( ((new URL(content_links[i].href, document.baseURI).href) == mainTrackableLink) || (content_links[i].host !== window.location.host) ) {
+      // Link is the main trackable link, or link is external --> add tracking and utm_source if not present
+      utm_url = new URL(content_links[i].href);
+      utm_url.searchParams.set("utm_source", "Study.eu"); // add (or overwrite existing) utm_source parameter
+      content_links[i].href = utm_url;
+      content_links[i].classList.add("external-tracked");
+      content_links[i].setAttribute("data-event-category", "Outbound Link");
+      content_links[i].setAttribute("data-event-label", content_links[i].href);
+      content_links[i].setAttribute("data-track-click", "true"); // Once data-track-click is set to true, initDataAttributes() below will add the id values
+    }
+  }
+  console.log("Modified "+content_links.length+" links in description content.");
+  
+  // Set data attributes for tracking of footer press links
+  footerPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < footerPressLinks.length; i++) {
+    footerPressLinks[i].setAttribute("data-track-click-ga", "true");
+    footerPressLinks[i].setAttribute("data-event-category", "Footer Press Link");
+    footerPressLinks[i].setAttribute("data-event-label", window.location.href);
+  }
+  
+  relatedLinks = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < relatedLinks.length; i++) {
+    relatedLinks[i].setAttribute("data-track-click-ga", "true");
+    relatedLinks[i].setAttribute("data-event-category", "Related Link");
+    relatedLinks[i].setAttribute("data-event-label", relatedLinks[i].getAttribute("href"));
+  }  
+  
+  function initDataAttributes() {
+    // Initialise element data attributes based on backend instance variables
+    elements = document.querySelectorAll('[data-track-click="true"],[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+        if (!elements[i].hasAttribute("data-trackvalue-country-id")) {
+          elements[i].setAttribute("data-trackvalue-country-id", "38");
+        }
+      
+        if (!elements[i].hasAttribute("data-trackvalue-university-id")) {
+          elements[i].setAttribute("data-trackvalue-university-id", "181");
+        }
+      
+        if (!elements[i].hasAttribute("data-trackvalue-programme-id")) {
+          elements[i].setAttribute("data-trackvalue-programme-id", "7586");
+        }
+    }
+    console.log("initDataAttributes()");
+  }
+  initDataAttributes();
+    
+  function trackClick(event, trackGA = true, trackAhoy = true) {
+    // When an element was clicked, track the click in GA and Ahoy
+    
+    strEventLabel = "";
+    if        ( event.currentTarget.hasAttribute("data-event-label") ) {
+      strEventLabel = event.currentTarget.getAttribute("data-event-label");
+    } else if ( event.currentTarget.hasAttribute("href") ) {
+      strEventLabel = event.currentTarget.href;
+    }
+    
+    ga('send', 'event', {
+      eventCategory:  event.currentTarget.getAttribute("data-event-category"),
+      eventAction:    'click',
+      eventLabel:     strEventLabel
+    });
+    
+    data = getDataTrackAttributes(event.currentTarget);
+    data["href"] = event.target.href;
+    data["page"] = window.location.pathname;
+    
+    /*ahoy.track (
+      event.currentTarget.getAttribute("data-event-category"),
+      {
+        country_id: 38, 
+        university_id: 181, 
+        programme_id: 7586, 
+        href: event.target.href,
+        page: window.location.pathname
+      }
+    );*/
+    
+    if (trackAhoy) {
+        data["medium"] = "Listings";
+      ahoy.track (
+        event.currentTarget.getAttribute("data-event-category")+" - click",
+        data
+      );
+    }
+    
+    console.log("trackClick(event, trackGA = "+trackGA+", trackAhoy = "+trackAhoy+"): " +
+      event.currentTarget.getAttribute("data-event-category") + ", " +
+      "{country_id: 38, university_id: 181, programme_id: 7586, href: " + event.target.href + ", " +
+      "page:"+window.location.pathname+"});"
+    );
+  }
+  
+  
+  function trackClicksGA() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click-ga="true"]:not([data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event, true, false);
+      });
+    }
+    console.log("trackClicksGA(): "+elements.length+" elements");
+  }
+  trackClicksGA();
+  
+  function trackClicks() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event);
+      });
+    }
+    console.log("trackClicks(): "+elements.length+" elements");
+  }
+  trackClicks();
+  
+  function trackRenderingsGA() {
+    // Track renderings only in GA
+    // This would be for large-volume data that is interesting, but not mission-critical
+
+    elements = document.querySelectorAll('[data-track-rendering-ga="true"]:not([data-track-rendering="true"])');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+    }
+    
+    console.log("trackRenderingsGA(): "+elements.length+" elements");
+  }
+  trackRenderingsGA();
+  
+  function trackRenderings() {
+    // Track renderings in GA *and* Ahoy
+    elements = document.querySelectorAll('[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+      
+      data = getDataTrackAttributes(elements[i]);
+      data["href"] = elements[i].getAttribute("href");
+      data["page"] = window.location.pathname;
+      
+      ahoy.track (
+        elements[i].getAttribute("data-event-category")+" - rendered",
+        data
+      );
+    }
+    
+    console.log("trackRenderings(): "+elements.length+" elements");
+  }
+  trackRenderings();
+  
+  
+  
+    ga('send', 'event', {
+      eventCategory:  'Country Content',
+      eventAction:    'rendered',
+      eventLabel:     'Sweden',
+      nonInteraction: true
+    });
+      ga('send', 'event', {
+        eventCategory:  'Discipline (Parent)',
+        eventAction:    'rendered',
+        eventLabel:     'Medicine & Health',
+        nonInteraction: true
+      });
+
+  
+  //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  //############################################################
+
+  
+  
+  /*
+  anchorsExternalTracked = document.getElementsByClassName("external-tracked");
+  for (var i = 0 ; i < anchorsExternalTracked.length; i++) {
+    anchorsExternalTracked[i].addEventListener("click", function(event){
+      //event.preventDefault();
+      
+      handleOutboundLinkClicks(event);
+      
+      //document.location = this.href;
+      //var win = window.open(this.href, '_blank');
+      //win.focus();
+      
+    });
+    
+    // Trigger event that shows in GA that the link was rendered
+    ga('send', 'event', {
+      eventCategory: 'Outbound Link',
+      eventAction: 'rendered',
+      eventLabel: anchorsExternalTracked[i].href
+    });   
+  }
+  
+  anchorsRelatedTracked = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < anchorsRelatedTracked.length; i++) {
+    anchorsRelatedTracked[i].addEventListener("click", function(event){
+      handleRelatedLinkClicks(event);
+    });
+  }
+  
+  anchorsFeaturedUniversityTracked = document.getElementsByClassName("featured-university-tracked");
+  for (var i = 0 ; i < anchorsFeaturedUniversityTracked.length; i++) {
+    anchorsFeaturedUniversityTracked[i].addEventListener("click", function(event){
+      handleFeaturedUniversityLinkClicks(event);
+    });
+  }  
+  
+  
+  anchorsFooterPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < anchorsFooterPressLinks.length; i++) {
+    anchorsFooterPressLinks[i].addEventListener("click", function(event){
+      handleFooterPressLinkClicks(event);
+    });
+  }
+  
+  
+  anchorsCustomTracked = document.querySelectorAll('[data-ga-custom-event-label]');
+  for (var i = 0 ; i < anchorsCustomTracked.length; i++) {
+    anchorsCustomTracked[i].addEventListener("click", function(event){
+      handleCustomTracked(event);
+    });
+  }
+  */
+  
+  ////////////////////////////////////////////////////////////////////////////////
+
+  
+  
+</script>
+
+</body>
+</html>

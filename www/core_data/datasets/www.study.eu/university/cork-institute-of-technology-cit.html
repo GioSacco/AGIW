@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"cb4ef145dd","applicationID":"55169925","transactionName":"Jg5fTRMJXFtQQBpCXwwXVEsSD0ReUEEaRFkKFg==","queueTime":8,"applicationTime":699,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"cb4ef145dd",applicationID:"55169925"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+  <title>Cork Institute of Technology (CIT), Ireland | Study.EU</title>
+   
+  <link rel="stylesheet" media="all" href="/assets/application-788bf60a726cbc46bce208400674992d5b5b0e3a0892577e97f4ee25b84407b9.css" />
+  <script src="/assets/application-6d00a9f66b3f7e1a7db9282e671658ce415a54e8512569e7b539a89dc0fb74a5.js"></script>
+  
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="mjrpsVQbdBoBdieDKhcTvDaUxGnYVKHRr/bEJeqcZ95Cj1byBEsDPscJya7z5KiKEpHuh68IC8oNMtMlZ8Z2iQ==" />
+  
+  
+    
+  
+  
+  
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-29b05ed0a02376d0d37f92df42a0d954d97274430a0f6264e4d19745408f15c8.ico" />
+  
+  <meta name="description" content="Study at the Cork Institute of Technology (CIT) in Ireland: 113 Bachelors, Masters, PhDs. ✓ Study.EU: Your gateway to universities in Europe." />
+  
+  <meta name="keywords" content="study in europe, universities, europe, master, bachelor, masters, bachelors, msc, bsc, llb, llm, phd, doctorate, university, study abroad" />
+  <meta name="google-site-verification" content="9sv6t--Xh8SiHr58R3chJHOJVHixvhn6jBK8Qzc9Z9U" />
+  <meta name="msvalidate.01" content="5E3AE5307267C1BED099C27EB59E264E" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  <link rel="canonical" href="https://www.study.eu/university/cork-institute-of-technology-cit" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@wwwStudyEU" />
+  <meta name="twitter:title" content="Cork Institute of Technology (CIT), Ireland" />
+  
+  <meta property="og:title"  content="Cork Institute of Technology (CIT), Ireland" />
+  
+  
+  
+  
+  
+      <meta property="og:type" content="article" />
+      <meta property="article:publisher" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+      <meta property="article:author" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+  
+  <meta property="og:description" content="Study at the Cork Institute of Technology (CIT) in Ireland: 113 Bachelors, Masters, PhDs. ✓ Study.EU: Your gateway to universities in Europe." />
+  <meta property="og:image" content="https://www.study.eu/assets/fallback/study-in-europe-logo-overlay-1200x627-34deac9b2af4b87f5f656da9694257ffa4e59dec8319085daa96f8ca9eb3f980.jpg" />
+  
+</head>
+<body>
+
+  <nav id="navbar" class="navbar navbar-static-top container container-fluid">
+  
+  <div class="container">
+    <div class="row" style="position: relative;">
+        <div class="col-md-3 col-xs-9 navbar-header">
+          <a class="navbar-brand" href="/" title="Study.EU">
+            <img alt="Study.EU" class="homepage-logo" src="/assets/study-eu_logo-ee9afe0c98ee9ac266f676d5dcb967023df14f95661b91c7812bef38a3b0c03a.png" />
+          </a>
+        </div>
+        <div class="col-md-8 bottom-align-text">
+            <strong class="navbar-claim">Your gateway to universities in Europe</strong>
+        </div>
+        <div class="col-md-1 col-xs-3 navbar-search-link-container">
+          <div class="navbar-search-link">
+          </div>
+        </div>
+    </div>
+</div>
+  
+</nav>
+
+  <div class="container" id="div-main-container" role="main">
+
+  </div>
+  
+  
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "CollegeOrUniversity",
+  "name": "Cork Institute of Technology (CIT)",
+  "url": "https://www.study.eu/university/cork-institute-of-technology-cit",
+  "sameAs": "https://www.cit.ie/",
+  
+  
+  
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Study programmes",
+      "value": "113"
+    }
+  ]
+}
+</script>
+
+
+
+<div class="header-image">
+  <div class="container">
+    <div class="header-image-cta">
+      <h1>Study at the Cork Institute of Technology (CIT)</h1>
+      <h2>Cork, Ireland</h2>
+    </div>
+  </div>
+    <img alt="Study in Europe" title="Study in Europe" src="/assets/fallback/study-in-europe_1920-2cea268aaca4f8cd71c109aa2d67e83e285f04dd3c85c9a21acae013fd6f2259.jpg" />
+    
+    <div class="image-credits">
+      <span class="image-credits-span">
+        <a href="https://www.flickr.com/photos/glasgowamateur/7892308660" target="_blank" rel="nofollow">Europe</a> by Charles Clegg, <a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="nofollow">CC BY-SA 2.0</a>, modified
+      </span>
+    </div>  
+  
+</div>
+
+<div class="div-breadcrumbs">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="/">Study.eu</a></li><i class="fa fa-angle-right breadcrumb-separator" aria-hidden="true"></i><li><a href="/country/ireland">Ireland</a></li><i class="fa fa-angle-right breadcrumb-separator" aria-hidden="true"></i><li>Cork Institute of Technology (CIT)</li>
+    </ol>  
+  </div>
+</div> 
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://www.study.eu/",
+        "name": "Study.eu"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://www.study.eu/country/ireland",
+        "name": "Ireland"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "https://www.study.eu/university/cork-institute-of-technology-cit",
+        "name": "Cork Institute of Technology (CIT)"
+      }
+    }
+  ]
+}
+</script>
+
+<div class="container" style="position: relative;">
+
+  <div class="row">
+
+    <div class="sidebar col-md-4 col-md-push-8">
+      
+      <table class="entry-details-table">
+        <tbody>
+            <tr>
+              <th class="university-logo" colspan="2">
+                <img alt="Cork Institute of Technology (CIT) - Logo" title="Cork Institute of Technology (CIT) - Logo" class="university-logo" src="" />
+              </th>
+            </tr>
+          
+          <tr>
+            <td class="university-name" colspan="2">Cork Institute of Technology (CIT)</td>
+          </tr>
+          
+          <tr>
+            <td class="table-entry-name">Location:</td>
+            <td>
+                  Cork (<a href="/country/ireland">Ireland</a>)
+                  
+            </td>
+          </tr>
+          
+          
+            
+          
+
+
+          
+          
+
+            <tr>
+              <td class="table-entry-name">Listed study programmes:</td>
+              <td><a href="#university-programmes">113</a></td>
+            </tr>
+          
+          
+          
+
+        </tbody>
+      </table>
+      
+      
+
+
+      
+      
+      
+        
+        <div class="sidebar-container">
+          <strong>Featured universities in Ireland:</strong>
+          <div class="featured-university-container">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a href="/university/trinity-college-dublin-tcd">
+                    <img alt="Trinity College Dublin (TCD)" title="Trinity College Dublin (TCD)" class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_trinity-college-dublin--tcd--logo.svg" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a href="/university/trinity-college-dublin-tcd">Trinity College Dublin (TCD)</a><br />
+                  Dublin, 
+                  <a href="/country/ireland">Ireland</a><br />
+                  229 study programmes
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+          
+      
+    </div>
+  
+  
+  
+    <div class="content col-md-8 col-md-pull-4">
+
+      <h1>Cork Institute of Technology (CIT)</h1>
+      
+        <div class="bnnr-container">
+  <a target="_blank" rel="nofollow" data-track-rendering-ga="true" data-track-click-ga="true" data-track-click="true" data-event-category="BC" data-event-label="CODE Berlin" data-trackvalue-bc-id="41" data-trackvalue-href="https://code.berlin/en/?utm_source=Study.eu&amp;utm_medium=Banner" href="https://code.berlin/en/?utm_source=Study.eu&amp;utm_medium=Banner">
+    <img class="bnnr" loading="lazy" src="https://study-eu.s3.amazonaws.com/uploads/bc/bc-code-berlin-desktop.png" />
+</a></div>
+
+      
+      <div class="content-description">
+        
+      </div>
+    
+    <a id="university-programmes"><hr /></a>
+    
+    
+    
+
+    <ul class="nav nav-tabs">
+      
+        <li class="active"><a data-toggle="tab" href="#tab-bachelor">Bachelor’s<br/>programmes</a></li>
+      
+        <li><a data-toggle="tab" href="#tab-master">Master’s<br/>programmes</a></li>
+      
+        <li><a data-toggle="tab" href="#tab-doctorate">Doctorate<br/>programmes</a></li>
+      
+    </ul>
+
+    <div class="tab-content">
+    
+        <div id="tab-bachelor" class="tab-pane active">
+          <h4>Bachelors at the Cork Institute of Technology (CIT)</h4>
+            <div aria-multiselectable="true" role="tablist" id="accordion-bachelor" class="panel-group">
+
+      <div class="panel panel-default"> <a title="Art, Design &amp; Media" aria-controls="collapse-bachelor-1" aria-expanded="false" href="#collapse-bachelor-1" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-1" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Art, Design &amp; Media <span class="discipline-programmes-count">(15)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-1" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-1" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/architectural-technology-d6dc0ae4-8696-4af0-938a-afba9e5bdc4d">Architectural Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/construction-0e7e766f-c108-49a8-b3bb-c0ce21f5e610">Construction</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/creative-digital-media">Creative Digital Media</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/interior-architecture-38377017-2cb4-4de9-9729-bbd11f49df53">Interior Architecture</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/music-f4ad144e-fe2e-4b63-97b7-fcc508d21692">Music</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/musical-theatre-56066552-2f19-4108-aa39-98d4882af354">Musical Theatre</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/photography-with-new-media">Photography with New Media</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/popular-music-2b62a155-47a7-4052-aa7f-fac89d4c1c36">Popular Music</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/popular-music-drums">Popular Music: Drums</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/popular-music-electric-bass-guitar">Popular Music: Electric Bass Guitar</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/popular-music-electric-guitar">Popular Music: Electric Guitar</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/popular-music-keyboards">Popular Music: Keyboards</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/popular-music-voice">Popular Music: Voice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/structural-engineering-b3b7b752-c002-4305-b2dc-f616ac89719a">Structural Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/theatre-drama-studies">Theatre &amp; Drama Studies</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Business &amp; Management" aria-controls="collapse-bachelor-2" aria-expanded="false" href="#collapse-bachelor-2" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-2" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Business &amp; Management <span class="discipline-programmes-count">(17)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-2" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-2" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/accounting-8e2b9e86-255a-4394-b0e0-7499df98bf36">Accounting</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/automotive-business-management-and-technology">Automotive Business Management and Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/automotive-technology-and-management">Automotive Technology and Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/business-84cc7044-d40d-47ae-955f-1a634b1ee3fa">Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/business-administration-8d9baa63-337d-4219-a4dd-0fdf796e8a36">Business Administration</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/business-information-systems-b3d1ce8a-cc1b-4d96-a9b9-d2496e3c5798">Business Information Systems</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/culinary-arts">Culinary Arts</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/culinary-entrepreneurship">Culinary Entrepreneurship</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/hospitality-management-eb0345e9-2a8d-4b46-8619-ee67441d183f">Hospitality Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/human-resource-management-6033b7be-4a32-467c-a129-25eed6d70eed">Human Resource Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/international-business-with-aviation-studies">International Business with Aviation Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/international-business-with-language">International Business with Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/management-89dfa276-66f8-4ecc-a717-3ea4f2206e51">Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/marketing-90fe0084-01d0-46b4-ad8b-291987c7490b">Marketing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/recreation-leisure-management">Recreation &amp; Leisure Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/supply-chain-and-transport-management">Supply Chain and Transport Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/tourism-management-9707a6da-23f3-4b5c-bd60-70b53377ed00">Tourism Management</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Computer Science &amp; IT" aria-controls="collapse-bachelor-62" aria-expanded="false" href="#collapse-bachelor-62" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-62" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Computer Science &amp; IT <span class="discipline-programmes-count">(5)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-62" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-62" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/business-information-systems-b3d1ce8a-cc1b-4d96-a9b9-d2496e3c5798">Business Information Systems</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/computer-systems-3663b588-3338-4317-836b-09212e67b702">Computer Systems</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/information-technology-9795d235-f311-4c49-b662-ed76b95631f0">Information Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/it-management-2fdce23b-7158-47e4-bf2e-5bc6d3f6766e">IT Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/software-development-0ac937b2-cee9-44f9-9a1f-654dce6f8e04">Software Development</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Engineering &amp; Technology" aria-controls="collapse-bachelor-3" aria-expanded="false" href="#collapse-bachelor-3" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-3" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Engineering &amp; Technology <span class="discipline-programmes-count">(19)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-3" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-3" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/agri-biosciences">Agri-Biosciences</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/applied-biosciences">Applied Biosciences</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/applied-biosciences-and-biotechnology">Applied Biosciences and Biotechnology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/architectural-technology-d6dc0ae4-8696-4af0-938a-afba9e5bdc4d">Architectural Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/beverage-industry-management">Beverage Industry Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/biomedical-engineering-15158bc0-dfad-47dc-8e72-d26caae1bc8e">Biomedical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/chemical-biopharmaceutical-engineering">Chemical &amp; Biopharmaceutical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/civil-engineering-23062c82-1a8c-46f5-a504-d7c628a688d3">Civil Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/construction-management-20a5e415-d67a-4f47-9bbe-274003cd6c1d">Construction Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/electrical-engineering-31758b29-1186-49bd-9e09-1810324ddb4b">Electrical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/electronic-engineering-613dafda-a3cc-454a-ad9d-7feb8c8dd05c">Electronic Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/environmental-engineering-2b70fcfd-0fca-42e6-9750-a59786dc7370">Environmental Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/instrument-engineering">Instrument Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/international-business-with-aviation-studies">International Business with Aviation Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/marine-electrotechnology">Marine Electrotechnology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/marine-engineering">Marine Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/mechanical-engineering-54553af0-2795-4c96-a883-f1a2282544e9">Mechanical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/pharmaceutical-biotechnology-a05c5051-def3-4b2a-9780-7b00719f0cf1">Pharmaceutical Biotechnology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/sustainable-energy-engineering-69b0167d-cf7f-4bbc-a7a8-c52c5b1c010c">Sustainable Energy Engineering</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Environment &amp; Agriculture" aria-controls="collapse-bachelor-63" aria-expanded="false" href="#collapse-bachelor-63" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-63" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Environment &amp; Agriculture <span class="discipline-programmes-count">(3)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-63" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-63" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/environmental-engineering-2b70fcfd-0fca-42e6-9750-a59786dc7370">Environmental Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/environmental-science-sustainable-technology">Environmental Science &amp; Sustainable Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/process-plant-technology">Process Plant Technology</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Humanities" aria-controls="collapse-bachelor-64" aria-expanded="false" href="#collapse-bachelor-64" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-64" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Humanities <span class="discipline-programmes-count">(1)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-64" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-64" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/international-business-with-language">International Business with Language</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Medicine &amp; Health" aria-controls="collapse-bachelor-5" aria-expanded="false" href="#collapse-bachelor-5" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-5" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Medicine &amp; Health <span class="discipline-programmes-count">(4)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-5" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-5" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/biomedical-engineering-15158bc0-dfad-47dc-8e72-d26caae1bc8e">Biomedical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/biomedical-science-76329b73-beb6-482b-85af-e33b1b5f0916">Biomedical Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/nutrition-and-health-science-ef0cd3bb-8fdb-47f7-904c-fa0b1b24c309">Nutrition and Health Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/pharmaceutical-biotechnology-a05c5051-def3-4b2a-9780-7b00719f0cf1">Pharmaceutical Biotechnology</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Natural Sciences &amp; Mathematics" aria-controls="collapse-bachelor-6" aria-expanded="false" href="#collapse-bachelor-6" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-6" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Natural Sciences &amp; Mathematics <span class="discipline-programmes-count">(6)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-6" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-6" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/analytical-and-pharmaceutical-chemistry">Analytical and Pharmaceutical Chemistry</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/analytical-chemistry-with-quality-assurance">Analytical Chemistry with Quality Assurance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/applied-physics-instrumentation">Applied Physics &amp; Instrumentation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/biological-sciences-074959f1-a55d-42be-8341-6445fcaeca1c">Biological Sciences</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/industrial-physics">Industrial Physics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/physical-sciences-190275af-86b4-4625-84f5-23d60949c033">Physical Sciences</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Social Sciences" aria-controls="collapse-bachelor-7" aria-expanded="false" href="#collapse-bachelor-7" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-7" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Social Sciences <span class="discipline-programmes-count">(4)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-7" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-7" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/counselling-psychotherapy">Counselling &amp; Psychotherapy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/early-childhood-education-care">Early Childhood Education &amp; Care</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/montessori-education">Montessori Education</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/social-care-work">Social Care Work</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default" id="panel-bachelor-other"> <a title="Other subjects" aria-controls="collapse-bachelor-other" aria-expanded="false" href="#collapse-bachelor-other" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-other" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Other subjects</span> <span class="discipline-programmes-count">(11)</span></a>
+        <div aria-labelledby="heading-bachelor-other" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-other" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/advanced-manufacturing-technology">Advanced Manufacturing Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/building-information-modelling-and-management">Building Information Modelling and Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/community-development">Community Development</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/contemporary-applied-art-ceramics-glass-textiles">Contemporary Applied Art (Ceramics, Glass, Textiles)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/fine-art-0c3ed24e-74c8-49d6-b30a-aa5cf97ee8e9">Fine Art</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/food-and-health-science">Food and Health Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/good-manufacturing-practice-technology">Good Manufacturing Practice &amp; Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/horticulture">Horticulture</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/nautical-science">Nautical Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/quantity-surveying-da9ac807-dfe5-4d2e-9806-bdccbe733e50">Quantity Surveying</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/visual-communications">Visual Communications</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+
+  <script>
+  if ( $('#accordion-bachelor .panel-collapse').length == 1 ) {
+    // If Programmes at this level all fall into the same Discipline, expand it
+    $('#accordion-bachelor .panel-collapse').collapse('show');
+  }
+
+
+  $('.panel-collapse').on('shown.bs.collapse', function (e) {
+      var panel = $(this).closest('div.panel');
+      var panelTop = panel[0].getBoundingClientRect().top;
+      var navHeight = document.getElementById("navbar").offsetHeight;
+      var navBottom = document.getElementById("navbar").getBoundingClientRect().bottom;
+      
+      var visibleFromHere = Math.max(0, navBottom); // navBottom might be negative on desktop
+      
+      if (panelTop < visibleFromHere) {
+        // If the just expanded panel's top is above what's visible in the viewport, scroll up.
+        $('html,body').animate({
+            scrollTop: panel.offset().top-visibleFromHere-25
+        }, 500); 
+      }
+  }); 
+  </script>
+
+        </div>
+      
+        <div id="tab-master" class="tab-pane">
+          <h4>Masters at the Cork Institute of Technology (CIT)</h4>
+            <div aria-multiselectable="true" role="tablist" id="accordion-master" class="panel-group">
+
+      <div class="panel panel-default"> <a title="Art, Design &amp; Media" aria-controls="collapse-master-1" aria-expanded="false" href="#collapse-master-1" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-1" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Art, Design &amp; Media <span class="discipline-programmes-count">(6)</span></span> </a>
+        <div aria-labelledby="heading-master-1" role="tabpanel" class="panel-collapse collapse" id="collapse-master-1" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/art-and-design-a83cacd2-026e-4e2b-a055-4a06af68e49a">Art and Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/e-learning-design-and-development">E-learning Design and Development</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/journalism-and-digital-content-creation">Journalism and Digital Content Creation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/music-performance-e6b85a2f-fc88-47ee-bbba-fdac658f55db">Music – Performance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/music-technology-3908f4aa-3c09-48c8-ab30-82a6e1b11d15">Music &amp; Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/structural-engineering-f713c65a-7f91-40e9-94f2-95f82854be4e">Structural Engineering</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Business &amp; Management" aria-controls="collapse-master-2" aria-expanded="false" href="#collapse-master-2" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-2" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Business &amp; Management <span class="discipline-programmes-count">(6)</span></span> </a>
+        <div aria-labelledby="heading-master-2" role="tabpanel" class="panel-collapse collapse" id="collapse-master-2" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/global-business-practice">Global Business Practice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/human-resource-management-64e8442e-487b-4d1e-bddc-767aec24a5d3">Human Resource Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/international-business-9dfd1af2-63e1-4520-a8e2-ae983006fcc5">International Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/marketing-practice-c8b0a057-70c7-4c39-af87-9d42835dd5c6">Marketing Practice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/master-of-business-administration-b30b6a6c-6889-46bc-820c-790d07301dd1">Master of Business Administration</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/public-relations-with-new-media">Public Relations with New Media</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Computer Science &amp; IT" aria-controls="collapse-master-62" aria-expanded="false" href="#collapse-master-62" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-62" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Computer Science &amp; IT <span class="discipline-programmes-count">(7)</span></span> </a>
+        <div aria-labelledby="heading-master-62" role="tabpanel" class="panel-collapse collapse" id="collapse-master-62" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/artificial-intelligence-f29ea050-45a7-42cf-abc1-1e398b7e048b">Artificial Intelligence</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/cloud-computing-efe03226-bcd9-4c46-8ff3-29c18f1be5de">Cloud Computing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/cybersecurity-75fd5f6b-a729-482e-b0fd-6175c9f8d7d2">Cybersecurity</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/data-science-analytics">Data Science &amp; Analytics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/e-learning-design-and-development">E-learning Design and Development</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/information-design-development">Information Design &amp; Development</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/software-architecture-design">Software Architecture &amp; Design</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Engineering &amp; Technology" aria-controls="collapse-master-3" aria-expanded="false" href="#collapse-master-3" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-3" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Engineering &amp; Technology <span class="discipline-programmes-count">(2)</span></span> </a>
+        <div aria-labelledby="heading-master-3" role="tabpanel" class="panel-collapse collapse" id="collapse-master-3" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/chemical-biopharmaceutical-engineering-2ab57d5f-63ef-4beb-a867-42100e7af510">Chemical &amp; Biopharmaceutical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/civil-engineering-environment-energy">Civil Engineering (Environment &amp; Energy)</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Social Sciences" aria-controls="collapse-master-7" aria-expanded="false" href="#collapse-master-7" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-7" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Social Sciences <span class="discipline-programmes-count">(2)</span></span> </a>
+        <div aria-labelledby="heading-master-7" role="tabpanel" class="panel-collapse collapse" id="collapse-master-7" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/art-therapy">Art Therapy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/play-therapy">Play Therapy</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default" id="panel-master-other"> <a title="Other subjects" aria-controls="collapse-master-other" aria-expanded="false" href="#collapse-master-other" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-other" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Other subjects</span> <span class="discipline-programmes-count">(1)</span></a>
+        <div aria-labelledby="heading-master-other" role="tabpanel" class="panel-collapse collapse" id="collapse-master-other" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/digital-marketing-strategy-8ebd3bbf-4aa9-4aad-b33c-bfc3538f3409">Digital Marketing Strategy</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+
+  <script>
+  if ( $('#accordion-master .panel-collapse').length == 1 ) {
+    // If Programmes at this level all fall into the same Discipline, expand it
+    $('#accordion-master .panel-collapse').collapse('show');
+  }
+
+
+  $('.panel-collapse').on('shown.bs.collapse', function (e) {
+      var panel = $(this).closest('div.panel');
+      var panelTop = panel[0].getBoundingClientRect().top;
+      var navHeight = document.getElementById("navbar").offsetHeight;
+      var navBottom = document.getElementById("navbar").getBoundingClientRect().bottom;
+      
+      var visibleFromHere = Math.max(0, navBottom); // navBottom might be negative on desktop
+      
+      if (panelTop < visibleFromHere) {
+        // If the just expanded panel's top is above what's visible in the viewport, scroll up.
+        $('html,body').animate({
+            scrollTop: panel.offset().top-visibleFromHere-25
+        }, 500); 
+      }
+  }); 
+  </script>
+
+        </div>
+      
+        <div id="tab-doctorate" class="tab-pane">
+          <h4>Doctorates at the Cork Institute of Technology (CIT)</h4>
+            <div aria-multiselectable="true" role="tablist" id="accordion-doctorate" class="panel-group">
+
+      <div class="panel panel-default"> <a title="Business &amp; Management" aria-controls="collapse-doctorate-2" aria-expanded="false" href="#collapse-doctorate-2" data-parent="#accordion-doctorate" data-toggle="collapse" id="heading-doctorate-2" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Business &amp; Management <span class="discipline-programmes-count">(3)</span></span> </a>
+        <div aria-labelledby="heading-doctorate-2" role="tabpanel" class="panel-collapse collapse" id="collapse-doctorate-2" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/business-eb4ffbc5-e9f3-4de0-acaf-2f1ab3347e71">Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/management-enterprise">Management &amp; Enterprise</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/marketing-ad9b6b4a-7cf7-49d9-aae1-c8e610d1b01f">Marketing</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Computer Science &amp; IT" aria-controls="collapse-doctorate-62" aria-expanded="false" href="#collapse-doctorate-62" data-parent="#accordion-doctorate" data-toggle="collapse" id="heading-doctorate-62" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Computer Science &amp; IT <span class="discipline-programmes-count">(1)</span></span> </a>
+        <div aria-labelledby="heading-doctorate-62" role="tabpanel" class="panel-collapse collapse" id="collapse-doctorate-62" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/computer-science-af4db48e-64b7-4d58-a358-2e742ee79e8f">Computer Science</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Engineering &amp; Technology" aria-controls="collapse-doctorate-3" aria-expanded="false" href="#collapse-doctorate-3" data-parent="#accordion-doctorate" data-toggle="collapse" id="heading-doctorate-3" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Engineering &amp; Technology <span class="discipline-programmes-count">(4)</span></span> </a>
+        <div aria-labelledby="heading-doctorate-3" role="tabpanel" class="panel-collapse collapse" id="collapse-doctorate-3" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/electrical-electronic-engineering">Electrical &amp; Electronic Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/engineering-1845a1b4-9850-4b86-af49-bc438a3a7932">Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/mechanical-manufacturing-biomedical-engineering">Mechanical, Manufacturing &amp; Biomedical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/process-energy-transport-engineering">Process, Energy &amp; Transport Engineering</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Natural Sciences &amp; Mathematics" aria-controls="collapse-doctorate-6" aria-expanded="false" href="#collapse-doctorate-6" data-parent="#accordion-doctorate" data-toggle="collapse" id="heading-doctorate-6" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Natural Sciences &amp; Mathematics <span class="discipline-programmes-count">(3)</span></span> </a>
+        <div aria-labelledby="heading-doctorate-6" role="tabpanel" class="panel-collapse collapse" id="collapse-doctorate-6" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/biological-sciences-e9c2795e-7746-4387-b39f-66970b66ba4d">Biological Sciences</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/physical-sciences-10be255c-cd06-4b1b-8264-c935aaca3536">Physical Sciences</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/science-1d9becc0-6d4a-45e2-ac11-1792617c0a82">Science</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default" id="panel-doctorate-other"> <a title="Other subjects" aria-controls="collapse-doctorate-other" aria-expanded="false" href="#collapse-doctorate-other" data-parent="#accordion-doctorate" data-toggle="collapse" id="heading-doctorate-other" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Other subjects</span> <span class="discipline-programmes-count">(1)</span></a>
+        <div aria-labelledby="heading-doctorate-other" role="tabpanel" class="panel-collapse collapse" id="collapse-doctorate-other" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/cork-institute-of-technology-cit/organisational-and-professional-development">Organisational and Professional Development</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+
+  <script>
+  if ( $('#accordion-doctorate .panel-collapse').length == 1 ) {
+    // If Programmes at this level all fall into the same Discipline, expand it
+    $('#accordion-doctorate .panel-collapse').collapse('show');
+  }
+
+
+  $('.panel-collapse').on('shown.bs.collapse', function (e) {
+      var panel = $(this).closest('div.panel');
+      var panelTop = panel[0].getBoundingClientRect().top;
+      var navHeight = document.getElementById("navbar").offsetHeight;
+      var navBottom = document.getElementById("navbar").getBoundingClientRect().bottom;
+      
+      var visibleFromHere = Math.max(0, navBottom); // navBottom might be negative on desktop
+      
+      if (panelTop < visibleFromHere) {
+        // If the just expanded panel's top is above what's visible in the viewport, scroll up.
+        $('html,body').animate({
+            scrollTop: panel.offset().top-visibleFromHere-25
+        }, 500); 
+      }
+  }); 
+  </script>
+
+        </div>
+    </div>
+    
+    <script>
+      $('.nav-tabs a:first').tab('show'); // Make sure the first tab is selected in case none of the rendered tabs are marked as active
+      
+      $('.nav-tabs a[href="#tab-bachelor"]').tab('show');
+    </script>
+    
+    
+    
+    
+    
+
+    
+      <div>
+        <h2>You might be interested in this:</h2>
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/country/ireland">
+              <div class="thumbnail home-country-card">  
+                    <img alt="Study in Ireland" title="Study in Ireland" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/118/slideshow_ireland-cliffs-of-moher.jpg" />
+                  <div class="caption">
+                    <strong>Study in Ireland</strong>              
+                  </div>                  
+                
+              </div>
+</a>          </div>
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/article/a-brief-history-of-academic-scarves">
+              <div class="thumbnail home-country-card">  
+                    <img alt="A brief history of academic scarves" title="A brief history of academic scarves" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/227/slideshow_C170724NG_097_fitted.jpg" />
+                  <div class="caption">
+                    <strong>A brief history of academic scarves</strong>              
+                  </div>
+              </div>
+</a>          </div>
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/article/the-top-8-phrases-to-know-when-studying-in-ireland">
+              <div class="thumbnail home-country-card">  
+                    <img alt="The top 8 phrases to know when studying in Ireland" title="The top 8 phrases to know when studying in Ireland" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/172/slideshow_4436418878_7cdb5a639e_o.jpg" />
+                  <div class="caption">
+                    <strong>The top 8 phrases to know when studying in Ireland</strong>              
+                  </div>
+              </div>
+</a>          </div>
+        </div>
+      </div>  
+    
+    </div>
+
+
+    
+
+
+    
+    
+    
+    
+    
+    
+  </div>
+  
+</div>
+
+
+<script>
+
+  $('[data-toggle="tooltip"]').tooltip();
+
+  $( function() {
+    $( ".accordion" ).accordion({
+      heightStyle: "content"
+    });
+  } );
+  
+  
+  handler = Gmaps.build('Google');
+  handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+    markers = handler.addMarkers([
+      {
+        "lat": 0,
+        "lng": 0,
+      }
+    ]);
+    handler.bounds.extendWith(markers);
+    handler.fitMapToBounds();
+  });
+  
+  
+  
+  
+</script>
+  
+
+    
+
+  
+  
+  <footer class="top-footer">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Merriweather Sans:300,400i,700']
+      }
+    });
+  </script> 
+
+  
+  <div class="container">
+  <div class="row">
+    
+    <div class="text-left col-md-8 col-xs-6" style="display: inline-block;float: left;">
+      <a href="/" title="Study.EU" data-track-click="true" data-event-category="Footer Logo"><img class="footer-logo" src="/assets/study-eu_logo_wb_200x66-8722da28bad82460d8951c34fe8b5ba8e11794b2fd21e83ee8c5fe54323ea73b.png" /></a><br />
+      <p>
+        Copyright &copy; 2021 <a title="Study.EU" href="/">Study.EU</a>
+      </p>
+      <p>
+        
+      </p>
+      <a class="social-link" href="https://www.facebook.com/StudyEU-168756646881605/" target="_blank" title="Like Study.EU on Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://twitter.com/wwwStudyEU" target="_blank" title="Follow Study.EU on Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://www.linkedin.com/company/study.eu/" target="_blank" title="Follow Study.EU on Linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    </div>
+    <div class="text-right col-md-4 col-xs-6">
+      <br /><br />
+          <a rel="nofollow" href="/page/imprint">Imprint</a>
+        &middot;
+          <a rel="nofollow" href="/page/about-study-eu">About Study.eu</a>
+        &middot;
+          <a rel="nofollow" href="/page/privacy-policy">Privacy Policy</a>
+        &middot;
+      <a href="/jobs">Jobs</a>
+      
+      <br />
+      
+      <a href="/press">Press</a>
+      
+      <!-- &middot; -->
+      
+        <!-- &mdash; //-->
+      
+      <br /><br />
+      <a href="/advertise-on-study-eu">Advertise on Study.eu</a>
+    </div>
+  </div>
+  </div>
+</footer>
+
+<a href="javascript:" id="scroll-to-top" title="Scroll back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+<script>
+  $(window).scroll(function() {
+      if ($(this).scrollTop() >= 100) {        // page is scrolled more than 100px
+          $('#scroll-to-top').fadeIn(500);
+      } else {
+          $('#scroll-to-top').fadeOut(500);
+      }
+  });
+  $('#scroll-to-top').click(function() {      // arrow is clicked
+      $('body,html').animate({
+          scrollTop : 0                       // scroll to top
+      }, 500);
+  });
+</script>
+
+
+  
+  <footer class="footer-countries">
+
+
+  <div class="container">
+    <div class="row">
+    
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <h5>Study in Europe:</h5>
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Austria" href="/country/austria">Austria</a><br />
+                <a title="Study in Belgium" href="/country/belgium">Belgium</a><br />
+                <a title="Study in the Czech Republic" href="/country/czech-republic">Czech Republic</a><br />
+                <a title="Study in Denmark" href="/country/denmark">Denmark</a><br />
+                <a title="Study in Estonia" href="/country/estonia">Estonia</a><br />
+                <a title="Study in the Faroe Islands" href="/country/faroe-islands">Faroe Islands</a><br />
+                <a title="Study in Finland" href="/country/finland">Finland</a><br />
+                <a title="Study in France" href="/country/france">France</a><br />
+                <a title="Study in Germany" href="/country/germany">Germany</a><br />
+                <a title="Study in Greece" href="/country/greece">Greece</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Hungary" href="/country/hungary">Hungary</a><br />
+                <a title="Study in Iceland" href="/country/iceland">Iceland</a><br />
+                <a title="Study in Ireland" href="/country/ireland">Ireland</a><br />
+                <a title="Study in Italy" href="/country/italy">Italy</a><br />
+                <a title="Study in Latvia" href="/country/latvia">Latvia</a><br />
+                <a title="Study in Liechtenstein" href="/country/liechtenstein">Liechtenstein</a><br />
+                <a title="Study in Lithuania" href="/country/lithuania">Lithuania</a><br />
+                <a title="Study in Malta" href="/country/malta">Malta</a><br />
+                <a title="Study in the Netherlands" href="/country/netherlands">Netherlands</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Norway" href="/country/norway">Norway</a><br />
+                <a title="Study in Poland" href="/country/poland">Poland</a><br />
+                <a title="Study in Portugal" href="/country/portugal">Portugal</a><br />
+                <a title="Study in Romania" href="/country/romania">Romania</a><br />
+                <a title="Study in Russia" href="/country/russia">Russia</a><br />
+                <a title="Study in Spain" href="/country/spain">Spain</a><br />
+                <a title="Study in Sweden" href="/country/sweden">Sweden</a><br />
+                <a title="Study in Switzerland" href="/country/switzerland">Switzerland</a><br />
+                <a title="Study in the United Kingdom" href="/country/united-kingdom">United Kingdom</a><br />
+            </div>
+          </div>
+        </div>
+    
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Recent articles:</h5>
+          </div>
+          <div class="col-md-8">
+              <p><a href="/article/what-is-the-ects-european-credit-transfer-and-accumulation-system">What is the European Credit Transfer System (ECTS)?</a></p>
+              <p><a href="/article/study-zoology">Study Zoology: All you need to know</a></p>
+              <p><a href="/article/us-students-how-to-use-fafsa-for-a-degree-in-europe">US students: How to use FAFSA for a degree in Europe</a></p>
+              <p><a href="/article/fafsa-eligible-universities-colleges-in-europe">FAFSA: Eligible universities &amp; colleges in Europe</a></p>
+              <p><a href="/article/looking-for-a-uk-degree-in-germany-study-in-leipzig">Looking for a UK degree in Germany? Study in Leipzig!</a></p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  
+  </div>
+
+</footer>
+
+  
+  <footer class="footer-press">
+  <div class="container">
+    <div class="row footer-press-description">
+      <div class="col-md-12 text-center">
+        Study.EU has been mentioned in numerous news publications worldwide, such as:
+      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="L&#39;Étudiant (France)" title="L&#39;Étudiant (France)" data-src="/assets/press/letudiant_gray_200-57bccbdceaef3c62c8660629603372823c98afe433bd39bf6d42a73263c113c3.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Frankfurter Allgemeine (Germany)" title="Frankfurter Allgemeine (Germany)" data-src="/assets/press/faz_gray_300-b6e5e6022a7b164c24b69a51fb97a72715018db745fbcda8580675a507370b8b.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Standard (Hong Kong)" title="The Standard (Hong Kong)" data-src="/assets/press/the-standard-hong-kong_gray_200-f124ca057d2671730e1f6d996377ef4614a28ccf04ae04f730eaf16ed7ee0b46.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Independent (UK)" title="The Independent (UK)" data-src="/assets/press/the-independent-uk_gray_300-63238e279b3c62b1f87faf17fcbcf1f14a2e5b9229193a0431fc974da217d159.png" class="lazyload" />
+</a>      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Al-Masry Al-Youm (Egypt)" title="Al-Masry Al-Youm (Egypt)" data-src="/assets/press/al-masry_al-youm_gray_200-9d8e503cd53ec4d955c3e6f7bf2a1c0badb500a0d2bd8a1ef1d11acd686879e5.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Le Monde (France)" title="Le Monde (France)" data-src="/assets/press/le-monde_gray_200-24d8bca493f3a2b8e0150cb4ef38f00c9924ac5e7acfbdb8750076c949c70052.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Local (Europe)" title="The Local (Europe)" data-src="/assets/press/the-local_gray_200-7631164ea94edf8d065b3af6f64274416162d866ce1cea737c3ee25f28cdd098.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Forbes (USA)" title="Forbes (USA)" data-src="/assets/press/forbes_gray_200-deff6ef2c28ec5a275f404c5f59d56f4b687881eb39de52b79b5add3ca609fe2.png" class="lazyload" />
+</a>      </div>
+    </div>
+  </div>
+</footer>
+
+  
+  
+  
+  
+    <div class="cookies-eu js-cookies-eu row">
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+    <div class="cookies-eu-content-holder col-md-4 col-sm-6 col-xs-6 align-self-center">
+      Cookies &amp; analytics help us deliver our services.
+        <a href="/page/privacy-policy" class="cookies-eu-link" target="_blank"> Privacy policy </a>
+    </div>
+    <div class="cookies-eu-button-holder col-md-4 col-sm-6 col-xs-6">
+      <button class="cookies-eu-ok js-cookies-eu-ok btn btn-lg btn-primary" data-track-click-ga="true" data-event-category="Cookie Consent Button"> OK </button>
+    </div>
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+  </div>
+
+  
+  <script>
+  // Improved Ahoy view tracking with additional attributes
+  var additionalProperties = {};
+    additionalProperties["country_id"] = 17;
+    mainTrackableLink = "";
+    additionalProperties["university_id"] = 845;
+    mainTrackableLink = "https://www.study.eu/link/university/cork-institute-of-technology-cit/from-profile";
+  console.log("Ahoy: View with additional properties: "+JSON.stringify(additionalProperties));
+  ahoy.trackView(additionalProperties);
+</script>
+<a name="ga"></a> <!-- GA //-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42442116-3', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+  
+  
+  
+    
+  //############################################################
+  //########## 2018-07    NEW CUSTOM METHODS          ##########
+  
+  function getDataTrackAttributes(element) {
+    var data = {};
+    [].forEach.call(element.attributes, function(attr) {
+      if (/^data-trackvalue-/.test(attr.name)) {
+        // Relevant attributes would always be called "data-track-foobar"
+        var underscorename = attr.name.substr(16).replace(/-/g, "_");
+        data[underscorename] = parseInt(attr.value) || attr.value; // Provide as integer if possible, otherwise the original string
+      }
+    });
+    return data;
+  }
+  
+  // Set data-track-click and utm_source for all external links in the description content
+  var content_links = document.querySelectorAll('div.content-description a');
+  for (var i = 0; i < content_links.length; i++) {
+    if ( ((new URL(content_links[i].href, document.baseURI).href) == mainTrackableLink) || (content_links[i].host !== window.location.host) ) {
+      // Link is the main trackable link, or link is external --> add tracking and utm_source if not present
+      utm_url = new URL(content_links[i].href);
+      utm_url.searchParams.set("utm_source", "Study.eu"); // add (or overwrite existing) utm_source parameter
+      content_links[i].href = utm_url;
+      content_links[i].classList.add("external-tracked");
+      content_links[i].setAttribute("data-event-category", "Outbound Link");
+      content_links[i].setAttribute("data-event-label", content_links[i].href);
+      content_links[i].setAttribute("data-track-click", "true"); // Once data-track-click is set to true, initDataAttributes() below will add the id values
+    }
+  }
+  console.log("Modified "+content_links.length+" links in description content.");
+  
+  // Set data attributes for tracking of footer press links
+  footerPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < footerPressLinks.length; i++) {
+    footerPressLinks[i].setAttribute("data-track-click-ga", "true");
+    footerPressLinks[i].setAttribute("data-event-category", "Footer Press Link");
+    footerPressLinks[i].setAttribute("data-event-label", window.location.href);
+  }
+  
+  relatedLinks = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < relatedLinks.length; i++) {
+    relatedLinks[i].setAttribute("data-track-click-ga", "true");
+    relatedLinks[i].setAttribute("data-event-category", "Related Link");
+    relatedLinks[i].setAttribute("data-event-label", relatedLinks[i].getAttribute("href"));
+  }  
+  
+  function initDataAttributes() {
+    // Initialise element data attributes based on backend instance variables
+    elements = document.querySelectorAll('[data-track-click="true"],[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+        if (!elements[i].hasAttribute("data-trackvalue-country-id")) {
+          elements[i].setAttribute("data-trackvalue-country-id", "17");
+        }
+      
+        if (!elements[i].hasAttribute("data-trackvalue-university-id")) {
+          elements[i].setAttribute("data-trackvalue-university-id", "845");
+        }
+      
+    }
+    console.log("initDataAttributes()");
+  }
+  initDataAttributes();
+    
+  function trackClick(event, trackGA = true, trackAhoy = true) {
+    // When an element was clicked, track the click in GA and Ahoy
+    
+    strEventLabel = "";
+    if        ( event.currentTarget.hasAttribute("data-event-label") ) {
+      strEventLabel = event.currentTarget.getAttribute("data-event-label");
+    } else if ( event.currentTarget.hasAttribute("href") ) {
+      strEventLabel = event.currentTarget.href;
+    }
+    
+    ga('send', 'event', {
+      eventCategory:  event.currentTarget.getAttribute("data-event-category"),
+      eventAction:    'click',
+      eventLabel:     strEventLabel
+    });
+    
+    data = getDataTrackAttributes(event.currentTarget);
+    data["href"] = event.target.href;
+    data["page"] = window.location.pathname;
+    
+    /*ahoy.track (
+      event.currentTarget.getAttribute("data-event-category"),
+      {
+        country_id: 17, 
+        university_id: 845, 
+        
+        href: event.target.href,
+        page: window.location.pathname
+      }
+    );*/
+    
+    if (trackAhoy) {
+        data["medium"] = "Profile";
+      ahoy.track (
+        event.currentTarget.getAttribute("data-event-category")+" - click",
+        data
+      );
+    }
+    
+    console.log("trackClick(event, trackGA = "+trackGA+", trackAhoy = "+trackAhoy+"): " +
+      event.currentTarget.getAttribute("data-event-category") + ", " +
+      "{country_id: 17, university_id: 845, href: " + event.target.href + ", " +
+      "page:"+window.location.pathname+"});"
+    );
+  }
+  
+  
+  function trackClicksGA() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click-ga="true"]:not([data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event, true, false);
+      });
+    }
+    console.log("trackClicksGA(): "+elements.length+" elements");
+  }
+  trackClicksGA();
+  
+  function trackClicks() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event);
+      });
+    }
+    console.log("trackClicks(): "+elements.length+" elements");
+  }
+  trackClicks();
+  
+  function trackRenderingsGA() {
+    // Track renderings only in GA
+    // This would be for large-volume data that is interesting, but not mission-critical
+
+    elements = document.querySelectorAll('[data-track-rendering-ga="true"]:not([data-track-rendering="true"])');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+    }
+    
+    console.log("trackRenderingsGA(): "+elements.length+" elements");
+  }
+  trackRenderingsGA();
+  
+  function trackRenderings() {
+    // Track renderings in GA *and* Ahoy
+    elements = document.querySelectorAll('[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+      
+      data = getDataTrackAttributes(elements[i]);
+      data["href"] = elements[i].getAttribute("href");
+      data["page"] = window.location.pathname;
+      
+      ahoy.track (
+        elements[i].getAttribute("data-event-category")+" - rendered",
+        data
+      );
+    }
+    
+    console.log("trackRenderings(): "+elements.length+" elements");
+  }
+  trackRenderings();
+  
+  
+  
+    ga('send', 'event', {
+      eventCategory:  'Country Content',
+      eventAction:    'rendered',
+      eventLabel:     'Ireland',
+      nonInteraction: true
+    });
+
+  
+  //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  //############################################################
+
+  
+  
+  /*
+  anchorsExternalTracked = document.getElementsByClassName("external-tracked");
+  for (var i = 0 ; i < anchorsExternalTracked.length; i++) {
+    anchorsExternalTracked[i].addEventListener("click", function(event){
+      //event.preventDefault();
+      
+      handleOutboundLinkClicks(event);
+      
+      //document.location = this.href;
+      //var win = window.open(this.href, '_blank');
+      //win.focus();
+      
+    });
+    
+    // Trigger event that shows in GA that the link was rendered
+    ga('send', 'event', {
+      eventCategory: 'Outbound Link',
+      eventAction: 'rendered',
+      eventLabel: anchorsExternalTracked[i].href
+    });   
+  }
+  
+  anchorsRelatedTracked = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < anchorsRelatedTracked.length; i++) {
+    anchorsRelatedTracked[i].addEventListener("click", function(event){
+      handleRelatedLinkClicks(event);
+    });
+  }
+  
+  anchorsFeaturedUniversityTracked = document.getElementsByClassName("featured-university-tracked");
+  for (var i = 0 ; i < anchorsFeaturedUniversityTracked.length; i++) {
+    anchorsFeaturedUniversityTracked[i].addEventListener("click", function(event){
+      handleFeaturedUniversityLinkClicks(event);
+    });
+  }  
+  
+  
+  anchorsFooterPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < anchorsFooterPressLinks.length; i++) {
+    anchorsFooterPressLinks[i].addEventListener("click", function(event){
+      handleFooterPressLinkClicks(event);
+    });
+  }
+  
+  
+  anchorsCustomTracked = document.querySelectorAll('[data-ga-custom-event-label]');
+  for (var i = 0 ; i < anchorsCustomTracked.length; i++) {
+    anchorsCustomTracked[i].addEventListener("click", function(event){
+      handleCustomTracked(event);
+    });
+  }
+  */
+  
+  ////////////////////////////////////////////////////////////////////////////////
+
+  
+  
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"cb4ef145dd","applicationID":"55169925","transactionName":"Jg5fTRMJXFtQQBpHQwoGQ1gMC1VEGkFQVkMGCQ==","queueTime":0,"applicationTime":308,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"cb4ef145dd",applicationID:"55169925"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+  <title>Search study programs in Europe | Study.EU</title>
+   
+  <link rel="stylesheet" media="all" href="/assets/application-788bf60a726cbc46bce208400674992d5b5b0e3a0892577e97f4ee25b84407b9.css" />
+  <script src="/assets/application-6d00a9f66b3f7e1a7db9282e671658ce415a54e8512569e7b539a89dc0fb74a5.js"></script>
+  
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="pf/H93btzgSZX1ih0RynhWXMK+UHxefn7SQAdne97zd9Sni0Jr25IF8gtowI7xyzQckBC3CZTfxP4Bd2+uf+YA==" />
+  
+  
+    
+  
+  <meta name="robots" content="noindex,follow" />
+  
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-29b05ed0a02376d0d37f92df42a0d954d97274430a0f6264e4d19745408f15c8.ico" />
+  
+  <meta name="description" content="Study in Europe: Bachelors, Masters, PhDs ✓ More than 7,000 degree programmes. Study.EU: Your gateway to universities in Europe." />
+  
+  <meta name="keywords" content="study in europe, universities, europe, master, bachelor, masters, bachelors, msc, bsc, llb, llm, phd, doctorate, university, study abroad" />
+  <meta name="google-site-verification" content="9sv6t--Xh8SiHr58R3chJHOJVHixvhn6jBK8Qzc9Z9U" />
+  <meta name="msvalidate.01" content="5E3AE5307267C1BED099C27EB59E264E" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  <link rel="canonical" href="https://www.study.eu/search" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@wwwStudyEU" />
+  <meta name="twitter:title" content="Search study programs in Europe | Study.EU" />
+  
+  <meta property="og:title"  content="Search study programs in Europe | Study.EU" />
+  
+  
+  
+  
+  
+      <meta property="og:type" content="article" />
+      <meta property="article:publisher" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+      <meta property="article:author" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+  
+  <meta property="og:description" content="Study in Europe: Bachelors, Masters, PhDs ✓ More than 7,000 degree programmes. Study.EU: Your gateway to universities in Europe." />
+  
+  
+</head>
+<body>
+
+  <nav id="navbar" class="navbar navbar-static-top container container-fluid">
+  
+  <div class="container">
+    <div class="row" style="position: relative;">
+        <div class="col-md-3 col-xs-9 navbar-header">
+          <a class="navbar-brand" href="/" title="Study.EU">
+            <img alt="Study.EU" class="homepage-logo" src="/assets/study-eu_logo-ee9afe0c98ee9ac266f676d5dcb967023df14f95661b91c7812bef38a3b0c03a.png" />
+          </a>
+        </div>
+        <div class="col-md-8 bottom-align-text">
+            <strong class="navbar-claim">Your gateway to universities in Europe</strong>
+        </div>
+        <div class="col-md-1 col-xs-3 navbar-search-link-container">
+          <div class="navbar-search-link">
+          </div>
+        </div>
+    </div>
+</div>
+  
+</nav>
+
+  <div class="container" id="div-main-container" role="main">
+
+  </div>
+  
+  
+
+
+<div class="div-breadcrumbs">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="/">Study.eu</a></li><i class="fa fa-angle-right breadcrumb-separator" aria-hidden="true"></i><li>Search</li>
+    </ol>  
+  </div>
+</div> 
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://www.study.eu/",
+        "name": "Study.eu"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://www.study.eu/search",
+        "name": "Search"
+      }
+    }
+  ]
+}
+</script>
+
+<div id="programme-search" class="container">
+
+  <h1>Search study programmes in Europe</h1>
+  
+  
+  
+  <form id="programme-search-form" class="form-group form-search-facet-container" action="/search" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  
+  <input type="hidden" id="page" name="page" readonly="readonly" value="1">
+  
+    <div class="row">
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-8">
+      
+      
+        <div style="margin-top: 0.5em; margin-left: 0.5em; float: left;">
+          <strong>
+              23 programmes found, showing 1 to 10:
+          </strong>
+        </div>
+        
+        <div class="toggle-search-filter-visibility-container">
+          <div class="toggle-search-filter-visibility btn btn-default">
+            <span class="toggle-search-filter-visibility-hide"><i class="fa fa-check" aria-hidden="true"></i><br/>Filters</span>
+            <span class="toggle-search-filter-visibility-show"><i class="fa fa-search" aria-hidden="true"></i><br/>Filters</span>
+          </div>
+        </div>
+        <script>
+          $(".toggle-search-filter-visibility").click( function() {
+            $("#search-filters-panel").slideToggle();
+            $(".toggle-search-filter-visibility-hide").toggle();
+            $(".toggle-search-filter-visibility-show").toggle();
+            $("body").toggleClass("unscrollable", $(".toggle-search-filter-visibility-hide").is(":visible"));
+          });
+        </script>
+        
+        
+          <div style="float: right; text-align: right; padding: 1em; padding-top: 0;">
+            Sort by: 
+            <select name="sort" id="sort"><option selected="selected" value="recommended">Recommended</option>
+<option value="duration">Programme length</option>
+<option value="name">Programme name A-Z</option>
+<option value="university">University A-Z</option></select>
+          </div>
+        
+        
+      </div>
+    </div>
+    
+    
+    <div id="search-filters-panel" class="panel panel-default form-search-facets-panel col-md-4">
+    
+      <h3>Search filters</h3>
+  
+      <div class="form-group form-search-facet">
+        <label for="search">Search for:</label>
+        <input type="text" id="search" name="search" class="form-control" placeholder="..." value="">
+      </div>
+  
+      
+      <hr class="form-search-facet-divider" />
+      
+  
+      <div class="form-group form-search-facet">
+        
+        <p>
+          <label for="discipline">Discipline:</label>
+        </p>
+          <input type="hidden" id="discipline" name="discipline" readonly="readonly" value="106">
+          <p>
+            <a title="Back to all disciplines" href="/search?sort=recommended">&lt;&lt; Back to all disciplines</a>
+          </p>
+            <a title="Show programmes in Engineering &amp; Technology" href="/search?discipline=3&amp;sort=recommended">Engineering &amp; Technology</a>
+            <ul class="search-discipline-tree">
+                  <li class="search-discipline-child"><a title="Show programmes in Automotive Engineering" href="/search?discipline=27&amp;sort=recommended">Automotive Engineering</a></li>
+                  <li class="search-discipline-child"><a title="Show programmes in Aviation &amp; Aeronautical Engineering" href="/search?discipline=24&amp;sort=recommended">Aviation &amp; Aeronautical Engineering</a></li>
+                  <li class="search-discipline-child"><a title="Show programmes in Bioengineering &amp; Biotechnology" href="/search?discipline=99&amp;sort=recommended">Bioengineering &amp; Biotechnology</a></li>
+                  <li class="search-discipline-child"><a title="Show programmes in Chemical Engineering" href="/search?discipline=28&amp;sort=recommended">Chemical Engineering</a></li>
+                  <li class="search-discipline-child"><a title="Show programmes in Civil Engineering &amp; Construction" href="/search?discipline=29&amp;sort=recommended">Civil Engineering &amp; Construction</a></li>
+                  <li class="search-discipline-child"><a title="Show programmes in Electrical Engineering" href="/search?discipline=100&amp;sort=recommended">Electrical Engineering</a></li>
+                  <li class="search-discipline-child"><a title="Show programmes in Electronics &amp; Communication" href="/search?discipline=31&amp;sort=recommended">Electronics &amp; Communication</a></li>
+                  <li class="search-discipline-child"><a title="Show programmes in Environmental Engineering" href="/search?discipline=32&amp;sort=recommended">Environmental Engineering</a></li>
+                  <li class="search-discipline-child"><a title="Show programmes in General Engineering &amp; Technology" href="/search?discipline=101&amp;sort=recommended">General Engineering &amp; Technology</a></li>
+                  <li class="search-discipline-child"><a title="Show programmes in Industrial Management" href="/search?discipline=33&amp;sort=recommended">Industrial Management</a></li>
+                  <li class="search-discipline-child"><a title="Show programmes in Industrial &amp; Systems Engineering" href="/search?discipline=102&amp;sort=recommended">Industrial &amp; Systems Engineering</a></li>
+                  <li class="search-discipline-child"><a title="Show programmes in Marine Engineering" href="/search?discipline=103&amp;sort=recommended">Marine Engineering</a></li>
+                  <li class="search-discipline-child"><a title="Show programmes in Materials Science" href="/search?discipline=104&amp;sort=recommended">Materials Science</a></li>
+                  <li class="search-discipline-child"><a title="Show programmes in Mechanical Engineering" href="/search?discipline=105&amp;sort=recommended">Mechanical Engineering</a></li>
+                  <li class="search-discipline-child search-discipline-selected">Mining, Oil &amp; Gas</li>
+                  <li class="search-discipline-child"><a title="Show programmes in Power &amp; Energy Engineering" href="/search?discipline=107&amp;sort=recommended">Power &amp; Energy Engineering</a></li>
+                  <li class="search-discipline-child"><a title="Show programmes in Robotics" href="/search?discipline=108&amp;sort=recommended">Robotics</a></li>
+            </ul>
+        
+        
+        
+      </div>
+      
+      
+      <hr class="form-search-facet-divider" />
+      
+      
+      <div class="form-group form-search-facet">
+        <label for="degreelevel">Level:</label>
+        <select id="degreelevel" name="degreelevel">
+          <option value="">all (Bachelor/Master/PhD)</option>
+          <option value="bachelor" >Bachelor</option>
+          <option value="master" >Master</option>
+          <option value="doctorate" >PhD</option>
+        </select>
+      </div>
+      
+      
+      <hr class="form-search-facet-divider" />
+      
+      
+      <div class="form-group form-search-facet">
+        <div class="select2-clear-label-container">
+          <div class="select2-clear-label" id="select2-clear-label-countries">
+            <i class="fa fa-times" aria-hidden="true"></i>&nbsp;CLEAR
+          </div>
+        </div>
+        <label for="countries">Countries:</label>
+        <input type="hidden" id="countries_selected_string" name="countries" readonly="readonly" value="">
+        <select id="dropdown-countries" multiple="multiple" style="width: 100%;">
+            <option value="at" >Austria</option>
+            <option value="be" >Belgium</option>
+            <option value="cz" >Czech Republic</option>
+            <option value="dk" >Denmark</option>
+            <option value="ee" >Estonia</option>
+            <option value="fo" >Faroe Islands</option>
+            <option value="fi" >Finland</option>
+            <option value="fr" >France</option>
+            <option value="de" >Germany</option>
+            <option value="gr" >Greece</option>
+            <option value="hu" >Hungary</option>
+            <option value="is" >Iceland</option>
+            <option value="ie" >Ireland</option>
+            <option value="it" >Italy</option>
+            <option value="lv" >Latvia</option>
+            <option value="li" >Liechtenstein</option>
+            <option value="lt" >Lithuania</option>
+            <option value="mt" >Malta</option>
+            <option value="nl" >Netherlands</option>
+            <option value="no" >Norway</option>
+            <option value="pl" >Poland</option>
+            <option value="pt" >Portugal</option>
+            <option value="ro" >Romania</option>
+            <option value="ru" >Russia</option>
+            <option value="es" >Spain</option>
+            <option value="se" >Sweden</option>
+            <option value="ch" >Switzerland</option>
+            <option value="uk" >United Kingdom</option>
+        </select>
+      </div>
+      
+      
+      <hr class="form-search-facet-divider" />
+      
+
+      <div class="form-group form-search-facet">
+        <label for="amount">Tuition fee:</label>
+        <input type="hidden" id="tuition_eea_min" name="tuition_eea_min" readonly="readonly">
+        <input type="hidden" id="tuition_eea_max" name="tuition_eea_max" readonly="readonly">
+
+        <br />
+        
+        <table>
+          <tr>
+            <td>in</td>
+            <td>
+              <select id="select-currency" name="currency">
+                <option value="EUR" selected=&quot;selected&quot;>&euro; Euros</option>
+                <option value="GBP" >&pound; British Pounds</option>
+                <option value="USD" >$ US Dollars</option>
+              </select>
+              <select id="select-tuition-term" name="tuition_term">
+                <option value="annual" selected=&quot;selected&quot; >per year</option>
+                <option value="total"   >whole degree</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              for
+            </td>
+            <td>
+              <select id="select-tuition-region" name="tuition_region">
+                <option value="eea"    selected=&quot;selected&quot; >students from EU/EEA</option>
+                <option value="noneea"  >non-EEA international students</option>
+              </select>
+              <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Tuition fees are usually different for students from outside the EU/EEA."></i>
+            </td>
+          </tr>
+        </table>
+
+        
+        <div class="slider-container">
+          <input id="slider-tuition">
+        </div>
+
+      </div>
+      
+      <hr class="form-search-facet-divider" />
+      
+      
+      <div class="form-group form-search-facet">
+        <label for="duration_months">Programme length:</label>
+        <input type="hidden" id="duration_months_min" name="duration_months_min" readonly="readonly">
+        <input type="hidden" id="duration_months_max" name="duration_months_max" readonly="readonly">
+        
+        <div class="slider-container">
+          <input class="slider" id="slider-duration">
+        </div>
+      </div>
+      
+      <div class="form-group form-search-facet" style="display: none;">
+        <label for="xxx">Required level of English:</label>
+        <br />
+        <select id="select-englishcerts">
+          <option value="cambridge">Cambridge CAE/CPE</option>
+          <option value="ielts" selected="selected">IELTS</option>
+          <option value="pte" >PTE Academic</option>
+          <option value="toefl_ibt" >TOEFL iBT</option>
+          <option value="toefl_pbt" >TOEFL PBT</option>
+        </select>
+        <br />
+        <input class="slider" id="slider-english">
+      </div>
+      
+      <button name="button" type="submit" id="programme-search-form-submit" class="btn btn-lg btn-success">
+        <i class="fa fa-search"></i> Search programmes
+</button>    
+    </div>
+    
+    
+
+    
+      <div id="programme-search-results" class="col-md-8">
+      
+          <div id="spinner" class="row col-md-12 text-center spinner" class="text-center">
+  <i class='fa fa-circle-o-notch fa-spin fa-2x'></i><br/><br/>
+  <em>Processing...</em>
+</div>
+          
+            <div class="search-filter-bubbles">
+  <ul class="search-filter-bubbles-list">
+  
+  <li class="search-filter-bubbles search-filter-bubbles-label">Active search filters:</li>
+  
+
+
+
+
+
+    <li class="search-filter-bubbles remove-search-filter">
+      
+      <a class="remove-search-filter" href="/search?sort=recommended">
+        Mining, Oil &amp; Gas
+</a>    </li>
+
+
+
+
+
+  
+  </ul>
+  
+</div>
+
+
+
+
+
+<script>
+  var removable_filters = document.getElementsByClassName("remove-search-filter");
+  
+  for (i = 0; i < removable_filters.length; i++) {
+    removable_filters[i].title = "Remove this filter";
+  } 
+</script>
+
+
+                  <div class="bnnr-container">
+  <a target="_blank" rel="nofollow" data-track-rendering-ga="true" data-track-click-ga="true" data-track-click="true" data-event-category="BC" data-event-label="CODE Berlin" data-trackvalue-bc-id="41" data-trackvalue-href="https://code.berlin/en/?utm_source=Study.eu&amp;utm_medium=Banner" href="https://code.berlin/en/?utm_source=Study.eu&amp;utm_medium=Banner">
+    <img class="bnnr" loading="lazy" src="https://study-eu.s3.amazonaws.com/uploads/bc/bc-code-berlin-desktop.png" />
+</a></div>
+
+
+      <ul class="list-group">
+          <li class="featured-search-result" data-track-rendering-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-stavanger/marine-and-offshore-technology" data-trackvalue-country-id="29" data-trackvalue-university-id="162" data-trackvalue-programme-id="1281">
+
+            
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                  <div class="row">
+                    <div class="col-md-2">
+                        <div class="search-degree-type" title="Master of Science">                
+                          MSc
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                      <a data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-stavanger/marine-and-offshore-technology" data-trackvalue-country-id="29" data-trackvalue-university-id="162" data-trackvalue-programme-id="1281" href="/university/university-of-stavanger/marine-and-offshore-technology">Marine and Offshore Technology</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                
+                  <div class="col-md-2">
+                    <a href="/university/university-of-stavanger">
+                        <img class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_university-of-stavanger-162-logo.png" />
+</a>                  </div>
+                  <div class="col-md-7">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <a title="Learn more about University of Stavanger" data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-stavanger" data-trackvalue-country-id="29" data-trackvalue-university-id="162" href="/university/university-of-stavanger">University of Stavanger</a><br />
+                        <i class="fa fa-map-marker" style="color: #999;"></i>&nbsp;Stavanger, Norway
+                        <span style="font-size: 85%"></span>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 search-result-additional-info">
+                            24 months (120 ECTS)
+                                                    
+                            full-time
+                        </div>
+                                                
+                        <div class="col-md-12 search-result-additional-info">
+                          
+                        </div>
+                        
+                    </div>
+                  </div>
+                  <div class="col-md-3 search-result-buttons">
+                    <p>
+                      <a class="btn btn-primary search-result-button" data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-stavanger/marine-and-offshore-technology" data-trackvalue-country-id="29" data-trackvalue-university-id="162" data-trackvalue-programme-id="1281" href="/university/university-of-stavanger/marine-and-offshore-technology">Learn more</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="featured-search-result" data-track-rendering-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-stavanger/petroleum-engineering-1282" data-trackvalue-country-id="29" data-trackvalue-university-id="162" data-trackvalue-programme-id="1282">
+
+            
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                  <div class="row">
+                    <div class="col-md-2">
+                        <div class="search-degree-type" title="Master of Science">                
+                          MSc
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                      <a data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-stavanger/petroleum-engineering-1282" data-trackvalue-country-id="29" data-trackvalue-university-id="162" data-trackvalue-programme-id="1282" href="/university/university-of-stavanger/petroleum-engineering-1282">Petroleum Engineering</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                
+                  <div class="col-md-2">
+                    <a href="/university/university-of-stavanger">
+                        <img class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_university-of-stavanger-162-logo.png" />
+</a>                  </div>
+                  <div class="col-md-7">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <a title="Learn more about University of Stavanger" data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-stavanger" data-trackvalue-country-id="29" data-trackvalue-university-id="162" href="/university/university-of-stavanger">University of Stavanger</a><br />
+                        <i class="fa fa-map-marker" style="color: #999;"></i>&nbsp;Stavanger, Norway
+                        <span style="font-size: 85%"></span>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 search-result-additional-info">
+                            24 months (120 ECTS)
+                                                    
+                            full-time
+                        </div>
+                                                
+                        <div class="col-md-12 search-result-additional-info">
+                          
+                        </div>
+                        
+                    </div>
+                  </div>
+                  <div class="col-md-3 search-result-buttons">
+                    <p>
+                      <a class="btn btn-primary search-result-button" data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-stavanger/petroleum-engineering-1282" data-trackvalue-country-id="29" data-trackvalue-university-id="162" data-trackvalue-programme-id="1282" href="/university/university-of-stavanger/petroleum-engineering-1282">Learn more</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="featured-search-result" data-track-rendering-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-stavanger/petroleum-geosciences-engineering" data-trackvalue-country-id="29" data-trackvalue-university-id="162" data-trackvalue-programme-id="1284">
+
+            
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                  <div class="row">
+                    <div class="col-md-2">
+                        <div class="search-degree-type" title="Master of Science">                
+                          MSc
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                      <a data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-stavanger/petroleum-geosciences-engineering" data-trackvalue-country-id="29" data-trackvalue-university-id="162" data-trackvalue-programme-id="1284" href="/university/university-of-stavanger/petroleum-geosciences-engineering">Petroleum Geosciences Engineering</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                
+                  <div class="col-md-2">
+                    <a href="/university/university-of-stavanger">
+                        <img class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_university-of-stavanger-162-logo.png" />
+</a>                  </div>
+                  <div class="col-md-7">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <a title="Learn more about University of Stavanger" data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-stavanger" data-trackvalue-country-id="29" data-trackvalue-university-id="162" href="/university/university-of-stavanger">University of Stavanger</a><br />
+                        <i class="fa fa-map-marker" style="color: #999;"></i>&nbsp;Stavanger, Norway
+                        <span style="font-size: 85%"></span>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 search-result-additional-info">
+                            24 months (120 ECTS)
+                                                    
+                            full-time
+                        </div>
+                                                
+                        <div class="col-md-12 search-result-additional-info">
+                          
+                        </div>
+                        
+                    </div>
+                  </div>
+                  <div class="col-md-3 search-result-buttons">
+                    <p>
+                      <a class="btn btn-primary search-result-button" data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-stavanger/petroleum-geosciences-engineering" data-trackvalue-country-id="29" data-trackvalue-university-id="162" data-trackvalue-programme-id="1284" href="/university/university-of-stavanger/petroleum-geosciences-engineering">Learn more</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="" data-track-rendering-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-aberdeen/engineering-mechanical-with-oil-and-gas-studies" data-trackvalue-country-id="42" data-trackvalue-university-id="256" data-trackvalue-programme-id="11359">
+
+            
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                  <div class="row">
+                    <div class="col-md-2">
+                        <div class="search-degree-type" title="Bachelor of Engineering">                
+                          BEng
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                      <a data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-aberdeen/engineering-mechanical-with-oil-and-gas-studies" data-trackvalue-country-id="42" data-trackvalue-university-id="256" data-trackvalue-programme-id="11359" href="/university/university-of-aberdeen/engineering-mechanical-with-oil-and-gas-studies">Engineering (Mechanical with Oil and Gas Studies)</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                
+                  <div class="col-md-2">
+                    <a href="/university/university-of-aberdeen">
+                        <img class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_university-of-aberdeen-256-logo.png" />
+</a>                  </div>
+                  <div class="col-md-7">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <a title="Learn more about University of Aberdeen" data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-aberdeen" data-trackvalue-country-id="42" data-trackvalue-university-id="256" href="/university/university-of-aberdeen">University of Aberdeen</a><br />
+                        <i class="fa fa-map-marker" style="color: #999;"></i>&nbsp;Aberdeen, United Kingdom
+                        <span style="font-size: 85%"></span>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 search-result-additional-info">
+                            48 months
+                                                    
+                        </div>
+                                                
+                        <div class="col-md-12 search-result-additional-info">
+                          2,034 EUR per year (students from EU/EEA)
+                        </div>
+                        
+                    </div>
+                  </div>
+                  <div class="col-md-3 search-result-buttons">
+                    <p>
+                      <a class="btn btn-primary search-result-button" data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-aberdeen/engineering-mechanical-with-oil-and-gas-studies" data-trackvalue-country-id="42" data-trackvalue-university-id="256" data-trackvalue-programme-id="11359" href="/university/university-of-aberdeen/engineering-mechanical-with-oil-and-gas-studies">Learn more</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="" data-track-rendering-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-aberdeen/geology-and-petroleum-geology" data-trackvalue-country-id="42" data-trackvalue-university-id="256" data-trackvalue-programme-id="11413">
+
+            
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                  <div class="row">
+                    <div class="col-md-2">
+                        <div class="search-degree-type" title="Bachelor of Science">                
+                          BSc
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                      <a data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-aberdeen/geology-and-petroleum-geology" data-trackvalue-country-id="42" data-trackvalue-university-id="256" data-trackvalue-programme-id="11413" href="/university/university-of-aberdeen/geology-and-petroleum-geology">Geology and Petroleum Geology</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                
+                  <div class="col-md-2">
+                    <a href="/university/university-of-aberdeen">
+                        <img class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_university-of-aberdeen-256-logo.png" />
+</a>                  </div>
+                  <div class="col-md-7">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <a title="Learn more about University of Aberdeen" data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-aberdeen" data-trackvalue-country-id="42" data-trackvalue-university-id="256" href="/university/university-of-aberdeen">University of Aberdeen</a><br />
+                        <i class="fa fa-map-marker" style="color: #999;"></i>&nbsp;Aberdeen, United Kingdom
+                        <span style="font-size: 85%"></span>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 search-result-additional-info">
+                            48 months
+                                                    
+                        </div>
+                                                
+                        <div class="col-md-12 search-result-additional-info">
+                          2,034 EUR per year (students from EU/EEA)
+                        </div>
+                        
+                    </div>
+                  </div>
+                  <div class="col-md-3 search-result-buttons">
+                    <p>
+                      <a class="btn btn-primary search-result-button" data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-aberdeen/geology-and-petroleum-geology" data-trackvalue-country-id="42" data-trackvalue-university-id="256" data-trackvalue-programme-id="11413" href="/university/university-of-aberdeen/geology-and-petroleum-geology">Learn more</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="" data-track-rendering-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-aberdeen/integrated-petroleum-geoscience" data-trackvalue-country-id="42" data-trackvalue-university-id="256" data-trackvalue-programme-id="5592">
+
+            
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                  <div class="row">
+                    <div class="col-md-2">
+                        <div class="search-degree-type" title="Master of Science">                
+                          MSc
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                      <a data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-aberdeen/integrated-petroleum-geoscience" data-trackvalue-country-id="42" data-trackvalue-university-id="256" data-trackvalue-programme-id="5592" href="/university/university-of-aberdeen/integrated-petroleum-geoscience">Integrated Petroleum Geoscience</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                
+                  <div class="col-md-2">
+                    <a href="/university/university-of-aberdeen">
+                        <img class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_university-of-aberdeen-256-logo.png" />
+</a>                  </div>
+                  <div class="col-md-7">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <a title="Learn more about University of Aberdeen" data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-aberdeen" data-trackvalue-country-id="42" data-trackvalue-university-id="256" href="/university/university-of-aberdeen">University of Aberdeen</a><br />
+                        <i class="fa fa-map-marker" style="color: #999;"></i>&nbsp;Aberdeen, United Kingdom
+                        <span style="font-size: 85%"></span>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 search-result-additional-info">
+                            12 months
+                                                    
+                            full-time
+                        </div>
+                                                
+                        <div class="col-md-12 search-result-additional-info">
+                          12,410 EUR per year (students from EU/EEA)
+                        </div>
+                        
+                    </div>
+                  </div>
+                  <div class="col-md-3 search-result-buttons">
+                    <p>
+                      <a class="btn btn-primary search-result-button" data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-aberdeen/integrated-petroleum-geoscience" data-trackvalue-country-id="42" data-trackvalue-university-id="256" data-trackvalue-programme-id="5592" href="/university/university-of-aberdeen/integrated-petroleum-geoscience">Learn more</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="" data-track-rendering-ga="true" data-event-category="Search Result" data-event-label="/university/delft-university-of-technology/offshore-engineering" data-trackvalue-country-id="28" data-trackvalue-university-id="259" data-trackvalue-programme-id="5672">
+
+            
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                  <div class="row">
+                    <div class="col-md-2">
+                        <div class="search-degree-type" title="Master of Science">                
+                          MSc
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                      <a data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/delft-university-of-technology/offshore-engineering" data-trackvalue-country-id="28" data-trackvalue-university-id="259" data-trackvalue-programme-id="5672" href="/university/delft-university-of-technology/offshore-engineering">Offshore Engineering</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                
+                  <div class="col-md-2">
+                    <a href="/university/delft-university-of-technology">
+                        <img class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_delft-university-of-technology-259-logo.png" />
+</a>                  </div>
+                  <div class="col-md-7">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <a title="Learn more about Delft University of Technology" data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/delft-university-of-technology" data-trackvalue-country-id="28" data-trackvalue-university-id="259" href="/university/delft-university-of-technology">Delft University of Technology</a><br />
+                        <i class="fa fa-map-marker" style="color: #999;"></i>&nbsp;Delft, Netherlands
+                        <span style="font-size: 85%"></span>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 search-result-additional-info">
+                            24 months (120 ECTS)
+                                                    
+                            full-time
+                        </div>
+                                                
+                        <div class="col-md-12 search-result-additional-info">
+                          
+                        </div>
+                        
+                    </div>
+                  </div>
+                  <div class="col-md-3 search-result-buttons">
+                    <p>
+                      <a class="btn btn-primary search-result-button" data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/delft-university-of-technology/offshore-engineering" data-trackvalue-country-id="28" data-trackvalue-university-id="259" data-trackvalue-programme-id="5672" href="/university/delft-university-of-technology/offshore-engineering">Learn more</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="" data-track-rendering-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-aberdeen/offshore-engineering-10720" data-trackvalue-country-id="42" data-trackvalue-university-id="256" data-trackvalue-programme-id="10720">
+
+            
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                  <div class="row">
+                    <div class="col-md-2">
+                        <div class="search-degree-type" title="Master of Science">                
+                          MSc
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                      <a data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-aberdeen/offshore-engineering-10720" data-trackvalue-country-id="42" data-trackvalue-university-id="256" data-trackvalue-programme-id="10720" href="/university/university-of-aberdeen/offshore-engineering-10720">Offshore Engineering</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                
+                  <div class="col-md-2">
+                    <a href="/university/university-of-aberdeen">
+                        <img class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_university-of-aberdeen-256-logo.png" />
+</a>                  </div>
+                  <div class="col-md-7">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <a title="Learn more about University of Aberdeen" data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-aberdeen" data-trackvalue-country-id="42" data-trackvalue-university-id="256" href="/university/university-of-aberdeen">University of Aberdeen</a><br />
+                        <i class="fa fa-map-marker" style="color: #999;"></i>&nbsp;Aberdeen, United Kingdom
+                        <span style="font-size: 85%"></span>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 search-result-additional-info">
+                            12 months
+                                                    
+                            full-time / part-time
+                        </div>
+                                                
+                        <div class="col-md-12 search-result-additional-info">
+                          
+                        </div>
+                        
+                    </div>
+                  </div>
+                  <div class="col-md-3 search-result-buttons">
+                    <p>
+                      <a class="btn btn-primary search-result-button" data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-aberdeen/offshore-engineering-10720" data-trackvalue-country-id="42" data-trackvalue-university-id="256" data-trackvalue-programme-id="10720" href="/university/university-of-aberdeen/offshore-engineering-10720">Learn more</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="" data-track-rendering-ga="true" data-event-category="Search Result" data-event-label="/university/robert-gordon-university-rgu/offshore-oil-and-gas-engineering" data-trackvalue-country-id="42" data-trackvalue-university-id="512" data-trackvalue-programme-id="9937">
+
+            
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                  <div class="row">
+                    <div class="col-md-2">
+                        <div class="search-degree-type" title="Master of Science">                
+                          MSc
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                      <a data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/robert-gordon-university-rgu/offshore-oil-and-gas-engineering" data-trackvalue-country-id="42" data-trackvalue-university-id="512" data-trackvalue-programme-id="9937" href="/university/robert-gordon-university-rgu/offshore-oil-and-gas-engineering">Offshore Oil and Gas Engineering</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                
+                  <div class="col-md-2">
+                    <a href="/university/robert-gordon-university-rgu">
+                        <img class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_robert-gordon-university--rgu--512-logo.png" />
+</a>                  </div>
+                  <div class="col-md-7">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <a title="Learn more about Robert Gordon University (RGU)" data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/robert-gordon-university-rgu" data-trackvalue-country-id="42" data-trackvalue-university-id="512" href="/university/robert-gordon-university-rgu">Robert Gordon University (RGU)</a><br />
+                        <i class="fa fa-map-marker" style="color: #999;"></i>&nbsp;Aberdeen, United Kingdom
+                        <span style="font-size: 85%"></span>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 search-result-additional-info">
+                                                    
+                        </div>
+                                                
+                        <div class="col-md-12 search-result-additional-info">
+                          
+                        </div>
+                        
+                    </div>
+                  </div>
+                  <div class="col-md-3 search-result-buttons">
+                    <p>
+                      <a class="btn btn-primary search-result-button" data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/robert-gordon-university-rgu/offshore-oil-and-gas-engineering" data-trackvalue-country-id="42" data-trackvalue-university-id="512" data-trackvalue-programme-id="9937" href="/university/robert-gordon-university-rgu/offshore-oil-and-gas-engineering">Learn more</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="" data-track-rendering-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-aberdeen/oil-and-gas-chemistry" data-trackvalue-country-id="42" data-trackvalue-university-id="256" data-trackvalue-programme-id="10673">
+
+            
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                  <div class="row">
+                    <div class="col-md-2">
+                        <div class="search-degree-type" title="Master of Science">                
+                          MSc
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                      <a data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-aberdeen/oil-and-gas-chemistry" data-trackvalue-country-id="42" data-trackvalue-university-id="256" data-trackvalue-programme-id="10673" href="/university/university-of-aberdeen/oil-and-gas-chemistry">Oil and Gas Chemistry</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                
+                  <div class="col-md-2">
+                    <a href="/university/university-of-aberdeen">
+                        <img class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_university-of-aberdeen-256-logo.png" />
+</a>                  </div>
+                  <div class="col-md-7">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <a title="Learn more about University of Aberdeen" data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-aberdeen" data-trackvalue-country-id="42" data-trackvalue-university-id="256" href="/university/university-of-aberdeen">University of Aberdeen</a><br />
+                        <i class="fa fa-map-marker" style="color: #999;"></i>&nbsp;Aberdeen, United Kingdom
+                        <span style="font-size: 85%"></span>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 search-result-additional-info">
+                            12 months
+                                                    
+                            full-time
+                        </div>
+                                                
+                        <div class="col-md-12 search-result-additional-info">
+                          
+                        </div>
+                        
+                    </div>
+                  </div>
+                  <div class="col-md-3 search-result-buttons">
+                    <p>
+                      <a class="btn btn-primary search-result-button" data-track-click-ga="true" data-event-category="Search Result" data-event-label="/university/university-of-aberdeen/oil-and-gas-chemistry" data-trackvalue-country-id="42" data-trackvalue-university-id="256" data-trackvalue-programme-id="10673" href="/university/university-of-aberdeen/oil-and-gas-chemistry">Learn more</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+      </ul>
+
+        
+          <ul class="pagination pagination"><li class="prev disabled"><span><i class="fa fa-arrow-left"></i></span></li> <li class="active"><span>1</span></li> <li><a rel="next" href="/search?discipline=106&amp;page=2&amp;sort=recommended">2</a></li> <li><a href="/search?discipline=106&amp;page=3&amp;sort=recommended">3</a></li> <li class="next"><a rel="next" href="/search?discipline=106&amp;page=2&amp;sort=recommended"><i class="fa fa-arrow-right"></i></a></li></ul>
+    
+      </div>
+    
+    
+    <div id="programme-search-errors"></div>
+    
+    <div class="programme-search-articles">
+      <h3>Articles you might like:</h3>
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <a class="related-tracked" href="/article/what-is-the-ects-european-credit-transfer-and-accumulation-system">
+            <div class="thumbnail home-country-card">
+                <img alt="What is the European Credit Transfer System (ECTS)?" title="What is the European Credit Transfer System (ECTS)?" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/425/slideshow_ects-classroom.jpg" />
+              <div class="caption">
+                <strong>What is the European Credit Transfer System (ECTS)?</strong>              
+              </div>
+            </div>
+</a>        </div>
+        <div class="col-sm-12 col-md-4">
+          <a class="related-tracked" href="/article/study-human-resource-management-hrm">
+            <div class="thumbnail home-country-card">
+                <img alt="Study Human Resource Management: All you need to know" title="Study Human Resource Management: All you need to know" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/432/slideshow_study-human-resources-hr.jpg" />
+              <div class="caption">
+                <strong>Study Human Resource Management: All you need to know</strong>              
+              </div>
+            </div>
+</a>        </div>
+        <div class="col-sm-12 col-md-4">
+          <a class="related-tracked" href="/article/degree-in-chinese-studies-sinology">
+            <div class="thumbnail home-country-card">
+                <img alt="Degree in Chinese Studies: All you need to know" title="Degree in Chinese Studies: All you need to know" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/430/slideshow_chinese-temple-beijing-2846075.jpg" />
+              <div class="caption">
+                <strong>Degree in Chinese Studies: All you need to know</strong>              
+              </div>
+            </div>
+</a>        </div>
+      </div>
+    </div>
+    
+    
+</form></div>
+
+
+
+
+
+
+
+
+
+<script>
+
+  //
+  // jQuery Plugin
+  //
+  ;(function($) {
+      $.fn.toJSON = function() {
+          var $elements = {};
+          var $form = $(this);
+          $form.find('input, select, textarea').each(function(){
+            var name = $(this).attr('name')
+            var type = $(this).attr('type')
+            if(name){
+              var $value;
+              if(type == 'radio'){
+                $value = $('input[name='+name+']:checked', $form).val()
+              } else if(type == 'checkbox'){
+                $value = $(this).is(':checked')
+              } else {
+                $value = $(this).val()
+              }
+              $elements[$(this).attr('name')] = $value
+            }
+          });
+          return JSON.stringify( $elements )
+      };
+      $.fn.fromJSON = function(json_string) {
+          var $form = $(this)
+          var data = JSON.parse(json_string)
+          $.each(data, function(key, value) {
+            var $elem = $('[name="'+key+'"]', $form)
+            var type = $elem.first().attr('type')
+            if(type == 'radio'){
+              $('[name="'+key+'"][value="'+value+'"]').prop('checked', true)
+            } else if(type == 'checkbox' && (value == true || value == 'true')){
+              $('[name="'+key+'"]').prop('checked', true)
+            } else {
+              $elem.val(value)
+            }
+          })
+      };
+  }( jQuery ));
+
+
+
+
+
+
+
+  var POP_STATE_FLAG = false;
+  console.log("POP_STATE_FLAG was initially set to false and is "+POP_STATE_FLAG);
+
+  var hide_spinner = function () {
+    console.log("hide_spinner");
+    $('#spinner').hide();
+    $('#programme-search-results ul').show();
+  };
+
+  var show_spinner = function () {
+    console.log("show_spinner");
+    $('#programme-search-results ul').hide();
+    $('#spinner').show();
+  };
+  
+  var englishcerts = {
+    "cambridge": 
+    {
+      "name": "Cambridge CAE/CPE",
+      "min": 120,
+      "max": 230,
+      "step": 5
+    },
+    "ielts": 
+    {
+      "name": "IELTS",
+      "min": 0,
+      "max": 9,
+      "step": 0.5
+    },
+    "pte": 
+    {
+      "name": "PTE Academic",
+      "min": 10,
+      "max": 90,
+      "step": 5
+    },
+    "toefl_ibt": 
+    {
+      "name": "TOEFL iBT",
+      "min": 0,
+      "max": 120,
+      "step": 5
+    },
+    "toefl_pbt": 
+    {
+      "name": "TOEFL PBT",
+      "min": 310,
+      "max": 677,
+      "step": 10
+    }
+  };
+
+  $(function () {
+  
+
+    
+    window.onpopstate = function(event) {
+    //$(window).bind("popstate", function (event) {
+    
+      POP_STATE_FLAG = true;
+      
+      //var formData = event.state["formDataString"];
+      console.log("popState");
+      //console.log(formData);
+      
+      
+      // "de-serialize" formData to populate the form
+       $("#dropdown-countries").val([]);
+//       formData = formData.replace(/%5B/g,'[');
+//       formData = formData.replace(/%5D/g,']');
+//       formData = formData.replace(/%2B/g,'+');
+//       formData = formData.replace(/%2C/g,',');
+//       formData = formData.replace(/%C3%A9/g,'é');
+//       formData = formData.replace(/%C3%A8/g,'è');
+//       $.each(formData.split('&'), function (index, elem) {
+//         var vals = elem.split('=');
+//         vals[1] = vals[1].replace(/\+/g,' '); // "+" will invariable be a space in this case
+//         vals[1] = vals[1].replace(/%26/g,'&');
+//         $("[name='" + vals[0] + "']").val(vals[1]);
+//         console.log("name: " + vals[0] + ", value: "+ vals[1]);
+//       });
+      
+      console.log(event.state["formDataJSON"]);
+      $("#programme-search-form").fromJSON(event.state["formDataJSON"]);
+      
+      $("#programme-search-form").submit();
+      //window.location.reload();
+    //});
+    }
+  })
+  
+
+  var init_programme_search;
+
+  init_programme_search = function() {
+    console.log("init_programme_search");
+  
+    $('#programme-search-form').on('ajax:beforeSend', function(event, xhr, settings) {
+      console.log("ajax:beforeSend");
+      show_spinner();
+    });
+
+    $('#programme-search-form').on('ajax:success', function(event, data, status, xhr) {
+      console.log("ajax:success");
+      $('#programme-search').replaceWith(data);
+      
+      hide_spinner();
+      
+      //init_programme_search();
+            
+      console.log("history.length: " + history.length + "\n");
+      
+    });
+
+    $('#programme-search-form').on('ajax:complete', function(event, xhr, status) {
+      // TODO this section is never called; why?
+      
+      hide_spinner();
+    });
+    
+    $('#programme-search-form').on('ajax:error', function(event, xhr, status, error) {
+      //window.alert("ajax:error");
+      console.log("ajax:error");
+      hide_spinner();
+      $('#programme-search-results').replaceWith('');
+      $('#programme-search-errors').replaceWith('<div class="col-md-8"><em>Nothing was found.</em></div>');
+      $('#programme-search-errors').show();
+    });
+
+  }
+
+    
+    
+    ////////// PUSH STATE //////////
+    
+    function pushCurrentState() {
+      console.log("pushCurrentState");
+      var action = $("#programme-search-form").attr("action");
+      //var formData = $("#programme-search-form").serialize();
+      var formData = $("#programme-search-form").toJSON();
+      console.log("  "+formData);
+      //history.pushState({formDataString: formData}, "", action + "?" + formData);
+      history.pushState({formDataJSON: formData}, "", action + "?" + $("#programme-search-form").serialize());
+    }
+    
+    function replaceCurrentState() {
+      console.log("replaceCurrentState");
+      var action = $("#programme-search-form").attr("action");
+      //var formData = $("#programme-search-form").serialize();
+      var formData = $("#programme-search-form").toJSON();
+      console.log("  "+formData);
+      //history.replaceState({formDataString: formData}, "", action + "?" + formData);
+      history.replaceState({formDataJSON: formData}, "", action + "?" + $("#programme-search-form").serialize());
+    }
+    
+    //////////////////////////////////////////////////  
+    
+    
+    
+  var ready = function() {
+
+    $( "#dropdown-countries" ).select2({
+      theme: "bootstrap",
+      placeholder: "All countries",
+      allowClear: false // 2017-03-01: Select2's own clear method removes item-by-item, triggering n change events, which then result in AJAX form submission
+    });
+        
+    $("#dropdown-countries").change(function() {
+      // Set the comma-separated country list based on the selected elements.
+      // The comma-separated list is a "hack" to (a) make the GET parameter less ugly and (b) make popState "de-serialization" of the variable easier (for AJAX).
+      if($("#dropdown-countries").val() != null) {
+        console.log("#dropdown-countries change --> " +  $("#dropdown-countries").val().join(","));
+        $("#countries_selected_string").val( $("#dropdown-countries").val().join(",") );
+      } else {
+        console.log("#dropdown-countries change --> NULL");
+        $("#countries_selected_string").val("");
+      }
+    });
+    
+    $('[data-toggle="tooltip"]').tooltip();
+
+    if( $("#countries_selected_string").val() == "" ) {
+      $("#select2-clear-label-countries").hide();
+    } else {
+      $("#select2-clear-label-countries").show();
+    }
+    
+    $("#select2-clear-label-countries").on("click", function() {
+      $("#dropdown-countries").val([]).trigger("change");
+    });
+  
+  
+    // Select2 4.0 incorrectly toggles the dropdown when clearing and removing options.
+    // Fix this by canceling the select2:opening/closing events that occur immediately after a select2:unselect event.
+    var $select2elements = $("#dropdown-countries");
+    $select2elements.on('select2:unselect', function() {
+      console.log("UNSELECT EVENT");
+      function cancelAndRemove(event) {
+        event.preventDefault();
+        removeEvents();
+      }
+      function removeEvents() {
+        $select2elements.off('select2:opening', cancelAndRemove);
+        $select2elements.off('select2:closing', cancelAndRemove);
+      }
+      $select2elements.on('select2:opening', cancelAndRemove);
+      $select2elements.on('select2:closing', cancelAndRemove);
+      setTimeout(removeEvents, 0);
+    });
+    
+  
+  
+  
+  
+  
+
+    ////////// DURATION //////////
+    
+    
+    var sliderDuration = $("#slider-duration").bootstrapSlider({
+      min: 0,
+      max: 72,
+      step: 6,
+      value: [ 0, 72 ],
+      tooltip: "always",
+      tooltip_split: false,
+      tooltip_position: "bottom",
+      formatter: function(value) {
+        return value[0] + " to " + value[1] + " months";
+      }
+    });
+    
+    $("#slider-duration").on("slide", function(slideEvt) {
+      setDurationLabels();
+    });  
+    
+    $("#slider-duration").on("slideStop", function(slideEvt) {
+      setDurationLabels();
+    });
+    
+    function setDurationLabels() {
+      console.log("setDurationLabels");
+      values = $("#slider-duration").slider().val().split(",");
+      $( "#duration_months_min").val(values[0]);
+      $( "#duration_months_max").val(values[1]);  
+    }
+    
+    //////////////////////////////////////////////////
+    
+
+
+
+    
+    
+    ////////// TUITION FEES //////////
+    
+    
+    var sliderTuition = $("#slider-tuition").bootstrapSlider({
+      min: 0,
+      max: 40000,
+      step: 5000,
+      value: 40000,
+      tooltip: "always",
+      tooltip_position: "bottom",
+      formatter: function(value) {
+        return "up to " + value + " " + $("#select-currency").val();
+      }
+    });
+    
+    $("#slider-tuition").on("slide", function(slideEvt) {
+      setTuitionLabels();
+    });
+    
+    $("#slider-tuition").on("slideStop", function(slideEvt) {
+      setTuitionLabels();
+    });
+    
+    function setTuitionLabels() {
+      //values = $("#slider-tuition").slider().val().split(",");
+      //$( "#tuition_eea_min").val(values[0]);
+      $( "#tuition_eea_min").val(0);
+      $( "#tuition_eea_max").val($("#slider-tuition").slider().val());
+    }
+    
+    //////////////////////////////////////////////////
+
+
+    
+    
+    ////////// REQUIRED LEVEL OF ENGLISH //////////
+    
+    var sliderEnglish = $("#slider-english").bootstrapSlider({
+      tooltip_position: "bottom"
+    });
+    var englishcert = englishcerts[$("#select-englishcerts").val()]
+    
+    function updateSliderEnglish() {
+      $("#slider-english").bootstrapSlider("setAttribute", "min", englishcert["min"]);
+      $("#slider-english").bootstrapSlider("setAttribute", "max", englishcert["max"]);
+      $("#slider-english").bootstrapSlider("setAttribute", "step", englishcert["step"]);
+      $("#slider-english").bootstrapSlider("setAttribute", "value", (englishcert["min"]+(englishcert["max"]-englishcert["min"])/2));
+      $("#slider-english").bootstrapSlider("refresh");
+    }
+    
+    $("#select-englishcerts").change(function() {
+      englishcert = englishcerts[$("#select-englishcerts").val()];
+      updateSliderEnglish();
+    });
+    
+    updateSliderEnglish();
+    
+    //////////////////////////////////////////////////
+    
+    
+
+    
+    
+        
+    ////////// SET INITIAL VALUES //////////
+    setTuitionLabels();
+    setDurationLabels();  
+    
+
+    
+    
+
+    $(function() {
+      /* TODO Commented it out because it lead to double-triggering the AJAX request
+      $('#programme-search-form').submit(function(e) {
+        e.preventDefault();
+        
+        $.ajax({
+          type: "POST",
+          data: $('#programme-search-form').serialize(),
+          dataType: "json"
+        });
+        
+      });
+      */
+
+    
+      $("#programme-search-form").change(function() {
+        //$("#programme-search-form").submit();
+        
+      });
+
+      $("#select-currency,#select-tuition-term,#select-tuition-region").change(function() {
+        console.log("Fields/dropdowns changed that DON'T change/reorder data");
+        show_spinner();
+        pushCurrentState();
+        $("#programme-search-form").submit();
+      });      
+      
+      $("#search,#dropdown-countries,#degreelevel,#sort").change(function() {
+        console.log("Fields/dropdowns changed that DO change/reorder data");
+        $("#page").val(1); // The changed fields will result in new query --> reset page
+        show_spinner();
+        pushCurrentState();
+        $("#programme-search-form").submit();
+      });
+      
+      $("#slider-tuition,#slider-duration").on("slideStop", function() {
+        console.log("Sliders changed");
+        $("#page").val(1); // The changed fields will result in new query --> reset page
+        show_spinner();
+        pushCurrentState();
+        $("#programme-search-form").submit();
+      });
+      
+      
+      
+            
+    });
+  };
+
+    
+  //$(document).ready();
+  //$(document).on('page:load', ready);
+
+  $(document).ready(function() {
+    console.log("document.ready");
+    
+    ready();
+    
+    init_programme_search();
+    
+    if (POP_STATE_FLAG == true) {
+      console.log("POP_STATE_FLAG is true");
+      replaceCurrentState();
+    } else {
+    console.log("POP_STATE_FLAG is false");
+      //pushCurrentState();
+      replaceCurrentState();
+    }
+    
+    hide_spinner();
+    
+    $("body").toggleClass("unscrollable", $(".toggle-search-filter-visibility-hide").is(":visible"));
+    
+  })
+
+  
+</script>
+
+
+
+
+    
+
+  
+  
+  <footer class="top-footer">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Merriweather Sans:300,400i,700']
+      }
+    });
+  </script> 
+
+  
+  <div class="container">
+  <div class="row">
+    
+    <div class="text-left col-md-8 col-xs-6" style="display: inline-block;float: left;">
+      <a href="/" title="Study.EU" data-track-click="true" data-event-category="Footer Logo"><img class="footer-logo" src="/assets/study-eu_logo_wb_200x66-8722da28bad82460d8951c34fe8b5ba8e11794b2fd21e83ee8c5fe54323ea73b.png" /></a><br />
+      <p>
+        Copyright &copy; 2021 <a title="Study.EU" href="/">Study.EU</a>
+      </p>
+      <p>
+        
+      </p>
+      <a class="social-link" href="https://www.facebook.com/StudyEU-168756646881605/" target="_blank" title="Like Study.EU on Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://twitter.com/wwwStudyEU" target="_blank" title="Follow Study.EU on Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://www.linkedin.com/company/study.eu/" target="_blank" title="Follow Study.EU on Linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    </div>
+    <div class="text-right col-md-4 col-xs-6">
+      <br /><br />
+          <a rel="nofollow" href="/page/imprint">Imprint</a>
+        &middot;
+          <a rel="nofollow" href="/page/about-study-eu">About Study.eu</a>
+        &middot;
+          <a rel="nofollow" href="/page/privacy-policy">Privacy Policy</a>
+        &middot;
+      <a href="/jobs">Jobs</a>
+      
+      <br />
+      
+      <a href="/press">Press</a>
+      
+      <!-- &middot; -->
+      
+        <!-- &mdash; //-->
+      
+      <br /><br />
+      <a href="/advertise-on-study-eu">Advertise on Study.eu</a>
+    </div>
+  </div>
+  </div>
+</footer>
+
+<a href="javascript:" id="scroll-to-top" title="Scroll back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+<script>
+  $(window).scroll(function() {
+      if ($(this).scrollTop() >= 100) {        // page is scrolled more than 100px
+          $('#scroll-to-top').fadeIn(500);
+      } else {
+          $('#scroll-to-top').fadeOut(500);
+      }
+  });
+  $('#scroll-to-top').click(function() {      // arrow is clicked
+      $('body,html').animate({
+          scrollTop : 0                       // scroll to top
+      }, 500);
+  });
+</script>
+
+
+  
+  <footer class="footer-countries">
+
+
+  <div class="container">
+    <div class="row">
+    
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <h5>Study in Europe:</h5>
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Austria" href="/country/austria">Austria</a><br />
+                <a title="Study in Belgium" href="/country/belgium">Belgium</a><br />
+                <a title="Study in the Czech Republic" href="/country/czech-republic">Czech Republic</a><br />
+                <a title="Study in Denmark" href="/country/denmark">Denmark</a><br />
+                <a title="Study in Estonia" href="/country/estonia">Estonia</a><br />
+                <a title="Study in the Faroe Islands" href="/country/faroe-islands">Faroe Islands</a><br />
+                <a title="Study in Finland" href="/country/finland">Finland</a><br />
+                <a title="Study in France" href="/country/france">France</a><br />
+                <a title="Study in Germany" href="/country/germany">Germany</a><br />
+                <a title="Study in Greece" href="/country/greece">Greece</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Hungary" href="/country/hungary">Hungary</a><br />
+                <a title="Study in Iceland" href="/country/iceland">Iceland</a><br />
+                <a title="Study in Ireland" href="/country/ireland">Ireland</a><br />
+                <a title="Study in Italy" href="/country/italy">Italy</a><br />
+                <a title="Study in Latvia" href="/country/latvia">Latvia</a><br />
+                <a title="Study in Liechtenstein" href="/country/liechtenstein">Liechtenstein</a><br />
+                <a title="Study in Lithuania" href="/country/lithuania">Lithuania</a><br />
+                <a title="Study in Malta" href="/country/malta">Malta</a><br />
+                <a title="Study in the Netherlands" href="/country/netherlands">Netherlands</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Norway" href="/country/norway">Norway</a><br />
+                <a title="Study in Poland" href="/country/poland">Poland</a><br />
+                <a title="Study in Portugal" href="/country/portugal">Portugal</a><br />
+                <a title="Study in Romania" href="/country/romania">Romania</a><br />
+                <a title="Study in Russia" href="/country/russia">Russia</a><br />
+                <a title="Study in Spain" href="/country/spain">Spain</a><br />
+                <a title="Study in Sweden" href="/country/sweden">Sweden</a><br />
+                <a title="Study in Switzerland" href="/country/switzerland">Switzerland</a><br />
+                <a title="Study in the United Kingdom" href="/country/united-kingdom">United Kingdom</a><br />
+            </div>
+          </div>
+        </div>
+    
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Recent articles:</h5>
+          </div>
+          <div class="col-md-8">
+              <p><a href="/article/us-students-how-to-use-fafsa-for-a-degree-in-europe">US students: How to use FAFSA for a degree in Europe</a></p>
+              <p><a href="/article/study-biomedicine-or-biomedical-sciences">Study Biomedicine or Biomedical Sciences: All you need to know</a></p>
+              <p><a href="/article/impact-of-covid-19-on-studying-abroad-in-europe-overview">Impact of COVID-19 on studying abroad in Europe: Overview</a></p>
+              <p><a href="/article/fafsa-eligible-universities-colleges-in-europe">FAFSA: Eligible universities &amp; colleges in Europe</a></p>
+              <p><a href="/article/guide-uk-post-study-work-visa-for-graduates">Guide: the UK Post-Study Work Visa for graduates</a></p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  
+  </div>
+
+</footer>
+
+  
+  <footer class="footer-press">
+  <div class="container">
+    <div class="row footer-press-description">
+      <div class="col-md-12 text-center">
+        Study.EU has been mentioned in numerous news publications worldwide, such as:
+      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="L&#39;Étudiant (France)" title="L&#39;Étudiant (France)" data-src="/assets/press/letudiant_gray_200-57bccbdceaef3c62c8660629603372823c98afe433bd39bf6d42a73263c113c3.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Frankfurter Allgemeine (Germany)" title="Frankfurter Allgemeine (Germany)" data-src="/assets/press/faz_gray_300-b6e5e6022a7b164c24b69a51fb97a72715018db745fbcda8580675a507370b8b.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Standard (Hong Kong)" title="The Standard (Hong Kong)" data-src="/assets/press/the-standard-hong-kong_gray_200-f124ca057d2671730e1f6d996377ef4614a28ccf04ae04f730eaf16ed7ee0b46.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Independent (UK)" title="The Independent (UK)" data-src="/assets/press/the-independent-uk_gray_300-63238e279b3c62b1f87faf17fcbcf1f14a2e5b9229193a0431fc974da217d159.png" class="lazyload" />
+</a>      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Al-Masry Al-Youm (Egypt)" title="Al-Masry Al-Youm (Egypt)" data-src="/assets/press/al-masry_al-youm_gray_200-9d8e503cd53ec4d955c3e6f7bf2a1c0badb500a0d2bd8a1ef1d11acd686879e5.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Le Monde (France)" title="Le Monde (France)" data-src="/assets/press/le-monde_gray_200-24d8bca493f3a2b8e0150cb4ef38f00c9924ac5e7acfbdb8750076c949c70052.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Local (Europe)" title="The Local (Europe)" data-src="/assets/press/the-local_gray_200-7631164ea94edf8d065b3af6f64274416162d866ce1cea737c3ee25f28cdd098.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Forbes (USA)" title="Forbes (USA)" data-src="/assets/press/forbes_gray_200-deff6ef2c28ec5a275f404c5f59d56f4b687881eb39de52b79b5add3ca609fe2.png" class="lazyload" />
+</a>      </div>
+    </div>
+  </div>
+</footer>
+
+  
+  
+  
+  
+    <div class="cookies-eu js-cookies-eu row">
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+    <div class="cookies-eu-content-holder col-md-4 col-sm-6 col-xs-6 align-self-center">
+      Cookies &amp; analytics help us deliver our services.
+        <a href="/page/privacy-policy" class="cookies-eu-link" target="_blank"> Privacy policy </a>
+    </div>
+    <div class="cookies-eu-button-holder col-md-4 col-sm-6 col-xs-6">
+      <button class="cookies-eu-ok js-cookies-eu-ok btn btn-lg btn-primary" data-track-click-ga="true" data-event-category="Cookie Consent Button"> OK </button>
+    </div>
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+  </div>
+
+  
+  <script>
+  // Improved Ahoy view tracking with additional attributes
+  var additionalProperties = {};
+  console.log("Ahoy: View with additional properties: "+JSON.stringify(additionalProperties));
+  ahoy.trackView(additionalProperties);
+</script>
+<a name="ga"></a> <!-- GA //-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42442116-3', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+  
+  
+  
+    
+  //############################################################
+  //########## 2018-07    NEW CUSTOM METHODS          ##########
+  
+  function getDataTrackAttributes(element) {
+    var data = {};
+    [].forEach.call(element.attributes, function(attr) {
+      if (/^data-trackvalue-/.test(attr.name)) {
+        // Relevant attributes would always be called "data-track-foobar"
+        var underscorename = attr.name.substr(16).replace(/-/g, "_");
+        data[underscorename] = parseInt(attr.value) || attr.value; // Provide as integer if possible, otherwise the original string
+      }
+    });
+    return data;
+  }
+  
+  // Set data-track-click and utm_source for all external links in the description content
+  var content_links = document.querySelectorAll('div.content-description a');
+  for (var i = 0; i < content_links.length; i++) {
+    if ( ((new URL(content_links[i].href, document.baseURI).href) == mainTrackableLink) || (content_links[i].host !== window.location.host) ) {
+      // Link is the main trackable link, or link is external --> add tracking and utm_source if not present
+      utm_url = new URL(content_links[i].href);
+      utm_url.searchParams.set("utm_source", "Study.eu"); // add (or overwrite existing) utm_source parameter
+      content_links[i].href = utm_url;
+      content_links[i].classList.add("external-tracked");
+      content_links[i].setAttribute("data-event-category", "Outbound Link");
+      content_links[i].setAttribute("data-event-label", content_links[i].href);
+      content_links[i].setAttribute("data-track-click", "true"); // Once data-track-click is set to true, initDataAttributes() below will add the id values
+    }
+  }
+  console.log("Modified "+content_links.length+" links in description content.");
+  
+  // Set data attributes for tracking of footer press links
+  footerPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < footerPressLinks.length; i++) {
+    footerPressLinks[i].setAttribute("data-track-click-ga", "true");
+    footerPressLinks[i].setAttribute("data-event-category", "Footer Press Link");
+    footerPressLinks[i].setAttribute("data-event-label", window.location.href);
+  }
+  
+  relatedLinks = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < relatedLinks.length; i++) {
+    relatedLinks[i].setAttribute("data-track-click-ga", "true");
+    relatedLinks[i].setAttribute("data-event-category", "Related Link");
+    relatedLinks[i].setAttribute("data-event-label", relatedLinks[i].getAttribute("href"));
+  }  
+  
+  function initDataAttributes() {
+    // Initialise element data attributes based on backend instance variables
+    elements = document.querySelectorAll('[data-track-click="true"],[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      
+      
+    }
+    console.log("initDataAttributes()");
+  }
+  initDataAttributes();
+    
+  function trackClick(event, trackGA = true, trackAhoy = true) {
+    // When an element was clicked, track the click in GA and Ahoy
+    
+    strEventLabel = "";
+    if        ( event.currentTarget.hasAttribute("data-event-label") ) {
+      strEventLabel = event.currentTarget.getAttribute("data-event-label");
+    } else if ( event.currentTarget.hasAttribute("href") ) {
+      strEventLabel = event.currentTarget.href;
+    }
+    
+    ga('send', 'event', {
+      eventCategory:  event.currentTarget.getAttribute("data-event-category"),
+      eventAction:    'click',
+      eventLabel:     strEventLabel
+    });
+    
+    data = getDataTrackAttributes(event.currentTarget);
+    data["href"] = event.target.href;
+    data["page"] = window.location.pathname;
+    
+    /*ahoy.track (
+      event.currentTarget.getAttribute("data-event-category"),
+      {
+        
+        
+        
+        href: event.target.href,
+        page: window.location.pathname
+      }
+    );*/
+    
+    if (trackAhoy) {
+      ahoy.track (
+        event.currentTarget.getAttribute("data-event-category")+" - click",
+        data
+      );
+    }
+    
+    console.log("trackClick(event, trackGA = "+trackGA+", trackAhoy = "+trackAhoy+"): " +
+      event.currentTarget.getAttribute("data-event-category") + ", " +
+      "{href: " + event.target.href + ", " +
+      "page:"+window.location.pathname+"});"
+    );
+  }
+  
+  
+  function trackClicksGA() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click-ga="true"]:not([data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event, true, false);
+      });
+    }
+    console.log("trackClicksGA(): "+elements.length+" elements");
+  }
+  trackClicksGA();
+  
+  function trackClicks() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event);
+      });
+    }
+    console.log("trackClicks(): "+elements.length+" elements");
+  }
+  trackClicks();
+  
+  function trackRenderingsGA() {
+    // Track renderings only in GA
+    // This would be for large-volume data that is interesting, but not mission-critical
+
+    elements = document.querySelectorAll('[data-track-rendering-ga="true"]:not([data-track-rendering="true"])');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+    }
+    
+    console.log("trackRenderingsGA(): "+elements.length+" elements");
+  }
+  trackRenderingsGA();
+  
+  function trackRenderings() {
+    // Track renderings in GA *and* Ahoy
+    elements = document.querySelectorAll('[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+      
+      data = getDataTrackAttributes(elements[i]);
+      data["href"] = elements[i].getAttribute("href");
+      data["page"] = window.location.pathname;
+      
+      ahoy.track (
+        elements[i].getAttribute("data-event-category")+" - rendered",
+        data
+      );
+    }
+    
+    console.log("trackRenderings(): "+elements.length+" elements");
+  }
+  trackRenderings();
+  
+  
+  
+
+  
+  //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  //############################################################
+
+  
+  
+  /*
+  anchorsExternalTracked = document.getElementsByClassName("external-tracked");
+  for (var i = 0 ; i < anchorsExternalTracked.length; i++) {
+    anchorsExternalTracked[i].addEventListener("click", function(event){
+      //event.preventDefault();
+      
+      handleOutboundLinkClicks(event);
+      
+      //document.location = this.href;
+      //var win = window.open(this.href, '_blank');
+      //win.focus();
+      
+    });
+    
+    // Trigger event that shows in GA that the link was rendered
+    ga('send', 'event', {
+      eventCategory: 'Outbound Link',
+      eventAction: 'rendered',
+      eventLabel: anchorsExternalTracked[i].href
+    });   
+  }
+  
+  anchorsRelatedTracked = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < anchorsRelatedTracked.length; i++) {
+    anchorsRelatedTracked[i].addEventListener("click", function(event){
+      handleRelatedLinkClicks(event);
+    });
+  }
+  
+  anchorsFeaturedUniversityTracked = document.getElementsByClassName("featured-university-tracked");
+  for (var i = 0 ; i < anchorsFeaturedUniversityTracked.length; i++) {
+    anchorsFeaturedUniversityTracked[i].addEventListener("click", function(event){
+      handleFeaturedUniversityLinkClicks(event);
+    });
+  }  
+  
+  
+  anchorsFooterPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < anchorsFooterPressLinks.length; i++) {
+    anchorsFooterPressLinks[i].addEventListener("click", function(event){
+      handleFooterPressLinkClicks(event);
+    });
+  }
+  
+  
+  anchorsCustomTracked = document.querySelectorAll('[data-ga-custom-event-label]');
+  for (var i = 0 ; i < anchorsCustomTracked.length; i++) {
+    anchorsCustomTracked[i].addEventListener("click", function(event){
+      handleCustomTracked(event);
+    });
+  }
+  */
+  
+  ////////////////////////////////////////////////////////////////////////////////
+
+  
+  
+</script>
+
+</body>
+</html>

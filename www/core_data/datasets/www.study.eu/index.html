@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"cb4ef145dd","applicationID":"55169925","transactionName":"Jg5fTRMJXFtQQBpfXggEHkoJCUdfWl9Q","queueTime":11,"applicationTime":544,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"cb4ef145dd",applicationID:"55169925"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+  <title>Study.EU: Study in Europe. Bachelors, Masters, PhDs</title>
+  <link rel="stylesheet" media="all" href="/assets/application-788bf60a726cbc46bce208400674992d5b5b0e3a0892577e97f4ee25b84407b9.css" data-turbolinks-track="true" />
+  <script src="/assets/application-6d00a9f66b3f7e1a7db9282e671658ce415a54e8512569e7b539a89dc0fb74a5.js" data-turbolinks-track="true" async="async"></script>
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="yK/HzCcYcAPNRBqUyHVHLry4gy3Ki8CYx3JHY4o+G6UQGniPd0gHJws79LkRhvwYmL2pw73XaoNltlBjB2QK8g==" />
+  
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-29b05ed0a02376d0d37f92df42a0d954d97274430a0f6264e4d19745408f15c8.ico" />
+  <meta name="description" content="Study in Europe: Bachelors, Masters, PhDs ✓ More than 15,000 degree programmes ✓ Study.EU: Your gateway to universities in Europe." />
+  <meta name="keywords" content="study in europe, universities, europe, master, bachelor, masters, bachelors, msc, bsc, llb, llm, phd, doctorate, university, study abroad" />
+  <meta name="google-site-verification" content="9sv6t--Xh8SiHr58R3chJHOJVHixvhn6jBK8Qzc9Z9U" />
+  <meta name="msvalidate.01" content="5E3AE5307267C1BED099C27EB59E264E" />    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.study.eu/assets/fallback/study-in-europe-logo-overlay-1200x627-34deac9b2af4b87f5f656da9694257ffa4e59dec8319085daa96f8ca9eb3f980.jpg" />
+  
+</head>
+<body>
+  
+  <nav id="navbar" class="navbar navbar-static-top container-fluid">
+  
+  <div class="container">
+    <div class="row" style="position: relative;">
+        <div class="col-md-3 navbar-header">
+          <a class="navbar-brand" href="/" title="Study.EU">
+            <img alt="Study.EU" class="homepage-logo" src="/assets/study-eu_logo-ee9afe0c98ee9ac266f676d5dcb967023df14f95661b91c7812bef38a3b0c03a.png" />
+          </a>
+        </div>
+        <div class="col-md-9 bottom-align-text">
+            <strong class="navbar-claim">Your gateway to universities in Europe</strong>
+        </div>
+    </div>
+</div>
+  
+</nav>
+
+  <div id="home-carousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+    </ol>
+    
+    <div class="carousel-footer">
+      <a href="/" title="Study.EU"><img class="footer-logo" src="/assets/study-eu_logo_wb_200x66-8722da28bad82460d8951c34fe8b5ba8e11794b2fd21e83ee8c5fe54323ea73b.png" /></a>
+      Your gateway to universities in Europe.
+    </div>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        
+        <img src="https://study-eu.s3.amazonaws.com/uploads/image/path/355/wide_fullhd_cecilia_larsson_lantz-students-2622.jpg" srcset="https://study-eu.s3.amazonaws.com/uploads/image/path/355/wide_mobile_cecilia_larsson_lantz-students-2622.jpg 1280w, https://study-eu.s3.amazonaws.com/uploads/image/path/355/wide_fullhd_cecilia_larsson_lantz-students-2622.jpg 1920w" sizes="(min-width: 1px) 100vw" alt="Sweden" class="carousel-homepage-img">
+        
+        <div class="carousel-caption">
+          <div class="carousel-caption-notice">
+            Featured:
+          </div>
+          <div class="carousel-caption-header">
+            <a data-track-click-ga="true" data-event-category="HomePageFeatures" data-event-label="https://www.study.eu/country/sweden" href="/country/sweden">Sweden</a>
+          </div>
+          <div class="carousel-caption-teaser">
+            <em><a data-track-click-ga="true" data-event-category="HomePageFeatures" data-event-label="https://www.study.eu/country/sweden" href="/country/sweden">Study in Sweden - one of the most popular countries for international students!</a><br /></em>
+          </div>
+        </div>
+        <div class="image-credits">
+          <span class="image-credits-span">
+            <span title="Photo">Photo</span> by Cecilia Larsson Lantz /imagebank.sweden.se
+          </span>
+        </div>
+      </div>
+      
+      <div class="home-search">
+        <form id="home-search-form" action="/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+          <div class="searchform-cta">Search 15,000 study programmes in Europe:</div>
+          <input type="text" name="search" class="form-control input-lg" placeholder="Enter a subject, country or university"  />
+          <button type="submit" class="btn btn-lg btn-primary"><i class="fa fa-search"></i></button>
+</form>      </div>
+    </div>
+
+    
+    <!-- Controls 
+    <a class="left carousel-control" href="#home-carousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#home-carousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    -->
+  </div>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "https://www.study.eu/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.study.eu/search?search={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  
+  <div class="container home-country-cards">
+    <div>
+      <h2>Browse by subject:</h2>
+      
+      <ul class="disciplines-container" data-track-rendering-ga="true" data-event-category="Homepage Discipline Buttons">
+        <li class="discipline">
+          <a title="Study Art, Design &amp; Media" data-track-click-ga="true" data-event-category="Homepage Discipline Buttons" data-event-label="Art, Design &amp; Media" href="/search?discipline=1&amp;sort=recommended">
+            <p>
+              <img class="discipline-icon" alt="Study Art, Design &amp; Media" src="https://study-eu.s3.amazonaws.com/uploads/discipline/arts---humanities-1-icon.svg" />
+            </p>
+            Art, Design &amp; Media
+</a>        </li><li class="discipline">
+          <a title="Study Business &amp; Management" data-track-click-ga="true" data-event-category="Homepage Discipline Buttons" data-event-label="Business &amp; Management" href="/search?discipline=2&amp;sort=recommended">
+            <p>
+              <img class="discipline-icon" alt="Study Business &amp; Management" src="https://study-eu.s3.amazonaws.com/uploads/discipline/business---economics-2-icon.svg" />
+            </p>
+            Business &amp; Management
+</a>        </li><li class="discipline">
+          <a title="Study Computer Science &amp; IT" data-track-click-ga="true" data-event-category="Homepage Discipline Buttons" data-event-label="Computer Science &amp; IT" href="/search?discipline=62&amp;sort=recommended">
+            <p>
+              <img class="discipline-icon" alt="Study Computer Science &amp; IT" src="https://study-eu.s3.amazonaws.com/uploads/discipline/computer-science---it-62-icon.svg" />
+            </p>
+            Computer Science &amp; IT
+</a>        </li><li class="discipline">
+          <a title="Study Engineering &amp; Technology" data-track-click-ga="true" data-event-category="Homepage Discipline Buttons" data-event-label="Engineering &amp; Technology" href="/search?discipline=3&amp;sort=recommended">
+            <p>
+              <img class="discipline-icon" alt="Study Engineering &amp; Technology" src="https://study-eu.s3.amazonaws.com/uploads/discipline/engineering---technology-3-icon.svg" />
+            </p>
+            Engineering &amp; Technology
+</a>        </li><li class="discipline">
+          <a title="Study Environment &amp; Agriculture" data-track-click-ga="true" data-event-category="Homepage Discipline Buttons" data-event-label="Environment &amp; Agriculture" href="/search?discipline=63&amp;sort=recommended">
+            <p>
+              <img class="discipline-icon" alt="Study Environment &amp; Agriculture" src="https://study-eu.s3.amazonaws.com/uploads/discipline/environment---agriculture-63-icon.svg" />
+            </p>
+            Environment &amp; Agriculture
+</a>        </li><li class="discipline">
+          <a title="Study Humanities" data-track-click-ga="true" data-event-category="Homepage Discipline Buttons" data-event-label="Humanities" href="/search?discipline=64&amp;sort=recommended">
+            <p>
+              <img class="discipline-icon" alt="Study Humanities" src="https://study-eu.s3.amazonaws.com/uploads/discipline/humanities-64-icon.svg" />
+            </p>
+            Humanities
+</a>        </li><li class="discipline">
+          <a title="Study Law" data-track-click-ga="true" data-event-category="Homepage Discipline Buttons" data-event-label="Law" href="/search?discipline=4&amp;sort=recommended">
+            <p>
+              <img class="discipline-icon" alt="Study Law" src="https://study-eu.s3.amazonaws.com/uploads/discipline/law-4-icon.svg" />
+            </p>
+            Law
+</a>        </li><li class="discipline">
+          <a title="Study Medicine &amp; Health" data-track-click-ga="true" data-event-category="Homepage Discipline Buttons" data-event-label="Medicine &amp; Health" href="/search?discipline=5&amp;sort=recommended">
+            <p>
+              <img class="discipline-icon" alt="Study Medicine &amp; Health" src="https://study-eu.s3.amazonaws.com/uploads/discipline/medicine---health-5-icon.svg" />
+            </p>
+            Medicine &amp; Health
+</a>        </li><li class="discipline">
+          <a title="Study Natural Sciences &amp; Mathematics" data-track-click-ga="true" data-event-category="Homepage Discipline Buttons" data-event-label="Natural Sciences &amp; Mathematics" href="/search?discipline=6&amp;sort=recommended">
+            <p>
+              <img class="discipline-icon" alt="Study Natural Sciences &amp; Mathematics" src="https://study-eu.s3.amazonaws.com/uploads/discipline/natural-sciences-6-icon.svg" />
+            </p>
+            Natural Sciences &amp; Mathematics
+</a>        </li><li class="discipline">
+          <a title="Study Social Sciences" data-track-click-ga="true" data-event-category="Homepage Discipline Buttons" data-event-label="Social Sciences" href="/search?discipline=7&amp;sort=recommended">
+            <p>
+              <img class="discipline-icon" alt="Study Social Sciences" src="https://study-eu.s3.amazonaws.com/uploads/discipline/social-sciences-7-icon.svg" />
+            </p>
+            Social Sciences
+</a>        </li>
+      </ul>
+    </div>
+    
+    <div>
+      <h2>Popular countries to study abroad in Europe:</h2>
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <a href="/country/spain">
+            <div class="thumbnail home-country-card">
+              <div class="home-country-card-flag">
+                <img alt="Spain" title="Study in Spain" src="https://study-eu.s3.amazonaws.com/uploads/country/desktop_spain-37-logo.png" />
+              </div>
+              
+                <img alt="Spain" title="Study in Spain" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/263/card_13875993993_acd3feaeda_o.jpg" />
+              <div class="caption">
+                <h3>Spain</h3>
+                <p><span class="label label-info home-country-card-label">545 programmes at 57 universities</span></p>
+                
+              </div>
+            </div>
+</a>        </div>
+        <div class="col-sm-12 col-md-4">
+          <a href="/country/france">
+            <div class="thumbnail home-country-card">
+              <div class="home-country-card-flag">
+                <img alt="France" title="Study in France" src="https://study-eu.s3.amazonaws.com/uploads/country/desktop_france-12-logo.png" />
+              </div>
+              
+                <img alt="France" title="Study in France" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/97/card_france-paris-eiffel-tower.jpg" />
+              <div class="caption">
+                <h3>France</h3>
+                <p><span class="label label-info home-country-card-label">410 programmes at 29 universities</span></p>
+                
+              </div>
+            </div>
+</a>        </div>
+        <div class="col-sm-12 col-md-4">
+          <a href="/country/sweden">
+            <div class="thumbnail home-country-card">
+              <div class="home-country-card-flag">
+                <img alt="Sweden" title="Study in Sweden" src="https://study-eu.s3.amazonaws.com/uploads/country/desktop_sweden-38-logo.png" />
+              </div>
+              
+                <img alt="Sweden" title="Study in Sweden" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/23/card_sweden-stockholm-1.jpg" />
+              <div class="caption">
+                <h3>Sweden</h3>
+                <p><span class="label label-info home-country-card-label">826 programmes at 30 universities</span></p>
+                
+              </div>
+            </div>
+</a>        </div>
+      </div>
+      <p>
+        <a href="/countries">Browser other countries in Europe</a>
+      </p>
+    </div>
+    
+    <div>
+      <h2>Featured universities</h2>
+      
+      <div class="row">
+        <a class="home-university-card-link" data-track-rendering-ga="true" data-track-click-ga="true" data-event-category="Featured University Banner" data-event-label="/university/ca-foscari-university-of-venice" href="/university/ca-foscari-university-of-venice">
+        <div class="col-sm-12 col-md-6">
+          <div class="thumbnail home-university-card">
+            <img alt="Ca&#39; Foscari University of Venice" class="university-default-image" title="Study at Ca&#39; Foscari University of Venice" src="https://study-eu.s3.amazonaws.com/uploads/image/path/561/card_ca-foscari-venice-canal.jpg" />
+            <img alt="Ca&#39; Foscari University of Venice" class="university-logo" title="Study at Ca&#39; Foscari University of Venice" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_ca--foscari-university-of-venice-logo.png" />
+            <div class="home-university-card-teaser">
+              <h4>Ca&#39; Foscari University of Venice</h4>
+              <p>
+                Ah, Venice! Study at one of Europe&#39;s most beautiful universities and join great minds to tackle the challenges of tomorrow.
+              </p>
+            </div>
+          </div>
+        </div>
+</a>        <a class="home-university-card-link" data-track-rendering-ga="true" data-track-click-ga="true" data-event-category="Featured University Banner" data-event-label="/university/falmouth-university" href="/university/falmouth-university">
+        <div class="col-sm-12 col-md-6">
+          <div class="thumbnail home-university-card">
+            <img alt="Falmouth University" class="university-default-image" title="Study at Falmouth University" src="https://study-eu.s3.amazonaws.com/uploads/image/path/284/card_Prospectus_Hannah_161.jpg" />
+            <img alt="Falmouth University" class="university-logo" title="Study at Falmouth University" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_falmouth-university-logo.png" />
+            <div class="home-university-card-teaser">
+              <h4>Falmouth University</h4>
+              <p>
+                Falmouth University is a specialist creative multi-arts institution for rethinking convention and outthinking challenges. At a time when conventional thinking doesn&#39;t work any more, it&#39;s a potent formula.
+              </p>
+            </div>
+          </div>
+        </div>
+</a>      </div>
+      
+    </div>
+    
+    <div>
+      <h2>Recent articles</h3>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <a href="/article/degree-in-chinese-studies-sinology">
+            <div class="thumbnail home-country-card">            
+                <img alt="Degree in Chinese Studies: All you need to know" title="Degree in Chinese Studies: All you need to know" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/430/card_chinese-temple-beijing-2846075.jpg" />
+              <div class="caption">
+                <strong>Degree in Chinese Studies: All you need to know</strong>              
+              </div>
+            </div>
+</a>        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <a href="/article/impact-of-covid-19-on-studying-abroad-in-europe-overview">
+            <div class="thumbnail home-country-card">            
+                <img alt="Impact of COVID-19 on studying abroad in Europe: Overview" title="Impact of COVID-19 on studying abroad in Europe: Overview" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/428/card_woman-wearing-face-mask-3902881.jpg" />
+              <div class="caption">
+                <strong>Impact of COVID-19 on studying abroad in Europe: Overview</strong>              
+              </div>
+            </div>
+</a>        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <a href="/article/study-zoology">
+            <div class="thumbnail home-country-card">            
+                <img alt="Study Zoology: All you need to know" title="Study Zoology: All you need to know" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/469/card_study-zoology.jpg" />
+              <div class="caption">
+                <strong>Study Zoology: All you need to know</strong>              
+              </div>
+            </div>
+</a>        </div>
+      </div>
+    </div>
+    
+    
+
+  </div>  
+  
+  
+    <footer class="homepage-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-xs-12">
+          <h1>Study.EU: Your gateway to universities in Europe</h1>
+          <p><strong>Study in Europe: Find, compare and apply to Bachelor’s degrees, Master’s degrees and Doctorate programmes</strong></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-xs-12">
+          <p>Study.EU is the European study choice portal. We provide information on universities and thousands of English-taught study programmes. Our database contains several thousand Bachelor’s programmes, Master’s programmes and PhD/Doctorate courses at top universities in Europe. The covered countries include the European Union and other countries in the European Higher Education Area (EHEA), for instance: the United Kingdom, Germany, Sweden, Finland, the Netherlands (Holland), France, Russia, Ireland, and many others.</p>
+          <p>In our database, you can find study courses in subjects like: Business, Management (MBA) and Economics; Natural Sciences, Computer Science, Technology and Engineering (STEM); Social Sciences; Laws (LLB, LLM); Arts and Humanities; Medicine and Health studies; and many more academic disciplines at the undergraduate, graduate/postgraduate and doctorate level.</p>
+        </div>
+        <div class="col-md-4 col-xs-12">
+          <p>If you want to study in Europe in English, you can use our search engine to find the right study programme for you.</p>
+          <p>The search results provide you with all the relevant information about the study programmes:
+            <ul>
+            <li>a description of the course content</li>
+            <li>the application requirements and application deadlines</li>
+            <li>the starting date, duration of the course and number of ECTS credit points</li>
+            <li>the tuition fees for EEA citizens and international students as well as information about funding</li>
+            <li>career perspectives</li>
+            <li>English language requirements (TOEFL, IELTS, and so on)</li>
+            <li>the teaching mode (on-campus or online distance learning; full-time or part-time)</li>
+            </ul>
+          </p>
+        </div>
+        <div class="col-md-4 col-xs-12">
+          <p>Our detailed university profiles contain information about international rankings, accreditation and anything else that is relevant for you as a prospective student. You can easily compare universities and study programmes to make the right decision. Via our easy-to-use contact forms you can get in touch with universities directly and increase your chances of admission.</p>
+          <p>Study.EU also provides comprehensive, detailed guides with all the information you need about student visa requirements, funding options and scholarship opportunities. Interviews with current students and alumni will help you get an idea of the study experience you can expect at the university of your choice so that you can prepare for when you study abroad in Europe yourself.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <footer class="top-footer">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Merriweather Sans:300,400i,700']
+      }
+    });
+  </script> 
+
+  
+  <div class="container">
+  <div class="row">
+    
+    <div class="text-left col-md-8 col-xs-6" style="display: inline-block;float: left;">
+      <a href="/" title="Study.EU" data-track-click="true" data-event-category="Footer Logo"><img class="footer-logo" src="/assets/study-eu_logo_wb_200x66-8722da28bad82460d8951c34fe8b5ba8e11794b2fd21e83ee8c5fe54323ea73b.png" /></a><br />
+      <p>
+        Copyright &copy; 2021 <a title="Study.EU" href="/">Study.EU</a>
+      </p>
+      <p>
+        
+      </p>
+      <a class="social-link" href="https://www.facebook.com/StudyEU-168756646881605/" target="_blank" title="Like Study.EU on Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://twitter.com/wwwStudyEU" target="_blank" title="Follow Study.EU on Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://www.linkedin.com/company/study.eu/" target="_blank" title="Follow Study.EU on Linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    </div>
+    <div class="text-right col-md-4 col-xs-6">
+      <br /><br />
+          <a rel="nofollow" href="/page/imprint">Imprint</a>
+        &middot;
+          <a rel="nofollow" href="/page/about-study-eu">About Study.eu</a>
+        &middot;
+          <a rel="nofollow" href="/page/privacy-policy">Privacy Policy</a>
+        &middot;
+      <a href="/jobs">Jobs</a>
+      
+      <br />
+      
+      <a href="/press">Press</a>
+      
+      <!-- &middot; -->
+      
+        <!-- &mdash; //-->
+      
+      <br /><br />
+      <a href="/advertise-on-study-eu">Advertise on Study.eu</a>
+    </div>
+  </div>
+  </div>
+</footer>
+
+<a href="javascript:" id="scroll-to-top" title="Scroll back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+<script>
+  $(window).scroll(function() {
+      if ($(this).scrollTop() >= 100) {        // page is scrolled more than 100px
+          $('#scroll-to-top').fadeIn(500);
+      } else {
+          $('#scroll-to-top').fadeOut(500);
+      }
+  });
+  $('#scroll-to-top').click(function() {      // arrow is clicked
+      $('body,html').animate({
+          scrollTop : 0                       // scroll to top
+      }, 500);
+  });
+</script>
+
+
+  
+  <footer class="footer-countries">
+
+
+  <div class="container">
+    <div class="row">
+    
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <h5>Study in Europe:</h5>
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Austria" href="/country/austria">Austria</a><br />
+                <a title="Study in Belgium" href="/country/belgium">Belgium</a><br />
+                <a title="Study in the Czech Republic" href="/country/czech-republic">Czech Republic</a><br />
+                <a title="Study in Denmark" href="/country/denmark">Denmark</a><br />
+                <a title="Study in Estonia" href="/country/estonia">Estonia</a><br />
+                <a title="Study in the Faroe Islands" href="/country/faroe-islands">Faroe Islands</a><br />
+                <a title="Study in Finland" href="/country/finland">Finland</a><br />
+                <a title="Study in France" href="/country/france">France</a><br />
+                <a title="Study in Germany" href="/country/germany">Germany</a><br />
+                <a title="Study in Greece" href="/country/greece">Greece</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Hungary" href="/country/hungary">Hungary</a><br />
+                <a title="Study in Iceland" href="/country/iceland">Iceland</a><br />
+                <a title="Study in Ireland" href="/country/ireland">Ireland</a><br />
+                <a title="Study in Italy" href="/country/italy">Italy</a><br />
+                <a title="Study in Latvia" href="/country/latvia">Latvia</a><br />
+                <a title="Study in Liechtenstein" href="/country/liechtenstein">Liechtenstein</a><br />
+                <a title="Study in Lithuania" href="/country/lithuania">Lithuania</a><br />
+                <a title="Study in Malta" href="/country/malta">Malta</a><br />
+                <a title="Study in the Netherlands" href="/country/netherlands">Netherlands</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Norway" href="/country/norway">Norway</a><br />
+                <a title="Study in Poland" href="/country/poland">Poland</a><br />
+                <a title="Study in Portugal" href="/country/portugal">Portugal</a><br />
+                <a title="Study in Romania" href="/country/romania">Romania</a><br />
+                <a title="Study in Russia" href="/country/russia">Russia</a><br />
+                <a title="Study in Spain" href="/country/spain">Spain</a><br />
+                <a title="Study in Sweden" href="/country/sweden">Sweden</a><br />
+                <a title="Study in Switzerland" href="/country/switzerland">Switzerland</a><br />
+                <a title="Study in the United Kingdom" href="/country/united-kingdom">United Kingdom</a><br />
+            </div>
+          </div>
+        </div>
+    
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Recent articles:</h5>
+          </div>
+          <div class="col-md-8">
+              <p><a href="/article/study-biomedicine-or-biomedical-sciences">Study Biomedicine or Biomedical Sciences: All you need to know</a></p>
+              <p><a href="/article/study-human-resource-management-hrm">Study Human Resource Management: All you need to know</a></p>
+              <p><a href="/article/degree-in-chinese-studies-sinology">Degree in Chinese Studies: All you need to know</a></p>
+              <p><a href="/article/impact-of-covid-19-on-studying-abroad-in-europe-overview">Impact of COVID-19 on studying abroad in Europe: Overview</a></p>
+              <p><a href="/article/us-students-how-to-use-fafsa-for-a-degree-in-europe">US students: How to use FAFSA for a degree in Europe</a></p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  
+  </div>
+
+</footer>
+
+  
+  <footer class="footer-press">
+  <div class="container">
+    <div class="row footer-press-description">
+      <div class="col-md-12 text-center">
+        Study.EU has been mentioned in numerous news publications worldwide, such as:
+      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="L&#39;Étudiant (France)" title="L&#39;Étudiant (France)" data-src="/assets/press/letudiant_gray_200-57bccbdceaef3c62c8660629603372823c98afe433bd39bf6d42a73263c113c3.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Frankfurter Allgemeine (Germany)" title="Frankfurter Allgemeine (Germany)" data-src="/assets/press/faz_gray_300-b6e5e6022a7b164c24b69a51fb97a72715018db745fbcda8580675a507370b8b.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Standard (Hong Kong)" title="The Standard (Hong Kong)" data-src="/assets/press/the-standard-hong-kong_gray_200-f124ca057d2671730e1f6d996377ef4614a28ccf04ae04f730eaf16ed7ee0b46.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Independent (UK)" title="The Independent (UK)" data-src="/assets/press/the-independent-uk_gray_300-63238e279b3c62b1f87faf17fcbcf1f14a2e5b9229193a0431fc974da217d159.png" class="lazyload" />
+</a>      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Al-Masry Al-Youm (Egypt)" title="Al-Masry Al-Youm (Egypt)" data-src="/assets/press/al-masry_al-youm_gray_200-9d8e503cd53ec4d955c3e6f7bf2a1c0badb500a0d2bd8a1ef1d11acd686879e5.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Le Monde (France)" title="Le Monde (France)" data-src="/assets/press/le-monde_gray_200-24d8bca493f3a2b8e0150cb4ef38f00c9924ac5e7acfbdb8750076c949c70052.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Local (Europe)" title="The Local (Europe)" data-src="/assets/press/the-local_gray_200-7631164ea94edf8d065b3af6f64274416162d866ce1cea737c3ee25f28cdd098.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Forbes (USA)" title="Forbes (USA)" data-src="/assets/press/forbes_gray_200-deff6ef2c28ec5a275f404c5f59d56f4b687881eb39de52b79b5add3ca609fe2.png" class="lazyload" />
+</a>      </div>
+    </div>
+  </div>
+</footer>
+
+  
+  
+  
+    <div class="cookies-eu js-cookies-eu row">
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+    <div class="cookies-eu-content-holder col-md-4 col-sm-6 col-xs-6 align-self-center">
+      Cookies &amp; analytics help us deliver our services.
+        <a href="/page/privacy-policy" class="cookies-eu-link" target="_blank"> Privacy policy </a>
+    </div>
+    <div class="cookies-eu-button-holder col-md-4 col-sm-6 col-xs-6">
+      <button class="cookies-eu-ok js-cookies-eu-ok btn btn-lg btn-primary" data-track-click-ga="true" data-event-category="Cookie Consent Button"> OK </button>
+    </div>
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+  </div>
+
+  
+  <script>
+  // Improved Ahoy view tracking with additional attributes
+  var additionalProperties = {};
+  console.log("Ahoy: View with additional properties: "+JSON.stringify(additionalProperties));
+  ahoy.trackView(additionalProperties);
+</script>
+<a name="ga"></a> <!-- GA //-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42442116-3', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+  
+  
+  
+    
+  //############################################################
+  //########## 2018-07    NEW CUSTOM METHODS          ##########
+  
+  function getDataTrackAttributes(element) {
+    var data = {};
+    [].forEach.call(element.attributes, function(attr) {
+      if (/^data-trackvalue-/.test(attr.name)) {
+        // Relevant attributes would always be called "data-track-foobar"
+        var underscorename = attr.name.substr(16).replace(/-/g, "_");
+        data[underscorename] = parseInt(attr.value) || attr.value; // Provide as integer if possible, otherwise the original string
+      }
+    });
+    return data;
+  }
+  
+  // Set data-track-click and utm_source for all external links in the description content
+  var content_links = document.querySelectorAll('div.content-description a');
+  for (var i = 0; i < content_links.length; i++) {
+    if ( ((new URL(content_links[i].href, document.baseURI).href) == mainTrackableLink) || (content_links[i].host !== window.location.host) ) {
+      // Link is the main trackable link, or link is external --> add tracking and utm_source if not present
+      utm_url = new URL(content_links[i].href);
+      utm_url.searchParams.set("utm_source", "Study.eu"); // add (or overwrite existing) utm_source parameter
+      content_links[i].href = utm_url;
+      content_links[i].classList.add("external-tracked");
+      content_links[i].setAttribute("data-event-category", "Outbound Link");
+      content_links[i].setAttribute("data-event-label", content_links[i].href);
+      content_links[i].setAttribute("data-track-click", "true"); // Once data-track-click is set to true, initDataAttributes() below will add the id values
+    }
+  }
+  console.log("Modified "+content_links.length+" links in description content.");
+  
+  // Set data attributes for tracking of footer press links
+  footerPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < footerPressLinks.length; i++) {
+    footerPressLinks[i].setAttribute("data-track-click-ga", "true");
+    footerPressLinks[i].setAttribute("data-event-category", "Footer Press Link");
+    footerPressLinks[i].setAttribute("data-event-label", window.location.href);
+  }
+  
+  relatedLinks = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < relatedLinks.length; i++) {
+    relatedLinks[i].setAttribute("data-track-click-ga", "true");
+    relatedLinks[i].setAttribute("data-event-category", "Related Link");
+    relatedLinks[i].setAttribute("data-event-label", relatedLinks[i].getAttribute("href"));
+  }  
+  
+  function initDataAttributes() {
+    // Initialise element data attributes based on backend instance variables
+    elements = document.querySelectorAll('[data-track-click="true"],[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      
+      
+    }
+    console.log("initDataAttributes()");
+  }
+  initDataAttributes();
+    
+  function trackClick(event, trackGA = true, trackAhoy = true) {
+    // When an element was clicked, track the click in GA and Ahoy
+    
+    strEventLabel = "";
+    if        ( event.currentTarget.hasAttribute("data-event-label") ) {
+      strEventLabel = event.currentTarget.getAttribute("data-event-label");
+    } else if ( event.currentTarget.hasAttribute("href") ) {
+      strEventLabel = event.currentTarget.href;
+    }
+    
+    ga('send', 'event', {
+      eventCategory:  event.currentTarget.getAttribute("data-event-category"),
+      eventAction:    'click',
+      eventLabel:     strEventLabel
+    });
+    
+    data = getDataTrackAttributes(event.currentTarget);
+    data["href"] = event.target.href;
+    data["page"] = window.location.pathname;
+    
+    /*ahoy.track (
+      event.currentTarget.getAttribute("data-event-category"),
+      {
+        
+        
+        
+        href: event.target.href,
+        page: window.location.pathname
+      }
+    );*/
+    
+    if (trackAhoy) {
+      ahoy.track (
+        event.currentTarget.getAttribute("data-event-category")+" - click",
+        data
+      );
+    }
+    
+    console.log("trackClick(event, trackGA = "+trackGA+", trackAhoy = "+trackAhoy+"): " +
+      event.currentTarget.getAttribute("data-event-category") + ", " +
+      "{href: " + event.target.href + ", " +
+      "page:"+window.location.pathname+"});"
+    );
+  }
+  
+  
+  function trackClicksGA() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click-ga="true"]:not([data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event, true, false);
+      });
+    }
+    console.log("trackClicksGA(): "+elements.length+" elements");
+  }
+  trackClicksGA();
+  
+  function trackClicks() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event);
+      });
+    }
+    console.log("trackClicks(): "+elements.length+" elements");
+  }
+  trackClicks();
+  
+  function trackRenderingsGA() {
+    // Track renderings only in GA
+    // This would be for large-volume data that is interesting, but not mission-critical
+
+    elements = document.querySelectorAll('[data-track-rendering-ga="true"]:not([data-track-rendering="true"])');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+    }
+    
+    console.log("trackRenderingsGA(): "+elements.length+" elements");
+  }
+  trackRenderingsGA();
+  
+  function trackRenderings() {
+    // Track renderings in GA *and* Ahoy
+    elements = document.querySelectorAll('[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+      
+      data = getDataTrackAttributes(elements[i]);
+      data["href"] = elements[i].getAttribute("href");
+      data["page"] = window.location.pathname;
+      
+      ahoy.track (
+        elements[i].getAttribute("data-event-category")+" - rendered",
+        data
+      );
+    }
+    
+    console.log("trackRenderings(): "+elements.length+" elements");
+  }
+  trackRenderings();
+  
+  
+  
+
+  
+  //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  //############################################################
+
+  
+  
+  /*
+  anchorsExternalTracked = document.getElementsByClassName("external-tracked");
+  for (var i = 0 ; i < anchorsExternalTracked.length; i++) {
+    anchorsExternalTracked[i].addEventListener("click", function(event){
+      //event.preventDefault();
+      
+      handleOutboundLinkClicks(event);
+      
+      //document.location = this.href;
+      //var win = window.open(this.href, '_blank');
+      //win.focus();
+      
+    });
+    
+    // Trigger event that shows in GA that the link was rendered
+    ga('send', 'event', {
+      eventCategory: 'Outbound Link',
+      eventAction: 'rendered',
+      eventLabel: anchorsExternalTracked[i].href
+    });   
+  }
+  
+  anchorsRelatedTracked = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < anchorsRelatedTracked.length; i++) {
+    anchorsRelatedTracked[i].addEventListener("click", function(event){
+      handleRelatedLinkClicks(event);
+    });
+  }
+  
+  anchorsFeaturedUniversityTracked = document.getElementsByClassName("featured-university-tracked");
+  for (var i = 0 ; i < anchorsFeaturedUniversityTracked.length; i++) {
+    anchorsFeaturedUniversityTracked[i].addEventListener("click", function(event){
+      handleFeaturedUniversityLinkClicks(event);
+    });
+  }  
+  
+  
+  anchorsFooterPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < anchorsFooterPressLinks.length; i++) {
+    anchorsFooterPressLinks[i].addEventListener("click", function(event){
+      handleFooterPressLinkClicks(event);
+    });
+  }
+  
+  
+  anchorsCustomTracked = document.querySelectorAll('[data-ga-custom-event-label]');
+  for (var i = 0 ; i < anchorsCustomTracked.length; i++) {
+    anchorsCustomTracked[i].addEventListener("click", function(event){
+      handleCustomTracked(event);
+    });
+  }
+  */
+  
+  ////////////////////////////////////////////////////////////////////////////////
+
+  
+  
+</script>
+
+  
+</body>
+</html>

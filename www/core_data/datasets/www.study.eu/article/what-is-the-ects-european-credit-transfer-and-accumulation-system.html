@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"cb4ef145dd","applicationID":"55169925","transactionName":"Jg5fTRMJXFtQQBpWQxEIUlUEFR9EXV1C","queueTime":9,"applicationTime":318,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"cb4ef145dd",applicationID:"55169925"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+  <title>What is the European Credit Transfer System (ECTS)? | Study.EU</title>
+   
+  <link rel="stylesheet" media="all" href="/assets/application-788bf60a726cbc46bce208400674992d5b5b0e3a0892577e97f4ee25b84407b9.css" />
+  <script src="/assets/application-6d00a9f66b3f7e1a7db9282e671658ce415a54e8512569e7b539a89dc0fb74a5.js"></script>
+  
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="vea3oHRl4FpwkH8BIB62K/9IkzN9sa8TbWkajzSMJlhlUwjjJDWXfrbvkSz57Q0d20253QrtBQjPrQ2PudY3Dw==" />
+  
+  
+    
+  
+  
+  
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-29b05ed0a02376d0d37f92df42a0d954d97274430a0f6264e4d19745408f15c8.ico" />
+  
+  <meta name="description" content="Our guide answers all questions about ECTS credits: What are they, how do they work &amp; why are they important for university admissions in Europe?" />
+  
+  <meta name="keywords" content="study in europe, universities, europe, master, bachelor, masters, bachelors, msc, bsc, llb, llm, phd, doctorate, university, study abroad" />
+  <meta name="google-site-verification" content="9sv6t--Xh8SiHr58R3chJHOJVHixvhn6jBK8Qzc9Z9U" />
+  <meta name="msvalidate.01" content="5E3AE5307267C1BED099C27EB59E264E" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="author" content="Patrick Atack">
+  
+  
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@wwwStudyEU" />
+  <meta name="twitter:title" content="What is the European Credit Transfer System (ECTS)?" />
+  
+  <meta property="og:title"  content="What is the European Credit Transfer System (ECTS)?" />
+  
+  
+  
+  
+  
+      <meta property="og:type" content="article" />
+      <meta property="article:publisher" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+      <meta property="article:author" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+  
+  <meta property="og:description" content="Our guide answers all questions about ECTS credits: What are they, how do they work &amp; why are they important for university admissions in Europe?" />
+  <meta property="og:image" content="https://study-eu.s3.amazonaws.com/uploads/image/path/425/social_1200_ects-classroom.jpg" />
+  
+</head>
+<body>
+
+  <nav id="navbar" class="navbar navbar-static-top container container-fluid">
+  
+  <div class="container">
+    <div class="row" style="position: relative;">
+        <div class="col-md-3 col-xs-9 navbar-header">
+          <a class="navbar-brand" href="/" title="Study.EU">
+            <img alt="Study.EU" class="homepage-logo" src="/assets/study-eu_logo-ee9afe0c98ee9ac266f676d5dcb967023df14f95661b91c7812bef38a3b0c03a.png" />
+          </a>
+        </div>
+        <div class="col-md-8 bottom-align-text">
+            <strong class="navbar-claim">Your gateway to universities in Europe</strong>
+        </div>
+        <div class="col-md-1 col-xs-3 navbar-search-link-container">
+          <div class="navbar-search-link">
+            <a id="navbar-search-button" data-track-click-ga="true" data-event-category="Navbar Search Button" data-event-label="/article/what-is-the-ects-european-credit-transfer-and-accumulation-system" href="/search?sort=recommended">
+              <i class="fa fa-search" aria-hidden="true"></i>
+</a>          </div>
+        </div>
+    </div>
+</div>
+  
+</nav>
+
+  <div class="container" id="div-main-container" role="main">
+
+  </div>
+  
+  
+
+
+
+
+
+<div class="header-image">
+  <div class="container">
+    <div class="header-image-cta">
+      <h1 class="article-title">What is the European Credit Transfer System (ECTS)?</h1>
+      <h2></h2>
+    </div>
+  </div>
+
+    <img alt="" title="" srcset="https://study-eu.s3.amazonaws.com/uploads/image/path/425/wide_mobile_ects-classroom.jpg 1280w, https://study-eu.s3.amazonaws.com/uploads/image/path/425/wide_fullhd_ects-classroom.jpg 1920w" src="https://study-eu.s3.amazonaws.com/uploads/image/path/425/wide_fullhd_ects-classroom.jpg" />
+    
+    <div class="image-credits">
+      <span class="image-credits-span">
+        <a target="_blank" rel="nofollow" title="Photo" href="https://flickr.com/photos/117994717@N06/47838958912">Photo</a> by École polytechnique - J.Barande, <a target="_blank" rel="nofollow" href="https://creativecommons.org/licenses/by-sa/2.0/legalcode">CC BY-SA 2.0</a>, modified
+      </span>
+    </div>
+
+</div>
+
+<div class="div-breadcrumbs">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="/">Study.eu</a></li><i class="fa fa-angle-right breadcrumb-separator" aria-hidden="true"></i><li>What is the European Credit Transfer System (ECTS)?</li>
+    </ol>  
+  </div>
+</div> 
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://www.study.eu/",
+        "name": "Study.eu"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://www.study.eu/article/what-is-the-ects-european-credit-transfer-and-accumulation-system",
+        "name": "What is the European Credit Transfer System (ECTS)?"
+      }
+    }
+  ]
+}
+</script>
+
+<div class="container" style="position: relative;">
+
+  <div class="row">
+
+    <div class="content col-md-8">
+      <h1 class="article-title">What is the European Credit Transfer System (ECTS)?</h1>
+      
+      <div class="article-info-top">
+          Author: <span class="article-author-top">Patrick Atack</span>
+          &mdash;
+          <span class="article-last-udpated">Last update: 15 April 2020</span>
+      </div>
+      
+      <p><strong>The ECTS framework helps students and universities define and understand the workload that comes with lectures and study programmes. It may deem daunting at first, but it&rsquo;s actually quite easy to understand. Let&rsquo;s explore the most common questions about ECTS:</strong></p>
+<h3>What is the European Credit Transfer and Accumulation System (ECTS)?</h3>
+<p>The <strong>European Credit Transfer System (ECTS)</strong> is a points system used by universities and agreed by governments, that makes international education more easily comparable across borders.</p>
+<p>The European Credit Transfer System - or, more precisely, the <strong>European Credit Transfer and Accumulation System</strong> - makes studying across the European Higher Education Area much more comparable. A system of credits means one course or module is worth the same at any university.</p>
+<p>The system helps students study and live in different European nations during their studies. It also makes studying abroad much easier, as it means universities can compare the classes and courses they offer, so you get credit for your semester or year abroad.</p>
+<p>Credits for lectures from different institutions can be accumulated (or added up) towards one degree or qualification, allowing for much more flexibility.</p>
+<p>The ECTS system has been adopted by countries across the European Higher Education Area (EHEA). There are 48 nations signed up to the EHEA, from Portugal in the West to Russia and Kazakhstan in the East.</p>
+<p><a href="../../../search?sort=recommended"><strong>Find study programmes in Europe</strong></a></p>
+<h3>What are ECTS points?</h3>
+<p>ECTS points, or ECTS credits, indicate the required workload to complete a study programme, or a module within a study programme. ECTS points <em>only</em> indicate workload; they do <em>not</em> indicate a grade.</p>
+<p>Generally, each year of full-time study (or work, where applicable) is worth 60 ECTS credits. Usually this is divided by modules. So, for example, you might have 4 modules in a year with a similar workload, each of them worth 15 ECTS credits and thus adding up to 60 ECTS for the whole year.</p>
+<p>ECTS points of modules are summed up to indicate the total workload for a study programme:</p>
+<ul>
+<li><strong>Bachelor&rsquo;s or undergraduate degrees</strong> typically range from 180 ECTS (3 years full-time) to 240 ECTS (4 years full-time).</li>
+<li><strong>Master&rsquo;s degrees</strong> typically range from 60 ECTS (1 year full-time) to 120 ECTS (2 years full-time).</li>
+<li>It&rsquo;s not as easy to say exactly how many credits a <strong>PhD programme</strong> will be made up of, due to their flexible-length work load.</li>
+</ul>
+<h3>How do ECTS credits convert to study hours?</h3>
+<p>A year of full-time studies at university level is generally worth 60 ECTS credits, and defined as equal to 1,500 - 1,800 hours of study work. This means <strong>1 ECTS is equal to between 25 to 30 hours</strong> (with the UK being one exception). The exact number of hours is different from country to country. A few examples:</p>
+<ul>
+<li><strong><a href="../../../country/united-kingdom">United Kingdom</a>:</strong> 60 ECTS = 1,200 study hours &rarr; 1 ECTS = 20 study hours</li>
+<li><strong><a href="../../../country/austria">Austria</a>, <a href="../../../country/ireland">Ireland</a>, <a href="../../../country/italy">Italy</a>, <a href="../../../country/malta">Malta</a>:</strong> 60 ECTS = 1,500 study hours &rarr; 1 ECTS = 25 study hours</li>
+<li><strong><a href="../../../country/finland">Finland</a>, <a href="../../../country/lithuania">Lithuania</a>, <a href="../../../country/sweden">Sweden</a>:</strong> 60 ECTS = 1,600 study hours &rarr; 1 ECTS = 27 study hours</li>
+<li><strong><a href="../../../country/netherlands">Netherlands</a>, <a href="../../../country/portugal">Portugal</a>:</strong> 60 ECTS = 1,680 study hours &rarr; 1 ECTS = 28 study hours</li>
+<li><strong><a href="../../../country/germany">Germany</a>:</strong> 60 ECTS = 1,800 study hours &rarr; 1 ECTS = 30 study hours</li>
+</ul>
+<p>Of course, these values are just a guide. They do not only include &ldquo;contact hours&rdquo; (i.e. hours you spend in classrooms), but also the time you prepare, do homework and so on - so your individual study times could be different.</p>
+<p>If you study part-time, the number of ECTS per semester or year will also be lower, reflecting the reduced workload.</p>
+<p>If you are only signing up for 20 ECTS worth of lectures in a given semester, you will probably have lots of free time, while more than 30 ECTS will mean you might not see much of your friends.</p>
+<h3>How do ECTS credits work?</h3>
+<p>ECTS credit points indicate the workload associated with a study module, or number of modules. The great thing about ECTS credits is their versatility: They are used by and accepted by effectively all European universities - and also by many other institutions around the world.</p>
+<p><strong>There are three main uses of ECTS:</strong></p>
+<ol>
+<li>Transferring between universities</li>
+<li>Studying abroad (e.g. an exchange semester at a different university)</li>
+<li>Applying for further study (like a Master&rsquo;s or PhD)</li>
+</ol>
+<p>There are various reasons why you&rsquo;d want to change universities. Perhaps your first university is not quite what you were looking for, or perhaps you want to switch to a subject not offered at your institution. <strong>The ECTS framework make this easy, because the credit points show institutions exactly how far someone has got in their studies.</strong> This way, you won&rsquo;t have to start over completely.</p>
+<p>This means students can more easily transfer between European universities. <strong>But it&rsquo;s not limited to Europe</strong> - some other institutions do accept ECTS credits, because they are uniformed and easy to transfer. For example, 10 ECTS credits are usually equal to 5 US college credits. This way, students coming to Europe just for e.g. a summer school course can still use the credits at home.</p>
+<p>This also means that if you plan to pursue further studies, you are not restricted to universities in the same country as the institution where you completed your Bachelor&rsquo;s degree.</p>
+<p>ECTS credits will help give admissions departments for Master&rsquo;s or PhDs a good picture of what you have done previously, and if you are at the right level to do well in further studies. Moreover, <strong>admissions requirements are often explicitly stated with minimum ECTS credits</strong>, for example: <em>&ldquo;To apply to this Psychology programme, students need at least 20 ECTS credits in Statistics or Mathematics.&rdquo;</em></p>
+<p>And the same is true for students returning from a semester or year studying abroad. Your home university can easily confirm and accept the credit points of modules you completed during your exchange semester.</p>
+<h3>Are ECTS credits important to apply for Masters programmes?</h3>
+<p>ECTS credits can be important when applying for Master&rsquo;s or other postgraduate programmes.</p>
+<p>There&rsquo;s no hard and fast rule with admissions, but ECTS credits can certainly make everyone&rsquo;s life a bit easier - especially if students apply for Master&rsquo;s courses in different countries to where they completed their undergraduate degree.</p>
+<p><strong>Master&rsquo;s admission requirements may include that students have a certain amount of ECTS credits in the subject area they want to apply for.</strong></p>
+<p>This is especially important when students are looking to study a course that isn&rsquo;t directly what they focused on in their earlier studies. For example, if you want to study a Master&rsquo;s in Engineering you may have to prove competency in Mathematics. Even if you did not study Engineering previously, the ECTS credits you gained in Mathematics-related modules during your Bachelor&rsquo;s can help prove that your knowledge is sufficient for the Master&rsquo;s programme you are applying to.</p>
+<p><a href="../../../search?degreelevel=master&amp;sort=recommended"><strong>Find Masters programmes in Europe</strong></a></p>
+<h3>Are ECTS credits important to apply for PhD programmes?</h3>
+<p>Applying for a PhD or Doctorate programme can be a little different from other postgraduate courses, but ECTS credits can still play an important role as Master&rsquo;s and Bachelor's credits can give admissions staff a good idea of what students know, and how much they&rsquo;ve studied the specific area they wish to delve further into.</p>
+<p>Therefore, PhD application requirements may include that students have a certain amount of ECTS credit points in a certain subject area.</p>
+<p>This is especially important when students are looking to study a PhD that&rsquo;s a bit wider in scope than what they focused on during their earlier studies.</p>
+<p>For example, students who want to work for a PhD in Engineering may have to prove competency in practical areas, even if their topic is theoretical. ECTS credits can help prove that students&rsquo; knowledge is up to scratch, wherever they studied previously.</p>
+<p><a href="../../../search?degreelevel=doctorate&amp;sort=recommended"><strong>Find PhD programmes in Europe</strong></a></p>
+<h3>How does the ECTS grading table work?</h3>
+<p>The grading scheme is another important part of ECTS. As well as credits, which are awarded based on completed modules and courses, the system allows for grade conversion between universities, based on the students&rsquo; relative performance in their class.</p>
+<p>Up until 2009, the framework included the <strong>ECTS grading scale</strong> that went from A to F, where A to E were passing grades. The table below shows which grade was awarded based on the performance percentile compared to the whole class:</p>
+<table class="table table-bordered table-striped">
+<thead>
+<tr>
+<th>Grade (old system)</th>
+<th>Pass?</th>
+<th>% of students</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>pass</td>
+<td>top 10%</td>
+</tr>
+<tr>
+<td>B</td>
+<td>pass</td>
+<td>next 25%</td>
+</tr>
+<tr>
+<td>C</td>
+<td>pass</td>
+<td>next 30%</td>
+</tr>
+<tr>
+<td>D</td>
+<td>pass</td>
+<td>next 25%</td>
+</tr>
+<tr>
+<td>E</td>
+<td>pass</td>
+<td>next 10%</td>
+</tr>
+<tr>
+<td>FX</td>
+<td>fail - some further work required</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>F</td>
+<td>fail - considerable further work required</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>The ECTS grading scale was relative; this meant that the same performance could theoretically result in different ECTS grades in different years or classes. Because most grading systems at universities in Europe follow a fixed scale, grades had to be converted at the end of a class or study programme. However, ECTS grades were never widely adopted and had some practical issues, which is why a new system was designed:</p>
+<h4>The ECTS grading table</h4>
+<p><strong>In 2009, the new ECTS grading table was introduced to replace the previous ECTS grading scale.</strong> This new approach still relies on relative performance measures, but allows for more flexibility and a better comparison of grades between institutions.</p>
+<p><strong>Here&rsquo;s how it works:</strong> Universities track what percentage of students receive each passing grade. Ideally, this is done at the subject level (based on the ISCED-F field definition). So for example, a university would track: 9% of all History students receive the best grade, another 8% the second-best grade, and so on.</p>
+<p>When you do an exchange semester, this information is shared between home and guest university. <strong>Then the guest university is able to give you their local grade, and also automatically convert it to the grade you would have received at home.</strong> Unfortunately, grading scales rarely match exactly: There may be multiple grade steps that are each considered equivalent, so there is some margin. The guest university decides if they award the best, average, or worst grade that is considered equivalent in the ECTS grading table.</p>
+<p><strong>This sounds complicated? Imagine the following example:</strong></p>
+<ul>
+<li>You study History at an <a href="../../../country/austria">Austrian university</a>, and go on an exchange to a <a href="../../../country/france">French university</a>. At your home university, there are only four passing grades: from 1 to 4 (1 being the best). At your guest university, passing grades range from 10 to 15 (15 being the best).</li>
+<li>Both universities can share the grade distribution with each other. For example, assume that at the home institution, 35% of students usually receive the best grade (&ldquo;1 / Excellent&rdquo;), whereas at the French university, ca. 29% receive a grade of 13 or better.</li>
+<li>Now, assume that at the French university, you receive the grade &ldquo;12 points&rdquo;. Generally, 46% of students receive this grade, or a better grade.</li>
+<li>Your French institution already knows the grade distribution at the Austrian institution. So they can directly convert your grade to what you would have received at your home university, and include this in your transcript of records.</li>
+<li>For this, they will look up the closest corresponding grade: 46% of students at the Austrian university must have reached that grade or a better one.</li>
+<li>The guest university has to decide if they match the home university&rsquo;s grade at the <em>lowest</em>, <em>average</em>, or <em>highest</em> level of their own grade. In this example, the French &ldquo;12&rdquo; could correspond to the Austrian &ldquo;2 / Good&rdquo; (at the lower end or the average) or the Austrian &ldquo;1 / Excellent&rdquo; (at the higher end).</li>
+</ul>
+<p><strong>The following diagramme illustrates the conversion:</strong></p>
+<hr style="border: 1px solid #999;" />
+<table style="width: 100%; text-align: left; font-size: 67%; color: #666;">
+<tbody>
+<tr style="height: 40px;">
+<td style="font-size: 120%;" width="20%">Number of students:</td>
+<td style="border-left: 1px solid #666; padding-left: 2px;" width="8%">100%</td>
+<td style="border-left: 1px solid #666; padding-left: 2px;" width="8%">90%</td>
+<td style="border-left: 1px solid #666; padding-left: 2px;" width="8%">80%</td>
+<td style="border-left: 1px solid #666; padding-left: 2px;" width="8%">70%</td>
+<td style="border-left: 1px solid #666; padding-left: 2px;" width="8%">60%</td>
+<td style="border-left: 1px solid #666; padding-left: 2px;" width="8%">50%</td>
+<td style="border-left: 1px solid #666; padding-left: 2px;" width="8%">40%</td>
+<td style="border-left: 1px solid #666; padding-left: 2px;" width="8%">30%</td>
+<td style="border-left: 1px solid #666; padding-left: 2px;" width="8%">20%</td>
+<td style="border-left: 1px solid #666; padding-left: 2px;" width="8%">10%</td>
+</tr>
+</tbody>
+</table>
+<table style="width: 100%; border: 1px solid #fff; text-align: center; font-size: 80%;">
+<tbody>
+<tr style="background-color: #ccc; height: 40px;">
+<td style="background-color: #fff; text-align: left;" width="20%">Grade (France):</td>
+<td style="border: 1px solid #fff;" width="28%">10</td>
+<td style="border: 1px solid #fff;" width="15%">11</td>
+<td style="border: 2px solid #000;" colspan="3" width="14%"><strong>12</strong></td>
+<td style="border: 1px solid #fff;" width="9%">13</td>
+<td style="border: 1px solid #fff;" width="7%">14</td>
+<td style="border: 1px solid #fff;" width="7%">15</td>
+</tr>
+<tr style="font-size: 120%;">
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td style="text-align: left; font-size: 150%;">&darr;</td>
+<td style="text-align: center; font-size: 150%;">&darr;</td>
+<td style="text-align: right; font-size: 150%;">&darr;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table style="width: 100%; border: 1px solid #fff; text-align: center; font-size: 80%;">
+<tbody>
+<tr style="background-color: #ccc; height: 40px;">
+<td style="background-color: #fff; text-align: left;" width="20%">Grade (Austria):</td>
+<td style="border: 1px solid #fff;" width="13%;">4<br />Suf&shy;fi&shy;cient</td>
+<td style="border: 1px solid #fff;" width="13%;">3<br />Sa&shy;tis&shy;fac&shy;tory</td>
+<td style="border: 1px solid #fff;" width="26%;">2<br />Good</td>
+<td style="border: 1px solid #fff;" width="28%;">1<br />Ex&shy;cel&shy;lent</td>
+</tr>
+</tbody>
+</table>
+<table style="width: 100%; text-align: left; font-size: 67%; color: #666;">
+<tbody>
+<tr style="height: 40px;">
+<td style="font-size: 120%;" width="20%">Number of students:</td>
+<td style="border-left: 1px solid #666; padding-left: 2px;" width="8%">100%</td>
+<td style="border-left: 1px solid #666; padding-left: 2px;" width="8%">90%</td>
+<td style="border-left: 1px solid #666; padding-left: 2px;" width="8%">80%</td>
+<td style="border-left: 1px solid #666; padding-left: 2px;" width="8%">70%</td>
+<td style="border-left: 1px solid #666; padding-left: 2px;" width="8%">60%</td>
+<td style="border-left: 1px solid #666; padding-left: 2px;" width="8%">50%</td>
+<td style="border-left: 1px solid #666; padding-left: 2px;" width="8%">40%</td>
+<td style="border-left: 1px solid #666; padding-left: 2px;" width="8%">30%</td>
+<td style="border-left: 1px solid #666; padding-left: 2px;" width="8%">20%</td>
+<td style="border-left: 1px solid #666; padding-left: 2px;" width="8%">10%</td>
+</tr>
+</tbody>
+</table>
+<hr style="border: 1px solid #999;" />
+<h3>How does ECTS help convert grades between fixed grading scales?</h3>
+<p>Most countries and universities use fixed grading scales. &ldquo;Fixed&rdquo; means: The same performance should always result in the same grade. The issue is that these scales are often very specific and do not directly match between two countries or two institutions.<br /><br />With the ECTS grading table as a conversion tool, universities can assess a student&rsquo;s performance relative to the class, and convert it to the equivalent grade in another institution&rsquo;s grading scale. This is also relevant when you need to provide a transcript of records to another university.</p>
+<h3>How to convert UK credits to ECTS credits?</h3>
+<p>Although the <a href="../../../country/united-kingdom">United Kingdom</a> is part of the European Higher Education Area (EHEA), universities tend to use UK credits. In theory, credits are defined separately for England, Wales, and Northern Ireland under the CATS scheme, and for Scotland with the SCQF framework, but they represent the same value.</p>
+<p>Luckily, conversion between UK credit points and ECTS credit points is simple: <strong>2 UK credits are equivalent to 1 ECTS credit</strong>.</p>
+<h3>How to convert U.S. credits to ECTS credits?</h3>
+<p>If you have an undergraduate degree from the United States and plan to do a Masters in Europe, you may need to convert your U.S. credits to ECTS credits.</p>
+<p>The typical &ldquo;full course load&rdquo; at an American university implies 15 U.S. credits per semester, which is equal to 30 ECTS credits at a European university. So the factor between American and European credits is usually 2, i.e. 1 U.S. credit point equals 2 ECTS credit points.</p>
+<h3>Which countries accept ECTS credit points?</h3>
+<p>The ECTS credit system is used by universities in all 48 member countries of the <strong><a href="../../../article/the-european-higher-education-area-ehea">European Higher Education Area, or EHEA</a></strong>.</p>
+<p>The aim of the EHEA is to implement the Bologna Process and to join, states must ratify the European Cultural Convention treaty.</p>
+<p>Some other universities outside the EHEA may accept ECTS credits on applications, but they usually will have to translate those credits and grades into their own structure - and will not automatically provide ECTS grades for graduates.</p>
+
+      
+
+        <a id="article-search-button" class="btn btn-md btn-primary" data-track-rendering-ga="true" data-track-click-ga="true" data-event-category="Article Search Button" data-event-label="/article/what-is-the-ects-european-credit-transfer-and-accumulation-system" href="/search?sort=recommended">14529 Programmes in Europe</a>
+      
+      
+        <div class="author-profile row">
+      <div class="col-xs-3 col-md-2">
+        <img class="author-image" alt="Patrick Atack" title="Patrick Atack" src="https://study-eu.s3.amazonaws.com/uploads/author_profile/article_author-patrick-atack.jpg" />
+      </div>
+    <div class="col-xs-9 col-md-10">
+      <h5 class="header author-name">Author: Patrick Atack <a class="author-social-link" href="https://twitter.com/patricvk" target="_blank" title="Patrick Atack on Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a><a class="author-social-link" href="https://www.linkedin.com/in/patrick-atack-918694136/" target="_blank" title="Patrick Atack on Linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></h5>
+      <p class="author-biography">
+        Patrick is an expert on international education. He studied American Studies and Journalism in the UK and the USA. His work has been published in, among others, the London Evening Standard, Euronews, and the PIE News.
+      </p>
+    </div>
+  </div>
+
+      
+    </div>
+
+    <div class="sidebar col-sm-12 col-md-4">
+
+                <div class="sidebar-container">
+          <strong>
+            Featured universities:
+          </strong>
+          
+          <div class="featured-university-container" data-track-rendering-ga="true" data-event-category="Featured University Banner" data-event-label="/university/university-west">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/university-west">
+                    <img alt="University West" title="University West" class="search-result-logo lazyload" data-src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_university-west-logo.svg" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/university-west">University West</a><br />
+                  Trollhättan, 
+                  <a href="/country/sweden">Sweden</a><br />
+                  16 study programmes
+              </div>
+            </div>
+          </div>
+          <div class="featured-university-container" data-track-rendering-ga="true" data-event-category="Featured University Banner" data-event-label="/university/lancaster-university-leipzig">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/lancaster-university-leipzig">
+                    <img alt="Lancaster University Leipzig" title="Lancaster University Leipzig" class="search-result-logo lazyload" data-src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_lancaster-university-leipzig-logo.svg" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/lancaster-university-leipzig">Lancaster University Leipzig</a><br />
+                  Leipzig, 
+                  <a href="/country/germany">Germany</a><br />
+                  8 study programmes
+              </div>
+            </div>
+          </div>
+          <div class="featured-university-container" data-track-rendering-ga="true" data-event-category="Featured University Banner" data-event-label="/university/falmouth-university">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/falmouth-university">
+                    <img alt="Falmouth University" title="Falmouth University" class="search-result-logo lazyload" data-src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_falmouth-university-logo.png" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/falmouth-university">Falmouth University</a><br />
+                  Falmouth, 
+                  <a href="/country/united-kingdom">United Kingdom</a><br />
+                  70 study programmes
+              </div>
+            </div>
+          </div>
+          <div class="featured-university-container" data-track-rendering-ga="true" data-event-category="Featured University Banner" data-event-label="/university/university-of-helsinki">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/university-of-helsinki">
+                    <img alt="University of Helsinki" title="University of Helsinki" class="search-result-logo lazyload" data-src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_university-of-helsinki-logo.png" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/university-of-helsinki">University of Helsinki</a><br />
+                  <a href="/city/helsinki">Helsinki</a>, 
+                  <a href="/country/finland">Finland</a><br />
+                  72 study programmes
+              </div>
+            </div>
+          </div>
+          <div class="featured-university-container" data-track-rendering-ga="true" data-event-category="Featured University Banner" data-event-label="/university/hertie-school">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/hertie-school">
+                    <img alt="Hertie School" title="Hertie School" class="search-result-logo lazyload" data-src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_hertie-school-logo.svg" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/hertie-school">Hertie School</a><br />
+                  <a href="/city/berlin">Berlin</a>, 
+                  <a href="/country/germany">Germany</a><br />
+                  4 study programmes
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+
+
+
+
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Study.EU Responsive (Article) -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-4374612586998899"
+            data-ad-slot="6769340969"
+            data-ad-format="auto"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      
+      
+
+    </div>
+
+
+  </div>
+
+  <div class="row">
+  <div class="content col-md-8">
+        <div>
+          <h2>You might be interested in this:</h2>
+          <div class="row">
+            <div class="col-sm-12 col-md-4">
+              <a class="related-tracked" href="/article/7-reasons-why-you-should-study-in-europe">
+                <div class="thumbnail home-country-card">
+                      <img alt="7 reasons why you should study in Europe" title="7 reasons why you should study in Europe" class="country-default-image lazyload" data-src="https://study-eu.s3.amazonaws.com/uploads/image/path/126/slideshow_pexels-photo-57825.jpeg" />
+                    <div class="caption">
+                      <strong>7 reasons why you should study in Europe</strong>
+                    </div>
+                </div>
+</a>            </div>
+            <div class="col-sm-12 col-md-4">
+              <a class="related-tracked" href="/article/study-in-europe-when-to-apply-deadlines">
+                <div class="thumbnail home-country-card">
+                      <img alt="Study in Europe in 2021: When to apply? - Deadlines" title="Study in Europe in 2021: When to apply? - Deadlines" class="country-default-image lazyload" data-src="https://study-eu.s3.amazonaws.com/uploads/image/path/194/slideshow_15239891650_162601d14a_o.jpg" />
+                    <div class="caption">
+                      <strong>Study in Europe in 2021: When to apply? - Deadlines</strong>
+                    </div>
+                </div>
+</a>            </div>
+            <div class="col-sm-12 col-md-4">
+              <a class="related-tracked" href="/article/the-european-higher-education-area-ehea">
+                <div class="thumbnail home-country-card">
+                      <img alt="The European Higher Education Area (EHEA)" title="The European Higher Education Area (EHEA)" class="country-default-image lazyload" data-src="https://study-eu.s3.amazonaws.com/uploads/image/path/233/slideshow_6869701842_d7138c1937_o.jpg" />
+                    <div class="caption">
+                      <strong>The European Higher Education Area (EHEA)</strong>
+                    </div>
+                </div>
+</a>            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+    
+
+  
+  
+  <footer class="top-footer">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Merriweather Sans:300,400i,700']
+      }
+    });
+  </script> 
+
+  
+  <div class="container">
+  <div class="row">
+    
+    <div class="text-left col-md-8 col-xs-6" style="display: inline-block;float: left;">
+      <a href="/" title="Study.EU" data-track-click="true" data-event-category="Footer Logo"><img class="footer-logo" src="/assets/study-eu_logo_wb_200x66-8722da28bad82460d8951c34fe8b5ba8e11794b2fd21e83ee8c5fe54323ea73b.png" /></a><br />
+      <p>
+        Copyright &copy; 2021 <a title="Study.EU" href="/">Study.EU</a>
+      </p>
+      <p>
+        
+      </p>
+      <a class="social-link" href="https://www.facebook.com/StudyEU-168756646881605/" target="_blank" title="Like Study.EU on Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://twitter.com/wwwStudyEU" target="_blank" title="Follow Study.EU on Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://www.linkedin.com/company/study.eu/" target="_blank" title="Follow Study.EU on Linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    </div>
+    <div class="text-right col-md-4 col-xs-6">
+      <br /><br />
+          <a rel="nofollow" href="/page/imprint">Imprint</a>
+        &middot;
+          <a rel="nofollow" href="/page/about-study-eu">About Study.eu</a>
+        &middot;
+          <a rel="nofollow" href="/page/privacy-policy">Privacy Policy</a>
+        &middot;
+      <a href="/jobs">Jobs</a>
+      
+      <br />
+      
+      <a href="/press">Press</a>
+      
+      <!-- &middot; -->
+      
+        <!-- &mdash; //-->
+      
+      <br /><br />
+      <a href="/advertise-on-study-eu">Advertise on Study.eu</a>
+    </div>
+  </div>
+  </div>
+</footer>
+
+<a href="javascript:" id="scroll-to-top" title="Scroll back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+<script>
+  $(window).scroll(function() {
+      if ($(this).scrollTop() >= 100) {        // page is scrolled more than 100px
+          $('#scroll-to-top').fadeIn(500);
+      } else {
+          $('#scroll-to-top').fadeOut(500);
+      }
+  });
+  $('#scroll-to-top').click(function() {      // arrow is clicked
+      $('body,html').animate({
+          scrollTop : 0                       // scroll to top
+      }, 500);
+  });
+</script>
+
+
+  
+  <footer class="footer-countries">
+
+
+  <div class="container">
+    <div class="row">
+    
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <h5>Study in Europe:</h5>
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Austria" href="/country/austria">Austria</a><br />
+                <a title="Study in Belgium" href="/country/belgium">Belgium</a><br />
+                <a title="Study in the Czech Republic" href="/country/czech-republic">Czech Republic</a><br />
+                <a title="Study in Denmark" href="/country/denmark">Denmark</a><br />
+                <a title="Study in Estonia" href="/country/estonia">Estonia</a><br />
+                <a title="Study in the Faroe Islands" href="/country/faroe-islands">Faroe Islands</a><br />
+                <a title="Study in Finland" href="/country/finland">Finland</a><br />
+                <a title="Study in France" href="/country/france">France</a><br />
+                <a title="Study in Germany" href="/country/germany">Germany</a><br />
+                <a title="Study in Greece" href="/country/greece">Greece</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Hungary" href="/country/hungary">Hungary</a><br />
+                <a title="Study in Iceland" href="/country/iceland">Iceland</a><br />
+                <a title="Study in Ireland" href="/country/ireland">Ireland</a><br />
+                <a title="Study in Italy" href="/country/italy">Italy</a><br />
+                <a title="Study in Latvia" href="/country/latvia">Latvia</a><br />
+                <a title="Study in Liechtenstein" href="/country/liechtenstein">Liechtenstein</a><br />
+                <a title="Study in Lithuania" href="/country/lithuania">Lithuania</a><br />
+                <a title="Study in Malta" href="/country/malta">Malta</a><br />
+                <a title="Study in the Netherlands" href="/country/netherlands">Netherlands</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Norway" href="/country/norway">Norway</a><br />
+                <a title="Study in Poland" href="/country/poland">Poland</a><br />
+                <a title="Study in Portugal" href="/country/portugal">Portugal</a><br />
+                <a title="Study in Romania" href="/country/romania">Romania</a><br />
+                <a title="Study in Russia" href="/country/russia">Russia</a><br />
+                <a title="Study in Spain" href="/country/spain">Spain</a><br />
+                <a title="Study in Sweden" href="/country/sweden">Sweden</a><br />
+                <a title="Study in Switzerland" href="/country/switzerland">Switzerland</a><br />
+                <a title="Study in the United Kingdom" href="/country/united-kingdom">United Kingdom</a><br />
+            </div>
+          </div>
+        </div>
+    
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Recent articles:</h5>
+          </div>
+          <div class="col-md-8">
+              <p><a href="/article/study-human-resource-management-hrm">Study Human Resource Management: All you need to know</a></p>
+              <p><a href="/article/looking-for-a-uk-degree-in-germany-study-in-leipzig">Looking for a UK degree in Germany? Study in Leipzig!</a></p>
+              <p><a href="/article/study-innovation-management">Study Innovation Management: All you need to know</a></p>
+              <p><a href="/article/degree-in-chinese-studies-sinology">Degree in Chinese Studies: All you need to know</a></p>
+              <p><a href="/article/study-ecology">Study Ecology: All you need to know</a></p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  
+  </div>
+
+</footer>
+
+  
+  <footer class="footer-press">
+  <div class="container">
+    <div class="row footer-press-description">
+      <div class="col-md-12 text-center">
+        Study.EU has been mentioned in numerous news publications worldwide, such as:
+      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="L&#39;Étudiant (France)" title="L&#39;Étudiant (France)" data-src="/assets/press/letudiant_gray_200-57bccbdceaef3c62c8660629603372823c98afe433bd39bf6d42a73263c113c3.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Frankfurter Allgemeine (Germany)" title="Frankfurter Allgemeine (Germany)" data-src="/assets/press/faz_gray_300-b6e5e6022a7b164c24b69a51fb97a72715018db745fbcda8580675a507370b8b.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Standard (Hong Kong)" title="The Standard (Hong Kong)" data-src="/assets/press/the-standard-hong-kong_gray_200-f124ca057d2671730e1f6d996377ef4614a28ccf04ae04f730eaf16ed7ee0b46.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Independent (UK)" title="The Independent (UK)" data-src="/assets/press/the-independent-uk_gray_300-63238e279b3c62b1f87faf17fcbcf1f14a2e5b9229193a0431fc974da217d159.png" class="lazyload" />
+</a>      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Al-Masry Al-Youm (Egypt)" title="Al-Masry Al-Youm (Egypt)" data-src="/assets/press/al-masry_al-youm_gray_200-9d8e503cd53ec4d955c3e6f7bf2a1c0badb500a0d2bd8a1ef1d11acd686879e5.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Le Monde (France)" title="Le Monde (France)" data-src="/assets/press/le-monde_gray_200-24d8bca493f3a2b8e0150cb4ef38f00c9924ac5e7acfbdb8750076c949c70052.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Local (Europe)" title="The Local (Europe)" data-src="/assets/press/the-local_gray_200-7631164ea94edf8d065b3af6f64274416162d866ce1cea737c3ee25f28cdd098.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Forbes (USA)" title="Forbes (USA)" data-src="/assets/press/forbes_gray_200-deff6ef2c28ec5a275f404c5f59d56f4b687881eb39de52b79b5add3ca609fe2.png" class="lazyload" />
+</a>      </div>
+    </div>
+  </div>
+</footer>
+
+  
+  
+  
+  
+    <div class="cookies-eu js-cookies-eu row">
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+    <div class="cookies-eu-content-holder col-md-4 col-sm-6 col-xs-6 align-self-center">
+      Cookies &amp; analytics help us deliver our services.
+        <a href="/page/privacy-policy" class="cookies-eu-link" target="_blank"> Privacy policy </a>
+    </div>
+    <div class="cookies-eu-button-holder col-md-4 col-sm-6 col-xs-6">
+      <button class="cookies-eu-ok js-cookies-eu-ok btn btn-lg btn-primary" data-track-click-ga="true" data-event-category="Cookie Consent Button"> OK </button>
+    </div>
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+  </div>
+
+  
+  <script>
+  // Improved Ahoy view tracking with additional attributes
+  var additionalProperties = {};
+  console.log("Ahoy: View with additional properties: "+JSON.stringify(additionalProperties));
+  ahoy.trackView(additionalProperties);
+</script>
+<a name="ga"></a> <!-- GA //-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42442116-3', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+  
+  
+  
+    
+  //############################################################
+  //########## 2018-07    NEW CUSTOM METHODS          ##########
+  
+  function getDataTrackAttributes(element) {
+    var data = {};
+    [].forEach.call(element.attributes, function(attr) {
+      if (/^data-trackvalue-/.test(attr.name)) {
+        // Relevant attributes would always be called "data-track-foobar"
+        var underscorename = attr.name.substr(16).replace(/-/g, "_");
+        data[underscorename] = parseInt(attr.value) || attr.value; // Provide as integer if possible, otherwise the original string
+      }
+    });
+    return data;
+  }
+  
+  // Set data-track-click and utm_source for all external links in the description content
+  var content_links = document.querySelectorAll('div.content-description a');
+  for (var i = 0; i < content_links.length; i++) {
+    if ( ((new URL(content_links[i].href, document.baseURI).href) == mainTrackableLink) || (content_links[i].host !== window.location.host) ) {
+      // Link is the main trackable link, or link is external --> add tracking and utm_source if not present
+      utm_url = new URL(content_links[i].href);
+      utm_url.searchParams.set("utm_source", "Study.eu"); // add (or overwrite existing) utm_source parameter
+      content_links[i].href = utm_url;
+      content_links[i].classList.add("external-tracked");
+      content_links[i].setAttribute("data-event-category", "Outbound Link");
+      content_links[i].setAttribute("data-event-label", content_links[i].href);
+      content_links[i].setAttribute("data-track-click", "true"); // Once data-track-click is set to true, initDataAttributes() below will add the id values
+    }
+  }
+  console.log("Modified "+content_links.length+" links in description content.");
+  
+  // Set data attributes for tracking of footer press links
+  footerPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < footerPressLinks.length; i++) {
+    footerPressLinks[i].setAttribute("data-track-click-ga", "true");
+    footerPressLinks[i].setAttribute("data-event-category", "Footer Press Link");
+    footerPressLinks[i].setAttribute("data-event-label", window.location.href);
+  }
+  
+  relatedLinks = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < relatedLinks.length; i++) {
+    relatedLinks[i].setAttribute("data-track-click-ga", "true");
+    relatedLinks[i].setAttribute("data-event-category", "Related Link");
+    relatedLinks[i].setAttribute("data-event-label", relatedLinks[i].getAttribute("href"));
+  }  
+  
+  function initDataAttributes() {
+    // Initialise element data attributes based on backend instance variables
+    elements = document.querySelectorAll('[data-track-click="true"],[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      
+      
+    }
+    console.log("initDataAttributes()");
+  }
+  initDataAttributes();
+    
+  function trackClick(event, trackGA = true, trackAhoy = true) {
+    // When an element was clicked, track the click in GA and Ahoy
+    
+    strEventLabel = "";
+    if        ( event.currentTarget.hasAttribute("data-event-label") ) {
+      strEventLabel = event.currentTarget.getAttribute("data-event-label");
+    } else if ( event.currentTarget.hasAttribute("href") ) {
+      strEventLabel = event.currentTarget.href;
+    }
+    
+    ga('send', 'event', {
+      eventCategory:  event.currentTarget.getAttribute("data-event-category"),
+      eventAction:    'click',
+      eventLabel:     strEventLabel
+    });
+    
+    data = getDataTrackAttributes(event.currentTarget);
+    data["href"] = event.target.href;
+    data["page"] = window.location.pathname;
+    
+    /*ahoy.track (
+      event.currentTarget.getAttribute("data-event-category"),
+      {
+        
+        
+        
+        href: event.target.href,
+        page: window.location.pathname
+      }
+    );*/
+    
+    if (trackAhoy) {
+        data["medium"] = "Article";
+      ahoy.track (
+        event.currentTarget.getAttribute("data-event-category")+" - click",
+        data
+      );
+    }
+    
+    console.log("trackClick(event, trackGA = "+trackGA+", trackAhoy = "+trackAhoy+"): " +
+      event.currentTarget.getAttribute("data-event-category") + ", " +
+      "{href: " + event.target.href + ", " +
+      "page:"+window.location.pathname+"});"
+    );
+  }
+  
+  
+  function trackClicksGA() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click-ga="true"]:not([data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event, true, false);
+      });
+    }
+    console.log("trackClicksGA(): "+elements.length+" elements");
+  }
+  trackClicksGA();
+  
+  function trackClicks() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event);
+      });
+    }
+    console.log("trackClicks(): "+elements.length+" elements");
+  }
+  trackClicks();
+  
+  function trackRenderingsGA() {
+    // Track renderings only in GA
+    // This would be for large-volume data that is interesting, but not mission-critical
+
+    elements = document.querySelectorAll('[data-track-rendering-ga="true"]:not([data-track-rendering="true"])');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+    }
+    
+    console.log("trackRenderingsGA(): "+elements.length+" elements");
+  }
+  trackRenderingsGA();
+  
+  function trackRenderings() {
+    // Track renderings in GA *and* Ahoy
+    elements = document.querySelectorAll('[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+      
+      data = getDataTrackAttributes(elements[i]);
+      data["href"] = elements[i].getAttribute("href");
+      data["page"] = window.location.pathname;
+      
+      ahoy.track (
+        elements[i].getAttribute("data-event-category")+" - rendered",
+        data
+      );
+    }
+    
+    console.log("trackRenderings(): "+elements.length+" elements");
+  }
+  trackRenderings();
+  
+  
+  
+
+  
+  //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  //############################################################
+
+  
+  
+  /*
+  anchorsExternalTracked = document.getElementsByClassName("external-tracked");
+  for (var i = 0 ; i < anchorsExternalTracked.length; i++) {
+    anchorsExternalTracked[i].addEventListener("click", function(event){
+      //event.preventDefault();
+      
+      handleOutboundLinkClicks(event);
+      
+      //document.location = this.href;
+      //var win = window.open(this.href, '_blank');
+      //win.focus();
+      
+    });
+    
+    // Trigger event that shows in GA that the link was rendered
+    ga('send', 'event', {
+      eventCategory: 'Outbound Link',
+      eventAction: 'rendered',
+      eventLabel: anchorsExternalTracked[i].href
+    });   
+  }
+  
+  anchorsRelatedTracked = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < anchorsRelatedTracked.length; i++) {
+    anchorsRelatedTracked[i].addEventListener("click", function(event){
+      handleRelatedLinkClicks(event);
+    });
+  }
+  
+  anchorsFeaturedUniversityTracked = document.getElementsByClassName("featured-university-tracked");
+  for (var i = 0 ; i < anchorsFeaturedUniversityTracked.length; i++) {
+    anchorsFeaturedUniversityTracked[i].addEventListener("click", function(event){
+      handleFeaturedUniversityLinkClicks(event);
+    });
+  }  
+  
+  
+  anchorsFooterPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < anchorsFooterPressLinks.length; i++) {
+    anchorsFooterPressLinks[i].addEventListener("click", function(event){
+      handleFooterPressLinkClicks(event);
+    });
+  }
+  
+  
+  anchorsCustomTracked = document.querySelectorAll('[data-ga-custom-event-label]');
+  for (var i = 0 ; i < anchorsCustomTracked.length; i++) {
+    anchorsCustomTracked[i].addEventListener("click", function(event){
+      handleCustomTracked(event);
+    });
+  }
+  */
+  
+  ////////////////////////////////////////////////////////////////////////////////
+
+  
+  
+</script>
+
+</body>
+</html>

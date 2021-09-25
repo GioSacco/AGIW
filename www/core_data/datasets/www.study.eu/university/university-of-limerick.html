@@ -1,0 +1,1675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"cb4ef145dd","applicationID":"55169925","transactionName":"Jg5fTRMJXFtQQBpCXwwXVEsSD0ReUEEaRFkKFg==","queueTime":2,"applicationTime":607,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"cb4ef145dd",applicationID:"55169925"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+  <title>University of Limerick, Ireland | Study.EU</title>
+   
+  <link rel="stylesheet" media="all" href="/assets/application-788bf60a726cbc46bce208400674992d5b5b0e3a0892577e97f4ee25b84407b9.css" />
+  <script src="/assets/application-6d00a9f66b3f7e1a7db9282e671658ce415a54e8512569e7b539a89dc0fb74a5.js"></script>
+  
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="41DRT1DL9GsgbC2Kt5ayCHHfiAvmINRMPqQNA9bDzVM75W4MAJuDT+YTw6duZQk+Vdqi5ZF8flecYBoDW5ncBA==" />
+  
+  
+    
+  
+  
+  
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-29b05ed0a02376d0d37f92df42a0d954d97274430a0f6264e4d19745408f15c8.ico" />
+  
+  <meta name="description" content="Study at the University of Limerick in Ireland: 144 Bachelors, Masters, PhDs. ✓ Study.EU: Your gateway to universities in Europe." />
+  
+  <meta name="keywords" content="study in europe, universities, europe, master, bachelor, masters, bachelors, msc, bsc, llb, llm, phd, doctorate, university, study abroad" />
+  <meta name="google-site-verification" content="9sv6t--Xh8SiHr58R3chJHOJVHixvhn6jBK8Qzc9Z9U" />
+  <meta name="msvalidate.01" content="5E3AE5307267C1BED099C27EB59E264E" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  <link rel="canonical" href="https://www.study.eu/university/university-of-limerick" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@wwwStudyEU" />
+  <meta name="twitter:title" content="University of Limerick, Ireland" />
+  
+  <meta property="og:title"  content="University of Limerick, Ireland" />
+  
+  
+  
+  
+  
+      <meta property="og:type" content="article" />
+      <meta property="article:publisher" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+      <meta property="article:author" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+  
+  <meta property="og:description" content="Study at the University of Limerick in Ireland: 144 Bachelors, Masters, PhDs. ✓ Study.EU: Your gateway to universities in Europe." />
+  <meta property="og:image" content="https://study-eu.s3.amazonaws.com/uploads/image/path/154/social_1200_university-of-limerick.jpg" />
+  
+</head>
+<body>
+
+  <nav id="navbar" class="navbar navbar-static-top container container-fluid">
+  
+  <div class="container">
+    <div class="row" style="position: relative;">
+        <div class="col-md-3 col-xs-9 navbar-header">
+          <a class="navbar-brand" href="/" title="Study.EU">
+            <img alt="Study.EU" class="homepage-logo" src="/assets/study-eu_logo-ee9afe0c98ee9ac266f676d5dcb967023df14f95661b91c7812bef38a3b0c03a.png" />
+          </a>
+        </div>
+        <div class="col-md-8 bottom-align-text">
+            <strong class="navbar-claim">Your gateway to universities in Europe</strong>
+        </div>
+        <div class="col-md-1 col-xs-3 navbar-search-link-container">
+          <div class="navbar-search-link">
+          </div>
+        </div>
+    </div>
+</div>
+  
+</nav>
+
+  <div class="container" id="div-main-container" role="main">
+
+  </div>
+  
+  
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "CollegeOrUniversity",
+  "name": "University of Limerick",
+  "url": "https://www.study.eu/university/university-of-limerick",
+  "sameAs": "http://www.ul.ie",
+  "foundingDate": "1972",
+  
+  "logo": "https://study-eu.s3.amazonaws.com/uploads/university/university-of-limerick-448-logo.png",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Study programmes",
+      "value": "144"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Students",
+      "value": "13500"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Rank (QS 2020)",
+      "value": "521"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Rank (ARWU 2019)",
+      "value": "601"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Rank (THE 2020)",
+      "value": "501"
+    }
+  ]
+}
+</script>
+
+
+
+<div class="header-image">
+  <div class="container">
+    <div class="header-image-cta">
+      <h1>Study at the University of Limerick</h1>
+      <h2>Limerick, Ireland</h2>
+    </div>
+  </div>
+    <img alt="University of Limerick" title="University of Limerick" src="https://study-eu.s3.amazonaws.com/uploads/image/path/154/wide_fullhd_university-of-limerick.jpg" />
+    
+    <div class="image-credits">
+      <span class="image-credits-span">
+        <a target="_blank" rel="nofollow" title="University of Limerick" href="https://www.flickr.com/photos/worak/1955018034/">University of Limerick</a> by worak, <a target="_blank" rel="nofollow" href="https://creativecommons.org/licenses/by/2.0/legalcode">CC BY 2.0</a>, modified
+      </span>
+    </div>
+</div>
+
+<div class="div-breadcrumbs">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="/">Study.eu</a></li><i class="fa fa-angle-right breadcrumb-separator" aria-hidden="true"></i><li><a href="/country/ireland">Ireland</a></li><i class="fa fa-angle-right breadcrumb-separator" aria-hidden="true"></i><li>University of Limerick</li>
+    </ol>  
+  </div>
+</div> 
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://www.study.eu/",
+        "name": "Study.eu"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://www.study.eu/country/ireland",
+        "name": "Ireland"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "https://www.study.eu/university/university-of-limerick",
+        "name": "University of Limerick"
+      }
+    }
+  ]
+}
+</script>
+
+<div class="container" style="position: relative;">
+
+  <div class="row">
+
+    <div class="sidebar col-md-4 col-md-push-8">
+      
+      <table class="entry-details-table">
+        <tbody>
+            <tr>
+              <th class="university-logo" colspan="2">
+                <img alt="University of Limerick - Logo" title="University of Limerick - Logo" class="university-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_university-of-limerick-448-logo.png" />
+              </th>
+            </tr>
+          
+          <tr>
+            <td class="university-name" colspan="2">University of Limerick</td>
+          </tr>
+          
+          <tr>
+            <td class="table-entry-name">Location:</td>
+            <td>
+                  Limerick (<a href="/country/ireland">Ireland</a>)
+                  
+            </td>
+          </tr>
+          
+          
+            
+          
+          <tr>
+            <td class="table-entry-name">Founded:</td>
+            <td>1972</td>
+          </tr>
+
+          <tr>
+            <td class="table-entry-name">Students:</td>
+            <td>
+              13,500
+            </td>
+          </tr>
+
+          
+          <tr>
+            <td class="table-entry-name">Ranking: <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Times Higher Education World University Rankings 2020"></i></td>
+            <td title="Times Higher Education World University Rankings 2020">
+              #241 (Europe)<br />
+              #501 (World)<br />
+            </td>
+          </tr>
+          
+
+            <tr>
+              <td class="table-entry-name">Listed study programmes:</td>
+              <td><a href="#university-programmes">144</a></td>
+            </tr>
+          
+          
+          
+
+        </tbody>
+      </table>
+      
+      
+
+
+      
+      
+      
+        
+        <div class="sidebar-container">
+          <strong>Featured universities in Ireland:</strong>
+          <div class="featured-university-container">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a href="/university/trinity-college-dublin-tcd">
+                    <img alt="Trinity College Dublin (TCD)" title="Trinity College Dublin (TCD)" class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_trinity-college-dublin--tcd--logo.svg" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a href="/university/trinity-college-dublin-tcd">Trinity College Dublin (TCD)</a><br />
+                  Dublin, 
+                  <a href="/country/ireland">Ireland</a><br />
+                  229 study programmes
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+          
+      
+    </div>
+  
+  
+  
+    <div class="content col-md-8 col-md-pull-4">
+
+      <h1>University of Limerick</h1>
+      
+        <div class="bnnr-container">
+  <a target="_blank" rel="nofollow" data-track-rendering-ga="true" data-track-click-ga="true" data-track-click="true" data-event-category="BC" data-event-label="CODE Berlin" data-trackvalue-bc-id="41" data-trackvalue-href="https://code.berlin/en/?utm_source=Study.eu&amp;utm_medium=Banner" href="https://code.berlin/en/?utm_source=Study.eu&amp;utm_medium=Banner">
+    <img class="bnnr" loading="lazy" src="https://study-eu.s3.amazonaws.com/uploads/bc/bc-code-berlin-desktop.png" />
+</a></div>
+
+      
+      <div class="content-description">
+        <blockquote cite="http://www3.ul.ie/experience/learn.html">
+<p>The provision of an exceptional learning experience is central to life at UL. Purpose-designed buildings and environs combine with the most modern research facilities to provide a wonderful learning atmosphere in which students can achieve their best.</p>
+<p>Our students at the University of Limerick have the opportunity to work with some of the brightest and best faculty in a great environment for learning and personal development.</p>
+<footer>ul.ie</footer></blockquote>
+      </div>
+    
+    <a id="university-programmes"><hr /></a>
+    
+    
+    
+    
+      <div class="alert alert-info" role="alert">
+        This is a selection of study programmes at the University of Limerick. Additional listings will be added shortly.
+      </div>
+    
+
+    <ul class="nav nav-tabs">
+      
+        <li class="active"><a data-toggle="tab" href="#tab-bachelor">Bachelor’s<br/>programmes</a></li>
+      
+        <li><a data-toggle="tab" href="#tab-master">Master’s<br/>programmes</a></li>
+      
+        <li><a data-toggle="tab" href="#tab-doctorate">Doctorate<br/>programmes</a></li>
+      
+    </ul>
+
+    <div class="tab-content">
+    
+        <div id="tab-bachelor" class="tab-pane active">
+          <h4>Bachelors at the University of Limerick</h4>
+            <div aria-multiselectable="true" role="tablist" id="accordion-bachelor" class="panel-group">
+
+      <div class="panel panel-default"> <a title="Art, Design &amp; Media" aria-controls="collapse-bachelor-1" aria-expanded="false" href="#collapse-bachelor-1" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-1" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Art, Design &amp; Media <span class="discipline-programmes-count">(7)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-1" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-1" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-limerick/architecture-29f426d1-54ee-4061-8deb-090b13a90b8f">Architecture</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/arts-bba90590-e35d-4840-9ee0-9da9fdc6caec">Arts</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/arts-in-applied-languages">Arts in Applied Languages</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/arts-in-law-and-accounting">Arts in Law and Accounting</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/arts-in-performing-arts">Arts in Performing Arts</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/journalism-and-digital-communication">Journalism and Digital Communication</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/product-design-and-technology-5a765cb0-5d7f-4d33-88d4-22434a400188">Product Design and Technology</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Business &amp; Management" aria-controls="collapse-bachelor-2" aria-expanded="false" href="#collapse-bachelor-2" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-2" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Business &amp; Management <span class="discipline-programmes-count">(4)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-2" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-2" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-limerick/arts-in-law-and-accounting">Arts in Law and Accounting</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/business-studies-265c75ce-42f3-4368-a5e2-5652e4861154">Business Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/financial-mathematics-3526eb41-2cd2-4016-ac22-d40020236630">Financial Mathematics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/international-business-af729ab0-b2a3-4d7f-9e6c-0852c6288f70">International Business</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Computer Science &amp; IT" aria-controls="collapse-bachelor-62" aria-expanded="false" href="#collapse-bachelor-62" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-62" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Computer Science &amp; IT <span class="discipline-programmes-count">(4)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-62" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-62" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-limerick/computer-science-common-entry">Computer Science Common Entry</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/engineering-in-electronic-and-computer-engineering">Engineering in Electronic and Computer Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/mathematics-and-computer-science">Mathematics and Computer Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/technology-management-68dc1a32-51d3-4236-b24f-d4dda4a4a1ef">Technology Management</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Engineering &amp; Technology" aria-controls="collapse-bachelor-3" aria-expanded="false" href="#collapse-bachelor-3" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-3" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Engineering &amp; Technology <span class="discipline-programmes-count">(6)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-3" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-3" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-limerick/chemical-biochemical-engineering">Chemical &amp; Biochemical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/construction-management-and-engineering">Construction Management and Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/engineering-common-entry">Engineering Common Entry</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/engineering-in-electronic-and-computer-engineering">Engineering in Electronic and Computer Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/technology-education-in-materials-and-architectural-technolo">Technology (Education) in Materials and Architectural Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/technology-education-in-materials-and-engineering-technology">Technology (Education) in Materials and Engineering Technology</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Humanities" aria-controls="collapse-bachelor-64" aria-expanded="false" href="#collapse-bachelor-64" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-64" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Humanities <span class="discipline-programmes-count">(3)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-64" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-64" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-limerick/arts-in-applied-languages">Arts in Applied Languages</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/education-in-languages">Education in Languages</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/history-politics-sociology-literature-and-law">History, Politics, Sociology, Literature and Law</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Law" aria-controls="collapse-bachelor-4" aria-expanded="false" href="#collapse-bachelor-4" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-4" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Law <span class="discipline-programmes-count">(3)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-4" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-4" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-limerick/criminal-justice-21cb2706-3606-45b8-a0fe-7106723b2356">Criminal Justice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/laws-evening-degree-programme">Laws (Evening degree programme)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/laws-law-plus">Laws (Law Plus)</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Medicine &amp; Health" aria-controls="collapse-bachelor-5" aria-expanded="false" href="#collapse-bachelor-5" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-5" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Medicine &amp; Health <span class="discipline-programmes-count">(8)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-5" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-5" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-limerick/equine-science">Equine Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/nursing-general-069f1bf1-5c63-4ae2-9b47-25673fe370f8">Nursing (General)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/nursing-intellectual-disability-5a78a202-702c-4b04-b5ad-1cbc0509527b">Nursing (Intellectual Disability)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/nursing-mental-health-d5c06c28-6e4c-461a-b6a2-e3c84de4306b">Nursing (Mental Health)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/physical-education">Physical Education</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/science-in-midwifery">Science in Midwifery</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/science-in-physiotherapy">Science in Physiotherapy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/sport-and-exercise-sciences">Sport and Exercise Sciences</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Natural Sciences &amp; Mathematics" aria-controls="collapse-bachelor-6" aria-expanded="false" href="#collapse-bachelor-6" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-6" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Natural Sciences &amp; Mathematics <span class="discipline-programmes-count">(5)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-6" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-6" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-limerick/biological-and-chemical-sciences-common-entry">Biological and Chemical Sciences (Common Entry)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/equine-science">Equine Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/financial-mathematics-3526eb41-2cd2-4016-ac22-d40020236630">Financial Mathematics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/mathematics-common-entry">Mathematics (Common Entry)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/physics-common-entry">Physics (Common Entry)</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Social Sciences" aria-controls="collapse-bachelor-7" aria-expanded="false" href="#collapse-bachelor-7" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-7" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Social Sciences <span class="discipline-programmes-count">(9)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-7" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-7" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-limerick/criminal-justice-21cb2706-3606-45b8-a0fe-7106723b2356">Criminal Justice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/education-in-languages">Education in Languages</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/european-studies-3a64c33e-a008-4a80-9738-30a3eaa902f8">European Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/history-politics-sociology-literature-and-law">History, Politics, Sociology, Literature and Law</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/physical-education">Physical Education</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/psychology-12ca639f-0417-495f-bfdf-a0066fc703c7">Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/psychology-and-sociology">Psychology and Sociology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/teacher-education-biology-and-chemistry-or-physics-or-agricu">Teacher Education (Biology and Chemistry OR Physics OR Agricultural Science)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/teacher-education-physical-sciences-with-chemistry-and-physi">Teacher Education (Physical Sciences with Chemistry AND Physics)</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default" id="panel-bachelor-other"> <a title="Other subjects" aria-controls="collapse-bachelor-other" aria-expanded="false" href="#collapse-bachelor-other" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-other" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Other subjects</span> <span class="discipline-programmes-count">(3)</span></a>
+        <div aria-labelledby="heading-bachelor-other" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-other" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-limerick/creative-media-and-interaction-design-common-entry">Creative Media and Interaction Design Common Entry</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/food-science-and-health">Food Science and Health</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/paramedic-studies-1065980c-b489-4138-8854-3ca24bbbc8bb">Paramedic Studies</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+
+  <script>
+  if ( $('#accordion-bachelor .panel-collapse').length == 1 ) {
+    // If Programmes at this level all fall into the same Discipline, expand it
+    $('#accordion-bachelor .panel-collapse').collapse('show');
+  }
+
+
+  $('.panel-collapse').on('shown.bs.collapse', function (e) {
+      var panel = $(this).closest('div.panel');
+      var panelTop = panel[0].getBoundingClientRect().top;
+      var navHeight = document.getElementById("navbar").offsetHeight;
+      var navBottom = document.getElementById("navbar").getBoundingClientRect().bottom;
+      
+      var visibleFromHere = Math.max(0, navBottom); // navBottom might be negative on desktop
+      
+      if (panelTop < visibleFromHere) {
+        // If the just expanded panel's top is above what's visible in the viewport, scroll up.
+        $('html,body').animate({
+            scrollTop: panel.offset().top-visibleFromHere-25
+        }, 500); 
+      }
+  }); 
+  </script>
+
+        </div>
+      
+        <div id="tab-master" class="tab-pane">
+          <h4>Masters at the University of Limerick</h4>
+            <div aria-multiselectable="true" role="tablist" id="accordion-master" class="panel-group">
+
+      <div class="panel panel-default"> <a title="Art, Design &amp; Media" aria-controls="collapse-master-1" aria-expanded="false" href="#collapse-master-1" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-1" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Art, Design &amp; Media <span class="discipline-programmes-count">(14)</span></span> </a>
+        <div aria-labelledby="heading-master-1" role="tabpanel" class="panel-collapse collapse" id="collapse-master-1" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-limerick/art-and-technology-cd34a7a6-480e-43e8-b5a9-6f4aa2f43b46">Art and Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/classical-string-performance">Classical String Performance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/community-music-1c444c2a-f536-4c46-9a36-7fbeb83fe8b5">Community Music</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/composition-and-creative-music-practice">Composition and Creative Music Practice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/dance-performance-de97b78b-cf7e-4978-9bca-d379ef8e36e6">Dance Performance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/design-for-health-and-wellbeing">Design for Health and Wellbeing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/interaction-and-experience-design">Interaction and Experience Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/irish-dance-studies">Irish Dance Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/irish-music-studies">Irish Music Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/irish-traditional-music-performance">Irish Traditional Music Performance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/journalism-d81eec1f-ec77-4a2a-b911-c74acc1671d2">Journalism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/music-therapy">Music Therapy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/ritual-chant-song">Ritual Chant &amp; Song</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/songwriting">Songwriting</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Business &amp; Management" aria-controls="collapse-master-2" aria-expanded="false" href="#collapse-master-2" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-2" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Business &amp; Management <span class="discipline-programmes-count">(15)</span></span> </a>
+        <div aria-labelledby="heading-master-2" role="tabpanel" class="panel-collapse collapse" id="collapse-master-2" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-limerick/business-administration-executive">Business Administration Executive</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/business-analytics-6aa59c1b-e180-46a2-85dd-0cd5c0c7785f">Business Analytics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/business-management-3c53fb0c-a5b8-48a4-8d7e-128a9d5b29d5">Business Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/financial-services">Financial Services</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/human-resource-management-6c9c2431-d83c-433b-9df1-39030bdea4bb">Human Resource Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/international-entrepreneurship-management">International Entrepreneurship Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/international-management-and-global-business">International Management and Global Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/international-tourism-cd967d54-2d27-42ff-bcf5-fd52a76f0f48">International Tourism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/marketing-consumption-and-society">Marketing, Consumption and Society</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/project-and-programme-management-distance-learning">Project and Programme Management (Distance Learning)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/project-management-273729dd-604b-4416-a48d-abab3b63e349">Project Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/public-administration-a4aaac16-cab9-4eea-ac83-74da60273eba">Public Administration</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/risk-management-and-insurance">Risk Management and Insurance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/school-leadership">School Leadership</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/taxation">Taxation</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Computer Science &amp; IT" aria-controls="collapse-master-62" aria-expanded="false" href="#collapse-master-62" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-62" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Computer Science &amp; IT <span class="discipline-programmes-count">(9)</span></span> </a>
+        <div aria-labelledby="heading-master-62" role="tabpanel" class="panel-collapse collapse" id="collapse-master-62" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-limerick/artificial-intelligence-machine-learning">Artificial Intelligence &amp; Machine Learning</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/computer-and-communications-systems">Computer and Communications Systems</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/computer-engineering-15f5016e-fb4a-4d6a-bb49-9f9fbea40128">Computer Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/digital-health-transformation">Digital Health Transformation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/health-informatics">Health Informatics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/information-and-network-security">Information and Network Security</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/interaction-and-experience-design">Interaction and Experience Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/software-development-international-systems">Software Development: International Systems</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/software-engineering-8ae04ee5-b9b5-4da6-9c85-276046c930f5">Software Engineering</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Engineering &amp; Technology" aria-controls="collapse-master-3" aria-expanded="false" href="#collapse-master-3" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-3" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Engineering &amp; Technology <span class="discipline-programmes-count">(7)</span></span> </a>
+        <div aria-labelledby="heading-master-3" role="tabpanel" class="panel-collapse collapse" id="collapse-master-3" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-limerick/advanced-engineering-materials">Advanced Engineering Materials</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/aeronautical-engineering-8c828d01-20a5-407c-a263-acf1768be9fa">Aeronautical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/bioprocessing">Bioprocessing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/civil-engineering-3a80d57d-5d8c-40ae-ba7f-f1be3fcfe9f2">Civil Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/computer-and-communications-systems">Computer and Communications Systems</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/mechanical-engineering-b6b076ac-213c-42e1-88d2-e626e745f87c">Mechanical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/mechatronics-8736">Mechatronics</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Environment &amp; Agriculture" aria-controls="collapse-master-63" aria-expanded="false" href="#collapse-master-63" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-63" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Environment &amp; Agriculture <span class="discipline-programmes-count">(1)</span></span> </a>
+        <div aria-labelledby="heading-master-63" role="tabpanel" class="panel-collapse collapse" id="collapse-master-63" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-limerick/sustainable-resource-management-policy-practice">Sustainable Resource Management: Policy &amp; Practice</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Humanities" aria-controls="collapse-master-64" aria-expanded="false" href="#collapse-master-64" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-64" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Humanities <span class="discipline-programmes-count">(9)</span></span> </a>
+        <div aria-labelledby="heading-master-64" role="tabpanel" class="panel-collapse collapse" id="collapse-master-64" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-limerick/applied-linguistics-international">Applied Linguistics (International)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/creative-writing-e6daf172-cbf6-4c41-a9b6-2b977d2400cc">Creative Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/english-3cd34492-7e92-4d67-943e-dc8003e1427a">English</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/global-irish-studies">Global Irish Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/history-d064e8d9-ecad-48d6-865a-64382dae05ba">History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/local-history">Local History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/public-history-cultural-heritage-online">Public History &amp; Cultural Heritage (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/speech-and-language-therapy-professional-qualification">Speech and Language Therapy (Professional Qualification)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/teaching-english-to-speakers-of-other-languages-2a2df0e7-9cde-4534-9cfc-7d064d2e835c">Teaching English to Speakers of Other Languages</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Law" aria-controls="collapse-master-4" aria-expanded="false" href="#collapse-master-4" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-4" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Law <span class="discipline-programmes-count">(3)</span></span> </a>
+        <div aria-labelledby="heading-master-4" role="tabpanel" class="panel-collapse collapse" id="collapse-master-4" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-limerick/international-commercial-law-cb32b0b1-d899-43f2-b308-3b66cd071c52">International Commercial Law</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/law-general-72f4677d-7d68-4bec-aeca-a49d8cfce248">Law (General)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/law-human-rights-in-criminal-justice">Law, Human Rights in Criminal Justice</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Medicine &amp; Health" aria-controls="collapse-master-5" aria-expanded="false" href="#collapse-master-5" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-5" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Medicine &amp; Health <span class="discipline-programmes-count">(16)</span></span> </a>
+        <div aria-labelledby="heading-master-5" role="tabpanel" class="panel-collapse collapse" id="collapse-master-5" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-limerick/advanced-healthcare-practice">Advanced Healthcare Practice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/applied-sports-coaching">Applied Sports Coaching</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/biomedical-device-materials">Biomedical Device Materials</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/human-nutrition-and-dietetics-d4784644-ff60-4307-8094-8ca09a0d44f8">Human Nutrition and Dietetics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/medicine-graduate-entry">Medicine (Graduate Entry)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/mental-skills-and-mental-health-in-sports-and-exercise">Mental Skills and Mental Health in Sports and Exercise</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/nursing-7fbb754d-e1e5-45b0-90e3-54bc22f4e5e8">Nursing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/nursing-dementia-care">Nursing (Dementia Care)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/nursing-older-person">Nursing (Older Person)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/nursing-palliative-care-d0d3d624-1851-4556-b51c-d443a8683e39">Nursing (Palliative Care)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/nursing-perioperative-care">Nursing (Perioperative Care)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/nursing-psychosocial-interventions-in-mental-health-care">Nursing (Psychosocial Interventions in Mental Health Care)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/nursing-respiratory-care">Nursing (Respiratory Care)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/nursing-studies-1e96410a-891f-4915-86c1-ee52484d4bfa">Nursing Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/physiotherapy-professional-qualification">Physiotherapy (Professional Qualification)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/sports-performance-c7a76931-e8ca-4ea9-9866-2ef516e8c52a">Sports Performance</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Natural Sciences &amp; Mathematics" aria-controls="collapse-master-6" aria-expanded="false" href="#collapse-master-6" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-6" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Natural Sciences &amp; Mathematics <span class="discipline-programmes-count">(2)</span></span> </a>
+        <div aria-labelledby="heading-master-6" role="tabpanel" class="panel-collapse collapse" id="collapse-master-6" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-limerick/applied-physics-caaba09f-3a2c-439f-9cdb-8d65219b9d41">Applied Physics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/mathematical-modelling">Mathematical Modelling</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Social Sciences" aria-controls="collapse-master-7" aria-expanded="false" href="#collapse-master-7" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-7" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Social Sciences <span class="discipline-programmes-count">(21)</span></span> </a>
+        <div aria-labelledby="heading-master-7" role="tabpanel" class="panel-collapse collapse" id="collapse-master-7" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-limerick/economics-policy-analysis">Economics &amp; Policy Analysis</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/education-77f01d83-c604-4fa7-af88-687b02baa081">Education</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/education-in-educational-leadership">Education in Educational Leadership</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/ethnomusicology-d6a05f83-cfe4-42fc-b4f7-f628e0978bd1">Ethnomusicology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/european-politics-governance">European Politics &amp; Governance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/european-studies-ab59010f-617e-489a-aa0f-e3b33546588e">European Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/gender-culture-society">Gender, Culture &amp; Society</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/international-studies-c51977ff-772b-4c3e-9bb6-485c96a217ab">International Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/occupational-therapy-professional-qualification">Occupational Therapy (Professional Qualification)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/peace-and-development-studies">Peace and Development Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/professional-masters-of-education">Professional Masters of Education</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/psychological-science-1ee5c068-3545-4e2f-9cd1-78cd6886eb8b">Psychological Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/psychology-9f8f6d2a-668e-4971-b7c2-d15bfc2d0c84">Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/serious-crime-investigation">Serious Crime Investigation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/sociology-applied-social-research">Sociology (Applied Social Research)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/sociology-youth-community-social-regeneration">Sociology (Youth, Community &amp; Social Regeneration)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/speech-and-language-therapy-professional-qualification">Speech and Language Therapy (Professional Qualification)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/sport-exercise-and-performance-psychology">Sport, Exercise and Performance Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/teaching-english-to-speakers-of-other-languages-2a2df0e7-9cde-4534-9cfc-7d064d2e835c">Teaching English to Speakers of Other Languages</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/technical-communication-e-learning">Technical Communication &amp; E-Learning</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/work-organisational-psychology-work-organisational-behaviour">Work &amp; Organisational Psychology/Work &amp; Organisational Behaviour</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default" id="panel-master-other"> <a title="Other subjects" aria-controls="collapse-master-other" aria-expanded="false" href="#collapse-master-other" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-other" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Other subjects</span> <span class="discipline-programmes-count">(7)</span></a>
+        <div aria-labelledby="heading-master-other" role="tabpanel" class="panel-collapse collapse" id="collapse-master-other" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-limerick/community-research">Community Research</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/ethnochoreology">Ethnochoreology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/guidance-counselling-lifespan-development">Guidance Counselling &amp; Lifespan Development</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/health-professions-education-b4edd9c8-1788-4a84-8c55-daf78b24e1e4">Health Professions Education</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/history-of-family">History of Family</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/history-of-family-online">History of family (Online)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/university-of-limerick/perinatal-mental-health">Perinatal Mental Health</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+
+  <script>
+  if ( $('#accordion-master .panel-collapse').length == 1 ) {
+    // If Programmes at this level all fall into the same Discipline, expand it
+    $('#accordion-master .panel-collapse').collapse('show');
+  }
+
+
+  $('.panel-collapse').on('shown.bs.collapse', function (e) {
+      var panel = $(this).closest('div.panel');
+      var panelTop = panel[0].getBoundingClientRect().top;
+      var navHeight = document.getElementById("navbar").offsetHeight;
+      var navBottom = document.getElementById("navbar").getBoundingClientRect().bottom;
+      
+      var visibleFromHere = Math.max(0, navBottom); // navBottom might be negative on desktop
+      
+      if (panelTop < visibleFromHere) {
+        // If the just expanded panel's top is above what's visible in the viewport, scroll up.
+        $('html,body').animate({
+            scrollTop: panel.offset().top-visibleFromHere-25
+        }, 500); 
+      }
+  }); 
+  </script>
+
+        </div>
+      
+        <div id="tab-doctorate" class="tab-pane">
+          <h4>Doctorates at the University of Limerick</h4>
+            <div aria-multiselectable="true" role="tablist" id="accordion-doctorate" class="panel-group">
+
+      <div class="panel panel-default"> <a title="Social Sciences" aria-controls="collapse-doctorate-7" aria-expanded="false" href="#collapse-doctorate-7" data-parent="#accordion-doctorate" data-toggle="collapse" id="heading-doctorate-7" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Social Sciences <span class="discipline-programmes-count">(1)</span></span> </a>
+        <div aria-labelledby="heading-doctorate-7" role="tabpanel" class="panel-collapse collapse" id="collapse-doctorate-7" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/university-of-limerick/clinical-psychology-4485c142-d6cb-415e-ba80-5633f07d9d70">Clinical Psychology</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+
+  <script>
+  if ( $('#accordion-doctorate .panel-collapse').length == 1 ) {
+    // If Programmes at this level all fall into the same Discipline, expand it
+    $('#accordion-doctorate .panel-collapse').collapse('show');
+  }
+
+
+  $('.panel-collapse').on('shown.bs.collapse', function (e) {
+      var panel = $(this).closest('div.panel');
+      var panelTop = panel[0].getBoundingClientRect().top;
+      var navHeight = document.getElementById("navbar").offsetHeight;
+      var navBottom = document.getElementById("navbar").getBoundingClientRect().bottom;
+      
+      var visibleFromHere = Math.max(0, navBottom); // navBottom might be negative on desktop
+      
+      if (panelTop < visibleFromHere) {
+        // If the just expanded panel's top is above what's visible in the viewport, scroll up.
+        $('html,body').animate({
+            scrollTop: panel.offset().top-visibleFromHere-25
+        }, 500); 
+      }
+  }); 
+  </script>
+
+        </div>
+    </div>
+    
+    <script>
+      $('.nav-tabs a:first').tab('show'); // Make sure the first tab is selected in case none of the rendered tabs are marked as active
+      
+      $('.nav-tabs a[href="#tab-bachelor"]').tab('show');
+    </script>
+    
+    
+    
+    
+    <h3>Rankings</h3>
+    
+      <p>
+        The University of Limerick belongs to the top 250 universities in Europe.
+      </p>
+    
+    <table class="table table-bordered table-striped">
+      <thead>
+        <th>Ranking</th>
+        <th>Year</th>
+        <th>Rank <br/> (in the world)</th>
+        <th>Rank <br/> (in Europe)</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>QS World University Rankings</td>
+          <td>2020</td>
+          <td class="text-right">521</td>
+          <td class="text-right">227</td>
+        </tr>
+        <tr>
+          <td>Shanghai Jiao Tong Academic Ranking of World Universities</td>
+          <td>2019</td>
+          <td class="text-right">601</td>
+          <td class="text-right">237</td>
+        </tr>
+        <tr>
+          <td>Times Higher Education World University Rankings</td>
+          <td>2020</td>
+          <td class="text-right">501</td>
+          <td class="text-right">241</td>
+        </tr>
+      </tbody>
+    </table>
+    
+      <a href="/best-universities/ireland">Check out the 10 best universities in Ireland</a>
+    
+    
+    
+
+    
+      <div>
+        <h2>You might be interested in this:</h2>
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/article/a-brief-history-of-academic-scarves">
+              <div class="thumbnail home-country-card">  
+                    <img alt="A brief history of academic scarves" title="A brief history of academic scarves" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/227/slideshow_C170724NG_097_fitted.jpg" />
+                  <div class="caption">
+                    <strong>A brief history of academic scarves</strong>              
+                  </div>
+              </div>
+</a>          </div>
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/country/ireland">
+              <div class="thumbnail home-country-card">  
+                    <img alt="Study in Ireland" title="Study in Ireland" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/118/slideshow_ireland-cliffs-of-moher.jpg" />
+                  <div class="caption">
+                    <strong>Study in Ireland</strong>              
+                  </div>                  
+                
+              </div>
+</a>          </div>
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/article/the-top-8-phrases-to-know-when-studying-in-ireland">
+              <div class="thumbnail home-country-card">  
+                    <img alt="The top 8 phrases to know when studying in Ireland" title="The top 8 phrases to know when studying in Ireland" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/172/slideshow_4436418878_7cdb5a639e_o.jpg" />
+                  <div class="caption">
+                    <strong>The top 8 phrases to know when studying in Ireland</strong>              
+                  </div>
+              </div>
+</a>          </div>
+        </div>
+      </div>  
+    
+    </div>
+
+
+    
+
+
+    
+    
+    
+    
+    
+    
+  </div>
+  
+</div>
+
+
+<script>
+
+  $('[data-toggle="tooltip"]').tooltip();
+
+  $( function() {
+    $( ".accordion" ).accordion({
+      heightStyle: "content"
+    });
+  } );
+  
+  
+  handler = Gmaps.build('Google');
+  handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+    markers = handler.addMarkers([
+      {
+        "lat": 0,
+        "lng": 0,
+      }
+    ]);
+    handler.bounds.extendWith(markers);
+    handler.fitMapToBounds();
+  });
+  
+  
+  
+  
+</script>
+  
+
+    
+
+  
+  
+  <footer class="top-footer">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Merriweather Sans:300,400i,700']
+      }
+    });
+  </script> 
+
+  
+  <div class="container">
+  <div class="row">
+    
+    <div class="text-left col-md-8 col-xs-6" style="display: inline-block;float: left;">
+      <a href="/" title="Study.EU" data-track-click="true" data-event-category="Footer Logo"><img class="footer-logo" src="/assets/study-eu_logo_wb_200x66-8722da28bad82460d8951c34fe8b5ba8e11794b2fd21e83ee8c5fe54323ea73b.png" /></a><br />
+      <p>
+        Copyright &copy; 2021 <a title="Study.EU" href="/">Study.EU</a>
+      </p>
+      <p>
+        
+      </p>
+      <a class="social-link" href="https://www.facebook.com/StudyEU-168756646881605/" target="_blank" title="Like Study.EU on Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://twitter.com/wwwStudyEU" target="_blank" title="Follow Study.EU on Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://www.linkedin.com/company/study.eu/" target="_blank" title="Follow Study.EU on Linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    </div>
+    <div class="text-right col-md-4 col-xs-6">
+      <br /><br />
+          <a rel="nofollow" href="/page/imprint">Imprint</a>
+        &middot;
+          <a rel="nofollow" href="/page/about-study-eu">About Study.eu</a>
+        &middot;
+          <a rel="nofollow" href="/page/privacy-policy">Privacy Policy</a>
+        &middot;
+      <a href="/jobs">Jobs</a>
+      
+      <br />
+      
+      <a href="/press">Press</a>
+      
+      <!-- &middot; -->
+      
+        <!-- &mdash; //-->
+      
+      <br /><br />
+      <a href="/advertise-on-study-eu">Advertise on Study.eu</a>
+    </div>
+  </div>
+  </div>
+</footer>
+
+<a href="javascript:" id="scroll-to-top" title="Scroll back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+<script>
+  $(window).scroll(function() {
+      if ($(this).scrollTop() >= 100) {        // page is scrolled more than 100px
+          $('#scroll-to-top').fadeIn(500);
+      } else {
+          $('#scroll-to-top').fadeOut(500);
+      }
+  });
+  $('#scroll-to-top').click(function() {      // arrow is clicked
+      $('body,html').animate({
+          scrollTop : 0                       // scroll to top
+      }, 500);
+  });
+</script>
+
+
+  
+  <footer class="footer-countries">
+
+
+  <div class="container">
+    <div class="row">
+    
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <h5>Study in Europe:</h5>
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Austria" href="/country/austria">Austria</a><br />
+                <a title="Study in Belgium" href="/country/belgium">Belgium</a><br />
+                <a title="Study in the Czech Republic" href="/country/czech-republic">Czech Republic</a><br />
+                <a title="Study in Denmark" href="/country/denmark">Denmark</a><br />
+                <a title="Study in Estonia" href="/country/estonia">Estonia</a><br />
+                <a title="Study in the Faroe Islands" href="/country/faroe-islands">Faroe Islands</a><br />
+                <a title="Study in Finland" href="/country/finland">Finland</a><br />
+                <a title="Study in France" href="/country/france">France</a><br />
+                <a title="Study in Germany" href="/country/germany">Germany</a><br />
+                <a title="Study in Greece" href="/country/greece">Greece</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Hungary" href="/country/hungary">Hungary</a><br />
+                <a title="Study in Iceland" href="/country/iceland">Iceland</a><br />
+                <a title="Study in Ireland" href="/country/ireland">Ireland</a><br />
+                <a title="Study in Italy" href="/country/italy">Italy</a><br />
+                <a title="Study in Latvia" href="/country/latvia">Latvia</a><br />
+                <a title="Study in Liechtenstein" href="/country/liechtenstein">Liechtenstein</a><br />
+                <a title="Study in Lithuania" href="/country/lithuania">Lithuania</a><br />
+                <a title="Study in Malta" href="/country/malta">Malta</a><br />
+                <a title="Study in the Netherlands" href="/country/netherlands">Netherlands</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Norway" href="/country/norway">Norway</a><br />
+                <a title="Study in Poland" href="/country/poland">Poland</a><br />
+                <a title="Study in Portugal" href="/country/portugal">Portugal</a><br />
+                <a title="Study in Romania" href="/country/romania">Romania</a><br />
+                <a title="Study in Russia" href="/country/russia">Russia</a><br />
+                <a title="Study in Spain" href="/country/spain">Spain</a><br />
+                <a title="Study in Sweden" href="/country/sweden">Sweden</a><br />
+                <a title="Study in Switzerland" href="/country/switzerland">Switzerland</a><br />
+                <a title="Study in the United Kingdom" href="/country/united-kingdom">United Kingdom</a><br />
+            </div>
+          </div>
+        </div>
+    
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Recent articles:</h5>
+          </div>
+          <div class="col-md-8">
+              <p><a href="/article/fafsa-eligible-universities-colleges-in-europe">FAFSA: Eligible universities &amp; colleges in Europe</a></p>
+              <p><a href="/article/degree-in-chinese-studies-sinology">Degree in Chinese Studies: All you need to know</a></p>
+              <p><a href="/article/study-zoology">Study Zoology: All you need to know</a></p>
+              <p><a href="/article/what-to-study-to-become-an-entrepreneur">What to Study to Become an Entrepreneur?</a></p>
+              <p><a href="/article/study-international-relations-everything-you-need-to-know">Study International Relations? Everything you need to know</a></p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  
+  </div>
+
+</footer>
+
+  
+  <footer class="footer-press">
+  <div class="container">
+    <div class="row footer-press-description">
+      <div class="col-md-12 text-center">
+        Study.EU has been mentioned in numerous news publications worldwide, such as:
+      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="L&#39;Étudiant (France)" title="L&#39;Étudiant (France)" data-src="/assets/press/letudiant_gray_200-57bccbdceaef3c62c8660629603372823c98afe433bd39bf6d42a73263c113c3.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Frankfurter Allgemeine (Germany)" title="Frankfurter Allgemeine (Germany)" data-src="/assets/press/faz_gray_300-b6e5e6022a7b164c24b69a51fb97a72715018db745fbcda8580675a507370b8b.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Standard (Hong Kong)" title="The Standard (Hong Kong)" data-src="/assets/press/the-standard-hong-kong_gray_200-f124ca057d2671730e1f6d996377ef4614a28ccf04ae04f730eaf16ed7ee0b46.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Independent (UK)" title="The Independent (UK)" data-src="/assets/press/the-independent-uk_gray_300-63238e279b3c62b1f87faf17fcbcf1f14a2e5b9229193a0431fc974da217d159.png" class="lazyload" />
+</a>      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Al-Masry Al-Youm (Egypt)" title="Al-Masry Al-Youm (Egypt)" data-src="/assets/press/al-masry_al-youm_gray_200-9d8e503cd53ec4d955c3e6f7bf2a1c0badb500a0d2bd8a1ef1d11acd686879e5.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Le Monde (France)" title="Le Monde (France)" data-src="/assets/press/le-monde_gray_200-24d8bca493f3a2b8e0150cb4ef38f00c9924ac5e7acfbdb8750076c949c70052.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Local (Europe)" title="The Local (Europe)" data-src="/assets/press/the-local_gray_200-7631164ea94edf8d065b3af6f64274416162d866ce1cea737c3ee25f28cdd098.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Forbes (USA)" title="Forbes (USA)" data-src="/assets/press/forbes_gray_200-deff6ef2c28ec5a275f404c5f59d56f4b687881eb39de52b79b5add3ca609fe2.png" class="lazyload" />
+</a>      </div>
+    </div>
+  </div>
+</footer>
+
+  
+  
+  
+  
+    <div class="cookies-eu js-cookies-eu row">
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+    <div class="cookies-eu-content-holder col-md-4 col-sm-6 col-xs-6 align-self-center">
+      Cookies &amp; analytics help us deliver our services.
+        <a href="/page/privacy-policy" class="cookies-eu-link" target="_blank"> Privacy policy </a>
+    </div>
+    <div class="cookies-eu-button-holder col-md-4 col-sm-6 col-xs-6">
+      <button class="cookies-eu-ok js-cookies-eu-ok btn btn-lg btn-primary" data-track-click-ga="true" data-event-category="Cookie Consent Button"> OK </button>
+    </div>
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+  </div>
+
+  
+  <script>
+  // Improved Ahoy view tracking with additional attributes
+  var additionalProperties = {};
+    additionalProperties["country_id"] = 17;
+    mainTrackableLink = "";
+    additionalProperties["university_id"] = 448;
+    mainTrackableLink = "https://www.study.eu/link/university/university-of-limerick/from-profile";
+  console.log("Ahoy: View with additional properties: "+JSON.stringify(additionalProperties));
+  ahoy.trackView(additionalProperties);
+</script>
+<a name="ga"></a> <!-- GA //-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42442116-3', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+  
+  
+  
+    
+  //############################################################
+  //########## 2018-07    NEW CUSTOM METHODS          ##########
+  
+  function getDataTrackAttributes(element) {
+    var data = {};
+    [].forEach.call(element.attributes, function(attr) {
+      if (/^data-trackvalue-/.test(attr.name)) {
+        // Relevant attributes would always be called "data-track-foobar"
+        var underscorename = attr.name.substr(16).replace(/-/g, "_");
+        data[underscorename] = parseInt(attr.value) || attr.value; // Provide as integer if possible, otherwise the original string
+      }
+    });
+    return data;
+  }
+  
+  // Set data-track-click and utm_source for all external links in the description content
+  var content_links = document.querySelectorAll('div.content-description a');
+  for (var i = 0; i < content_links.length; i++) {
+    if ( ((new URL(content_links[i].href, document.baseURI).href) == mainTrackableLink) || (content_links[i].host !== window.location.host) ) {
+      // Link is the main trackable link, or link is external --> add tracking and utm_source if not present
+      utm_url = new URL(content_links[i].href);
+      utm_url.searchParams.set("utm_source", "Study.eu"); // add (or overwrite existing) utm_source parameter
+      content_links[i].href = utm_url;
+      content_links[i].classList.add("external-tracked");
+      content_links[i].setAttribute("data-event-category", "Outbound Link");
+      content_links[i].setAttribute("data-event-label", content_links[i].href);
+      content_links[i].setAttribute("data-track-click", "true"); // Once data-track-click is set to true, initDataAttributes() below will add the id values
+    }
+  }
+  console.log("Modified "+content_links.length+" links in description content.");
+  
+  // Set data attributes for tracking of footer press links
+  footerPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < footerPressLinks.length; i++) {
+    footerPressLinks[i].setAttribute("data-track-click-ga", "true");
+    footerPressLinks[i].setAttribute("data-event-category", "Footer Press Link");
+    footerPressLinks[i].setAttribute("data-event-label", window.location.href);
+  }
+  
+  relatedLinks = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < relatedLinks.length; i++) {
+    relatedLinks[i].setAttribute("data-track-click-ga", "true");
+    relatedLinks[i].setAttribute("data-event-category", "Related Link");
+    relatedLinks[i].setAttribute("data-event-label", relatedLinks[i].getAttribute("href"));
+  }  
+  
+  function initDataAttributes() {
+    // Initialise element data attributes based on backend instance variables
+    elements = document.querySelectorAll('[data-track-click="true"],[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+        if (!elements[i].hasAttribute("data-trackvalue-country-id")) {
+          elements[i].setAttribute("data-trackvalue-country-id", "17");
+        }
+      
+        if (!elements[i].hasAttribute("data-trackvalue-university-id")) {
+          elements[i].setAttribute("data-trackvalue-university-id", "448");
+        }
+      
+    }
+    console.log("initDataAttributes()");
+  }
+  initDataAttributes();
+    
+  function trackClick(event, trackGA = true, trackAhoy = true) {
+    // When an element was clicked, track the click in GA and Ahoy
+    
+    strEventLabel = "";
+    if        ( event.currentTarget.hasAttribute("data-event-label") ) {
+      strEventLabel = event.currentTarget.getAttribute("data-event-label");
+    } else if ( event.currentTarget.hasAttribute("href") ) {
+      strEventLabel = event.currentTarget.href;
+    }
+    
+    ga('send', 'event', {
+      eventCategory:  event.currentTarget.getAttribute("data-event-category"),
+      eventAction:    'click',
+      eventLabel:     strEventLabel
+    });
+    
+    data = getDataTrackAttributes(event.currentTarget);
+    data["href"] = event.target.href;
+    data["page"] = window.location.pathname;
+    
+    /*ahoy.track (
+      event.currentTarget.getAttribute("data-event-category"),
+      {
+        country_id: 17, 
+        university_id: 448, 
+        
+        href: event.target.href,
+        page: window.location.pathname
+      }
+    );*/
+    
+    if (trackAhoy) {
+        data["medium"] = "Profile";
+      ahoy.track (
+        event.currentTarget.getAttribute("data-event-category")+" - click",
+        data
+      );
+    }
+    
+    console.log("trackClick(event, trackGA = "+trackGA+", trackAhoy = "+trackAhoy+"): " +
+      event.currentTarget.getAttribute("data-event-category") + ", " +
+      "{country_id: 17, university_id: 448, href: " + event.target.href + ", " +
+      "page:"+window.location.pathname+"});"
+    );
+  }
+  
+  
+  function trackClicksGA() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click-ga="true"]:not([data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event, true, false);
+      });
+    }
+    console.log("trackClicksGA(): "+elements.length+" elements");
+  }
+  trackClicksGA();
+  
+  function trackClicks() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event);
+      });
+    }
+    console.log("trackClicks(): "+elements.length+" elements");
+  }
+  trackClicks();
+  
+  function trackRenderingsGA() {
+    // Track renderings only in GA
+    // This would be for large-volume data that is interesting, but not mission-critical
+
+    elements = document.querySelectorAll('[data-track-rendering-ga="true"]:not([data-track-rendering="true"])');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+    }
+    
+    console.log("trackRenderingsGA(): "+elements.length+" elements");
+  }
+  trackRenderingsGA();
+  
+  function trackRenderings() {
+    // Track renderings in GA *and* Ahoy
+    elements = document.querySelectorAll('[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+      
+      data = getDataTrackAttributes(elements[i]);
+      data["href"] = elements[i].getAttribute("href");
+      data["page"] = window.location.pathname;
+      
+      ahoy.track (
+        elements[i].getAttribute("data-event-category")+" - rendered",
+        data
+      );
+    }
+    
+    console.log("trackRenderings(): "+elements.length+" elements");
+  }
+  trackRenderings();
+  
+  
+  
+    ga('send', 'event', {
+      eventCategory:  'Country Content',
+      eventAction:    'rendered',
+      eventLabel:     'Ireland',
+      nonInteraction: true
+    });
+
+  
+  //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  //############################################################
+
+  
+  
+  /*
+  anchorsExternalTracked = document.getElementsByClassName("external-tracked");
+  for (var i = 0 ; i < anchorsExternalTracked.length; i++) {
+    anchorsExternalTracked[i].addEventListener("click", function(event){
+      //event.preventDefault();
+      
+      handleOutboundLinkClicks(event);
+      
+      //document.location = this.href;
+      //var win = window.open(this.href, '_blank');
+      //win.focus();
+      
+    });
+    
+    // Trigger event that shows in GA that the link was rendered
+    ga('send', 'event', {
+      eventCategory: 'Outbound Link',
+      eventAction: 'rendered',
+      eventLabel: anchorsExternalTracked[i].href
+    });   
+  }
+  
+  anchorsRelatedTracked = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < anchorsRelatedTracked.length; i++) {
+    anchorsRelatedTracked[i].addEventListener("click", function(event){
+      handleRelatedLinkClicks(event);
+    });
+  }
+  
+  anchorsFeaturedUniversityTracked = document.getElementsByClassName("featured-university-tracked");
+  for (var i = 0 ; i < anchorsFeaturedUniversityTracked.length; i++) {
+    anchorsFeaturedUniversityTracked[i].addEventListener("click", function(event){
+      handleFeaturedUniversityLinkClicks(event);
+    });
+  }  
+  
+  
+  anchorsFooterPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < anchorsFooterPressLinks.length; i++) {
+    anchorsFooterPressLinks[i].addEventListener("click", function(event){
+      handleFooterPressLinkClicks(event);
+    });
+  }
+  
+  
+  anchorsCustomTracked = document.querySelectorAll('[data-ga-custom-event-label]');
+  for (var i = 0 ; i < anchorsCustomTracked.length; i++) {
+    anchorsCustomTracked[i].addEventListener("click", function(event){
+      handleCustomTracked(event);
+    });
+  }
+  */
+  
+  ////////////////////////////////////////////////////////////////////////////////
+
+  
+  
+</script>
+
+</body>
+</html>

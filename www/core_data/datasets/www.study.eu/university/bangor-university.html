@@ -1,0 +1,2798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"cb4ef145dd","applicationID":"55169925","transactionName":"Jg5fTRMJXFtQQBpCXwwXVEsSD0ReUEEaRFkKFg==","queueTime":8,"applicationTime":737,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"cb4ef145dd",applicationID:"55169925"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+  <title>Bangor University, United Kingdom | Study.EU</title>
+   
+  <link rel="stylesheet" media="all" href="/assets/application-788bf60a726cbc46bce208400674992d5b5b0e3a0892577e97f4ee25b84407b9.css" />
+  <script src="/assets/application-6d00a9f66b3f7e1a7db9282e671658ce415a54e8512569e7b539a89dc0fb74a5.js"></script>
+  
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="hP0ycr71hakq85Cka4pEdM1uCnVOf9uMAJqjIz8uwvRcSI0x7qXyjeyMfomyef9C6WsgmzkjcZeiXrQjsnTTow==" />
+  
+  
+    
+  
+  
+  
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-29b05ed0a02376d0d37f92df42a0d954d97274430a0f6264e4d19745408f15c8.ico" />
+  
+  <meta name="description" content="Study at Bangor University in the United Kingdom: 448 Bachelors, Masters, PhDs. ✓ Study.EU: Your gateway to universities in Europe." />
+  
+  <meta name="keywords" content="study in europe, universities, europe, master, bachelor, masters, bachelors, msc, bsc, llb, llm, phd, doctorate, university, study abroad" />
+  <meta name="google-site-verification" content="9sv6t--Xh8SiHr58R3chJHOJVHixvhn6jBK8Qzc9Z9U" />
+  <meta name="msvalidate.01" content="5E3AE5307267C1BED099C27EB59E264E" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  <link rel="canonical" href="https://www.study.eu/university/bangor-university" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@wwwStudyEU" />
+  <meta name="twitter:title" content="Bangor University, United Kingdom" />
+  
+  <meta property="og:title"  content="Bangor University, United Kingdom" />
+  
+  
+  
+  
+  
+      <meta property="og:type" content="article" />
+      <meta property="article:publisher" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+      <meta property="article:author" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+  
+  <meta property="og:description" content="Study at Bangor University in the United Kingdom: 448 Bachelors, Masters, PhDs. ✓ Study.EU: Your gateway to universities in Europe." />
+  <meta property="og:image" content="https://www.study.eu/assets/fallback/study-in-europe-logo-overlay-1200x627-34deac9b2af4b87f5f656da9694257ffa4e59dec8319085daa96f8ca9eb3f980.jpg" />
+  
+</head>
+<body>
+
+  <nav id="navbar" class="navbar navbar-static-top container container-fluid">
+  
+  <div class="container">
+    <div class="row" style="position: relative;">
+        <div class="col-md-3 col-xs-9 navbar-header">
+          <a class="navbar-brand" href="/" title="Study.EU">
+            <img alt="Study.EU" class="homepage-logo" src="/assets/study-eu_logo-ee9afe0c98ee9ac266f676d5dcb967023df14f95661b91c7812bef38a3b0c03a.png" />
+          </a>
+        </div>
+        <div class="col-md-8 bottom-align-text">
+            <strong class="navbar-claim">Your gateway to universities in Europe</strong>
+        </div>
+        <div class="col-md-1 col-xs-3 navbar-search-link-container">
+          <div class="navbar-search-link">
+          </div>
+        </div>
+    </div>
+</div>
+  
+</nav>
+
+  <div class="container" id="div-main-container" role="main">
+
+  </div>
+  
+  
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "CollegeOrUniversity",
+  "name": "Bangor University",
+  "url": "https://www.study.eu/university/bangor-university",
+  "sameAs": "https://www.bangor.ac.uk/",
+  
+  "numberOfEmployees": "650",
+  "logo": "https://study-eu.s3.amazonaws.com/uploads/university/bangor-university-logo.png",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Study programmes",
+      "value": "448"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Students",
+      "value": "11000"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Rank (THE 2020)",
+      "value": "401"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Rank (QS 2020)",
+      "value": "521"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Rank (ARWU 2019)",
+      "value": "601"
+    }
+  ]
+}
+</script>
+
+
+
+<div class="header-image">
+  <div class="container">
+    <div class="header-image-cta">
+      <h1>Study at Bangor University</h1>
+      <h2>Bangor, United Kingdom</h2>
+    </div>
+  </div>
+    <img alt="Study in Europe" title="Study in Europe" src="/assets/fallback/study-in-europe_1920-2cea268aaca4f8cd71c109aa2d67e83e285f04dd3c85c9a21acae013fd6f2259.jpg" />
+    
+    <div class="image-credits">
+      <span class="image-credits-span">
+        <a href="https://www.flickr.com/photos/glasgowamateur/7892308660" target="_blank" rel="nofollow">Europe</a> by Charles Clegg, <a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="nofollow">CC BY-SA 2.0</a>, modified
+      </span>
+    </div>  
+  
+</div>
+
+<div class="div-breadcrumbs">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="/">Study.eu</a></li><i class="fa fa-angle-right breadcrumb-separator" aria-hidden="true"></i><li><a href="/country/united-kingdom">United Kingdom</a></li><i class="fa fa-angle-right breadcrumb-separator" aria-hidden="true"></i><li>Bangor University</li>
+    </ol>  
+  </div>
+</div> 
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://www.study.eu/",
+        "name": "Study.eu"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://www.study.eu/country/united-kingdom",
+        "name": "United Kingdom"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "https://www.study.eu/university/bangor-university",
+        "name": "Bangor University"
+      }
+    }
+  ]
+}
+</script>
+
+<div class="container" style="position: relative;">
+
+  <div class="row">
+
+    <div class="sidebar col-md-4 col-md-push-8">
+      
+      <table class="entry-details-table">
+        <tbody>
+            <tr>
+              <th class="university-logo" colspan="2">
+                <img alt="Bangor University - Logo" title="Bangor University - Logo" class="university-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_bangor-university-logo.png" />
+              </th>
+            </tr>
+          
+          <tr>
+            <td class="university-name" colspan="2">Bangor University</td>
+          </tr>
+          
+          <tr>
+            <td class="table-entry-name">Location:</td>
+            <td>
+                  Bangor (<a href="/country/united-kingdom">United Kingdom</a>)
+                  
+            </td>
+          </tr>
+          
+          
+            
+          
+
+          <tr>
+            <td class="table-entry-name">Students:</td>
+            <td>
+              11,000
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-entry-name">Academic staff:</td>
+            <td>
+              650
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="table-entry-name">Ranking: <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Times Higher Education World University Rankings 2020"></i></td>
+            <td title="Times Higher Education World University Rankings 2020">
+              #195 (Europe)<br />
+              #401 (World)<br />
+            </td>
+          </tr>
+          
+
+            <tr>
+              <td class="table-entry-name">Listed study programmes:</td>
+              <td><a href="#university-programmes">448</a></td>
+            </tr>
+          
+          
+          
+
+        </tbody>
+      </table>
+      
+      
+
+
+      
+      
+      
+        
+        <div class="sidebar-container">
+          <strong>Featured universities in the United Kingdom:</strong>
+          <div class="featured-university-container">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a href="/university/university-of-kent">
+                    <img alt="University of Kent" title="University of Kent" class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_university-of-kent-logo.svg" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a href="/university/university-of-kent">University of Kent</a><br />
+                  Canterbury, 
+                  <a href="/country/united-kingdom">United Kingdom</a><br />
+                  521 study programmes
+              </div>
+            </div>
+          </div>
+          <div class="featured-university-container">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a href="/university/falmouth-university">
+                    <img alt="Falmouth University" title="Falmouth University" class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_falmouth-university-logo.png" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a href="/university/falmouth-university">Falmouth University</a><br />
+                  Falmouth, 
+                  <a href="/country/united-kingdom">United Kingdom</a><br />
+                  70 study programmes
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+          
+      
+    </div>
+  
+  
+  
+    <div class="content col-md-8 col-md-pull-4">
+
+      <h1>Bangor University</h1>
+      
+        <div class="bnnr-container">
+  <a target="_blank" rel="nofollow" data-track-rendering-ga="true" data-track-click-ga="true" data-track-click="true" data-event-category="BC" data-event-label="CODE Berlin" data-trackvalue-bc-id="41" data-trackvalue-href="https://code.berlin/en/?utm_source=Study.eu&amp;utm_medium=Banner" href="https://code.berlin/en/?utm_source=Study.eu&amp;utm_medium=Banner">
+    <img class="bnnr" loading="lazy" src="https://study-eu.s3.amazonaws.com/uploads/bc/bc-code-berlin-desktop.png" />
+</a></div>
+
+      
+      <div class="content-description">
+        <blockquote cite="https://www.bangor.ac.uk/about/about-us.php.en">
+<p>Founded in 1884, Bangor University has a long tradition of academic excellence and a strong focus on the student experience. Around 11,000 students currently study at the University, with 650 teaching staff based within twenty three Academic Schools.</p>
+<footer>bangor.ac.uk</footer></blockquote>
+      </div>
+    
+    <a id="university-programmes"><hr /></a>
+    
+    
+    
+    
+      <div class="alert alert-info" role="alert">
+        This is a selection of study programmes at Bangor University. Additional listings will be added shortly.
+      </div>
+    
+
+    <ul class="nav nav-tabs">
+      
+        <li class="active"><a data-toggle="tab" href="#tab-bachelor">Bachelor’s<br/>programmes</a></li>
+      
+      
+      
+    </ul>
+
+    <div class="tab-content">
+    
+        <div id="tab-bachelor" class="tab-pane active">
+          <h4>Bachelors at Bangor University</h4>
+            <div aria-multiselectable="true" role="tablist" id="accordion-bachelor" class="panel-group">
+
+      <div class="panel panel-default"> <a title="Art, Design &amp; Media" aria-controls="collapse-bachelor-1" aria-expanded="false" href="#collapse-bachelor-1" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-1" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Art, Design &amp; Media <span class="discipline-programmes-count">(46)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-1" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-1" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/bangor-university/creative-studies-and-music">Creative Studies and Music</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/creative-technologies-3aa379c1-aabf-413b-80ce-04ec019583db">Creative Technologies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/creative-technologies">Creative Technologies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/electronic-engineering-and-music">Electronic Engineering and Music</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-language-and-journalism">English Language and Journalism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-language-with-film-studies">English Language with Film Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-literature-and-film-studies">English Literature and Film Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-literature-and-music">English Literature and Music</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-literature-with-theatre-and-performance">English Literature with Theatre and Performance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/film-studies-11165">Film Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/film-studies-and-chinese">Film Studies and Chinese</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/film-studies-and-creative-writing">Film Studies and Creative Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/film-studies-and-english-language">Film Studies and English Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/film-studies-and-french">Film Studies and French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/film-studies-and-german">Film Studies and German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/film-studies-and-history">Film Studies and History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/film-studies-and-italian">Film Studies and Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/film-studies-and-spanish">Film Studies and Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/film-studies-with-game-design">Film Studies with Game Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/film-studies-with-theatre-and-performance">Film Studies with Theatre and Performance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-with-journalism">French with Journalism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-with-film-studies">German with Film Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-with-journalism">German with Journalism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/history-and-music">History and Music</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/history-with-film-studies">History with Film Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/history-with-journalism">History with Journalism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/journalism-and-media-studies-11164">Journalism and Media Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/media-studies-and-music">Media Studies and Music</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/media-studies-with-theatre-and-performance">Media Studies with Theatre and Performance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/music-0a089dca-3602-4fb9-a798-ef7841ce90b7">Music</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/music-and-creative-writing">Music and Creative Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/music-and-electronic-engineering">Music and Electronic Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/music-and-film-studies">Music and Film Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/music-and-history-welsh-history">Music and History &amp; Welsh History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/music-french">Music/French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/music-german">Music/German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/music-italian">Music/Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/music-spanish">Music/Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/music-with-journalism">Music with Journalism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/music-with-theatre-and-performance">Music with Theatre and Performance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/product-design-11162">Product Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/professional-writing-and-film">Professional Writing and Film</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/spanish-with-journalism">Spanish with Journalism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/welsh-history-and-film-studies">Welsh History and Film Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/welsh-history-and-music">Welsh History and Music</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/welsh-history-with-film-studies">Welsh History with Film Studies</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Business &amp; Management" aria-controls="collapse-bachelor-2" aria-expanded="false" href="#collapse-bachelor-2" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-2" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Business &amp; Management <span class="discipline-programmes-count">(73)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-2" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-2" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/bangor-university/accounting-and-banking">Accounting and Banking</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/accounting-and-banking-with-foundation-year">Accounting and Banking with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/accounting-and-banking-with-placement-year">Accounting and Banking with Placement Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/accounting-and-economics-3dbd17af-9f3f-4694-b3d2-193e7d77d193">Accounting and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/accounting-and-economics-with-foundation-year">Accounting and Economics with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/accounting-and-economics-with-placement">Accounting and Economics (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/accounting-and-finance-af5ef7ce-178e-46f2-a010-46e1f894b2d2">Accounting and Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/accounting-and-finance-with-foundation-year">Accounting and Finance (with Foundation Year)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/accounting-and-finance-with-placement">Accounting and Finance (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/accounting-italian">Accounting/Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/accounting-spanish">Accounting/Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/banking-and-finance-a38d39a6-94a9-4114-9b2d-3942be4fca02">Banking and Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/banking-and-finance-with-foundation-year">Banking and Finance with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/banking-and-finance-with-placement-year">Banking and Finance with Placement Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/banking-italian">Banking/Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/banking-spanish">Banking/Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-4545a9eb-a73f-46ed-b00f-468929f19cd8">Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-economics-9379f7d8-cc88-46a9-b2ba-059a32170302">Business Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-economics-with-foundation-year">Business Economics with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-economics-with-placement">Business Economics (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-0d155a4b-1452-4ad6-b056-92183de3f4e7">Business Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-and-chinese">Business Management and Chinese</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-and-finance-fdb6ce36-8b93-4a88-bcf0-bc5d96d93524">Business Management and Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-and-finance-with-foundation-year">Business Management and Finance with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-and-finance-with-placement">Business Management and Finance (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-and-french-c4cef83b-eac8-4230-969f-0801485bd0fb">Business Management and French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-and-german-2b0c38e0-7006-4301-809f-297b2f713448">Business Management and German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-and-italian">Business Management and Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-and-law">Business Management and Law</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-and-marketing-8beabc6a-3a75-4d7d-80b3-d444018c5f2c">Business Management and Marketing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-and-marketing-with-foundation-year">Business Management and Marketing with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-and-marketing-with-placement">Business Management and Marketing (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-and-spanish-3a30a20f-97cf-417a-ae6c-45245279c64f">Business Management and Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-with-accounting">Business Management with Accounting</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-with-accounting-with-foundation-year">Business Management with Accounting with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-with-accounting-with-placement">Business Management with Accounting (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-with-foundation-year">Business Management with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-with-french">Business Management with French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-with-german">Business Management with German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-with-italian">Business Management with Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-with-placement">Business Management (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-with-spanish">Business Management with Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/financial-economics-db8fc050-26ff-4b94-9c46-3608ac5fc503">Financial Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/financial-economics-with-foundation-year-72f2d826-19ea-4d54-9d50-c6e739c652aa">Financial Economics with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/financial-economics-with-placement">Financial Economics (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-accounting">French/Accounting</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-banking">French/Banking</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-with-business-management">French with Business Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-with-marketing">French with Marketing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-accounting">German/Accounting</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-banking">German/Banking</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-with-business-management">German with Business Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-with-marketing">German with Marketing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-accounting-and-finance-with-placement">Law with Accounting and Finance (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-accounting-finance">Law with Accounting &amp; Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-business-management-with-placement">Law with Business Management (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-business-studies">Law with Business Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marketing-bed7c7ed-21e7-4141-9f5a-b0350bfe6a80">Marketing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marketing-french">Marketing/French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marketing-german">Marketing/German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marketing-italian">Marketing/Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marketing-spanish">Marketing/Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marketing-with-foundation-year">Marketing with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marketing-with-french">Marketing with French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marketing-with-german">Marketing with German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marketing-with-italian">Marketing with Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marketing-with-placement">Marketing (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marketing-with-psychology">Marketing with Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marketing-with-spanish">Marketing with Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/psychology-with-business-management">Psychology with Business Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/psychology-with-business-management-with-placement">Psychology with Business Management (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/spanish-with-business-management">Spanish with Business Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/spanish-with-marketing">Spanish with Marketing</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Computer Science &amp; IT" aria-controls="collapse-bachelor-62" aria-expanded="false" href="#collapse-bachelor-62" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-62" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Computer Science &amp; IT <span class="discipline-programmes-count">(17)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-62" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-62" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/bangor-university/computer-information-systems-118fd21b-4e0c-4559-86d5-79462bb36774">Computer Information Systems</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/computer-information-systems">Computer Information Systems</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/computer-information-systems-for-business-987e214f-5941-435c-bdcc-e59350b63c08">Computer Information Systems for Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/computer-information-systems-for-business">Computer Information Systems for Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/computer-information-systems-with-industrial-placement">Computer Information Systems with Industrial Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/computer-science-6d213df0-2982-4254-86a5-1c9b09f93008">Computer Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/computer-science-05055a0d-4462-4b0a-a3be-72bf9889166b">Computer Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/computer-science-284cb82f-0914-4299-b585-1116b4fd7028">Computer Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/computer-science-for-business">Computer Science for Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/computer-science-with-foundation-year">Computer Science with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/computer-science-with-game-design">Computer Science with Game Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/computer-science-with-industrial-placement">Computer Science with Industrial Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/computer-systems-engineering-ee312287-9b98-47b4-a7c1-2ad95c829821">Computer Systems Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/computer-systems-engineering-8fe606ea-63ab-41c9-96f0-46679542283a">Computer Systems Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/computer-systems-engineering-with-industrial-placement">Computer Systems Engineering with Industrial Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/data-science-and-machine-learning">Data Science and Machine Learning</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/data-science-and-visualisation">Data Science and Visualisation</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Engineering &amp; Technology" aria-controls="collapse-bachelor-3" aria-expanded="false" href="#collapse-bachelor-3" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-3" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Engineering &amp; Technology <span class="discipline-programmes-count">(9)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-3" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-3" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/bangor-university/biology-with-biotechnology">Biology with Biotechnology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/biology-with-biotechnology-841ec9ea-8394-41dc-86bc-d0132004f7cd">Biology with Biotechnology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/control-and-instrumentation-engineering">Control and Instrumentation Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/electronic-engineering-fd679a33-b79d-4cf3-90b6-6b38c3f353c0">Electronic Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/electronic-engineering-da087e8f-9a55-480b-b1b7-7d70953aa78d">Electronic Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/electronic-engineering-and-music">Electronic Engineering and Music</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/electronic-engineering-with-foundation-year">Electronic Engineering with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/electronic-engineering-with-industrial-placement">Electronic Engineering with Industrial Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/music-and-electronic-engineering">Music and Electronic Engineering</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Environment &amp; Agriculture" aria-controls="collapse-bachelor-63" aria-expanded="false" href="#collapse-bachelor-63" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-63" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Environment &amp; Agriculture <span class="discipline-programmes-count">(17)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-63" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-63" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/bangor-university/applied-terrestrial-and-marine-ecology">Applied Terrestrial and Marine Ecology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/conservation-with-forestry">Conservation with Forestry</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/environmental-conservation">Environmental Conservation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/environmental-science-061a6687-feeb-4ad5-bce3-1fec3a459ffb">Environmental Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/environmental-science-f9326a15-e757-475a-bee0-687a1e380429">Environmental Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/environmental-science-with-foundation-year">Environmental Science with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/environmental-science-with-placement">Environmental Science (with placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/forestry-3cc9addb-16b7-4d65-b64e-ed602af8e3e7">Forestry</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/forestry-374d5536-5164-4d8e-830a-2c186c655d23">Forestry</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/forestry-with-placement-year">Forestry (with placement year)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/geography-with-environmental-forestry">Geography with Environmental Forestry</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marine-biology-6ce51f4f-fb74-4639-8339-4d1475b7226b">Marine Biology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marine-biology-e216ae26-c4ee-4227-8186-46e6d1f774b9">Marine Biology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marine-environmental-studies">Marine Environmental Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marine-environmental-studies-with-placement">Marine Environmental Studies (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/zoology-with-climate-change-studies">Zoology with Climate Change Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/zoology-with-climate-change-studies-17413">Zoology with Climate Change Studies</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Humanities" aria-controls="collapse-bachelor-64" aria-expanded="false" href="#collapse-bachelor-64" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-64" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Humanities <span class="discipline-programmes-count">(234)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-64" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-64" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/bangor-university/accounting-italian">Accounting/Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/accounting-spanish">Accounting/Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/banking-italian">Banking/Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/banking-spanish">Banking/Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/bilingualism">Bilingualism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-and-chinese">Business Management and Chinese</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-and-french-c4cef83b-eac8-4230-969f-0801485bd0fb">Business Management and French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-and-german-2b0c38e0-7006-4301-809f-297b2f713448">Business Management and German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-and-italian">Business Management and Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-and-spanish-3a30a20f-97cf-417a-ae6c-45245279c64f">Business Management and Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-with-french">Business Management with French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-with-german">Business Management with German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-with-italian">Business Management with Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-with-spanish">Business Management with Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/chinese-and-creative-studies">Chinese and Creative Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/chinese-and-french-3a71bd35-dffb-4f69-83b0-40aab4f0ea72">Chinese and French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/chinese-and-french-with-german">Chinese and French with German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/chinese-and-french-with-italian">Chinese and French with Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/chinese-and-french-with-spanish">Chinese and French with Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/chinese-and-german-0338f60a-5b5c-4f29-a5c5-950335903d2d">Chinese and German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/chinese-and-german-with-french">Chinese and German with French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/chinese-and-german-with-italian">Chinese and German with Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/chinese-and-german-with-spanish">Chinese and German with Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/chinese-and-italian">Chinese and Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/chinese-and-italian-with-french">Chinese and Italian with French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/chinese-and-italian-with-german">Chinese and Italian with German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/chinese-and-italian-with-spanish">Chinese and Italian with Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/chinese-and-linguistics-fe9ef258-cab1-42ae-aba1-5885c045b197">Chinese and Linguistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/chinese-and-spanish-ce74b0f1-30de-4f73-b91b-682cb2a927d7">Chinese and Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/chinese-and-spanish-with-french">Chinese and Spanish with French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/chinese-and-spanish-with-german">Chinese and Spanish with German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/chinese-and-spanish-with-italian">Chinese and Spanish with Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/creative-and-professional-writing">Creative and Professional Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/creative-professional-writing-with-placement">Creative &amp; Professional Writing (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/creative-studies">Creative Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/creative-studies-and-english-language">Creative Studies and English Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/creative-studies-and-french">Creative Studies and French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/creative-studies-and-german">Creative Studies and German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/creative-studies-and-italian">Creative Studies and Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/creative-studies-and-music">Creative Studies and Music</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/creative-studies-and-spanish">Creative Studies and Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/creative-writing-and-media-studies">Creative Writing and Media Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/economics-and-chinese">Economics and Chinese</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/economics-italian-6eb948f9-5d29-422b-a8d9-ee70ddf27d45">Economics/Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/economics-spanish-5575d955-c97f-42b8-ac40-2a38cd10aa92">Economics/Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-language-6a00201b-a2f5-430d-8dfc-2f7f6cbf2191">English Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-language-and-chinese">English Language and Chinese</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-language-and-english-literature">English Language and English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-language-and-french">English Language and French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-language-and-german">English Language and German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-language-and-italian">English Language and Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-language-and-journalism">English Language and Journalism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-language-and-psychology">English Language and Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-language-and-sociology">English Language and Sociology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-language-and-spanish">English Language and Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-language-for-tefl-56aee070-5e34-4031-96b6-ff4d7fe866f9">English Language for TEFL</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-language-for-tefl">English Language for TEFL</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-language-with-creative-writing">English Language with Creative Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-language-with-english-literature">English Language with English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-language-with-film-studies">English Language with Film Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-language-with-media-studies">English Language with Media Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-language-with-placement">English Language (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-literature-3bd3abfb-1406-43e9-97ef-040a44d14bc4">English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-literature-and-chinese">English Literature and Chinese</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-literature-and-creative-writing-f2da53ea-a987-4e67-95fe-8e4fb7e3c514">English Literature and Creative Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-literature-and-criminology-and-criminal-justice">English Literature and Criminology and Criminal Justice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-literature-and-film-studies">English Literature and Film Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-literature-and-italian">English Literature and Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-literature-and-linguistics">English Literature and Linguistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-literature-and-media-studies">English Literature and Media Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-literature-and-music">English Literature and Music</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-literature-and-spanish">English Literature and Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-literature-creative-writing-with-placement">English Literature &amp; Creative Writing (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-literature-with-creative-writing">English Literature with Creative Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-literature-with-english-language">English Literature with English Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-literature-with-journalism">English Literature with Journalism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-literature-with-placement">English Literature (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-literature-with-theatre-and-performance">English Literature with Theatre and Performance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/film-studies-and-chinese">Film Studies and Chinese</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/film-studies-and-creative-writing">Film Studies and Creative Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/film-studies-and-english-language">Film Studies and English Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/film-studies-and-french">Film Studies and French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/film-studies-and-german">Film Studies and German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/film-studies-and-history">Film Studies and History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/film-studies-and-italian">Film Studies and Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/film-studies-and-spanish">Film Studies and Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-c1d99ba6-94e5-47b2-b22e-6afa5ae590c2">French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-accounting">French/Accounting</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-and-criminology-criminal-justice">French and Criminology &amp; Criminal Justice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-and-english-literature-97b29454-1e17-48dc-a161-cf62880a55a5">French and English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-and-german-with-italian">French and German with Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-and-german-with-spanish">French and German with Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-and-italian-with-german">French and Italian with German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-and-italian-with-spanish">French and Italian with Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-and-spanish-with-german">French and Spanish with German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-and-spanish-with-italian">French and Spanish with Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-and-sports-science">French and Sports Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-banking">French/Banking</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-economics">French/Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-german-and-italian">French, German and Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-german-and-spanish">French, German and Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-italian-cd3a1a76-4221-4003-b9d7-4ec5382acfc3">French/Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-italian-and-spanish">French, Italian and Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-spanish-ea0da26f-d3e5-47c6-87b2-0e1d831252f2">French/Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-with-business-management">French with Business Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-with-chinese">French with Chinese</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-with-creative-writing">French with Creative Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-with-german">French with German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-with-italian">French with Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-with-journalism">French with Journalism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-with-marketing">French with Marketing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-with-media-studies">French with Media Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-with-psychology">French with Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-with-spanish">French with Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-d336accb-ebd9-47d9-ab60-00e2d9c0ec6d">German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-accounting">German/Accounting</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-and-criminology-criminal-justice">German and Criminology &amp; Criminal Justice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-and-english-literature-d24c1232-66f0-4103-9b12-6b7360cf17be">German and English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-and-italian-with-french">German and Italian with French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-and-italian-with-spanish">German and Italian with Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-and-spanish-with-french">German and Spanish with French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-and-spanish-with-italian">German and Spanish with Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-and-sports-science">German and Sports Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-banking">German/Banking</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-economics">German/Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-french">German/French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-italian-52f95343-c8e4-43fb-8563-454e7bfb24e5">German/Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-italian-and-spanish">German, Italian and Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-spanish-d0db8324-0cf1-414d-86de-d9afcca908af">German/Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-with-business-management">German with Business Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-with-chinese">German with Chinese</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-with-creative-writing">German with Creative Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-with-film-studies">German with Film Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-with-french">German with French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-with-italian">German with Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-with-journalism">German with Journalism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-with-marketing">German with Marketing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-with-media-studies">German with Media Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-with-psychology">German with Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-with-spanish">German with Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/heritage-archaeology-and-history">Heritage, Archaeology and History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/history-e299e827-56de-4d66-a4a1-c599719e8aaa">History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/history-0f9c5fe2-1435-41fb-bc7b-e7e1a1cb681e">History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/history-and-archaeology-6a2ffd92-fa01-436e-b39c-b90a8d80ee2b">History and Archaeology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/history-and-criminology-criminal-justice">History and Criminology &amp; Criminal Justice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/history-and-english-literature">History and English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/history-and-music">History and Music</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/history-economics">History/Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/history-french">History/French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/history-german">History/German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/history-italian-bbe7f19d-d6fe-4b23-82fc-e00ec3cd3f1a">History/Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/history-spanish-081b5d2b-896a-4c3f-a50d-7c6ce7b3e26f">History/Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/history-with-archaeology">History with Archaeology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/history-with-film-studies">History with Film Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/history-with-journalism">History with Journalism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/international-english-language-for-tefl">International English Language for TEFL</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/italian-and-spanish-with-french">Italian and Spanish with French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/italian-and-spanish-with-german">Italian and Spanish with German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/italian-and-sports-science">Italian and Sports Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/italian-linguistics">Italian/Linguistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-chinese-international-experience">Law with Chinese (International Experience)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-creative-media-writing">Law with Creative Media Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-english-literature">Law with English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-french-european-experience">Law with French (European Experience)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-german-european-experience">Law with German (European Experience)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-history-71409919-3890-4256-8c24-337f5c8155a8">Law with History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-italian-european-experience">Law with Italian (European Experience)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-philosophy-and-religion">Law with Philosophy and Religion</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-spanish-european-experience">Law with Spanish (European Experience)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-welsh">Law with Welsh</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/linguistics-a23374ad-ab4c-47ce-be8b-704d3c6e16e8">Linguistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/linguistics-ddb76d30-18b1-4962-b074-d1bf00eb95d3">Linguistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/linguistics-and-psychology">Linguistics and Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/linguistics-and-the-english-language">Linguistics and the English Language</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/linguistics-french">Linguistics/French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/linguistics-german">Linguistics/German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/linguistics-spanish">Linguistics/Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/linguistics-the-english-language-with-placement">Linguistics &amp; the English Language (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/linguistics-with-english-literature">Linguistics with English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/linguistics-with-placement">Linguistics (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marketing-french">Marketing/French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marketing-german">Marketing/German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marketing-italian">Marketing/Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marketing-spanish">Marketing/Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marketing-with-french">Marketing with French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marketing-with-german">Marketing with German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marketing-with-italian">Marketing with Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marketing-with-spanish">Marketing with Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/media-studies-with-french">Media Studies with French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/media-studies-with-german">Media Studies with German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/media-studies-with-italian">Media Studies with Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/media-studies-with-spanish">Media Studies with Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/medieval-and-early-modern-history-40362752-cb79-4732-8f89-63dab9cab63d">Medieval and Early Modern History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/modern-and-contemporary-history-c6bd784e-1e3e-4a13-8765-e1cc07c2ef2d">Modern and Contemporary History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/music-and-creative-writing">Music and Creative Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/music-and-history-welsh-history">Music and History &amp; Welsh History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/music-french">Music/French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/music-german">Music/German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/music-italian">Music/Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/music-spanish">Music/Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/philosophy-and-religion">Philosophy and Religion</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/philosophy-and-religion-and-english-literature">Philosophy and Religion and English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/philosophy-and-religion-and-french">Philosophy and Religion and French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/philosophy-and-religion-and-german">Philosophy and Religion and German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/philosophy-and-religion-and-history">Philosophy and Religion and History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/philosophy-and-religion-and-italian">Philosophy and Religion and Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/philosophy-and-religion-and-music">Philosophy and Religion and Music</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/philosophy-and-religion-and-spanish">Philosophy and Religion and Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/philosophy-and-religion-and-welsh">Philosophy and Religion and Welsh</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/philosophy-and-religion-and-welsh-history">Philosophy and Religion and Welsh History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/professional-writing-and-film">Professional Writing and Film</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/professional-writing-and-media">Professional Writing and Media</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/social-policy-history">Social Policy/History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/sociology-and-english-literature">Sociology and English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/sociology-history">Sociology/History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/sociology-linguistics">Sociology/Linguistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/spanish-08c3eaa1-1b8f-4d4d-b3d9-edbd91daff06">Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/spanish-and-sports-science">Spanish and Sports Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/spanish-italian">Spanish/Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/spanish-with-business-management">Spanish with Business Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/spanish-with-chinese">Spanish with Chinese</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/spanish-with-creative-writing">Spanish with Creative Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/spanish-with-french">Spanish with French</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/spanish-with-german">Spanish with German</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/spanish-with-italian">Spanish with Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/spanish-with-journalism">Spanish with Journalism</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/spanish-with-marketing">Spanish with Marketing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/spanish-with-media-studies">Spanish with Media Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/welsh-history-and-film-studies">Welsh History and Film Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/welsh-history-and-music">Welsh History and Music</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/welsh-history-history">Welsh History/History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/welsh-history-sociology">Welsh History/Sociology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/welsh-history-with-archaeology">Welsh History with Archaeology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/welsh-history-with-film-studies">Welsh History with Film Studies</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Law" aria-controls="collapse-bachelor-4" aria-expanded="false" href="#collapse-bachelor-4" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-4" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Law <span class="discipline-programmes-count">(23)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-4" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-4" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/bangor-university/business-management-and-law">Business Management and Law</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-law-and-french-law">English Law and French Law</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-4157eb05-af3f-4542-85a2-062e187e14fa">Law</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-accounting-and-finance-with-placement">Law with Accounting and Finance (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-accounting-finance">Law with Accounting &amp; Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-business-management-with-placement">Law with Business Management (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-business-studies">Law with Business Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-chinese-international-experience">Law with Chinese (International Experience)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-creative-media-writing">Law with Creative Media Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-criminology-5152bb8a-04f9-486f-b060-6d9beb5dfcb3">Law with Criminology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-criminology-with-placement">Law with Criminology (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-english-literature">Law with English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-french-european-experience">Law with French (European Experience)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-german-european-experience">Law with German (European Experience)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-history-71409919-3890-4256-8c24-337f5c8155a8">Law with History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-italian-european-experience">Law with Italian (European Experience)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-media-studies">Law with Media Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-philosophy-and-religion">Law with Philosophy and Religion</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-placement-8c55f471-456e-4a5a-af83-1c230763fb91">Law (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-politics-6c47da3a-d7bd-40c3-acac-ee507cea06ee">Law with Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-social-policy">Law with Social Policy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-spanish-european-experience">Law with Spanish (European Experience)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-welsh">Law with Welsh</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Medicine &amp; Health" aria-controls="collapse-bachelor-5" aria-expanded="false" href="#collapse-bachelor-5" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-5" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Medicine &amp; Health <span class="discipline-programmes-count">(18)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-5" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-5" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/bangor-university/adult-nursing-22dcc3c6-2652-4aa4-aacf-7cd8ce5236ac">Adult Nursing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/adventure-sport-science-722161af-3ebc-4d2e-8431-37e6f3e6bcc7">Adventure Sport Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/adventure-sport-science">Adventure Sport Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/biomedical-sciences-a4be301a-d9cb-4375-b85e-e0cc314e66a3">Biomedical Sciences</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/biomedical-science-with-foundation-year">Biomedical Science with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/children-s-nursing">Children&#39;s Nursing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/diagnostic-radiography-b263c207-1cdc-4539-9950-4dc52b996bcc">Diagnostic Radiography</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-and-sports-science">French and Sports Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-and-sports-science">German and Sports Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/health-studies-international">Health Studies (International)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/italian-and-sports-science">Italian and Sports Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/learning-disabilities-nursing">Learning Disabilities Nursing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/medical-sciences-6c63f941-689c-4d34-9885-41c1da071e6d">Medical Sciences</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/medical-sciences-with-foundation">Medical Sciences with Foundation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/mental-health-nursing-9dfaf96a-26ba-4b5d-9ed6-a517315634f2">Mental Health Nursing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/midwifery-bf6dc331-ec19-453f-bca5-56763a959f42">Midwifery</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/spanish-and-sports-science">Spanish and Sports Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/sport-and-exercise-psychology-f649bde2-4eb5-440f-8ec1-387394364394">Sport and Exercise Psychology</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Natural Sciences &amp; Mathematics" aria-controls="collapse-bachelor-6" aria-expanded="false" href="#collapse-bachelor-6" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-6" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Natural Sciences &amp; Mathematics <span class="discipline-programmes-count">(47)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-6" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-6" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/bangor-university/applied-marine-biology">Applied Marine Biology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/biology-8223e1bd-db6d-47e6-9fc9-b7745fe57dce">Biology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/biology-652fc5fb-96f8-40e2-9d0d-ca80fbed8c80">Biology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/biology-with-biotechnology-841ec9ea-8394-41dc-86bc-d0132004f7cd">Biology with Biotechnology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/biology-with-biotechnology">Biology with Biotechnology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/biology-with-foundation-year">Biology with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marine-biology-6ce51f4f-fb74-4639-8339-4d1475b7226b">Marine Biology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marine-biology-e216ae26-c4ee-4227-8186-46e6d1f774b9">Marine Biology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marine-biology-and-oceanography">Marine Biology and Oceanography</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marine-biology-and-oceanography-with-placement">Marine Biology and Oceanography (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marine-biology-and-oceanography-with-placement-9e50c36a-3807-4fa0-95ad-57d1365b1fcd">Marine Biology and Oceanography (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marine-biology-and-zoology">Marine Biology and Zoology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marine-biology-and-zoology-with-placement">Marine Biology and Zoology (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marine-biology-oceanography">Marine Biology/Oceanography</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marine-biology-with-foundation-year">Marine Biology with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marine-biology-with-placement">Marine Biology (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marine-biology-zoology">Marine Biology/Zoology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marine-vertebrate-zoology-17291">Marine Vertebrate Zoology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marine-vertebrate-zoology">Marine Vertebrate Zoology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marine-vertebrate-zoology-with-placement-17293">Marine Vertebrate Zoology (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marine-vertebrate-zoology-with-placement">Marine Vertebrate Zoology (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/medical-biochemistry">Medical Biochemistry</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/medical-biochemistry-with-foundation-year">Medical Biochemistry with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/medical-biology-ad5b50dc-4607-4f99-8981-440b64325f9a">Medical Biology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/wildlife-conservation-c4ff9aa6-0910-4995-98be-9b0e9c1880c2">Wildlife Conservation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/wildlife-conservation-with-placement">Wildlife Conservation (with placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/zoology-17408">Zoology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/zoology-17409">Zoology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/zoology-with-animal-behaviour">Zoology with Animal Behaviour</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/zoology-with-animal-behaviour-17411">Zoology with Animal Behaviour</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/zoology-with-climate-change-studies-17413">Zoology with Climate Change Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/zoology-with-climate-change-studies">Zoology with Climate Change Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/zoology-with-conservation-17415">Zoology with Conservation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/zoology-with-conservation">Zoology with Conservation</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/zoology-with-conservation-with-placement">Zoology with Conservation (with placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/zoology-with-foundation-year">Zoology with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/zoology-with-herpetology">Zoology with Herpetology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/zoology-with-herpetology-17419">Zoology with Herpetology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/zoology-with-marine-zoology">Zoology with Marine Zoology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/zoology-with-marine-zoology-17421">Zoology with Marine Zoology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/zoology-with-ornithology-17423">Zoology with Ornithology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/zoology-with-ornithology">Zoology with Ornithology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/zoology-with-ornithology-with-placement">Zoology with Ornithology (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/zoology-with-ornithology-with-placement-17425">Zoology with Ornithology (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/zoology-with-primatology-17427">Zoology with Primatology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/zoology-with-primatology">Zoology with Primatology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/zoology-with-primatology-with-placement">Zoology with Primatology (with placement)</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Social Sciences" aria-controls="collapse-bachelor-7" aria-expanded="false" href="#collapse-bachelor-7" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-7" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Social Sciences <span class="discipline-programmes-count">(93)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-7" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-7" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/bangor-university/accounting-and-economics-3dbd17af-9f3f-4694-b3d2-193e7d77d193">Accounting and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/accounting-and-economics-with-foundation-year">Accounting and Economics with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/accounting-and-economics-with-placement">Accounting and Economics (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-economics-9379f7d8-cc88-46a9-b2ba-059a32170302">Business Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-economics-with-foundation-year">Business Economics with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/business-economics-with-placement">Business Economics (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/childhood-and-youth-studies-95942dfd-6ed6-4d2c-b657-452080d89078">Childhood and Youth Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/childhood-and-youth-studies-and-psychology">Childhood and Youth Studies and Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/childhood-and-youth-studies-and-social-policy">Childhood and Youth Studies and Social Policy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/childhood-and-youth-studies-and-sociology">Childhood and Youth Studies and Sociology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/criminology-and-criminal-justice-4f1806ab-b493-4c84-b612-47747bb6ac2d">Criminology and Criminal Justice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/criminology-criminal-justice-and-italian">Criminology &amp; Criminal Justice and Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/criminology-criminal-justice-and-psychology">Criminology &amp; Criminal Justice and Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/criminology-criminal-justice-and-spanish">Criminology &amp; Criminal Justice and Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/economics-and-chinese">Economics and Chinese</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/economics-italian-6eb948f9-5d29-422b-a8d9-ee70ddf27d45">Economics/Italian</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/economics-spanish-5575d955-c97f-42b8-ac40-2a38cd10aa92">Economics/Spanish</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-language-and-psychology">English Language and Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-language-and-sociology">English Language and Sociology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-language-for-tefl">English Language for TEFL</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-language-for-tefl-56aee070-5e34-4031-96b6-ff4d7fe866f9">English Language for TEFL</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/english-literature-and-criminology-and-criminal-justice">English Literature and Criminology and Criminal Justice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/financial-economics-db8fc050-26ff-4b94-9c46-3608ac5fc503">Financial Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/financial-economics-with-foundation-year-72f2d826-19ea-4d54-9d50-c6e739c652aa">Financial Economics with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/financial-economics-with-placement">Financial Economics (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-and-criminology-criminal-justice">French and Criminology &amp; Criminal Justice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-economics">French/Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/french-with-psychology">French with Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/geography-8aee18e3-6695-42de-8445-cae2998fd15a">Geography</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/geography-693d6f8a-3f25-476f-b9b5-40ab1c65db12">Geography</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/geography-with-environmental-forestry">Geography with Environmental Forestry</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/geography-with-placement">Geography (with placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/geological-oceanocgaphy-with-placement">Geological Oceanocgaphy (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/geological-oceanography">Geological Oceanography</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/geological-oceanography-with-foundation-year">Geological Oceanography with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/geological-oceanography-with-placement">Geological Oceanography (with placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-and-criminology-criminal-justice">German and Criminology &amp; Criminal Justice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-economics">German/Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/german-with-psychology">German with Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/health-social-care-6468abf4-1c4e-4694-9601-a7fec6909222">Health &amp; Social Care</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/history-and-criminology-criminal-justice">History and Criminology &amp; Criminal Justice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/history-economics">History/Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/international-english-language-for-tefl">International English Language for TEFL</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-criminology-5152bb8a-04f9-486f-b060-6d9beb5dfcb3">Law with Criminology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-criminology-with-placement">Law with Criminology (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-politics-6c47da3a-d7bd-40c3-acac-ee507cea06ee">Law with Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/law-with-social-policy">Law with Social Policy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/linguistics-and-psychology">Linguistics and Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/marketing-with-psychology">Marketing with Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/media-studies-and-sociology">Media Studies and Sociology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/ocean-and-geophysics">Ocean and Geophysics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/ocean-and-geophysics-with-placement">Ocean and Geophysics (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/ocean-science-f37db2ee-313b-47af-b021-302b38dcbf85">Ocean Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/ocean-science-with-placement">Ocean Science (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/physical-geography-and-oceanography">Physical Geography and Oceanography</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/physical-geography-and-oceanography-with-placement">Physical Geography and Oceanography (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/physical-oceanography-5d6617e4-6581-4e69-bae3-8eafbeb99c76">Physical Oceanography</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/physical-oceanography-with-placement">Physical Oceanography (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/politics-b2f657d3-ac45-408e-adf0-74a08eee9c4b">Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/politics-and-economics">Politics and Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/politics-with-placement-3e596e42-1263-47a6-895f-d1ca0b4a40ef">Politics (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/primary-education-leading-to-qualified-teacher-status">Primary Education Leading to Qualified Teacher Status</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/professional-policing">Professional Policing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/psychology-1f4d0ddc-5135-4b64-ac60-6995f3ab8663">Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/psychology-defee3f4-5f63-4ca8-a56c-17e7e4b9215a">Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/psychology-with-business-management">Psychology with Business Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/psychology-with-business-management-with-placement">Psychology with Business Management (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/psychology-with-clinical-and-health-psychology">Psychology with Clinical and Health Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/psychology-with-clinical-and-health-psychology-with-placemen-b1a92d21-89ff-4858-95d6-1167ab80445b">Psychology with Clinical and Health Psychology (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/psychology-with-clinical-and-health-psychology-with-placemen">Psychology with Clinical and Health Psychology (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/psychology-with-clinical-health-psychology">Psychology with Clinical &amp; Health Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/psychology-with-forensic-psychology-d539e9cb-d490-4e3e-989a-952a2a89c083">Psychology with Forensic Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/psychology-with-forensic-psychology-with-placement">Psychology with Forensic Psychology (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/psychology-with-foundation-year-373e7f3c-102d-4dbe-ad55-cd15ffb20d47">Psychology with Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/psychology-with-neuropsychology">Psychology with Neuropsychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/psychology-with-neuropsychology-with-placement">Psychology with Neuropsychology (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/psychology-with-placement-818d723c-f7c7-4eda-877f-090ea794c615">Psychology (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/psychology-with-placement-26b8cf2d-dcac-413a-9279-bf13cfec4323">Psychology (with Placement)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/social-policy-e52d386d-c674-4bf6-9ae6-c44ba9c07682">Social Policy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/social-policy-and-criminology-criminal-justice">Social Policy and Criminology &amp; Criminal Justice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/social-policy-economics">Social Policy/Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/social-policy-history">Social Policy/History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/social-policy-psychology">Social Policy/Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/sociology-be67b5b7-5e9b-4abf-a6d1-62765fd6e466">Sociology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/sociology-and-criminology-criminal-justice">Sociology and Criminology &amp; Criminal Justice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/sociology-and-english-literature">Sociology and English Literature</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/sociology-economics">Sociology/Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/sociology-history">Sociology/History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/sociology-linguistics">Sociology/Linguistics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/sociology-psychology">Sociology/Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/sociology-social-policy">Sociology/Social Policy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/sport-and-exercise-psychology-f649bde2-4eb5-440f-8ec1-387394364394">Sport and Exercise Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/bangor-university/welsh-history-sociology">Welsh History/Sociology</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default" id="panel-bachelor-other"> <a title="Other subjects" aria-controls="collapse-bachelor-other" aria-expanded="false" href="#collapse-bachelor-other" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-other" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Other subjects</span> <span class="discipline-programmes-count">(1)</span></a>
+        <div aria-labelledby="heading-bachelor-other" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-other" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/bangor-university/media-studies-b4d63e99-88dd-4549-a43b-c6303488c979">Media Studies</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+
+  <script>
+  if ( $('#accordion-bachelor .panel-collapse').length == 1 ) {
+    // If Programmes at this level all fall into the same Discipline, expand it
+    $('#accordion-bachelor .panel-collapse').collapse('show');
+  }
+
+
+  $('.panel-collapse').on('shown.bs.collapse', function (e) {
+      var panel = $(this).closest('div.panel');
+      var panelTop = panel[0].getBoundingClientRect().top;
+      var navHeight = document.getElementById("navbar").offsetHeight;
+      var navBottom = document.getElementById("navbar").getBoundingClientRect().bottom;
+      
+      var visibleFromHere = Math.max(0, navBottom); // navBottom might be negative on desktop
+      
+      if (panelTop < visibleFromHere) {
+        // If the just expanded panel's top is above what's visible in the viewport, scroll up.
+        $('html,body').animate({
+            scrollTop: panel.offset().top-visibleFromHere-25
+        }, 500); 
+      }
+  }); 
+  </script>
+
+        </div>
+      
+      
+    </div>
+    
+    <script>
+      $('.nav-tabs a:first').tab('show'); // Make sure the first tab is selected in case none of the rendered tabs are marked as active
+      
+      $('.nav-tabs a[href="#tab-bachelor"]').tab('show');
+    </script>
+    
+    
+    
+    
+    <h3>Rankings</h3>
+    
+      <p>
+        Bangor University belongs to the top 500 universities in the world and the top 200 universities in Europe.
+      </p>
+    
+    <table class="table table-bordered table-striped">
+      <thead>
+        <th>Ranking</th>
+        <th>Year</th>
+        <th>Rank <br/> (in the world)</th>
+        <th>Rank <br/> (in Europe)</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Times Higher Education World University Rankings</td>
+          <td>2020</td>
+          <td class="text-right">401</td>
+          <td class="text-right">195</td>
+        </tr>
+        <tr>
+          <td>QS World University Rankings</td>
+          <td>2020</td>
+          <td class="text-right">521</td>
+          <td class="text-right">227</td>
+        </tr>
+        <tr>
+          <td>Shanghai Jiao Tong Academic Ranking of World Universities</td>
+          <td>2019</td>
+          <td class="text-right">601</td>
+          <td class="text-right">237</td>
+        </tr>
+      </tbody>
+    </table>
+    
+      <a href="/best-universities/united-kingdom">Check out the 105 best universities in the United Kingdom</a>
+    
+    
+    
+
+    
+      <div>
+        <h2>You might be interested in this:</h2>
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/article/the-oldest-universities-in-10-european-countries">
+              <div class="thumbnail home-country-card">  
+                    <img alt="The oldest universities in 10 European countries" title="The oldest universities in 10 European countries" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/158/slideshow_23752400084_f51476791c_o.jpg" />
+                  <div class="caption">
+                    <strong>The oldest universities in 10 European countries</strong>              
+                  </div>
+              </div>
+</a>          </div>
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/article/what-is-the-russell-group">
+              <div class="thumbnail home-country-card">  
+                    <img alt="Universities in the UK: What is the Russell Group?" title="Universities in the UK: What is the Russell Group?" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/360/slideshow_university-of-edinburgh-old-college.jpg" />
+                  <div class="caption">
+                    <strong>Universities in the UK: What is the Russell Group?</strong>              
+                  </div>
+              </div>
+</a>          </div>
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/country/united-kingdom">
+              <div class="thumbnail home-country-card">  
+                    <img alt="Study in the United Kingdom" title="Study in the United Kingdom" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/31/slideshow_united-kingdom-telephone.jpg" />
+                  <div class="caption">
+                    <strong>Study in the United Kingdom</strong>              
+                  </div>                  
+                
+              </div>
+</a>          </div>
+        </div>
+      </div>  
+    
+    </div>
+
+
+    
+
+
+    
+    
+    
+    
+    
+    
+  </div>
+  
+</div>
+
+
+<script>
+
+  $('[data-toggle="tooltip"]').tooltip();
+
+  $( function() {
+    $( ".accordion" ).accordion({
+      heightStyle: "content"
+    });
+  } );
+  
+  
+  handler = Gmaps.build('Google');
+  handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+    markers = handler.addMarkers([
+      {
+        "lat": 0,
+        "lng": 0,
+      }
+    ]);
+    handler.bounds.extendWith(markers);
+    handler.fitMapToBounds();
+  });
+  
+  
+  
+  
+</script>
+  
+
+    
+
+  
+  
+  <footer class="top-footer">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Merriweather Sans:300,400i,700']
+      }
+    });
+  </script> 
+
+  
+  <div class="container">
+  <div class="row">
+    
+    <div class="text-left col-md-8 col-xs-6" style="display: inline-block;float: left;">
+      <a href="/" title="Study.EU" data-track-click="true" data-event-category="Footer Logo"><img class="footer-logo" src="/assets/study-eu_logo_wb_200x66-8722da28bad82460d8951c34fe8b5ba8e11794b2fd21e83ee8c5fe54323ea73b.png" /></a><br />
+      <p>
+        Copyright &copy; 2021 <a title="Study.EU" href="/">Study.EU</a>
+      </p>
+      <p>
+        
+      </p>
+      <a class="social-link" href="https://www.facebook.com/StudyEU-168756646881605/" target="_blank" title="Like Study.EU on Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://twitter.com/wwwStudyEU" target="_blank" title="Follow Study.EU on Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://www.linkedin.com/company/study.eu/" target="_blank" title="Follow Study.EU on Linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    </div>
+    <div class="text-right col-md-4 col-xs-6">
+      <br /><br />
+          <a rel="nofollow" href="/page/imprint">Imprint</a>
+        &middot;
+          <a rel="nofollow" href="/page/about-study-eu">About Study.eu</a>
+        &middot;
+          <a rel="nofollow" href="/page/privacy-policy">Privacy Policy</a>
+        &middot;
+      <a href="/jobs">Jobs</a>
+      
+      <br />
+      
+      <a href="/press">Press</a>
+      
+      <!-- &middot; -->
+      
+        <!-- &mdash; //-->
+      
+      <br /><br />
+      <a href="/advertise-on-study-eu">Advertise on Study.eu</a>
+    </div>
+  </div>
+  </div>
+</footer>
+
+<a href="javascript:" id="scroll-to-top" title="Scroll back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+<script>
+  $(window).scroll(function() {
+      if ($(this).scrollTop() >= 100) {        // page is scrolled more than 100px
+          $('#scroll-to-top').fadeIn(500);
+      } else {
+          $('#scroll-to-top').fadeOut(500);
+      }
+  });
+  $('#scroll-to-top').click(function() {      // arrow is clicked
+      $('body,html').animate({
+          scrollTop : 0                       // scroll to top
+      }, 500);
+  });
+</script>
+
+
+  
+  <footer class="footer-countries">
+
+
+  <div class="container">
+    <div class="row">
+    
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <h5>Study in Europe:</h5>
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Austria" href="/country/austria">Austria</a><br />
+                <a title="Study in Belgium" href="/country/belgium">Belgium</a><br />
+                <a title="Study in the Czech Republic" href="/country/czech-republic">Czech Republic</a><br />
+                <a title="Study in Denmark" href="/country/denmark">Denmark</a><br />
+                <a title="Study in Estonia" href="/country/estonia">Estonia</a><br />
+                <a title="Study in the Faroe Islands" href="/country/faroe-islands">Faroe Islands</a><br />
+                <a title="Study in Finland" href="/country/finland">Finland</a><br />
+                <a title="Study in France" href="/country/france">France</a><br />
+                <a title="Study in Germany" href="/country/germany">Germany</a><br />
+                <a title="Study in Greece" href="/country/greece">Greece</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Hungary" href="/country/hungary">Hungary</a><br />
+                <a title="Study in Iceland" href="/country/iceland">Iceland</a><br />
+                <a title="Study in Ireland" href="/country/ireland">Ireland</a><br />
+                <a title="Study in Italy" href="/country/italy">Italy</a><br />
+                <a title="Study in Latvia" href="/country/latvia">Latvia</a><br />
+                <a title="Study in Liechtenstein" href="/country/liechtenstein">Liechtenstein</a><br />
+                <a title="Study in Lithuania" href="/country/lithuania">Lithuania</a><br />
+                <a title="Study in Malta" href="/country/malta">Malta</a><br />
+                <a title="Study in the Netherlands" href="/country/netherlands">Netherlands</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Norway" href="/country/norway">Norway</a><br />
+                <a title="Study in Poland" href="/country/poland">Poland</a><br />
+                <a title="Study in Portugal" href="/country/portugal">Portugal</a><br />
+                <a title="Study in Romania" href="/country/romania">Romania</a><br />
+                <a title="Study in Russia" href="/country/russia">Russia</a><br />
+                <a title="Study in Spain" href="/country/spain">Spain</a><br />
+                <a title="Study in Sweden" href="/country/sweden">Sweden</a><br />
+                <a title="Study in Switzerland" href="/country/switzerland">Switzerland</a><br />
+                <a title="Study in the United Kingdom" href="/country/united-kingdom">United Kingdom</a><br />
+            </div>
+          </div>
+        </div>
+    
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Recent articles:</h5>
+          </div>
+          <div class="col-md-8">
+              <p><a href="/article/study-biomedicine-or-biomedical-sciences">Study Biomedicine or Biomedical Sciences: All you need to know</a></p>
+              <p><a href="/article/guide-uk-post-study-work-visa-for-graduates">Guide: the UK Post-Study Work Visa for graduates</a></p>
+              <p><a href="/article/looking-for-a-uk-degree-in-germany-study-in-leipzig">Looking for a UK degree in Germany? Study in Leipzig!</a></p>
+              <p><a href="/article/what-is-the-ects-european-credit-transfer-and-accumulation-system">What is the European Credit Transfer System (ECTS)?</a></p>
+              <p><a href="/article/study-ecology">Study Ecology: All you need to know</a></p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  
+  </div>
+
+</footer>
+
+  
+  <footer class="footer-press">
+  <div class="container">
+    <div class="row footer-press-description">
+      <div class="col-md-12 text-center">
+        Study.EU has been mentioned in numerous news publications worldwide, such as:
+      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="L&#39;Étudiant (France)" title="L&#39;Étudiant (France)" data-src="/assets/press/letudiant_gray_200-57bccbdceaef3c62c8660629603372823c98afe433bd39bf6d42a73263c113c3.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Frankfurter Allgemeine (Germany)" title="Frankfurter Allgemeine (Germany)" data-src="/assets/press/faz_gray_300-b6e5e6022a7b164c24b69a51fb97a72715018db745fbcda8580675a507370b8b.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Standard (Hong Kong)" title="The Standard (Hong Kong)" data-src="/assets/press/the-standard-hong-kong_gray_200-f124ca057d2671730e1f6d996377ef4614a28ccf04ae04f730eaf16ed7ee0b46.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Independent (UK)" title="The Independent (UK)" data-src="/assets/press/the-independent-uk_gray_300-63238e279b3c62b1f87faf17fcbcf1f14a2e5b9229193a0431fc974da217d159.png" class="lazyload" />
+</a>      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Al-Masry Al-Youm (Egypt)" title="Al-Masry Al-Youm (Egypt)" data-src="/assets/press/al-masry_al-youm_gray_200-9d8e503cd53ec4d955c3e6f7bf2a1c0badb500a0d2bd8a1ef1d11acd686879e5.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Le Monde (France)" title="Le Monde (France)" data-src="/assets/press/le-monde_gray_200-24d8bca493f3a2b8e0150cb4ef38f00c9924ac5e7acfbdb8750076c949c70052.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Local (Europe)" title="The Local (Europe)" data-src="/assets/press/the-local_gray_200-7631164ea94edf8d065b3af6f64274416162d866ce1cea737c3ee25f28cdd098.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Forbes (USA)" title="Forbes (USA)" data-src="/assets/press/forbes_gray_200-deff6ef2c28ec5a275f404c5f59d56f4b687881eb39de52b79b5add3ca609fe2.png" class="lazyload" />
+</a>      </div>
+    </div>
+  </div>
+</footer>
+
+  
+  
+  
+  
+    <div class="cookies-eu js-cookies-eu row">
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+    <div class="cookies-eu-content-holder col-md-4 col-sm-6 col-xs-6 align-self-center">
+      Cookies &amp; analytics help us deliver our services.
+        <a href="/page/privacy-policy" class="cookies-eu-link" target="_blank"> Privacy policy </a>
+    </div>
+    <div class="cookies-eu-button-holder col-md-4 col-sm-6 col-xs-6">
+      <button class="cookies-eu-ok js-cookies-eu-ok btn btn-lg btn-primary" data-track-click-ga="true" data-event-category="Cookie Consent Button"> OK </button>
+    </div>
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+  </div>
+
+  
+  <script>
+  // Improved Ahoy view tracking with additional attributes
+  var additionalProperties = {};
+    additionalProperties["country_id"] = 42;
+    mainTrackableLink = "";
+    additionalProperties["university_id"] = 206;
+    mainTrackableLink = "https://www.study.eu/link/university/bangor-university/from-profile";
+  console.log("Ahoy: View with additional properties: "+JSON.stringify(additionalProperties));
+  ahoy.trackView(additionalProperties);
+</script>
+<a name="ga"></a> <!-- GA //-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42442116-3', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+  
+  
+  
+    
+  //############################################################
+  //########## 2018-07    NEW CUSTOM METHODS          ##########
+  
+  function getDataTrackAttributes(element) {
+    var data = {};
+    [].forEach.call(element.attributes, function(attr) {
+      if (/^data-trackvalue-/.test(attr.name)) {
+        // Relevant attributes would always be called "data-track-foobar"
+        var underscorename = attr.name.substr(16).replace(/-/g, "_");
+        data[underscorename] = parseInt(attr.value) || attr.value; // Provide as integer if possible, otherwise the original string
+      }
+    });
+    return data;
+  }
+  
+  // Set data-track-click and utm_source for all external links in the description content
+  var content_links = document.querySelectorAll('div.content-description a');
+  for (var i = 0; i < content_links.length; i++) {
+    if ( ((new URL(content_links[i].href, document.baseURI).href) == mainTrackableLink) || (content_links[i].host !== window.location.host) ) {
+      // Link is the main trackable link, or link is external --> add tracking and utm_source if not present
+      utm_url = new URL(content_links[i].href);
+      utm_url.searchParams.set("utm_source", "Study.eu"); // add (or overwrite existing) utm_source parameter
+      content_links[i].href = utm_url;
+      content_links[i].classList.add("external-tracked");
+      content_links[i].setAttribute("data-event-category", "Outbound Link");
+      content_links[i].setAttribute("data-event-label", content_links[i].href);
+      content_links[i].setAttribute("data-track-click", "true"); // Once data-track-click is set to true, initDataAttributes() below will add the id values
+    }
+  }
+  console.log("Modified "+content_links.length+" links in description content.");
+  
+  // Set data attributes for tracking of footer press links
+  footerPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < footerPressLinks.length; i++) {
+    footerPressLinks[i].setAttribute("data-track-click-ga", "true");
+    footerPressLinks[i].setAttribute("data-event-category", "Footer Press Link");
+    footerPressLinks[i].setAttribute("data-event-label", window.location.href);
+  }
+  
+  relatedLinks = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < relatedLinks.length; i++) {
+    relatedLinks[i].setAttribute("data-track-click-ga", "true");
+    relatedLinks[i].setAttribute("data-event-category", "Related Link");
+    relatedLinks[i].setAttribute("data-event-label", relatedLinks[i].getAttribute("href"));
+  }  
+  
+  function initDataAttributes() {
+    // Initialise element data attributes based on backend instance variables
+    elements = document.querySelectorAll('[data-track-click="true"],[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+        if (!elements[i].hasAttribute("data-trackvalue-country-id")) {
+          elements[i].setAttribute("data-trackvalue-country-id", "42");
+        }
+      
+        if (!elements[i].hasAttribute("data-trackvalue-university-id")) {
+          elements[i].setAttribute("data-trackvalue-university-id", "206");
+        }
+      
+    }
+    console.log("initDataAttributes()");
+  }
+  initDataAttributes();
+    
+  function trackClick(event, trackGA = true, trackAhoy = true) {
+    // When an element was clicked, track the click in GA and Ahoy
+    
+    strEventLabel = "";
+    if        ( event.currentTarget.hasAttribute("data-event-label") ) {
+      strEventLabel = event.currentTarget.getAttribute("data-event-label");
+    } else if ( event.currentTarget.hasAttribute("href") ) {
+      strEventLabel = event.currentTarget.href;
+    }
+    
+    ga('send', 'event', {
+      eventCategory:  event.currentTarget.getAttribute("data-event-category"),
+      eventAction:    'click',
+      eventLabel:     strEventLabel
+    });
+    
+    data = getDataTrackAttributes(event.currentTarget);
+    data["href"] = event.target.href;
+    data["page"] = window.location.pathname;
+    
+    /*ahoy.track (
+      event.currentTarget.getAttribute("data-event-category"),
+      {
+        country_id: 42, 
+        university_id: 206, 
+        
+        href: event.target.href,
+        page: window.location.pathname
+      }
+    );*/
+    
+    if (trackAhoy) {
+        data["medium"] = "Profile";
+      ahoy.track (
+        event.currentTarget.getAttribute("data-event-category")+" - click",
+        data
+      );
+    }
+    
+    console.log("trackClick(event, trackGA = "+trackGA+", trackAhoy = "+trackAhoy+"): " +
+      event.currentTarget.getAttribute("data-event-category") + ", " +
+      "{country_id: 42, university_id: 206, href: " + event.target.href + ", " +
+      "page:"+window.location.pathname+"});"
+    );
+  }
+  
+  
+  function trackClicksGA() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click-ga="true"]:not([data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event, true, false);
+      });
+    }
+    console.log("trackClicksGA(): "+elements.length+" elements");
+  }
+  trackClicksGA();
+  
+  function trackClicks() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event);
+      });
+    }
+    console.log("trackClicks(): "+elements.length+" elements");
+  }
+  trackClicks();
+  
+  function trackRenderingsGA() {
+    // Track renderings only in GA
+    // This would be for large-volume data that is interesting, but not mission-critical
+
+    elements = document.querySelectorAll('[data-track-rendering-ga="true"]:not([data-track-rendering="true"])');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+    }
+    
+    console.log("trackRenderingsGA(): "+elements.length+" elements");
+  }
+  trackRenderingsGA();
+  
+  function trackRenderings() {
+    // Track renderings in GA *and* Ahoy
+    elements = document.querySelectorAll('[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+      
+      data = getDataTrackAttributes(elements[i]);
+      data["href"] = elements[i].getAttribute("href");
+      data["page"] = window.location.pathname;
+      
+      ahoy.track (
+        elements[i].getAttribute("data-event-category")+" - rendered",
+        data
+      );
+    }
+    
+    console.log("trackRenderings(): "+elements.length+" elements");
+  }
+  trackRenderings();
+  
+  
+  
+    ga('send', 'event', {
+      eventCategory:  'Country Content',
+      eventAction:    'rendered',
+      eventLabel:     'United Kingdom',
+      nonInteraction: true
+    });
+
+  
+  //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  //############################################################
+
+  
+  
+  /*
+  anchorsExternalTracked = document.getElementsByClassName("external-tracked");
+  for (var i = 0 ; i < anchorsExternalTracked.length; i++) {
+    anchorsExternalTracked[i].addEventListener("click", function(event){
+      //event.preventDefault();
+      
+      handleOutboundLinkClicks(event);
+      
+      //document.location = this.href;
+      //var win = window.open(this.href, '_blank');
+      //win.focus();
+      
+    });
+    
+    // Trigger event that shows in GA that the link was rendered
+    ga('send', 'event', {
+      eventCategory: 'Outbound Link',
+      eventAction: 'rendered',
+      eventLabel: anchorsExternalTracked[i].href
+    });   
+  }
+  
+  anchorsRelatedTracked = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < anchorsRelatedTracked.length; i++) {
+    anchorsRelatedTracked[i].addEventListener("click", function(event){
+      handleRelatedLinkClicks(event);
+    });
+  }
+  
+  anchorsFeaturedUniversityTracked = document.getElementsByClassName("featured-university-tracked");
+  for (var i = 0 ; i < anchorsFeaturedUniversityTracked.length; i++) {
+    anchorsFeaturedUniversityTracked[i].addEventListener("click", function(event){
+      handleFeaturedUniversityLinkClicks(event);
+    });
+  }  
+  
+  
+  anchorsFooterPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < anchorsFooterPressLinks.length; i++) {
+    anchorsFooterPressLinks[i].addEventListener("click", function(event){
+      handleFooterPressLinkClicks(event);
+    });
+  }
+  
+  
+  anchorsCustomTracked = document.querySelectorAll('[data-ga-custom-event-label]');
+  for (var i = 0 ; i < anchorsCustomTracked.length; i++) {
+    anchorsCustomTracked[i].addEventListener("click", function(event){
+      handleCustomTracked(event);
+    });
+  }
+  */
+  
+  ////////////////////////////////////////////////////////////////////////////////
+
+  
+  
+</script>
+
+</body>
+</html>

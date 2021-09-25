@@ -1,0 +1,1868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"cb4ef145dd","applicationID":"55169925","transactionName":"Jg5fTRMJXFtQQBpCXwwXVEsSD0ReUEEaRFkKFg==","queueTime":3,"applicationTime":355,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"cb4ef145dd",applicationID:"55169925"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+  <title>Brunel University London, United Kingdom | Study.EU</title>
+   
+  <link rel="stylesheet" media="all" href="/assets/application-788bf60a726cbc46bce208400674992d5b5b0e3a0892577e97f4ee25b84407b9.css" />
+  <script src="/assets/application-6d00a9f66b3f7e1a7db9282e671658ce415a54e8512569e7b539a89dc0fb74a5.js"></script>
+  
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="wH9zNDF7nC4NjqyOPmgPdPxl1OURzbpYBv+66y0dRFYYysx3YSvrCsvxQqPnm7RC2GD+C2aREEOkO63roEdVAQ==" />
+  
+  
+    
+  
+  
+  
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-29b05ed0a02376d0d37f92df42a0d954d97274430a0f6264e4d19745408f15c8.ico" />
+  
+  <meta name="description" content="Study at Brunel University London in the United Kingdom: 205 Bachelors, Masters, PhDs. ✓ Study.EU: Your gateway to universities in Europe." />
+  
+  <meta name="keywords" content="study in europe, universities, europe, master, bachelor, masters, bachelors, msc, bsc, llb, llm, phd, doctorate, university, study abroad" />
+  <meta name="google-site-verification" content="9sv6t--Xh8SiHr58R3chJHOJVHixvhn6jBK8Qzc9Z9U" />
+  <meta name="msvalidate.01" content="5E3AE5307267C1BED099C27EB59E264E" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  <link rel="canonical" href="https://www.study.eu/university/brunel-university-london" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@wwwStudyEU" />
+  <meta name="twitter:title" content="Brunel University London, United Kingdom" />
+  
+  <meta property="og:title"  content="Brunel University London, United Kingdom" />
+  
+  
+  
+  
+  
+      <meta property="og:type" content="article" />
+      <meta property="article:publisher" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+      <meta property="article:author" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+  
+  <meta property="og:description" content="Study at Brunel University London in the United Kingdom: 205 Bachelors, Masters, PhDs. ✓ Study.EU: Your gateway to universities in Europe." />
+  <meta property="og:image" content="https://www.study.eu/assets/fallback/study-in-europe-logo-overlay-1200x627-34deac9b2af4b87f5f656da9694257ffa4e59dec8319085daa96f8ca9eb3f980.jpg" />
+  
+</head>
+<body>
+
+  <nav id="navbar" class="navbar navbar-static-top container container-fluid">
+  
+  <div class="container">
+    <div class="row" style="position: relative;">
+        <div class="col-md-3 col-xs-9 navbar-header">
+          <a class="navbar-brand" href="/" title="Study.EU">
+            <img alt="Study.EU" class="homepage-logo" src="/assets/study-eu_logo-ee9afe0c98ee9ac266f676d5dcb967023df14f95661b91c7812bef38a3b0c03a.png" />
+          </a>
+        </div>
+        <div class="col-md-8 bottom-align-text">
+            <strong class="navbar-claim">Your gateway to universities in Europe</strong>
+        </div>
+        <div class="col-md-1 col-xs-3 navbar-search-link-container">
+          <div class="navbar-search-link">
+          </div>
+        </div>
+    </div>
+</div>
+  
+</nav>
+
+  <div class="container" id="div-main-container" role="main">
+
+  </div>
+  
+  
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "CollegeOrUniversity",
+  "name": "Brunel University London",
+  "url": "https://www.study.eu/university/brunel-university-london",
+  "sameAs": "http://www.brunel.ac.uk/",
+  "foundingDate": "1966",
+  
+  "logo": "https://study-eu.s3.amazonaws.com/uploads/university/brunel-university-london-210-logo.png",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Study programmes",
+      "value": "205"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Students",
+      "value": "12746"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Average EU/EEA tuition fee p.a.",
+      "value": "8,300 GBP"
+      
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Rank (THE 2020)",
+      "value": "351"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Rank (QS 2020)",
+      "value": "359"
+    }
+    ,{
+      "@type": "PropertyValue",
+      "name": "Rank (ARWU 2019)",
+      "value": "501"
+    }
+  ]
+}
+</script>
+
+
+
+<div class="header-image">
+  <div class="container">
+    <div class="header-image-cta">
+      <h1>Study at Brunel University London</h1>
+      <h2>Uxbridge, United Kingdom</h2>
+    </div>
+  </div>
+    <img alt="Study in Europe" title="Study in Europe" src="/assets/fallback/study-in-europe_1920-2cea268aaca4f8cd71c109aa2d67e83e285f04dd3c85c9a21acae013fd6f2259.jpg" />
+    
+    <div class="image-credits">
+      <span class="image-credits-span">
+        <a href="https://www.flickr.com/photos/glasgowamateur/7892308660" target="_blank" rel="nofollow">Europe</a> by Charles Clegg, <a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="nofollow">CC BY-SA 2.0</a>, modified
+      </span>
+    </div>  
+  
+</div>
+
+<div class="div-breadcrumbs">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="/">Study.eu</a></li><i class="fa fa-angle-right breadcrumb-separator" aria-hidden="true"></i><li><a href="/country/united-kingdom">United Kingdom</a></li><i class="fa fa-angle-right breadcrumb-separator" aria-hidden="true"></i><li>Brunel University London</li>
+    </ol>  
+  </div>
+</div> 
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://www.study.eu/",
+        "name": "Study.eu"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://www.study.eu/country/united-kingdom",
+        "name": "United Kingdom"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "https://www.study.eu/university/brunel-university-london",
+        "name": "Brunel University London"
+      }
+    }
+  ]
+}
+</script>
+
+<div class="container" style="position: relative;">
+
+  <div class="row">
+
+    <div class="sidebar col-md-4 col-md-push-8">
+      
+      <table class="entry-details-table">
+        <tbody>
+            <tr>
+              <th class="university-logo" colspan="2">
+                <img alt="Brunel University London - Logo" title="Brunel University London - Logo" class="university-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_brunel-university-london-210-logo.png" />
+              </th>
+            </tr>
+          
+          <tr>
+            <td class="university-name" colspan="2">Brunel University London</td>
+          </tr>
+          
+          <tr>
+            <td class="table-entry-name">Location:</td>
+            <td>
+                  Uxbridge (<a href="/country/united-kingdom">United Kingdom</a>)
+                  
+            </td>
+          </tr>
+          
+          
+            
+          
+          <tr>
+            <td class="table-entry-name">Founded:</td>
+            <td>1966</td>
+          </tr>
+
+          <tr>
+            <td class="table-entry-name">Students:</td>
+            <td>
+              12,746
+            </td>
+          </tr>
+
+          
+          <tr>
+            <td class="table-entry-name">Ranking: <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Times Higher Education World University Rankings 2020"></i></td>
+            <td title="Times Higher Education World University Rankings 2020">
+              #170 (Europe)<br />
+              #351 (World)<br />
+            </td>
+          </tr>
+          
+
+            <tr>
+              <td class="table-entry-name">Listed study programmes:</td>
+              <td><a href="#university-programmes">205</a></td>
+            </tr>
+          
+          
+          
+
+        </tbody>
+      </table>
+      
+      
+
+
+      
+      
+      
+        
+        <div class="sidebar-container">
+          <strong>Featured universities in the United Kingdom:</strong>
+          <div class="featured-university-container">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a href="/university/university-of-kent">
+                    <img alt="University of Kent" title="University of Kent" class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_university-of-kent-logo.svg" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a href="/university/university-of-kent">University of Kent</a><br />
+                  Canterbury, 
+                  <a href="/country/united-kingdom">United Kingdom</a><br />
+                  521 study programmes
+              </div>
+            </div>
+          </div>
+          <div class="featured-university-container">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a href="/university/falmouth-university">
+                    <img alt="Falmouth University" title="Falmouth University" class="search-result-logo" src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_falmouth-university-logo.png" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a href="/university/falmouth-university">Falmouth University</a><br />
+                  Falmouth, 
+                  <a href="/country/united-kingdom">United Kingdom</a><br />
+                  70 study programmes
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+          
+      
+    </div>
+  
+  
+  
+    <div class="content col-md-8 col-md-pull-4">
+
+      <h1>Brunel University London</h1>
+      
+        <div class="bnnr-container">
+  <a target="_blank" rel="nofollow" data-track-rendering-ga="true" data-track-click-ga="true" data-track-click="true" data-event-category="BC" data-event-label="CODE Berlin" data-trackvalue-bc-id="41" data-trackvalue-href="https://code.berlin/en/?utm_source=Study.eu&amp;utm_medium=Banner" href="https://code.berlin/en/?utm_source=Study.eu&amp;utm_medium=Banner">
+    <img class="bnnr" loading="lazy" src="https://study-eu.s3.amazonaws.com/uploads/bc/bc-code-berlin-desktop.png" />
+</a></div>
+
+      
+      <div class="content-description">
+        <blockquote cite="http://www.brunel.ac.uk/study/why-brunel">
+<p>At Brunel, you&rsquo;ll learn to apply your mind to real‑world problems in real-life situations. Our teaching is informed by internationally renowned research, delivered by experts and supported by some of the best equipment and facilities around, as close as possible to the world of work.</p>
+<footer>brunel.ac.uk</footer></blockquote>
+      </div>
+    
+    <a id="university-programmes"><hr /></a>
+    
+    
+    
+    
+      <div class="alert alert-info" role="alert">
+        This is a selection of study programmes at Brunel University London. Additional listings will be added shortly.
+      </div>
+    
+
+    <ul class="nav nav-tabs">
+      
+        <li class="active"><a data-toggle="tab" href="#tab-bachelor">Bachelor’s<br/>programmes</a></li>
+      
+        <li><a data-toggle="tab" href="#tab-master">Master’s<br/>programmes</a></li>
+      
+      
+    </ul>
+
+    <div class="tab-content">
+    
+        <div id="tab-bachelor" class="tab-pane active">
+          <h4>Bachelors at Brunel University London</h4>
+            <div aria-multiselectable="true" role="tablist" id="accordion-bachelor" class="panel-group">
+
+      <div class="panel panel-default"> <a title="Art, Design &amp; Media" aria-controls="collapse-bachelor-1" aria-expanded="false" href="#collapse-bachelor-1" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-1" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Art, Design &amp; Media <span class="discipline-programmes-count">(30)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-1" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-1" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/brunel-university-london/digital-design">Digital Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/digital-design-with-placement">Digital Design with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/economics-and-business-finance-with-placement">Economics and Business Finance with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/film-and-television-studies-cd8c216c-7670-44e2-9ccd-fc9fcd70692b">Film and Television Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/film-and-television-studies-and-english">Film and Television Studies and English</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/film-and-television-studies-and-english-with-placement">Film and Television Studies and English with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/film-and-television-studies-with-placement">Film and Television Studies with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/film-production-601e3528-9eb0-427f-8a9b-6918748edf68">Film Production</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/film-production-and-theatre">Film Production and Theatre</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/film-production-and-theatre-with-placement">Film Production and Theatre with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/film-production-with-placement">Film Production with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/games-design-cc5b38ce-c1ef-4f65-bd3b-fe0c3b5d5802">Games Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/games-design-and-creative-writing">Games Design and Creative Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/industrial-design-and-technology">Industrial Design and Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/industrial-design-and-technology-with-placement">Industrial Design and Technology with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/journalism-and-culture">Journalism and Culture</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/music-5144684f-d871-4364-a891-410969d93851">Music</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/music-with-placement">Music with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/product-design-f94aac73-0e65-408e-81bc-09cef42e7211">Product Design</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/product-design-engineering-70e5700f-ffc6-4cca-a6e2-9df0fe520689">Product Design Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/product-design-engineering-with-placement">Product Design Engineering with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/product-design-with-placement">Product Design with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/theatre">Theatre</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/theatre-and-creative-writing">Theatre and Creative Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/theatre-and-creative-writing-with-placement">Theatre and Creative Writing with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/theatre-and-english-e84817e2-91d7-40e1-b56e-6e677d7c0ecc">Theatre and English</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/theatre-and-english-with-placement">Theatre and English with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/theatre-with-placement">Theatre with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/visual-effects-and-motion-graphics">Visual Effects and Motion Graphics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/visual-effects-and-motion-graphics-with-placement">Visual Effects and Motion Graphics with Placement</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Business &amp; Management" aria-controls="collapse-bachelor-2" aria-expanded="false" href="#collapse-bachelor-2" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-2" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Business &amp; Management <span class="discipline-programmes-count">(29)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-2" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-2" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/brunel-university-london/accountancy-c169847c-ff04-45e6-9818-912c413c7348">Accountancy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/accountancy-with-placement">Accountancy with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/banking-and-finance-794e3ed5-cbe1-4765-8830-6337d455cb6d">Banking and Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/banking-and-finance-with-placement">Banking and Finance with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/business-and-management-bfd2a6e1-cb3f-46c7-8116-3d3e625be488">Business and Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/business-and-management-accounting">Business and Management (Accounting)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/business-and-management-accounting-with-placement">Business and Management (Accounting) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/business-and-management-entrepreneurship-and-innovation">Business and Management (Entrepreneurship and Innovation)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/business-and-management-entrepreneurship-and-innovation-with">Business and Management (Entrepreneurship and Innovation) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/business-and-management-human-resource-management-with-place">Business and Management (Human Resource Management) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/business-and-management-human-resourse-management">Business and Management (Human Resourse Management)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/business-and-management-marketing-81b8a1b0-8c2c-4a7c-874f-57c36d9e9eb2">Business and Management (Marketing)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/business-and-management-marketing-with-placement">Business and Management (Marketing) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/business-and-management-with-placement">Business and Management with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/communication-and-media-studies">Communication and Media Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/communication-and-media-studies-with-placement">Communication and Media Studies with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/economics-and-accounting-8c0f5b40-db54-4479-8d85-0b49f20de8d8">Economics and Accounting</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/economics-and-accounting-with-placement">Economics and Accounting with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/economics-and-business-finance">Economics and Business Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/economics-and-management-906c4c03-9e6b-4641-83de-ba8f55e784bd">Economics and Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/economics-and-management-with-placement">Economics and Management with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/finance-and-accounting-2c9e4d19-03fe-4d5c-a9c2-64b920655c57">Finance and Accounting</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/finance-and-accounting-with-placement">Finance and Accounting with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/financial-mathematics-6e14e91d-bdc3-418a-b12c-e5b6a4dcbfbe">Financial Mathematics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/financial-mathematics-2893687f-5b50-4e4a-bae1-090929bd5592">Financial Mathematics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/global-challenges-global-innovation">Global Challenges (Global Innovation)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/global-challenges-global-innovation-with-placement">Global Challenges (Global Innovation) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/international-business-b791f465-4c50-499f-b2b4-81ae205ead6c">International Business</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/international-business-with-placement">International Business with Placement</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Computer Science &amp; IT" aria-controls="collapse-bachelor-62" aria-expanded="false" href="#collapse-bachelor-62" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-62" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Computer Science &amp; IT <span class="discipline-programmes-count">(26)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-62" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-62" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/brunel-university-london/business-computing">Business Computing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/business-computing-ebusiness">Business Computing (eBusiness)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/business-computing-ebusiness-with-placement">Business Computing (eBusiness) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/business-computing-human-computer-interaction">Business Computing (Human-Computer Interaction)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/business-computing-human-computer-interaction-with-placement">Business Computing (Human-Computer Interaction) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/business-computing-social-media">Business Computing (Social Media)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/business-computing-social-media-with-placement">Business Computing (Social Media) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/business-computing-with-placement">Business Computing with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/computer-science-d498da41-954d-4dde-93ac-188dbd59adc0">Computer Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/computer-science-artificial-intelligence-e11382aa-3e97-49ee-ba49-d8688eb2dff4">Computer Science (Artificial Intelligence)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/computer-science-artificial-intelligence-with-placement">Computer Science (Artificial Intelligence) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/computer-science-digital-media-and-games">Computer Science (Digital Media and Games)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/computer-science-digital-media-and-games-with-placement">Computer Science (Digital Media and Games) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/computer-science-network-computing">Computer Science (Network Computing)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/computer-science-network-computing-with-placement">Computer Science (Network Computing) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/computer-science-software-engineering-be211105-309e-4816-a856-fbdd3fad20b9">Computer Science (Software Engineering)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/computer-science-software-engineering-with-placement">Computer Science (Software Engineering) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/computer-science-with-placement">Computer Science with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/computer-systems-engineering-44fe64ec-43aa-492f-b819-27e0fafbf744">Computer Systems Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/computer-systems-engineering-with-placement">Computer Systems Engineering with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/electronic-electrical-engineering-artificial-intelligence">Electronic &amp; Electrical Engineering (Artificial Intelligence)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/electronic-electrical-engineering-artificial-intelligence-wi">Electronic &amp; Electrical Engineering (Artificial Intelligence) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/mathematics-and-computing-with-an-integrated-foundation-year">Mathematics and Computing with an Integrated Foundation Year with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/mathematics-and-computing-with-integrated-foundation-year">Mathematics and Computing with Integrated Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/mathematics-with-computer-science">Mathematics with Computer Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/mathematics-with-computer-science-and-placement">Mathematics with Computer Science and Placement</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Engineering &amp; Technology" aria-controls="collapse-bachelor-3" aria-expanded="false" href="#collapse-bachelor-3" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-3" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Engineering &amp; Technology <span class="discipline-programmes-count">(40)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-3" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-3" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/brunel-university-london/aerospace-engineering-0d7b9bb6-7bca-406d-a825-64dc66c28414">Aerospace Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/aerospace-engineering-a68c045b-e427-4d71-b776-2a702b2f1954">Aerospace Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/aerospace-engineering-with-placement">Aerospace Engineering with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/aerospace-engineering-with-placement-6244f823-463d-4f6c-92e1-ad66c93c7469">Aerospace Engineering with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/automotive-engineering-37d6179b-77a9-4bed-b312-eafe1ea0f0c3">Automotive Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/automotive-engineering-44b461f1-b4d6-4584-af9f-c486d3ac0a41">Automotive Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/automotive-engineering-with-placement-079c7f15-f1c8-405d-a9ad-77a2383ed325">Automotive Engineering with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/automotive-engineering-with-placement">Automotive Engineering with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/chemical-engineering-f6dcd853-fc89-42e5-a405-4e643b1cdb54">Chemical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/chemical-engineering-4ca54c57-f676-4192-ab4f-0c2cb565b540">Chemical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/chemical-engineering-with-placement">Chemical Engineering with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/chemical-engineering-with-placement-691a73ea-62eb-4a71-b90d-fa58813c68da">Chemical Engineering with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/civil-engineering-6ff832dc-31f3-452b-89cb-2759a49cb515">Civil Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/civil-engineering-0af8d450-317f-4866-bd1d-ed9896b81030">Civil Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/civil-engineering-with-placement">Civil Engineering with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/civil-engineering-with-placement-fda0edd3-7518-42c1-9ad9-a77d39f8626a">Civil Engineering with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/civil-engineering-with-sustainability">Civil Engineering with Sustainability</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/civil-engineering-with-sustainability-13f2226f-f01a-41dd-ac7a-c3fe0453c8d4">Civil Engineering with Sustainability</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/civil-engineering-with-sustainability-and-placement">Civil Engineering with Sustainability and Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/civil-engineering-with-sustainability-and-placement-8701c0c3-1187-4ef7-9593-b18087038e28">Civil Engineering with Sustainability and Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/electronic-and-electrical-engineering-8ec000ba-10d4-411f-b3b2-ac5385ce0d81">Electronic and Electrical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/electronic-and-electrical-engineering-100e58b7-3e6d-432d-ad84-257d01410576">Electronic and Electrical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/electronic-and-electrical-engineering-with-placement">Electronic and Electrical Engineering with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/electronic-and-electrical-engineering-with-placement-84b5781b-d903-4871-a1e0-dfb12a87daa4">Electronic and Electrical Engineering with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/electronic-electrical-engineering-artificial-intelligence">Electronic &amp; Electrical Engineering (Artificial Intelligence)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/electronic-electrical-engineering-artificial-intelligence-wi">Electronic &amp; Electrical Engineering (Artificial Intelligence) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/electronic-electrical-engineering-communication-systems">Electronic &amp; Electrical Engineering (Communication Systems)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/electronic-electrical-engineering-communication-systems-with">Electronic &amp; Electrical Engineering (Communication Systems) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/electronic-electrical-engineering-computer-systems">Electronic &amp; Electrical Engineering (Computer Systems)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/electronic-electrical-engineering-computer-systems-with-plac">Electronic &amp; Electrical Engineering (Computer Systems) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/electronic-electrical-engineering-energy-systems">Electronic &amp; Electrical Engineering (Energy Systems)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/electronic-electrical-engineering-energy-systems-with-placem">Electronic &amp; Electrical Engineering (Energy Systems) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/engineering-with-an-integrated-foundation-year">Engineering with an Integrated Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/engineering-with-an-integrated-foundation-year-with-placemen">Engineering with an Integrated Foundation Year with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/industrial-design-and-technology">Industrial Design and Technology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/industrial-design-and-technology-with-placement">Industrial Design and Technology with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/mechanical-engineering-2fec34ee-9425-414a-b3be-92074d083336">Mechanical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/mechanical-engineering-5cca33ec-5551-486b-bb57-a240180a2fb4">Mechanical Engineering</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/mechanical-engineering-with-placement-42af19bf-7bf1-48f2-9b19-133e94330125">Mechanical Engineering with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/mechanical-engineering-with-placement">Mechanical Engineering with Placement</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Environment &amp; Agriculture" aria-controls="collapse-bachelor-63" aria-expanded="false" href="#collapse-bachelor-63" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-63" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Environment &amp; Agriculture <span class="discipline-programmes-count">(6)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-63" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-63" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/brunel-university-london/environmental-sciences-0661603e-ddae-4a6e-9c0c-feee985a8fe0">Environmental Sciences</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/environmental-sciences-b845b560-21eb-4395-9409-1720fc60dc79">Environmental Sciences</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/environmental-sciences-with-placement">Environmental Sciences with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/environmental-sciences-with-placement-e63e7acf-902d-4000-aa64-8a06b66f20dc">Environmental Sciences with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/global-challenges-planetary-health">Global Challenges (Planetary Health)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/global-challenges-planetary-health-with-placement">Global Challenges (Planetary Health) with Placement</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Humanities" aria-controls="collapse-bachelor-64" aria-expanded="false" href="#collapse-bachelor-64" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-64" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Humanities <span class="discipline-programmes-count">(18)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-64" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-64" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/brunel-university-london/creative-writing-054151d7-4810-40fa-bfd2-c4517c4efeb2">Creative Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/creative-writing-with-placement">Creative Writing with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/english-7a7a2470-fb70-4bce-8826-de769918ef17">English</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/english-with-creative-writing-4c4beeaa-377c-4ce5-9a75-2bd98a7381bb">English with Creative Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/english-with-creative-writing-with-placement">English with Creative Writing with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/english-with-placement">English with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/film-and-television-studies-and-english">Film and Television Studies and English</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/film-and-television-studies-and-english-with-placement">Film and Television Studies and English with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/games-design-and-creative-writing">Games Design and Creative Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/military-and-international-history">Military and International History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/military-and-international-history-with-placement">Military and International History with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/modern-history-9f836fc2-8db4-41e0-8390-428d1f807b7c">Modern History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/politics-and-history">Politics and History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/politics-and-history-with-placement">Politics and History with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/theatre-and-creative-writing">Theatre and Creative Writing</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/theatre-and-creative-writing-with-placement">Theatre and Creative Writing with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/theatre-and-english-e84817e2-91d7-40e1-b56e-6e677d7c0ecc">Theatre and English</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/theatre-and-english-with-placement">Theatre and English with Placement</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Law" aria-controls="collapse-bachelor-4" aria-expanded="false" href="#collapse-bachelor-4" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-4" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Law <span class="discipline-programmes-count">(7)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-4" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-4" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/brunel-university-london/law-23268677-2b01-4e1f-a1f7-aa7c24eff0d0">Law</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/law-graduate-entry-with-placement">Law (Graduate Entry) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/law-with-criminal-justice">Law with Criminal Justice</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/law-with-criminal-justice-with-placement">Law with Criminal Justice with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/law-with-international-arbitration-commercial-law">Law with International Arbitration &amp; Commercial Law</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/law-with-international-arbitration-commercial-law-with-place">Law with International Arbitration &amp; Commercial Law with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/law-with-placement">Law with Placement</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Medicine &amp; Health" aria-controls="collapse-bachelor-5" aria-expanded="false" href="#collapse-bachelor-5" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-5" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Medicine &amp; Health <span class="discipline-programmes-count">(21)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-5" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-5" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/brunel-university-london/biomedical-sciences-c109311e-264d-4e0f-9dbd-1ab677d05801">Biomedical Sciences</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/biomedical-sciences-biochemistry">Biomedical Sciences (Biochemistry)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/biomedical-sciences-biochemistry-with-placement">Biomedical Sciences (Biochemistry) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/biomedical-sciences-genetics">Biomedical Sciences (Genetics)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/biomedical-sciences-genetics-with-placement">Biomedical Sciences (Genetics) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/biomedical-sciences-human-health">Biomedical Sciences (Human Health)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/biomedical-sciences-human-health-with-placement">Biomedical Sciences (Human Health) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/biomedical-sciences-immunology">Biomedical Sciences (Immunology)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/biomedical-sciences-immunology-with-placement">Biomedical Sciences (Immunology) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/biomedical-sciences-with-placement">Biomedical Sciences with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/occupational-therapy-985a5f1c-3690-448f-af23-bb4a70407f35">Occupational Therapy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/physical-education-and-youth-sport">Physical Education and Youth Sport</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/physical-education-coaching-and-sport-development">Physical Education, Coaching and Sport Development</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/physical-education-coaching-and-sport-development-with-place">Physical Education, Coaching and Sport Development with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/physiotherapy-cc62b3a5-2073-46c3-9260-ddc06ce654fc">Physiotherapy</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/psychology-sport-health-and-exercise">Psychology (Sport, Health and Exercise)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/psychology-sport-health-and-exercise-with-placement">Psychology (Sport, Health and Exercise) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/sport-health-and-exercise-sciences">Sport, Health and Exercise Sciences</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/sport-health-and-exercise-sciences-with-business-studies">Sport, Health and Exercise Sciences with Business Studies</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/sport-health-and-exercise-sciences-with-business-studies-wit">Sport, Health and Exercise Sciences with Business Studies with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/sport-health-and-exercise-sciences-with-placement">Sport, Health and Exercise Sciences with Placement</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Natural Sciences &amp; Mathematics" aria-controls="collapse-bachelor-6" aria-expanded="false" href="#collapse-bachelor-6" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-6" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Natural Sciences &amp; Mathematics <span class="discipline-programmes-count">(18)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-6" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-6" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/brunel-university-london/economics-and-mathematics-with-an-integrated-foundation-year">Economics and Mathematics with an Integrated Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/economics-and-mathematics-with-an-integrated-foundation-year-0e55f6d7-2a71-45ce-a32f-eafa7b708b5d">Economics and Mathematics with an Integrated Foundation Year with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/environmental-sciences-0661603e-ddae-4a6e-9c0c-feee985a8fe0">Environmental Sciences</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/environmental-sciences-b845b560-21eb-4395-9409-1720fc60dc79">Environmental Sciences</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/financial-mathematics-2893687f-5b50-4e4a-bae1-090929bd5592">Financial Mathematics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/financial-mathematics-6e14e91d-bdc3-418a-b12c-e5b6a4dcbfbe">Financial Mathematics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/financial-mathematics-with-placement-0b9dd601-1079-4a3b-836f-5755f307b26d">Financial Mathematics with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/financial-mathematics-with-placement">Financial Mathematics with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/mathematics-ee576df3-8b24-452a-b24a-766858086d78">Mathematics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/mathematics-04674c30-1e55-4494-b97f-70e32d757853">Mathematics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/mathematics-and-computing-with-an-integrated-foundation-year">Mathematics and Computing with an Integrated Foundation Year with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/mathematics-and-computing-with-integrated-foundation-year">Mathematics and Computing with Integrated Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/mathematics-statistics-with-management">Mathematics &amp; Statistics with Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/mathematics-statistics-with-management-with-placement">Mathematics &amp; Statistics with Management with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/mathematics-with-computer-science">Mathematics with Computer Science</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/mathematics-with-computer-science-and-placement">Mathematics with Computer Science and Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/mathematics-with-placement-152dffaf-e9b3-4f1f-a923-25f4c116a472">Mathematics with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/mathematics-with-placement">Mathematics with Placement</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Social Sciences" aria-controls="collapse-bachelor-7" aria-expanded="false" href="#collapse-bachelor-7" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-7" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Social Sciences <span class="discipline-programmes-count">(33)</span></span> </a>
+        <div aria-labelledby="heading-bachelor-7" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-7" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/brunel-university-london/anthropology-b9fff3b4-c67e-40ba-8efc-3c03741514c4">Anthropology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/anthropology-and-sociology-d77bfabf-6eeb-4495-a886-eecc80180d03">Anthropology and Sociology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/anthropology-and-sociology-with-placement">Anthropology and Sociology with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/anthropology-with-placement">Anthropology with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/economics-e88d4fc9-4d99-44d6-9239-7176121176aa">Economics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/economics-and-accounting-8c0f5b40-db54-4479-8d85-0b49f20de8d8">Economics and Accounting</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/economics-and-accounting-with-placement">Economics and Accounting with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/economics-and-business-finance">Economics and Business Finance</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/economics-and-business-finance-with-placement">Economics and Business Finance with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/economics-and-management-906c4c03-9e6b-4641-83de-ba8f55e784bd">Economics and Management</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/economics-and-management-with-placement">Economics and Management with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/economics-and-mathematics-with-an-integrated-foundation-year">Economics and Mathematics with an Integrated Foundation Year</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/economics-and-mathematics-with-an-integrated-foundation-year-0e55f6d7-2a71-45ce-a32f-eafa7b708b5d">Economics and Mathematics with an Integrated Foundation Year with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/economics-with-placement">Economics with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/education-ad6cc995-5ff0-48f3-963b-df4fc5063411">Education</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/education-with-placement">Education with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/international-politics-f09fede2-0485-43fe-bd98-8a309cead794">International Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/international-politics-with-placement">International Politics with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/politics-6ef01f9c-d0b1-484b-9262-9bb4b8ab53d4">Politics</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/politics-and-history">Politics and History</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/politics-and-history-with-placement">Politics and History with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/politics-and-sociology-911f47b9-9738-4d87-98c0-38d482169baf">Politics and Sociology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/politics-and-sociology-with-placement">Politics and Sociology with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/politics-with-placement">Politics with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/psychology-5124aedb-1be4-43f0-b98a-6f15bcabecfb">Psychology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/psychology-sport-health-and-exercise">Psychology (Sport, Health and Exercise)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/psychology-sport-health-and-exercise-with-placement">Psychology (Sport, Health and Exercise) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/psychology-with-placement">Psychology with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/social-work-2df17e55-abf2-4e92-a006-1627ad7b618c">Social Work</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/sociology-f368754b-7c9f-4ee5-a248-c78fa268eaef">Sociology</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/sociology-media">Sociology (Media)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/sociology-media-with-placement">Sociology (Media) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/sociology-with-placement">Sociology with Placement</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default" id="panel-bachelor-other"> <a title="Other subjects" aria-controls="collapse-bachelor-other" aria-expanded="false" href="#collapse-bachelor-other" data-parent="#accordion-bachelor" data-toggle="collapse" id="heading-bachelor-other" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Other subjects</span> <span class="discipline-programmes-count">(6)</span></a>
+        <div aria-labelledby="heading-bachelor-other" role="tabpanel" class="panel-collapse collapse" id="collapse-bachelor-other" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/brunel-university-london/global-challenges-security">Global Challenges (Security)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/global-challenges-security-with-placement">Global Challenges (Security) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/global-challenges-social-cohesion">Global Challenges (Social Cohesion)</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/global-challenges-social-cohesion-with-placement">Global Challenges (Social Cohesion) with Placement</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/life-sciences-fab38f1e-31d5-4163-b4e2-8d86530a7d26">Life Sciences</a> 
+              </li>
+              <li class="programme">
+                <a href="/university/brunel-university-london/life-sciences-with-placement">Life Sciences with Placement</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+
+  <script>
+  if ( $('#accordion-bachelor .panel-collapse').length == 1 ) {
+    // If Programmes at this level all fall into the same Discipline, expand it
+    $('#accordion-bachelor .panel-collapse').collapse('show');
+  }
+
+
+  $('.panel-collapse').on('shown.bs.collapse', function (e) {
+      var panel = $(this).closest('div.panel');
+      var panelTop = panel[0].getBoundingClientRect().top;
+      var navHeight = document.getElementById("navbar").offsetHeight;
+      var navBottom = document.getElementById("navbar").getBoundingClientRect().bottom;
+      
+      var visibleFromHere = Math.max(0, navBottom); // navBottom might be negative on desktop
+      
+      if (panelTop < visibleFromHere) {
+        // If the just expanded panel's top is above what's visible in the viewport, scroll up.
+        $('html,body').animate({
+            scrollTop: panel.offset().top-visibleFromHere-25
+        }, 500); 
+      }
+  }); 
+  </script>
+
+        </div>
+      
+        <div id="tab-master" class="tab-pane">
+          <h4>Masters at Brunel University London</h4>
+            <div aria-multiselectable="true" role="tablist" id="accordion-master" class="panel-group">
+
+      <div class="panel panel-default"> <a title="Business &amp; Management" aria-controls="collapse-master-2" aria-expanded="false" href="#collapse-master-2" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-2" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Business &amp; Management <span class="discipline-programmes-count">(1)</span></span> </a>
+        <div aria-labelledby="heading-master-2" role="tabpanel" class="panel-collapse collapse" id="collapse-master-2" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/brunel-university-london/design-and-branding-strategy">Design and Branding Strategy</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default"> <a title="Social Sciences" aria-controls="collapse-master-7" aria-expanded="false" href="#collapse-master-7" data-parent="#accordion-master" data-toggle="collapse" id="heading-master-7" role="tab" class="panel-heading collapsed"><span class="glyphicon icon-indicator"></span> <span class="panel-title">Social Sciences <span class="discipline-programmes-count">(1)</span></span> </a>
+        <div aria-labelledby="heading-master-7" role="tabpanel" class="panel-collapse collapse" id="collapse-master-7" aria-expanded="false">
+          <div class="panel-body">
+            <ul class="programmes">
+              <li class="programme">
+                <a href="/university/brunel-university-london/psychoanalysis-and-contemporary-society-ma">Psychoanalysis and Contemporary Society MA</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+
+  <script>
+  if ( $('#accordion-master .panel-collapse').length == 1 ) {
+    // If Programmes at this level all fall into the same Discipline, expand it
+    $('#accordion-master .panel-collapse').collapse('show');
+  }
+
+
+  $('.panel-collapse').on('shown.bs.collapse', function (e) {
+      var panel = $(this).closest('div.panel');
+      var panelTop = panel[0].getBoundingClientRect().top;
+      var navHeight = document.getElementById("navbar").offsetHeight;
+      var navBottom = document.getElementById("navbar").getBoundingClientRect().bottom;
+      
+      var visibleFromHere = Math.max(0, navBottom); // navBottom might be negative on desktop
+      
+      if (panelTop < visibleFromHere) {
+        // If the just expanded panel's top is above what's visible in the viewport, scroll up.
+        $('html,body').animate({
+            scrollTop: panel.offset().top-visibleFromHere-25
+        }, 500); 
+      }
+  }); 
+  </script>
+
+        </div>
+      
+    </div>
+    
+    <script>
+      $('.nav-tabs a:first').tab('show'); // Make sure the first tab is selected in case none of the rendered tabs are marked as active
+      
+      $('.nav-tabs a[href="#tab-bachelor"]').tab('show');
+    </script>
+    
+    
+    
+    
+    <h3>Rankings</h3>
+    
+      <p>
+        Brunel University London belongs to the top 400 universities in the world and the top 200 universities in Europe.
+      </p>
+    
+    <table class="table table-bordered table-striped">
+      <thead>
+        <th>Ranking</th>
+        <th>Year</th>
+        <th>Rank <br/> (in the world)</th>
+        <th>Rank <br/> (in Europe)</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Times Higher Education World University Rankings</td>
+          <td>2020</td>
+          <td class="text-right">351</td>
+          <td class="text-right">170</td>
+        </tr>
+        <tr>
+          <td>QS World University Rankings</td>
+          <td>2020</td>
+          <td class="text-right">359</td>
+          <td class="text-right">164</td>
+        </tr>
+        <tr>
+          <td>Shanghai Jiao Tong Academic Ranking of World Universities</td>
+          <td>2019</td>
+          <td class="text-right">501</td>
+          <td class="text-right">195</td>
+        </tr>
+      </tbody>
+    </table>
+    
+      <a href="/best-universities/united-kingdom">Check out the 105 best universities in the United Kingdom</a>
+    
+    
+    
+
+    
+      <h2>Additional information</h2>
+
+
+
+  <div class="panel panel-default">
+    <div class="panel-body university-information-panel">
+      <h3 class="university-information-header">Tuition fees at Brunel University London</h3>
+      
+            <h5>Students who are citizens of the EU/EEA:</h5>
+            <p>
+              The average tuition fees for students from the EU/EEA are 8,300&nbsp;GBP per year, ranging from 6,200&nbsp;GBP to 8,800&nbsp;GBP.
+            </p>
+
+            <h5>Students who are citizens from outside the EU/EEA:</h5>
+            <p>
+              The average tuition fees for students from outside the EU/EEA are 15,500&nbsp;GBP per year, ranging from 10,600&nbsp;GBP to 18,000&nbsp;GBP.
+            </p>
+          
+          <p class="university-information-footnote">
+            Tuition fees may vary for each study programme.
+          </p>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+      
+    
+      <div>
+        <h2>You might be interested in this:</h2>
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/article/the-study-eu-country-ranking-2018-for-international-students">
+              <div class="thumbnail home-country-card">  
+                    <img alt="The Study.EU Country Ranking 2018 for International Students" title="The Study.EU Country Ranking 2018 for International Students" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/282/slideshow_map-europe.jpg" />
+                  <div class="caption">
+                    <strong>The Study.EU Country Ranking 2018 for International Students</strong>              
+                  </div>
+              </div>
+</a>          </div>
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/article/a-brief-history-of-academic-scarves">
+              <div class="thumbnail home-country-card">  
+                    <img alt="A brief history of academic scarves" title="A brief history of academic scarves" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/227/slideshow_C170724NG_097_fitted.jpg" />
+                  <div class="caption">
+                    <strong>A brief history of academic scarves</strong>              
+                  </div>
+              </div>
+</a>          </div>
+          <div class="col-sm-12 col-md-4">
+            <a class="related-tracked" href="/country/united-kingdom">
+              <div class="thumbnail home-country-card">  
+                    <img alt="Study in the United Kingdom" title="Study in the United Kingdom" class="country-default-image" src="https://study-eu.s3.amazonaws.com/uploads/image/path/31/slideshow_united-kingdom-telephone.jpg" />
+                  <div class="caption">
+                    <strong>Study in the United Kingdom</strong>              
+                  </div>                  
+                
+              </div>
+</a>          </div>
+        </div>
+      </div>  
+    
+    </div>
+
+
+    
+
+
+    
+    
+    
+    
+    
+    
+  </div>
+  
+</div>
+
+
+<script>
+
+  $('[data-toggle="tooltip"]').tooltip();
+
+  $( function() {
+    $( ".accordion" ).accordion({
+      heightStyle: "content"
+    });
+  } );
+  
+  
+  handler = Gmaps.build('Google');
+  handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+    markers = handler.addMarkers([
+      {
+        "lat": 0,
+        "lng": 0,
+      }
+    ]);
+    handler.bounds.extendWith(markers);
+    handler.fitMapToBounds();
+  });
+  
+  
+  
+  
+</script>
+  
+
+    
+
+  
+  
+  <footer class="top-footer">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Merriweather Sans:300,400i,700']
+      }
+    });
+  </script> 
+
+  
+  <div class="container">
+  <div class="row">
+    
+    <div class="text-left col-md-8 col-xs-6" style="display: inline-block;float: left;">
+      <a href="/" title="Study.EU" data-track-click="true" data-event-category="Footer Logo"><img class="footer-logo" src="/assets/study-eu_logo_wb_200x66-8722da28bad82460d8951c34fe8b5ba8e11794b2fd21e83ee8c5fe54323ea73b.png" /></a><br />
+      <p>
+        Copyright &copy; 2021 <a title="Study.EU" href="/">Study.EU</a>
+      </p>
+      <p>
+        
+      </p>
+      <a class="social-link" href="https://www.facebook.com/StudyEU-168756646881605/" target="_blank" title="Like Study.EU on Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://twitter.com/wwwStudyEU" target="_blank" title="Follow Study.EU on Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://www.linkedin.com/company/study.eu/" target="_blank" title="Follow Study.EU on Linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    </div>
+    <div class="text-right col-md-4 col-xs-6">
+      <br /><br />
+          <a rel="nofollow" href="/page/imprint">Imprint</a>
+        &middot;
+          <a rel="nofollow" href="/page/about-study-eu">About Study.eu</a>
+        &middot;
+          <a rel="nofollow" href="/page/privacy-policy">Privacy Policy</a>
+        &middot;
+      <a href="/jobs">Jobs</a>
+      
+      <br />
+      
+      <a href="/press">Press</a>
+      
+      <!-- &middot; -->
+      
+        <!-- &mdash; //-->
+      
+      <br /><br />
+      <a href="/advertise-on-study-eu">Advertise on Study.eu</a>
+    </div>
+  </div>
+  </div>
+</footer>
+
+<a href="javascript:" id="scroll-to-top" title="Scroll back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+<script>
+  $(window).scroll(function() {
+      if ($(this).scrollTop() >= 100) {        // page is scrolled more than 100px
+          $('#scroll-to-top').fadeIn(500);
+      } else {
+          $('#scroll-to-top').fadeOut(500);
+      }
+  });
+  $('#scroll-to-top').click(function() {      // arrow is clicked
+      $('body,html').animate({
+          scrollTop : 0                       // scroll to top
+      }, 500);
+  });
+</script>
+
+
+  
+  <footer class="footer-countries">
+
+
+  <div class="container">
+    <div class="row">
+    
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <h5>Study in Europe:</h5>
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Austria" href="/country/austria">Austria</a><br />
+                <a title="Study in Belgium" href="/country/belgium">Belgium</a><br />
+                <a title="Study in the Czech Republic" href="/country/czech-republic">Czech Republic</a><br />
+                <a title="Study in Denmark" href="/country/denmark">Denmark</a><br />
+                <a title="Study in Estonia" href="/country/estonia">Estonia</a><br />
+                <a title="Study in the Faroe Islands" href="/country/faroe-islands">Faroe Islands</a><br />
+                <a title="Study in Finland" href="/country/finland">Finland</a><br />
+                <a title="Study in France" href="/country/france">France</a><br />
+                <a title="Study in Germany" href="/country/germany">Germany</a><br />
+                <a title="Study in Greece" href="/country/greece">Greece</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Hungary" href="/country/hungary">Hungary</a><br />
+                <a title="Study in Iceland" href="/country/iceland">Iceland</a><br />
+                <a title="Study in Ireland" href="/country/ireland">Ireland</a><br />
+                <a title="Study in Italy" href="/country/italy">Italy</a><br />
+                <a title="Study in Latvia" href="/country/latvia">Latvia</a><br />
+                <a title="Study in Liechtenstein" href="/country/liechtenstein">Liechtenstein</a><br />
+                <a title="Study in Lithuania" href="/country/lithuania">Lithuania</a><br />
+                <a title="Study in Malta" href="/country/malta">Malta</a><br />
+                <a title="Study in the Netherlands" href="/country/netherlands">Netherlands</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Norway" href="/country/norway">Norway</a><br />
+                <a title="Study in Poland" href="/country/poland">Poland</a><br />
+                <a title="Study in Portugal" href="/country/portugal">Portugal</a><br />
+                <a title="Study in Romania" href="/country/romania">Romania</a><br />
+                <a title="Study in Russia" href="/country/russia">Russia</a><br />
+                <a title="Study in Spain" href="/country/spain">Spain</a><br />
+                <a title="Study in Sweden" href="/country/sweden">Sweden</a><br />
+                <a title="Study in Switzerland" href="/country/switzerland">Switzerland</a><br />
+                <a title="Study in the United Kingdom" href="/country/united-kingdom">United Kingdom</a><br />
+            </div>
+          </div>
+        </div>
+    
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Recent articles:</h5>
+          </div>
+          <div class="col-md-8">
+              <p><a href="/article/what-to-study-to-become-an-entrepreneur">What to Study to Become an Entrepreneur?</a></p>
+              <p><a href="/article/guide-uk-post-study-work-visa-for-graduates">Guide: the UK Post-Study Work Visa for graduates</a></p>
+              <p><a href="/article/study-ecology">Study Ecology: All you need to know</a></p>
+              <p><a href="/article/study-international-relations-everything-you-need-to-know">Study International Relations? Everything you need to know</a></p>
+              <p><a href="/article/study-zoology">Study Zoology: All you need to know</a></p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  
+  </div>
+
+</footer>
+
+  
+  <footer class="footer-press">
+  <div class="container">
+    <div class="row footer-press-description">
+      <div class="col-md-12 text-center">
+        Study.EU has been mentioned in numerous news publications worldwide, such as:
+      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="L&#39;Étudiant (France)" title="L&#39;Étudiant (France)" data-src="/assets/press/letudiant_gray_200-57bccbdceaef3c62c8660629603372823c98afe433bd39bf6d42a73263c113c3.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Frankfurter Allgemeine (Germany)" title="Frankfurter Allgemeine (Germany)" data-src="/assets/press/faz_gray_300-b6e5e6022a7b164c24b69a51fb97a72715018db745fbcda8580675a507370b8b.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Standard (Hong Kong)" title="The Standard (Hong Kong)" data-src="/assets/press/the-standard-hong-kong_gray_200-f124ca057d2671730e1f6d996377ef4614a28ccf04ae04f730eaf16ed7ee0b46.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Independent (UK)" title="The Independent (UK)" data-src="/assets/press/the-independent-uk_gray_300-63238e279b3c62b1f87faf17fcbcf1f14a2e5b9229193a0431fc974da217d159.png" class="lazyload" />
+</a>      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Al-Masry Al-Youm (Egypt)" title="Al-Masry Al-Youm (Egypt)" data-src="/assets/press/al-masry_al-youm_gray_200-9d8e503cd53ec4d955c3e6f7bf2a1c0badb500a0d2bd8a1ef1d11acd686879e5.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Le Monde (France)" title="Le Monde (France)" data-src="/assets/press/le-monde_gray_200-24d8bca493f3a2b8e0150cb4ef38f00c9924ac5e7acfbdb8750076c949c70052.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Local (Europe)" title="The Local (Europe)" data-src="/assets/press/the-local_gray_200-7631164ea94edf8d065b3af6f64274416162d866ce1cea737c3ee25f28cdd098.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Forbes (USA)" title="Forbes (USA)" data-src="/assets/press/forbes_gray_200-deff6ef2c28ec5a275f404c5f59d56f4b687881eb39de52b79b5add3ca609fe2.png" class="lazyload" />
+</a>      </div>
+    </div>
+  </div>
+</footer>
+
+  
+  
+  
+  
+    <div class="cookies-eu js-cookies-eu row">
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+    <div class="cookies-eu-content-holder col-md-4 col-sm-6 col-xs-6 align-self-center">
+      Cookies &amp; analytics help us deliver our services.
+        <a href="/page/privacy-policy" class="cookies-eu-link" target="_blank"> Privacy policy </a>
+    </div>
+    <div class="cookies-eu-button-holder col-md-4 col-sm-6 col-xs-6">
+      <button class="cookies-eu-ok js-cookies-eu-ok btn btn-lg btn-primary" data-track-click-ga="true" data-event-category="Cookie Consent Button"> OK </button>
+    </div>
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+  </div>
+
+  
+  <script>
+  // Improved Ahoy view tracking with additional attributes
+  var additionalProperties = {};
+    additionalProperties["country_id"] = 42;
+    mainTrackableLink = "";
+    additionalProperties["university_id"] = 210;
+    mainTrackableLink = "https://www.study.eu/link/university/brunel-university-london/from-profile";
+  console.log("Ahoy: View with additional properties: "+JSON.stringify(additionalProperties));
+  ahoy.trackView(additionalProperties);
+</script>
+<a name="ga"></a> <!-- GA //-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42442116-3', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+  
+  
+  
+    
+  //############################################################
+  //########## 2018-07    NEW CUSTOM METHODS          ##########
+  
+  function getDataTrackAttributes(element) {
+    var data = {};
+    [].forEach.call(element.attributes, function(attr) {
+      if (/^data-trackvalue-/.test(attr.name)) {
+        // Relevant attributes would always be called "data-track-foobar"
+        var underscorename = attr.name.substr(16).replace(/-/g, "_");
+        data[underscorename] = parseInt(attr.value) || attr.value; // Provide as integer if possible, otherwise the original string
+      }
+    });
+    return data;
+  }
+  
+  // Set data-track-click and utm_source for all external links in the description content
+  var content_links = document.querySelectorAll('div.content-description a');
+  for (var i = 0; i < content_links.length; i++) {
+    if ( ((new URL(content_links[i].href, document.baseURI).href) == mainTrackableLink) || (content_links[i].host !== window.location.host) ) {
+      // Link is the main trackable link, or link is external --> add tracking and utm_source if not present
+      utm_url = new URL(content_links[i].href);
+      utm_url.searchParams.set("utm_source", "Study.eu"); // add (or overwrite existing) utm_source parameter
+      content_links[i].href = utm_url;
+      content_links[i].classList.add("external-tracked");
+      content_links[i].setAttribute("data-event-category", "Outbound Link");
+      content_links[i].setAttribute("data-event-label", content_links[i].href);
+      content_links[i].setAttribute("data-track-click", "true"); // Once data-track-click is set to true, initDataAttributes() below will add the id values
+    }
+  }
+  console.log("Modified "+content_links.length+" links in description content.");
+  
+  // Set data attributes for tracking of footer press links
+  footerPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < footerPressLinks.length; i++) {
+    footerPressLinks[i].setAttribute("data-track-click-ga", "true");
+    footerPressLinks[i].setAttribute("data-event-category", "Footer Press Link");
+    footerPressLinks[i].setAttribute("data-event-label", window.location.href);
+  }
+  
+  relatedLinks = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < relatedLinks.length; i++) {
+    relatedLinks[i].setAttribute("data-track-click-ga", "true");
+    relatedLinks[i].setAttribute("data-event-category", "Related Link");
+    relatedLinks[i].setAttribute("data-event-label", relatedLinks[i].getAttribute("href"));
+  }  
+  
+  function initDataAttributes() {
+    // Initialise element data attributes based on backend instance variables
+    elements = document.querySelectorAll('[data-track-click="true"],[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+        if (!elements[i].hasAttribute("data-trackvalue-country-id")) {
+          elements[i].setAttribute("data-trackvalue-country-id", "42");
+        }
+      
+        if (!elements[i].hasAttribute("data-trackvalue-university-id")) {
+          elements[i].setAttribute("data-trackvalue-university-id", "210");
+        }
+      
+    }
+    console.log("initDataAttributes()");
+  }
+  initDataAttributes();
+    
+  function trackClick(event, trackGA = true, trackAhoy = true) {
+    // When an element was clicked, track the click in GA and Ahoy
+    
+    strEventLabel = "";
+    if        ( event.currentTarget.hasAttribute("data-event-label") ) {
+      strEventLabel = event.currentTarget.getAttribute("data-event-label");
+    } else if ( event.currentTarget.hasAttribute("href") ) {
+      strEventLabel = event.currentTarget.href;
+    }
+    
+    ga('send', 'event', {
+      eventCategory:  event.currentTarget.getAttribute("data-event-category"),
+      eventAction:    'click',
+      eventLabel:     strEventLabel
+    });
+    
+    data = getDataTrackAttributes(event.currentTarget);
+    data["href"] = event.target.href;
+    data["page"] = window.location.pathname;
+    
+    /*ahoy.track (
+      event.currentTarget.getAttribute("data-event-category"),
+      {
+        country_id: 42, 
+        university_id: 210, 
+        
+        href: event.target.href,
+        page: window.location.pathname
+      }
+    );*/
+    
+    if (trackAhoy) {
+        data["medium"] = "Profile";
+      ahoy.track (
+        event.currentTarget.getAttribute("data-event-category")+" - click",
+        data
+      );
+    }
+    
+    console.log("trackClick(event, trackGA = "+trackGA+", trackAhoy = "+trackAhoy+"): " +
+      event.currentTarget.getAttribute("data-event-category") + ", " +
+      "{country_id: 42, university_id: 210, href: " + event.target.href + ", " +
+      "page:"+window.location.pathname+"});"
+    );
+  }
+  
+  
+  function trackClicksGA() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click-ga="true"]:not([data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event, true, false);
+      });
+    }
+    console.log("trackClicksGA(): "+elements.length+" elements");
+  }
+  trackClicksGA();
+  
+  function trackClicks() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event);
+      });
+    }
+    console.log("trackClicks(): "+elements.length+" elements");
+  }
+  trackClicks();
+  
+  function trackRenderingsGA() {
+    // Track renderings only in GA
+    // This would be for large-volume data that is interesting, but not mission-critical
+
+    elements = document.querySelectorAll('[data-track-rendering-ga="true"]:not([data-track-rendering="true"])');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+    }
+    
+    console.log("trackRenderingsGA(): "+elements.length+" elements");
+  }
+  trackRenderingsGA();
+  
+  function trackRenderings() {
+    // Track renderings in GA *and* Ahoy
+    elements = document.querySelectorAll('[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+      
+      data = getDataTrackAttributes(elements[i]);
+      data["href"] = elements[i].getAttribute("href");
+      data["page"] = window.location.pathname;
+      
+      ahoy.track (
+        elements[i].getAttribute("data-event-category")+" - rendered",
+        data
+      );
+    }
+    
+    console.log("trackRenderings(): "+elements.length+" elements");
+  }
+  trackRenderings();
+  
+  
+  
+    ga('send', 'event', {
+      eventCategory:  'Country Content',
+      eventAction:    'rendered',
+      eventLabel:     'United Kingdom',
+      nonInteraction: true
+    });
+
+  
+  //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  //############################################################
+
+  
+  
+  /*
+  anchorsExternalTracked = document.getElementsByClassName("external-tracked");
+  for (var i = 0 ; i < anchorsExternalTracked.length; i++) {
+    anchorsExternalTracked[i].addEventListener("click", function(event){
+      //event.preventDefault();
+      
+      handleOutboundLinkClicks(event);
+      
+      //document.location = this.href;
+      //var win = window.open(this.href, '_blank');
+      //win.focus();
+      
+    });
+    
+    // Trigger event that shows in GA that the link was rendered
+    ga('send', 'event', {
+      eventCategory: 'Outbound Link',
+      eventAction: 'rendered',
+      eventLabel: anchorsExternalTracked[i].href
+    });   
+  }
+  
+  anchorsRelatedTracked = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < anchorsRelatedTracked.length; i++) {
+    anchorsRelatedTracked[i].addEventListener("click", function(event){
+      handleRelatedLinkClicks(event);
+    });
+  }
+  
+  anchorsFeaturedUniversityTracked = document.getElementsByClassName("featured-university-tracked");
+  for (var i = 0 ; i < anchorsFeaturedUniversityTracked.length; i++) {
+    anchorsFeaturedUniversityTracked[i].addEventListener("click", function(event){
+      handleFeaturedUniversityLinkClicks(event);
+    });
+  }  
+  
+  
+  anchorsFooterPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < anchorsFooterPressLinks.length; i++) {
+    anchorsFooterPressLinks[i].addEventListener("click", function(event){
+      handleFooterPressLinkClicks(event);
+    });
+  }
+  
+  
+  anchorsCustomTracked = document.querySelectorAll('[data-ga-custom-event-label]');
+  for (var i = 0 ; i < anchorsCustomTracked.length; i++) {
+    anchorsCustomTracked[i].addEventListener("click", function(event){
+      handleCustomTracked(event);
+    });
+  }
+  */
+  
+  ////////////////////////////////////////////////////////////////////////////////
+
+  
+  
+</script>
+
+</body>
+</html>

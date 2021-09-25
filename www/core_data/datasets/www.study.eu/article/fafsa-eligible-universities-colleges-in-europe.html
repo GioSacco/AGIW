@@ -1,0 +1,3855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"cb4ef145dd","applicationID":"55169925","transactionName":"Jg5fTRMJXFtQQBpWQxEIUlUEFR9EXV1C","queueTime":3,"applicationTime":578,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"cb4ef145dd",applicationID:"55169925"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+  <title>FAFSA: Eligible universities &amp; colleges in Europe | Study.EU</title>
+   
+  <link rel="stylesheet" media="all" href="/assets/application-788bf60a726cbc46bce208400674992d5b5b0e3a0892577e97f4ee25b84407b9.css" />
+  <script src="/assets/application-6d00a9f66b3f7e1a7db9282e671658ce415a54e8512569e7b539a89dc0fb74a5.js"></script>
+  
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="dxC6QhElSOD53XhK9/OeuIeXdYHJiwRwkiz1HFg/EPCvpQUBQXU/xD+ilmcuACWOo5Jfb77Xrmsw6OIc1WUBpw==" />
+  
+  
+    
+  
+  
+  
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-29b05ed0a02376d0d37f92df42a0d954d97274430a0f6264e4d19745408f15c8.ico" />
+  
+  <meta name="description" content="Are you a US student planning to study in Europe? These 600 universities are eligible for financial aid through FAFSA." />
+  
+  <meta name="keywords" content="study in europe, universities, europe, master, bachelor, masters, bachelors, msc, bsc, llb, llm, phd, doctorate, university, study abroad" />
+  <meta name="google-site-verification" content="9sv6t--Xh8SiHr58R3chJHOJVHixvhn6jBK8Qzc9Z9U" />
+  <meta name="msvalidate.01" content="5E3AE5307267C1BED099C27EB59E264E" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="author" content="Denise Cope">
+  
+  
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@wwwStudyEU" />
+  <meta name="twitter:title" content="FAFSA: Eligible universities &amp; colleges in Europe" />
+  
+  <meta property="og:title"  content="FAFSA: Eligible universities &amp; colleges in Europe" />
+  
+  
+  
+  
+  
+      <meta property="og:type" content="article" />
+      <meta property="article:publisher" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+      <meta property="article:author" content="https://www.facebook.com/StudyEU-Study-in-Europe-168756646881605/" />
+  
+  <meta property="og:description" content="Are you a US student planning to study in Europe? These 600 universities are eligible for financial aid through FAFSA." />
+  <meta property="og:image" content="https://study-eu.s3.amazonaws.com/uploads/image/path/387/social_1200_ep-european-students-1.jpg" />
+  
+</head>
+<body>
+
+  <nav id="navbar" class="navbar navbar-static-top container container-fluid">
+  
+  <div class="container">
+    <div class="row" style="position: relative;">
+        <div class="col-md-3 col-xs-9 navbar-header">
+          <a class="navbar-brand" href="/" title="Study.EU">
+            <img alt="Study.EU" class="homepage-logo" src="/assets/study-eu_logo-ee9afe0c98ee9ac266f676d5dcb967023df14f95661b91c7812bef38a3b0c03a.png" />
+          </a>
+        </div>
+        <div class="col-md-8 bottom-align-text">
+            <strong class="navbar-claim">Your gateway to universities in Europe</strong>
+        </div>
+        <div class="col-md-1 col-xs-3 navbar-search-link-container">
+          <div class="navbar-search-link">
+            <a id="navbar-search-button" data-track-click-ga="true" data-event-category="Navbar Search Button" data-event-label="/article/fafsa-eligible-universities-colleges-in-europe" href="/search?sort=recommended">
+              <i class="fa fa-search" aria-hidden="true"></i>
+</a>          </div>
+        </div>
+    </div>
+</div>
+  
+</nav>
+
+  <div class="container" id="div-main-container" role="main">
+
+  </div>
+  
+  
+
+
+
+
+
+<div class="header-image">
+  <div class="container">
+    <div class="header-image-cta">
+      <h1 class="article-title">FAFSA: Eligible universities &amp; colleges in Europe</h1>
+      <h2></h2>
+    </div>
+  </div>
+
+    <img alt="" title="" srcset="https://study-eu.s3.amazonaws.com/uploads/image/path/387/wide_mobile_ep-european-students-1.jpg 1280w, https://study-eu.s3.amazonaws.com/uploads/image/path/387/wide_fullhd_ep-european-students-1.jpg 1920w" src="https://study-eu.s3.amazonaws.com/uploads/image/path/387/wide_fullhd_ep-european-students-1.jpg" />
+    
+    <div class="image-credits">
+      <span class="image-credits-span">
+        <a target="_blank" rel="nofollow" title="Board of European Students of Technology (BEST)" href="https://flickr.com/photos/117994717@N06/33764821374/">Board of European Students ...</a> by École polytechnique - J.Barande, <a target="_blank" rel="nofollow" href="https://creativecommons.org/licenses/by-sa/2.0/legalcode">CC BY-SA 2.0</a>, modified
+      </span>
+    </div>
+
+</div>
+
+<div class="div-breadcrumbs">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="/">Study.eu</a></li><i class="fa fa-angle-right breadcrumb-separator" aria-hidden="true"></i><li>FAFSA: Eligible universities &amp; colleges in Europe</li>
+    </ol>  
+  </div>
+</div> 
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://www.study.eu/",
+        "name": "Study.eu"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://www.study.eu/article/fafsa-eligible-universities-colleges-in-europe",
+        "name": "FAFSA: Eligible universities & colleges in Europe"
+      }
+    }
+  ]
+}
+</script>
+
+<div class="container" style="position: relative;">
+
+  <div class="row">
+
+    <div class="content col-md-8">
+      <h1 class="article-title">FAFSA: Eligible universities &amp; colleges in Europe</h1>
+      
+      <div class="article-info-top">
+          Author: <span class="article-author-top">Denise Cope</span>
+          &mdash;
+          <span class="article-last-udpated">Last update: 18 August 2020</span>
+      </div>
+      
+      <p><strong>If you are from the United States and want to get your degree abroad, you may be eligible for financial aid through the FAFSA program.</strong></p>
+<p>Whether or not you are eligible for funding through FAFSA depends on a variety of factors. One of them is whether the overseas university you want to apply to is recognised by the U.S. Department of Education for the FAFSA scheme.</p>
+<p><a href="../../../article/us-students-how-to-use-fafsa-for-a-degree-in-europe"><strong>Read more about how FAFSA works for studying abroad</strong></a></p>
+<p>The table below contains all international schools that are eligible, sorted by country. There are two categories: If a university is listed as <em>&ldquo;eligible,&rdquo;</em> it means that you can use FAFSA for loans towards your abroad degree. Some universities are classified as <em>&ldquo;deferment only&rdquo;</em>: That means you cannot use FAFSA loans for your abroad degree, but any student loan you currently have can be put into deferred status while attending that university, assuming you follow all guidelines.</p>
+<h3>Universities in Europe that are FAFSA-eligible</h3>
+<p>Around 600 universities in Europe are officially recognised under the FAFSA scheme:</p>
+<table class="table table-bordered table-striped">
+<thead>
+<tr>
+<th class="col-md-6">University</th>
+<th class="col-md-3">Country</th>
+<th class="col-md-3">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>American University of Armenia</td>
+<td>Armenia</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Internationales Theologisches Institut</td>
+<td>Austria</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Antwerp Management School</td>
+<td>Belgium</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>College of Europe</td>
+<td>Belgium</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/ghent-university">Ghent University</a></td>
+<td>Belgium</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/ku-leuven">Katholieke Universiteit Leuven</a></td>
+<td>Belgium</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/universite-de-liege">Universit&eacute; de Li&egrave;ge</a></td>
+<td>Belgium</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-antwerp">Universiteit Antwerpen</a></td>
+<td>Belgium</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Von Karman Inst For Fluid Dynamics</td>
+<td>Belgium</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>University Sarajevo School of Science and Technology</td>
+<td>Bosnia-Herzegovina</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>American University in Bulgaria</td>
+<td>Bulgaria</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Anglo-americka vysoka skola, z.u.</td>
+<td>Czech Republic</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Charles University in Prague, Faculty of Medicine in Hradec Kralove,CZ</td>
+<td>Czech Republic</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Czech University of Life Sciences</td>
+<td>Czech Republic</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/masaryk-university">Masarykova Univerzita</a></td>
+<td>Czech Republic</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Univerzita Karlova v Praze, First Faculty of Medicine (The)</td>
+<td>Czech Republic</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/aarhus-university-au">Aarhus University</a></td>
+<td>Denmark</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/copenhagen-business-school-cbs">Copenhagen Business School</a></td>
+<td>Denmark</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-copenhagen-ku">University of Copenhagen</a></td>
+<td>Denmark</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/anglia-ruskin-university">Anglia Ruskin University</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/arts-university-bournemouth">Arts University Bournemouth</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/aston-university">Aston University</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Bath Spa University</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/birmingham-city-university">Birmingham City University</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/bournemouth-university">Bournemouth University</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Bristol Old Vic Theatre School</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/brunel-university-london">Brunel University London</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/city-university-of-london">City, University of London</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Cliff College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Cranfield University</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/de-montfort-university">De Montfort University</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/edge-hill-university">Edge Hill University</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/falmouth-university">Falmouth University</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/goldsmiths-university-of-london">Goldsmiths College - University of London</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Guildhall School of Music &amp; Drama</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Hartpury University</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Heythrop College, University of London</td>
+<td>England (UK)</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/imperial-college-london">Imperial College London</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/king-s-college-london">King's College London</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/kingston-university">Kingston University</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Leeds Arts University</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/leeds-beckett-university">Leeds Beckett University</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/liverpool-hope-university">Liverpool Hope University</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Liverpool Institute for Performing Arts (The)</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/liverpool-john-moores-university">Liverpool John Moores University</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>London Academy of Music &amp; Dramatic Art</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>London Contemporary Dance School</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>London Film School</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/london-metropolitan-university">London Metropolitan University</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/london-south-bank-university">London South Bank University</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/loughborough-university">Loughborough University</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/manchester-metropolitan-university">Manchester Metropolitan University (The)</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/middlesex-university-london">Middlesex University</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>National Film &amp; Television School</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Nazarene Theological College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Newcastle College</td>
+<td>England (UK)</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Northern School of Contemporary Dance</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Norwich University of the Arts</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/nottingham-trent-university">Nottingham Trent University</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/oxford-brookes-university">Oxford Brookes University</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/queen-mary-university-of-london">Queen Mary University of London</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Ravensbourne University London</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Regent's University London</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Richmond, The American International University in London</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-roehampton">Roehampton University</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Rose Bruford College of Theatre and Performance</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Royal Academy of Music</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Royal Agricultural University</td>
+<td>England (UK)</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Royal Central School of Speech and Drama (The)</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Royal College of Art</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Royal College of Music</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Royal Northern College of Music</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/royal-veterinary-college">Royal Veterinary College (The), University of London</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/southampton-solent-university">Solent University</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>St George's Hospital Medical School</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>St Mary's University, Twickenham</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/staffordshire-university">Staffordshire University</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Trinity Laban Conservatoire of Music and Dance</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University College Birmingham</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-for-the-creative-arts">University for the Creative Arts</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-bath">University of Bath</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-bedfordshire">University of Bedfordshire</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-birmingham">University of Birmingham (The)</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-bradford">University of Bradford</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-brighton">University of Brighton</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-bristol">University of Bristol</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-buckingham">University of Buckingham</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-cambridge">University of Cambridge</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Christ's College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Clare College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Clare Hall</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Corpus Christi College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Darwin College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Downing College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Emmanuel College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Fitzwilliam College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Girton College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Gonville &amp; Caius College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Homerton College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Hughes Hall</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Jesus College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - King's College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Lucy Cavendish College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Magdalene College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Murray Edwards College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Newnham College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Pembroke College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Peterhouse</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Queen's College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Robinson College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Saint John's College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Selwyn College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Sidney Sussex College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - St Edmund's College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - St. Catharine's College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Trinity College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Trinity Hall</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge - Wolfson College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Cambridge Churchill College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-central-lancashire">University of Central Lancashire</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-chester">University of Chester</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Chichester</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-derby">University of Derby</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/durham-university">University of Durham</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-east-anglia">University of East Anglia</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-east-london">University of East London</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-essex">University of Essex</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-exeter">University of Exeter</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-greenwich">University of Greenwich</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-hertfordshire">University of Hertfordshire</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Huddersfield (The)</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-hull">University of Hull</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Keele</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-kent">University of Kent</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/lancaster-university">University of Lancaster</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-leeds">University of Leeds</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-leicester">University of Leicester</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-lincoln">University of Lincoln</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-liverpool">University of Liverpool (The)</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/london-business-school">University of London - London Business School</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/london-school-of-economics-and-political-science">University of London - London School of Economics &amp; Political Science</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/london-school-of-hygiene-tropical-medicine">University of London - London School of Hygiene &amp; Tropical Medicine</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/royal-holloway-university-of-london">University of London - Royal Holloway</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of London - School of Advanced Study</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of London - School of Oriental &amp; African Studies</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of London - The Courtauld Institute of Art</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-college-london">University of London - University College London</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/birkbeck-university-of-london">University of London, Birkbeck</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-manchester">University of Manchester (The)</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/newcastle-university">University of Newcastle upon Tyne</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/northumbria-university">University of Northumbria at Newcastle</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-nottingham">University of Nottingham</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-oxford">University of Oxford</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Balliol College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Blackfriars</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Brasenose College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Campion Hall</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Christ Church College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Corpus Christi College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Exeter College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Green Templeton College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Harris Manchester College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Hertford College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Jesus College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Keble College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Lady Margaret Hall</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Linacre College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Lincoln College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Magdalen College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Mansfield College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Merton College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - New College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Nuffield College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Oriel College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Pembroke College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Queen's College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Regent's Park College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Somerville College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - St Anne's College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - St Antony's College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - St Benet's Hall</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - St Catherine's College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - St Edmund Hall</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - St Hilda's College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - St Hugh's College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - St John's College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - St Peter's College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Trinity College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - University College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Wadham College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Wolfson College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Worcester College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford - Wycliffe Hall</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Oxford-St. Stephen's House</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-plymouth">University of Plymouth</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-portsmouth">University of Portsmouth</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-reading">University of Reading</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-salford">University of Salford (The)</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-sheffield">University of Sheffield (The)</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-southampton">University of Southampton</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-sunderland">University of Sunderland</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-surrey">University of Surrey</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-sussex">University of Sussex</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-the-arts-london">University of the Arts London</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-the-west-of-england-bristol">University of the West of England, Bristol</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-warwick">University of Warwick</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of West London (The)</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-westminster">University of Westminster</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-winchester">University of Winchester (The)</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-wolverhampton">University of Wolverhampton</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Worcester</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-york">University of York</a></td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Writtle University College</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>York St John University</td>
+<td>England (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-the-arts-helsinki">Sibelius Academy</a></td>
+<td>Finland</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-turku">University of Turku (Turun yliopisto)</a></td>
+<td>Finland</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>American Business School of Paris</td>
+<td>France</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>American Graduate School in Paris</td>
+<td>France</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>American University of Paris</td>
+<td>France</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Ecole des Hautes Etudes Commerciales</td>
+<td>France</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/edhec-business-school">EDHEC Business School</a></td>
+<td>France</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>ESSEC Business School</td>
+<td>France</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/grenoble-ecole-de-management">Grenoble Ecole de Management</a></td>
+<td>France</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/rennes-school-of-business">Groupe ESC Rennes</a></td>
+<td>France</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>INSEAD</td>
+<td>France</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Institut d'Economie Scientifique et de Gestion</td>
+<td>France</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Institut D'Etudes Politiques De Paris</td>
+<td>France</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/international-space-university">International Space University</a></td>
+<td>France</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>La Rochelle Business School -Groupe Sup de Co La Rochelle</td>
+<td>France</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Universite Paris 1 Panth&eacute;on-Sorbonne</td>
+<td>France</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Universite Toulouse 1 Capitole</td>
+<td>France</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Akademie der Bildenden K&uuml;nste M&uuml;nchen</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Akademie der Bildenden K&uuml;nste N&uuml;rnberg</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Albert-Ludwigs-Universitat Freiburg im Breisgau</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Alice Salomon Hochschule Berlin</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Augustana-Hochschule Neuendettelsau</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/bauhaus-universitat-weimar">Bauhaus Universitat Weimar</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Bergische Universit&auml;t Wuppertal</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/beuth-university-of-applied-sciences-berlin">Beuth Hochschule f&uuml;r Technik Berlin</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Brandenburgische Technische Universitat Cottbus-Senftenberg</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/bucerius-law-school">Bucerius Law School - Hochschule fur Rechtswissenschaft</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Burg Giebichenstein Kunsthochschule Halle</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-oldenburg">Carl von Ossietzky Universitat Oldenburg</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/kiel-university">Christian Albrechts Universitat zu Kiel</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Deutsche Hochschule fur Verwaltungswissenschaften Speyer</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Deutsche Sporthochschule Koln</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Duale Hochschule Baden-W&uuml;rttemberg</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Eberhard-Karls-Universitat-Tubingen</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/ebs-universitat-fur-wirtschaft-und-recht">EBS Universit&auml;t f&uuml;r Wirtschaft und Recht</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Ernst-Abbe-Hochschule Jena-University of Applied Sciences</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-greifswald">Ernst-Moritz-Arndt Universitat Greifswald</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/esmt-berlin">ESMT European School of Management and Technology GmbH</a></td>
+<td>Germany</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/europa-universitat-flensburg">Europa-Universit&auml;t Flensburg</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Europa-Universitat Viadrina Frankfurt(Oder)</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Evangelische Fachhochschule Darmstadt</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Evangelische Fachhochschule Rheinland-Westfalen Lippe</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Evangelische Hochschule Berlin</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Evangelische Hochschule Freiburg, staatlich anerkannte Hochschule der</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Evangelische Hochschule f&uuml;r soziale Arbeit und Diakonie</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Evangelische Hochschule Ludwigsburg, Hochschule f&uuml;r Soziale Arbeit, Di</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Evangelische Hochschule Nurnberg</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/fh-aachen-university-of-applied-sciences">Fachhochschule Aachen</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Fachhochschule Bielefeld</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/dortmund-university-of-applied-sciences-and-arts">Fachhochschule Dortmund</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Fachhochschule Erfurt</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/kiel-university-of-applied-sciences">Fachhochschule Kiel</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/luebeck-university-of-applied-sciences">Fachhochschule Lubeck</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Fachhochschule Munster</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Fachhochschule Potsdam</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Fachhochschule Stralsund</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Fachhochschule S&uuml;dwestfalen</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Fachhochschule Westkuste Hochschule f&uuml;r Wirtschaft und Technik</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Fernuniversitat in Hagen</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Filmuniversit&auml;t Babelsberg Konrad Wolf</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Folkwang Universit&auml;t der K&uuml;nste</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Frankfurt School of Finance &amp; Management gGmbH</td>
+<td>Germany</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/freie-universitat-berlin">Freie Universitat Berlin</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/frankfurt-university-of-applied-sciences">FrFrankfurt University of Applied Sciences</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/fau-erlangen-nurnberg">Friedrich-Alexander-Universitat Erlangen-Nurnberg</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/friedrich-schiller-university-jena">Friedrich-Schiller-Universitat Jena</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-gottingen">Georg-August Universitat Gottingen</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/goethe-university-frankfurt">Goethe-Universit&auml;t Frankfurt am Mai</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/leibniz-universitat-hannover">Gottfried Wilhelm Leibniz Universit&auml;t Hannover</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/heinrich-heine-university-dusseldorf">Heinrich-Heine-Universitat Dusseldorf</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Helmut-Schmidt-Universit&auml;t/Universit&auml;t der Bundeswehr Hamburg</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/hertie-school">Hertie School of Governance</a></td>
+<td>Germany</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/hhl-leipzig-graduate-school-of-management">HHL Leipzig Graduate School of Management</a></td>
+<td>Germany</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/mannheim-university-of-applied-sciences">Hochschule Mannheim</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Aalen - Technik und Wirtschaft</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Albstadt-Sigmaringen</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Anhalt</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Biberach</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Bochum - University of Applied Sciences</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/bonn-rhein-sieg-university-of-applied-sciences">Hochschule Bonn-Rhein-Sieg, University of Applied Sciences</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Braunschweig/Wolfenb&uuml;ttel, Ostfalia</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-applied-sciences-bremen">Hochschule Bremen</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/bremerhaven-university-of-applied-sciences">Hochschule Bremerhaven</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Darmstadt</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule der Bildenden Kunste Saar</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule der Medien Stuttgart</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Dusseldorf</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Emden/Leer</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Esslingen</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/fulda-university-of-applied-sciences">Hochschule Fulda - University of Applied Sciences</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule f&uuml;r angewandte Wissenschaft und Kunst, Hochschule Hildeshei</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/augsburg-university-of-applied-sciences">Hochschule f&uuml;r angewandte Wissenschaften - Fachhochschule Augsburg -</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule f&uuml;r angewandte Wissenschaften - Fachhochschule Ansbach</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule f&uuml;r angewandte Wissenschaften - Fachhochschule Aschaffenbur</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule f&uuml;r angewandte Wissenschaften - Fachhochschule Rosenheim</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule f&uuml;r angewandte Wissenschaften - Fachhochschule Weihenstepha</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule f&uuml;r angewandte Wissenschaften Coburg</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule f&uuml;r angewandte Wissenschaften Fachhochschule W&uuml;rzburg-Schwe</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule fur Angewandte Wissenschaften Hamburg</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/hof-university-of-applied-sciences">Hochschule f&uuml;r Angewandte Wissenschaften Hof</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule f&uuml;r angewandte Wissenschaften Kempten</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/munich-university-of-applied-sciences">Hochschule f&uuml;r angewandte Wissenschaften M&uuml;nchen</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule f&uuml;r angewandte Wissenschaften Neu-Ulm</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Fur Bildende Kunste Braunschwieg</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule fur Bildende Kunste Dresden</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule f&uuml;r Bildende K&uuml;nste Hamburg</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule fur Forstwirtschaft Rottenburg</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Fur Gestaltung - Offenbach</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Fur Gestaltung Schw&auml;bisch Gm&uuml;nd</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule f&uuml;r Gesundheit - University of Applied Sciences</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule fur Grafik und Buchkunst Leipzig</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule fur Judische Studien Heidelberg</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule f&uuml;r K&uuml;nste Bremen</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule fur Musik 'Carl Maria von Weber' Dresden</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule f&uuml;r Musik Detmold</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule f&uuml;r Musik 'Franz Liszt' Weimar</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule fur Musik 'Hanns Eisler' Berlin</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Fur Musik Karlsruhe</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule f&uuml;r Musik N&uuml;rnberg</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule f&uuml;r Musik Saar</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule f&uuml;r Musik und Darstellende Kunst Frankfurt</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule f&uuml;r Musik und Tanz K&ouml;ln</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule fur Musik und Theater 'Felix Mendelssohn Bartholdy' Leipzig</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Fur Musik Und Theater Hamburg</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Fur Musik und Theater Munchen</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule fur Musik und Theater Rostock</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Fur Musik Wurzburg</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule f&uuml;r Musik, Theater und Medien Hannover</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule f&uuml;r Nachhaltige Entwicklung Eberswalde</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Fur Philosophie</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule f&uuml;r Schauspielkunst 'Ernst Busch'</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Fur Technik- Stuttgart</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/htw-berlin">Hochschule f&uuml;r Technik und Wirtschaft Berlin</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule f&uuml;r Technik und Wirtschaft des Saarlandes</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule fur Technik und Wirtschaft Dresden (FH)</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule fur Technik, Wirtschaft und Kultur Leipzig</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule f&uuml;r Technik, Wirtschaft und Medien Offenburg</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule f&uuml;r Wirtschaft und Recht Berlin</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule f&uuml;r Wirtschaft und Umwelt - N&uuml;rtingen-Geislingen</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Furtwangen - Informatik, Technik, Wirtschaft, Medien</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Hamm-Lippstadt</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Hannover</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Harz, Hochschule f&uuml;r angewandte Wissenschaften (FH)</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Heilbronn, Technik, Wirtschaft, Informatik</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Kaiserslautern (University of Applied Sciences)</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Karlsruhe - Technik und Wirtschaft</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Koblenz</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Konstanz Technik, Wirtschaft und Gestaltung</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Landshut-Hochschule f&uuml;r angewandte Wissenschaften</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Ludwigshafen am Rhein</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Magdeburg-Stendal</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Mainz</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Merseburg</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Mittweida, University of Applied Sciences</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Neubrandenburg - University of Applied Sciences</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/hochschule-niederrhein">Hochschule Niederrhein</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Nordhausen</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Osnabr&uuml;ck</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Ostwestfalen-Lippe</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Pforzheim - Gestaltung, Technik, Wirtschaft und Recht</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Ravensburg-Weingarten</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Reutlingen, Hochschule f&uuml;r Technik- Wirtschaft-Informatik-</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule RheinMain, RheinMain University of Applied Sciences Wiesbad</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Rhein-Waal - University of Applied Sciences</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Ruhr West- University of Applied Sciences</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Schmalkalden</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Trier - Trier University of Applied Sciences</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Ulm Technik, Informatik und Medien</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Wismar - University of Applied Sciences: Technology, Busine</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Worms, University of Applied Sciences</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Hochschule Zittau/Gorlitz</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/flensburg-university-of-applied-sciences">Hoschschule Flensburg</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/humboldt-university-berlin">Humboldt-Universitat Zu Berlin</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>International University of Applied Sciences, Inter. Hochschule Bad Ho</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/jacobs-university-bremen">Jacobs University Bremen</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Jade Hochschule Wilhelmshaven/Oldenburg/Elsfleth</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/johannes-gutenberg-university-mainz">Johannnes Gutenberg-Universit&auml;t Mainz</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-wurzburg">Julius-Maximilians-Universit&auml;t W&uuml;rzburg</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/justus-liebig-university">Justus Liebig Universitat Gieben</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/karlsruhe-institute-of-technology-kit">Karlsruher Institut f&uuml;r Technologie</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Katholische Fachhochschule Mainz</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Katholische Hochschule Freiburg, staatlich anerkannte Hochschule - Cat</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Katholische Hochschule f&uuml;r Sozialwesen Berlin (KHSB) - Staatlich anerk</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Katholische Hochschule Nordrhein-Westfalen - Catholic University of Ap</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Katholische Stiftungsfachhochschule M&uuml;nchen</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Katholische Universit&auml;t Eichst&auml;tt - Ingolstadt</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Kirchliche Hochschule Wuppertal/Bethel - - (Hochschule f&uuml;r Kirche und</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Kunstakademie D&uuml;sseldorf</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Kunstakademie Munster Hochschule fur Bildende Kunste</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Kunsthochschule fur Medien Koln</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/leuphana-university-luneburg">Leuphana Universit&auml;t L&uuml;neburg</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/ludwig-maximilians-university-munich">Ludwig-Maximilians-Universitat Munchen</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Lutherische Theologische - Hochschule Oberursel</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Martin-Luther-Universitat Halle-Wittenberg</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/hannover-medical-school">Medizinische Hochschule Hannover</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Musikhochschule L&uuml;beck</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Muthesius Kunsthochschule</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Ostbayeriche Technische Hochschule Amber-Weiden</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Ostbayerische Technische Hochschule Regensburg</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-bamberg">Otto-Friedrich-Universitat Bamberg</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-magdeburg">Otto-von-Guericke-Universitat Magdeburg</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>P&auml;dagogische Hochschule Freiburg</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Padagogische Hochschule Heidelberg</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Padagogische Hochschule Karlsruhe</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Padagogische Hochschule Ludwigsburg</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Padagogische Hochschule Schwabisch-Gmund</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Padagogische Hochschule- Weingarten</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Palucca Schule Dresden - Hochschule fur Tanz</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-marburg">Philipps-Universit&auml;t Marburg</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Philosophisch-Theologische Hochschule Sankt Georgen Frankfurt am Main</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Private Universitat Witten/Herdecke gGmbH</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Rheinische Fachhochschule Koln</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-bonn">Rheinische Friedrich-Wilhelms-Universit&auml;t Bonn</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/rwth-aachen-university">Rheinisch-Westfalische Technische Hochschule Aachen</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Robert-Schumann-Hochschule Dusseldorf</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/ruhr-university-bochum">Ruhr-Universitat Bochum</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/heidelberg-university">Ruprecht-Karls-Universitat Heidelberg</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/srh-university-heidelberg">SRH Hochschule Heidelberg - Staatlich anerkannte Fachhochschule</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Staatliche Akademie der Bildenden K&uuml;nste Karlsruhe</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Staatliche Akademie der Bildenden K&uuml;nste Stuttgart</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Staatliche Hochschule f&uuml;r Bildende K&uuml;nste (St&auml;delschule) Frankfurt am</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Staatliche Hochschule fur Gestaltung Karlsruhe</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Staatliche Hochschule Fur Musik Freiburg im Breisgau</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Staatliche Hochschule f&uuml;r Musik Trossingen</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Staatliche Hochschule f&uuml;r Musik und Darstellende Kunst Mannheim</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Staatliche Hochschule f&uuml;r Musik und Darstellende Kunst Stuttgart</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Stiftung Tierarztliche Hochschule Hannover</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Technische Fachhochschule Georg Agricola</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Technische Hochschule Bingen</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Technische Hochschule Brandenburg</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/deggendorf-institute-of-technology">Technische Hochschule Deggendorf</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/technische-hochschule-ingolstadt">Technische Hochschule Ingolstadt</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Technische Hochschule Koln</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Technische Hochschule Mittelhessen - THM</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Technische Hochschule N&uuml;rnberg Georg Simon Ohm</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/technical-university-of-applied-sciences-wildau">Technische Hochschule Wildau</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/tu-bergakademie-freiberg">Technische Universitat Bergakademie Freiberg</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/technische-universitat-berlin">Technische Universitat Berlin</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Technische Universit&auml;t Carolo-Wilhelmina zu Braunschweig</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Technische Universitat Chemnitz</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/clausthal-university-of-technology">Technische Universitat Clausthal</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/tu-darmstadt">Technische Universit&auml;t Darmstadt</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/tu-dortmund-university">Technische Universitat Dortmund</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/technische-universitat-dresden">Technische Universitat Dresden</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/hamburg-university-of-technology">Technische Universitat Hamburg Harburg</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Technische Universitat Ilmenau</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Technische Universitat Kaiserslautern</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/technical-university-of-munich-tum">Technische Universitat Munchen</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Theologische Fakultat Fulda</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Theologische Fakultat Paderborn</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Theologische Fakultat Trier</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-augsburg">Universitat Augsburg</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Universit&auml;t Bayreuth</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/bielefeld-university">Universit&auml;t Bielefeld</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-bremen">Universit&auml;t Bremen</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Universit&auml;t Der Bundeswehr - M&uuml;nchen</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Universit&auml;t der K&uuml;nste Berlin</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Universit&auml;t des Saarlandes</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-duisburg-essen">Universit&auml;t Duisburg-Essen</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Universit&auml;t Erfurt</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/universitat-hamburg">Universit&auml;t Hamburg</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Universit&auml;t Hildesheim</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-hohenheim">Universit&auml;t Hohenheim</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-kassel">Universit&auml;t Kassel</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-koblenz-landau">Universit&auml;t Koblenz-Landau</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Universit&auml;t Konstanz</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/leipzig-university">Universit&auml;t Leipzig</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Universit&auml;t Mannheim</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Universit&auml;t Osnabruck</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Universit&auml;t Paderborn</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-passau">Universit&auml;t Passau</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-potsdam">Universit&auml;t Potsdam</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-regensburg">Universit&auml;t Regensburg</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-rostock">Universit&auml;t Rostock</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-siegen">Universit&auml;t Siegen</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-stuttgart">Universit&auml;t Stuttgart</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Universit&auml;t Trier</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Universit&auml;t Ulm</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Universit&auml;t Vechta</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-cologne">Universit&auml;t zu K&ouml;ln</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/universitat-zu-lubeck">Universit&auml;t zu L&uuml;beck</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Wei&szlig;ensee Kunsthochschule Berlin</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Westf&auml;lische Hochschule Gelsenkirchen, Bocholt, Recklinghausen</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-munster">Westfalische Wilhelms - Universit&auml;t Munster</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Westsachsische Hochschule Zwickau</td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/whu-otto-beisheim-school-of-management">WHU - Otto Beisheim School of Management</a></td>
+<td>Germany</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>American College of Greece (The)</td>
+<td>Greece</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Central European University</td>
+<td>Hungary</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-debrecen">University of Debrecen</a></td>
+<td>Hungary</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University of Szeged Albert Szent-Gyorgyi Med. &amp; Pharmaceutical Center</td>
+<td>Hungary</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>American College, Dublin Limited (The)</td>
+<td>Ireland</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/dublin-city-university-dcu">Dublin City University</a></td>
+<td>Ireland</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Limerick Institute of Technology</td>
+<td>Ireland</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Mary Immaculate College</td>
+<td>Ireland</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/nui-galway">National University of Ireland, Galway</a></td>
+<td>Ireland</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/maynooth-university">National University of Ireland, Maynooth</a></td>
+<td>Ireland</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/royal-college-of-surgeons-in-ireland">Royal College of Surgeons in Ireland</a></td>
+<td>Ireland</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-college-cork-ucc">University College Cork</a></td>
+<td>Ireland</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>University College Dublin, National University of Ireland, Dublin</td>
+<td>Ireland</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/trinity-college-dublin-tcd">University of Dublin Trinity College</a></td>
+<td>Ireland</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-limerick">University of Limerick</a></td>
+<td>Ireland</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>American University Of Rome</td>
+<td>Italy</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>European University Institute</td>
+<td>Italy</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>John Cabot University</td>
+<td>Italy</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>North American College</td>
+<td>Italy</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Pontificia Universita Gregoriana</td>
+<td>Italy</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Pontificia Universita San Tommaso</td>
+<td>Italy</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Studio Arts College International</td>
+<td>Italy</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Universita Commerciale Luigi Bocconi</td>
+<td>Italy</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Universita degli Studi di Scienze Gastronomiche</td>
+<td>Italy</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/nyenrode-business-university">Nyenrode Business Universiteit</a></td>
+<td>Netherlands</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Saba University School of Medicine</td>
+<td>Netherlands</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/maastricht-university">Universiteit Maastricht</a></td>
+<td>Netherlands</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/utrecht-university">Universiteit Utrecht</a></td>
+<td>Netherlands</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/uva-university-of-amsterdam">Universiteit Van Amsterdam</a></td>
+<td>Netherlands</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/vu-university-amsterdam">Vrije Universiteit Amsterdam</a></td>
+<td>Netherlands</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Queen's University of Belfast (The)</td>
+<td>Northern Ireland (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/ulster-university">University of Ulster</a></td>
+<td>Northern Ireland (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-bergen">University of Bergen (UiB)</a></td>
+<td>Norway</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-oslo">University of Oslo</a></td>
+<td>Norway</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/jagiellonian-university">Jagiellonian University</a></td>
+<td>Poland</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Jagiellonian University Medical College</td>
+<td>Poland</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Medical University of Bialystok</td>
+<td>Poland</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/medical-university-of-gdansk">Medical University of Gdansk</a></td>
+<td>Poland</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Medical University of Lublin</td>
+<td>Poland</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/poznan-university-of-medical-sciences">Poznan University of Medical Sciences</a></td>
+<td>Poland</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Uniwersytet Warminsko-Mazurski w Olsztynie</td>
+<td>Poland</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/edinburgh-napier-university">Edinburgh Napier University</a></td>
+<td>Scotland (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/glasgow-caledonian-university">Glasgow Caledonian University</a></td>
+<td>Scotland (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Glasgow School of Art</td>
+<td>Scotland (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/heriot-watt-university">Heriot-Watt University</a></td>
+<td>Scotland (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>International Christian College</td>
+<td>Scotland (UK)</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/queen-margaret-university">Queen Margaret University, Edinburgh</a></td>
+<td>Scotland (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/robert-gordon-university-rgu">Robert Gordon University</a></td>
+<td>Scotland (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Royal Conservatoire of Scotland</td>
+<td>Scotland (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-aberdeen">University of Aberdeen</a></td>
+<td>Scotland (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/abertay-university">University of Abertay Dundee</a></td>
+<td>Scotland (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-dundee">University of Dundee</a></td>
+<td>Scotland (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-edinburgh">University of Edinburgh</a></td>
+<td>Scotland (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-glasgow">University of Glasgow</a></td>
+<td>Scotland (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-st-andrews">University of Saint Andrews</a></td>
+<td>Scotland (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-stirling">University of Stirling</a></td>
+<td>Scotland (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-strathclyde">University of Strathclyde, Glasgow</a></td>
+<td>Scotland (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-the-highlands-and-islands">University of the Highlands and Islands</a></td>
+<td>Scotland (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-the-west-of-scotland">University of the West of Scotland</a></td>
+<td>Scotland (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Escuela Superior de Administracion y Direccion De Empresas</td>
+<td>Spain</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Universidad de Navarra</td>
+<td>Spain</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/technical-university-of-valencia">Universidad Politecnica de Valencia</a></td>
+<td>Spain</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/comillas-pontifical-university">Universidad Pontificia Comillas</a></td>
+<td>Spain</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>Universitat Jaume I de Castello (UJI)</td>
+<td>Spain</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/jonkoping-university">Jonkoping University</a></td>
+<td>Sweden</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/karolinska-institutet">Karolinska Institutet</a></td>
+<td>Sweden</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/lund-university">Lund University</a></td>
+<td>Sweden</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/uppsala-university">Uppsala University</a></td>
+<td>Sweden</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Ecole Hoteliere de Lausanne</td>
+<td>Switzerland</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/ecole-polytechnique-federale-de-lausanne-epfl">&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne (EPFL)</a></td>
+<td>Switzerland</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td>European Graduate School (EGS)</td>
+<td>Switzerland</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Franklin University Switzerland</td>
+<td>Switzerland</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td>Graduate Institute of International and Development Studies (The)</td>
+<td>Switzerland</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/eth-zurich">Swiss Federal Institute of Technology Zurich</a></td>
+<td>Switzerland</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-fribourg">University of Fribourg</a></td>
+<td>Switzerland</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-st-gallen">University of St. Gallen (HSG)</a></td>
+<td>Switzerland</td>
+<td>Deferment Only</td>
+</tr>
+<tr>
+<td><a href="../../../university/aberystwyth-university">Aberystwyth University</a></td>
+<td>Wales (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/bangor-university">Bangor University</a></td>
+<td>Wales (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/cardiff-metropolitan-university">Cardiff Metropolitan University</a></td>
+<td>Wales (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/cardiff-university">Cardiff University</a></td>
+<td>Wales (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/royal-welsh-college-of-music-and-drama">Royal Welsh College of Music and Drama</a></td>
+<td>Wales (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/swansea-university">Swansea University</a></td>
+<td>Wales (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-south-wales">University of South Wales</a></td>
+<td>Wales (UK)</td>
+<td>Eligible</td>
+</tr>
+<tr>
+<td><a href="../../../university/university-of-wales-trinity-saint-david">University of Wales Trinity Saint David</a></td>
+<td>Wales (UK)</td>
+<td>Eligible</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: <a href="https://studentaid.gov/understand-aid/types/international" target="_blank" rel="noopener">U.S. Department of Education</a>. This table is updated regularly.</em></p>
+<p><a href="../../../article/us-students-how-to-use-fafsa-for-a-degree-in-europe"><strong>Read our detailed guide about using FAFSA to get a degree in Europe</strong></a></p>
+<h3>Countries where you can study with FAFSA</h3>
+<p>A FAFSA loan or FAFSA grant can support you to to get a degree in a large number of foreign countries. In Europe, almost all the eligible universities are located in the United Kingdom. Additionally, there are many universities in Germany where you can study to defer payments from previous study loans. Here is an overview:</p>
+<table class="table table-bordered table-striped">
+<thead>
+<tr>
+<th class="col-md-6">Country</th>
+<th class="col-md-3">Eligible universities</th>
+<th class="col-md-3">Deferment-only universities</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Armenia</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../../../country/austria">Austria</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../../../country/belgium">Belgium</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td>Bosnia-Herzegovina</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td>Bulgaria</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../../../country/czech-republic">Czech Republic</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../../../country/denmark">Denmark</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../../../country/finland">Finland</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../../../country/france">France</a></td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../../../country/germany">Germany</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">265</td>
+</tr>
+<tr>
+<td><a href="../../../country/greece">Greece</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../../../country/hungary">Hungary</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../../../country/ireland">Ireland</a></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../../../country/italy">Italy</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../../../country/united-kingdom">Northern Ireland (UK)</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../../../country/norway">Norway</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../../../country/poland">Poland</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../../../country/united-kingdom">Scotland (UK)</a></td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../../../country/spain">Spain</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../../../country/sweden">Sweden</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../../../country/switzerland">Switzerland</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../../../country/netherlands">Netherlands</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../../../country/united-kingdom">Wales (UK)</a></td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../../../country/united-kingdom">England (UK)</a></td>
+<td style="text-align: right;">192</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+<h3>What if I don&rsquo;t see my desired university on the FAFSA-approved list?</h3>
+<p>If you do not see your desired abroad university on the approved FAFSA list, it means that you cannot use US federal loans for the program. You may still be able to receive financial aid through other channels.</p>
+
+      
+
+        <a id="article-search-button" class="btn btn-md btn-primary" data-track-rendering-ga="true" data-track-click-ga="true" data-event-category="Article Search Button" data-event-label="/article/fafsa-eligible-universities-colleges-in-europe" href="/search?sort=recommended">14529 Programmes in Europe</a>
+      
+      
+        <div class="author-profile row">
+      <div class="col-xs-3 col-md-2">
+        <img class="author-image" alt="Denise Cope" title="Denise Cope" src="https://study-eu.s3.amazonaws.com/uploads/author_profile/article_author-denise-cope.jpg" />
+      </div>
+    <div class="col-xs-9 col-md-10">
+      <h5 class="header author-name">Author: Denise Cope <a class="author-social-link" href="https://www.linkedin.com/in/denise-cope-9a836889/" target="_blank" title="Denise Cope on Linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a><a class="author-social-link" href="https://www.affordabledegreesabroad.com/" target="_blank" title="Denise Cope’s website"><i class="fa fa-link" aria-hidden="true"></i></a></h5>
+      <p class="author-biography">
+        Denise Cope has 20+ years of experience in international education. She is the President of Affordable Degrees Abroad, a service for US students seeking education overseas. Before that, she was the Director of the Office of International Education at the University of Denver, where she was responsible for sending more than 4,000 students to study abroad.
+      </p>
+    </div>
+  </div>
+
+      
+    </div>
+
+    <div class="sidebar col-sm-12 col-md-4">
+
+                <div class="sidebar-container">
+          <strong>
+            Featured universities:
+          </strong>
+          
+          <div class="featured-university-container" data-track-rendering-ga="true" data-event-category="Featured University Banner" data-event-label="/university/university-of-wurzburg">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/university-of-wurzburg">
+                    <img alt="University of Würzburg" title="University of Würzburg" class="search-result-logo lazyload" data-src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_julius-maximilian-university-of-w-rzburg-logo.svg" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/university-of-wurzburg">University of Würzburg</a><br />
+                  Würzburg, 
+                  <a href="/country/germany">Germany</a><br />
+                  20 study programmes
+              </div>
+            </div>
+          </div>
+          <div class="featured-university-container" data-track-rendering-ga="true" data-event-category="Featured University Banner" data-event-label="/university/code-university-of-applied-sciences">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/code-university-of-applied-sciences">
+                    <img alt="CODE University of Applied Sciences" title="CODE University of Applied Sciences" class="search-result-logo lazyload" data-src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_code-university-berlin-logo.png" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/code-university-of-applied-sciences">CODE University of Applied Sciences</a><br />
+                  <a href="/city/berlin">Berlin</a>, 
+                  <a href="/country/germany">Germany</a><br />
+                  3 study programmes
+              </div>
+            </div>
+          </div>
+          <div class="featured-university-container" data-track-rendering-ga="true" data-event-category="Featured University Banner" data-event-label="/university/hertie-school">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/hertie-school">
+                    <img alt="Hertie School" title="Hertie School" class="search-result-logo lazyload" data-src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_hertie-school-logo.svg" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/hertie-school">Hertie School</a><br />
+                  <a href="/city/berlin">Berlin</a>, 
+                  <a href="/country/germany">Germany</a><br />
+                  4 study programmes
+              </div>
+            </div>
+          </div>
+          <div class="featured-university-container" data-track-rendering-ga="true" data-event-category="Featured University Banner" data-event-label="/university/falmouth-university">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/falmouth-university">
+                    <img alt="Falmouth University" title="Falmouth University" class="search-result-logo lazyload" data-src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_falmouth-university-logo.png" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/falmouth-university">Falmouth University</a><br />
+                  Falmouth, 
+                  <a href="/country/united-kingdom">United Kingdom</a><br />
+                  70 study programmes
+              </div>
+            </div>
+          </div>
+          <div class="featured-university-container" data-track-rendering-ga="true" data-event-category="Featured University Banner" data-event-label="/university/ca-foscari-university-of-venice">
+            <div class="row">
+              <div class="featured-university-logo col-xs-6 col-sm-6 col-md-4">
+                <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/ca-foscari-university-of-venice">
+                    <img alt="Ca&#39; Foscari University of Venice" title="Ca&#39; Foscari University of Venice" class="search-result-logo lazyload" data-src="https://study-eu.s3.amazonaws.com/uploads/university/desktop_ca--foscari-university-of-venice-logo.png" />
+</a>              </div>
+              <div class="featured-university-name col-xs-6 col-sm-6 col-md-8">
+                  <a class="featured-university-tracked" data-track-click-ga="true" data-event-category="Featured University Banner" href="/university/ca-foscari-university-of-venice">Ca&#39; Foscari University of Venice</a><br />
+                  Venice, 
+                  <a href="/country/italy">Italy</a><br />
+                  20 study programmes
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+
+
+
+
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Study.EU Responsive (Article) -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-4374612586998899"
+            data-ad-slot="6769340969"
+            data-ad-format="auto"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      
+      
+
+    </div>
+
+
+  </div>
+
+  <div class="row">
+  <div class="content col-md-8">
+        <div>
+          <h2>You might be interested in this:</h2>
+          <div class="row">
+            <div class="col-sm-12 col-md-4">
+              <a class="related-tracked" href="/article/tuition-fees-in-finland">
+                <div class="thumbnail home-country-card">
+                      <img alt="Tuition fees in Finland: Everything you need to know" title="Tuition fees in Finland: Everything you need to know" class="country-default-image lazyload" data-src="https://study-eu.s3.amazonaws.com/uploads/image/path/262/slideshow_8430145017_95ef309e76_o.jpg" />
+                    <div class="caption">
+                      <strong>Tuition fees in Finland: Everything you need to know</strong>
+                    </div>
+                </div>
+</a>            </div>
+            <div class="col-sm-12 col-md-4">
+              <a class="related-tracked" href="/article/overview-scholarships-to-study-in-europe">
+                <div class="thumbnail home-country-card">
+                      <img alt="Overview: Scholarships to study in Europe" title="Overview: Scholarships to study in Europe" class="country-default-image lazyload" data-src="https://study-eu.s3.amazonaws.com/uploads/image/path/247/slideshow_17800060526_1e93aa76c6_o.jpg" />
+                    <div class="caption">
+                      <strong>Overview: Scholarships to study in Europe</strong>
+                    </div>
+                </div>
+</a>            </div>
+            <div class="col-sm-12 col-md-4">
+              <a class="related-tracked" href="/article/us-students-how-to-use-fafsa-for-a-degree-in-europe">
+                <div class="thumbnail home-country-card">
+                      <img alt="US students: How to use FAFSA for a degree in Europe" title="US students: How to use FAFSA for a degree in Europe" class="country-default-image lazyload" data-src="https://study-eu.s3.amazonaws.com/uploads/image/path/421/slideshow_ep-xforum.jpg" />
+                    <div class="caption">
+                      <strong>US students: How to use FAFSA for a degree in Europe</strong>
+                    </div>
+                </div>
+</a>            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+    
+
+  
+  
+  <footer class="top-footer">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Merriweather Sans:300,400i,700']
+      }
+    });
+  </script> 
+
+  
+  <div class="container">
+  <div class="row">
+    
+    <div class="text-left col-md-8 col-xs-6" style="display: inline-block;float: left;">
+      <a href="/" title="Study.EU" data-track-click="true" data-event-category="Footer Logo"><img class="footer-logo" src="/assets/study-eu_logo_wb_200x66-8722da28bad82460d8951c34fe8b5ba8e11794b2fd21e83ee8c5fe54323ea73b.png" /></a><br />
+      <p>
+        Copyright &copy; 2021 <a title="Study.EU" href="/">Study.EU</a>
+      </p>
+      <p>
+        
+      </p>
+      <a class="social-link" href="https://www.facebook.com/StudyEU-168756646881605/" target="_blank" title="Like Study.EU on Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://twitter.com/wwwStudyEU" target="_blank" title="Follow Study.EU on Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      <a class="social-link" href="https://www.linkedin.com/company/study.eu/" target="_blank" title="Follow Study.EU on Linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    </div>
+    <div class="text-right col-md-4 col-xs-6">
+      <br /><br />
+          <a rel="nofollow" href="/page/imprint">Imprint</a>
+        &middot;
+          <a rel="nofollow" href="/page/about-study-eu">About Study.eu</a>
+        &middot;
+          <a rel="nofollow" href="/page/privacy-policy">Privacy Policy</a>
+        &middot;
+      <a href="/jobs">Jobs</a>
+      
+      <br />
+      
+      <a href="/press">Press</a>
+      
+      <!-- &middot; -->
+      
+        <!-- &mdash; //-->
+      
+      <br /><br />
+      <a href="/advertise-on-study-eu">Advertise on Study.eu</a>
+    </div>
+  </div>
+  </div>
+</footer>
+
+<a href="javascript:" id="scroll-to-top" title="Scroll back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+<script>
+  $(window).scroll(function() {
+      if ($(this).scrollTop() >= 100) {        // page is scrolled more than 100px
+          $('#scroll-to-top').fadeIn(500);
+      } else {
+          $('#scroll-to-top').fadeOut(500);
+      }
+  });
+  $('#scroll-to-top').click(function() {      // arrow is clicked
+      $('body,html').animate({
+          scrollTop : 0                       // scroll to top
+      }, 500);
+  });
+</script>
+
+
+  
+  <footer class="footer-countries">
+
+
+  <div class="container">
+    <div class="row">
+    
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <h5>Study in Europe:</h5>
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Austria" href="/country/austria">Austria</a><br />
+                <a title="Study in Belgium" href="/country/belgium">Belgium</a><br />
+                <a title="Study in the Czech Republic" href="/country/czech-republic">Czech Republic</a><br />
+                <a title="Study in Denmark" href="/country/denmark">Denmark</a><br />
+                <a title="Study in Estonia" href="/country/estonia">Estonia</a><br />
+                <a title="Study in the Faroe Islands" href="/country/faroe-islands">Faroe Islands</a><br />
+                <a title="Study in Finland" href="/country/finland">Finland</a><br />
+                <a title="Study in France" href="/country/france">France</a><br />
+                <a title="Study in Germany" href="/country/germany">Germany</a><br />
+                <a title="Study in Greece" href="/country/greece">Greece</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Hungary" href="/country/hungary">Hungary</a><br />
+                <a title="Study in Iceland" href="/country/iceland">Iceland</a><br />
+                <a title="Study in Ireland" href="/country/ireland">Ireland</a><br />
+                <a title="Study in Italy" href="/country/italy">Italy</a><br />
+                <a title="Study in Latvia" href="/country/latvia">Latvia</a><br />
+                <a title="Study in Liechtenstein" href="/country/liechtenstein">Liechtenstein</a><br />
+                <a title="Study in Lithuania" href="/country/lithuania">Lithuania</a><br />
+                <a title="Study in Malta" href="/country/malta">Malta</a><br />
+                <a title="Study in the Netherlands" href="/country/netherlands">Netherlands</a><br />
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <a title="Study in Norway" href="/country/norway">Norway</a><br />
+                <a title="Study in Poland" href="/country/poland">Poland</a><br />
+                <a title="Study in Portugal" href="/country/portugal">Portugal</a><br />
+                <a title="Study in Romania" href="/country/romania">Romania</a><br />
+                <a title="Study in Russia" href="/country/russia">Russia</a><br />
+                <a title="Study in Spain" href="/country/spain">Spain</a><br />
+                <a title="Study in Sweden" href="/country/sweden">Sweden</a><br />
+                <a title="Study in Switzerland" href="/country/switzerland">Switzerland</a><br />
+                <a title="Study in the United Kingdom" href="/country/united-kingdom">United Kingdom</a><br />
+            </div>
+          </div>
+        </div>
+    
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Recent articles:</h5>
+          </div>
+          <div class="col-md-8">
+              <p><a href="/article/guide-uk-post-study-work-visa-for-graduates">Guide: the UK Post-Study Work Visa for graduates</a></p>
+              <p><a href="/article/study-ecology">Study Ecology: All you need to know</a></p>
+              <p><a href="/article/study-human-resource-management-hrm">Study Human Resource Management: All you need to know</a></p>
+              <p><a href="/article/study-innovation-management">Study Innovation Management: All you need to know</a></p>
+              <p><a href="/article/should-i-get-a-masters-degree-now-or-start-working">Should I get a Master’s degree now - or start working?</a></p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  
+  </div>
+
+</footer>
+
+  
+  <footer class="footer-press">
+  <div class="container">
+    <div class="row footer-press-description">
+      <div class="col-md-12 text-center">
+        Study.EU has been mentioned in numerous news publications worldwide, such as:
+      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="L&#39;Étudiant (France)" title="L&#39;Étudiant (France)" data-src="/assets/press/letudiant_gray_200-57bccbdceaef3c62c8660629603372823c98afe433bd39bf6d42a73263c113c3.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Frankfurter Allgemeine (Germany)" title="Frankfurter Allgemeine (Germany)" data-src="/assets/press/faz_gray_300-b6e5e6022a7b164c24b69a51fb97a72715018db745fbcda8580675a507370b8b.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Standard (Hong Kong)" title="The Standard (Hong Kong)" data-src="/assets/press/the-standard-hong-kong_gray_200-f124ca057d2671730e1f6d996377ef4614a28ccf04ae04f730eaf16ed7ee0b46.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Independent (UK)" title="The Independent (UK)" data-src="/assets/press/the-independent-uk_gray_300-63238e279b3c62b1f87faf17fcbcf1f14a2e5b9229193a0431fc974da217d159.png" class="lazyload" />
+</a>      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Al-Masry Al-Youm (Egypt)" title="Al-Masry Al-Youm (Egypt)" data-src="/assets/press/al-masry_al-youm_gray_200-9d8e503cd53ec4d955c3e6f7bf2a1c0badb500a0d2bd8a1ef1d11acd686879e5.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Le Monde (France)" title="Le Monde (France)" data-src="/assets/press/le-monde_gray_200-24d8bca493f3a2b8e0150cb4ef38f00c9924ac5e7acfbdb8750076c949c70052.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="The Local (Europe)" title="The Local (Europe)" data-src="/assets/press/the-local_gray_200-7631164ea94edf8d065b3af6f64274416162d866ce1cea737c3ee25f28cdd098.png" class="lazyload" />
+</a>      </div>
+      <div class="col-md-3 text-center">
+        <a class="footer-press-link" href="/press">
+          <img alt="Forbes (USA)" title="Forbes (USA)" data-src="/assets/press/forbes_gray_200-deff6ef2c28ec5a275f404c5f59d56f4b687881eb39de52b79b5add3ca609fe2.png" class="lazyload" />
+</a>      </div>
+    </div>
+  </div>
+</footer>
+
+  
+  
+  
+  
+    <div class="cookies-eu js-cookies-eu row">
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+    <div class="cookies-eu-content-holder col-md-4 col-sm-6 col-xs-6 align-self-center">
+      Cookies &amp; analytics help us deliver our services.
+        <a href="/page/privacy-policy" class="cookies-eu-link" target="_blank"> Privacy policy </a>
+    </div>
+    <div class="cookies-eu-button-holder col-md-4 col-sm-6 col-xs-6">
+      <button class="cookies-eu-ok js-cookies-eu-ok btn btn-lg btn-primary" data-track-click-ga="true" data-event-category="Cookie Consent Button"> OK </button>
+    </div>
+    <div class="col-md-2 col-sm-0 col-xs-0"></div>
+  </div>
+
+  
+  <script>
+  // Improved Ahoy view tracking with additional attributes
+  var additionalProperties = {};
+  console.log("Ahoy: View with additional properties: "+JSON.stringify(additionalProperties));
+  ahoy.trackView(additionalProperties);
+</script>
+<a name="ga"></a> <!-- GA //-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42442116-3', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+  
+  
+  
+    
+  //############################################################
+  //########## 2018-07    NEW CUSTOM METHODS          ##########
+  
+  function getDataTrackAttributes(element) {
+    var data = {};
+    [].forEach.call(element.attributes, function(attr) {
+      if (/^data-trackvalue-/.test(attr.name)) {
+        // Relevant attributes would always be called "data-track-foobar"
+        var underscorename = attr.name.substr(16).replace(/-/g, "_");
+        data[underscorename] = parseInt(attr.value) || attr.value; // Provide as integer if possible, otherwise the original string
+      }
+    });
+    return data;
+  }
+  
+  // Set data-track-click and utm_source for all external links in the description content
+  var content_links = document.querySelectorAll('div.content-description a');
+  for (var i = 0; i < content_links.length; i++) {
+    if ( ((new URL(content_links[i].href, document.baseURI).href) == mainTrackableLink) || (content_links[i].host !== window.location.host) ) {
+      // Link is the main trackable link, or link is external --> add tracking and utm_source if not present
+      utm_url = new URL(content_links[i].href);
+      utm_url.searchParams.set("utm_source", "Study.eu"); // add (or overwrite existing) utm_source parameter
+      content_links[i].href = utm_url;
+      content_links[i].classList.add("external-tracked");
+      content_links[i].setAttribute("data-event-category", "Outbound Link");
+      content_links[i].setAttribute("data-event-label", content_links[i].href);
+      content_links[i].setAttribute("data-track-click", "true"); // Once data-track-click is set to true, initDataAttributes() below will add the id values
+    }
+  }
+  console.log("Modified "+content_links.length+" links in description content.");
+  
+  // Set data attributes for tracking of footer press links
+  footerPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < footerPressLinks.length; i++) {
+    footerPressLinks[i].setAttribute("data-track-click-ga", "true");
+    footerPressLinks[i].setAttribute("data-event-category", "Footer Press Link");
+    footerPressLinks[i].setAttribute("data-event-label", window.location.href);
+  }
+  
+  relatedLinks = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < relatedLinks.length; i++) {
+    relatedLinks[i].setAttribute("data-track-click-ga", "true");
+    relatedLinks[i].setAttribute("data-event-category", "Related Link");
+    relatedLinks[i].setAttribute("data-event-label", relatedLinks[i].getAttribute("href"));
+  }  
+  
+  function initDataAttributes() {
+    // Initialise element data attributes based on backend instance variables
+    elements = document.querySelectorAll('[data-track-click="true"],[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      
+      
+    }
+    console.log("initDataAttributes()");
+  }
+  initDataAttributes();
+    
+  function trackClick(event, trackGA = true, trackAhoy = true) {
+    // When an element was clicked, track the click in GA and Ahoy
+    
+    strEventLabel = "";
+    if        ( event.currentTarget.hasAttribute("data-event-label") ) {
+      strEventLabel = event.currentTarget.getAttribute("data-event-label");
+    } else if ( event.currentTarget.hasAttribute("href") ) {
+      strEventLabel = event.currentTarget.href;
+    }
+    
+    ga('send', 'event', {
+      eventCategory:  event.currentTarget.getAttribute("data-event-category"),
+      eventAction:    'click',
+      eventLabel:     strEventLabel
+    });
+    
+    data = getDataTrackAttributes(event.currentTarget);
+    data["href"] = event.target.href;
+    data["page"] = window.location.pathname;
+    
+    /*ahoy.track (
+      event.currentTarget.getAttribute("data-event-category"),
+      {
+        
+        
+        
+        href: event.target.href,
+        page: window.location.pathname
+      }
+    );*/
+    
+    if (trackAhoy) {
+        data["medium"] = "Article";
+      ahoy.track (
+        event.currentTarget.getAttribute("data-event-category")+" - click",
+        data
+      );
+    }
+    
+    console.log("trackClick(event, trackGA = "+trackGA+", trackAhoy = "+trackAhoy+"): " +
+      event.currentTarget.getAttribute("data-event-category") + ", " +
+      "{href: " + event.target.href + ", " +
+      "page:"+window.location.pathname+"});"
+    );
+  }
+  
+  
+  function trackClicksGA() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click-ga="true"]:not([data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event, true, false);
+      });
+    }
+    console.log("trackClicksGA(): "+elements.length+" elements");
+  }
+  trackClicksGA();
+  
+  function trackClicks() {
+    // Add the EventListener to all relevant elements
+    elements = document.querySelectorAll('[data-track-click="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      elements[i].addEventListener("click", function(event){
+        trackClick(event);
+      });
+    }
+    console.log("trackClicks(): "+elements.length+" elements");
+  }
+  trackClicks();
+  
+  function trackRenderingsGA() {
+    // Track renderings only in GA
+    // This would be for large-volume data that is interesting, but not mission-critical
+
+    elements = document.querySelectorAll('[data-track-rendering-ga="true"]:not([data-track-rendering="true"])');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+    }
+    
+    console.log("trackRenderingsGA(): "+elements.length+" elements");
+  }
+  trackRenderingsGA();
+  
+  function trackRenderings() {
+    // Track renderings in GA *and* Ahoy
+    elements = document.querySelectorAll('[data-track-rendering="true"]');
+    for (var i = 0 ; i < elements.length; i++) {
+      ga('send', 'event', {
+        eventCategory:  elements[i].getAttribute("data-event-category"),
+        eventAction:    'rendered',
+        eventLabel:     elements[i].getAttribute("data-event-label"),
+        nonInteraction: true
+      });
+      
+      data = getDataTrackAttributes(elements[i]);
+      data["href"] = elements[i].getAttribute("href");
+      data["page"] = window.location.pathname;
+      
+      ahoy.track (
+        elements[i].getAttribute("data-event-category")+" - rendered",
+        data
+      );
+    }
+    
+    console.log("trackRenderings(): "+elements.length+" elements");
+  }
+  trackRenderings();
+  
+  
+  
+
+  
+  //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  //############################################################
+
+  
+  
+  /*
+  anchorsExternalTracked = document.getElementsByClassName("external-tracked");
+  for (var i = 0 ; i < anchorsExternalTracked.length; i++) {
+    anchorsExternalTracked[i].addEventListener("click", function(event){
+      //event.preventDefault();
+      
+      handleOutboundLinkClicks(event);
+      
+      //document.location = this.href;
+      //var win = window.open(this.href, '_blank');
+      //win.focus();
+      
+    });
+    
+    // Trigger event that shows in GA that the link was rendered
+    ga('send', 'event', {
+      eventCategory: 'Outbound Link',
+      eventAction: 'rendered',
+      eventLabel: anchorsExternalTracked[i].href
+    });   
+  }
+  
+  anchorsRelatedTracked = document.getElementsByClassName("related-tracked");
+  for (var i = 0 ; i < anchorsRelatedTracked.length; i++) {
+    anchorsRelatedTracked[i].addEventListener("click", function(event){
+      handleRelatedLinkClicks(event);
+    });
+  }
+  
+  anchorsFeaturedUniversityTracked = document.getElementsByClassName("featured-university-tracked");
+  for (var i = 0 ; i < anchorsFeaturedUniversityTracked.length; i++) {
+    anchorsFeaturedUniversityTracked[i].addEventListener("click", function(event){
+      handleFeaturedUniversityLinkClicks(event);
+    });
+  }  
+  
+  
+  anchorsFooterPressLinks = document.getElementsByClassName("footer-press-link");
+  for (var i = 0 ; i < anchorsFooterPressLinks.length; i++) {
+    anchorsFooterPressLinks[i].addEventListener("click", function(event){
+      handleFooterPressLinkClicks(event);
+    });
+  }
+  
+  
+  anchorsCustomTracked = document.querySelectorAll('[data-ga-custom-event-label]');
+  for (var i = 0 ; i < anchorsCustomTracked.length; i++) {
+    anchorsCustomTracked[i].addEventListener("click", function(event){
+      handleCustomTracked(event);
+    });
+  }
+  */
+  
+  ////////////////////////////////////////////////////////////////////////////////
+
+  
+  
+</script>
+
+</body>
+</html>

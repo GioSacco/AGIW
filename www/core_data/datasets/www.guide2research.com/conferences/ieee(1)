@@ -1,0 +1,1996 @@
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+	<meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="https://www.guide2research.com/wp-content/themes/spike/images/favicon.png">
+	<title>ieee Upcoming Conferences for Computer Science & Electronics</title>
+	<!--iOS/android/handheld specific -->	
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="pingback" href="https://www.guide2research.com/xmlrpc.php" />
+			<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Guide 2 Research &raquo; Feed" href="https://www.guide2research.com/feed" />
+<link rel="alternate" type="application/rss+xml" title="Guide 2 Research &raquo; Comments Feed" href="https://www.guide2research.com/comments/feed" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.guide2research.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.7"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='https://www.guide2research.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.6' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='https://www.guide2research.com/wp-content/plugins/tablepress/css/default.min.css?ver=1.8' type='text/css' media='all' />
+<link rel='stylesheet' id='__EPYT__style-css'  href='https://www.guide2research.com/wp-content/plugins/youtube-embed-plus/styles/ytprefs.min.css?ver=13.4.1.2' type='text/css' media='all' />
+<style id='__EPYT__style-inline-css' type='text/css'>
+
+                .epyt-gallery-thumb {
+                        width: 33.333%;
+                }
+                
+</style>
+<link rel='stylesheet' id='sib-front-css-css'  href='https://www.guide2research.com/wp-content/plugins/mailin/css/mailin-front.css?ver=4.8.7' type='text/css' media='all' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js?ver=1.7.1'></script>
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js?ver=1.8.16'></script>
+<script type='text/javascript' src='https://www.guide2research.com/wp-content/themes/spike/js/modernizr.min.js?ver=4.8.7'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _EPYT_ = {"ajaxurl":"https:\/\/www.guide2research.com\/wp-admin\/admin-ajax.php","security":"af9177a100","gallery_scrolloffset":"20","eppathtoscripts":"https:\/\/www.guide2research.com\/wp-content\/plugins\/youtube-embed-plus\/scripts\/","eppath":"https:\/\/www.guide2research.com\/wp-content\/plugins\/youtube-embed-plus\/","epresponsiveselector":"[\"iframe.__youtube_prefs_widget__\"]","epdovol":"1","version":"13.4.1.2","evselector":"iframe.__youtube_prefs__[src], iframe[src*=\"youtube.com\/embed\/\"], iframe[src*=\"youtube-nocookie.com\/embed\/\"]","ajax_compat":"","ytapi_load":"light","pause_others":"","stopMobileBuffer":"1","vi_active":"","vi_js_posttypes":[]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.guide2research.com/wp-content/plugins/youtube-embed-plus/scripts/ytprefs.min.js?ver=13.4.1.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sibErrMsg = {"invalidMail":"Please fill out valid email address","requiredField":"Please fill out required fields","invalidDateFormat":"Please fill out valid date format","invalidSMSFormat":"Please fill out valid phone number"};
+var ajax_sib_front_object = {"ajax_url":"https:\/\/www.guide2research.com\/wp-admin\/admin-ajax.php","ajax_nonce":"f5846cb86b","flag_url":"https:\/\/www.guide2research.com\/wp-content\/plugins\/mailin\/img\/flags\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.guide2research.com/wp-content/plugins/mailin/js/mailin-front.js?ver=1608135253'></script>
+<link rel='https://api.w.org/' href='https://www.guide2research.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.guide2research.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.guide2research.com/wp-includes/wlwmanifest.xml" /> 
+<!--Theme by MyThemeShop.com-->
+<!-- HeadSpace SEO 3.6.41 by John Godley - urbangiraffe.com -->
+<!-- HeadSpace -->
+<link rel="stylesheet" type="text/css" href="https://www.guide2research.com/wp-content/plugins/wp-code-highlight/css/wp-code-highlight.css" media="screen" />
+
+<!-- Protected by WP-SpamFree :: JS BEGIN -->
+<script type="text/javascript" src="https://www.guide2research.com/wp-content/plugins/wp-spamfree/js/wpsfv2-js.php"></script> 
+<!-- Protected by WP-SpamFree :: JS END -->
+
+	<link rel="stylesheet" type="text/css" media="all" href="https://www.guide2research.com/wp-content/themes/spike/style.css" />
+	<!--start fonts-->
+<link href="http://fonts.googleapis.com/css?family=Monda:400,700" rel="stylesheet" type="text/css">
+<style type="text/css">
+.title, h1,h2,h3,h4,h5,h6, .slidertitle, .total-comments { font-family: 'Monda', sans-serif;}
+</style>
+<link href="http://fonts.googleapis.com/css?family=Sintony:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+<style type="text/css">
+body {font-family: 'Sintony', sans-serif;}
+</style>
+<!--end fonts-->
+<style type="text/css">
+body {background-color:#FFFFFF;}
+body {background-image:url(https://www.guide2research.com/wp-content/themes/spike/images/nobg.png);}
+#commentform input#submit,#search-image, .mts-subscribe input[type="submit"], .sbutton, .currenttext, .pagination a:hover, .flex-active, .tagcloud a,.reply a, .flex-control-paging li a.flex-active {background-color:#F33E0F; }
+.text-logo, .tagcloud a .tab_count,.flex-control-paging li a {background-color:#FFCA00;}
+.slidertext, .slidertitle {background:rgba(243,62,15,0.7)}
+.pagination a, .pagination2 { border:1px solid #FFCA00; color:#FFCA00;}
+footer .widget .tweets li a, #tabber .inside li .entry-title a:hover, .single .post-info a, .single_post a, a:hover, .textwidget a, #commentform a, .copyrights a:hover, a,
+.sidebar.c-4-12 a:hover, footer .copyrights a, .widget li a:hover, footer .widget a:hover, .advanced-recent-posts a:hover,.related-posts a:hover {color:#F33E0F; }
+.currenttext, .pagination a:hover{border:1px solid #F33E0F;}
+.current-menu-item a, .secondary-navigation a:hover, .current-post-parent a { border-bottom:1px solid #F33E0F;}
+#navigation ul ul{ border-top:1px solid #F33E0F; }
+</style>
+	<style>
+.gray {
+	background-color: #F8F8F8 ;
+	border: 1px dashed #8D7330;
+	padding-top: 8px;
+	padding-left: 10px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+	color: #815E38;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	margin-bottom: 6px;
+}
+.alert {
+	background-color: #F6F0CA;
+	border: 1px dashed #8D7330;
+	padding-top: 8px;
+	padding-left: 10px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+	color: #815E38;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+
+.critical {
+	background-color: #EED4D2;
+	border: 1px dashed #A94637;
+	padding-top: 8px;
+	padding-left: 10px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+	color: #AC241A;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+
+span.step {
+  background: #6D9D47;
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 5px;
+  text-align: center;
+  width: 1.6em; 
+}
+
+</style>
+<script type="text/javascript" src="/js/myfuncv016.js"></script>
+</head>
+
+<body id ="blog" class="main">
+	<header class="main-header">
+		<div class="container">
+			<div id="header">
+															  <h2 id="logo" class="image-logo">
+								<a href="https://www.guide2research.com" style="margin-top:5px;margin-bottom:10px;"><img style="height:60px!important;" src="/logo.g2r.png" alt="Guide 2 Research"></a>
+							</h2><!-- END #logo -->
+													<div class="secondary-navigation">
+<!--					<nav id="navigation" >
+													<ul class="menu">
+															</ul>
+											</nav>-->
+				</div>              
+			</div><!--#header-->
+		</div><!--.container-->        
+	</header>
+	<div class="main-container">
+
+    <script type="text/javascript" src="../fill/js/jquery-1.5.2.min.js"></script>
+    <script type="text/javascript" src="../fill/js/jquery.form.js"></script>
+    <script type="text/javascript" src="../fill/js/myfuncv016.js"></script>
+    
+    
+<style>
+.grey {
+	background-color: #F8F8F8 ;
+	border: 1px solid #A9A9A9;
+	padding-top: 8px;
+	padding-left: 10px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px; 
+	margin-bottom: 6px;
+}
+.myshad{-moz-box-shadow: 6px 6px 2px #888;
+	-webkit-box-shadow: 6px 6px 2px #888;
+	box-shadow: 6px 6px 2px #888;
+}
+</style>
+	<div class="content">
+		<article class="article">
+			<div id="content_box" >
+				<div id="content" class="hfeed">
+
+<h1 style="font-size:24px;">ieee Upcoming Conferences for Computer Science & Electronics</h1>
+<!--<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.guide2research.com%2Fconferences&amp;layout=standard&amp;show_faces=true&amp;width=150&amp;height=25&amp;action=like&amp;font=arial&amp;colorscheme=light"  id="fbLikeIframe" name="fbLikeIframe"  scrolling="no" frameborder="0" allowTransparency="true"  class="fbLikeContainer"  style="border:none; overflow:hidden; width:150px; height:25px; display:inline;margin-top:-40px;float:right;"  ></iframe>	-->			
+
+<div class="" style="margin-bottom:5px;padding:1px;text-align:right;">
+<span style="float:left;padding:5px 10px;background:#F33E0F;color:white;"><b><a style="color:white;" href="/conferences/submit.php">Add Conference</a></b></span>
+
+<select style="padding:5px;width:300px;display:none;" id=in_cat  onchange="updatetc();" style="display:none;">
+   <option value="">All Categories</option>
+   <option value="1">Image Processing & Computer Vision</option>  
+   <option value="3">Machine Learning, Data Mining & Artificial Intelligence</option>
+   <option value="4">Computer Graphics and Computer-Aided Design</option>
+   <option value="5">Computer Networks and Communications</option>
+   <option value="6">Hardware, Robotics & Electronics</option>
+   <option value="2">Human Computer Interaction</option>
+   <option value="7">Software Engineering</option>
+   <option value="8">Computational Theory and Mathematics</option>
+   <option value="9">Signal Processing</option>
+   <option value="10">Information Systems</option>   
+   <option value="12">Web, Mobile & Multimedia Technologies</option>
+   <option value="11">General Computer Science</option>
+   <option value="13">Biomedical Engineering  & Medical Informatics</option>
+</select>
+
+<select style="padding:5px;width:120px;" id=in_con onchange="updatetc();">
+   <option value="">All Countries</option>
+<option value="United States">United States (44)</option><option value="China">China (44)</option><option value="France">France (41)</option><option value="Online">Online (38)</option><option value="Portugal">Portugal (31)</option><option value="Spain">Spain (31)</option><option value="India">India (31)</option><option value="Canada">Canada (21)</option><option value="Japan">Japan (18)</option><option value="Italy">Italy (18)</option><option value="United Kingdom">United Kingdom (17)</option><option value="Germany">Germany (14)</option><option value="Greece">Greece (11)</option><option value="South Korea">South Korea (9)</option><option value="Australia">Australia (9)</option><option value="Austria">Austria (8)</option><option value="Poland">Poland (6)</option><option value="Denmark">Denmark (5)</option><option value="Thailand">Thailand (5)</option><option value="Sweden">Sweden (5)</option><option value="Singapore">Singapore (5)</option><option value="Switzerland">Switzerland (4)</option><option value="Croatia">Croatia (4)</option><option value="Netherlands">Netherlands (4)</option><option value="Czech Republic">Czech Republic (4)</option><option value="Russia">Russia (3)</option><option value="Cyprus">Cyprus (3)</option><option value="Serbia">Serbia (3)</option><option value="Estonia">Estonia (3)</option><option value="Viet Nam">Viet Nam (3)</option><option value="Romania">Romania (3)</option><option value="Malaysia">Malaysia (2)</option><option value="Nepal">Nepal (2)</option><option value="Belgium">Belgium (2)</option><option value="Ireland">Ireland (2)</option><option value="Morocco">Morocco (2)</option><option value="Israel">Israel (2)</option><option value="Finland">Finland (2)</option><option value="Montenegro">Montenegro (2)</option><option value="Taiwan">Taiwan (2)</option><option value="Indonesia">Indonesia (1)</option><option value="Tunisia">Tunisia (1)</option><option value="Algeria">Algeria (1)</option><option value="New Zealand">New Zealand (1)</option><option value="Hong Kong">Hong Kong (1)</option><option value="Luxembourg">Luxembourg (1)</option><option value="Colombia">Colombia (1)</option><option value="Slovenia">Slovenia (1)</option><option value="Mexico">Mexico (1)</option><option value="Norway">Norway (1)</option></select>
+<select style="padding:5px;width:120px;" id=in_pub onchange="updatetc();">
+    <option value="">All Publishers</option>
+    <option value=IEEE>IEEE</option>
+    <option value=ACM>ACM</option>
+    <option value=Springer>Springer</option>
+    <option value=ScienceDirect>Elsevier</option>
+    <option value=IET>IET</option>
+    <option value="SciTePress">SciTePress</option>
+    <option>SPIE</option>      
+    <option>DBLP</option>      
+    <option>ETLibrary</option>    
+    <option>IASTED</option>    
+    <option>SciTePress</option>
+</select>
+
+<select style="padding:5px;width:200px;" id=in_date onchange="updatetc();">
+<option value="">Conference Time : All dates</option>
+<option value="2021-03">March 2021</option><option value="2021-04">April 2021</option><option value="2021-05">May 2021</option><option value="2021-06">June 2021</option><option value="2021-07">July 2021</option><option value="2021-08">August 2021</option><option value="2021-09">September 2021</option><option value="2021-10">October 2021</option><option value="2021-11">November 2021</option><option value="2021-12">December 2021</option><option value="2022-01">January 2022</option><option value="2022-02">February 2022</option><option value="2022-03">March 2022</option><option value="2022-04">April 2022</option></select>
+
+
+<input type=text value="Search by keyword" style="padding:5px;width:120px;" onfocus="$(this).val('');"  id=in_search>
+</div>
+
+
+				<div class="grey myshad" style="margin-bottom:15px;padding:1px;background:#DCDCDC;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;">
+				      <tr>				        
+				      	 <td  width=114px  style="padding:1px;margin:0px;vertical-align:middle">
+					    <center><i style="font-size:14px;"><i>Publisher</i></center>
+				        </td>
+					<td  width=500px style="margin:1px;padding:1px;vertical-align:middle;">
+					    <center><i style="font-size:14px;"><i>Conference Details</i></center>
+					</td>
+					<td  width=100px style="margin:1px;padding:1px;vertical-align:middle;">
+					    <center><i style="font-size:14px;"><i>Deadline</i></center>
+					</td>
+				      </tr>
+				    </table>
+				</div>
+
+
+<div id=ajax_content>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/icais-2021-international-conference-on-artificial-intelligence-and-smart-systems">ICAIS 2021 : International Conference on Artificial Intelligence and Smart Systems</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Thu 07 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Mar 25, 2021 - Mar 27, 2021 - JCT College of Engineering and Technology</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://icaise.in/2021/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://icaise.in/2021/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/IN" ><img style="vertical-align:middle;" src=/img/flags/in.png> <b>India</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/iwcmc-2021-international-wireless-communications-and-mobile-computing-conference">IWCMC 2021 : International Wireless Communications and Mobile Computing Conference</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Sun 10 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Jun 28, 2021 - Jul 2, 2021 - Beijing</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="https://iwcmc.org/2021/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">https://iwcmc.org/2021/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/CN" ><img style="vertical-align:middle;" src=/img/flags/cn.png> <b>China</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/isiea-2021-2021-ieee-symposium-on-industrial-electronics-applications-isiea2021-virtual-conference">ISIEA 2021 : 2021 IEEE Symposium on Industrial Electronics & Applications (ISIEA2021) – VIRTUAL CONFERENCE</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Sun 10 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Jul 10, 2021 - Jul 11, 2021 - Online</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="https://sites.google.com/site/isiea2021/home" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">https://sites.google.com/site/isiea2021/home</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/ON" ><img style="vertical-align:middle;" src=/img/flags/on.png> <b>Online</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/bsn-2021-international-workshop-on-wearable-and-implantable-body-sensor-networks">BSN 2021 : International Workshop on Wearable and Implantable Body Sensor Networks</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Sun 10 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Sep 21, 2021 - Sep 24, 2021 - Athens</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="https://www.bhi-bsn-2021.org/?page_id=2762" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">https://www.bhi-bsn-2021.org/?page_id=2762</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/GR" ><img style="vertical-align:middle;" src=/img/flags/gr.png> <b>Greece</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/icnc-fskd-2021-international-conference-on-natural-computation-fuzzy-systems-and-knowledge-discovery">ICNC-FSKD 2021 : International Conference on Natural Computation, Fuzzy Systems and Knowledge Discovery</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Sun 10 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Jul 24, 2021 - Jul 26, 2021 - Guiyang</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://icnc-fskd.gzu.edu.cn/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://icnc-fskd.gzu.edu.cn/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/CN" ><img style="vertical-align:middle;" src=/img/flags/cn.png> <b>China</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/rdaaps-2021-reconciling-data-analytics-automation-privacy-and-security-a-big-data-challenge">RDAAPS 2021 : Reconciling Data Analytics, Automation, Privacy, and Security: A Big Data Challenge</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Mon 11 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">May 17, 2021 - May 19, 2021 - Hamilton</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://rdaaps.com/conferences/rdaaps21/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://rdaaps.com/conferences/rdaaps21/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/CA" ><img style="vertical-align:middle;" src=/img/flags/ca.png> <b>Canada</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/fccm-2021-field-programmable-custom-computing-machines">FCCM 2021 : Field-Programmable Custom Computing Machines</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Mon 11 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">May 9, 2021 - May 12, 2021 - Orlando</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="https://www.fccm.org/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">https://www.fccm.org/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/US" ><img style="vertical-align:middle;" src=/img/flags/us.png> <b>United States</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/cnert-2021-workshop-on-computer-and-networking-experimental-research-using-testbeds">CNERT 2021 : Workshop on Computer and Networking Experimental Research using Testbeds</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Mon 11 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">May 10, 2021 - May 10, 2021 - Online</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="https://infocom2021.ieee-infocom.org/workshop-computer-and-networking-experimental-research-using-testbeds" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">https://infocom2021.ieee-infocom.org/workshop-computer-and-networking-experimental-research-using-testbeds</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/ON" ><img style="vertical-align:middle;" src=/img/flags/on.png> <b>Online</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/sesoswdes-2021-joint-9th-international-workshop-on-software-engineering-for-systems-of-systems-and-15th-workshop-on-distributed-software-development-software-ecosystems-and-systems-of-systems">SESoS/WDES 2021 : Joint 9th International Workshop on Software Engineering for Systems-of-Systems and 15th Workshop on Distributed Software Development, Software Ecosystems and Systems-of-Systems</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Tue 12 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">May 29, 2021 - Jun 4, 2021 - Online</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://sesos-wdes-2021.icmc.usp.br" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://sesos-wdes-2021.icmc.usp.br</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/ON" ><img style="vertical-align:middle;" src=/img/flags/on.png> <b>Online</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/icip-2021-ieee-international-conference-on-image-processing">ICIP 2021 : IEEE International Conference on Image Processing</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Wed 13 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Sep 19, 2021 - Sep 22, 2021 - Alaska</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="https://2021.ieeeicip.org/Default.asp" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">https://2021.ieeeicip.org/Default.asp</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/US" ><img style="vertical-align:middle;" src=/img/flags/us.png> <b>United States</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/ifip-networking-2021-the-international-federation-for-information-processing-ifip-networking-2021-conference">IFIP Networking 2021 : The International Federation for Information Processing (IFIP) Networking 2021 Conference</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Thu 14 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Jun 21, 2021 - Jun 24, 2021 - Espoo</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="https://networking.ifip.org/2021" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">https://networking.ifip.org/2021</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/FI" ><img style="vertical-align:middle;" src=/img/flags/fi.png> <b>Finland</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/cbmi-2021">CBMI 2021 : Content-Based Multimedia Indexing</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Fri 15 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Jun 28, 2021 - Jun 30, 2021 - Lille - France</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://cbmi2020.univ-lille.fr" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://cbmi2020.univ-lille.fr</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/FR" ><img style="vertical-align:middle;" src=/img/flags/fr.png> <b>France</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/aina-2021-international-conference-on-advanced-information-networking-and-applications">AINA 2021 : International Conference on Advanced Information Networking and Applications</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Fri 15 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">May 12, 2021 - Nov 14, 2021 - Toronto</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://voyager.ce.fit.ac.jp/conf/aina/2021/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://voyager.ce.fit.ac.jp/conf/aina/2021/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/CA" ><img style="vertical-align:middle;" src=/img/flags/ca.png> <b>Canada</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/seams-2021-software-engineering-for-adaptive-and-self-managing-systems">SEAMS 2021 : Software Engineering for Adaptive and Self-Managing Systems</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Fri 15 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">May 23, 2021 - May 24, 2021 - Madrid</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="https://conf.researchr.org/home/seams-2021" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">https://conf.researchr.org/home/seams-2021</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/ES" ><img style="vertical-align:middle;" src=/img/flags/es.png> <b>Spain</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/5nano-2021-international-conference-on-nanoelectronics-nanophotonics-nanomaterials-nanobioscience-nanotechnology">5NANO 2021 :  International Conference on Nanoelectronics, Nanophotonics, Nanomaterials, Nanobioscience & Nanotechnology</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Fri 15 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Apr 29, 2021 - Apr 30, 2021 - Kottayam</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="https://www.5nano2021.com/index.php#main" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">https://www.5nano2021.com/index.php#main</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/IN" ><img style="vertical-align:middle;" src=/img/flags/in.png> <b>India</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/wf-iot-2021-ieee-world-forum-on-internet-of-things">WF-IoT 2021 : IEEE World Forum on Internet of Things</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Fri 15 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Jun 20, 2021 - Jun 24, 2021 - New Orleans</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="https://wfiot2021.iot.ieee.org/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">https://wfiot2021.iot.ieee.org/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/US" ><img style="vertical-align:middle;" src=/img/flags/us.png> <b>United States</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/netsoft-2021-ieee-conference-on-network-softwarization">NetSoft 2021 : IEEE Conference on Network Softwarization</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Fri 15 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Jun 28, 2021 - Jul 2, 2021 - Tokyo</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="https://netsoft2021.ieee-netsoft.org/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">https://netsoft2021.ieee-netsoft.org/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/JP" ><img style="vertical-align:middle;" src=/img/flags/jp.png> <b>Japan</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/isie-2021-international-symposium-on-industrial-electronics">ISIE 2021 : International Symposium on Industrial Electronics</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Fri 15 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Jun 20, 2021 - Jun 23, 2021 - Kyoto</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="https://www.isie2021.org/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">https://www.isie2021.org/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/JP" ><img style="vertical-align:middle;" src=/img/flags/jp.png> <b>Japan</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/wtmc-2021-6th-international-workshop-on-traffic-measurements-for-cybersecurity">WTMC 2021 : 6th International Workshop on Traffic Measurements for Cybersecurity</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Fri 15 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">May 27, 2021 - May 27, 2021 - Online</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="https://wtmc.info" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">https://wtmc.info</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/ON" ><img style="vertical-align:middle;" src=/img/flags/on.png> <b>Online</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/compsac-2021-ieee-annual-international-computer-software-and-applications-conference">COMPSAC 2021 : IEEE Annual International Computer Software and Applications Conference</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Fri 15 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Jul 12, 2021 - Jul 16, 2021 - Madrid</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="https://ieeecompsac.computer.org/2021/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">https://ieeecompsac.computer.org/2021/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/ES" ><img style="vertical-align:middle;" src=/img/flags/es.png> <b>Spain</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/usnc-ursi-nrsm-2021-ieee-international-symposium-on-antennas-and-propagation-and-usnc-ursi-radio-science-meeting">USNC-URSI NRSM 2021 : IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Fri 15 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Jul 10, 2021 - Jul 16, 2021 - Singapore</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="https://www.2021apsursi.org/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">https://www.2021apsursi.org/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/SG" ><img style="vertical-align:middle;" src=/img/flags/sg.png> <b>Singapore</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/wptc-2021-ieee-wireless-power-transfer-conference">WPTC 2021 : IEEE Wireless Power Transfer Conference</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Fri 15 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Jun 1, 2021 - Jun 4, 2021 - San Diego</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="https://wptc-ieee.org/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">https://wptc-ieee.org/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/US" ><img style="vertical-align:middle;" src=/img/flags/us.png> <b>United States</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/ecce-2021-ieee-energy-conversion-congress-and-exposition">ECCE 2021 : IEEE Energy Conversion Congress and Exposition</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Fri 15 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Oct 10, 2021 - Oct 14, 2021 - Vancouver</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="https://www.ieee-ecce.org/2021/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">https://www.ieee-ecce.org/2021/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/CA" ><img style="vertical-align:middle;" src=/img/flags/ca.png> <b>Canada</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/meco-2021-mediterranean-conference-on-embedded-computing">MECO 2021 : Mediterranean Conference on Embedded Computing</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Fri 15 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Jun 7, 2021 - Jun 10, 2021 - Budva</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://embeddedcomputing.meconet.me/meco2021/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://embeddedcomputing.meconet.me/meco2021/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/ME" ><img style="vertical-align:middle;" src=/img/flags/me.png> <b>Montenegro</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/esci-2021-3rd-ieee-international-conference-on-emerging-smart-computing-and-informatics">ESCI 2021 : 3rd IEEE International Conference on Emerging Smart Computing and Informatics</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Fri 15 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Mar 5, 2021 - Mar 7, 2021 - Pune</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://esciioit.org/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://esciioit.org/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/IN" ><img style="vertical-align:middle;" src=/img/flags/in.png> <b>India</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/icaiic-2021-the-3rd-international-conference-on-artificial-intelligence-in-information-and-communication">ICAIIC 2021 : The 3rd International Conference on Artificial Intelligence in Information and Communication</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Fri 15 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Apr 20, 2021 - Apr 23, 2021 - Jeju Island</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://icaiic.org" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://icaiic.org</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/KR" ><img style="vertical-align:middle;" src=/img/flags/kr.png> <b>South Korea</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/isorc-2021-ieee-international-symposium-on-object-oriented-real-time-distributed-computing">ISORC 2021 : IEEE International Symposium on Object Oriented Real-Time Distributed Computing</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Fri 15 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Jun 1, 2021 - Jun 3, 2021 - Daegu</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="https://isorc2021.github.io/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">https://isorc2021.github.io/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/KR" ><img style="vertical-align:middle;" src=/img/flags/kr.png> <b>South Korea</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/blockarch-2021-second-workshop-on-blockchain-based-software-architectures">BlockArch 2021 : Second Workshop on Blockchain-Based Software Architectures</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Fri 15 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Mar 22, 2021 - Mar 26, 2021 - Stuttgart</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://ww2.inf.ufg.br/~insight/blockarch2021/index.html" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://ww2.inf.ufg.br/~insight/blockarch2021/index.html</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/DE" ><img style="vertical-align:middle;" src=/img/flags/de.png> <b>Germany</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/iccia-2021-6th-international-conference-on-computational-intelligence-and-applications">ICCIA 2021 : 6th International Conference on Computational Intelligence and Applications</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Fri 15 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Jun 11, 2021 - Jun 13, 2021 - Xiamen</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://www.iccia.org/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://www.iccia.org/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/CN" ><img style="vertical-align:middle;" src=/img/flags/cn.png> <b>China</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/seai-2021-international-conference-on-software-engineering-and-artificial-intelligence">SEAI 2021 : International Conference on Software Engineering and Artificial Intelligence</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Fri 15 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Jun 11, 2021 - Jun 13, 2021 - Xiamen</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://www.seai.org/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://www.seai.org/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/CN" ><img style="vertical-align:middle;" src=/img/flags/cn.png> <b>China</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/isorc-2021-international-symposium-on-real-time-computing">ISORC 2021 : International Symposium on Real-Time Computing</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Fri 15 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Jun 1, 2021 - Jun 3, 2021 - Daegu</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="https://isorc2021.github.io/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">https://isorc2021.github.io/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/KR" ><img style="vertical-align:middle;" src=/img/flags/kr.png> <b>South Korea</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/smartcomp-2021-7th-ieee-international-conference-on-smart-computing">SMARTCOMP 2021 : 7th IEEE International Conference on Smart Computing</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Sun 17 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Aug 23, 2021 - Aug 27, 2021 - Irvine</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="https://www.smart-comp.info" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">https://www.smart-comp.info</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/US" ><img style="vertical-align:middle;" src=/img/flags/us.png> <b>United States</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/mdm-2021-international-conference-on-mobile-data-management">MDM 2021 : International Conference on Mobile Data Management</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Sun 17 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Jun 15, 2021 - Jun 18, 2021 - Toronto</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://mdmconferences.org/mdm2021/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://mdmconferences.org/mdm2021/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/CA" ><img style="vertical-align:middle;" src=/img/flags/ca.png> <b>Canada</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/dcoss-2021-the-17th-annual-international-conference-on-distributed-computing-in-sensor-systems">DCOSS 2021 : The 17th Annual International Conference on Distributed Computing in Sensor Systems</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Mon 18 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Jun 7, 2021 - Jun 9, 2021 - Coral Bay</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://www.dcoss.org" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://www.dcoss.org</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/CY" ><img style="vertical-align:middle;" src=/img/flags/cy.png> <b>Cyprus</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/rfic-2021-ieee-radio-frequency-integrated-circuits-symposium">RFIC 2021 : IEEE Radio Frequency Integrated Circuits Symposium</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Mon 18 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Jun 6, 2021 - Jun 8, 2021 - Atlanta</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="https://rfic-ieee.org/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">https://rfic-ieee.org/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/US" ><img style="vertical-align:middle;" src=/img/flags/us.png> <b>United States</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/it-2021-25th-international-information-technology-conference">IT 2021 : 25th International Information Technology Conference</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Mon 18 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Feb 16, 2021 - Feb 20, 2021 - Žabljak</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://www.it.ac.me/eng/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://www.it.ac.me/eng/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/ME" ><img style="vertical-align:middle;" src=/img/flags/me.png> <b>Montenegro</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/mipro-2021-44th-international-convention-on-information-communication-and-electronic-technology">MIPRO 2021 : 44th International Convention on Information, Communication and Electronic Technology</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Mon 18 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">May 24, 2021 - May 28, 2021 - Opatija</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://www.mipro.hr" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://www.mipro.hr</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/HR" ><img style="vertical-align:middle;" src=/img/flags/hr.png> <b>Croatia</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/rfid-2021-ieee-international-conference-on-radio-frequency-identification">RFID 2021 : IEEE International Conference on Radio Frequency Identification</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Mon 18 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Apr 27, 2021 - Apr 29, 2021 - Phoenix</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="https://2021.ieee-rfid.org/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">https://2021.ieee-rfid.org/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/US" ><img style="vertical-align:middle;" src=/img/flags/us.png> <b>United States</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/ccta-2021-5th-conference-on-control-technology-and-applications">CCTA 2021 : 5th Conference on Control Technology and Applications</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Tue 19 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Aug 8, 2021 - Aug 11, 2021 - San Diego</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="https://ccta2021.ieeecss.org/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">https://ccta2021.ieeecss.org/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/US" ><img style="vertical-align:middle;" src=/img/flags/us.png> <b>United States</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/seh-2021-3rd-icse-workshop-on-software-engineering-for-healthcare">SEH 2021 : 3rd ICSE Workshop on Software Engineering  for Healthcare</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Tue 19 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">May 23, 2021 - May 24, 2021 - Madrid</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://seh.icmc.usp.br/html/seh-2021.html" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://seh.icmc.usp.br/html/seh-2021.html</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/ES" ><img style="vertical-align:middle;" src=/img/flags/es.png> <b>Spain</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/incet-2021-2nd-international-conference-of-emerging-technologies">INCET 2021 : 2nd International Conference of Emerging Technologies</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Tue 19 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">May 21, 2021 - May 23, 2021 - Belgaum</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://www.incet.org/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://www.incet.org/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/IN" ><img style="vertical-align:middle;" src=/img/flags/in.png> <b>India</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/lics-2021-ieee-symposium-on-logic-in-computer-science">LICS 2021 : IEEE Symposium on Logic in Computer Science</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Wed 20 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Jun 29, 2021 - Jul 2, 2021 - Rome</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://easyconferences.eu/lics2021/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://easyconferences.eu/lics2021/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/IT" ><img style="vertical-align:middle;" src=/img/flags/it.png> <b>Italy</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/unet21-the-6th-international-symposium-on-ubiquitous-networking">UNet'21 : The 6th international symposium on Ubiquitous Networking</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Wed 20 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">May 19, 2021 - May 22, 2021 - Marrakesh</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://unet-conf.org" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://unet-conf.org</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/MA" ><img style="vertical-align:middle;" src=/img/flags/ma.png> <b>Morocco</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/a-most-2021-advances-in-model-based-software-testing">A-MOST 2021 : Advances in Model-Based Software Testing</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Wed 20 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Apr 12, 2021 - Apr 12, 2021 - Online</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="https://icst2021.icmc.usp.br/home/a-most-2021" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">https://icst2021.icmc.usp.br/home/a-most-2021</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/ON" ><img style="vertical-align:middle;" src=/img/flags/on.png> <b>Online</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/wocc-2021-wireless-and-optical-communications-conference">WOCC 2021 : Wireless and Optical Communications Conference</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Wed 20 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Jun 4, 2021 - Jun 7, 2021 - Chongquing</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://www.icwoc.org/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://www.icwoc.org/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/CN" ><img style="vertical-align:middle;" src=/img/flags/cn.png> <b>China</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/iciet-2021-29th-international-conference-on-information-and-education-technology">ICIET 2021 : 9th International Conference on Information and Education Technology</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Wed 20 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Mar 27, 2021 - Mar 29, 2021 - Okayama</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://www.iciet.org/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://www.iciet.org/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/JP" ><img style="vertical-align:middle;" src=/img/flags/jp.png> <b>Japan</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/iccsn-2021-13th-international-conference-on-communication-software-and-networks">ICCSN 2021 : 13th International Conference on Communication Software and Networks</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Wed 20 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Jun 4, 2021 - Jun 7, 2021 - Chongqing</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://www.iccsn.org/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://www.iccsn.org/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/CN" ><img style="vertical-align:middle;" src=/img/flags/cn.png> <b>China</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/iccci-2021-3rd-international-conference-on-computer-communication-and-the-internet">ICCCI 2021 : 3rd International Conference on Computer Communication and the Internet</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Wed 20 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Jun 25, 2021 - Jun 27, 2021 - Nagoya</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://iccci.org/index.html" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://iccci.org/index.html</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/JP" ><img style="vertical-align:middle;" src=/img/flags/jp.png> <b>Japan</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/icps-2021-ieee-international-conference-on-industrial-cyber-physical-systems">ICPS 2021 : IEEE International Conference on Industrial Cyber Physical Systems</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Thu 21 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">May 10, 2021 - May 13, 2021 - Victoria</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://ieee-icps2021.org/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://ieee-icps2021.org/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/CA" ><img style="vertical-align:middle;" src=/img/flags/ca.png> <b>Canada</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+				<div class="grey myshad" style="margin-bottom:10px;padding:1px;">
+				    <table border=0 width=100% cellspacing=0 cellpadding=0 style="margin:1px;padding:1px;table-layout:fixed;">
+				      <tr>
+				      	 <td rowspan=2  style="padding:1px;margin:0px;vertical-align:middle;width:114px; ">
+					    <img style="margin:2px;vertical-align:middle;width:110px;max-height:30px;" src=/img/IEEE_s.png>
+				        </td>
+					<td colspan=2 style="margin:1px;padding:1px;vertical-align:middle;"><h4 style="padding:1px;margin:1px;font-size:13px;"><a href="https://www.guide2research.com/conference/icetci-2021-international-conference-on-emerging-techniques-in-computational-intelligence">ICETCI 2021 : International Conference on Emerging Techniques in Computational Intelligence</a></h4></td>
+					<td nowrap rowspan=2  style="padding:1px;margin:0px;text-align:right;vertical-align:middle;width:115px;">
+
+<b>
+	Thu 21 Jan 2021</b></td>
+				      </tr>
+				      <tr>
+					<td width=300px valign=top style="padding:1px;margin:0px;vertical-align:middle;font-size:12px;line-height:13px;">
+					
+					  <div style="padding:0px;margin:0px;">Aug 25, 2021 - Aug 27, 2021 - Hyderabad</div>
+
+ 
+<div style="padding:0px;margin:0px;font-size:11px;line-height:11px;display:none;"><a target=_blank href="http://ietcint.com/" style="font-size:11px;line-height:11px;margin:0px;padding:0px;">http://ietcint.com/</a></div> 					</td>
+					<td width=200px style="padding:1px;margin:0px;text-align:left;vertical-align:middle;">					
+					<a  href="https://www.guide2research.com/conferences/IN" ><img style="vertical-align:middle;" src=/img/flags/in.png> <b>India</b></a>
+<!-- 					<a target=_blank href=""><img style="vertical-align:top;" src=/img/link_22.png></a>  -->
+					</td>					
+				      </tr>
+				    </table>
+				</div>
+
+
+
+
+<!-- Paging -->
+
+<table style="padding:2px;margin:2px;width:100%;border:1px;" border=1>
+  <tr>
+    <td style="padding:0px;text-align:left;">
+
+    </td>
+    <td style="padding:0px;text-align:right;float:right;">
+
+		<span style="float:right;padding:5px 10px;background:#F33E0F;color:white;"><b><a style="color:white;" href="https://guide2research.com/conferences/page-2">More Conferences</a></b></span>
+
+    </td>
+  </tr>
+</table>
+
+<!-- / Paging -->
+
+
+</div>
+<div id=div_msg></div>
+
+				</div>
+			</div>
+		</article>
+	</div>
+	
+	<aside class="sidebar c-4-12">
+	<div id="sidebars" class="g">
+		<div class="sidebar">
+			<ul class="sidebar_list">
+			        <li id="sidebar-search" class="widget" style="margin-bottom: 10px;">
+				  <div class="tagcloud">
+				      <a href="/conferences" ><div class="tab_name" style="font-size:26px;padding:12px 10px 12px 10px;width:280px;background-color: #FFCA00;">All Conferences</div></a><br>				      
+				      <a href="/topconf" ><div class="tab_name" style="font-size:26px;padding:12px 10px 12px 10px;width:280px;">Top Conferences</div></a><br>
+
+				      <a href="/journals" ><div class="tab_name" style="font-size:26px;padding:12px 10px 12px 10px;width:280px;">Top 1000 Journals</div></a><br>
+				      
+				      <a href="/scientists" ><div class="tab_name" style="font-size:26px;padding:12px 10px 12px 10px;width:280px;">Top 1000 Scientists</div></a><br>				      				      
+
+				      <a href="/ranking" ><div class="tab_name" style="font-size:26px;padding:12px 10px 12px 10px;width:280px;">University Rankings</div></a><br>				      				      
+
+
+				     <a href="/special-issues/" ><div class="tab_name" style="font-size:26px;padding:12px 10px 12px 10px;width:280px;">Special Issues</div></a><br>	
+<!-- 				      <a href="/special-issues" ><div class="tab_name" style="font-size:26px;padding:12px 10px 12px 10px;width:280px;">Special Issues</div></a><br> -->
+				      <a href="/category/research" ><div class="tab_name" style="font-size:26px;padding:12px 10px 12px 10px;width:280px;">Research Blog</div></a>
+<!--				      <a href="/category/software" ><div class="tab_name" style="font-size:26px;padding:12px 10px 12px 10px;width:280px;">Software</div></a> -->
+
+			      <a href="/contact-us" ><div class="tab_name" style="font-size:26px;padding:12px 10px 12px 10px;width:280px;">Contact us</div></a>
+				  </div>
+<div>
+	
+<!-- ADS -->
+
+
+<!-- /ADS -->
+			        </li>
+					        <li id="facebook_like" class="widget widget-sidebar" style="margin-bottom: 10px;"><iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FGuide2Researchcom%2F1396956173909994&amp;width=292&amp;colorscheme=light&amp;show_faces=false&amp;stream=false&amp;header=false&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height: 65px;" allowTransparency="true"></iframe>
+				</li>
+
+<li class="widget widget-sidebar"><a href="https://twitter.com/guide2research" class="twitter-follow-button" data-show-count="false">Follow @guide2research</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></li>
+		
+				<li id="widget_text" class="widget widget-sidebar"><h3>Top Scientists by H-Index</h3>			<div class="textwidget"><table border="100%">
+<tr>
+ <td width="50%"><a href="https://www.guide2research.com/scientists/US"><img style="vertical-align:middle;" src="/img/flags/us.png"> United States</a>
+</td>
+<td width="50%" nowrap><a <a href="https://www.guide2research.com/scientists/UK"><img style="vertical-align:middle;" src="/img/flags/uk.png"> United Kingdom</a>
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+<a href="https://www.guide2research.com/scientists/CA"><img style="vertical-align:middle;" src="/img/flags/ca.png"> Canada</a>
+</td>
+<td width="50%">
+<a href="https://www.guide2research.com/scientists/DE"><img style="vertical-align:middle;" src="/img/flags/de.png"> Germany</a>
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+<a href="https://www.guide2research.com/scientists/CH"><img style="vertical-align:middle;" src="/img/flags/ch.png"> Switzerland</a>
+</td>
+<td width="50%">
+<a href="https://www.guide2research.com/scientists/AU"><img style="vertical-align:middle;" src="/img/flags/au.png"> Australia</a>
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+<a href="https://www.guide2research.com/scientists/NL"><img style="vertical-align:middle;" src="/img/flags/nl.png"> Netherlands</a>
+</td>
+<td width="50%">
+<a href="https://www.guide2research.com/scientists/HK"><img style="vertical-align:middle;" src="/img/flags/hk.png"> Hong Kong</a>
+</td>
+</tr>
+
+
+<tr>
+<td width="50%">
+<a href="https://www.guide2research.com/scientists/FR"><img style="vertical-align:middle;" src="/img/flags/fr.png"> France</a>
+</td>
+<td width="50%">
+<a href="https://www.guide2research.com/scientists/IT"><img style="vertical-align:middle;" src="/img/flags/it.png"> Italy</a>
+</td>
+</tr>
+
+
+<tr>
+<td width="50%">
+<a href="https://www.guide2research.com/scientists/ES"><img style="vertical-align:middle;" src="/img/flags/es.png"> Spain</a>
+</td>
+<td width="50%">
+<a href="https://www.guide2research.com/scientists/BE"><img style="vertical-align:middle;" src="/img/flags/be.png"> Belgium</a>
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+<a href="https://www.guide2research.com/scientists/SG"><img style="vertical-align:middle;" src="/img/flags/sg.png"> Singapore</a>
+</td>
+<td width="50%">
+<a href="https://www.guide2research.com/scientists/JP"><img style="vertical-align:middle;" src="/img/flags/jp.png"> Japan</a>
+</td>
+</tr>
+<tr>
+<td colspan="2"><a href="https://www.guide2research.com/scientists/by-country">All other countries</a></td>
+</tr>
+
+</table></div>
+		</li><li id="widget_text" class="widget widget-sidebar"><h3>Upcoming Conferences</h3>			<div class="textwidget"><a href="https://www.guide2research.com/conferences/ieee"><img src="https://www.guide2research.com/img/IEEE_s.png"></a>
+<a href="https://www.guide2research.com/conferences/acm"><img src="https://www.guide2research.com/img/ACM_s.png"></a>
+<a href="https://www.guide2research.com/conferences/springer"><img src="https://www.guide2research.com/img/Springer_s.png"></a>
+<a href="https://www.guide2research.com/conferences/elsevier"><img src="https://www.guide2research.com/img/ScienceDirect_s.png"></a>
+<a href="https://www.guide2research.com/conferences/dblp"><img src="https://www.guide2research.com/img/DBLP_s.png"></a>
+<a href="https://www.guide2research.com/conferences/SciTePress"><img style="width:120px;"  src="https://www.guide2research.com/img/SciTePress_s.png"></a>
+</div>
+		</li><li id="widget_sib_subscribe_form" class="widget widget-sidebar"><h3>Subscibe to Newsletter &amp; Conference Alerts</h3>			<form id="sib_signup_form_1" method="post" class="sib_signup_form">
+				<div class="sib_loader" style="display:none;"><img
+							src="https://www.guide2research.com/wp-includes//images/spinner.gif" alt="loader"></div>
+				<input type="hidden" name="sib_form_action" value="subscribe_form_submit">
+				<input type="hidden" name="sib_form_id" value="1">
+                <input type="hidden" name="sib_form_alert_notice" value="Required field">
+                <input type="hidden" name="sib_security" value="f5846cb86b">
+				<div class="sib_signup_box_inside_1">
+					<div style="/*display:none*/" class="sib_msg_disp">
+					</div>
+					<p class="sib-email-area">
+    <label class="sib-email-area">Email Address*</label>
+    <input type="email" class="sib-email-area" name="email" required="required">
+</p>
+<p class="sib-privacy-policy" style="
+">Guide2Research uses the information to contact you about our relevant content. For more information, check out our <a href="http://www.guide2research.com/privacy-policy" title="Privacy policy">privacy policy</a>.</p>
+<p>
+    <input type="submit" class="sib-default-btn" value="Subscribe">
+</p>				</div>
+			</form>
+			<style>
+				form#sib_signup_form_1 p.sib-alert-message {
+    padding: 6px 12px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+form#sib_signup_form_1 p.sib-alert-message-error {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+}
+form#sib_signup_form_1 p.sib-alert-message-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+form#sib_signup_form_1 p.sib-alert-message-warning {
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    color: #8a6d3b;
+}			</style>
+			</li><li id="widget_text" class="widget widget-sidebar"><h3>Top Conferences By Deadlines</h3>			<div class="textwidget"><ul>
+<li><a href="https://www.guide2research.com/topconf">All  Top Conferences</a></li>
+<li><a href="https://www.guide2research.com/topconf/computer-vision">Image Processing & Computer Vision</a></li>
+<li><a href="https://www.guide2research.com/topconf/machine-learning">Machine Learning & Artificial Intelligence</a></li>
+<li><a href="https://www.guide2research.com/topconf/graphics">Graphics and Computer-Aided Design</a></li>
+<li><a href="https://www.guide2research.com/topconf/network-communication">Computer Networks and Communications</a></li>
+<li><a href="https://www.guide2research.com/topconf/hardware-electronics">Hardware, Robotics & Electronics</a></li>
+<li><a href="https://www.guide2research.com/topconf/human-computer-interaction">Human Computer Interaction</a></li>
+<li><a href="https://www.guide2research.com/topconf/software-programming">Software Engineering & Programming</a></li>
+<li><a href="https://www.guide2research.com/topconf/computational-theory">Computational Theory and Mathematics</a></li>
+<li><a href="https://www.guide2research.com/topconf/signal-processing">Signal Processing</a></li>
+<li><a href="https://www.guide2research.com/topconf/information-systems">Databases & Information Systems</a></li>
+<li><a href="https://www.guide2research.com/topconf/web-mobile-multimedia">Web, Mobile & Multimedia Technologies</a></li>
+<li><a href="https://www.guide2research.com/topconf/computer-science">General Computer Science</a></li>
+<li><a href="https://www.guide2research.com/topconf/biomedical-bioinformatics">Biomedical & Medical Engineering</a></li>
+<li><a href="https://www.guide2research.com/topconf/computer-security-cryptography">Computer Security and Cryptography</a></li>
+<li><a href="https://www.guide2research.com/topconf/computational-linguistics-speech-processing">Computational Linguistics & Speech</a></li>
+</ul></div>
+		</li><li id="widget_text" class="widget widget-sidebar"><h3>Top Journals with Impact Factor</h3>			<div class="textwidget"><ul>
+<li><a href="https://www.guide2research.com/journals">All Computer Science & Electronics</a></li>
+<li><a href="https://www.guide2research.com/journals/computer-vision">Image Processing & Computer Vision</a></li>
+<li><a href="https://www.guide2research.com/journals/machine-learning">Machine Learning & Artificial Intelligence</a></li>
+<li><a href="https://www.guide2research.com/journals/graphics">Graphics and Computer-Aided Design</a></li>
+<li><a href="https://www.guide2research.com/journals/network-communication">Computer Networks and Communications</a></li>
+<li><a href="https://www.guide2research.com/journals/hardware-electronics">Hardware, Robotics & Electronics</a></li>
+<li><a href="https://www.guide2research.com/journals/human-computer-interaction">Human Computer Interaction</a></li>
+<li><a href="https://www.guide2research.com/journals/software-programming">Software Engineering & Programming</a></li>
+<li><a href="https://www.guide2research.com/journals/computational-theory">Computational Theory and Mathematics</a></li>
+<li><a href="https://www.guide2research.com/journals/signal-processing">Signal Processing</a></li>
+<li><a href="https://www.guide2research.com/journals/information-systems">Information Systems</a></li>
+<li><a href="https://www.guide2research.com/journals/web-mobile-multimedia">Web, Mobile & Multimedia Technologies</a></li>
+<li><a href="https://www.guide2research.com/journals/computer-science">General Computer Science</a></li>
+<li><a href="https://www.guide2research.com/journals/biomedical-bioinformatics">Biomedical & Medical Engineering</a></li>
+<li><a href=”https://www.guide2research.com/journals/computer-security-cryptography”>Computer Security and Cryptography</a></li>
+<li><a href=”https://www.guide2research.com/journals/computational-linguistics-speech-processing”>Computational Linguistics & Speech Processing</a></li>
+</ul></div>
+		</li><li id="widget_text" class="widget widget-sidebar"><h3>To Download :</h3>			<div class="textwidget"><ul>
+<li><a href="https://www.guide2research.com/wp-content/uploads/2020/08/2020_Top_Computer_Science_Universities_Ranking.pdf">Ranking for Top Computer Science Universities 2020</a></li>
+<li><a href="https://www.guide2research.com/wp-content/uploads/2020/05/Guide2Research-TopScientists-May_2020-1.pdf">Ranking for Top Scientists in Computer Science and Electronics 2020, 6th Edition</a></li>
+<li><a href="https://www.guide2research.com/scientists/Top-Scientists-2019-March-Guide2Research.pdf" target="_blank" rel="noopener">Ranking for Top Scientists in Computer Science and Electronics 2019, 5th Edition</a></li>
+<li><a href="https://www.guide2research.com/scientists/Top-Scientists-2018-March-Guide2Research.pdf" target="_blank" rel="noopener">Ranking for Top Scientists in Computer Science and Electronics 2018</a></li>
+<li><a href="https://www.guide2research.com/special-issues/2017.pdf" target="_blank" rel="noopener">Special Issues for Journals With Impact Factor, 2017/2017</a></li>
+<li><a href="https://www.guide2research.com/topconf/top-cs-2017-08.pdf" target="_blank" rel="noopener">Conference Ranking : Top Computer Science Conferences, 2017/2017</a></li>
+<li><a href="https://www.guide2research.com/journals/list-2017.pdf" target="_blank" rel="noopener">Impact Factor for Top Journals of Computer Science and Electronics, 2017</a></li>
+<li><a href="https://www.guide2research.com/journals/list-2016.pdf" target="_blank" rel="noopener">Impact Factor for Top Journals of Computer Science and Electronics, 2016</a></li>
+<li><a href="https://www.guide2research.com/journals/list-2015.pdf" target="_blank" rel="noopener">Impact Factor for Top Journals of Computer Science and Electronics, 2015</a></li>
+<li><a href="https://www.guide2research.com/books/Research_career_Eng.pdf" target="_blank" rel="noopener">How to chart a successful research career by Prof Alan Johnson</a></li>
+<li><a href="https://www.guide2research.com/wp-content/uploads/2015/01/2014-TopScientists.pdf" target="_blank" rel="noopener">Top H-Index for Scholars of Computer Science &amp; Electronics, 2014</a></li>
+</ul>
+</div>
+		</li><li id="widget_pages" class="widget widget-sidebar"><h3>Pages</h3>		<ul>
+			<li class="page_item page-item-9498"><a href="https://www.guide2research.com/about-us">About us</a></li>
+<li class="page_item page-item-6"><a href="https://www.guide2research.com/contact-us">Contact us</a></li>
+<li class="page_item page-item-15428"><a href="https://www.guide2research.com/our-methodology">Our Methodology</a></li>
+<li class="page_item page-item-14"><a href="https://www.guide2research.com/privacy-policy">Privacy Policy</a></li>
+		</ul>
+		</li>			</ul>
+		</div>
+	</div><!--sidebars-->
+</aside>
+	
+</div>
+
+<script>
+$('#in_search').keypress(function(e) {
+    if(e.which == 13) {
+        updatetc();
+    }
+});
+function updatetc(){
+var f=$('#in_search').val();
+if (f=='Search by keyword')f='';
+
+var p=$('#in_pub').val();
+var b=$('#in_con').val();
+var c=$('#in_cat').val();
+
+var d=$('#in_date').val();
+get_url('/conferences/?ajax=1&k='+escape(f)+'&dd='+d+'&pub='+p+'&con='+escape(b)+'&cat='+escape(c),'ajax_content');
+
+}
+function updatec(v){
+get_url('/conferences/?addc=1'+'&v='+escape(v),'div_msg');
+}
+function updatecr(v){
+get_url('/conferences/?removec=1'+'&v='+escape(v),'div_msg');
+}
+
+
+</script>
+
+	<!--WP Code Highlight_start-->
+	<script type="text/javascript">
+		window.onload = function(){prettyPrint();};
+	</script>
+	<script type="text/javascript" src="https://www.guide2research.com/wp-content/plugins/wp-code-highlight/js/wp-code-highlight.js"></script>
+	<!--WP Code Highlight_end-->
+		</div>
+	</div><!--#page-->
+</div><!--.main-container-->
+<footer>
+	<div class="container">
+		<div class="footer-widgets">
+				<div class="f-widget f-widget-1">
+					</div>
+	<div class="f-widget f-widget-2">
+					</div>
+	<div class="f-widget last">
+					</div>
+		</div><!--.footer-widgets-->
+	</div><!--.container-->
+</footer><!--footer-->
+<div class="copyrights">
+	<!--start copyrights-->
+<div class="row" id="copyright-note">
+<span>&copy; 2021 <a href="https://www.guide2research.com/" title="" rel="nofollow">Guide 2 Research</a>. All Rights Reserved.</span>
+<div class="top">Maintained by <a href="http://www.imed.ws/">Imed</a>.&nbsp;<a href="#top" class="toplink" rel="nofollow">Back to Top &uarr;</a></div>
+</div>
+<!--end copyrights-->
+</div> 
+
+<!-- tracker added by Ultimate Google Analytics plugin v1.6.0: http://www.oratransplant.nl/uga -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-397862-38");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<script type='text/javascript' src='https://www.guide2research.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.guide2research.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.6'></script>
+<script type='text/javascript' src='https://www.guide2research.com/wp-content/plugins/youtube-embed-plus/scripts/fitvids.min.js?ver=13.4.1.2'></script>
+<script type='text/javascript' src='https://www.guide2research.com/wp-includes/js/wp-embed.min.js?ver=4.8.7'></script>
+<style>
+.black_overlay{
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index:1001;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+}
+
+.white_content {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 16px;
+	border: 6px solid #5184D2;
+	background-color: white;
+	z-index:1002;
+	overflow: auto;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.guide2research.com/fill/js/jquery.form.js"></script>
+<script type="text/javascript" src="https://www.guide2research.com/fill/js/myfuncv016.js?v=2"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>    
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+
+<div id="fade" class="black_overlay"></div>
+<div id="light" class="white_content" style="width:350px;height:200px;">
+<div style="float:right;"><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"> 
+<img src="/img/01.png" border=0></a></div>
+
+<div id=light_content></div>
+<center>
+</center>
+</div>
+</body>
+</html>
+
+
