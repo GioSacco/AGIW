@@ -1,0 +1,39 @@
+# clone the repo
+!git clone https://github.com/megagonlabs/ditto
+%cd ditto/
+
+# install requirements
+!pip install -r requirements.txt
+
+# if the above command does not work:
+!pip install transformers
+!pip install tensorboardX
+
+%cd ..
+
+import nltk
+nltk.download('stopwords')
+
+pip install torch==1.9.0+cu102 torchvision==0.10.0+cu102 -f https://download.pytorch.org/whl/torch_stable.html
+
+!git clone https://github.com/NVIDIA/apex
+%cd apex
+!pip install -v --no-cache-dir ./
+%cd ..
+
+!pip install --upgrade "urllib3==1.25.4" awscli
+
+ %cd ditto
+
+ !CUDA_VISIBLE_DEVICES=0 python train_ditto.py \
+  --task AirBB \ -> nuovo dataset censito nel config.json del progetto scaricato in colab
+  --batch_size 32 \
+  --max_len 128 \
+  --lr 3e-5 \
+  --n_epochs 1 \
+  --finetuning \
+  --lm roberta \
+  --fp16 \
+  --da drop_col
+
+  --- DA QUI ERRORE NON RISOLTO ---
