@@ -26,7 +26,7 @@ pip install torch==1.9.0+cu102 torchvision==0.10.0+cu102 -f https://download.pyt
  %cd ditto
 
  !CUDA_VISIBLE_DEVICES=0 python train_ditto.py \
-  --task AirBB \ -> nuovo dataset censito nel config.json del progetto scaricato in colab
+  --task AirBB \ 
   --batch_size 32 \
   --max_len 128 \
   --lr 3e-5 \
@@ -36,4 +36,12 @@ pip install torch==1.9.0+cu102 torchvision==0.10.0+cu102 -f https://download.pyt
   --fp16 \
   --da drop_col
 
-  --- DA QUI ERRORE NON RISOLTO ---
+ !CUDA_VISIBLE_DEVICES=0 python matcher.py \
+  --task AirBB \
+  --input_path data/er_magellan/AirBB/test.txt \
+  --output_path output/output_small.jsonl \
+  --lm roberta \
+  --max_len 64 \
+  --use_gpu \
+  --fp16 \
+  --checkpoint_path checkpoints/
